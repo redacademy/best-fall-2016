@@ -39,7 +39,7 @@ if ( post_password_required() ) {
 		<ol class="comment-list">
 			<?php
 				wp_list_comments( array(
-					'callback' => 'Best_Challenge_comment_list'
+					'callback' => 'best_challenge_comment_list'
 				) );
 			?>
 		</ol><!-- .comment-list -->

@@ -23,7 +23,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php Best_Challenge_numbered_pagination(); ?>
+			<?php best_challenge_numbered_pagination(); ?>
 
 		<?php else : ?>
 

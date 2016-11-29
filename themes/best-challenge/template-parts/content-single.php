@@ -16,7 +16,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 		<div class="entry-meta">
-			<?php Best_Challenge_posted_on(); ?> / <?php Best_Challenge_comment_count(); ?> / <?php Best_Challenge_posted_by(); ?>
+			<?php best_challenge_posted_on(); ?> / <?php best_challenge_comment_count(); ?> / <?php best_challenge_posted_by(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
@@ -31,6 +31,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php Best_Challenge_entry_footer(); ?>
+		<?php best_challenge_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
