@@ -27,13 +27,17 @@
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
-		<div class="logo">
+			
+		<div class="best-header container">
+			<div class="logo-date">				
+			<div class="logo">
 			<a href="home">
-				<img src="http://i.imgur.com/B3ytW6K.png" alt="logo">
+				<img src="http://i.imgur.com/9uEH7wo.png" alt="Rushing logo">
 			</a>
 		</div>
 		<div class="event-date">
 		<h2><span>June<span> 4 to 10, 2017</h2>
+		</div>
 		</div>
 
 		<div class="header-nav">
@@ -41,6 +45,8 @@
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
+			
+		</div>
 		</div>
 			</header><!-- #masthead -->
 
