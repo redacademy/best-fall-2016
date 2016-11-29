@@ -3,6 +3,9 @@
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+    @include desktop {
+        flex-direction: row;
+    }
     div {
         max-width: 400px;
     }

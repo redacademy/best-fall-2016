@@ -632,6 +632,10 @@ a {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center; }
+  @media (min-width: 600px) {
+    .info-404 {
+      -ms-flex-direction: row;
+          flex-direction: row; } }
   .info-404 div {
     max-width: 400px; }
 
