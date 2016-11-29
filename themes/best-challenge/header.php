@@ -30,14 +30,14 @@
 			
 		<div class="best-header container">
 			<div class="logo-date">				
-			<div class="logo">
-			<a href="home">
-				<img src="http://i.imgur.com/9uEH7wo.png" alt="Rushing logo">
-			</a>
-		</div>
-		<div class="event-date">
-		<h2><span>June<span> 4 to 10, 2017</h2>
-		</div>
+				<div class="logo">
+					<a href="home">
+						<img src="http://i.imgur.com/9uEH7wo.png" alt="Rushing logo">
+					</a>
+				</div>
+			<div class="event-date">
+				<h2><span>June<span> 4 to 10, 2017</h2>
+			</div>
 		</div>
 
 		<div class="header-nav">
