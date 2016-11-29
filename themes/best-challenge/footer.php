@@ -7,40 +7,48 @@
 
 ?>
 
-			</div><!-- #content -->
+</div><!-- #content -->
 
-			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="site-info">
-					<nav class="footer-nav">
-<div class="footer-column">
-	
-<div class="footer-sections">
-
-<p><span>b.e.s.t<span>is a non-profit charitable organization with a long history of
-	promoting sustainable transportation</p>
-<p class="section-heading"><a href="">learn more ></a></p>
-<p class="section-heading">contact us</p>
-</p>Do you have any questions? Contact us today!</p>
-
-<p class="section-heading"><a href="">commuterchallenge@best.bc.ca</a></p>
-<p>(604)669-2860</p>
-
-<li>
-<li>
-<li>
-</ul>
-
-
-
-
-</div>
-<div class="footer-different-color">
-<div class="mobile-column">
-</nav>
-					
-				</div><!-- .site-info -->
-			</footer><!-- #colophon -->
-		</div><!-- #page -->
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+			<div class="footer-column">
+				<div class="footer-section">
+					<div class="footer-content">
+						<div class="about-best">
+							<p class="para-heading">About<span> b.e.s.t</span></p>
+							<p><span>b.e.s.t<span> is a non-profit charitable organization with a long history of
+							promoting sustainable transportation</p>
+							<p class="para-heading"><a href="">learn more ></a></p>
+						</div>
+						<div class="contact-us">
+							<p class="para-heading">contact us</p>
+							<p>Do you have any questions? Contact us today!</p>
+							<p class="para-heading"><a href="">commuterchallenge@best.bc.ca</a></p>
+							<p>(604)669-2860</p>
+						</div>
+						<div class="newsletter-subscription">
+							<p class="para-heading">newsletter subscription</p>
+							<p>hear about upcoming events, new tools, and lots more!</p>
+							<div class="subscribe">
+            					<div class="subscribeForm">
+                					<form id="formId">
+									<input type="email" name="your_email" id="your-email" value="" placeholder="Enter your email..." aria-label="Subscribe Email Input">
+                    				<input type="submit" name="subscribe" value="Subscribe" id="subscribe">
+                					</form>
+            					</div>
+        					</div>
+						</div>
+					</div>
+				</div>
+			<div class="footer-social">
+					<span><i class="fa fa-facebook-square"></i></span>
+					<span><i class="fa fa-instagram"></i></span>
+					<span><i class="fa fa-twitter-square"></i></span>
+				</div>
+			</div>	
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
 
 		<?php wp_footer(); ?>
 
