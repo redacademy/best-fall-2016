@@ -686,7 +686,9 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-/*Redirect Page*/
+/*--------------------------------------------------------------
+/*Redirect Page
+--------------------------------------------------------------*/
 .redirect-page-area {
   height: 100vh;
   background: lawngreen;
@@ -835,3 +837,23 @@ form {
   -ms-flex-pack: justify;
       justify-content: space-between;
   padding-bottom: 0.8rem; }
+
+.picture-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  background: grey;
+  height: 200px;
+  -ms-flex-align: center;
+      align-items: center;
+  border-bottom-left-radius: 30rem;
+  border-bottom-right-radius: 30rem;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.picture-wrapper h1 {
+  line-height: 3.5rem;
+  color: white;
+  font-size: 55px;
+  width: 60%;
+  text-align: center;
+  text-transform: uppercase; }
