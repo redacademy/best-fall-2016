@@ -1,7 +1,7 @@
 {
-  "name": "redstarter",
+  "name": "besttheme",
   "version": "1.0.0",
-  "description": "A starter theme for RED students, based on Underscores.",
+  "description": "Theme for the BEST Commuter Challenge",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
@@ -25,12 +25,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/redacademy/redstarter.git"
+    "url": "git+https://github.com/redacademy/best-fall-2016.git"
   },
   "author": "mandiwise",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/redacademy/redstarter/issues"
+    "url": "https://github.com/redacademy/best-fall-2016/issues"
   },
-  "homepage": "https://github.com/redacademy/redstarter#readme"
+  "homepage": "https://github.com/redacademy/best-fall-2016#readme"
 }
