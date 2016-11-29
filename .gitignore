@@ -55,3 +55,4 @@ themes/best-challenge/node_modules/*
 # Ignore build files #
 # ================== #
 themes/best-challenge/build/*
+themes/best-challenge/gulpfile.js
