@@ -3,3 +3,65 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+
+
+
+
+/*Redirect Page*/
+
+.redirect-page-area {
+    height:100vh;
+    background:lawngreen;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.page-banner{
+align-items:center;
+justify-content:center;
+display:flex;
+flex-direction:column;
+}
+.page-banner h1{
+
+    text-transform:uppercase;
+    font-size:48px;
+    margin-bottom:0;
+}
+.page-banner h2{
+    
+    font-size:28px;
+    margin-top:0rem;
+}
+
+.page-banner{
+
+    line-height:2.5rem;
+}
+.redirect-explain{
+width:30%;
+text-align:center;
+
+}
+.redirect-explain span{
+font-weight:800;
+}
+
+.resources{
+text-align:center;
+width:25%;
+color:white;
+}
+
+.resources a{
+   
+    color:white;
+}
+.resources a:hover{
+
+    color:brown;
+}
