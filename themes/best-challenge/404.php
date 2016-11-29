@@ -22,9 +22,9 @@ get_header(); ?>
 						<img src="http://i1.istockimg.com/file_thumbview_approve/28439520/5/stock-illustration-28439520-digital-alarm-clock-cartoon.jpg" alt="clock">
 					</div>
 					<div>
-						<p> Looks like we hit the snooze button too many times and are late to work!</p>
+						<p>Looks like we hit the snooze button too many times and are late to work!</p>
 						<p><a href="#">Go back</a> or visit our <a href="#">Home Page</a></p>
-						<p>(or wake us up and send us feedback)<br> <a href="#">Contact Us</a></p>
+						<p>(or wake us up and send us feedback)<br><a href="#">Contact Us</a></p>
 					</div>
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->

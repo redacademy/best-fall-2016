@@ -491,9 +491,25 @@ a {
   background: #303B46;
   height: 200px; }
 
+.best-header {
+  color: white;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.logo-date {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+
 .logo img {
-  height: 30px;
-  width: 40px; }
+  height: 50px;
+  width: 75px;
+  margin-right: 5px; }
 
 /*--------------------------------------------------------------
 # Accessibility
