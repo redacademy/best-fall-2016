@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package RED_Starter_Theme
+ * @package Best_Challenge_Theme
  */
 
 get_header(); ?>
