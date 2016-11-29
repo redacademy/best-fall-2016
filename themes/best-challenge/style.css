@@ -569,6 +569,10 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+.container {
+  max-width: 1140px;
+  margin: 0 auto; }
+
 .sticky {
   display: block; }
 
@@ -602,6 +606,21 @@ a {
 
 .bypostauthor {
   display: block; }
+
+.info-404 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
+  .info-404 div {
+    max-width: 480px; }
+
+.not-found {
+  text-align: center; }
 
 /*--------------------------------------------------------------
 # Media
@@ -673,9 +692,7 @@ object {
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: center;
-      justify-content: center;
-  width: 600px;
-  padding: 20px; }
+      justify-content: center; }
 
 .footer-content {
   padding-top: 20px; }

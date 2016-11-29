@@ -3,6 +3,10 @@
 --------------------------------------------------------------*/
 
 /* Posts and pages */
+.container {
+	max-width: $container_size;
+	margin: 0 auto;
+}
 
 .sticky {
 	display: block;

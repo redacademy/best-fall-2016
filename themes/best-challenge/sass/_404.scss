@@ -1,0 +1,13 @@
+.info-404 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    div {
+        max-width: 480px;
+    }
+}
+
+.not-found {
+    text-align: center;
+}
