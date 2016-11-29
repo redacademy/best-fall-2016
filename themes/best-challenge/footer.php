@@ -10,10 +10,10 @@
 </div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info container">
+		<div class="site-info">
 			<div class="footer-column">
 				<div class="footer-section">
-					<div class="footer-content">
+					<div class="footer-content container">
 						<div class="logo-image">
 							<i class="fa fa-bicycle" aria-hidden="true"></i>
 						</div>

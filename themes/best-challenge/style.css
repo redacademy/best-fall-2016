@@ -491,9 +491,25 @@ a {
   background: #303B46;
   height: 200px; }
 
+.best-header {
+  color: white;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.logo-date {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+
 .logo img {
-  height: 30px;
-  width: 40px; }
+  height: 50px;
+  width: 75px;
+  margin-right: 5px; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -616,8 +632,12 @@ a {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center; }
+  @media (min-width: 600px) {
+    .info-404 {
+      -ms-flex-direction: row;
+          flex-direction: row; } }
   .info-404 div {
-    max-width: 480px; }
+    max-width: 400px; }
 
 .not-found {
   text-align: center; }
