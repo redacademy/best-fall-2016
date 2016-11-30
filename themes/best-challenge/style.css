@@ -280,6 +280,9 @@ mark, ins {
 big {
   font-size: 125%; }
 
+.uppercase {
+  text-transform: uppercase; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -449,10 +452,12 @@ a {
       left: auto; }
   .main-navigation li {
     float: left;
-    position: relative; }
+    position: relative;
+    margin: 0 2rem; }
   .main-navigation a {
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    text-align: center; }
 
 /* Small menu. */
 .menu-toggle,
@@ -484,40 +489,53 @@ a {
   text-align: right;
   width: 50%; }
 
+.menu-item-51 {
+  width: 189px;
+  height: 37px;
+  border-radius: 18.5px;
+  background-color: #a6ce39; }
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 .site-header {
   background: #303B46;
-  height: 200px; }
+  height: 10vh; }
+  @media (min-width: 600px) {
+    .site-header {
+      height: 144px; } }
 
 .best-header {
   display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
+  display: flex; }
 
 .logo-date {
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -ms-flex-align: center;
-      align-items: center; }
-
-.logo {
-  display: -ms-flexbox;
-  display: flex; }
+      align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  @media (min-width: 600px) {
+    .logo-date {
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
 
 .event-date {
-  display: -ms-flexbox;
-  display: flex;
   color: white; }
 
 .logo img {
   height: 40px;
   width: 200px;
   margin-right: 5px; }
+
+.menu-menu-1-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  margin-right: 10%; }
 
 .page-template-faq .qa-section {
   display: -ms-flexbox;
@@ -680,6 +698,8 @@ a {
 
 .ccbc-title {
   margin-bottom: 3rem; }
+  .ccbc-title h2 {
+    font-size: 2rem; }
 
 @media (min-width: 600px) {
   .ccbc-info {

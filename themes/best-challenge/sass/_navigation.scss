@@ -2,18 +2,18 @@
 # Navigation
 --------------------------------------------------------------*/
 
+
 /* Links */
 
 a {
-	color:  $link;
-
+	color: $link;
 	&:visited {
-		color:  $link-visited;
+		color: $link-visited;
 	}
 	&:hover,
 	&:focus,
 	&:active {
-		color:  $link-hover;
+		color: $link-hover;
 	}
 	&:focus {
 		outline: thin dotted;
@@ -24,6 +24,7 @@ a {
 	}
 }
 
+
 /* Menus */
 
 .main-navigation {
@@ -31,13 +32,11 @@ a {
 	display: block;
 	float: left;
 	width: 100%;
-
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
-
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
@@ -45,57 +44,49 @@ a {
 			top: $base__space-unit;
 			left: -999em;
 			z-index: 99999;
-
 			ul {
 				left: -999em;
 				top: 0;
 			}
-
 			li {
-				&:hover > ul,
-				&.focus > ul {
+				&:hover>ul,
+				&.focus>ul {
 					left: 100%;
 				}
 			}
-
 			a {
 				width: 200px;
 			}
-
-			:hover > a,
-			.focus > a {
-			}
-
+			:hover>a,
+			.focus>a {}
 			a:hover,
-			a.focus {
-			}
+			a.focus {}
 		}
-
-		li:hover > ul,
-		li.focus > ul {
+		li:hover>ul,
+		li.focus>ul {
 			left: auto;
 		}
 	}
 	li {
 		float: left;
 		position: relative;
-
-		&:hover > a,
-		&.focus > a {
-		}
+		margin: 0 2rem;
+		&:hover>a,
+		&.focus>a {}
 	}
 	a {
 		display: block;
 		text-decoration: none;
+		text-align: center;
 	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
-	}
+	.current_page_item>a,
+	.current-menu-item>a,
+	.current_page_ancestor>a {}
 }
 
+
 /* Small menu. */
+
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
@@ -113,20 +104,24 @@ a {
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
-
 	.site-main & {
 		margin: 0 0 $base__space-unit;
 		overflow: hidden;
 	}
-
 	.nav-previous {
 		float: left;
 		width: 50%;
 	}
-
 	.nav-next {
 		float: right;
 		text-align: right;
 		width: 50%;
 	}
+}
+
+.menu-item-51 {
+	width: 189px;
+	height: 37px;
+	border-radius: 18.5px;
+	background-color: #a6ce39;
 }
