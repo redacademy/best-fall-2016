@@ -22,7 +22,7 @@ get_header(); ?>
 
 		<div class="ccbc-front box">
 			<div class="ccbc-title">
-				<h2>Welcome to commuter challege bc!</h2>
+				<h2 class="uppercase">Welcome to commuter challege bc!</h2>
 			</div>
 			<div class="ccbc-info">
 			<div>
