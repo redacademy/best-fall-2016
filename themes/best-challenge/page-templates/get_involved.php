@@ -14,6 +14,16 @@ get_header(); ?>
                     <h1>get your workplace involved!</h1>
                 </div>
 
+
+			<?php while ( have_posts() ) : the_post(); ?>
+
+				<?php get_template_part( 'template-parts/content' ); ?>
+
+			<?php endwhile; // End of the loop. ?>
+            </div>
+
+
+
                 <div class="challenge-benefit-blocks">
                     <div class="single-benefit-block">
                         <img></img><i class="fa fa-bicycle" aria-hidden="true"></i>
@@ -31,6 +41,33 @@ get_header(); ?>
                         <p>Being multi-modal reduces commuting and facility related costs, benefiting employees and workplaces</p>
                     </div>
                 </div>
+
+                <!-- This is the code for the custom fields -->
+
+            <div class="custom-field-suite">
+
+                <p><?php $fields = CFS()->get( 'instruction_details' );
+                foreach ( $fields as $field ) {
+                echo $field['number'];}?></p>
+
+                <img src="<?php $fields = CFS()->get( 'instruction_details' );
+                foreach ( $fields as $field ) {
+                echo $field['image'];
+                } ?>" alt="" /> 
+    
+    
+                <h3><?php $fields = CFS()->get( 'instruction_details' );
+                foreach ( $fields as $field ) {
+                echo $field['header'];}?></h3>
+
+                <p><?php $fields = CFS()->get( 'instruction_details' );
+                foreach ( $fields as $field ) {
+                echo $field['description'];}?></p>
+    
+            </div>
+            <!-- End of custom fields code -->
+
+
 
                 <div class="how-to-participate-wrapper">
                     <h2>how to particpate as a workforce</h2>
