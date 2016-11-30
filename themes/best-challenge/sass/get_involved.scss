@@ -17,7 +17,80 @@
     font-size:55px;
     width:60%;
     text-align:center;
-text-transform:uppercase;
+    text-transform:uppercase;
 
     }
 
+.challenge-benefit-blocks{
+
+      display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.single-benefit-block{
+   
+    -webkit-flex: 0 1 33%;
+    -ms-flex: 0 1 33%;
+    flex: 0 1 33%;
+    max-width: 33%;
+    padding: .75rem;
+   
+
+}
+
+.single-benefit-block i{
+    font-size:30px;
+    color:black;
+}
+
+.how-to-participate-wrapper{
+
+    background:#383B4C;
+    padding-top:50px;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+}
+
+
+
+.how-to-participate-wrapper h2{
+    text-transform:uppercase;
+    color:white;
+    text-align:center;
+}
+
+.how-to-participate-wrapper h3{
+    
+    color:white;
+    text-align:center;
+}
+
+
+.how-to-participate-wrapper p{
+    
+    color:white;
+    text-align:center;
+}
+
+.subscribeForm{
+display:flex;
+justify-content:center;
+}
+
+.signUpForm{
+
+
+}
+#sign-up-form{
+justify-content:center;
+    display:flex;
+    flex-direction:column;
+    width:10%;
+    align-items:center;
+}
