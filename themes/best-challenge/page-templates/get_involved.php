@@ -13,17 +13,7 @@ get_header(); ?>
                 <div class="picture-wrapper">
                     <h1>get your workplace involved!</h1>
                 </div>
-
-
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content' ); ?>
-
-			<?php endwhile; // End of the loop. ?>
             </div>
-
-
-
                 <div class="challenge-benefit-blocks">
                     <div class="single-benefit-block">
                         <img></img><i class="fa fa-bicycle" aria-hidden="true"></i>
@@ -45,30 +35,30 @@ get_header(); ?>
                 <!-- This is the code for the custom fields -->
 
             <div class="custom-field-suite">
+            
+            <?php 
+            
+            $fields = CFS()->get( 'instruction_details' )?>
+            <?php foreach ( $fields as $field ) : ?>
 
-                <p><?php $fields = CFS()->get( 'instruction_details' );
-                foreach ( $fields as $field ) {
-                echo $field['number'];}?></p>
-
-                <img src="<?php $fields = CFS()->get( 'instruction_details' );
-                foreach ( $fields as $field ) {
+                <p><?php echo $field['number'];?></p>
+ 
+                <img src="<?php
                 echo $field['image'];
-                } ?>" alt="" /> 
+                 ?>" alt="" /> 
     
     
-                <h3><?php $fields = CFS()->get( 'instruction_details' );
-                foreach ( $fields as $field ) {
-                echo $field['header'];}?></h3>
+                <h3><?php 
+                echo $field['header'];?></h3>
 
-                <p><?php $fields = CFS()->get( 'instruction_details' );
-                foreach ( $fields as $field ) {
-                echo $field['description'];}?></p>
+                <p><?php 
+                echo $field['description'];?></p>
     
             </div>
-            <!-- End of custom fields code -->
 
-
-
+            <?php endforeach; ?>
+        <!-- This is the end of the custom field code -->
+		
                 <div class="how-to-participate-wrapper">
                     <h2>how to particpate as a workforce</h2>
                 <div class="how-to-participate">
