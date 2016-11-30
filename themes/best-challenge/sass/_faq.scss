@@ -1,0 +1,17 @@
+.page-template-faq {
+    .qa-section {
+        display: flex;
+        flex-direction: column;
+        background-color: navy;
+        .questions {
+            color: $best-green;
+            &:hover{
+                color: $best-green;
+             }
+        }
+        .answer {
+            color: $best-green;
+            display: none; 
+        }
+    }
+}

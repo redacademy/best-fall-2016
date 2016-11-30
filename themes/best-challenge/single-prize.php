@@ -32,7 +32,7 @@ get_header(); ?>
                     <div class="prize-info">  
                         <p> 
                             <?php the_title('<p class="prize-title">'); ?> 
-                        <?php echo CFS()->get( 'prize_info' ); ?> 
+                          
                         </p>
                     </div>
                 </article><!-- #post-## -->

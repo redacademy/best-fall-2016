@@ -5,31 +5,28 @@
  */
 
 get_header(); ?>
-        
 
-			 <section class="about-hero">
-             <h1> About </h1>
-            </section>
+		<section class="title">
+             <h1> FAQ</h1>
+        </section>
             
         <div id="primary" class="content-area">
-		<!-- <main id="main" class="site-main" role="main"> -->
+         <main id="main" class="site-main" role="main"> 
+            <section class="qa-section">
+                <!--get the general QA-->
+                <?php $fields=CFS()->get( 'general_questions' );
+                        foreach ( $fields as $field ) { ?>
+                        <div class="question"> 
+                               <p><?php echo $field['question']; ?></p>
+                        </div>
+                        <div class="answer">
+                                <p><?php echo $field['answer']; } ?></p>
+                        </div>
 
-            <div class= "about-text">
-            <?php
-            $props=CFS()->get_field_info('our_story');
-            
-            ?>
-            <?php echo CFS()->get( 'our_story'); ?>
-
-            <?php
-            $props=CFS()-> get_field_info('our_team');
-           
-            ?>
-
-            <?php 
-            echo CFS()->get( 'our_team');
-            ?>
-            </div>
+                <!--get workplace QA-->
+                
+                <!--get individual QA-->
+            </section>
 		
     </main><!-- #main -->
 	</div><!-- #primary -->
