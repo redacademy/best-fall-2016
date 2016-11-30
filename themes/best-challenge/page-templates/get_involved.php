@@ -13,17 +13,7 @@ get_header(); ?>
                 <div class="picture-wrapper">
                     <h1>get your workplace involved!</h1>
                 </div>
-
-
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content' ); ?>
-
-			<?php endwhile; // End of the loop. ?>
             </div>
-
-
-
                 <div class="challenge-benefit-blocks">
                     <div class="single-benefit-block">
                         <img></img><i class="fa fa-bicycle" aria-hidden="true"></i>
@@ -44,64 +34,48 @@ get_header(); ?>
 
                 <!-- This is the code for the custom fields -->
 
-            <div class="custom-field-suite">
-
-                <p><?php $fields = CFS()->get( 'instruction_details' );
-                foreach ( $fields as $field ) {
-                echo $field['number'];}?></p>
-
-                <img src="<?php $fields = CFS()->get( 'instruction_details' );
-                foreach ( $fields as $field ) {
-                echo $field['image'];
-                } ?>" alt="" /> 
-    
-    
-                <h3><?php $fields = CFS()->get( 'instruction_details' );
-                foreach ( $fields as $field ) {
-                echo $field['header'];}?></h3>
-
-                <p><?php $fields = CFS()->get( 'instruction_details' );
-                foreach ( $fields as $field ) {
-                echo $field['description'];}?></p>
-    
-            </div>
-            <!-- End of custom fields code -->
-
-
-
+            
                 <div class="how-to-participate-wrapper">
-                    <h2>how to particpate as a workforce</h2>
-                <div class="how-to-participate">
-                    <div class="challenge-participate-blocks">
-                        <div class="single-participate-block">
-                            <img></img><i class="fa fa-bicycle" aria-hidden="true"></i>
-                            <h3>Sing up to participate</h3>
-                            <p>Being multi-modal reduces commute-related stress and increases productivity and morale</p>
+                    <div class="how-to-participate">
+                        <div class="challenge-participate-blocks">
+                            <?php 
+             
+                                $fields = CFS()->get( 'instruction_details' )?>
+                                <?php foreach ( $fields as $field ) : ?>
+                  
+                                 <div class="single-participate-block">
+             
+                
+                                    <p><?php echo $field['number'];?></p>
+ 
+                                        <img src="<?php
+                                        echo $field['image'];
+                                        ?>" alt="" /> 
+    
+   
+                                        <h3><?php 
+                                        echo $field['header'];?></h3>
+
+                                        <p><?php 
+                                        echo $field['description'];?></p>
+    
+                                </div>
+                            <?php endforeach; ?>
                         </div>
-                        <div class="single-participate-block">
-                            <img></img><i class="fa fa-bicycle" aria-hidden="true"></i>
-                            <h3>Promote and Engage Team</h3>
-                            <p>Active and sustainable commute enhances your physical, mental, and emotional health</p>
-                        </div>
-                        <div class="single-participate-block">
-                            <img></img><i class="fa fa-bicycle" aria-hidden="true"></i>
-                            <h3>Track and Compete</h3>
-                            <p>Being multi-modal reduces commuting and facility related costs, benefiting employees and workplaces</p>
-                        </div>
-                        <div class="single-participate-block">
-                            <img></img><i class="fa fa-bicycle" aria-hidden="true"></i>
-                            <h3>Win Prizes and Party</h3>
-                            <p>Being multi-modal reduces commuting and facility related costs, benefiting employees and workplaces</p>
-                        </div>
-                    </div>
-                </div>
-            	    <div class="signUpForm">
+                     </div>
+
+                    <div class="signUpForm">
                 	    <form id="sign-up-form">
 						    <input type="submit" name="subscribe" value="Sign Up" id="subscribe">
                             <p>on Canada Site</p>
                             <p>or log in on the canada site</p>
                 	    </form>
             	    </div>
+                </div>
+
+<!-- This is the end of the custom field code -->
+		
+             
                     <div class="need-resources">
                         <h2>need resources?</h2>
                         <p>Check out our resources page for everything you need to know about engaging your coworkers and 

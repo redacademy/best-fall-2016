@@ -1022,6 +1022,14 @@ object {
   font-size: 30px;
   color: black; }
 
+.page-id-34 .custom-field-suite {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
 .page-id-34 .how-to-participate-wrapper {
   background: #383B4C;
   padding-top: 50px;
