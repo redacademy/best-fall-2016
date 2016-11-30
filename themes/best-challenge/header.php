@@ -39,7 +39,7 @@
 				<h2><span>June<span> 4 to 10, 2017</h2>
 			</div>
 		</div>
-
+</div>
 		<div class="header-nav">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
