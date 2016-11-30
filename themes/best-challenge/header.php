@@ -32,7 +32,7 @@
 			<div class="logo-date">				
 				<div class="logo">
 					<a href="home">
-						<img src="http://i.imgur.com/9uEH7wo.png" alt="Rushing logo">
+						<img src=" <?php echo get_template_directory_uri() ?>./assets/images/logotitlebc.png" alt="logo">
 					</a>
 				</div>
 			<div class="event-date">
