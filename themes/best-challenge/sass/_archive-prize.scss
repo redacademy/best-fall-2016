@@ -1,0 +1,17 @@
+.post-type-archive-prize{
+    .page-heading {
+        h1 {
+        text-align: center;
+        }
+    }
+    .prize-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        @include desktop {
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+    }
+
+}

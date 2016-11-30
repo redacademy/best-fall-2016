@@ -6,7 +6,7 @@
 
 get_header(); ?>
 
-		<section class="title">
+	<section class="title">
              <h1> FAQ</h1>
         </section>
             
