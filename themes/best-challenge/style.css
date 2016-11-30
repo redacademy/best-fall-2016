@@ -496,8 +496,8 @@ a {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
 
 .logo-date {
   display: -ms-flexbox;
@@ -518,6 +518,20 @@ a {
   height: 50px;
   width: 75px;
   margin-right: 5px; }
+
+.page-template-faq .qa-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  background-color: navy; }
+  .page-template-faq .qa-section .questions {
+    color: #a6ce39; }
+    .page-template-faq .qa-section .questions:hover {
+      color: #a6ce39; }
+  .page-template-faq .qa-section .answer {
+    color: #a6ce39;
+    display: none; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -877,7 +891,8 @@ object {
   border-bottom-left-radius: 30rem;
   border-bottom-right-radius: 30rem;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  padding-bottom: 20px; }
 
 .picture-wrapper h1 {
   line-height: 3.5rem;
@@ -892,7 +907,12 @@ object {
   display: flex;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  text-align: center; }
+  text-align: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-top: 20px; }
 
 .single-benefit-block {
   -ms-flex: 0 1 33%;
@@ -923,11 +943,41 @@ object {
   color: white;
   text-align: center; }
 
+.challenge-participate-blocks {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-top: 20px; }
+
+.single-participate-block {
+  -ms-flex: 0 1 49%;
+  flex: 0 1 49%;
+  max-width: 49%;
+  padding: .75rem; }
+
+.single-participate-block i {
+  color: white;
+  font-size: 32px; }
+
 .subscribeForm {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
+
+.signUpForm {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center; }
 
 #sign-up-form {
   -ms-flex-pack: center;

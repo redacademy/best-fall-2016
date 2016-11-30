@@ -8,6 +8,7 @@
     border-bottom-left-radius: 30rem;
     border-bottom-right-radius: 30rem;
     justify-content:center;
+    padding-bottom:20px;
    
 }
 
@@ -30,6 +31,9 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     text-align: center;
+    flex-direction:column;
+    align-items:center;
+    padding-top:20px;
 }
 
 
@@ -78,6 +82,33 @@
     text-align:center;
 }
 
+.challenge-participate-blocks{
+   display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap:wrap;
+    align-items:center;
+    padding-top:20px;
+
+}
+
+.single-participate-block{
+ -webkit-flex: 0 1 49%;
+    -ms-flex: 0 1 49%;
+    flex: 0 1 49%;
+    max-width: 49%;
+    padding: .75rem;
+
+}
+.single-participate-block i{
+    color:white;
+    font-size:32px;
+}
+
 .subscribeForm{
 display:flex;
 justify-content:center;
@@ -85,7 +116,10 @@ justify-content:center;
 
 .signUpForm{
 
-
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    
 }
 #sign-up-form{
 justify-content:center;
