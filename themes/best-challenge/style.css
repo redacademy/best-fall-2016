@@ -492,7 +492,6 @@ a {
   height: 200px; }
 
 .best-header {
-  color: white;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -505,6 +504,15 @@ a {
   display: flex;
   -ms-flex-align: center;
       align-items: center; }
+
+.logo {
+  display: -ms-flexbox;
+  display: flex; }
+
+.event-date {
+  display: -ms-flexbox;
+  display: flex;
+  color: white; }
 
 .logo img {
   height: 50px;
@@ -645,7 +653,8 @@ a {
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  margin-bottom: 2rem; }
   @media (min-width: 600px) {
     .info-404 {
       -ms-flex-direction: row;

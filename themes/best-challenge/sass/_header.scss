@@ -1,26 +1,34 @@
-/*--------------------------------------------------------------
+    /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-
-.site-header {
-    background: #303B46;
-    height: 200px;
     
-}
-
-.best-header {
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.logo-date {
-    display: flex;
-    align-items: center;
-}
-.logo img {
-    height: 50px;
-    width: 75px;
-    margin-right: 5px;
-}
+    .site-header {
+        background: #303B46;
+        height: 200px;
+    }
+    
+    .best-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo-date {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo {
+        display: flex;
+    }
+    
+    .event-date {
+        display: flex;
+        color: white;
+    }
+    
+    .logo img {
+        height: 50px;
+        width: 75px;
+        margin-right: 5px;
+    }
