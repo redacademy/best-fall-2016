@@ -516,7 +516,7 @@ a {
 
 .logo img {
   height: 40px;
-  width: 250px;
+  width: 200px;
   margin-right: 5px; }
 
 .page-template-faq .qa-section {
@@ -526,19 +526,11 @@ a {
       flex-direction: column;
   background-color: navy; }
   .page-template-faq .qa-section .questions {
-<<<<<<< HEAD
-    color: #a6ce39; }
-    .page-template-faq .qa-section .questions:hover {
-      color: #a6ce39; }
-  .page-template-faq .qa-section .answer {
-    color: #a6ce39;
-=======
     color: green; }
     .page-template-faq .qa-section .questions:hover {
       color: green; }
   .page-template-faq .qa-section .answer {
     color: blue;
->>>>>>> e5e66b4e6526c2f35951cdf7561e553430ea77e1
     display: none; }
 
 /*--------------------------------------------------------------
