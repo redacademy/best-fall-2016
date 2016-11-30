@@ -1,13 +1,12 @@
 (function( $ ) {
-  //shows the search input field on click
+  //shows the answer on click 
      
   $('.question').hover(function(event){
     event.preventDefault();
-
-    
     $('.answer').css('display', 'initial');
   });
-  //hides the search input field when not in focus
+
+  //hides the answer on click 
   $('.question').on('mouseleave', function(){
     $('.answer').css('display', 'none');
   });
