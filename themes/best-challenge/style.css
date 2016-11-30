@@ -891,7 +891,7 @@ object {
 #your-email {
   width: 60%; }
 
-form {
+#formId {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -908,7 +908,8 @@ form {
   border-bottom-left-radius: 30rem;
   border-bottom-right-radius: 30rem;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  padding-bottom: 20px; }
 
 .picture-wrapper h1 {
   line-height: 3.5rem;
@@ -917,3 +918,91 @@ form {
   width: 60%;
   text-align: center;
   text-transform: uppercase; }
+
+.challenge-benefit-blocks {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-top: 20px; }
+
+.single-benefit-block {
+  -ms-flex: 0 1 33%;
+  flex: 0 1 33%;
+  max-width: 33%;
+  padding: .75rem; }
+
+.single-benefit-block i {
+  font-size: 30px;
+  color: black; }
+
+.how-to-participate-wrapper {
+  background: #383B4C;
+  padding-top: 50px;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem; }
+
+.how-to-participate-wrapper h2 {
+  text-transform: uppercase;
+  color: white;
+  text-align: center; }
+
+.how-to-participate-wrapper h3 {
+  color: white;
+  text-align: center; }
+
+.how-to-participate-wrapper p {
+  color: white;
+  text-align: center; }
+
+.challenge-participate-blocks {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-top: 20px; }
+
+.single-participate-block {
+  -ms-flex: 0 1 49%;
+  flex: 0 1 49%;
+  max-width: 49%;
+  padding: .75rem; }
+
+.single-participate-block i {
+  color: white;
+  font-size: 32px; }
+
+.subscribeForm {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.signUpForm {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center; }
+
+#sign-up-form {
+  -ms-flex-pack: center;
+      justify-content: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 10%;
+  -ms-flex-align: center;
+      align-items: center; }
