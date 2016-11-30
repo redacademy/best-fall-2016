@@ -55,9 +55,11 @@ get_header(); ?>
    
                                         <h3><?php 
                                         echo $field['header'];?></h3>
-
+                                        
+                                        <div class="description-wrapper">
                                         <p><?php 
                                         echo $field['description'];?></p>
+                                        </div>
     
                                 </div>
                             <?php endforeach; ?>
@@ -66,9 +68,9 @@ get_header(); ?>
 
                     <div class="signUpForm">
                 	    <form id="sign-up-form">
-						    <input type="submit" name="subscribe" value="Sign Up" id="subscribe">
-                            <p>on Canada Site</p>
-                            <p>or log in on the canada site</p>
+						    <input type="submit" name="subscribe" value="Sign Up" id="sign-up">
+                            <p class="font-under-button">on Canada Site</p>
+                            <p class="underline-under-button">or log in on the canada site</p>
                 	    </form>
             	    </div>
                 </div>
@@ -106,7 +108,7 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 			<?php endwhile; // End of the loop. ?>
-            </div>-->
+            </div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
