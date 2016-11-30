@@ -658,6 +658,10 @@ a {
   -ms-flex-align: center;
       align-items: center;
   text-align: center; }
+  @media (min-width: 600px) {
+    .box {
+      -ms-flex-align: stretch;
+          align-items: stretch; } }
 
 .travel-by {
   height: 40vh;
@@ -669,13 +673,22 @@ a {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
   .ccbc-front div {
-    margin-bottom: 1rem; }
+    margin-bottom: 2rem; }
     .ccbc-front div p {
       max-width: 250px;
-      text-align: center; }
+      margin: 0 auto; }
 
 .ccbc-title {
-  margin-bottom: 2rem; }
+  margin-bottom: 3rem; }
+
+@media (min-width: 600px) {
+  .ccbc-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-align: baseline;
+        align-items: baseline; } }
 
 .front-sponsors {
   height: 40vh;

@@ -4,11 +4,14 @@
     background-size: cover;
 }
 
-.box{
+.box {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    @include desktop {
+        align-items: stretch;
+    }
 }
 
 .travel-by {
@@ -20,18 +23,26 @@
     flex-direction: column;
     justify-content: space-around;
     div {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         p {
             max-width: 250px;
-            text-align: center;
+            margin: 0 auto;
         }
     }
-
 }
 
 .ccbc-title {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
+
+.ccbc-info {
+    @include desktop {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+}
+
 .front-sponsors {
     height: 40vh;
     background: green;
