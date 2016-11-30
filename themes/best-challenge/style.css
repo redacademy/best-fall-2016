@@ -511,6 +511,20 @@ a {
   width: 75px;
   margin-right: 5px; }
 
+.page-template-faq .qa-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  background-color: navy; }
+  .page-template-faq .qa-section .questions {
+    color: green; }
+    .page-template-faq .qa-section .questions:hover {
+      color: green; }
+  .page-template-faq .qa-section .answer {
+    color: blue;
+    display: none; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/

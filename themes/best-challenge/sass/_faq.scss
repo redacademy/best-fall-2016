@@ -4,13 +4,13 @@
         flex-direction: column;
         background-color: navy;
         .questions {
-            color: $best-green;
+            color: green;
             &:hover{
-                color: $best-green;
+                color: green;
              }
         }
         .answer {
-            color: $best-green;
+            color: blue;
             display: none; 
         }
     }
