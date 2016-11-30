@@ -645,6 +645,67 @@ a {
 .bypostauthor {
   display: block; }
 
+.hero-banner {
+  background: url(../../assets/images/hero-banner-temp.jpeg) center no-repeat;
+  height: 80vh;
+  background-size: cover; }
+
+.box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center; }
+  @media (min-width: 600px) {
+    .box {
+      -ms-flex-align: stretch;
+          align-items: stretch; } }
+
+.travel-by {
+  height: 40vh;
+  background: blue; }
+
+.ccbc-front {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .ccbc-front div {
+    margin-bottom: 2rem; }
+    .ccbc-front div p {
+      max-width: 250px;
+      margin: 0 auto; }
+
+.ccbc-title {
+  margin-bottom: 3rem; }
+
+@media (min-width: 600px) {
+  .ccbc-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-align: baseline;
+        align-items: baseline; } }
+
+.front-sponsors {
+  height: 40vh;
+  background: green; }
+
+.impact-results {
+  height: 40vh;
+  background: orange; }
+
+.instagram-grid {
+  height: 40vh;
+  background: indigo; }
+
+.blog-posts {
+  height: auto;
+  background: brown; }
+
 .post-type-archive-prize .page-heading h1 {
   text-align: center; }
 

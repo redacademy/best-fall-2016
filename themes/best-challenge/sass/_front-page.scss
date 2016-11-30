@@ -1,0 +1,64 @@
+.hero-banner {
+    background: url(../../assets/images/hero-banner-temp.jpeg) center no-repeat;
+    height: 80vh;
+    background-size: cover;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @include desktop {
+        align-items: stretch;
+    }
+}
+
+.travel-by {
+    height: 40vh;
+    background: blue;
+}
+
+.ccbc-front {
+    flex-direction: column;
+    justify-content: space-around;
+    div {
+        margin-bottom: 2rem;
+        p {
+            max-width: 250px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.ccbc-title {
+    margin-bottom: 3rem;
+}
+
+.ccbc-info {
+    @include desktop {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+}
+
+.front-sponsors {
+    height: 40vh;
+    background: green;
+}
+
+.impact-results {
+    height: 40vh;
+    background: orange;
+}
+
+.instagram-grid {
+    height: 40vh;
+    background: indigo;
+}
+
+.blog-posts {
+    height: auto;
+    background: brown;
+}
