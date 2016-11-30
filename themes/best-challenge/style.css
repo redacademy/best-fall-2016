@@ -516,7 +516,7 @@ a {
 
 .logo img {
   height: 40px;
-  width: 250px;
+  width: 200px;
   margin-right: 5px; }
 
 .page-template-faq .qa-section {
@@ -526,19 +526,11 @@ a {
       flex-direction: column;
   background-color: navy; }
   .page-template-faq .qa-section .questions {
-<<<<<<< HEAD
-    color: #a6ce39; }
-    .page-template-faq .qa-section .questions:hover {
-      color: #a6ce39; }
-  .page-template-faq .qa-section .answer {
-    color: #a6ce39;
-=======
     color: green; }
     .page-template-faq .qa-section .questions:hover {
       color: green; }
   .page-template-faq .qa-section .answer {
     color: blue;
->>>>>>> e5e66b4e6526c2f35951cdf7561e553430ea77e1
     display: none; }
 
 /*--------------------------------------------------------------
@@ -906,28 +898,28 @@ object {
       justify-content: space-between;
   padding-bottom: 0.8rem; }
 
-.picture-wrapper {
+.page-id-34 .picture-wrapper {
   display: -ms-flexbox;
   display: flex;
   background: grey;
   height: 200px;
   -ms-flex-align: center;
       align-items: center;
-  border-bottom-left-radius: 30rem;
-  border-bottom-right-radius: 30rem;
+  border-radius: 0 200% 250%/0 0 200% 200%;
   -ms-flex-pack: center;
       justify-content: center;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  margin-bottom: 4px; }
 
-.picture-wrapper h1 {
+.page-id-34 .picture-wrapper h1 {
   line-height: 3.5rem;
   color: white;
-  font-size: 55px;
+  font-size: 44px;
   width: 60%;
   text-align: center;
   text-transform: uppercase; }
 
-.challenge-benefit-blocks {
+.page-id-34 .challenge-benefit-blocks {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -939,36 +931,35 @@ object {
       align-items: center;
   padding-top: 20px; }
 
-.single-benefit-block {
+.page-id-34 .single-benefit-block {
   -ms-flex: 0 1 33%;
   flex: 0 1 33%;
   max-width: 33%;
   padding: .75rem; }
 
-.single-benefit-block i {
+.page-id-34 .single-benefit-block i {
   font-size: 30px;
   color: black; }
 
-.how-to-participate-wrapper {
+.page-id-34 .how-to-participate-wrapper {
   background: #383B4C;
   padding-top: 50px;
-  border-top-left-radius: 5rem;
-  border-top-right-radius: 5rem; }
+  border-radius: 25% 25% 0 0/10% 10% 0 0; }
 
-.how-to-participate-wrapper h2 {
+.page-id-34 .how-to-participate-wrapper h2 {
   text-transform: uppercase;
   color: white;
   text-align: center; }
 
-.how-to-participate-wrapper h3 {
+.page-id-34 .how-to-participate-wrapper h3 {
   color: white;
   text-align: center; }
 
-.how-to-participate-wrapper p {
+.page-id-34 .how-to-participate-wrapper p {
   color: white;
   text-align: center; }
 
-.challenge-participate-blocks {
+.page-id-34 .challenge-participate-blocks {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -980,23 +971,23 @@ object {
       align-items: center;
   padding-top: 20px; }
 
-.single-participate-block {
+.page-id-34 .single-participate-block {
   -ms-flex: 0 1 49%;
   flex: 0 1 49%;
   max-width: 49%;
   padding: .75rem; }
 
-.single-participate-block i {
+.page-id-34 .single-participate-block i {
   color: white;
   font-size: 32px; }
 
-.subscribeForm {
+.page-id-34 .subscribeForm {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
 
-.signUpForm {
+.page-id-34 .signUpForm {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
@@ -1004,7 +995,7 @@ object {
   -ms-flex-align: center;
       align-items: center; }
 
-#sign-up-form {
+.page-id-34 #sign-up-form {
   -ms-flex-pack: center;
       justify-content: center;
   display: -ms-flexbox;
@@ -1014,3 +1005,8 @@ object {
   width: 10%;
   -ms-flex-align: center;
       align-items: center; }
+
+.page-id-34 .entry-content {
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center; }

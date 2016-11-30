@@ -1,21 +1,23 @@
 
+.page-id-34{
 
 .picture-wrapper{
     display:flex;
     background:grey;
     height:200px;
     align-items:center;
-    border-bottom-left-radius: 30rem;
-    border-bottom-right-radius: 30rem;
+    border-radius: 0 200% 250%/0 0 200% 200%;
     justify-content:center;
     padding-bottom:20px;
+    margin-bottom: 4px;
+    
    
 }
 
 .picture-wrapper h1{
    line-height:3.5rem;
     color:white;
-    font-size:55px;
+    font-size:44px;
     width:60%;
     text-align:center;
     text-transform:uppercase;
@@ -57,8 +59,7 @@
 
     background:#383B4C;
     padding-top:50px;
-    border-top-left-radius: 5rem;
-    border-top-right-radius: 5rem;
+border-radius: 25% 25% 0 0/10% 10% 0 0;
 }
 
 
@@ -127,4 +128,15 @@ justify-content:center;
     flex-direction:column;
     width:10%;
     align-items:center;
+}
+
+
+.entry-content{
+padding-left:10%;
+padding-right:10%;
+    text-align:center;
+}
+
+
+
 }
