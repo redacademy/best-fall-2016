@@ -489,6 +489,11 @@ a {
   text-align: right;
   width: 50%; }
 
+.menu-item:hover {
+  width: 107px;
+  height: 36px;
+  background-color: #5a6f83; }
+
 .menu-item-51 {
   width: 189px;
   height: 37px;
@@ -507,9 +512,11 @@ a {
 
 .best-header {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  height: inherit; }
 
 .logo-date {
+  height: inherit;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
@@ -711,8 +718,30 @@ a {
         align-items: baseline; } }
 
 .front-sponsors {
-  height: 40vh;
-  background: green; }
+  display: -ms-flexbox;
+  display: flex;
+  height: 250px;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  background: #dee2e6; }
+
+.fp-sponsors-title h2 {
+  font-size: 1.5rem; }
+
+.fp-sponsors-img {
+  width: 100%; }
+  @media (min-width: 600px) {
+    .fp-sponsors-img {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -ms-flex-align: center;
+          align-items: center; } }
 
 .impact-results {
   height: 40vh;
