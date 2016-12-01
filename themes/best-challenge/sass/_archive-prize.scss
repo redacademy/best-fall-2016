@@ -1,10 +1,15 @@
-.post-type-archive-prize{
-    
+.page-id-57{
     .page-heading {
-        h1 {
-        text-align: center;
-        }
+        /*background-image: url(../../assets/images/grey-image.jpg);*/
+        width: 1440px;
+        height: 252px;
+        background-color: #5a6f83;
     }
+        h1, h2 {
+        text-align: center;
+        width: 100%;
+        }
+    
     .prize-wrapper {
         width: 80%;
         margin: 5% auto;
@@ -21,6 +26,10 @@
         @include desktop {
             flex-wrap: wrap;
             flex-direction: row;
+        }
+        .category-title {
+            width: 100%;
+            text-align: center;
         }
         .single-prize {
             margin-top: 5%;
