@@ -70,7 +70,6 @@ a {
 	li {
 		float: left;
 		position: relative;
-		margin: 0 2rem;
 		&:hover>a,
 		&.focus>a {}
 	}
@@ -119,14 +118,26 @@ a {
 	}
 }
 
-.menu-item:hover {
-  width: 107px;
-  height: 36px;
-  background-color: #5a6f83;
+.menu-item {
+	width: 107px;
+	height: 36px;
+	bottom: -1px;
+	a {
+		padding-top: 7px;
+	}
 }
+
+.menu-item:hover {
+	background-color: #5a6f83;
+	border-top-left-radius: 18.5px;
+	border-top-right-radius: 18.5px;
+}
+
 .menu-item-51 {
+	margin-left: 5px;
 	width: 189px;
 	height: 37px;
+	bottom: 0;
 	border-radius: 18.5px;
 	background-color: #a6ce39;
 }

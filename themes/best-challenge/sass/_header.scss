@@ -22,6 +22,7 @@
         width: 100%;
         align-items: center;
         justify-content: space-around;
+        position: relative;
         @include desktop {
             justify-content: space-between;
         }
@@ -29,11 +30,14 @@
     
     .event-date {
         color: white;
+        position: absolute;
+        top: 20px;
+        right: 0;
     }
     
     .logo img {
         height: 40px;
-        width: 200px;
+        width: 276px;
         margin-right: 5px;
     }
     
