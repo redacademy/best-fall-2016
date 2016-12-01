@@ -491,7 +491,7 @@ a {
 .menu-item {
   width: 107px;
   height: 36px;
-  bottom: -1px; }
+  bottom: 0; }
   .menu-item a {
     padding-top: 7px; }
 
@@ -500,11 +500,10 @@ a {
   border-top-left-radius: 18.5px;
   border-top-right-radius: 18.5px; }
 
-.menu-item-51 {
+.menu-item-51, .menu-item-51:hover {
   margin-left: 5px;
   width: 189px;
-  height: 37px;
-  bottom: 0;
+  height: 36px;
   border-radius: 18.5px;
   background-color: #a6ce39; }
 
