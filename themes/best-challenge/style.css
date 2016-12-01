@@ -759,18 +759,46 @@ a {
   text-align: center; }
 
 .post-type-archive-prize .prize-wrapper {
+  width: 80%;
+  margin: 5% auto;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -ms-flex-direction: column;
       flex-direction: column; }
+  .post-type-archive-prize .prize-wrapper .prize-image {
+    /*position: relative;*/ }
+    .post-type-archive-prize .prize-wrapper .prize-image img {
+      width: 230px;
+      height: 230px; }
   @media (min-width: 600px) {
     .post-type-archive-prize .prize-wrapper {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       -ms-flex-direction: row;
           flex-direction: row; } }
+  .post-type-archive-prize .prize-wrapper .single-prize {
+    margin-top: 5%;
+    width: 25%;
+    border: 1px solid white;
+    position: relative; }
+  .post-type-archive-prize .prize-wrapper .prize-title {
+    width: 230px;
+    height: 115px;
+    background-image: url(../../assets/images/grey-image.jpg);
+    position: relative;
+    opacity: 0.9;
+    bottom: 38%; }
+  .post-type-archive-prize .prize-wrapper .prize-description {
+    background-color: grey;
+    bottom: 43px;
+    display: none;
+    position: absolute;
+    height: 230px;
+    width: 230px;
+    z-index: 1;
+    top: 0%; }
 
 .info-404 {
   display: -ms-flexbox;
@@ -1070,7 +1098,10 @@ object {
 .page-id-34 .how-to-participate-wrapper {
   background: #383B4C;
   padding-top: 50px;
-  border-radius: 25% 25% 0 0/10% 10% 0 0; }
+  border-radius: 0px 0px 100px 100px;
+  -moz-border-radius: 0px 0px 100px 100px;
+  -webkit-border-radius: 0px 0px 100px 100px;
+  border: 0px solid #000000; }
 
 .page-id-34 .how-to-participate-wrapper h2 {
   text-transform: uppercase;
@@ -1079,12 +1110,13 @@ object {
 
 .page-id-34 .how-to-participate-wrapper h3 {
   color: white;
-  text-align: center;
+  font-size: 16px;
   width: 60%; }
 
 .page-id-34 .how-to-participate-wrapper p {
   color: white;
-  text-align: center; }
+  text-align: center;
+  font-size: 14px; }
 
 .page-id-34 .challenge-participate-blocks {
   display: -ms-flexbox;
@@ -1096,9 +1128,7 @@ object {
       flex-wrap: wrap;
   -ms-flex-align: center;
       align-items: center;
-  padding-top: 20px;
-  margin-right: 20%;
-  margin-left: 20%; }
+  padding-top: 20px; }
 
 .page-id-34 .single-participate-block {
   -ms-flex: 0 1 34%;
@@ -1115,14 +1145,18 @@ object {
 .page-id-34 .description-wrapper {
   display: -ms-flexbox;
   display: flex;
-  width: 40%; }
+  width: 80%; }
 
 .page-id-34 .description-wrapper p {
-  margin-top: 0rem; }
+  margin-top: 0rem;
+  width: 80%; }
 
 .page-id-34 .single-participate-block i {
   color: white;
   font-size: 32px; }
+
+.page-id-34 .single-participate-block h3 {
+  width: 80%; }
 
 .page-id-34 .subscribeForm {
   display: -ms-flexbox;
@@ -1138,11 +1172,11 @@ object {
   -ms-flex-align: center;
       align-items: center; }
 
-.page-id-34 .font-under-button {
-  font-size: 9px;
+.page-id-34 .font-under-button p {
+  font-size: 7px;
   margin-top: 0; }
 
-.page-id-34 .underline-under-button {
+.page-id-34 .underline-under-button p {
   font-style: italic;
   text-decoration: underline;
   font-size: 10px;
@@ -1176,3 +1210,41 @@ object {
   box-shadow: none;
   line-height: 1.2;
   border-width: 2px; }
+
+.resources-section {
+  background: lightgrey;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-top: 20px; }
+
+.need-resources h2 {
+  text-transform: uppercase; }
+
+.need-resources img {
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 0px solid #000000;
+  width: 200px; }
+
+.need-resources p {
+  padding-left: 10%;
+  padding-right: 10%; }
+
+.need-resources a {
+  text-decoration: none;
+  color: black; }
+
+.testimonial p {
+  padding-left: 10%;
+  padding-right: 10%; }
+
+.testimonial-author {
+  text-align: center; }
