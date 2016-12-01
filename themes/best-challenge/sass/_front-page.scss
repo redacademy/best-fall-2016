@@ -49,9 +49,9 @@
 
 .front-sponsors {
     display: flex;
-    height: 250px;
+    height: auto;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background: #dee2e6;
 }
@@ -63,14 +63,13 @@
 
 .fp-sponsors-img {
     width: 100%;
+    opacity: .5;
     @include desktop {
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
-    div {
-        flex-basis: 10%;
-    }
+    
 }
 
 

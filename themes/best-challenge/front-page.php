@@ -45,10 +45,10 @@ get_header(); ?>
 		</div>
 
 		<div class="front-sponsors">
-				<div class="fp-sponsors-title">
+				<div class="fp-sponsors-title container">
 					<h2 class="uppercase">Sponsored by</h2>
 				</div>
-				<div class="fp-sponsors-img">
+				<div class="fp-sponsors-img container">
 				<div>
 					<img src=" <?php echo get_template_directory_uri() ?>/assets/images/evo-logo.png" alt="logo">
 				</div>
