@@ -494,8 +494,7 @@ a {
       left: auto; }
   .main-navigation li {
     float: left;
-    position: relative;
-    margin: 0 2rem; }
+    position: relative; }
   .main-navigation a {
     display: block;
     text-decoration: none;
@@ -531,14 +530,22 @@ a {
   text-align: right;
   width: 50%; }
 
-.menu-item:hover {
+.menu-item {
   width: 107px;
   height: 36px;
-  background-color: #5a6f83; }
+  bottom: 0; }
+  .menu-item a {
+    padding-top: 7px; }
 
-.menu-item-51 {
+.menu-item:hover {
+  background-color: #5a6f83;
+  border-top-left-radius: 18.5px;
+  border-top-right-radius: 18.5px; }
+
+.menu-item-51, .menu-item-51:hover {
+  margin-left: 5px;
   width: 189px;
-  height: 37px;
+  height: 36px;
   border-radius: 18.5px;
   background-color: #a6ce39; }
 
@@ -555,7 +562,8 @@ a {
 .best-header {
   display: -ms-flexbox;
   display: flex;
-  height: inherit; }
+  height: inherit;
+  position: relative; }
 
 .logo-date {
   height: inherit;
@@ -565,26 +573,28 @@ a {
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  position: relative; }
   @media (min-width: 600px) {
     .logo-date {
       -ms-flex-pack: justify;
           justify-content: space-between; } }
 
 .event-date {
-  color: white; }
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 0; }
 
 .logo img {
   height: 40px;
-  width: 200px;
+  width: 276px;
   margin-right: 5px; }
 
-.menu-menu-1-container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-  margin-right: 10%; }
+.header-nav {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
 
 .page-template-faq .qa-section {
   display: -ms-flexbox;
@@ -784,6 +794,9 @@ a {
           justify-content: space-around;
       -ms-flex-align: center;
           align-items: center; } }
+  .fp-sponsors-img div {
+    -ms-flex-preferred-size: 10%;
+        flex-basis: 10%; }
 
 .impact-results {
   height: 40vh;

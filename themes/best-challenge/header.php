@@ -40,12 +40,12 @@
 				<h2><span>June<span> 4 to 10, 2017</h2>
 			</div>
 		</div>
-</div>
+
 		<div class="header-nav">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
-			
+			</div>
 		</div>
 		</div>
 			</header><!-- #masthead -->
