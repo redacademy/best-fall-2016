@@ -76,9 +76,7 @@ get_header(); ?>
 		
 		</div>
 
-		<div class="instagram-grid container">
 		
-		</div>
 
 		<div class="blog-posts">
 		
@@ -101,6 +99,12 @@ get_header(); ?>
 		<?php endif; ?>
 </div>
 
+<div class="instagram-grid container">
+	<?php echo wdi_feed(array('id'=>'1')); ?>
+		
+		</div>
+
+<?php get_template_part( 'template-parts/green-banner' ); ?>
 
 
 	</main><!-- #main -->
