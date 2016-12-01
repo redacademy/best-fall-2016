@@ -222,6 +222,48 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'montserratextralight';
+  src: url("../../assets/fonts/montserrat-extralight-webfont.eot");
+  src: url("../../assets/fonts/montserrat-extralight-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/montserrat-extralight-webfont.woff2") format("woff2"), url("../../assets/fonts/montserrat-extralight-webfont.woff") format("woff"), url("../../assets/fonts/montserrat-extralight-webfont.svg#montserratextralight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserratlight';
+  src: url("../../assets/fonts/montserrat-light-webfont.eot");
+  src: url("../../assets/fonts/montserrat-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/montserrat-light-webfont.woff2") format("woff2"), url("../../assets/fonts/montserrat-light-webfont.woff") format("woff"), url("../../assets/fonts/montserrat-light-webfont.svg#montserratlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserratmedium';
+  src: url("../../assets/fonts/montserrat-medium-webfont.eot");
+  src: url("../../assets/fonts/montserrat-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/montserrat-medium-webfont.woff2") format("woff2"), url("../../assets/fonts/montserrat-medium-webfont.woff") format("woff"), url("../../assets/fonts/montserrat-medium-webfont.svg#montserratmedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserratregular';
+  src: url("../../assets/fonts/montserrat-regular-webfont.eot");
+  src: url("../../assets/fonts/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../../assets/fonts/montserrat-regular-webfont.woff") format("woff"), url("../../assets/fonts/montserrat-regular-webfont.svg#montserratregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserratsemibold';
+  src: url("../../assets/fonts/montserrat-semibold-webfont.eot");
+  src: url("../../assets/fonts/montserrat-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/montserrat-semibold-webfont.woff2") format("woff2"), url("../../assets/fonts/montserrat-semibold-webfont.woff") format("woff"), url("../../assets/fonts/montserrat-semibold-webfont.svg#montserratsemibold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserratthin';
+  src: url("../../assets/fonts/montserrat-thin-webfont.eot");
+  src: url("../../assets/fonts/montserrat-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/montserrat-thin-webfont.woff2") format("woff2"), url("../../assets/fonts/montserrat-thin-webfont.woff") format("woff"), url("../../assets/fonts/montserrat-thin-webfont.svg#montserratthin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -1062,13 +1104,28 @@ CUSTOM-FIELD-SUITE loop items with four blocks flexed
 ========================*/
   /*=======================
 this is the first form on the page consisting of a sign-up button which takes you to external site
+========================*/
+  /*=======================
+this section has two flexed blocks which links readers to additional resources
+========================*/
+  /*=======================
+this section is a testimonial
 ========================*/ }
-  .page-id-34 entry-header h1 {
-    visibility: hidden; }
+  .page-id-34 .entry-title {
+    display: none; }
+  .page-id-34 .entry-content {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center; }
+  .page-id-34 .entry-content p {
+    font-family: 'montserratextralight', serif;
+    font-size: 12px;
+    font-weight: 100; }
   .page-id-34 .picture-wrapper {
     display: -ms-flexbox;
     display: flex;
-    background: grey;
+    background: url("../../assets/images/keyboard.png") center bottom;
+    background-size: cover;
     height: 200px;
     -ms-flex-align: center;
         align-items: center;
@@ -1095,6 +1152,8 @@ this is the first form on the page consisting of a sign-up button which takes yo
     -ms-flex-align: center;
         align-items: center;
     padding-top: 20px; }
+  .page-id-34 .challenge-benefit-blocks p {
+    font-family: 'montserratextralight'; }
   .page-id-34 .single-benefit-block {
     -ms-flex: 0 1 33%;
     flex: 0 1 33%;
@@ -1110,6 +1169,8 @@ this is the first form on the page consisting of a sign-up button which takes yo
   .page-id-34 .single-benefit-block i {
     font-size: 30px;
     color: black; }
+  .page-id-34 .single-benefit-block h3 {
+    font-family: 'montserratsemibold'; }
   .page-id-34 .custom-field-suite {
     display: -ms-flexbox;
     display: flex;
@@ -1125,15 +1186,18 @@ this is the first form on the page consisting of a sign-up button which takes yo
   .page-id-34 .how-to-participate-wrapper h2 {
     text-transform: uppercase;
     color: white;
-    text-align: center; }
+    text-align: center;
+    font-family: 'montserratsemibold'; }
   .page-id-34 .how-to-participate-wrapper h3 {
     color: white;
     font-size: 16px;
-    width: 60%; }
+    width: 60%;
+    font-family: 'montserratsemibold'; }
   .page-id-34 .how-to-participate-wrapper p {
     color: white;
     text-align: center;
-    font-size: 14px; }
+    font-size: 14px;
+    font-family: 'montserratextralight'; }
   .page-id-34 .challenge-participate-blocks {
     display: -ms-flexbox;
     display: flex;
@@ -1168,7 +1232,8 @@ this is the first form on the page consisting of a sign-up button which takes yo
     color: white;
     font-size: 32px; }
   .page-id-34 .single-participate-block h3 {
-    width: 80%; }
+    width: 80%;
+    font-family: 'montserratsemibold'; }
   .page-id-34 .subscribeForm {
     display: -ms-flexbox;
     display: flex;
@@ -1184,6 +1249,8 @@ this is the first form on the page consisting of a sign-up button which takes yo
   .page-id-34 .font-under-button p {
     font-size: 7px;
     margin-top: 0; }
+  .page-id-34 .underline-under-button {
+    width: 150px; }
   .page-id-34 .underline-under-button p {
     font-style: italic;
     text-decoration: underline;
@@ -1199,10 +1266,6 @@ this is the first form on the page consisting of a sign-up button which takes yo
     width: 10%;
     -ms-flex-align: center;
         align-items: center; }
-  .page-id-34 .entry-content {
-    padding-left: 10%;
-    padding-right: 10%;
-    text-align: center; }
   .page-id-34 #sign-up {
     background-color: #383B4C;
     color: white;
@@ -1215,61 +1278,51 @@ this is the first form on the page consisting of a sign-up button which takes yo
     box-shadow: none;
     line-height: 1.2;
     border-width: 2px; }
-
-/*=======================
-this section has two flexed blocks which links readers to additional resources
-========================*/
-.resources-section {
-  background: lightgrey;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  text-align: center;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  padding-top: 20px; }
-
-.need-resources h2 {
-  text-transform: uppercase; }
-
-.need-resources img {
-  border-radius: 200px 200px 200px 200px;
-  -moz-border-radius: 200px 200px 200px 200px;
-  -webkit-border-radius: 200px 200px 200px 200px;
-  border: 0px solid #000000;
-  width: 200px; }
-
-.need-resources p {
-  padding-left: 10%;
-  padding-right: 10%; }
-
-.need-resources a {
-  text-decoration: none;
-  color: black; }
-
-/*=======================
-this section is a testimonial
-========================*/
-.testimonial {
-  padding-bottom: 30px; }
-
-.testimonial p {
-  padding-left: 25%;
-  padding-right: 25%;
-  padding-top: 3%; }
-
-.testimonial-author {
-  text-align: left; }
-
-.testimonial-author p {
-  padding-left: 25%;
-  padding-right: 0%;
-  padding-top: 0%;
-  margin-bottom: 0;
-  margin-top: 0; }
+  .page-id-34 .resources-section {
+    background: lightgrey;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    padding-top: 20px; }
+  .page-id-34 .need-resources h2 {
+    text-transform: uppercase;
+    font-family: 'montserratsemibold'; }
+  .page-id-34 .need-resources img {
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 0px solid #000000;
+    width: 200px; }
+  .page-id-34 .need-resources p {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: 'montserratextralight'; }
+  .page-id-34 .need-resources a {
+    text-decoration: none;
+    color: black; }
+  .page-id-34 .testimonial {
+    padding-bottom: 30px; }
+  .page-id-34 .testimonial p {
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 3%;
+    font-family: 'montserratextralight';
+    font-size: 18px; }
+  .page-id-34 .testimonial-author {
+    text-align: left; }
+  .page-id-34 .testimonial-author p {
+    padding-left: 25%;
+    padding-right: 0%;
+    padding-top: 0%;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: 'montserratlight'; }
 
 /*=======================
 this is the css for the special template that will add and remove one of two buttons depending on the 

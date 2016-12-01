@@ -8,20 +8,28 @@
 get_header(); ?>
 
 
-<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-			<?php endwhile; // End of the loop. ?>
+				
             </div>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-            <div class="content-area-mobile">
+            
+            <p>.</p>
+            
                 <div class="picture-wrapper">
                     <h1>get your workplace involved!</h1>
                 </div>
-            </div>
+           
+
+                <?php while ( have_posts() ) : the_post(); ?>
+                <?php get_template_part( 'template-parts/content', 'page' ); ?>
+                <?php endwhile; // End of the loop. ?>
+           
+
+
+
                 <div class="challenge-benefit-blocks">
                     <div class="single-benefit-block">
                         <img></img><i class="fa fa-bicycle" aria-hidden="true"></i>
@@ -111,27 +119,14 @@ get_header(); ?>
             </div>
         </div>
                 <div class="testimonial">
-                        <p><em>"Several coworkers told me commuting by bike used to be a remote idea to them. They were glad to try it 
+                        <p><em>"Several co-workers told me commuting by bike used to be a remote idea to them. They were glad to try it 
                             during the Commuter Challenge"</em></p>
                     <div class="testimonial-author">
                         <p>Allison W</p>
                         <p>Commuter Challenge Coordinator</p>
                     </div>
                 </div>
-                <!-- This is the beginning of a template part that toggles a button on and off -->
-                    <div class="green-banner">
-                        <div>
-                            <p>this is some text that will end up being very annoying I believe</p>
-                            <p>this is some other text that will be even more annoying</p>
-                        </div>
-                        <div class="button1">
-                            <input type="submit" name="subscribe" value="thisOneMayDisappear" id="go-green-button">
-                        </div>
-                        <div class="button2">
-                            <input type="submit" name="subscribe" value="thisOneMightToo" id="go-green-button">
-                        </div>
-                    </div>
-                <!-- This is the end of that template part  -->
+    <?php get_template_part( 'template-parts/green-banner' ); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
