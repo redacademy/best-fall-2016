@@ -989,13 +989,14 @@ object {
   background-color: #383B4C;
   color: white;
   cursor: pointer;
-  padding: .25rem 1rem;
-  border: 0;
+  padding: .25rem 2rem;
+  border: 1;
   border-radius: 25px;
   font-family: ralewaylight, sans-serif;
   font-size: 0.8rem;
-  font-style: normal;
-  line-height: 1.5; }
+  box-shadow: none;
+  line-height: 1.2;
+  border-width: 2px; }
 
 #your-email {
   width: 60%; }
@@ -1007,181 +1008,178 @@ object {
       justify-content: space-between;
   padding-bottom: 0.8rem; }
 
-.page-id-34 .picture-wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  background: grey;
-  height: 200px;
-  -ms-flex-align: center;
-      align-items: center;
-  border-radius: 0 200% 250%/0 0 200% 200%;
-  -ms-flex-pack: center;
-      justify-content: center;
-  padding-bottom: 20px;
-  margin-bottom: 4px; }
+/*=======================
+this is the css unique to page-id-34
+========================*/
+.page-id-34 {
+  /*=======================
+this is the first image on page
+========================*/
+  /*=======================
+this is a section with three blocks flexed explaining the benefits of the Commuter Challenge
+========================*/
+  /*=======================
+CUSTOM-FIELD-SUITE loop items with four blocks flexed
+========================*/
+  /*=======================
+this is the first form on the page consisting of a sign-up button which takes you to external site
+========================*/ }
+  .page-id-34 entry-header h1 {
+    visibility: hidden; }
+  .page-id-34 .picture-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    background: grey;
+    height: 200px;
+    -ms-flex-align: center;
+        align-items: center;
+    border-radius: 0 200% 250%/0 0 200% 200%;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding-bottom: 20px;
+    margin-bottom: 4px; }
+  .page-id-34 .picture-wrapper h1 {
+    line-height: 3.5rem;
+    color: white;
+    font-size: 44px;
+    width: 60%;
+    text-align: center;
+    text-transform: uppercase; }
+  .page-id-34 .challenge-benefit-blocks {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    padding-top: 20px; }
+  .page-id-34 .single-benefit-block {
+    -ms-flex: 0 1 33%;
+    flex: 0 1 33%;
+    max-width: 33%;
+    -ms-flex-align: center;
+        align-items: center; }
+  .page-id-34 .single-benefit-block {
+    -ms-flex: 0 1 33%;
+    flex: 0 1 33%;
+    max-width: 33%;
+    -ms-flex-align: center;
+        align-items: center; }
+  .page-id-34 .single-benefit-block i {
+    font-size: 30px;
+    color: black; }
+  .page-id-34 .custom-field-suite {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .page-id-34 .how-to-participate-wrapper {
+    background: #383B4C;
+    padding-top: 50px;
+    border-radius: 0 0 200% 200%/0 0 50% 50%;
+    border: 0px solid #000000; }
+  .page-id-34 .how-to-participate-wrapper h2 {
+    text-transform: uppercase;
+    color: white;
+    text-align: center; }
+  .page-id-34 .how-to-participate-wrapper h3 {
+    color: white;
+    font-size: 16px;
+    width: 60%; }
+  .page-id-34 .how-to-participate-wrapper p {
+    color: white;
+    text-align: center;
+    font-size: 14px; }
+  .page-id-34 .challenge-participate-blocks {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-align: center;
+        align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px; }
+  .page-id-34 .single-participate-block {
+    -ms-flex: 0 1 49%;
+    flex: 0 1 49%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    height: 400px; }
+  .page-id-34 .description-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    width: 40%; }
+  .page-id-34 .description-wrapper p {
+    margin-top: 0rem; }
+  .page-id-34 .single-participate-block i {
+    color: white;
+    font-size: 32px; }
+  .page-id-34 .single-participate-block h3 {
+    width: 80%; }
+  .page-id-34 .subscribeForm {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .page-id-34 .signUpForm {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-align: center;
+        align-items: center; }
+  .page-id-34 .font-under-button p {
+    font-size: 7px;
+    margin-top: 0; }
+  .page-id-34 .underline-under-button p {
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 10px;
+    margin-top: 0; }
+  .page-id-34 #sign-up-form {
+    -ms-flex-pack: center;
+        justify-content: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 10%;
+    -ms-flex-align: center;
+        align-items: center; }
+  .page-id-34 .entry-content {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center; }
+  .page-id-34 #sign-up {
+    background-color: #383B4C;
+    color: white;
+    cursor: pointer;
+    padding: .25rem 2rem;
+    border: 1;
+    border-radius: 25px;
+    font-family: ralewaylight, sans-serif;
+    font-size: 0.8rem;
+    box-shadow: none;
+    line-height: 1.2;
+    border-width: 2px; }
 
-.page-id-34 .picture-wrapper h1 {
-  line-height: 3.5rem;
-  color: white;
-  font-size: 44px;
-  width: 60%;
-  text-align: center;
-  text-transform: uppercase; }
-
-.page-id-34 .challenge-benefit-blocks {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  text-align: center;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  padding-top: 20px; }
-
-.page-id-34 .single-benefit-block {
-  -ms-flex: 0 1 33%;
-  flex: 0 1 33%;
-  max-width: 33%;
-  -ms-flex-align: center;
-      align-items: center; }
-
-.page-id-34 .single-benefit-block {
-  -ms-flex: 0 1 33%;
-  flex: 0 1 33%;
-  max-width: 33%;
-  -ms-flex-align: center;
-      align-items: center; }
-
-.page-id-34 .single-benefit-block i {
-  font-size: 30px;
-  color: black; }
-
-.page-id-34 .custom-field-suite {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.page-id-34 .how-to-participate-wrapper {
-  background: #383B4C;
-  padding-top: 50px;
-  border-radius: 0px 0px 100px 100px;
-  -moz-border-radius: 0px 0px 100px 100px;
-  -webkit-border-radius: 0px 0px 100px 100px;
-  border: 0px solid #000000; }
-
-.page-id-34 .how-to-participate-wrapper h2 {
-  text-transform: uppercase;
-  color: white;
-  text-align: center; }
-
-.page-id-34 .how-to-participate-wrapper h3 {
-  color: white;
-  font-size: 16px;
-  width: 60%; }
-
-.page-id-34 .how-to-participate-wrapper p {
-  color: white;
-  text-align: center;
-  font-size: 14px; }
-
-.page-id-34 .challenge-participate-blocks {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  text-align: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-align: center;
-      align-items: center;
-  padding-top: 20px; }
-
-.page-id-34 .single-participate-block {
-  -ms-flex: 0 1 34%;
-  flex: 0 1 34%;
-  -ms-flex-item-align: center;
-      align-self: center;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center; }
-
-.page-id-34 .description-wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  width: 80%; }
-
-.page-id-34 .description-wrapper p {
-  margin-top: 0rem;
-  width: 80%; }
-
-.page-id-34 .single-participate-block i {
-  color: white;
-  font-size: 32px; }
-
-.page-id-34 .single-participate-block h3 {
-  width: 80%; }
-
-.page-id-34 .subscribeForm {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center; }
-
-.page-id-34 .signUpForm {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-align: center;
-      align-items: center; }
-
-.page-id-34 .font-under-button p {
-  font-size: 7px;
-  margin-top: 0; }
-
-.page-id-34 .underline-under-button p {
-  font-style: italic;
-  text-decoration: underline;
-  font-size: 10px;
-  margin-top: 0; }
-
-.page-id-34 #sign-up-form {
-  -ms-flex-pack: center;
-      justify-content: center;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  width: 10%;
-  -ms-flex-align: center;
-      align-items: center; }
-
-.page-id-34 .entry-content {
-  padding-left: 10%;
-  padding-right: 10%;
-  text-align: center; }
-
-.page-id-34 #sign-up {
-  background-color: #383B4C;
-  color: white;
-  cursor: pointer;
-  padding: .25rem 2rem;
-  border: 1;
-  border-radius: 25px;
-  font-family: ralewaylight, sans-serif;
-  font-size: 0.8rem;
-  box-shadow: none;
-  line-height: 1.2;
-  border-width: 2px; }
-
+/*=======================
+this section has two flexed blocks which links readers to additional resources
+========================*/
 .resources-section {
   background: lightgrey;
   display: -ms-flexbox;
@@ -1213,9 +1211,55 @@ object {
   text-decoration: none;
   color: black; }
 
+/*=======================
+this section is a testimonial
+========================*/
+.testimonial {
+  padding-bottom: 30px; }
+
 .testimonial p {
-  padding-left: 10%;
-  padding-right: 10%; }
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 3%; }
 
 .testimonial-author {
-  text-align: center; }
+  text-align: left; }
+
+.testimonial-author p {
+  padding-left: 25%;
+  padding-right: 0%;
+  padding-top: 0%;
+  margin-bottom: 0;
+  margin-top: 0; }
+
+/*=======================
+this is the css for the special template that will add and remove one of two buttons depending on the 
+users choice
+========================*/
+.green-banner {
+  background: lawngreen;
+  height: 200px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+#go-green-button {
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  padding: .25rem 2rem;
+  border: 1;
+  border-radius: 25px;
+  font-family: ralewaylight, sans-serif;
+  font-size: 1rem;
+  box-shadow: none;
+  line-height: 1.7;
+  border-width: 2px;
+  border-color: black;
+  text-shadow: none; }
+
+.button2 {
+  visibility: visible; }

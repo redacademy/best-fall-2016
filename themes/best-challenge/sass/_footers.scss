@@ -87,13 +87,14 @@ padding-bottom:0.8rem;
     background-color: #383B4C;
     color: white;
     cursor: pointer;
-    padding: .25rem 1rem;
-    border: 0;
+    padding: .25rem 2rem;
+    border: 1;
     border-radius: 25px;
     font-family: ralewaylight, sans-serif;
     font-size: 0.8rem;
-    font-style: normal;
-    line-height: 1.5;
+    box-shadow:none;
+    line-height: 1.2;
+    border-width:2px;
 
 }
 
