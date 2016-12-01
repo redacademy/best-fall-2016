@@ -513,7 +513,8 @@ a {
 .best-header {
   display: -ms-flexbox;
   display: flex;
-  height: inherit; }
+  height: inherit;
+  position: relative; }
 
 .logo-date {
   height: inherit;
@@ -537,12 +538,10 @@ a {
   width: 200px;
   margin-right: 5px; }
 
-.menu-menu-1-container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-  margin-right: 10%; }
+.header-nav {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
 
 .page-template-faq .qa-section {
   display: -ms-flexbox;

@@ -13,6 +13,7 @@
     .best-header {
         display: flex;
         height: inherit;
+        position: relative;
     }
     
     .logo-date {
@@ -36,9 +37,10 @@
         margin-right: 5px;
     }
     
-    // Main Menu 
-    .menu-menu-1-container {
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 10%;
+    // Main Menu //
+    
+    .header-nav {
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
