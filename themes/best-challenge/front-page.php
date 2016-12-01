@@ -58,7 +58,7 @@ get_header(); ?>
 				<div>
 					<img src=" <?php echo get_template_directory_uri() ?>/assets/images/bc-logo.png" alt="logo">
 				</div>
-				<div>
+				<div class="modologo">
 					<img src=" <?php echo get_template_directory_uri() ?>/assets/images/modo-logo.png" alt="logo">
 				</div>
 				<div>

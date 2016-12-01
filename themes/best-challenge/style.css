@@ -742,6 +742,9 @@ a {
           justify-content: space-around;
       -ms-flex-align: center;
           align-items: center; } }
+  .fp-sponsors-img div {
+    -ms-flex-preferred-size: 10%;
+        flex-basis: 10%; }
 
 .impact-results {
   height: 40vh;
