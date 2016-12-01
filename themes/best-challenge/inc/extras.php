@@ -36,8 +36,11 @@ return $title;
 	
 add_filter( 'get_the_archive_title', 'display_custom_archive_title');
 
-/**
-* Nav menu
+/** 
+* Display custom taxonomies 
 */
 
+function display_taxonomy_terms($post_type, $display = false) {
+    global $post;
+}
  
