@@ -15,6 +15,8 @@
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
                 rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
                 crossorigin="anonymous">
+				 <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Montserrat">
 
 	<?php wp_head(); ?>
 	</head>
@@ -38,12 +40,12 @@
 				<h2><span>June<span> 4 to 10, 2017</h2>
 			</div>
 		</div>
-</div>
+
 		<div class="header-nav">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
-			
+			</div>
 		</div>
 		</div>
 			</header><!-- #masthead -->
