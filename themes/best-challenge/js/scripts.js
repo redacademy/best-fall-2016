@@ -10,4 +10,15 @@
   $('.question').on('mouseleave', function(){
     $('.answer').css('display', 'none');
   });
+ 
+ //function to show prize description on click 
+
+ $('.single-prize').on('click',function(event){
+     event.preventDefault();
+     $(this).find('.prize-description').css('display', 'initial');
+ });
+  $('.prize-description').mouseleave (function(){
+    $(this).css('display', 'none');
+ });
+
   })( jQuery );
