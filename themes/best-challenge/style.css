@@ -512,9 +512,11 @@ a {
 
 .best-header {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  height: inherit; }
 
 .logo-date {
+  height: inherit;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
