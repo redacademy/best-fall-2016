@@ -45,10 +45,10 @@ get_header(); ?>
 		</div>
 
 		<div class="front-sponsors">
-				<div class="fp-sponsors-title">
+				<div class="fp-sponsors-title container">
 					<h2 class="uppercase">Sponsored by</h2>
 				</div>
-				<div class="fp-sponsors-img">
+				<div class="fp-sponsors-img container">
 				<div>
 					<img src=" <?php echo get_template_directory_uri() ?>/assets/images/evo-logo.png" alt="logo">
 				</div>
@@ -76,9 +76,7 @@ get_header(); ?>
 		
 		</div>
 
-		<div class="instagram-grid container">
 		
-		</div>
 
 		<div class="blog-posts">
 		
@@ -101,6 +99,12 @@ get_header(); ?>
 		<?php endif; ?>
 </div>
 
+<div class="instagram-grid container">
+	<?php echo wdi_feed(array('id'=>'1')); ?>
+		
+		</div>
+
+<?php get_template_part( 'template-parts/green-banner' ); ?>
 
 
 	</main><!-- #main -->
