@@ -1,0 +1,42 @@
+
+
+/*=======================
+this is the css for the special template that will add and remove one of two buttons depending on the 
+users choice
+========================*/
+
+
+
+.green-banner{
+background:lawngreen;
+height:200px;
+display:flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#go-green-button{
+
+    background-color:transparent;
+    color: black;
+    cursor: pointer;
+    padding: .25rem 2rem;
+    border: 1;
+    border-radius: 25px;
+    font-family: ralewaylight, sans-serif;
+    font-size: 1rem;
+    box-shadow:none;
+    line-height: 1.7;
+    border-width:2px;
+    border-color:black;
+    text-shadow:none;
+
+    
+}
+
+.button2 {
+
+   visibility: visible;
+}
