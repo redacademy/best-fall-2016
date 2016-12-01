@@ -4,26 +4,27 @@
     
     .site-header {
         background: #303B46;
-        height: 200px;
+        height: 10vh;
+        @include desktop {
+            height: 144px;
+        }
     }
     
     .best-header {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
     }
     
     .logo-date {
         display: flex;
+        width: 100%;
         align-items: center;
-    }
-    
-    .logo {
-        display: flex;
+        justify-content: space-around;
+        @include desktop {
+            justify-content: space-between;
+        }
     }
     
     .event-date {
-        display: flex;
         color: white;
     }
     
@@ -31,4 +32,11 @@
         height: 40px;
         width: 200px;
         margin-right: 5px;
+    }
+    
+    // Main Menu 
+    .menu-menu-1-container {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10%;
     }
