@@ -69,23 +69,30 @@ get_header(); ?>
                     <div class="signUpForm">
                 	    <form id="sign-up-form">
 						    <input type="submit" name="subscribe" value="Sign Up" id="sign-up">
-                            <p class="font-under-button">on Canada Site</p>
-                            <p class="underline-under-button">or log in on the canada site</p>
+                            <div class="font-under-button"><p>on Canada Site</p></div>
+                            <div class="underline-under-button"><p>or log in on the canada site</p><div>
                 	    </form>
             	    </div>
                 </div>
+            </div>
+        </div>
 
 <!-- This is the end of the custom field code -->
 		
-             
-                    <div class="need-resources">
+             <div class="resources-section">
+
+                 <div class="need-resources">
+                        <img src="http://images.all-free-download.com/images/graphiclarge/yin_yang_symbol_black_round_sticker_311430.jpg"/>
+                    
                         <h2>need resources?</h2>
                         <p>Check out our resources page for everything you need to know about engaging your coworkers and 
                             promoting the event (email templates, posters and more!)
                         </p>
                         <div class="resources-link">
-                            <a href="">Check out resources ></a>
+                           <a href="">Check out resources ></a>
                         </div>
+                        <div class="need-prizes">
+                             <img src="http://images.all-free-download.com/images/graphiclarge/yin_yang_symbol_black_round_sticker_311430.jpg"/>
                         <h2>prizes for everyone</h2>
                         <p>We have prizes for everyone-those who are trying something new and those who are already commuting 
                             sustainably, high-achievers, and lucky ones, teams and individuals. Check them out!
@@ -94,6 +101,8 @@ get_header(); ?>
                             <a href="">Check out prizes ></a>
                         </div>
                     </div>
+                    </div>
+                    </div>
                     <div class="testimonial">
                         <p>"Several coworkers told me commuting by bike used to be a remote idea to them. They were glad to try it 
                             during the Commuter Challenge"</p>
@@ -101,6 +110,8 @@ get_header(); ?>
                         <p>Allison W</p>
                         <p>Commuter Challenge Coordinator</p>
                     </div>
+                
+           
 
 
 			<!--<?php while ( have_posts() ) : the_post(); ?>
