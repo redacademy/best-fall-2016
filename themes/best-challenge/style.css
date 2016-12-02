@@ -945,7 +945,7 @@ object {
 --------------------------------------------------------------*/
 .redirect-page-area {
   height: 100vh;
-  background: lawngreen;
+  background: #a6ce39;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -995,6 +995,18 @@ object {
 .resources a:hover {
   color: brown; }
 
+.about-best {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding-bottom: 0;
+  margin-bottom: 0; }
+
 .footer-column {
   display: -ms-flexbox;
   display: flex;
@@ -1004,14 +1016,20 @@ object {
       justify-content: center; }
 
 .footer-content {
-  padding-top: 20px; }
+  padding-top: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding-right: 5%;
+  padding-left: 5%; }
 
 .footer-section {
-  padding-left: 15%;
-  padding-right: 15%;
-  background-color: #60657F; }
-
-.footer-section {
+  background-color: #5a6f83;
   -webkit-margin-before: 0.3em;
   -webkit-margin-after: 0.3em;
   color: white; }
@@ -1035,34 +1053,75 @@ object {
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  width: 120%; }
 
 .footer-social i {
   color: white;
   padding: 1rem; }
 
 .para-heading p {
-  padding-bottom: 5px;
   font-family: 'montserrat';
-  font-weight: 600; }
+  font-weight: 600;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-bottom: 4px; }
+
+.para-heading p:first-child {
+  -ms-flex-direction: row;
+      flex-direction: row; }
+
+.para-heading span {
+  padding-left: 10px; }
 
 .para-heading a {
   font-family: 'montserrat';
-  font-weight: 'bold';
-  text-transform: capitalize; }
+  font-weight: 300;
+  text-transform: capitalize;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+para-content {
+  margin: 0; }
 
 .para-content p {
   font-family: 'montserrat';
-  font-weight: 200; }
+  font-weight: 200;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0; }
 
 .logo-image i {
   font-size: 2rem; }
 
 .about-best {
-  padding-bottom: 1rem; }
+  padding-bottom: 0.5rem; }
 
-.learn-more {
-  padding-bottom: 0.8rem; }
+.commuterChallenge-contact-logos {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding-top: 10px; }
+
+.commuterChallenge-contact-logos i {
+  padding: 5px; }
 
 .contact-us {
   padding-bottom: 0.8rem; }
@@ -1071,31 +1130,96 @@ object {
   padding-bottom: 0.8rem; }
 
 .newsletter-subscription {
-  padding-bottom: 0.8rem; }
+  padding-bottom: 1rem; }
 
+/*=======================
+FORM at bottom of footer
+========================*/
 #subscribe {
+  background-color: #383B4C;
+  color: white;
+  cursor: pointer;
+  padding: .5rem 2rem;
+  border: 1;
+  border-radius: 25px;
+  font-family: 'montserrat';
+  font-weight: 100;
+  font-size: 0.8rem;
+  box-shadow: none;
+  line-height: 1.2;
+  border-width: 0px; }
+
+#newsLetter-formId {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding-bottom: 0.8rem;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+#sign-up-form {
+  -ms-flex-pack: center;
+      justify-content: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 10%;
+  -ms-flex-align: center;
+      align-items: center; }
+
+#sign-up {
   background-color: #383B4C;
   color: white;
   cursor: pointer;
   padding: .25rem 2rem;
   border: 1;
   border-radius: 25px;
-  font-family: 'montserrat';
-  font-weight: 'light';
+  font-family: ralewaylight, sans-serif;
   font-size: 0.8rem;
   box-shadow: none;
   line-height: 1.2;
   border-width: 2px; }
 
-#your-email {
-  width: 60%; }
-
-#formId {
+.subscribeForm-for-newsLetter {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  padding-bottom: 0.8rem; }
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-align: center; }
+
+.sign-up-email {
+  padding-bottom: 10px; }
+
+/*=======================
+INPUT field
+========================*/
+#your-email {
+  border-radius: 10px 10px 10px 10px;
+  background-color: lightgray; }
+
+::-webkit-input-placeholder {
+  color: #383B4C;
+  padding: 1rem 1rem; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #383B4C;
+  padding: 1rem 1rem; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #383B4C;
+  padding: 1rem 1rem; }
+
+:-ms-input-placeholder {
+  color: #383B4C;
+  padding: 1rem 1rem; }
 
 /*=======================
 this is the css unique to page-id-34
@@ -1348,7 +1472,7 @@ this is the css for the special template that will add and remove one of two but
 users choice
 ========================*/
 .green-banner {
-  background: lawngreen;
+  background: #a6ce39;
   height: 200px;
   display: -ms-flexbox;
   display: flex;
@@ -1357,6 +1481,17 @@ users choice
   -ms-flex-pack: center;
       justify-content: center; }
 
+.green-banner-data {
+  text-align: center; }
+
+.green-banner-data p:first-child {
+  text-transform: uppercase;
+  font-weight: 500; }
+
+.green-banner-data p {
+  font-family: 'montserrat', sans-serif;
+  font-weight: 100; }
+
 #go-green-button {
   background-color: transparent;
   color: black;
@@ -1364,7 +1499,7 @@ users choice
   padding: .25rem 2rem;
   border: 1;
   border-radius: 25px;
-  font-family: ralewaylight, sans-serif;
+  font-family: 'montserrat', sans-serif;
   font-size: 1rem;
   box-shadow: none;
   line-height: 1.7;
@@ -1374,3 +1509,16 @@ users choice
 
 .button2 {
   visibility: visible; }
+
+.green-banner-flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.green-buttons {
+  text-align: center;
+  margin-bottom: 10px; }
+
+.button1 {
+  padding-bottom: 5px; }

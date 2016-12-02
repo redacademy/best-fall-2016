@@ -1,30 +1,38 @@
 
+.about-best{
 
-
-
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding-bottom:0;
+    margin-bottom:0;
+}
 
 .footer-column{
     display:flex;
     flex-direction: column;
     justify-content:center;
+  
 }
 
 .footer-content{
     padding-top:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+      padding-right:5%;
+    padding-left:5%;
+
 }
 
 .footer-section{
-    padding-left:15%;
-    padding-right:15%;
-    background-color:#60657F;
-}
-
-.footer-section {
+    background-color: #5a6f83;
     -webkit-margin-before: 0.3em;
     -webkit-margin-after: 0.3em;
     color:white;
-   
-    }
+}
 
 .footer-section span{
     text-transform:uppercase;
@@ -48,6 +56,9 @@
     display:flex;
     justify-content:center;
     align-items:center;
+    width:120%;
+
+
 }
 
 .footer-social i{
@@ -56,34 +67,71 @@
 }
 
 .para-heading p{
-    padding-bottom:5px;
+    
     font-family:'montserrat';
     font-weight: 600;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:4px;
+   
     
+}
+.para-heading p:first-child{
+    flex-direction:row;
+
+}
+.para-heading span{
+    padding-left:10px;
 }
 
 .para-heading a{
     font-family: 'montserrat';
-    font-weight:'bold';
+    font-weight:300;
     text-transform: capitalize;
+          display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
 }
+
+para-content{
+    margin:0;
+}
+
 
 .para-content p{
-font-family: 'montserrat';
+    font-family: 'montserrat';
     font-weight:200;
+    text-align:center;
+    margin-top:0;
+    margin-bottom:0;
 
 }
+
+
 
 .logo-image i{
     font-size:2rem;
 }
 
 .about-best {
-    padding-bottom:1rem;
+    padding-bottom:0.5rem;
 }
-.learn-more {
-    padding-bottom:0.8rem;
+
+.commuterChallenge-contact-logos{
+          display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    padding-top:10px;
 }
+
+.commuterChallenge-contact-logos i{
+    padding:5px;
+}
+
 
 .contact-us{
     padding-bottom:0.8rem;
@@ -93,34 +141,109 @@ font-family: 'montserrat';
     padding-bottom:0.8rem;
 }
 .newsletter-subscription{
-padding-bottom:0.8rem;
+    padding-bottom:1rem;
 }
 
+
+    /*=======================
+FORM at bottom of footer
+========================*/
+
+
+
+
+
 #subscribe {
+    background-color:#383B4C;;
+    color: white;
+    cursor: pointer;
+    padding: .5rem 2rem;
+    border: 1;
+    border-radius: 25px;
+    font-family: 'montserrat';
+    font-weight:100;
+    font-size: 0.8rem;
+    box-shadow:none;
+    line-height: 1.2;
+    border-width:0px;
+
+}
+
+
+
+#newsLetter-formId{
+    display:flex;
+    justify-content:space-between;
+    padding-bottom:0.8rem;
+    flex-direction: column;
+}
+
+#sign-up-form{
+    justify-content:center;
+    display:flex;
+    flex-direction:column;
+    width:10%;
+    align-items:center;
+}
+
+#sign-up {
     background-color: #383B4C;
     color: white;
     cursor: pointer;
     padding: .25rem 2rem;
     border: 1;
     border-radius: 25px;
-    font-family: 'montserrat';
-    font-weight:'light';
+    font-family: ralewaylight, sans-serif;
     font-size: 0.8rem;
     box-shadow:none;
     line-height: 1.2;
-    border-width:2px;
+    border-width:2px;;
+    }
+
+
+
+.subscribeForm-for-newsLetter{
+          display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.sign-up-email{
+    padding-bottom:10px;
 
 }
+
+    /*=======================
+INPUT field
+========================*/
 
 #your-email{
-    width:60%;
+    border-radius: 10px 10px 10px 10px;
+    background-color:lightgray;
+    
 }
 
 
 
-#formId{
+::-webkit-input-placeholder {
+   color: #383B4C;
+   padding: 1rem 1rem;
+}
 
-    display:flex;
-    justify-content:space-between;
-    padding-bottom:0.8rem;
+:-moz-placeholder { /* Firefox 18- */
+   color: #383B4C;
+      padding: 1rem 1rem;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #383B4C;  
+    padding: 1rem 1rem;
+}
+
+:-ms-input-placeholder {  
+   color: #383B4C;  
+    padding: 1rem 1rem;
+
 }
