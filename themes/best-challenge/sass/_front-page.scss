@@ -74,6 +74,42 @@
     background: orange;
 }
 
+/// ------------ Blog Post Area --------- //////
+.best-journal-container {
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+.best-post-thumb {
+    display: flex;
+    max-width: 640px;
+    flex-basis: 48%;
+    img {
+        width: 640px;
+        height: 360px;
+        margin-top: 3rem;
+    }
+}
+
+.best-post-info {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 48%;
+}
+
+.best-post-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #d99054;
+}
+
+.best-post-price {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
 ///---------------- Instagram Area ---------- ///
 .instagram-grid {
     max-width: 90%;
