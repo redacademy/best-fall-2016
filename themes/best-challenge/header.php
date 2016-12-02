@@ -32,7 +32,7 @@
 		<div class="best-header container">
 			<div class="logo-date">				
 				<div class="logo">
-						<img src=" <?php echo get_template_directory_uri() ?>/assets/images/cc-group.png" alt="logo">
+						<img src=" <?php echo get_template_directory_uri() ?>/assets/images/logotitlebc.png" alt="logo">
 				</div>
 			<div class="event-date">
 				<h2><span>June<span> 4 to 10, 2017</h2>
