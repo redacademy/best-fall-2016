@@ -313,7 +313,9 @@ html {
 
 body {
   background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
+  /* Fallback for when there is no custom background color defined. */
+  font-size: 16px;
+  font-family: "montserrat", "sans"; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -783,14 +785,26 @@ a {
   background: brown; }
 
 .page-id-57 .page-heading {
-  /*background-image: url(../../assets/images/grey-image.jpg);*/
-  width: 1440px;
+  background-image: url(../../assets/images/gift.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
   height: 252px;
-  background-color: #5a6f83; }
+  color: white;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
 
 .page-id-57 h1, .page-id-57 h2 {
+  font-size: 2.62rem;
   text-align: center;
   width: 100%; }
+
+.page-id-57 p {
+  font-size: 1.62rem; }
 
 .page-id-57 .prize-wrapper {
   width: 80%;
