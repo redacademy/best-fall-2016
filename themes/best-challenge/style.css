@@ -1047,12 +1047,10 @@ object {
   padding-right: 15%;
   background-color: #60657F; }
 
-.footer-section p {
+.footer-section {
   -webkit-margin-before: 0.3em;
   -webkit-margin-after: 0.3em;
-  font-family: 'helvetica';
-  color: white;
-  font-family: sans "sans"; }
+  color: white; }
 
 .footer-section span {
   text-transform: uppercase; }
@@ -1060,7 +1058,7 @@ object {
 .footer-section a {
   color: white;
   text-decoration: none;
-  font-family: 'sans'; }
+  font-family: 'montserrat'; }
 
 .footer-section a:hover {
   color: brown; }
@@ -1079,14 +1077,19 @@ object {
   color: white;
   padding: 1rem; }
 
-.para-heading {
+.para-heading p {
   padding-bottom: 5px;
-  font-weight: 800; }
+  font-family: 'montserrat';
+  font-weight: 600; }
 
 .para-heading a {
-  font-family: 'open-sans';
-  font-weight: 800;
+  font-family: 'montserrat';
+  font-weight: 'bold';
   text-transform: capitalize; }
+
+.para-content p {
+  font-family: 'montserrat';
+  font-weight: 200; }
 
 .logo-image i {
   font-size: 2rem; }
@@ -1113,7 +1116,8 @@ object {
   padding: .25rem 2rem;
   border: 1;
   border-radius: 25px;
-  font-family: ralewaylight, sans-serif;
+  font-family: 'montserrat';
+  font-weight: 'light';
   font-size: 0.8rem;
   box-shadow: none;
   line-height: 1.2;
@@ -1165,8 +1169,8 @@ this section is a testimonial
     text-align: center; }
   .page-id-34 .entry-content p {
     font-family: 'montserrat', serif;
-    font-size: 12px;
-    font-weight: 100; }
+    font-weight: 300;
+    font-size: 20px; }
   .page-id-34 .picture-wrapper {
     display: -ms-flexbox;
     display: flex;
@@ -1199,7 +1203,8 @@ this section is a testimonial
         align-items: center;
     padding-top: 20px; }
   .page-id-34 .challenge-benefit-blocks p {
-    font-family: 'montserratextralight'; }
+    font-family: 'montserrat';
+    font-weight: 300; }
   .page-id-34 .single-benefit-block {
     -ms-flex: 0 1 33%;
     flex: 0 1 33%;
@@ -1216,7 +1221,7 @@ this section is a testimonial
     font-size: 30px;
     color: black; }
   .page-id-34 .single-benefit-block h3 {
-    font-family: 'montserratsemibold'; }
+    font-family: 'montserrat'; }
   .page-id-34 .custom-field-suite {
     display: -ms-flexbox;
     display: flex;
@@ -1233,17 +1238,18 @@ this section is a testimonial
     text-transform: uppercase;
     color: white;
     text-align: center;
-    font-family: 'montserratsemibold'; }
+    font-family: 'montserrat'; }
   .page-id-34 .how-to-participate-wrapper h3 {
     color: white;
     font-size: 16px;
     width: 60%;
-    font-family: 'montserratsemibold'; }
+    font-family: 'montserrat'; }
   .page-id-34 .how-to-participate-wrapper p {
     color: white;
     text-align: center;
     font-size: 14px;
-    font-family: 'montserratextralight'; }
+    font-family: 'montserrat';
+    font-weight: 300; }
   .page-id-34 .challenge-participate-blocks {
     display: -ms-flexbox;
     display: flex;
@@ -1278,7 +1284,7 @@ this section is a testimonial
     font-size: 32px; }
   .page-id-34 .single-participate-block h3 {
     width: 80%;
-    font-family: 'montserratsemibold'; }
+    font-family: 'montserrat'; }
   .page-id-34 .subscribeForm {
     display: -ms-flexbox;
     display: flex;
@@ -1338,7 +1344,7 @@ this section is a testimonial
     padding-top: 20px; }
   .page-id-34 .need-resources h2 {
     text-transform: uppercase;
-    font-family: 'montserratsemibold'; }
+    font-family: 'montserrat'; }
   .page-id-34 .need-resources img {
     border-radius: 200px 200px 200px 200px;
     -moz-border-radius: 200px 200px 200px 200px;
@@ -1348,7 +1354,8 @@ this section is a testimonial
   .page-id-34 .need-resources p {
     padding-left: 10%;
     padding-right: 10%;
-    font-family: 'montserratextralight'; }
+    font-family: 'montserrat';
+    font-weight: 300; }
   .page-id-34 .need-resources a {
     text-decoration: none;
     color: black; }
@@ -1358,7 +1365,8 @@ this section is a testimonial
     padding-left: 25%;
     padding-right: 25%;
     padding-top: 3%;
-    font-family: 'montserratextralight';
+    font-family: 'montserrat';
+    font-weight: 300;
     font-size: 18px; }
   .page-id-34 .testimonial-author {
     text-align: left; }
@@ -1368,7 +1376,8 @@ this section is a testimonial
     padding-top: 0%;
     margin-bottom: 0;
     margin-top: 0;
-    font-family: 'montserratlight'; }
+    font-family: 'montserrat';
+    font-weight: 300; }
 
 /*=======================
 this is the css for the special template that will add and remove one of two buttons depending on the 
