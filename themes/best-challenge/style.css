@@ -1097,6 +1097,9 @@ this is the css unique to page-id-34
 ========================*/
 .page-id-34 {
   /*=======================
+this is the css for the redirect banner which appears on button click
+========================*/
+  /*=======================
 this is the first image on page
 ========================*/
   /*=======================
@@ -1114,6 +1117,9 @@ this section has two flexed blocks which links readers to additional resources
   /*=======================
 this section is a testimonial
 ========================*/ }
+  .page-id-34 .toggle-visible-hidden {
+    height: 0vh;
+    visibility: hidden; }
   .page-id-34 .entry-title {
     display: none; }
   .page-id-34 .entry-content {
@@ -1211,8 +1217,7 @@ this section is a testimonial
         flex-wrap: wrap;
     -ms-flex-align: center;
         align-items: center;
-    padding-top: 20px;
-    padding-bottom: 40px; }
+    padding-top: 20px; }
   .page-id-34 .single-participate-block {
     -ms-flex: 0 1 49%;
     flex: 0 1 49%;
@@ -1248,7 +1253,8 @@ this section is a testimonial
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -ms-flex-align: center;
-        align-items: center; }
+        align-items: center;
+    text-align: center; }
   .page-id-34 .font-under-button p {
     font-size: 7px;
     margin-top: 0; }

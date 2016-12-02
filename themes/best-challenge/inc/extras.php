@@ -36,8 +36,16 @@ return $title;
 	
 add_filter( 'get_the_archive_title', 'display_custom_archive_title');
 
+
+
+
+
+
+
+
+
+
 /**
 * Nav menu
 */
 
- 

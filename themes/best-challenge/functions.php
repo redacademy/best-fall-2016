@@ -7,6 +7,12 @@
  * @package Best_Challenge_Theme
  */
 
+
+
+
+
+
+
 if ( ! function_exists( 'Best_Challenge_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -106,3 +112,5 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+
