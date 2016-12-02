@@ -15,12 +15,11 @@ get_header(); ?>
 
             </div>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+
 
 
 <div class="toggle-visible-hidden">
-   <div class=".redirect-page-area"> 
+   <div class="redirect-page-area"> 
 			<div class="page-banner">
 			<h1>hooray!!!</h1>
 			<h2>See you later!</h2>
@@ -36,7 +35,8 @@ get_header(); ?>
     </div>
 </div>
 
-
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 
 
                 <div class="picture-wrapper">
