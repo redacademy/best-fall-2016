@@ -517,24 +517,30 @@ a {
     height: 36px;
     bottom: 0; }
     .menu-item a {
-      padding-top: 7px; }
+      padding-top: 7px;
+      color: #fff; }
   .menu-item:hover {
     background-color: #5a6f83;
     border-top-left-radius: 18.5px;
     border-top-right-radius: 18.5px; }
-  .menu-item-51, .menu-item-51:hover {
+  .menu-item-51,
+  .menu-item-51:hover {
     margin-left: 5px;
     width: 189px;
     height: 36px;
     border-radius: 18.5px;
-    background-color: #a6ce39; } }
+    background-color: #a6ce39; }
+    .menu-item-51 a,
+    .menu-item-51:hover a {
+      color: #303b46; } }
 
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 .site-header {
   background: #303B46;
-  height: 10vh; }
+  height: 10vh;
+  padding: 0 5px; }
   @media (min-width: 600px) {
     .site-header {
       height: 144px; } }
@@ -549,12 +555,12 @@ a {
   height: inherit;
   display: -ms-flexbox;
   display: flex;
+  min-width: 400px;
   width: 100%;
   -ms-flex-align: center;
       align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  position: relative; }
+  position: relative;
+  margin-left: 5px; }
   @media (min-width: 600px) {
     .logo-date {
       -ms-flex-pack: justify;
@@ -563,13 +569,32 @@ a {
 .event-date {
   color: white;
   position: absolute;
-  top: 20px;
-  right: 1rem; }
+  top: 0px;
+  right: 60px; }
+  @media (min-width: 600px) {
+    .event-date {
+      top: 20px;
+      right: 1rem; } }
 
 .logo img {
   height: 40px;
-  width: 276px;
-  margin-right: 5px; }
+  width: 22vw; }
+  @media (min-width: 600px) {
+    .logo img {
+      height: 40px;
+      width: 276px; } }
+
+/* hide mobile version by default */
+.logo .mobile {
+  display: none; }
+
+/* when screen is less than 600px wide
+     show mobile version and hide desktop */
+@media (max-width: 600px) {
+  .logo .mobile {
+    display: block; }
+  .logo .desktop {
+    display: none; } }
 
 .header-nav {
   position: absolute;
@@ -704,8 +729,11 @@ a {
 
 .hero-banner {
   background: url(../../assets/images/hero-banner-temp.jpeg) center no-repeat;
-  height: 80vh;
+  height: 90vh;
   background-size: cover; }
+  @media (min-width: 600px) {
+    .hero-banner {
+      height: 80vh; } }
 
 .box {
   display: -ms-flexbox;
@@ -815,7 +843,6 @@ a {
   margin: 0; }
 
 .instagram-grid {
-  max-width: 90%;
   text-align: center; }
 
 .wdi_photo_wrap li {

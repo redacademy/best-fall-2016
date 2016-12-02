@@ -1,7 +1,10 @@
 .hero-banner {
     background: url(../../assets/images/hero-banner-temp.jpeg) center no-repeat;
-    height: 80vh;
+    height: 90vh;
     background-size: cover;
+    @include desktop {
+        height: 80vh;
+    }
 }
 
 .box {
@@ -112,7 +115,6 @@
 
 ///---------------- Instagram Area ---------- ///
 .instagram-grid {
-    max-width: 90%;
     text-align: center;
 }
 
