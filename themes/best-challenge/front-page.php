@@ -100,6 +100,7 @@ get_header(); ?>
 </div>
 
 <div class="instagram-grid container">
+<h2 class="uppercase">#commuterchallenge</h2>
 	<?php echo wdi_feed(array('id'=>'1')); ?>
 		
 		</div>

@@ -759,23 +759,21 @@ a {
 
 .fp-sponsors-img {
   width: 100%;
-  opacity: .5; }
-  @media (min-width: 600px) {
-    .fp-sponsors-img {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-      -ms-flex-align: center;
-          align-items: center; } }
+  opacity: .5;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center; }
 
 .impact-results {
   height: 40vh;
   background: orange; }
 
 .instagram-grid {
-  max-width: 1000px;
-  background: indigo; }
+  max-width: 90%;
+  text-align: center; }
 
 .wdi_photo_wrap li {
   border: 5px solid black; }
