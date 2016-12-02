@@ -36,11 +36,4 @@ add_filter( 'body_class', 'best_challenge_body_classes' );
 	
 // add_filter( 'get_the_archive_title', 'display_custom_archive_title');
 
-/** 
-* Display custom taxonomies 
-*/
 
-function display_taxonomy_terms($post_type, $display = false) {
-    global $post;
-}
- 

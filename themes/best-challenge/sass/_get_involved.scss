@@ -7,6 +7,17 @@ this is the css unique to page-id-34
 
 .page-id-34{
 
+
+/*=======================
+this is the css for the redirect banner which appears on button click
+========================*/
+
+.toggle-visible-hidden{
+
+    height:0vh;
+    visibility: hidden;
+}
+
 .entry-title {
     display: none;
 }
@@ -151,7 +162,7 @@ CUSTOM-FIELD-SUITE loop items with four blocks flexed
     flex-wrap:wrap;
     align-items:center;
     padding-top:20px;
-    padding-bottom:40px;
+   
     
     }
 
@@ -173,8 +184,7 @@ CUSTOM-FIELD-SUITE loop items with four blocks flexed
     display:flex;
     width:40%;
    
-    
-}
+    }
 
 .description-wrapper p{
     margin-top:0rem;
@@ -204,6 +214,7 @@ this is the first form on the page consisting of a sign-up button which takes yo
     display:flex;
     justify-content:space-around;
     align-items:center;
+    text-align:center;
     
 }
 
@@ -324,7 +335,7 @@ this section is a testimonial
     margin-bottom:0;
     margin-top:0;
     font-family:'montserratlight';
-}
+    }
 
 
 }

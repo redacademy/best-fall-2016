@@ -7,6 +7,12 @@
  * @package Best_Challenge_Theme
  */
 
+
+
+
+
+
+
 if ( ! function_exists( 'Best_Challenge_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -85,7 +91,7 @@ add_filter( 'stylesheet_uri', 'Best_Challenge_minified_css', 10, 2 );
 function Best_Challenge_scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 	
 	wp_enqueue_script( 'jquery' );
 
@@ -106,3 +112,5 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+
