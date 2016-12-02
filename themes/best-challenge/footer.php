@@ -15,28 +15,28 @@
 				<div class="footer-section">
 					<div class="footer-content container">
 						<div class="logo-image">
-							<i class="fa fa-bicycle" aria-hidden="true"></i>
+							<img src="<?php echo get_template_directory_uri() ?>/assets/images/best-logo.png"></img>
 						</div>
 						<div class="about-best">
-							<p class="para-heading">About<span> b.e.s.t</span></p>
-							<p><span>b.e.s.t</span> is a non-profit charitable organization with a long history of
-							promoting sustainable transportation</p>
+							<div class="para-heading"><p>About<span> b.e.s.t</span></p></div>
+							<div class="para-content"><p><span>b.e.s.t</span> is a non-profit charitable organization with a long history of
+							promoting sustainable transportation</p></div>
 						</div>
 						<div class="learn-more">
-							<p class="para-heading"><a href="">learn more ></a></p>
+							<div class="para-heading"><a href="">learn more ></a></div>
 							</div>
 						<div class="contact-us">
-							<p class="para-heading">contact us</p>
-						<p>Do you have any questions? Contact us today!</p>
+							<div class="para-heading"><p>contact us</p><div>
+						<div class="para-content"><p>Do you have any questions? Contact us today!</p></div>
 						</div>
 						<div class="questions">
 							<p><a href="">commuterchallenge@best.bc.ca</a></p>
-							<p>(604)669-2860</p>
+							<div class="para-content"><p>(604)669-2860</p></div>
 						</div>
 						<div class="newsletter-subscription">
-							<p class="para-heading">newsletter subscription</p>
-							<p>hear about upcoming events, new tools, and lots more!</p>
-							</div>
+							<div class="para-heading"><p>newsletter subscription</p></div>
+							<div class="para-content"><p>hear about upcoming events, new tools, and lots more!</p></div>
+						</div>
 							<div class="subscribe">
             					<div class="subscribeForm">
                 					<form id="formId">

@@ -31,8 +31,9 @@ this is the css for the redirect banner which appears on button click
 .entry-content p{
 
     font-family:'montserrat', serif;
-    font-size:12px;
-    font-weight: 100;
+    font-weight: 300;
+    font-size:20px;
+    
 }
 
     /*=======================
@@ -80,7 +81,8 @@ this is a section with three blocks flexed explaining the benefits of the Commut
 }
 
 .challenge-benefit-blocks p{
-    font-family:'montserratextralight';
+    font-family:'montserrat';
+    font-weight: 300;
 }
 
 .single-benefit-block{
@@ -106,7 +108,7 @@ this is a section with three blocks flexed explaining the benefits of the Commut
 
 .single-benefit-block h3{
 
-font-family: 'montserratsemibold';
+font-family: 'montserrat';
 }
 
 
@@ -134,21 +136,22 @@ CUSTOM-FIELD-SUITE loop items with four blocks flexed
     text-transform:uppercase;
     color:white;
     text-align:center;
-    font-family: 'montserratsemibold';
+    font-family: 'montserrat';
 }
 
 .how-to-participate-wrapper h3{
     color:white;
     font-size:16px;
     width:60%;
-    font-family: 'montserratsemibold';
+    font-family: 'montserrat';
 }
 
 .how-to-participate-wrapper p{
     color:white;
     text-align:center;
     font-size:14px;
-      font-family:'montserratextralight';
+      font-family:'montserrat';
+    font-weight: 300;
 }
 
 .challenge-participate-blocks{
@@ -198,7 +201,7 @@ CUSTOM-FIELD-SUITE loop items with four blocks flexed
 
 .single-participate-block h3{
    width:80%;
-  font-family: 'montserratsemibold';
+  font-family: 'montserrat';
 }
 
     /*=======================
@@ -282,7 +285,7 @@ this section has two flexed blocks which links readers to additional resources
 }
 .need-resources h2{
 text-transform:uppercase;
-font-family: 'montserratsemibold';
+font-family: 'montserrat';
 
 
 }
@@ -298,7 +301,8 @@ font-family: 'montserratsemibold';
 .need-resources p{
 padding-left:10%;
   padding-right:10%;  
-    font-family:'montserratextralight';
+     font-family:'montserrat';
+    font-weight: 300;
 }
 
 .need-resources a{
@@ -320,7 +324,8 @@ this section is a testimonial
     padding-left:25%;
     padding-right:25%;
     padding-top:3%;
-    font-family:'montserratextralight';
+     font-family:'montserrat';
+    font-weight: 300;
     font-size:18px;
 }
 
@@ -334,7 +339,8 @@ this section is a testimonial
     padding-top:0%;
     margin-bottom:0;
     margin-top:0;
-    font-family:'montserratlight';
+     font-family:'montserrat';
+    font-weight: 300;
     }
 
 
