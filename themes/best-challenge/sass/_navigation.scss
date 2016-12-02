@@ -118,6 +118,8 @@ a {
 	}
 }
 
+@include desktop {
+
 .menu-item {
 	width: 107px;
 	height: 36px;
@@ -139,4 +141,6 @@ a {
 	height: 36px;
 	border-radius: 18.5px;
 	background-color: #a6ce39;
+}
+
 }
