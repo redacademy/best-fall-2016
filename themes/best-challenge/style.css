@@ -583,7 +583,7 @@ a {
   color: white;
   position: absolute;
   top: 20px;
-  right: 0; }
+  right: 1rem; }
 
 .logo img {
   height: 40px;
@@ -800,8 +800,11 @@ a {
   background: orange; }
 
 .instagram-grid {
-  height: 40vh;
+  max-width: 1000px;
   background: indigo; }
+
+.wdi_photo_wrap li {
+  border: 5px solid black; }
 
 .blog-posts {
   height: auto;

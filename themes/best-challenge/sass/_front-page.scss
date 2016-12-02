@@ -33,8 +33,8 @@
 
 .ccbc-title {
     margin-bottom: 3rem;
-        h2 {
-            font-size: 2rem;
+    h2 {
+        font-size: 2rem;
     }
 }
 
@@ -46,7 +46,6 @@
     }
 }
 
-
 .front-sponsors {
     display: flex;
     height: auto;
@@ -55,9 +54,10 @@
     align-items: center;
     background: #dee2e6;
 }
+
 .fp-sponsors-title {
-        h2 {
-            font-size: 1.5rem;
+    h2 {
+        font-size: 1.5rem;
     }
 }
 
@@ -69,19 +69,23 @@
         justify-content: space-around;
         align-items: center;
     }
-    
 }
-
-
 
 .impact-results {
     height: 40vh;
     background: orange;
 }
 
+///---------------- Instagram Area ---------- ///
 .instagram-grid {
-    height: 40vh;
+    max-width: 1000px;
     background: indigo;
+}
+
+.wdi_photo_wrap {
+    li {
+        border: 5px solid black;
+    }
 }
 
 .blog-posts {
