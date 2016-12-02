@@ -64,11 +64,9 @@
 .fp-sponsors-img {
     width: 100%;
     opacity: .5;
-    @include desktop {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .impact-results {
@@ -78,8 +76,8 @@
 
 ///---------------- Instagram Area ---------- ///
 .instagram-grid {
-    max-width: 1000px;
-    background: indigo;
+    max-width: 90%;
+    text-align: center;
 }
 
 .wdi_photo_wrap {

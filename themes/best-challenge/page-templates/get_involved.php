@@ -15,12 +15,11 @@ get_header(); ?>
 
             </div>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+
 
 
 <div class="toggle-visible-hidden">
-   <div class=".redirect-page-area"> 
+   <div class="redirect-page-area"> 
 			<div class="page-banner">
 			<h1>hooray!!!</h1>
 			<h2>See you later!</h2>
@@ -36,7 +35,8 @@ get_header(); ?>
     </div>
 </div>
 
-
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 
 
                 <div class="picture-wrapper">
@@ -104,9 +104,10 @@ get_header(); ?>
                      </div>
 
                     <div class="signUpForm">
-                        <form action="" id="form" method="post" name="form" onsubmit="redirect() return false">
+                        <form action="" id="form" method="post" name="form" onsubmit="return redirect(); return false;">
                              <!-- This link will take user to extrnal site -->
 						    <input type="submit" name="submit" value="Sign Up" id="sign-up">
+     
 
                             <div class="font-under-button"><p>on Canada Site</p></div>
                             <div class="underline-under-button"><p>or log in on the canada site</p><div>
