@@ -33,7 +33,7 @@
 			<div class="logo-date">				
 				<div class="logo">
 					<a href="home">
-						<img class="style-svg" src=" <?php echo get_template_directory_uri() ?>/assets/images/logotitlebc.png" alt="logo">
+						<img src=" <?php echo get_template_directory_uri() ?>/assets/images/logotitlebc.png" alt="logo">
 					</a>
 				</div>
 			<div class="event-date">
