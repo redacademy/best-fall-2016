@@ -88,14 +88,18 @@ get_header(); ?>
    $journal_posts = get_posts( $args ); // returns an array of posts
    ?>
    <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
-   	<div class ="best-journal-post">
-   		<?php the_post_thumbnail(); ?>
-   		<div class = "best-post-container">
-   			<div>
-   				<?php the_date();?>
-   				<?php comments_number();?>
+   	<div class ="best-journal-container">
+
+		   <div class = "best-post-thumb"> 
+   				<?php the_post_thumbnail(); ?>
+		   </div>
+
+   		<div class = "best-post-info">
+
+			 <h3 class ="best-post-title"><?php the_title();?></h3>
+   			 <p class="best-post-content"><?php the_content(); ?></p>
    			</div>
-   			<h3><?php the_title();?></h3>
+   			
    			<a class ="read" href="<?php the_permalink();?>">Read Entry</a>
    		</div>
    	</div>
