@@ -9,13 +9,17 @@
 (function ($) {
     $('#sign-up').on("click", function (event) {
         event.preventDefault();
- $('.toggle-visible-hidden').remove("toggle-visible-hidden");
+        $( "div" ).first().remove();
+        $( "footer" ).remove();
+        $('.content-area').remove()
+    $('.toggle-visible-hidden').css("visibility", "visible");
+    $('.toggle-visible-hidden').css("height", "100vh");
 
 window.setTimeout(function () {
         location.href = "https://commuterchallenge.ca/";
     }, 5000)
 
- $('.toggle-visible-hidden').remove("toggle-visible-hidden");
+
       
     });
 
