@@ -236,6 +236,13 @@ th {
   font-weight: bold;
   font-style: normal; }
 
+@font-face {
+  font-family: 'montserrat';
+  src: url("../../assets/fonts/montserrat-light-webfont.eot");
+  src: url("../../assets/fonts/montserrat-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/montserrat-light-webfont.woff2") format("woff2"), url("../../assets/fonts/montserrat-light-webfont.woff") format("woff"), url("../../assets/fonts/montserrat-light-webfont.svg#montserratsemibold") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -782,7 +789,7 @@ a {
   height: auto;
   background: brown; }
 
-.page-id-57 .page-heading {
+.page-id-61 .page-heading {
   background-image: url(../../assets/images/gift.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -796,15 +803,15 @@ a {
   -ms-flex-align: center;
       align-items: center; }
 
-.page-id-57 h1, .page-id-57 h2 {
+.page-id-61 h1, .page-id-61 h2 {
   font-size: 2.62rem;
   text-align: center;
   width: 100%; }
 
-.page-id-57 p {
+.page-id-61 p {
   font-size: 1.62rem; }
 
-.page-id-57 .prize-wrapper {
+.page-id-61 .prize-wrapper {
   width: 80%;
   margin: 5% auto;
   display: -ms-flexbox;
@@ -813,33 +820,33 @@ a {
       flex-wrap: nowrap;
   -ms-flex-direction: column;
       flex-direction: column; }
-  .page-id-57 .prize-wrapper .prize-image {
+  .page-id-61 .prize-wrapper .prize-image {
     /*position: relative;*/ }
-    .page-id-57 .prize-wrapper .prize-image img {
+    .page-id-61 .prize-wrapper .prize-image img {
       width: 230px;
       height: 230px; }
   @media (min-width: 600px) {
-    .page-id-57 .prize-wrapper {
+    .page-id-61 .prize-wrapper {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       -ms-flex-direction: row;
           flex-direction: row; } }
-  .page-id-57 .prize-wrapper .category-title {
+  .page-id-61 .prize-wrapper .category-title {
     width: 100%;
     text-align: center; }
-  .page-id-57 .prize-wrapper .single-prize {
+  .page-id-61 .prize-wrapper .single-prize {
     margin-top: 5%;
     width: 25%;
     border: 1px solid white;
     position: relative; }
-  .page-id-57 .prize-wrapper .prize-title {
+  .page-id-61 .prize-wrapper .prize-title {
     width: 230px;
     height: 115px;
     background-image: url(../../assets/images/grey-image.jpg);
     position: relative;
     opacity: 0.9;
     bottom: 38%; }
-  .page-id-57 .prize-wrapper .prize-description {
+  .page-id-61 .prize-wrapper .prize-description {
     background-color: grey;
     bottom: 43px;
     display: none;
