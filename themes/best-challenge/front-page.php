@@ -100,7 +100,7 @@ get_header(); ?>
 </div>
 
 <div class="instagram-grid container">
-	<?php echo wdi_feed(array('id'=>'1')); ?>
+	<?php echo do_shortcode("[enjoyinstagram_mb_grid]"); ?>
 		
 		</div>
 
