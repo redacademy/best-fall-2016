@@ -14,6 +14,13 @@ get_header(); ?>
 			</div>
 			
 
+			<?php
+            $props=CFS()->get_field_info('prizes_page_description');
+            
+            ?>
+            <?php echo CFS()->get( 'prizes_page_description'); ?>
+
+
 			<div class="prize-wrapper">
 				<?php
 					$terms = get_terms('prize_type');  
