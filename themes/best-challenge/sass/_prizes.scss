@@ -1,0 +1,72 @@
+.page-id-57{
+
+    .page-heading {
+        background-image: url(../../assets/images/gift.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 252px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        
+    }
+        h1, h2 {
+        font-size: 2.62rem;
+        text-align: center;
+        width: 100%;
+        }
+        p {
+            font-size: 1.62rem;
+        }
+    
+    .prize-wrapper {
+        width: 80%;
+        margin: 5% auto;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        .prize-image {
+            /*position: relative;*/
+            img {
+                width: 230px;
+                height: 230px;
+            }
+        }
+        @include desktop {
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .category-title {
+            width: 100%;
+            text-align: center;
+        }
+        .single-prize {
+            margin-top: 5%;
+            width: 25%;
+            border: 1px solid white;
+            position: relative;
+        }
+        .prize-title {
+            width: 230px;
+            height: 115px;
+            background-image: url(../../assets/images/grey-image.jpg);
+            position: relative;
+            opacity: 0.9;
+            bottom: 38%;        
+        }
+        .prize-description {
+            background-color: grey;
+            bottom: 43px;
+            display: none;
+            position: absolute;
+            height: 230px;
+            width: 230px;
+            z-index: 1;
+            top: 0%;
+        }
+    }
+
+}
