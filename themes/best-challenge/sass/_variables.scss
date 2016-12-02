@@ -1,10 +1,11 @@
+//*********************************************//
+//WordPress Variables 
+
 // Structure
 
 $base__space-unit: 1.5em;
-$container_size: 1140px;
 
 // Colors
- $best-green: #a6ce39;
  $background-body: #fff;
  $text-main: #404040;
 
@@ -27,3 +28,22 @@ $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+
+//*********************************************
+//BEST Variables 
+//*********************************************
+
+
+// Structure
+
+$container_size: 1140px;
+
+// Colors
+$best-green: #a6ce39;
+$dark-text: #303b46;
+$dark-background: #303b46;
+$footer-background: #5a6f83;
+
+// Typography
+
+$base-font-family: 'montserrat' , 'sans';
