@@ -5,6 +5,7 @@
     .site-header {
         background: #303B46;
         height: 10vh;
+        padding: 0 5px;
         @include desktop {
             height: 144px;
         }
@@ -19,10 +20,11 @@
     .logo-date {
         height: inherit;
         display: flex;
+        min-width: 400px;
         width: 100%;
         align-items: center;
-        justify-content: space-around;
         position: relative;
+        margin-left: 5px;
         @include desktop {
             justify-content: space-between;
         }
@@ -31,18 +33,40 @@
     .event-date {
         color: white;
         position: absolute;
-        top: 20px;
-        right: 1rem;
+        top: 0px;
+        right: 60px;
+        @include desktop {
+            top: 20px;
+            right: 1rem;
+        }
     }
     
     .logo img {
         height: 40px;
-        width: 276px;
-        margin-right: 5px;
+        width: 22vw;
+        @include desktop {
+            height: 40px;
+            width: 276px;
+        }
+    }
+    /* hide mobile version by default */
+    
+    .logo .mobile {
+        display: none;
+    }
+    /* when screen is less than 600px wide
+     show mobile version and hide desktop */
+    
+    @media (max-width: 600px) {
+        .logo .mobile {
+            display: block;
+        }
+        .logo .desktop {
+            display: none;
+        }
     }
     
     // Main Menu //
-    
     .header-nav {
         position: absolute;
         bottom: 0;

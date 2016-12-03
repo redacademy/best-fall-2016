@@ -77,33 +77,41 @@ get_header(); ?>
 		</div>
 
 		
+	<!--Blog-->
+
 
 		<div class="blog-posts">
-		
+			<div class = "best-journal container">
+		<?php
+		$args = array( 
+			'post_type' => 'post', 
+			'posts_per_page' => 1, 
+			'order' => 'DESC');
+   $journal_posts = get_posts( $args ); // returns an array of posts
+   ?>
+   <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
+   	<div class ="best-journal-content">
 
-		<?php if ( have_posts() ) : ?>
+			<div class = "best-post-thumb"> 
+					<?php the_post_thumbnail(); ?>
+			</div>
 
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
-
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content' ); ?>
-
-			<?php endwhile; ?>
-
-		<?php endif; ?>
+			<div class = "best-post-info">
+				<h3 class ="best-post-title"><?php the_title();?></h3>
+				<p class="best-post-content"><?php the_content(); ?></p>
+				<a class ="read" href="<?php the_permalink();?>">Read Entry</a>
+			</div>
+   	</div>
+   <?php endforeach; wp_reset_postdata(); ?>
+</div>
 </div>
 
+ <!--Instagram-->
+ 
 <div class="instagram-grid container">
-<h2 class="uppercase">#commuterchallenge</h2>
+	<h2 class="uppercase">#commuterchallenge</h2>
 	<?php echo wdi_feed(array('id'=>'1')); ?>
-		
-		</div>
+</div>
 
 <?php get_template_part( 'template-parts/green-banner' ); ?>
 

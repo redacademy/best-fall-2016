@@ -1,7 +1,10 @@
 .hero-banner {
     background: url(../../assets/images/hero-banner-temp.jpeg) center no-repeat;
-    height: 80vh;
+    height: 90vh;
     background-size: cover;
+    @include desktop {
+        height: 80vh;
+    }
 }
 
 .box {
@@ -70,13 +73,56 @@
 }
 
 .impact-results {
-    height: 40vh;
     background: orange;
+}
+
+/// ------------ Blog Post Area --------- //////
+.blog-posts {
+    background: brown;
+}
+
+.best-journal-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    @include desktop {
+
+    }
+}
+
+.best-journal-content {
+    padding: 1rem;
+    align-items: center;
+    @include desktop {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.best-post-thumb {
+    flex-basis: 48%;
+    max-width: 472px;
+    img {
+        height: auto;
+        margin-top: 2rem;
+    @include desktop  {
+            width: 640px;
+        }
+    }
+}
+
+.best-post-info {
+    flex-direction: column;
+    flex-basis: 48%;
+}
+
+.best-post-title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
 
 ///---------------- Instagram Area ---------- ///
 .instagram-grid {
-    max-width: 90%;
     text-align: center;
 }
 
@@ -84,9 +130,4 @@
     li {
         border: 5px solid black;
     }
-}
-
-.blog-posts {
-    height: auto;
-    background: brown;
 }
