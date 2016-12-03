@@ -18,20 +18,18 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="content"> 
-				<?php the_content(); ?>
+				<?php
+					$id=61;
+					$post = get_post($id);
+					$content = apply_filters('the_content', $post->post_content);
+					echo $content;
+				?>	
 			</div>
 			
 
-			<?php
-            $props=CFS()->get_field_info('prizes_page_description');
-            
-            ?>
-            <?php echo CFS()->get( 'prizes_page_description'); ?>
-
-
 			<div class="prize-wrapper">
 				<?php
-					$terms = get_terms('prize_type');  
+					$terms = get_terms('prize_type', array('order' => 'DESC'));  
 
 					foreach($terms as $prize_type) { ?>
 					

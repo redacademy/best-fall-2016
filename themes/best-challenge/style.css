@@ -881,39 +881,57 @@ a {
 
 .page-id-61 .title-wrapper {
   line-height: 0.5;
-  margin-top: 5%; }
+  margin-top: 5%;
+  height: 200px; }
+
+.page-id-61 .content {
+  width: 90%;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0 auto;
+  text-align: center;
+  color: #303b46; }
+  @media (min-width: 600px) {
+    .page-id-61 .content {
+      width: 50%; } }
 
 .page-id-61 .prize-wrapper {
   width: 80%;
   height: auto;
-  margin: 5% auto;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  margin: 0 auto; }
   @media (min-width: 600px) {
     .page-id-61 .prize-wrapper {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       -ms-flex-direction: row;
-          flex-direction: row; } }
+          flex-direction: row;
+      margin-top: 5% auto 1% auto; } }
   .page-id-61 .prize-wrapper .prize-image {
-    /*position: relative;*/ }
+    width: 230px; }
     .page-id-61 .prize-wrapper .prize-image img {
       width: 100%; }
   .page-id-61 .prize-wrapper h2 {
     width: 100%;
     text-align: center; }
   .page-id-61 .prize-wrapper .single-prize {
-    margin-top: 5%;
+    margin: 5% auto;
     width: 230px;
+    height: 230px;
     border: 1px solid white;
     position: relative; }
     @media (min-width: 600px) {
       .page-id-61 .prize-wrapper .single-prize {
-        width: 25%; } }
+        margin: 1%; } }
   .page-id-61 .prize-wrapper .prize-title {
     width: 230px;
     height: 115px;
@@ -922,7 +940,7 @@ a {
     background-size: cover;
     position: relative;
     opacity: 0.85;
-    bottom: 38%; }
+    bottom: 60%; }
     .page-id-61 .prize-wrapper .prize-title h3 {
       width: 171px;
       font-size: 1rem;
@@ -932,7 +950,8 @@ a {
       left: 10px;
       color: #dee2e6; }
   .page-id-61 .prize-wrapper .prize-description {
-    background-color: grey;
+    background-color: #5a6f83;
+    opacity: 0.9;
     bottom: 43px;
     display: none;
     position: absolute;
@@ -940,6 +959,13 @@ a {
     width: 230px;
     z-index: 1;
     top: 0%; }
+    .page-id-61 .prize-wrapper .prize-description p {
+      width: 90%;
+      margin: 1% auto;
+      color: #dee2e6;
+      font-weight: 300;
+      font-size: 1rem;
+      text-align: center; }
 
 .info-404 {
   display: -ms-flexbox;
