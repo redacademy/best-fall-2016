@@ -8,7 +8,7 @@ users choice
 
 
 .green-banner{
-background:lawngreen;
+background:#a6ce39;
 height:200px;
 display:flex;
     align-items: center;
@@ -16,6 +16,24 @@ display:flex;
 
 
 }
+
+.green-banner-data{
+
+    text-align:center;
+}
+.green-banner-data p:first-child{
+    text-transform:uppercase;
+    font-weight:500;
+   
+}
+
+.green-banner-data p{
+
+font-family: 'montserrat', sans-serif;
+font-weight:100;
+}
+
+
 
 #go-green-button{
 
@@ -25,7 +43,7 @@ display:flex;
     padding: .25rem 2rem;
     border: 1;
     border-radius: 25px;
-    font-family: ralewaylight, sans-serif;
+    font-family: 'montserrat', sans-serif;
     font-size: 1rem;
     box-shadow:none;
     line-height: 1.7;
@@ -39,4 +57,23 @@ display:flex;
 .button2 {
 
    visibility: visible;
+}
+
+.green-banner-flex{
+
+    display:flex;
+    flex-direction:column;
+}
+
+.green-buttons{
+
+    text-align:center;
+    margin-bottom:10px;
+    
+}
+
+.button1 {
+
+    padding-bottom:5px;
+    
 }
