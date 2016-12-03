@@ -803,54 +803,55 @@ a {
       align-items: center; }
 
 .impact-results {
-  height: 40vh;
   background: orange; }
+
+.blog-posts {
+  background: brown; }
 
 .best-journal-container {
   display: -ms-flexbox;
   display: flex;
-  padding: 2rem;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  height: 80vh; }
+  padding: 1rem; }
+
+.best-journal-content {
+  padding: 1rem;
+  -ms-flex-align: center;
+      align-items: center; }
+  @media (min-width: 600px) {
+    .best-journal-content {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
 
 .best-post-thumb {
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 640px;
   -ms-flex-preferred-size: 48%;
-      flex-basis: 48%; }
+      flex-basis: 48%;
+  max-width: 472px; }
   .best-post-thumb img {
-    width: 640px;
-    height: 360px;
-    margin-top: 3rem; }
+    height: auto;
+    margin-top: 2rem; }
+    @media (min-width: 600px) {
+      .best-post-thumb img {
+        width: 640px; } }
 
 .best-post-info {
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%; }
 
 .best-post-title {
-  font-size: 2rem;
-  text-transform: uppercase;
-  color: #d99054; }
-
-.best-post-price {
-  font-size: 1.25rem;
-  margin: 0; }
+  font-size: 1.5rem;
+  text-transform: uppercase; }
 
 .instagram-grid {
   text-align: center; }
 
 .wdi_photo_wrap li {
   border: 5px solid black; }
-
-.blog-posts {
-  height: auto;
-  background: brown; }
 
 .page-id-61 .page-heading {
   background-image: url(../../assets/images/gift.png);
