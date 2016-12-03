@@ -1623,19 +1623,44 @@ CONTACT FORM 7
     background-color: lightskyblue;
     padding-top: 20px; }
   .page-id-70 .contact-form-area h2 {
+    text-align: center;
     text-transform: uppercase; }
   .page-id-70 input[type="text"],
   .page-id-70 input[type="email"],
   .page-id-70 input[type="tel"] {
     background-color: #dee2e6;
-    width: 30%;
+    border: none;
     height: 50px;
     border-radius: 10px; }
   .page-id-70 textarea {
-    width: 40%;
     height: 271px;
     border-radius: 10px;
-    background-color: #dee2e6; }
+    background-color: #dee2e6;
+    font-family: 'montserrat';
+    font-weight: 100;
+    color: #5a6f83; }
+  .page-id-70 input[placeholder] {
+    font-family: 'montserrat';
+    font-weight: 100;
+    color: #5a6f83; }
+  .page-id-70 .wpcf7-form {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: row-wrap;
+        flex-wrap: row-wrap;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .page-id-70 .short-text-field {
+    padding-left: 5%; }
+  .page-id-70 .message-field {
+    margin-left: 4%;
+    width: 40%; }
 
 /*=======================
 this is the css for the special template that will add and remove one of two buttons depending on the 

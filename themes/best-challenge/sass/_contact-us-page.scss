@@ -93,35 +93,66 @@ CONTACT FORM 7
 ========================*/
 
 
-.contact-form-area
-{
- height: 614px;
+.contact-form-area{
+    height: 614px;
 	background-color: lightskyblue;
     padding-top:20px;
 }
 
 .contact-form-area h2{
-
+    text-align:center;
     text-transform:uppercase;
 }
 
 input[type="text"],
 input[type="email"],
-input[type="tel"],
-
-{
+input[type="tel"],{
     background-color: #dee2e6;
-    width: 30%;
+    border:none;
 	height: 50px;
 	border-radius: 10px;
 }
-textarea{
-	width: 40%;
+
+textarea {
 	height: 271px;
 	border-radius: 10px;
 	background-color: #dee2e6;
+    font-family:'montserrat';
+    font-weight:100;
+    color:#5a6f83;
+   
+}
+
+input[placeholder] {
+   font-family:'montserrat';
+   font-weight:100;
+   color:#5a6f83;
+}
+
+.wpcf7-form {
+       display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+   flex-wrap: row-wrap;
+    flex-direction:row;
+    align-self:center;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.short-text-field{
+    padding-left:5%;
+
+}
+
+.message-field{
+    margin-left:4%;
+    width:40%
 
 }
 
 
 }
+
+

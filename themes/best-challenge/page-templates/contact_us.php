@@ -34,7 +34,9 @@ get_header(); ?>
                 <div class="contact-form-7-area">
                     <h2>have questions? want to learn more?</h2>
                     <h2>leave us a message!</h2>
+                <div class="contact-form-proper">
                     <?php echo do_shortcode( '[contact-form-7 id="72" title="BEST Contact Form"]' ); ?>
+                </div>
                 </div>
             </div>
             		
