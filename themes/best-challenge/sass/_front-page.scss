@@ -73,44 +73,52 @@
 }
 
 .impact-results {
-    height: 40vh;
     background: orange;
 }
 
 /// ------------ Blog Post Area --------- //////
+.blog-posts {
+    background: brown;
+}
+
 .best-journal-container {
     display: flex;
-    padding: 2rem;
     justify-content: space-between;
-    height: 80vh;
+    padding: 1rem;
+    @include desktop {
+
+    }
+}
+
+.best-journal-content {
+    padding: 1rem;
+    align-items: center;
+    @include desktop {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .best-post-thumb {
-    display: flex;
-    max-width: 640px;
     flex-basis: 48%;
+    max-width: 472px;
     img {
-        width: 640px;
-        height: 360px;
-        margin-top: 3rem;
+        height: auto;
+        margin-top: 2rem;
+    @include desktop  {
+            width: 640px;
+        }
     }
 }
 
 .best-post-info {
-    display: flex;
     flex-direction: column;
     flex-basis: 48%;
 }
 
 .best-post-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
-    color: #d99054;
-}
-
-.best-post-price {
-    font-size: 1.25rem;
-    margin: 0;
 }
 
 ///---------------- Instagram Area ---------- ///
@@ -122,9 +130,4 @@
     li {
         border: 5px solid black;
     }
-}
-
-.blog-posts {
-    height: auto;
-    background: brown;
 }

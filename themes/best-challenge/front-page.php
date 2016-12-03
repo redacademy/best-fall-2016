@@ -77,6 +77,8 @@ get_header(); ?>
 		</div>
 
 		
+	<!--Blog-->
+
 
 		<div class="blog-posts">
 			<div class = "best-journal container">
@@ -88,25 +90,24 @@ get_header(); ?>
    $journal_posts = get_posts( $args ); // returns an array of posts
    ?>
    <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
-   	<div class ="best-journal-container">
+   	<div class ="best-journal-content">
 
-		   <div class = "best-post-thumb"> 
-   				<?php the_post_thumbnail(); ?>
-		   </div>
+			<div class = "best-post-thumb"> 
+					<?php the_post_thumbnail(); ?>
+			</div>
 
-   		<div class = "best-post-info">
-
-			 <h3 class ="best-post-title"><?php the_title();?></h3>
-   			 <p class="best-post-content"><?php the_content(); ?></p>
-   			</div>
-   			
-   			<a class ="read" href="<?php the_permalink();?>">Read Entry</a>
-   		</div>
+			<div class = "best-post-info">
+				<h3 class ="best-post-title"><?php the_title();?></h3>
+				<p class="best-post-content"><?php the_content(); ?></p>
+				<a class ="read" href="<?php the_permalink();?>">Read Entry</a>
+			</div>
    	</div>
    <?php endforeach; wp_reset_postdata(); ?>
 </div>
 </div>
 
+ <!--Instagram-->
+ 
 <div class="instagram-grid container">
 	<h2 class="uppercase">#commuterchallenge</h2>
 	<?php echo wdi_feed(array('id'=>'1')); ?>

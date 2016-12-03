@@ -1,61 +1,87 @@
 .page-id-61{
 
     .page-heading {
-        background-image: url(../../assets/images/gift.png);
+        background-image: url(../../assets/images/gift-mobile.png);
         background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 252px;
+        background-size: cover;	
+        background-position: center;
+        justify-content: center;
+        max-width: 100%;
+        height: 300px;
         color: white;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-
+        @include desktop {
+            background-image: url(../../assets/images/gift.png);
+        }
         
-    }
+       
         h1, h2 {
         font-size: 2.62rem;
         text-align: center;
         width: 100%;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
         }
         p {
-            font-size: 1.62rem;
+            font-size: 1.1rem;
+            font-weight: 300;
         }
-    
+    }
+    .title-wrapper {
+        line-height: 0.5;
+        margin-top: 5%;
+    }
     .prize-wrapper {
         width: 80%;
+        height: auto;
         margin: 5% auto;
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
-        .prize-image {
-            /*position: relative;*/
-            img {
-                width: 230px;
-                height: 230px;
-            }
-        }
-        @include desktop {
+            @include desktop {
             flex-wrap: wrap;
             flex-direction: row;
-        }
-        .category-title {
-            width: 100%;
-            text-align: center;
-        }
-        .single-prize {
-            margin-top: 5%;
-            width: 25%;
-            border: 1px solid white;
-            position: relative;
-        }
+            }
+
+            .prize-image {
+                /*position: relative;*/
+                img {
+                    width: 100%;
+                }
+            }
+        
+            h2 {
+                width: 100%;
+                text-align: center;
+            }
+            .single-prize {
+                margin-top: 5%;
+                width: 230px;
+                border: 1px solid white;
+                position: relative;
+                @include desktop {
+                    width: 25%;
+                }
+            }
         .prize-title {
             width: 230px;
             height: 115px;
-            background-image: url(../../assets/images/grey-image.jpg);
+            background-image: url(../../assets/images/overlay.png);
+            background-repeat: no-repeat;
+            background-size: cover;
             position: relative;
-            opacity: 0.9;
-            bottom: 38%;        
+            opacity: 0.85;
+            bottom: 38%; 
+            h3 {
+                width: 171px;
+                font-size: 1rem;
+                position: relative;
+                bottom: 0;
+                top: 50px;
+                left: 10px;
+                color: $light-text;
+            }       
         }
         .prize-description {
             background-color: grey;

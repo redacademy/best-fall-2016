@@ -8,9 +8,17 @@
 get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class = "page-heading">
-				<h1>PRIZES</h1>
-				<p>Anyone can win!</p>
+			<div class = "page-heading">	
+				<div class="title-wrapper">		
+					<?php the_title( '<div class="heading"><h1>', '</h3></div>' ); ?>
+					<?php
+						$props=CFS()->get_field_info('title_info');
+					?>
+            		<div class="title-info"><?php echo CFS()->get( 'title_info'); ?></div>
+				</div>
+			</div>
+			<div class="content"> 
+				<?php the_content(); ?>
 			</div>
 			
 
