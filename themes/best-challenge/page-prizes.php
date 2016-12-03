@@ -37,11 +37,13 @@ get_header(); ?>
 
 						<?php $args = array(
 							'post_type' => 'prize',
+							// 'posts_per_page' => 4,
 							'tax_query' => array( 
 								array(
 									'taxonomy' => 'prize_type',
 									'field'    => 'slug',
 									'terms'    =>  $prize_type,
+									
 								),
 							),  
 						);
@@ -66,8 +68,21 @@ get_header(); ?>
 							</div>
 
 						<?php endforeach; wp_reset_postdata();
+						
+						
+				} ?>
+			</div> <!-- prize wrapper section ends -->
 
-					} ?>
+			<div class="prize-categories">
+				<?php $fields=CFS()->get( 'prize_categories' );
+                        foreach ( $fields as $field ) { ?>
+                        <div class="category-name"> 
+                               <p><?php echo $field['category_name']; ?></p>
+							   
+                        </div>
+                        <div class="category-description">
+                                <p><?php echo $field['category_description']; } ?></p>
+                        </div>
 			</div>
 			
 		</div>

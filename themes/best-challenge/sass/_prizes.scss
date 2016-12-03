@@ -1,4 +1,4 @@
-.page-id-61{
+.page-id-93{
 
     .page-heading {
         background-image: url(../../assets/images/gift-mobile.png);
@@ -120,6 +120,22 @@
             }
         }
     }
+    .prize-categories {
+        width: 80%;
+        margin: 0 auto;
+
+        @include desktop {
+            width: 50%;
+        }
+        .category-name {
+            height: 57px;
+            border-bottom: 1px solid $best-green;
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+    }
+
 
 
 }
