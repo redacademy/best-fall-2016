@@ -1325,12 +1325,10 @@ this section is a testimonial
   .page-id-34 .picture-wrapper {
     display: -ms-flexbox;
     display: flex;
-    background: url("../../assets/images/keyboard.png") center bottom;
-    background-size: cover;
+    background: url("../../assets/images/get-involved-header.png") center bottom;
     height: 200px;
     -ms-flex-align: center;
         align-items: center;
-    border-radius: 0 200% 250%/0 0 200% 200%;
     -ms-flex-pack: center;
         justify-content: center;
     padding-bottom: 20px;
@@ -1381,10 +1379,9 @@ this section is a testimonial
     -ms-flex-direction: column;
         flex-direction: column; }
   .page-id-34 .how-to-participate-wrapper {
-    background: #383B4C;
     padding-top: 50px;
-    border-radius: 0 0 200% 200%/0 0 50% 50%;
-    border: 0px solid #000000; }
+    background: url("../../assets/images/blue-background-small.png") center;
+    background-size: cover; }
   .page-id-34 .how-to-participate-wrapper h2 {
     text-transform: uppercase;
     color: white;

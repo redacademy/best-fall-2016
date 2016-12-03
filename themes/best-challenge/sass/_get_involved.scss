@@ -42,11 +42,9 @@ this is the first image on page
 
 .picture-wrapper{
     display:flex;
-    background:url('../../assets/images/keyboard.png')center bottom;
-    background-size: cover;
+    background:url('../../assets/images/get-involved-header.png')center bottom;
     height:200px;
     align-items:center;
-    border-radius: 0 200% 250%/0 0 200% 200%;
     justify-content:center;
     padding-bottom:20px;
     margin-bottom: 4px;
@@ -126,10 +124,11 @@ CUSTOM-FIELD-SUITE loop items with four blocks flexed
 }
 
 .how-to-participate-wrapper{
-    background:#383B4C;
+   
     padding-top:50px;
-    border-radius: 0 0 200% 200%/0 0 50% 50%;
-    border: 0px solid #000000;
+    background:url('../../assets/images/blue-background-small.png') center ;
+    background-size: cover;
+    
 }
 
 .how-to-participate-wrapper h2{
