@@ -29,8 +29,7 @@
 
 .footer-section{
     background-color: #5a6f83;
-    -webkit-margin-before: 0.3em;
-    -webkit-margin-after: 0.3em;
+ 
     color:white;
 }
 
@@ -46,7 +45,7 @@
 }
 
 .footer-section a:hover{
-    color:brown;
+    color: midnightblue;
 
 }
 
@@ -64,6 +63,10 @@
 .footer-social i{
     color:white;
     padding:1rem;
+}
+
+.footer-social i:hover{
+color: midnightblue;
 }
 
 .para-heading p{

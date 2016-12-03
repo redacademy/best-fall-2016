@@ -42,11 +42,9 @@ this is the first image on page
 
 .picture-wrapper{
     display:flex;
-    background:url('../../assets/images/keyboard.png')center bottom;
-    background-size: cover;
+    background:url('../../assets/images/get-involved-header.png')center bottom;
     height:200px;
     align-items:center;
-    border-radius: 0 200% 250%/0 0 200% 200%;
     justify-content:center;
     padding-bottom:20px;
     margin-bottom: 4px;
@@ -107,8 +105,7 @@ this is a section with three blocks flexed explaining the benefits of the Commut
 }
 
 .single-benefit-block h3{
-
-font-family: 'montserrat';
+    font-family: 'montserrat';
 }
 
 
@@ -126,10 +123,11 @@ CUSTOM-FIELD-SUITE loop items with four blocks flexed
 }
 
 .how-to-participate-wrapper{
-    background:#383B4C;
+   
     padding-top:50px;
-    border-radius: 0 0 200% 200%/0 0 50% 50%;
-    border: 0px solid #000000;
+    background:url('../../assets/images/blue-background-small.png') center ;
+    background-size: cover;
+    
 }
 
 .how-to-participate-wrapper h2{
@@ -269,7 +267,8 @@ this section has two flexed blocks which links readers to additional resources
 
 .resources-section{
 
-    background:lightgrey;
+    background:url('../../assets/images/curved-gray-background.png') center;
+    background-size: cover;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -280,6 +279,7 @@ this section has two flexed blocks which links readers to additional resources
     flex-direction:column;
     align-items:center;
     padding-top:20px;
+    
  
 
 }
