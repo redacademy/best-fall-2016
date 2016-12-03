@@ -88,4 +88,40 @@ this is the CONTACT PERSON INFO
     margin-top:0;
 }
 
+/*=======================
+CONTACT FORM 7
+========================*/
+
+
+.contact-form-area
+{
+ height: 614px;
+	background-color: lightskyblue;
+    padding-top:20px;
+}
+
+.contact-form-area h2{
+
+    text-transform:uppercase;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+
+{
+    background-color: #dee2e6;
+    width: 30%;
+	height: 50px;
+	border-radius: 10px;
+}
+textarea{
+	width: 40%;
+	height: 271px;
+	border-radius: 10px;
+	background-color: #dee2e6;
+
+}
+
+
 }

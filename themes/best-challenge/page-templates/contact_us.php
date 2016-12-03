@@ -29,6 +29,14 @@ get_header(); ?>
                     <p>Stephen White | stephen@best.bc.ca | (604) 669-2860 ext.200</p>
                 </div>
             </div>
+
+            <div class="contact-form-area">
+                <div class="contact-form-7-area">
+                    <h2>have questions? want to learn more?</h2>
+                    <h2>leave us a message!</h2>
+                    <?php echo do_shortcode( '[contact-form-7 id="72" title="BEST Contact Form"]' ); ?>
+                </div>
+            </div>
             		
                     
                     

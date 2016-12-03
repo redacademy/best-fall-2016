@@ -1560,6 +1560,9 @@ this is the first banner section under the header
 ========================*/
   /*=======================
 this is the CONTACT PERSON INFO
+========================*/
+  /*=======================
+CONTACT FORM 7
 ========================*/ }
   .page-id-70 .picture-wrapper-contact {
     display: -ms-flexbox;
@@ -1615,6 +1618,24 @@ this is the CONTACT PERSON INFO
     color: #303b46;
     margin-bottom: 0;
     margin-top: 0; }
+  .page-id-70 .contact-form-area {
+    height: 614px;
+    background-color: lightskyblue;
+    padding-top: 20px; }
+  .page-id-70 .contact-form-area h2 {
+    text-transform: uppercase; }
+  .page-id-70 input[type="text"],
+  .page-id-70 input[type="email"],
+  .page-id-70 input[type="tel"] {
+    background-color: #dee2e6;
+    width: 30%;
+    height: 50px;
+    border-radius: 10px; }
+  .page-id-70 textarea {
+    width: 40%;
+    height: 271px;
+    border-radius: 10px;
+    background-color: #dee2e6; }
 
 /*=======================
 this is the css for the special template that will add and remove one of two buttons depending on the 
