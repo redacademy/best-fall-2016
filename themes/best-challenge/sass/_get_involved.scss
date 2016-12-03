@@ -268,7 +268,8 @@ this section has two flexed blocks which links readers to additional resources
 
 .resources-section{
 
-    background:lightgrey;
+    background:url('../../assets/images/curved-gray-background.png') center;
+    background-size: cover;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -279,6 +280,7 @@ this section has two flexed blocks which links readers to additional resources
     flex-direction:column;
     align-items:center;
     padding-top:20px;
+    
  
 
 }

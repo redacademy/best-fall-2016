@@ -52,9 +52,15 @@
 						</div>
 					</div>
 			<div class="footer-social">
-					<span><i class="fa fa-facebook-square"></i></span>
-					<span><i class="fa fa-instagram"></i></span>
-					<span><i class="fa fa-twitter-square"></i></span>
+					<span>
+						<a href="http://facebook.com"><i class="fa fa-facebook-square"></i></a>
+					</span>
+					<span>
+						<a href="http://instagram.com"><i class="fa fa-instagram"></i></a>
+					</span>
+					<span>
+						<a href="http://twitter.com"><i class="fa fa-twitter-square"></i></a>
+					</span>
 				</div>
 			</div>	
 		</div><!-- .site-info -->
