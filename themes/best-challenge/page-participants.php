@@ -29,23 +29,28 @@ get_header(); ?>
 
 			<div class="taxonomy-wrapper">
 				<?php
-					$terms = get_terms('prize_type', array('order' => 'DESC'));  
+					$terms = get_terms('participant_type', array('order' => 'DESC'));  
 
-					foreach($terms as $prize_type) { ?>
+					foreach($terms as $participant_type) { ?>
 					
-						<h2><?php echo $prize_type->name; ?> </h2>
+						<h2><?php echo $participant_type->name; ?> </h2>
 
-						<?php $args = array(
-							'post_type' => 'prize',
-							// 'posts_per_page' => 4,
-							'tax_query' => array( 
+					<?php $args = array(
+							'post_type' => 'participant',
+							'tax_query' => array(
+								'relation' => 'AND',
 								array(
-									'taxonomy' => 'prize_type',
+									'taxonomy' => 'participant_location',
 									'field'    => 'slug',
-									'terms'    =>  $prize_type,
-									
+									'terms'    => array( 'bc', 'metro-vancouver' ),
 								),
-							),  
+								array(
+									'taxonomy' => 'participant_type',
+									'field'    => 'term_id',
+									'terms'    => array( 103, 115, 206 ),
+									'operator' => 'NOT IN',
+								),
+							),
 						);
 
 						$prizes = get_posts( $args ); ?>
@@ -54,8 +59,8 @@ get_header(); ?>
 						<?php foreach( $prizes as $post ) : setup_postdata($post); ?>
 
 							
-							<div class="taxonomy-prize">
-								<div class="prize-image">
+							<div class="taxonomy-participant">
+								<div class="taxonomy-image">
 									<?php the_post_thumbnail( 'large' ); ?>							
 								</div>
 
@@ -72,21 +77,6 @@ get_header(); ?>
 						
 				} ?>
 			</div> <!-- prize wrapper section ends -->
-
-			<div class="prize-categories">
-					<div class="section-title">
-						<h2>prize categories</h2>
-					 </div>
-
-					<?php $fields=CFS()->get( 'prize_categories' );
-                        foreach ( $fields as $field ) { ?>
-                        <div class="category-name"> 
-                               <h3><?php echo $field['category_name']; ?></h3>
-                        </div>
-                        <div class="category-description">
-                                <p><?php echo $field['category_description']; } ?></p>
-                        </div>
-			</div>
 			
 		</div>
 	</div><!-- #primary -->

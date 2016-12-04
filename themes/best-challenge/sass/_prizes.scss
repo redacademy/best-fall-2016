@@ -1,4 +1,4 @@
-.page-id-93{
+.page-template-default{
 
     .page-heading {
         background-image: url(../../assets/images/gift-mobile.png);
@@ -45,7 +45,7 @@
             width: 50%;
         }
     }
-    .prize-wrapper {
+    .taxonomy-wrapper {
         width: 80%;
         height: auto;
         display: flex;
@@ -60,7 +60,7 @@
             margin-top: 5% auto 1% auto;
             }
 
-            .prize-image {
+            .taxonomy-image {
                 width: 230px;
                 img {
                     width: 100%;
@@ -68,10 +68,14 @@
             }
         
             h2 {
+                font-size: 2.5rem;
+                font-weight: bold;
+                color: $black-text;
                 width: 100%;
                 text-align: center;
+                text-transform: uppercase;
             }
-            .single-prize {
+            .taxonomy-prize {
                 margin: 5% auto;
                 width: 230px;
                 height: 230px;
@@ -81,7 +85,7 @@
                     margin: 1%;
                 }
             }
-        .prize-title {
+        .taxonomy-title {
             width: 230px;
             height: 115px;
             background-image: url(../../assets/images/overlay.png);
@@ -100,7 +104,7 @@
                 color: $light-text;
             }       
         }
-        .prize-description {
+        .taxonomy-description {
             background-color: $footer-background;
             opacity: 0.9;
             bottom: 43px;
@@ -122,17 +126,45 @@
     }
     .prize-categories {
         width: 80%;
-        margin: 0 auto;
+        margin: 5% auto;
+        color: $dark-text;
+        h2 {
+            font-weight: normal;
+            font-size: 2rem;
+            text-transform: uppercase;
+            text-align: center;
+            color: $black-text;
+            @include desktop {
+                font-size: 2.25rem;    
+            }
+        }
 
         @include desktop {
             width: 50%;
+            color: $light-blue-text;
+            p{
+                margin-left: 50px;
+            }
         }
         .category-name {
             height: 57px;
             border-bottom: 1px solid $best-green;
-            font-size: 30px;
-            font-weight: bold;
             text-transform: capitalize;
+            h3 {
+                font-size: 1.8rem;
+                font-weight: 300;
+            }
+            @include desktop {
+                font-weight: bold;
+            }
+            
+        }
+        .category-description {
+            p {
+                display: none;
+                font-weight: 300;
+            }
+
         }
     }
 

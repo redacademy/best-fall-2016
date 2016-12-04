@@ -1,15 +1,4 @@
 (function( $ ) {
-  //shows the answer on click 
-     
-  $('.question').hover(function(event){
-    event.preventDefault();
-    $('.answer').css('display', 'initial');
-  });
-
-  //hides the answer on click 
-  $('.question').on('mouseleave', function(){
-    $('.answer').css('display', 'none');
-  });
  
  //function to show prize description on click 
 
@@ -21,5 +10,19 @@
     $(this).css('display', 'none');
  });
 
+//function to show prize category description on click 
+// $('.category-name').on('click',function(event){
+//      event.preventDefault();
+//      $('.category-description').css('height', '300px');
+//  });
+//   $('.category-description').mouseleave(function(){
+//     $(this).css('height' , '0px');
+//  });
 
+
+  $('.prize-categories').on('click', '.category-name', function() {
+     $(this).siblings().children().slideToggle('fast');
+     $(this).parent().siblings().children().next().hide('fast');
+   });
+//
   })( jQuery );

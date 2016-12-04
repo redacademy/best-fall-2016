@@ -853,7 +853,7 @@ a {
 .wdi_photo_wrap li {
   border: 5px solid black; }
 
-.page-id-93 .page-heading {
+.page-template-default .page-heading {
   background-image: url(../../assets/images/gift-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -866,25 +866,25 @@ a {
   display: -ms-flexbox;
   display: flex; }
   @media (min-width: 600px) {
-    .page-id-93 .page-heading {
+    .page-template-default .page-heading {
       background-image: url(../../assets/images/gift.png); } }
-  .page-id-93 .page-heading h1, .page-id-93 .page-heading h2 {
+  .page-template-default .page-heading h1, .page-template-default .page-heading h2 {
     font-size: 2.62rem;
     text-align: center;
     width: 100%;
     color: white;
     text-transform: uppercase;
     font-weight: bold; }
-  .page-id-93 .page-heading p {
+  .page-template-default .page-heading p {
     font-size: 1.1rem;
     font-weight: 300; }
 
-.page-id-93 .title-wrapper {
+.page-template-default .title-wrapper {
   line-height: 0.5;
   margin-top: 5%;
   height: 200px; }
 
-.page-id-93 .content {
+.page-template-default .content {
   width: 90%;
   font-size: 20px;
   font-weight: 300;
@@ -892,10 +892,10 @@ a {
   text-align: center;
   color: #303b46; }
   @media (min-width: 600px) {
-    .page-id-93 .content {
+    .page-template-default .content {
       width: 50%; } }
 
-.page-id-93 .prize-wrapper {
+.page-template-default .taxonomy-wrapper {
   width: 80%;
   height: auto;
   display: -ms-flexbox;
@@ -910,29 +910,33 @@ a {
       flex-basis: 80%;
   margin: 0 auto; }
   @media (min-width: 600px) {
-    .page-id-93 .prize-wrapper {
+    .page-template-default .taxonomy-wrapper {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       -ms-flex-direction: row;
           flex-direction: row;
       margin-top: 5% auto 1% auto; } }
-  .page-id-93 .prize-wrapper .prize-image {
+  .page-template-default .taxonomy-wrapper .taxonomy-image {
     width: 230px; }
-    .page-id-93 .prize-wrapper .prize-image img {
+    .page-template-default .taxonomy-wrapper .taxonomy-image img {
       width: 100%; }
-  .page-id-93 .prize-wrapper h2 {
+  .page-template-default .taxonomy-wrapper h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #303b46;
     width: 100%;
-    text-align: center; }
-  .page-id-93 .prize-wrapper .single-prize {
+    text-align: center;
+    text-transform: uppercase; }
+  .page-template-default .taxonomy-wrapper .taxonomy-prize {
     margin: 5% auto;
     width: 230px;
     height: 230px;
     border: 1px solid white;
     position: relative; }
     @media (min-width: 600px) {
-      .page-id-93 .prize-wrapper .single-prize {
+      .page-template-default .taxonomy-wrapper .taxonomy-prize {
         margin: 1%; } }
-  .page-id-93 .prize-wrapper .prize-title {
+  .page-template-default .taxonomy-wrapper .taxonomy-title {
     width: 230px;
     height: 115px;
     background-image: url(../../assets/images/overlay.png);
@@ -941,7 +945,7 @@ a {
     position: relative;
     opacity: 0.85;
     bottom: 60%; }
-    .page-id-93 .prize-wrapper .prize-title h3 {
+    .page-template-default .taxonomy-wrapper .taxonomy-title h3 {
       width: 171px;
       font-size: 1rem;
       position: relative;
@@ -949,7 +953,7 @@ a {
       top: 50px;
       left: 10px;
       color: #dee2e6; }
-  .page-id-93 .prize-wrapper .prize-description {
+  .page-template-default .taxonomy-wrapper .taxonomy-description {
     background-color: #5a6f83;
     opacity: 0.9;
     bottom: 43px;
@@ -959,7 +963,7 @@ a {
     width: 230px;
     z-index: 1;
     top: 0%; }
-    .page-id-93 .prize-wrapper .prize-description p {
+    .page-template-default .taxonomy-wrapper .taxonomy-description p {
       width: 90%;
       margin: 1% auto;
       color: #dee2e6;
@@ -967,18 +971,38 @@ a {
       font-size: 1rem;
       text-align: center; }
 
-.page-id-93 .prize-categories {
+.page-template-default .prize-categories {
   width: 80%;
-  margin: 0 auto; }
+  margin: 5% auto;
+  color: #303b46; }
+  .page-template-default .prize-categories h2 {
+    font-weight: normal;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #303b46; }
+    @media (min-width: 600px) {
+      .page-template-default .prize-categories h2 {
+        font-size: 2.25rem; } }
   @media (min-width: 600px) {
-    .page-id-93 .prize-categories {
-      width: 50%; } }
-  .page-id-93 .prize-categories .category-name {
+    .page-template-default .prize-categories {
+      width: 50%;
+      color: #5a6f83; }
+      .page-template-default .prize-categories p {
+        margin-left: 50px; } }
+  .page-template-default .prize-categories .category-name {
     height: 57px;
     border-bottom: 1px solid #a6ce39;
-    font-size: 30px;
-    font-weight: bold;
     text-transform: capitalize; }
+    .page-template-default .prize-categories .category-name h3 {
+      font-size: 1.8rem;
+      font-weight: 300; }
+    @media (min-width: 600px) {
+      .page-template-default .prize-categories .category-name {
+        font-weight: bold; } }
+  .page-template-default .prize-categories .category-description p {
+    display: none;
+    font-weight: 300; }
 
 .info-404 {
   display: -ms-flexbox;
