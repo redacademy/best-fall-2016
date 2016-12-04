@@ -927,6 +927,10 @@ a {
     width: 100%;
     text-align: center;
     text-transform: uppercase; }
+  .page-template-default .taxonomy-wrapper h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.4rem; }
   .page-template-default .taxonomy-wrapper .taxonomy-prize {
     margin: 5% auto;
     width: 230px;

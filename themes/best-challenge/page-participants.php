@@ -28,18 +28,16 @@ get_header(); ?>
 			
 
 			<div class="taxonomy-wrapper">
-				<!--Get specific taxonomy term name-->
-				<?php
-					$participant_location = get_term_by('slug','bc','participant_location');  
-				?>
-				<!--echo the term name-->
-				<h2><?php echo $participant_location->name; ?> </h2>
-				
-				<!--echo 2nd taxonomy term name -->
 				<?php 
-					$terms = get_terms('participant_type', array('order' => 'DESC'));  
-					foreach($terms as $participant_type) { ?>
+					$locations = get_terms('participant_location', array('order' => 'ASC'));  
+						foreach($locations as $participant_location) { ?>
+					<h2><?php echo $participant_location->name; ?> </h2>
+					
+					<?php $types = get_terms('participant_type', array('order' => 'DESC'));  
+						foreach($types as $participant_type) { ?>
 					<h2><?php echo $participant_type->name; ?> </h2>
+					<h3><?php echo $participant_type->description; ?></h3>
+
 					
 				<!--define the arguments for the posts-->
 					<?php $args = array(
@@ -49,7 +47,7 @@ get_header(); ?>
 								array(
 									'taxonomy' => 'participant_location',
 									'field'    => 'slug',
-									'terms'    => array( 'bc'),
+									'terms'    => $participant_location,
 								),
 								array(
 									'taxonomy' => 'participant_type',
@@ -59,10 +57,10 @@ get_header(); ?>
 								),
 							),
 						);
-						$bc = get_posts( $args ); ?>
+						$teams = get_posts( $args ); ?>
 					
 				<!--posts loop-->
-						<?php foreach( $bc as $post ) : setup_postdata($post); ?>	
+						<?php foreach( $teams as $post ) : setup_postdata($post); ?>	
 							<div class="taxonomy-participant">
 								<div class="taxonomy-image">
 									<?php the_post_thumbnail( 'large' ); ?>							
@@ -78,65 +76,9 @@ get_header(); ?>
 
 						<?php endforeach; wp_reset_postdata();	
 					}
+				}
 				?>
 			</div> <!-- prize wrapper section ends -->
-
-
-			<!--Vancouver-->
-			<div class="taxonomy-wrapper">
-				<!--Get specific taxonomy term name-->
-				<?php
-					$participant_location = get_term_by('slug','metro-vancouver','participant_location');  
-				?>
-				<!--echo the term name-->
-				<h2><?php echo $participant_location->name; ?> </h2>
-				
-				<!--echo 2nd taxonomy term name -->
-				<?php 
-					$terms = get_terms('participant_type', array('order' => 'DESC'));  
-					foreach($terms as $participant_type) { ?>
-					<h2><?php echo $participant_type->name; ?> </h2>
-					
-				<!--define the arguments for the posts-->
-					<?php $args = array(
-							'post_type' => 'participant',
-							'tax_query' => array(
-							 'relation' => 'AND',
-								array(
-									'taxonomy' => 'participant_location',
-									'field'    => 'slug',
-									'terms'    => array( 'metro-vancouver'),
-								),
-								array(
-									'taxonomy' => 'participant_type',
-									'field'    => 'slug',
-									'terms'    => $participant_type,
-									'operator' => 'IN',
-								),
-							),
-						);
-						$vancouver = get_posts( $args ); ?>
-					
-				<!--posts loop-->
-						<?php foreach( $vancouver as $post ) : setup_postdata($post); ?>	
-							<div class="taxonomy-participant">
-								<div class="taxonomy-image">
-									<?php the_post_thumbnail( 'large' ); ?>							
-								</div>
-
-								<div class="taxonomy-title">
-									<h3><?php the_title(); ?></h3>
-								</div>
-								<div class="taxonomy-description">
-									<p><?php the_content(); ?></p>
-								</div>
-							</div>
-
-						<?php endforeach; wp_reset_postdata();	
-					}
-				?>
-			</div> <!-- prize wrapper section ends -->
-			
 		</div>
 	</div><!-- #primary -->
 
