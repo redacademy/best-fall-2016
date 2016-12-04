@@ -191,7 +191,6 @@ MAP AREA
 .directions-area{
 	height: 540px;
 	background-color: #303b46;
-
     display:flex;
     flex-direction:row;
     align-items:center;
@@ -200,15 +199,13 @@ MAP AREA
 
 }
 .directions-area p {
-
-color:white;
+    color:white;
 }
 
 
 .directions-area h2 {
-
-color:white;
-text-transform:uppercase;
+    color:white;
+    text-transform:uppercase;
 }
 
 }

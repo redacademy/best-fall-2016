@@ -50,9 +50,22 @@ get_header(); ?>
                         <p>204-175 East Broadway</p>
                         <p>Vancouver, BC</p>
                         <p>V5T 1W2</p>
+                        <div class="email-contact">
+                            <p>commuterchallenge@best.bc.ca | (604) 669-2860</p>
+                        </div>
                     </div>
                 </div>
                     
+                <div class="newsletter-sign-up">
+                    <h2>sign up for our newsletter</h2>
+                    <div class="sign-up-text">
+                        <p>Hear about upcoming event, new tools and lots 
+                        more! Sign up for our newsletter today!</p>
+                        <div class="sign-up-email"><input type="email" name="your_email" id="your-email" value="" placeholder="Enter your email..." aria-label="Subscribe Email Input"></div>
+                    	<div class="sign-up-button"><input type="submit" name="subscribe" value="Subscribe" id="subscribe"></div>
+                    </div>
+
+                    <?php get_template_part( 'template-parts/green-banner' ); ?>
                     
         </main><!-- #main -->
 	</div><!-- #primary -->
