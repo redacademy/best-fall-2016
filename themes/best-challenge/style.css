@@ -1608,6 +1608,9 @@ this is the CONTACT PERSON INFO
 ========================*/
   /*=======================
 CONTACT FORM 7
+========================*/
+  /*=======================
+MAP AREA
 ========================*/ }
   .page-id-70 .picture-wrapper-contact {
     display: -ms-flexbox;
@@ -1669,7 +1672,13 @@ CONTACT FORM 7
     padding-top: 20px; }
   .page-id-70 .contact-form-area h2 {
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: 'montserrat';
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0; }
   .page-id-70 input[type="text"],
   .page-id-70 input[type="email"],
   .page-id-70 input[type="tel"] {
@@ -1677,6 +1686,22 @@ CONTACT FORM 7
     border: none;
     height: 50px;
     border-radius: 10px; }
+  .page-id-70 input[type=submit] {
+    background-color: #5a6f83;
+    color: white;
+    cursor: pointer;
+    padding: .65rem 2.5rem;
+    border: 1;
+    border-radius: 25px;
+    font-family: 'montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    box-shadow: none;
+    line-height: 1.2;
+    border-width: 2px;
+    border-color: white;
+    width: 144px;
+    height: 50px; }
   .page-id-70 textarea {
     height: 271px;
     border-radius: 10px;
@@ -1706,6 +1731,24 @@ CONTACT FORM 7
   .page-id-70 .message-field {
     margin-left: 4%;
     width: 40%; }
+  .page-id-70 .submit-field {
+    text-align: center; }
+  .page-id-70 .directions-area {
+    height: 540px;
+    background-color: #303b46;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .page-id-70 .directions-area p {
+    color: white; }
+  .page-id-70 .directions-area h2 {
+    color: white;
+    text-transform: uppercase; }
 
 /*=======================
 this is the css for the special template that will add and remove one of two buttons depending on the 
