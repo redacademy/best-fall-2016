@@ -69,14 +69,11 @@ get_header(); ?>
 
 						<?php endforeach; wp_reset_postdata();
 						
-						
 				} ?>
 			</div> <!-- prize wrapper section ends -->
 
 			<div class="prize-categories">
-					<div class="section-title">
-						<h2>prize categories</h2>
-					 </div>
+					<h2 class="section-title">prize categories</h2>
 
 					<?php $fields=CFS()->get( 'prize_categories' );
                         foreach ( $fields as $field ) { ?>

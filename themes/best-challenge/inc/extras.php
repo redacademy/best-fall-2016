@@ -37,3 +37,22 @@ add_filter( 'body_class', 'best_challenge_body_classes' );
 // add_filter( 'get_the_archive_title', 'display_custom_archive_title');
 
 
+
+// print_posts
+function print_teams_tests( $teams ) {
+	foreach( $teams as $post ) : setup_postdata($post); ?>
+		<div class="taxonomy-participant">
+			<div class="taxonomy-image">
+				<?php the_post_thumbnail( 'large' ); ?>							
+			</div>
+
+			<div class="taxonomy-title">
+				<h3><?php the_title(); ?> </h3>
+			</div>
+			<div class="taxonomy-description">
+				<p><?php the_content(); ?></p>
+			</div>
+		</div>
+
+	<?php endforeach; wp_reset_postdata();
+	} ?>
