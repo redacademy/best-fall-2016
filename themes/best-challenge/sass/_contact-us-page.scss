@@ -180,11 +180,35 @@ input[placeholder] {
 
 }
 .submit-field{
-
     text-align:center;
 
 }
+/*=======================
+MAP AREA
+========================*/
 
+
+.directions-area{
+	height: 540px;
+	background-color: #303b46;
+
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+
+
+}
+.directions-area p {
+
+color:white;
 }
 
 
+.directions-area h2 {
+
+color:white;
+text-transform:uppercase;
+}
+
+}

@@ -1602,6 +1602,9 @@ this is the CONTACT PERSON INFO
 ========================*/
   /*=======================
 CONTACT FORM 7
+========================*/
+  /*=======================
+MAP AREA
 ========================*/ }
   .page-id-70 .picture-wrapper-contact {
     display: -ms-flexbox;
@@ -1724,6 +1727,22 @@ CONTACT FORM 7
     width: 40%; }
   .page-id-70 .submit-field {
     text-align: center; }
+  .page-id-70 .directions-area {
+    height: 540px;
+    background-color: #303b46;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .page-id-70 .directions-area p {
+    color: white; }
+  .page-id-70 .directions-area h2 {
+    color: white;
+    text-transform: uppercase; }
 
 /*=======================
 this is the css for the special template that will add and remove one of two buttons depending on the 
