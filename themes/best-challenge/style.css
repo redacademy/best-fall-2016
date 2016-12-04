@@ -1707,7 +1707,7 @@ NEWLETTER SIGN-UP AREA
     border: none;
     height: 50px;
     border-radius: 10px;
-    width: 125%; }
+    width: 100%; }
   .page-id-70 input[type=submit] {
     background-color: #5a6f83;
     color: white;
@@ -1750,11 +1750,13 @@ NEWLETTER SIGN-UP AREA
     -ms-flex-pack: center;
         justify-content: center; }
   .page-id-70 .message-field {
-    margin-left: 10%;
+    padding-left: 10%;
     width: 40%;
     padding-top: 1%; }
   .page-id-70 .submit-field {
     text-align: center; }
+  .page-id-70 .contact-minus-submit-button p {
+    width: 300px; }
   .page-id-70 .directions-area {
     height: 540px;
     background-color: #303b46;
@@ -1826,9 +1828,10 @@ NEWLETTER SIGN-UP AREA
   .page-id-70 .sign-up-email {
     margin-left: 5%; }
   .page-id-70 .sign-up-button {
-    padding-left: 15%; }
+    padding-left: 5%; }
   .page-id-70 #your-email-input {
-    background-color: white; }
+    background-color: white;
+    width: 250px; }
   .page-id-70 #subscribe-newsletter {
     background-color: #383B4C;
     color: white;
@@ -1841,7 +1844,8 @@ NEWLETTER SIGN-UP AREA
     font-size: 0.8rem;
     box-shadow: none;
     line-height: 1.2;
-    border-width: 0px; }
+    border-width: 0px;
+    width: 162px; }
 
 /*=======================
 this is the css for the special template that will add and remove one of two buttons depending on the 
@@ -1863,11 +1867,19 @@ users choice
 
 .green-banner-data p:first-child {
   text-transform: uppercase;
-  font-weight: 500; }
+  font-weight: 500;
+  font-family: 'montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 0;
+  padding-top: 30px; }
 
 .green-banner-data p {
   font-family: 'montserrat', sans-serif;
-  font-weight: 100; }
+  font-weight: 300;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 25px; }
 
 #go-green-button {
   background-color: transparent;
@@ -1880,9 +1892,10 @@ users choice
   font-size: 1rem;
   box-shadow: none;
   line-height: 1.7;
-  border-width: 2px;
+  border-width: 3px;
   border-color: black;
-  text-shadow: none; }
+  text-shadow: none;
+  width: 250px; }
 
 .button2 {
   visibility: visible; }
@@ -1894,8 +1907,12 @@ users choice
       flex-direction: column; }
 
 .green-buttons {
-  text-align: center;
-  margin-bottom: 10px; }
+  margin-bottom: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
 
 .button1 {
-  padding-bottom: 5px; }
+  padding-bottom: 5px;
+  padding-right: 5%; }

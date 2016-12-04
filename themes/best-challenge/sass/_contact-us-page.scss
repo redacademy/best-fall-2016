@@ -117,7 +117,8 @@ input[type="tel"],{
     border:none;
 	height: 50px;
 	border-radius: 10px;
-    width:125%;
+    width:100%;
+    
 }
 input[type=submit] {
     background-color: #5a6f83;
@@ -171,7 +172,7 @@ input[placeholder] {
 
 
 .message-field{
-    margin-left:10%;
+    padding-left:10%;
     width:40%;
     padding-top:1%;
 
@@ -179,6 +180,11 @@ input[placeholder] {
 .submit-field{
     text-align:center;
 
+}
+
+.contact-minus-submit-button p{
+
+    width:300px;
 }
 /*=======================
 MAP AREA
@@ -296,18 +302,19 @@ margin-left:5%;
 
 .sign-up-button{
 
-padding-left:15%;
+padding-left:5%;
 
 }
 
 #your-email-input{
     background-color:white;
+    width:250px;
 }
 
 
 
     #subscribe-newsletter{
-        background-color:#383B4C;;
+    background-color:#383B4C;;
     color: white;
     cursor: pointer;
     padding: .5rem 2rem;
@@ -319,6 +326,7 @@ padding-left:15%;
     box-shadow:none;
     line-height: 1.2;
     border-width:0px;
+    width: 162px;
     
     }
 }

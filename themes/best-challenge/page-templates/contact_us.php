@@ -65,7 +65,7 @@ get_header(); ?>
                         </div>
                         <div class="input-and-button">
                             <div class="sign-up-email"><input type="email" name="your_email" id="your-email-input" value="" placeholder="Enter your email..." aria-label="Subscribe Email Input"></div>
-                    	    <div class="sign-up-button"><input type="submit" name="subscribe" value="Subscribe" id="subscribe"></div>
+                    	    <div class="sign-up-button"><input type="submit" name="subscribe" value="Subscribe" id="subscribe-newsletter"></div>
                         </div>
                     </div>
                 </div>
