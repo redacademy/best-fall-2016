@@ -853,7 +853,7 @@ a {
 .wdi_photo_wrap li {
   border: 5px solid black; }
 
-.page-id-61 .page-heading {
+.page-id-93 .page-heading {
   background-image: url(../../assets/images/gift-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -866,55 +866,73 @@ a {
   display: -ms-flexbox;
   display: flex; }
   @media (min-width: 600px) {
-    .page-id-61 .page-heading {
+    .page-id-93 .page-heading {
       background-image: url(../../assets/images/gift.png); } }
-  .page-id-61 .page-heading h1, .page-id-61 .page-heading h2 {
+  .page-id-93 .page-heading h1, .page-id-93 .page-heading h2 {
     font-size: 2.62rem;
     text-align: center;
     width: 100%;
     color: white;
     text-transform: uppercase;
     font-weight: bold; }
-  .page-id-61 .page-heading p {
+  .page-id-93 .page-heading p {
     font-size: 1.1rem;
     font-weight: 300; }
 
-.page-id-61 .title-wrapper {
+.page-id-93 .title-wrapper {
   line-height: 0.5;
-  margin-top: 5%; }
+  margin-top: 5%;
+  height: 200px; }
 
-.page-id-61 .prize-wrapper {
+.page-id-93 .content {
+  width: 90%;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0 auto;
+  text-align: center;
+  color: #303b46; }
+  @media (min-width: 600px) {
+    .page-id-93 .content {
+      width: 50%; } }
+
+.page-id-93 .prize-wrapper {
   width: 80%;
   height: auto;
-  margin: 5% auto;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  margin: 0 auto; }
   @media (min-width: 600px) {
-    .page-id-61 .prize-wrapper {
+    .page-id-93 .prize-wrapper {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       -ms-flex-direction: row;
-          flex-direction: row; } }
-  .page-id-61 .prize-wrapper .prize-image {
-    /*position: relative;*/ }
-    .page-id-61 .prize-wrapper .prize-image img {
+          flex-direction: row;
+      margin-top: 5% auto 1% auto; } }
+  .page-id-93 .prize-wrapper .prize-image {
+    width: 230px; }
+    .page-id-93 .prize-wrapper .prize-image img {
       width: 100%; }
-  .page-id-61 .prize-wrapper h2 {
+  .page-id-93 .prize-wrapper h2 {
     width: 100%;
     text-align: center; }
-  .page-id-61 .prize-wrapper .single-prize {
-    margin-top: 5%;
+  .page-id-93 .prize-wrapper .single-prize {
+    margin: 5% auto;
     width: 230px;
+    height: 230px;
     border: 1px solid white;
     position: relative; }
     @media (min-width: 600px) {
-      .page-id-61 .prize-wrapper .single-prize {
-        width: 25%; } }
-  .page-id-61 .prize-wrapper .prize-title {
+      .page-id-93 .prize-wrapper .single-prize {
+        margin: 1%; } }
+  .page-id-93 .prize-wrapper .prize-title {
     width: 230px;
     height: 115px;
     background-image: url(../../assets/images/overlay.png);
@@ -922,8 +940,8 @@ a {
     background-size: cover;
     position: relative;
     opacity: 0.85;
-    bottom: 38%; }
-    .page-id-61 .prize-wrapper .prize-title h3 {
+    bottom: 60%; }
+    .page-id-93 .prize-wrapper .prize-title h3 {
       width: 171px;
       font-size: 1rem;
       position: relative;
@@ -931,8 +949,9 @@ a {
       top: 50px;
       left: 10px;
       color: #dee2e6; }
-  .page-id-61 .prize-wrapper .prize-description {
-    background-color: grey;
+  .page-id-93 .prize-wrapper .prize-description {
+    background-color: #5a6f83;
+    opacity: 0.9;
     bottom: 43px;
     display: none;
     position: absolute;
@@ -940,6 +959,26 @@ a {
     width: 230px;
     z-index: 1;
     top: 0%; }
+    .page-id-93 .prize-wrapper .prize-description p {
+      width: 90%;
+      margin: 1% auto;
+      color: #dee2e6;
+      font-weight: 300;
+      font-size: 1rem;
+      text-align: center; }
+
+.page-id-93 .prize-categories {
+  width: 80%;
+  margin: 0 auto; }
+  @media (min-width: 600px) {
+    .page-id-93 .prize-categories {
+      width: 50%; } }
+  .page-id-93 .prize-categories .category-name {
+    height: 57px;
+    border-bottom: 1px solid #a6ce39;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize; }
 
 .info-404 {
   display: -ms-flexbox;

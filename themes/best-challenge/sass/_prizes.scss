@@ -1,4 +1,4 @@
-.page-id-61{
+.page-id-93{
 
     .page-heading {
         background-image: url(../../assets/images/gift-mobile.png);
@@ -31,21 +31,37 @@
     .title-wrapper {
         line-height: 0.5;
         margin-top: 5%;
+        height: 200px;
+    }
+
+    .content {
+        width: 90%;
+        font-size: 20px;
+        font-weight: 300;
+        margin: 0 auto;
+        text-align: center;
+        color: $dark-text;
+        @include desktop {
+            width: 50%;
+        }
     }
     .prize-wrapper {
         width: 80%;
         height: auto;
-        margin: 5% auto;
         display: flex;
+        justify-content: center;
         flex-wrap: nowrap;
         flex-direction: column;
+        flex-basis: 80%;
+        margin: 0 auto;
             @include desktop {
             flex-wrap: wrap;
             flex-direction: row;
+            margin-top: 5% auto 1% auto;
             }
 
             .prize-image {
-                /*position: relative;*/
+                width: 230px;
                 img {
                     width: 100%;
                 }
@@ -56,12 +72,13 @@
                 text-align: center;
             }
             .single-prize {
-                margin-top: 5%;
+                margin: 5% auto;
                 width: 230px;
+                height: 230px;
                 border: 1px solid white;
                 position: relative;
                 @include desktop {
-                    width: 25%;
+                    margin: 1%;
                 }
             }
         .prize-title {
@@ -72,7 +89,7 @@
             background-size: cover;
             position: relative;
             opacity: 0.85;
-            bottom: 38%; 
+            bottom: 60%; 
             h3 {
                 width: 171px;
                 font-size: 1rem;
@@ -84,7 +101,8 @@
             }       
         }
         .prize-description {
-            background-color: grey;
+            background-color: $footer-background;
+            opacity: 0.9;
             bottom: 43px;
             display: none;
             position: absolute;
@@ -92,7 +110,32 @@
             width: 230px;
             z-index: 1;
             top: 0%;
+            p {
+                width: 90%;
+                margin: 1% auto;
+                color: $light-text;
+                font-weight: 300;
+                font-size: 1rem;
+                text-align: center;
+            }
         }
     }
+    .prize-categories {
+        width: 80%;
+        margin: 0 auto;
+
+        @include desktop {
+            width: 50%;
+        }
+        .category-name {
+            height: 57px;
+            border-bottom: 1px solid $best-green;
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+    }
+
+
 
 }
