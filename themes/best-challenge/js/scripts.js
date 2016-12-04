@@ -22,7 +22,7 @@
 
   $('.prize-categories').on('click', '.category-name', function() {
      $(this).siblings().children().slideToggle('fast');
-     $(this).parent().siblings().children().next().hide('fast');
+     $(this).siblings().children().next().toggle('fast');
    });
 //
   })( jQuery );
