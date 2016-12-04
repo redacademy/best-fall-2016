@@ -61,3 +61,59 @@ function register_prizes_post_type() {
 
 }
 add_action( 'init', 'register_prizes_post_type', 0 );
+
+
+// Register Participants Post Type 
+
+function register_participants_post_type() {
+
+	$labels = array(
+		'name'                  => 'Participants',
+		'singular_name'         => 'Participant',
+		'menu_name'             => 'Participants',
+		'name_admin_bar'        => 'Participant',
+		'archives'              => 'Participant',
+		'parent_item_colon'     => 'Parent Item:',
+		'all_items'             => 'All Participants',
+		'add_new_item'          => 'Add New Participant',
+		'add_new'               => 'Add New',
+		'new_item'              => 'New Participant',
+		'edit_item'             => 'Edit Participant',
+		'update_item'           => 'Update Participant',
+		'view_item'             => 'View Participant',
+		'search_items'          => 'Search Participants',
+		'not_found'             => 'Not found',
+		'not_found_in_trash'    => 'Not found in Trash',
+		'featured_image'        => 'Featured Image',
+		'set_featured_image'    => 'Set featured image',
+		'remove_featured_image' => 'Remove featured image',
+		'use_featured_image'    => 'Use as featured image',
+		'insert_into_item'      => 'Insert into Participant',
+		'uploaded_to_this_item' => 'Uploaded to this Participant',
+		'items_list'            => 'Participants list',
+		'items_list_navigation' => 'Participants list navigation',
+		'filter_items_list'     => 'Filter Participantslist',
+	);
+	$args = array(
+		'label'                 => 'Participant',
+		'description'           => 'Commuter Challenge Participants',
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail', ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 10,
+		'menu_icon'             => 'dashicons-universal-access-alt',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => false,
+		'has_archive'           => false,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'post',
+	);
+	register_post_type( 'participant', $args );
+
+}
+add_action( 'init', 'register_participants_post_type', 0 );

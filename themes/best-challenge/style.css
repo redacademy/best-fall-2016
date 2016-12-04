@@ -895,7 +895,7 @@ a {
     .page-template-default .content {
       width: 50%; } }
 
-.page-template-default .prize-wrapper {
+.page-template-default .taxonomy-wrapper {
   width: 80%;
   height: auto;
   display: -ms-flexbox;
@@ -910,33 +910,33 @@ a {
       flex-basis: 80%;
   margin: 0 auto; }
   @media (min-width: 600px) {
-    .page-template-default .prize-wrapper {
+    .page-template-default .taxonomy-wrapper {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       -ms-flex-direction: row;
           flex-direction: row;
       margin-top: 5% auto 1% auto; } }
-  .page-template-default .prize-wrapper .prize-image {
+  .page-template-default .taxonomy-wrapper .taxonomy-image {
     width: 230px; }
-    .page-template-default .prize-wrapper .prize-image img {
+    .page-template-default .taxonomy-wrapper .taxonomy-image img {
       width: 100%; }
-  .page-template-default .prize-wrapper h2 {
+  .page-template-default .taxonomy-wrapper h2 {
     font-size: 2.5rem;
     font-weight: bold;
     color: #303b46;
     width: 100%;
     text-align: center;
     text-transform: uppercase; }
-  .page-template-default .prize-wrapper .single-prize {
+  .page-template-default .taxonomy-wrapper .taxonomy-prize {
     margin: 5% auto;
     width: 230px;
     height: 230px;
     border: 1px solid white;
     position: relative; }
     @media (min-width: 600px) {
-      .page-template-default .prize-wrapper .single-prize {
+      .page-template-default .taxonomy-wrapper .taxonomy-prize {
         margin: 1%; } }
-  .page-template-default .prize-wrapper .prize-title {
+  .page-template-default .taxonomy-wrapper .taxonomy-title {
     width: 230px;
     height: 115px;
     background-image: url(../../assets/images/overlay.png);
@@ -945,7 +945,7 @@ a {
     position: relative;
     opacity: 0.85;
     bottom: 60%; }
-    .page-template-default .prize-wrapper .prize-title h3 {
+    .page-template-default .taxonomy-wrapper .taxonomy-title h3 {
       width: 171px;
       font-size: 1rem;
       position: relative;
@@ -953,7 +953,7 @@ a {
       top: 50px;
       left: 10px;
       color: #dee2e6; }
-  .page-template-default .prize-wrapper .prize-description {
+  .page-template-default .taxonomy-wrapper .taxonomy-description {
     background-color: #5a6f83;
     opacity: 0.9;
     bottom: 43px;
@@ -963,7 +963,7 @@ a {
     width: 230px;
     z-index: 1;
     top: 0%; }
-    .page-template-default .prize-wrapper .prize-description p {
+    .page-template-default .taxonomy-wrapper .taxonomy-description p {
       width: 90%;
       margin: 1% auto;
       color: #dee2e6;

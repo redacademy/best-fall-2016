@@ -5,7 +5,8 @@
  * @link  http://codex.wordpress.org/Function_Reference/register_taxonomy
  */
 
-// Add your custom taxonomies here...
+// Prize Taxonomy 
+
 function register_prize_taxonomy_() {
 
 	$labels = array(
@@ -43,3 +44,43 @@ function register_prize_taxonomy_() {
 
 }
 add_action( 'init', 'register_prize_taxonomy_', 0 );
+
+// Participants Taxonomy 
+
+function register_participant_taxonomy_() {
+
+	$labels = array(
+		'name'                       => 'Participant Types',
+		'singular_name'              => 'Participant Type',
+		'menu_name'                  => 'Participant Types',
+		'all_items'                  => 'All ParticipantTypes',
+		'parent_item'                => 'Parent Participant Type',
+		'parent_item_colon'          => 'Parent Participant Type:',
+		'new_item_name'              => 'New Participant Type Name',
+		'add_new_item'               => 'Add New Participant Type Item',
+		'edit_item'                  => 'Edit Participant Type',
+		'update_item'                => 'Update Participant Type',
+		'view_item'                  => 'View Participant Type',
+		'separate_items_with_commas' => 'Separate Participant types with commas',
+		'add_or_remove_items'        => 'Add or remove Participant types',
+		'choose_from_most_used'      => 'Choose from the most used',
+		'popular_items'              => 'Popular Participant Types',
+		'search_items'               => 'Search Participant Types',
+		'not_found'                  => 'Not Found',
+		'no_terms'                   => 'No Participant Types',
+		'items_list'                 => 'Participant Type list',
+		'items_list_navigation'      => 'Participant Type list navigation',
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => false,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'participant_type', array( 'participant' ), $args );
+
+}
+add_action( 'init', 'register_participant_taxonomy_', 0 );
