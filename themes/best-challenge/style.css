@@ -970,6 +970,8 @@ a {
 .page-id-93 .prize-categories {
   width: 80%;
   margin: 0 auto; }
+  .page-id-93 .prize-categories p {
+    margin-left: 50px; }
   @media (min-width: 600px) {
     .page-id-93 .prize-categories {
       width: 50%; } }
@@ -979,6 +981,10 @@ a {
     font-size: 30px;
     font-weight: bold;
     text-transform: capitalize; }
+    .page-id-93 .prize-categories .category-name h3 {
+      display: block; }
+  .page-id-93 .prize-categories .category-description p {
+    display: none; }
 
 .info-404 {
   display: -ms-flexbox;

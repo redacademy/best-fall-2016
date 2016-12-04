@@ -123,6 +123,9 @@
     .prize-categories {
         width: 80%;
         margin: 0 auto;
+        p{
+            margin-left: 50px;
+        }
 
         @include desktop {
             width: 50%;
@@ -133,6 +136,15 @@
             font-size: 30px;
             font-weight: bold;
             text-transform: capitalize;
+            h3 {
+                display: block;
+            }
+        }
+        .category-description {
+            p {
+                display: none;
+            }
+
         }
     }
 
