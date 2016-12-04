@@ -18,18 +18,10 @@ get_header(); ?>
                 <p>Get in touch with the organizers here at B.E.S.T</p>
             </div>
 
-            <div class="contact-person-section">
-                <div class="contact-person-image">
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/stephen-white.png"></img>
-                </div>
-                <div class="contact-person-data">
-                    <h2>connect with us directly</h2>
-                    <h2>we are here to help!</h2>
-                    <p>Say 'Hi' to Stephen from B.E.S.T</p>
-                    <p>Stephen White | stephen@best.bc.ca | (604) 669-2860 ext.200</p>
-                </div>
-            </div>
 
+             <?php get_template_part( 'template-parts/contact-person' ); ?>
+
+         
             <div class="contact-form-area">
                 <div class="contact-form-7-area">
                     <h2>have questions? want to learn more?</h2>
