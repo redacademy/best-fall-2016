@@ -74,11 +74,14 @@ get_header(); ?>
 			</div> <!-- prize wrapper section ends -->
 
 			<div class="prize-categories">
-				<?php $fields=CFS()->get( 'prize_categories' );
+					<div class="section-title">
+						<h2>prize categories</h2>
+					 </div>
+
+					<?php $fields=CFS()->get( 'prize_categories' );
                         foreach ( $fields as $field ) { ?>
                         <div class="category-name"> 
                                <h3><?php echo $field['category_name']; ?></h3>
-							   
                         </div>
                         <div class="category-description">
                                 <p><?php echo $field['category_description']; } ?></p>

@@ -21,7 +21,7 @@
 
 
   $('.prize-categories').on('click', '.category-name', function() {
-     $(this).siblings().slideToggle('fast');
+     $(this).siblings().children().slideToggle('fast');
      $(this).parent().siblings().children().next().hide('fast');
    });
 //

@@ -1,4 +1,4 @@
-.page-id-93{
+.page-template-default{
 
     .page-heading {
         background-image: url(../../assets/images/gift-mobile.png);
@@ -122,27 +122,43 @@
     }
     .prize-categories {
         width: 80%;
-        margin: 0 auto;
-        p{
-            margin-left: 50px;
+        margin: 5% auto;
+        color: $dark-text;
+        h2 {
+            font-weight: normal;
+            font-size: 2rem;
+            text-transform: uppercase;
+            text-align: center;
+            color: $black-text;
+            @include desktop {
+                font-size: 2.25rem;    
+            }
         }
 
         @include desktop {
             width: 50%;
+            color: $light-blue-text;
+            p{
+                margin-left: 50px;
+            }
         }
         .category-name {
             height: 57px;
             border-bottom: 1px solid $best-green;
-            font-size: 30px;
-            font-weight: bold;
             text-transform: capitalize;
             h3 {
-                display: block;
+                font-size: 1.8rem;
+                font-weight: 300;
             }
+            @include desktop {
+                font-weight: bold;
+            }
+            
         }
         .category-description {
             p {
                 display: none;
+                font-weight: 300;
             }
 
         }
