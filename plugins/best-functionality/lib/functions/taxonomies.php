@@ -84,3 +84,41 @@ function register_participant_taxonomy_() {
 
 }
 add_action( 'init', 'register_participant_taxonomy_', 0 );
+
+function register_Location_taxonomy_() {
+
+	$labels = array(
+		'name'                       => 'Participant Locations',
+		'singular_name'              => 'Participant Location',
+		'menu_name'                  => 'Participant Locations',
+		'all_items'                  => 'All ParticipantLocations',
+		'parent_item'                => 'Parent Participant Location',
+		'parent_item_colon'          => 'Parent Participant Location:',
+		'new_item_name'              => 'New Participant Location Name',
+		'add_new_item'               => 'Add New Participant Location Item',
+		'edit_item'                  => 'Edit Participant Location',
+		'update_item'                => 'Update Participant Location',
+		'view_item'                  => 'View Participant Location',
+		'separate_items_with_commas' => 'Separate Participant Locations with commas',
+		'add_or_remove_items'        => 'Add or remove Participant Locations',
+		'choose_from_most_used'      => 'Choose from the most used',
+		'popular_items'              => 'Popular Participant Locations',
+		'search_items'               => 'Search Participant Locations',
+		'not_found'                  => 'Not Found',
+		'no_terms'                   => 'No Participant Locations',
+		'items_list'                 => 'Participant Location list',
+		'items_list_navigation'      => 'Participant Location list navigation',
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => false,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'participant_location', array( 'participant' ), $args );
+
+}
+add_action( 'init', 'register_location_taxonomy_', 0 );

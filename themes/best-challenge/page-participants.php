@@ -35,17 +35,22 @@ get_header(); ?>
 					
 						<h2><?php echo $participant_type->name; ?> </h2>
 
-						<?php $args = array(
+					<?php $args = array(
 							'post_type' => 'participant',
-							// 'posts_per_page' => 4,
-							'tax_query' => array( 
+							'tax_query' => array(
+								'relation' => 'AND',
+								array(
+									'taxonomy' => 'participant_location',
+									'field'    => 'slug',
+									'terms'    => array( 'bc', 'metro-vancouver' ),
+								),
 								array(
 									'taxonomy' => 'participant_type',
-									'field'    => 'slug',
-									'terms'    =>  $participant_type,
-									
+									'field'    => 'term_id',
+									'terms'    => array( 103, 115, 206 ),
+									'operator' => 'NOT IN',
 								),
-							),  
+							),
 						);
 
 						$prizes = get_posts( $args ); ?>
