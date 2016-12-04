@@ -5,8 +5,6 @@
                                 <p>engage as individuals!</p>
                                 <p>Discover how you can get involved</p>
                             </div>
-                        
-                    
                         <form method="POST" action="">
                            <div class="green-buttons">
                         <div class="button1">

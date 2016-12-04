@@ -1629,6 +1629,9 @@ CONTACT FORM 7
 ========================*/
   /*=======================
 MAP AREA
+========================*/
+  /*=======================
+NEWLETTER SIGN-UP AREA
 ========================*/ }
   .page-id-70 .picture-wrapper-contact {
     display: -ms-flexbox;
@@ -1686,7 +1689,7 @@ MAP AREA
     margin-top: 0; }
   .page-id-70 .contact-form-area {
     height: 614px;
-    background-color: lightskyblue;
+    background-color: #5a6f83;
     padding-top: 20px; }
   .page-id-70 .contact-form-area h2 {
     text-align: center;
@@ -1703,7 +1706,8 @@ MAP AREA
     background-color: #dee2e6;
     border: none;
     height: 50px;
-    border-radius: 10px; }
+    border-radius: 10px;
+    width: 100%; }
   .page-id-70 input[type=submit] {
     background-color: #5a6f83;
     color: white;
@@ -1721,12 +1725,13 @@ MAP AREA
     width: 144px;
     height: 50px; }
   .page-id-70 textarea {
-    height: 271px;
+    height: 275px;
     border-radius: 10px;
     background-color: #dee2e6;
     font-family: 'montserrat';
     font-weight: 100;
-    color: #5a6f83; }
+    color: #5a6f83;
+    width: 110%; }
   .page-id-70 input[placeholder] {
     font-family: 'montserrat';
     font-weight: 100;
@@ -1744,13 +1749,14 @@ MAP AREA
         align-items: center;
     -ms-flex-pack: center;
         justify-content: center; }
-  .page-id-70 .short-text-field {
-    padding-left: 5%; }
   .page-id-70 .message-field {
-    margin-left: 4%;
-    width: 40%; }
+    padding-left: 10%;
+    width: 40%;
+    padding-top: 1%; }
   .page-id-70 .submit-field {
     text-align: center; }
+  .page-id-70 .contact-minus-submit-button p {
+    width: 300px; }
   .page-id-70 .directions-area {
     height: 540px;
     background-color: #303b46;
@@ -1766,7 +1772,80 @@ MAP AREA
     color: white; }
   .page-id-70 .directions-area h2 {
     color: white;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 10px; }
+  .page-id-70 .google-map {
+    margin-left: 4%; }
+  .page-id-70 .email-contact {
+    padding-top: 20px; }
+  .page-id-70 .address {
+    padding-left: 5%;
+    font-family: 'montserrat';
+    font-weight: 300;
+    padding-bottom: 5%; }
+  .page-id-70 .address p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'montserrat';
+    font-weight: 300; }
+  .page-id-70 .newsletter-sign-up {
+    background-color: #dee2e6; }
+  .page-id-70 .newsletter-sign-up h2 {
+    font-family: 'montserrat';
+    font-size: 36px;
+    font-weight: bold;
+    color: #303b46;
+    text-transform: uppercase;
+    padding-top: 5%;
+    margin-top: 0;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-left: 9%;
+    margin-bottom: 0; }
+  .page-id-70 .sign-up-text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    margin-left: 9%;
+    padding-bottom: 5%; }
+  .page-id-70 .sign-up-text-request p {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'montserrat';
+    font-weight: 300; }
+  .page-id-70 .input-and-button {
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 5%; }
+  .page-id-70 .sign-up-email {
+    margin-left: 5%; }
+  .page-id-70 .sign-up-button {
+    padding-left: 5%; }
+  .page-id-70 #your-email-input {
+    background-color: white;
+    width: 250px; }
+  .page-id-70 #subscribe-newsletter {
+    background-color: #383B4C;
+    color: white;
+    cursor: pointer;
+    padding: .5rem 2rem;
+    border: 1;
+    border-radius: 25px;
+    font-family: 'montserrat';
+    font-weight: 100;
+    font-size: 0.8rem;
+    box-shadow: none;
+    line-height: 1.2;
+    border-width: 0px;
+    width: 162px; }
 
 /*=======================
 this is the css for the special template that will add and remove one of two buttons depending on the 
@@ -1774,24 +1853,33 @@ users choice
 ========================*/
 .green-banner {
   background: #a6ce39;
-  height: 200px;
+  height: 225px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  padding-bottom: 20px; }
 
 .green-banner-data {
   text-align: center; }
 
 .green-banner-data p:first-child {
   text-transform: uppercase;
-  font-weight: 500; }
+  font-weight: 500;
+  font-family: 'montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 0;
+  padding-top: 30px; }
 
 .green-banner-data p {
   font-family: 'montserrat', sans-serif;
-  font-weight: 100; }
+  font-weight: 300;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 25px; }
 
 #go-green-button {
   background-color: transparent;
@@ -1804,9 +1892,10 @@ users choice
   font-size: 1rem;
   box-shadow: none;
   line-height: 1.7;
-  border-width: 2px;
+  border-width: 3px;
   border-color: black;
-  text-shadow: none; }
+  text-shadow: none;
+  width: 250px; }
 
 .button2 {
   visibility: visible; }
@@ -1818,8 +1907,12 @@ users choice
       flex-direction: column; }
 
 .green-buttons {
-  text-align: center;
-  margin-bottom: 10px; }
+  margin-bottom: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
 
 .button1 {
-  padding-bottom: 5px; }
+  padding-bottom: 5px;
+  padding-right: 5%; }

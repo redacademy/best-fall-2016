@@ -9,10 +9,11 @@ users choice
 
 .green-banner{
 background:#a6ce39;
-height:200px;
+height:225px;
 display:flex;
     align-items: center;
     justify-content: center;
+    padding-bottom:20px;
 
 
 }
@@ -24,15 +25,21 @@ display:flex;
 .green-banner-data p:first-child{
     text-transform:uppercase;
     font-weight:500;
-   
+   font-family: 'montserrat', sans-serif;
+font-weight:bold;
+font-size:40px;
+margin-bottom:0;
+padding-top:30px;
 }
 
 .green-banner-data p{
 
 font-family: 'montserrat', sans-serif;
-font-weight:100;
+font-weight:300;
+font-size:30px;
+margin-top:0;
+margin-bottom:25px;
 }
-
 
 
 #go-green-button{
@@ -47,9 +54,10 @@ font-weight:100;
     font-size: 1rem;
     box-shadow:none;
     line-height: 1.7;
-    border-width:2px;
+    border-width:3px;
     border-color:black;
     text-shadow:none;
+    width:250px;
 
     
 }
@@ -67,13 +75,17 @@ font-weight:100;
 
 .green-buttons{
 
-    text-align:center;
-    margin-bottom:10px;
+    
+    margin-bottom:50px;
+    display:flex;
+    flex-direction:row;
+    
     
 }
 
 .button1 {
 
     padding-bottom:5px;
+    padding-right:5%;
     
 }
