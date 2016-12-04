@@ -59,11 +59,16 @@ get_header(); ?>
                 <div class="newsletter-sign-up">
                     <h2>sign up for our newsletter</h2>
                     <div class="sign-up-text">
-                        <p>Hear about upcoming event, new tools and lots 
-                        more! Sign up for our newsletter today!</p>
-                        <div class="sign-up-email"><input type="email" name="your_email" id="your-email" value="" placeholder="Enter your email..." aria-label="Subscribe Email Input"></div>
-                    	<div class="sign-up-button"><input type="submit" name="subscribe" value="Subscribe" id="subscribe"></div>
+                        <div class="sign-up-text-request">
+                            <p>Hear about upcoming event, new tools and lots</p> 
+                            <p>more! Sign up for our newsletter today!</p>
+                        </div>
+                        <div class="input-and-button">
+                            <div class="sign-up-email"><input type="email" name="your_email" id="your-email-input" value="" placeholder="Enter your email..." aria-label="Subscribe Email Input"></div>
+                    	    <div class="sign-up-button"><input type="submit" name="subscribe" value="Subscribe" id="subscribe"></div>
+                        </div>
                     </div>
+                </div>
 
                     <?php get_template_part( 'template-parts/green-banner' ); ?>
 

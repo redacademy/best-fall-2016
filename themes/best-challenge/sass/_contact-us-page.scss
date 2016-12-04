@@ -117,6 +117,7 @@ input[type="tel"],{
     border:none;
 	height: 50px;
 	border-radius: 10px;
+    width:125%;
 }
 input[type=submit] {
     background-color: #5a6f83;
@@ -138,16 +139,15 @@ input[type=submit] {
 
 }
 
-
-
-
 textarea {
-	height: 271px;
+	height: 275px;
 	border-radius: 10px;
 	background-color: #dee2e6;
     font-family:'montserrat';
     font-weight:100;
     color:#5a6f83;
+    width:110%;
+    
    
 }
 
@@ -169,14 +169,11 @@ input[placeholder] {
 
 }
 
-.short-text-field{
-    padding-left:5%;
-
-}
 
 .message-field{
-    margin-left:4%;
-    width:40%
+    margin-left:10%;
+    width:40%;
+    padding-top:1%;
 
 }
 .submit-field{
@@ -210,6 +207,12 @@ MAP AREA
     margin-bottom:10px;
 }
 
+.google-map{
+
+margin-left:4%;
+}
+
+
 
 .email-contact{
 
@@ -232,6 +235,90 @@ padding-left:5%;
     font-family:'montserrat';
     font-weight: 300;
 }
+/*=======================
+NEWLETTER SIGN-UP AREA
+========================*/
+
+.newsletter-sign-up{
+	background-color: #dee2e6;
 
 
+}
+
+.newsletter-sign-up h2{
+	
+font-family: 'montserrat';
+	font-size: 36px;
+	font-weight: bold;
+    color: #303b46;
+    text-transform:uppercase;
+    padding-top:5%;
+    margin-top:0;
+    justify-content:center;
+    margin-left:9%;
+    margin-bottom:0;
+    
+
+}
+
+
+.sign-up-text{
+display:flex;
+flex-direction:row;
+margin-left:9%;
+padding-bottom:5%;
+
+
+
+}
+
+.sign-up-text-request p{
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    margin-top:0;
+    margin-bottom:0;
+    font-family: 'montserrat';
+	font-weight: 300;
+   
+
+}
+
+.input-and-button{
+display:flex;
+    padding-left:5%;
+}
+
+.sign-up-email{
+margin-left:5%;
+
+}
+
+.sign-up-button{
+
+padding-left:15%;
+
+}
+
+#your-email-input{
+    background-color:white;
+}
+
+
+
+    #subscribe-newsletter{
+        background-color:#383B4C;;
+    color: white;
+    cursor: pointer;
+    padding: .5rem 2rem;
+    border: 1;
+    border-radius: 25px;
+    font-family: 'montserrat';
+    font-weight:100;
+    font-size: 0.8rem;
+    box-shadow:none;
+    line-height: 1.2;
+    border-width:0px;
+    
+    }
 }
