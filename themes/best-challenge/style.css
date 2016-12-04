@@ -1662,7 +1662,7 @@ MAP AREA
     margin-top: 0; }
   .page-id-70 .contact-form-area {
     height: 614px;
-    background-color: lightskyblue;
+    background-color: #5a6f83;
     padding-top: 20px; }
   .page-id-70 .contact-form-area h2 {
     text-align: center;
@@ -1742,7 +1742,21 @@ MAP AREA
     color: white; }
   .page-id-70 .directions-area h2 {
     color: white;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 10px; }
+  .page-id-70 .email-contact {
+    padding-top: 20px; }
+  .page-id-70 .address {
+    padding-left: 5%;
+    font-family: 'montserrat';
+    font-weight: 300;
+    padding-bottom: 5%; }
+  .page-id-70 .address p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'montserrat';
+    font-weight: 300; }
 
 /*=======================
 this is the css for the special template that will add and remove one of two buttons depending on the 

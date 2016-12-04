@@ -95,7 +95,7 @@ CONTACT FORM 7
 
 .contact-form-area{
     height: 614px;
-	background-color: lightskyblue;
+	background-color: #5a6f83;
     padding-top:20px;
 }
 
@@ -206,6 +206,32 @@ MAP AREA
 .directions-area h2 {
     color:white;
     text-transform:uppercase;
+    font-size:36px;
+    margin-bottom:10px;
 }
+
+
+.email-contact{
+
+padding-top:20px;
+
+}
+
+.address{
+
+padding-left:5%;
+    font-family:'montserrat';
+    font-weight: 300;
+    padding-bottom:5%;
+
+}
+
+.address p{
+    margin-top:0;
+    margin-bottom:0;
+    font-family:'montserrat';
+    font-weight: 300;
+}
+
 
 }
