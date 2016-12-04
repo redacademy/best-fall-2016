@@ -921,8 +921,12 @@ a {
     .page-template-default .prize-wrapper .prize-image img {
       width: 100%; }
   .page-template-default .prize-wrapper h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #303b46;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    text-transform: uppercase; }
   .page-template-default .prize-wrapper .single-prize {
     margin: 5% auto;
     width: 230px;
