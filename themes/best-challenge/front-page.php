@@ -9,15 +9,9 @@ get_header(); ?>
 
 
 <div class="hero-banner">
-	<div class="travel-by container">
+	<div class="travel-by">
 		<div>
-		<h3 class="uppercase"> I travel by
-		<span
-			class="txt-rotate"
-			data-period="2000"
-     		data-rotate='[ "nerdy.", "simple.", "pure JS.", "pretty.", "fun!" ]'></span>
-
-		</h3>
+		<h3 class="uppercase"> I travel by <span id="typewrite"></span></h3>
 		<p>Join the Canada-wide competition.<br>
 			Celebrate sustainable commuting in BC.<p>
 		</div>
@@ -120,7 +114,9 @@ get_header(); ?>
 			<div class = "best-post-info">
 				<h3 class ="best-post-title"><?php the_title();?></h3>
 				<p class="best-post-content"><?php the_content(); ?></p>
-				<a class ="read" href="<?php the_permalink();?>">Read Entry</a>
+				<div class="green-read">
+				<a class ="read green" href="<?php the_permalink();?>">Read Entry</a>
+				</div>
 			</div>
    	</div>
    <?php endforeach; wp_reset_postdata(); ?>

@@ -805,8 +805,8 @@ users choice
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
+  -ms-flex-align: start;
+      align-items: flex-start; }
   @media (min-width: 600px) {
     .hero-banner {
       height: 80vh; } }
@@ -829,6 +829,7 @@ users choice
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+  margin-top: 2rem;
   color: #fff; }
   .travel-by span {
     border-right: .05em solid;
@@ -841,7 +842,8 @@ users choice
     color: #fff;
     border-color: #fff; }
   .travel-by h3 {
-    font-size: 3rem; }
+    font-size: 3rem;
+    margin: 0; }
   .travel-by p {
     font-size: 2rem;
     margin: 0; }
@@ -900,7 +902,8 @@ users choice
   background: orange; }
 
 .blog-posts {
-  background: brown; }
+  background: url(../../assets/images/greycurve.png) center no-repeat;
+  background-size: cover; }
 
 .best-journal-container {
   display: -ms-flexbox;
@@ -936,10 +939,17 @@ users choice
       flex-direction: column;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%; }
+  .best-post-info h3,
+  .best-post-info p {
+    margin: 0; }
 
 .best-post-title {
   font-size: 1.5rem;
   text-transform: uppercase; }
+
+.green-read {
+  background: url(../../assets/images/green-read-story.png) no-repeat;
+  background-size: contain; }
 
 .instagram-grid {
   text-align: center; }

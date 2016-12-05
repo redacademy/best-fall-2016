@@ -4,7 +4,7 @@
     background-size: contain, cover;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     @include desktop {
         height: 80vh;
     }
@@ -23,6 +23,7 @@
 .travel-by {
     display: flex;
     flex-direction: column;
+    margin-top: 2rem;
     color: #fff;
     span {
         border-right: .05em solid;
@@ -39,6 +40,7 @@
     }
     h3 {
         font-size: 3rem;
+        margin: 0;
     }
     p {
         font-size: 2rem;
@@ -102,7 +104,8 @@
 
 /// ------------ Blog Post Area --------- //////
 .blog-posts {
-    background: brown;
+    background: url(../../assets/images/greycurve.png) center no-repeat;
+    background-size: cover;
 }
 
 .best-journal-container {
@@ -136,11 +139,20 @@
 .best-post-info {
     flex-direction: column;
     flex-basis: 48%;
+    h3,
+    p {
+        margin: 0;
+    }
 }
 
 .best-post-title {
     font-size: 1.5rem;
     text-transform: uppercase;
+}
+
+.green-read {
+    background: url(../../assets/images/green-read-story.png) no-repeat;
+    background-size: contain;
 }
 
 ///---------------- Instagram Area ---------- ///
