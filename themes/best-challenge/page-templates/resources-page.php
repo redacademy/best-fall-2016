@@ -25,32 +25,47 @@ get_header(); ?>
 
 
             <div class="activities">
-
+				<div class="activities-wrapper">
+                    
+                        <div class="activities-blocks">
                             <?php
 
                                 $fields = CFS()->get( 'activities_loop' )?>
                                 <?php foreach ( $fields as $field ) : ?>
 
+							<div class="single-activity-block">
+
                                     <img src="<?php
                                         echo $field['image'];
                                         ?>" alt="" />
+
+										<div class="description-wrapper">
                                  
                                        <h3><?php
                                         echo $field['header'];?></h3>
 
-
+										
                                     <p><?php echo $field['description'];?></p>
+										
+
+									<div class="download-area">
+
+										<p><?php echo $field['download_word'];?></p>
 
                                         <img src="<?php
                                         echo $field['download_image'];
                                         ?>" alt="" />
 
+									</div>
 
+								</div>
+							</div>
                                      
                                 
                             <?php endforeach; ?>
     <!-- This is the end of the custom field code -->
             </div>
+		</div>
 
 
 

@@ -1857,6 +1857,9 @@ this is the css unique to page-id-74
 .page-id-74 {
   /*=======================
 this is the CONTACT PERSON INFO
+========================*/
+  /*=======================
+CUSTOM-FIELD-SUITE loop items with three blocks flexed
 ========================*/ }
   .page-id-74 .entry-title {
     display: none; }
@@ -1926,8 +1929,101 @@ this is the CONTACT PERSON INFO
     margin-bottom: 0;
     margin-top: 0; }
   .page-id-74 .activities {
-    height: 766px;
     background: #5a6f83; }
+  .page-id-74 .custom-field-suite {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .page-id-74 .activities-wrapper {
+    padding-top: 50px;
+    background-size: cover; }
+  .page-id-74 .activities-wrapper h2 {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-family: 'montserrat'; }
+  .page-id-74 .activities-wrapper h3 {
+    color: white;
+    font-size: 16px;
+    width: 60%;
+    font-family: 'montserrat'; }
+  .page-id-74 .activities-wrapper p {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'montserrat';
+    font-weight: 300; }
+  .page-id-74 .activities-blocks {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    padding-top: 20px; }
+  .page-id-74 .single-activity-block {
+    -ms-flex: 0 1 33%;
+    flex: 0 1 33%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center; }
+  .page-id-74 .single-activity-block img {
+    width: 306px;
+    height: 187px; }
+  .page-id-74 .single-activity-block img:last-child {
+    width: 24px;
+    height: 23px;
+    margin-top: 150px; }
+  .page-id-74 .description-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 80%;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    background-color: white;
+    width: 305.3px;
+    height: 400px; }
+  .page-id-74 .description-wrapper p {
+    margin-top: 0rem;
+    font-size: 18.1px;
+    font-weight: 300;
+    color: #0c0d0c;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 125px; }
+  .page-id-74 .single-activity-block i {
+    color: white;
+    font-size: 32px; }
+  .page-id-74 .single-activity-block h3 {
+    width: 80%;
+    font-family: 'montserrat';
+    color: #0c0d0c; }
+  .page-id-74 .download-area {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+  .page-id-74 .download-area p {
+    margin-top: 138px;
+    margin-left: -100px;
+    padding-right: 10px;
+    font-family: 'montserrat';
+    font-size: 29.9px;
+    font-weight: 300;
+    color: #a6ce39; }
 
 /*=======================
 this is the css for the special template that will add and remove one of two buttons depending on the 
