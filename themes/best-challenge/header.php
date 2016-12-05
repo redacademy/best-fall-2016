@@ -35,7 +35,7 @@
 				<div class="logo">
 					<a href="home">
 						<img src=" <?php echo get_template_directory_uri() ?>/assets/images/logotitlebc-mobile.png" alt="logo" class= "mobile">
-						<img src=" <?php echo get_template_directory_uri() ?>/assets/images/logotitlebc.png" alt="logo" class= "desktop">
+						<img src=" <?php echo get_template_directory_uri() ?>/assets/images/bccommuterchallenge.png" alt="logo" class= "desktop">
 					</a>
 				</div>
 			<div class="event-date">
