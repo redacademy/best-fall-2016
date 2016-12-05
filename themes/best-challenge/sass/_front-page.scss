@@ -1,7 +1,10 @@
 .hero-banner {
-    background: url(../../assets/images/hero-banner-temp.jpeg) center no-repeat;
+    background: url(../../assets/images/hero-curve.png) top no-repeat, url(../../assets/images/hero-banner.png) top no-repeat;
     height: 90vh;
-    background-size: cover;
+    background-size: contain, cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     @include desktop {
         height: 80vh;
     }
@@ -18,8 +21,31 @@
 }
 
 .travel-by {
-    height: 40vh;
-    background: blue;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    color: #fff;
+    span {
+        border-right: .05em solid;
+        animation: caret 1s steps(1) infinite;
+    }
+    @keyframes caret {
+        50% {
+            border-color: transparent;
+        }
+    }
+    #go-green-button {
+        color: #fff;
+        border-color: #fff;
+    }
+    h3 {
+        font-size: 3rem;
+        margin: 0;
+    }
+    p {
+        font-size: 2rem;
+        margin: 0;
+    }
 }
 
 .ccbc-front {
@@ -72,22 +98,41 @@
     align-items: center;
 }
 
+//////----------- Impact Results -------------////
 .impact-results {
-    background: orange;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: column;
+    @include desktop {
+        flex-direction: row;
+    }
+}
+
+.canada-map {
+    padding: 1rem;
+    flex-basis: 48%;
+    .bcbutton {
+        border-right: 1px solid black;
+        padding: .5rem;
+    }
+}
+
+.fp-impact-results {
+    flex-basis: 48%
 }
 
 /// ------------ Blog Post Area --------- //////
 .blog-posts {
-    background: brown;
+    background: url(../../assets/images/greycurve.png) center no-repeat;
+    background-size: cover;
 }
 
 .best-journal-container {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    @include desktop {
-
-    }
+    @include desktop {}
 }
 
 .best-journal-content {
@@ -105,7 +150,7 @@
     img {
         height: auto;
         margin-top: 2rem;
-    @include desktop  {
+        @include desktop {
             width: 640px;
         }
     }
@@ -114,11 +159,20 @@
 .best-post-info {
     flex-direction: column;
     flex-basis: 48%;
+    h3,
+    p {
+        margin: 0;
+    }
 }
 
 .best-post-title {
     font-size: 1.5rem;
     text-transform: uppercase;
+}
+
+.green-read {
+    background: url(../../assets/images/green-read-story.png) no-repeat;
+    background-size: contain;
 }
 
 ///---------------- Instagram Area ---------- ///
