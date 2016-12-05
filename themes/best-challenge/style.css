@@ -727,10 +727,86 @@ a {
 .bypostauthor {
   display: block; }
 
+/*=======================
+this is the css for the special template that will add and remove one of two buttons depending on the 
+users choice
+========================*/
+.green-banner {
+  background: #a6ce39;
+  height: 225px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding-bottom: 20px; }
+
+.green-banner-data {
+  text-align: center; }
+
+.green-banner-data p:first-child {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 0;
+  padding-top: 30px; }
+
+.green-banner-data p {
+  font-family: 'montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 25px; }
+
+#go-green-button {
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  padding: .25rem 2rem;
+  border: 1;
+  border-radius: 25px;
+  font-family: 'montserrat', sans-serif;
+  font-size: 1rem;
+  box-shadow: none;
+  line-height: 1.7;
+  border-width: 3px;
+  border-color: black;
+  text-shadow: none;
+  width: 250px; }
+
+.button2 {
+  visibility: visible; }
+
+.green-banner-flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.green-buttons {
+  margin-bottom: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+
+.button1 {
+  padding-bottom: 5px;
+  padding-right: 5%; }
+
 .hero-banner {
-  background: url(../../assets/images/hero-curve.png) top no-repeat, url(../../assets/images/hero-banner.png) no-repeat;
+  background: url(../../assets/images/hero-curve.png) top no-repeat, url(../../assets/images/hero-banner.png) top no-repeat;
   height: 90vh;
-  background-size: contain, cover; }
+  background-size: contain, cover;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
   @media (min-width: 600px) {
     .hero-banner {
       height: 80vh; } }
@@ -749,8 +825,26 @@ a {
           align-items: stretch; } }
 
 .travel-by {
-  height: 40vh;
-  background: blue; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  color: #fff; }
+  .travel-by span {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite; }
+
+@keyframes caret {
+  50% {
+    border-color: transparent; } }
+  .travel-by #go-green-button {
+    color: #fff;
+    border-color: #fff; }
+  .travel-by h3 {
+    font-size: 3rem; }
+  .travel-by p {
+    font-size: 2rem;
+    margin: 0; }
 
 .ccbc-front {
   -ms-flex-direction: column;
@@ -1928,73 +2022,3 @@ this is the CONTACT PERSON INFO
   .page-id-74 .activities {
     height: 766px;
     background: #5a6f83; }
-
-/*=======================
-this is the css for the special template that will add and remove one of two buttons depending on the 
-users choice
-========================*/
-.green-banner {
-  background: #a6ce39;
-  height: 225px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  padding-bottom: 20px; }
-
-.green-banner-data {
-  text-align: center; }
-
-.green-banner-data p:first-child {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-family: 'montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  margin-bottom: 0;
-  padding-top: 30px; }
-
-.green-banner-data p {
-  font-family: 'montserrat', sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  margin-top: 0;
-  margin-bottom: 25px; }
-
-#go-green-button {
-  background-color: transparent;
-  color: black;
-  cursor: pointer;
-  padding: .25rem 2rem;
-  border: 1;
-  border-radius: 25px;
-  font-family: 'montserrat', sans-serif;
-  font-size: 1rem;
-  box-shadow: none;
-  line-height: 1.7;
-  border-width: 3px;
-  border-color: black;
-  text-shadow: none;
-  width: 250px; }
-
-.button2 {
-  visibility: visible; }
-
-.green-banner-flex {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.green-buttons {
-  margin-bottom: 50px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row; }
-
-.button1 {
-  padding-bottom: 5px;
-  padding-right: 5%; }

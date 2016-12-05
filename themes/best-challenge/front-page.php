@@ -9,17 +9,38 @@ get_header(); ?>
 
 
 <div class="hero-banner">
+	<div class="travel-by container">
+		<div>
+		<h3 class="uppercase"> I travel by
+		<span
+			class="txt-rotate"
+			data-period="2000"
+     		data-rotate='[ "nerdy.", "simple.", "pure JS.", "pretty.", "fun!" ]'></span>
+
+		</h3>
+		<p>Join the Canada-wide competition.<br>
+			Celebrate sustainable commuting in BC.<p>
+		</div>
+
+			<form method="POST" action="">
+				<div class="green-buttons">
+						<div class="button1">
+								<input type="submit" name="submit" value="Individual" id="go-green-button" >
+						</div>
+						<div class="button2">
+								<input type="submit" name="submit" value="Workplace" id="go-green-button" >
+						</div>
+				</div>
+
+			</form>
+		</div>
 		</div>
 		
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
-		
-		<div class="travel-by">
-		
-		</div>
-
+	
 		<div class="ccbc-front box container">
 			<div class="ccbc-title">
 				<h2 class="uppercase">Welcome to commuter challenge bc!</h2>
