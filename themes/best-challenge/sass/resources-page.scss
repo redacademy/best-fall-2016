@@ -5,10 +5,28 @@ this is the css unique to page-id-74
 
 .page-id-74{
 
+.entry-title {
+    display: none;
+}
+
+.entry-content{
+    padding-left:10%;
+    padding-right:10%;
+    text-align:center;
+}
+
+.entry-content p{
+
+    font-family:'montserrat', serif;
+    font-weight: 300;
+    font-size:20px;
+    
+}
+
 .picture-wrapper-contact{
 
     display:flex;
-    background:url('../../assets/images/get-involved-header.png')center bottom;
+    background:url('../../assets/images/keyboard-header.png')center bottom;
     height:200px;
     align-items:center;
     justify-content:center;
@@ -52,6 +70,7 @@ this is the CONTACT PERSON INFO
     align-items:center;
     flex-direction:row;
     justify-content:center;
+    background-color: #dee2e6;
 
 }
 
@@ -83,5 +102,14 @@ this is the CONTACT PERSON INFO
     margin-bottom:0;
     margin-top:0;
 }
+
+.activities{
+    height: 766px;
+    background: #5a6f83;
+}
+
+
+
+
 
 }

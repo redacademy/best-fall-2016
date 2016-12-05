@@ -19,13 +19,48 @@ get_header(); ?>
             </div>
 
 
-             <?php get_template_part( 'template-parts/contact-person' ); ?>
+                <?php while ( have_posts() ) : the_post(); ?>
+                <?php get_template_part( 'template-parts/content', 'page' ); ?>
+                <?php endwhile; // End of the loop. ?>
 
-         
-                
-       
 
-            <?php get_template_part( 'template-parts/green-banner' ); ?>
+            <div class="activities">
+
+                            <?php
+
+                                $fields = CFS()->get( 'activities_loop' )?>
+                                <?php foreach ( $fields as $field ) : ?>
+
+                                    <img src="<?php
+                                        echo $field['image'];
+                                        ?>" alt="" />
+                                 
+                                       <h3><?php
+                                        echo $field['header'];?></h3>
+
+
+                                    <p><?php echo $field['description'];?></p>
+
+                                        <img src="<?php
+                                        echo $field['download_image'];
+                                        ?>" alt="" />
+
+
+                                     
+                                
+                            <?php endforeach; ?>
+    <!-- This is the end of the custom field code -->
+            </div>
+
+
+
+                <?php get_template_part( 'template-parts/contact-person' ); ?>
+
+                <?php get_template_part( 'template-parts/green-banner' ); ?>
+
+
+
+
 
 <!-- sponsors -->
                     	<div class="front-sponsors">
