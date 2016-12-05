@@ -66,8 +66,9 @@ get_header(); ?>
             </div>
 			<div class="load-more">
 			<p>Load More</p>
-			<img src=" <?php echo get_template_directory_uri() ?>/assets/images/arrow-pointing-down.png" alt="logo">
+			<img src=" <?php echo get_template_directory_uri() ?>/assets/images/arrow-down-small.png" alt="logo">
 			</div>
+		</div>
 		</div>
 
  <!-- This is the end of the custom field code -->
