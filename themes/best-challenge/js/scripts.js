@@ -25,7 +25,6 @@
     $(this).siblings().children().next().toggle('fast');
   });
   //
-})(jQuery);
 
 // Typewriter Effect 
 
@@ -72,5 +71,5 @@ document.addEventListener('DOMContentLoaded',function(event){
   StartTextAnimation(0);
 });
 
-
+})(jQuery);
 //Typewriter end

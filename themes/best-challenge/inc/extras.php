@@ -99,26 +99,3 @@ remove_filter( 'get_the_excerpt', 'wp_trim_excerpt' );
 add_filter( 'get_the_excerpt', 'red_wp_trim_excerpt' );
 
 //// excerpt end
-
-
-// print_posts
-function print_teams_tests( $teams ) {
-	foreach( $teams as $post ) : setup_postdata($post); ?>
-		<div class="taxonomy-participant">
-			<div class="taxonomy-image">
-				<?php the_post_thumbnail( 'large' ); ?>							
-			</div>
-
-			<div class="taxonomy-title">
-				<h3><?php the_title(); ?> </h3>
-			</div>
-			<div class="taxonomy-description">
-				<p><?php the_content(); ?></p>
-			</div>
-		</div>
-
-	<?php endforeach; wp_reset_postdata();
-	} ?>
-
-
-	
