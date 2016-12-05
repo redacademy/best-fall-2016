@@ -2006,6 +2006,9 @@ this is the css unique to page-id-74
 .page-id-74 {
   /*=======================
 this is the CONTACT PERSON INFO
+========================*/
+  /*=======================
+CUSTOM-FIELD-SUITE loop items with three blocks flexed
 ========================*/ }
   .page-id-74 .entry-title {
     display: none; }
@@ -2075,5 +2078,171 @@ this is the CONTACT PERSON INFO
     margin-bottom: 0;
     margin-top: 0; }
   .page-id-74 .activities {
-    height: 766px;
     background: #5a6f83; }
+<<<<<<< HEAD
+  .page-id-74 .custom-field-suite {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .page-id-74 .activities-wrapper {
+    padding-top: 50px;
+    background-size: cover; }
+  .page-id-74 .activities-wrapper h2 {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-family: 'montserrat'; }
+  .page-id-74 .activities-wrapper h3 {
+    color: white;
+    font-size: 16px;
+    width: 60%;
+    font-family: 'montserrat'; }
+  .page-id-74 .activities-wrapper p {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'montserrat';
+    font-weight: 300; }
+  .page-id-74 .activities-blocks {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    padding-top: 20px; }
+  .page-id-74 .single-activity-block {
+    -ms-flex: 0 1 33%;
+    flex: 0 1 33%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center; }
+  .page-id-74 .single-activity-block img {
+    width: 306px;
+    height: 187px; }
+  .page-id-74 .single-activity-block img:last-child {
+    width: 24px;
+    height: 23px;
+    margin-top: 150px; }
+  .page-id-74 .description-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 80%;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    background-color: white;
+    width: 305.3px;
+    height: 400px; }
+  .page-id-74 .description-wrapper p {
+    margin-top: 0rem;
+    font-size: 18.1px;
+    font-weight: 300;
+    color: #0c0d0c;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 125px; }
+  .page-id-74 .single-activity-block i {
+    color: white;
+    font-size: 32px; }
+  .page-id-74 .single-activity-block h3 {
+    width: 80%;
+    font-family: 'montserrat';
+    color: #0c0d0c; }
+  .page-id-74 .download-area {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+  .page-id-74 .download-area p {
+    margin-top: 138px;
+    margin-left: -100px;
+    padding-right: 10px;
+    font-family: 'montserrat';
+    font-size: 29.9px;
+    font-weight: 300;
+    color: #a6ce39; }
+
+/*=======================
+this is the css for the special template that will add and remove one of two buttons depending on the 
+users choice
+========================*/
+.green-banner {
+  background: #a6ce39;
+  height: 225px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding-bottom: 20px; }
+
+.green-banner-data {
+  text-align: center; }
+
+.green-banner-data p:first-child {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 0;
+  padding-top: 30px; }
+
+.green-banner-data p {
+  font-family: 'montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 25px; }
+
+#go-green-button {
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  padding: .25rem 2rem;
+  border: 1;
+  border-radius: 25px;
+  font-family: 'montserrat', sans-serif;
+  font-size: 1rem;
+  box-shadow: none;
+  line-height: 1.7;
+  border-width: 3px;
+  border-color: black;
+  text-shadow: none;
+  width: 250px; }
+
+.button2 {
+  visibility: visible; }
+
+.green-banner-flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.green-buttons {
+  margin-bottom: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+
+.button1 {
+  padding-bottom: 5px;
+  padding-right: 5%; }
+=======
+>>>>>>> 5deb19461de5ef5e879e1b85c2e9674864856127
