@@ -9,17 +9,32 @@ get_header(); ?>
 
 
 <div class="hero-banner">
+	<div class="travel-by">
+		<div>
+		<h3 class="uppercase"> I travel by <span id="typewrite"></span></h3>
+		<p>Join the Canada-wide competition.<br>
+			Celebrate sustainable commuting in BC.<p>
+		</div>
+
+			<form method="POST" action="">
+				<div class="green-buttons">
+						<div class="button1">
+								<input type="submit" name="submit" value="Individual" id="go-green-button" >
+						</div>
+						<div class="button2">
+								<input type="submit" name="submit" value="Workplace" id="go-green-button" >
+						</div>
+				</div>
+
+			</form>
+		</div>
 		</div>
 		
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
-		
-		<div class="travel-by">
-		
-		</div>
-
+	
 		<div class="ccbc-front box container">
 			<div class="ccbc-title">
 				<h2 class="uppercase">Welcome to commuter challenge bc!</h2>
@@ -72,9 +87,23 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
-		<div class="impact results container">
+
+
+<div class="impact-results container">
+
+			<div class="canada-map">
+					<img id="myImage" src="<?php echo get_template_directory_uri() ?>/assets/images/bcmap.jpg">
+					<div class="map-buttons">
+					<a class="bcbutton" onclick="document.getElementById('myImage').src='<?php echo get_template_directory_uri() ?>/assets/images/bcmap.jpg'">BC</a>
+					<a onclick="document.getElementById('myImage').src='<?php echo get_template_directory_uri() ?>/assets/images/canadamap.jpg'"> Canada</a>
+					</div>
+			</div>
+
+			<div class="fp-impact-results">
+				<h3> IMPACT RESULTS 2016</h3>
 		
 		</div>
+</div>
 
 		
 	<!--Blog-->
@@ -99,7 +128,9 @@ get_header(); ?>
 			<div class = "best-post-info">
 				<h3 class ="best-post-title"><?php the_title();?></h3>
 				<p class="best-post-content"><?php the_content(); ?></p>
-				<a class ="read" href="<?php the_permalink();?>">Read Entry</a>
+				<div class="green-read">
+				<a class ="read green" href="<?php the_permalink();?>">Read Entry</a>
+				</div>
 			</div>
    	</div>
    <?php endforeach; wp_reset_postdata(); ?>

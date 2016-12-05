@@ -729,10 +729,86 @@ a {
 .bypostauthor {
   display: block; }
 
+/*=======================
+this is the css for the special template that will add and remove one of two buttons depending on the 
+users choice
+========================*/
+.green-banner {
+  background: #a6ce39;
+  height: 225px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding-bottom: 20px; }
+
+.green-banner-data {
+  text-align: center; }
+
+.green-banner-data p:first-child {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 0;
+  padding-top: 30px; }
+
+.green-banner-data p {
+  font-family: 'montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 25px; }
+
+#go-green-button {
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  padding: .25rem 2rem;
+  border: 1;
+  border-radius: 25px;
+  font-family: 'montserrat', sans-serif;
+  font-size: 1rem;
+  box-shadow: none;
+  line-height: 1.7;
+  border-width: 3px;
+  border-color: black;
+  text-shadow: none;
+  width: 250px; }
+
+.button2 {
+  visibility: visible; }
+
+.green-banner-flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.green-buttons {
+  margin-bottom: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+
+.button1 {
+  padding-bottom: 5px;
+  padding-right: 5%; }
+
 .hero-banner {
-  background: url(../../assets/images/hero-banner-temp.jpeg) center no-repeat;
+  background: url(../../assets/images/hero-curve.png) top no-repeat, url(../../assets/images/hero-banner.png) top no-repeat;
   height: 90vh;
-  background-size: cover; }
+  background-size: contain, cover;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start; }
   @media (min-width: 600px) {
     .hero-banner {
       height: 80vh; } }
@@ -751,8 +827,28 @@ a {
           align-items: stretch; } }
 
 .travel-by {
-  height: 40vh;
-  background: blue; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin-top: 2rem;
+  color: #fff; }
+  .travel-by span {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite; }
+
+@keyframes caret {
+  50% {
+    border-color: transparent; } }
+  .travel-by #go-green-button {
+    color: #fff;
+    border-color: #fff; }
+  .travel-by h3 {
+    font-size: 3rem;
+    margin: 0; }
+  .travel-by p {
+    font-size: 2rem;
+    margin: 0; }
 
 .ccbc-front {
   -ms-flex-direction: column;
@@ -805,10 +901,33 @@ a {
       align-items: center; }
 
 .impact-results {
-  background: orange; }
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  @media (min-width: 600px) {
+    .impact-results {
+      -ms-flex-direction: row;
+          flex-direction: row; } }
+
+.canada-map {
+  padding: 1rem;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%; }
+  .canada-map .bcbutton {
+    border-right: 1px solid black;
+    padding: .5rem; }
+
+.fp-impact-results {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%; }
 
 .blog-posts {
-  background: brown; }
+  background: url(../../assets/images/greycurve.png) center no-repeat;
+  background-size: cover; }
 
 .best-journal-container {
   display: -ms-flexbox;
@@ -844,10 +963,17 @@ a {
       flex-direction: column;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%; }
+  .best-post-info h3,
+  .best-post-info p {
+    margin: 0; }
 
 .best-post-title {
   font-size: 1.5rem;
   text-transform: uppercase; }
+
+.green-read {
+  background: url(../../assets/images/green-read-story.png) no-repeat;
+  background-size: contain; }
 
 .instagram-grid {
   text-align: center; }
@@ -1875,71 +2001,79 @@ NEWLETTER SIGN-UP AREA
     width: 162px; }
 
 /*=======================
-this is the css for the special template that will add and remove one of two buttons depending on the 
-users choice
+this is the css unique to page-id-74
 ========================*/
-.green-banner {
-  background: #a6ce39;
-  height: 225px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  padding-bottom: 20px; }
-
-.green-banner-data {
-  text-align: center; }
-
-.green-banner-data p:first-child {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-family: 'montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  margin-bottom: 0;
-  padding-top: 30px; }
-
-.green-banner-data p {
-  font-family: 'montserrat', sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  margin-top: 0;
-  margin-bottom: 25px; }
-
-#go-green-button {
-  background-color: transparent;
-  color: black;
-  cursor: pointer;
-  padding: .25rem 2rem;
-  border: 1;
-  border-radius: 25px;
-  font-family: 'montserrat', sans-serif;
-  font-size: 1rem;
-  box-shadow: none;
-  line-height: 1.7;
-  border-width: 3px;
-  border-color: black;
-  text-shadow: none;
-  width: 250px; }
-
-.button2 {
-  visibility: visible; }
-
-.green-banner-flex {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.green-buttons {
-  margin-bottom: 50px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row; }
-
-.button1 {
-  padding-bottom: 5px;
-  padding-right: 5%; }
+.page-id-74 {
+  /*=======================
+this is the CONTACT PERSON INFO
+========================*/ }
+  .page-id-74 .entry-title {
+    display: none; }
+  .page-id-74 .entry-content {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center; }
+  .page-id-74 .entry-content p {
+    font-family: 'montserrat', serif;
+    font-weight: 300;
+    font-size: 20px; }
+  .page-id-74 .picture-wrapper-contact {
+    display: -ms-flexbox;
+    display: flex;
+    background: url("../../assets/images/keyboard-header.png") center bottom;
+    height: 200px;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding-bottom: 20px;
+    margin-bottom: 4px;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .page-id-74 .picture-wrapper-contact h1 {
+    line-height: 3.5rem;
+    color: white;
+    font-size: 60px;
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'montserrat'; }
+  .page-id-74 .picture-wrapper-contact p {
+    color: white;
+    font-family: 'montserrat';
+    font-weight: 300;
+    margin-top: 0;
+    font-size: 30px; }
+  .page-id-74 .contact-person-section {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: center;
+        justify-content: center;
+    background-color: #dee2e6; }
+  .page-id-74 .contact-person-image {
+    padding-top: 30px;
+    padding-right: 35px; }
+  .page-id-74 .contact-person-data {
+    line-height: 1.3; }
+  .page-id-74 .contact-person-data h2 {
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 36px;
+    font-family: 'montserrat';
+    font-weight: bold;
+    color: #303b46; }
+  .page-id-74 .contact-person-data p {
+    font-family: 'montserrat';
+    font-size: 20px;
+    font-weight: 300;
+    color: #303b46;
+    margin-bottom: 0;
+    margin-top: 0; }
+  .page-id-74 .activities {
+    height: 766px;
+    background: #5a6f83; }
