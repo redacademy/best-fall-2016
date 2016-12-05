@@ -25,6 +25,7 @@ get_header(); ?>
 
 
             <div class="activities">
+				<h2>team activities and more!</h2>
 				<div class="activities-wrapper">
                     
                         <div class="activities-blocks">
@@ -46,7 +47,6 @@ get_header(); ?>
 
 										
                                     <p><?php echo $field['description'];?></p>
-										
 
 									<div class="download-area">
 
