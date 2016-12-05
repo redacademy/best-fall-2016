@@ -899,7 +899,29 @@ users choice
       align-items: center; }
 
 .impact-results {
-  background: orange; }
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  @media (min-width: 600px) {
+    .impact-results {
+      -ms-flex-direction: row;
+          flex-direction: row; } }
+
+.canada-map {
+  padding: 1rem;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%; }
+  .canada-map .bcbutton {
+    border-right: 1px solid black;
+    padding: .5rem; }
+
+.fp-impact-results {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%; }
 
 .blog-posts {
   background: url(../../assets/images/greycurve.png) center no-repeat;

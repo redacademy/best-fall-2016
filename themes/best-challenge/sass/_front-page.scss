@@ -98,8 +98,28 @@
     align-items: center;
 }
 
+//////----------- Impact Results -------------////
 .impact-results {
-    background: orange;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: column;
+    @include desktop {
+        flex-direction: row;
+    }
+}
+
+.canada-map {
+    padding: 1rem;
+    flex-basis: 48%;
+    .bcbutton {
+        border-right: 1px solid black;
+        padding: .5rem;
+    }
+}
+
+.fp-impact-results {
+    flex-basis: 48%
 }
 
 /// ------------ Blog Post Area --------- //////

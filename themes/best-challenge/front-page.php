@@ -87,9 +87,23 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
-		<div class="impact results container">
+
+
+<div class="impact-results container">
+
+			<div class="canada-map">
+					<img id="myImage" src="<?php echo get_template_directory_uri() ?>/assets/images/bcmap.jpg">
+					<div class="map-buttons">
+					<a class="bcbutton" onclick="document.getElementById('myImage').src='<?php echo get_template_directory_uri() ?>/assets/images/bcmap.jpg'">BC</a>
+					<a onclick="document.getElementById('myImage').src='<?php echo get_template_directory_uri() ?>/assets/images/canadamap.jpg'"> Canada</a>
+					</div>
+			</div>
+
+			<div class="fp-impact-results">
+				<h3> IMPACT RESULTS 2016</h3>
 		
 		</div>
+</div>
 
 		
 	<!--Blog-->
