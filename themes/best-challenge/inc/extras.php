@@ -36,6 +36,23 @@ add_filter( 'body_class', 'best_challenge_body_classes' );
 	
 // add_filter( 'get_the_archive_title', 'display_custom_archive_title');
 
+// custom login logo
+
+function my_login_logo() { ?>
+   <style type="text/css">
+       #login h1 a, .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bccommuterchallenge.png);
+            padding-bottom: 30px;
+		      	background-size: 310px !important; 
+		      	width: 310px !important;
+			      background-position: bottom !important;
+       }
+   </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+/// custom logo end
+
 
 
 // print_posts
@@ -56,3 +73,6 @@ function print_teams_tests( $teams ) {
 
 	<?php endforeach; wp_reset_postdata();
 	} ?>
+
+
+	
