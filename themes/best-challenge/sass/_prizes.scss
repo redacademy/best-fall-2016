@@ -1,6 +1,6 @@
 .page-template-default{
 
-    .page-heading {
+    .page-heading, .page-heading-participants{
         background-image: url(../../assets/images/gift-mobile.png);
         background-repeat: no-repeat;
         background-size: cover;	
@@ -13,25 +13,27 @@
         @include desktop {
             background-image: url(../../assets/images/gift.png);
         }
-        
-       
-        h1, h2 {
-            font-size: 2.62rem;
-            text-align: center;
-            width: 100%;
-            color: white;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-        p {
-            font-size: 1.1rem;
-            font-weight: 300;
+    }
+    /* Participants page heading */
+    .page-heading-participants {
+        background-image: url(../../assets/images/participant-header.png);
+
+        @include desktop {
+            background-image: url(../../assets/images/participant-header.png);
         }
     }
+       
+       .heading {
+           @include heading-style;
+        }
+    
     .title-wrapper {
         line-height: 0.5;
-        margin-top: 5%;
+        margin-top: 10%;
         height: 200px;
+        @include desktop {
+            margin-top: 5%;
+        }
     }
 
     .content {
@@ -66,21 +68,28 @@
                     width: 100%;
                 }
             }
+
+            .location-title {
+                width: 100%;
+            }
         
             h2 {
-                font-size: 2.5rem;
-                font-weight: bold;
+                font-size: 2.25rem;
                 color: $black-text;
-                width: 100%;
-                text-align: center;
-                text-transform: uppercase;
+                @include section-heading;
+              
             }
-            h3 {
-                width: 100%;
-                text-align: center;
-                font-size: 2.4rem;
+            h3 {    
+                font-size: 1.88rem;
+                @include section-heading; 
+                line-height: 0;
             }
-            .taxonomy-prize {
+            h4 {
+                font-size: 1.25rem;
+                @include section-heading;
+                line-height: 0;
+            }
+            .taxonomy-post {
                 margin: 5% auto;
                 width: 230px;
                 height: 230px;
@@ -96,17 +105,18 @@
             background-image: url(../../assets/images/overlay.png);
             background-repeat: no-repeat;
             background-size: cover;
-            position: relative;
+            position: absolute;
             opacity: 0.85;
-            bottom: 60%; 
+            bottom: 0%; 
             h3 {
                 width: 171px;
                 font-size: 1rem;
-                position: relative;
+                position: absolute;
                 bottom: 0;
-                top: 50px;
                 left: 10px;
                 color: $light-text;
+                line-height: 1;
+                text-align: left;
             }       
         }
         .taxonomy-description {
@@ -119,6 +129,7 @@
             width: 230px;
             z-index: 1;
             top: 0%;
+            word-wrap: break-word;
             p {
                 width: 90%;
                 margin: 1% auto;
@@ -129,6 +140,8 @@
             }
         }
     }
+
+    /*Prize Categories on Prizes Page*/
     .prize-categories {
         width: 80%;
         margin: 5% auto;

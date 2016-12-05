@@ -16,3 +16,30 @@
 		@content;
 	}
 }
+
+@mixin section-heading {
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+}
+
+/* used on most of the pages in the header*/
+@mixin heading-style {
+        h1, h2 {
+            font-size: 2.62rem;
+            text-align: center;
+            width: 100%;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        p {
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+}
+/*Used in participants and prizes*/
+@mixin category-title {
+
+}

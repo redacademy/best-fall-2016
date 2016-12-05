@@ -10,11 +10,13 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<div class = "page-heading">	
 				<div class="title-wrapper">		
-					<?php the_title( '<div class="heading"><h1>', '</h3></div>' ); ?>
+					<?php the_title( '<div class="heading"><h1>', '</h1></div>' ); ?>
 					<?php
 						$props=CFS()->get_field_info('title_info');
 					?>
-            		<div class="title-info"><?php echo CFS()->get( 'title_info'); ?></div>
+            		<div class="title-info">
+						<?php echo CFS()->get( 'title_info'); ?>
+					</div>
 				</div>
 			</div>
 			<div class="content"> 
@@ -54,7 +56,7 @@ get_header(); ?>
 						<?php foreach( $prizes as $post ) : setup_postdata($post); ?>
 
 							
-							<div class="taxonomy-prize">
+							<div class="taxonomy-post">
 								<div class="prize-image">
 									<?php the_post_thumbnail( 'large' ); ?>							
 								</div>
