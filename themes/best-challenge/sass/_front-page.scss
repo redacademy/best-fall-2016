@@ -1,7 +1,7 @@
 .hero-banner {
-    background: url(../../assets/images/hero-banner-temp.jpeg) center no-repeat;
+    background: url(../../assets/images/hero-curve.png) top no-repeat, url(../../assets/images/hero-banner.png)  no-repeat;
     height: 90vh;
-    background-size: cover;
+    background-size: contain, cover;
     @include desktop {
         height: 80vh;
     }
