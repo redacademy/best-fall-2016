@@ -1,5 +1,4 @@
 (function ($) {
-
   //function to show prize description on click 
 
   $('.single-prize').on('click', function (event) {
@@ -27,7 +26,7 @@
   //
 
 // Typewriter Effect 
-
+/*
 document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
   var dataText = [ "Car Share.", "Bicycle.", "Bus.", "Roller-blades.", "Train.", "Foot."];
@@ -39,7 +38,6 @@ document.addEventListener('DOMContentLoaded',function(event){
     if (i < (text.length)) {
       // add next character to class typrewirte
      document.getElementById("typewrite").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
-
       // wait for a while and call this function again for next character
       setTimeout(function() {
         typeWriter(text, i + 1, fnCallback)
@@ -71,5 +69,8 @@ document.addEventListener('DOMContentLoaded',function(event){
   StartTextAnimation(0);
 });
 
-})(jQuery);
+
 //Typewriter end
+*/
+
+})(jQuery);

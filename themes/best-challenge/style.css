@@ -2079,7 +2079,6 @@ CUSTOM-FIELD-SUITE loop items with three blocks flexed
     margin-top: 0; }
   .page-id-74 .activities {
     background: #5a6f83; }
-<<<<<<< HEAD
   .page-id-74 .custom-field-suite {
     display: -ms-flexbox;
     display: flex;
@@ -2174,75 +2173,3 @@ CUSTOM-FIELD-SUITE loop items with three blocks flexed
     font-size: 29.9px;
     font-weight: 300;
     color: #a6ce39; }
-
-/*=======================
-this is the css for the special template that will add and remove one of two buttons depending on the 
-users choice
-========================*/
-.green-banner {
-  background: #a6ce39;
-  height: 225px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  padding-bottom: 20px; }
-
-.green-banner-data {
-  text-align: center; }
-
-.green-banner-data p:first-child {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-family: 'montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  margin-bottom: 0;
-  padding-top: 30px; }
-
-.green-banner-data p {
-  font-family: 'montserrat', sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  margin-top: 0;
-  margin-bottom: 25px; }
-
-#go-green-button {
-  background-color: transparent;
-  color: black;
-  cursor: pointer;
-  padding: .25rem 2rem;
-  border: 1;
-  border-radius: 25px;
-  font-family: 'montserrat', sans-serif;
-  font-size: 1rem;
-  box-shadow: none;
-  line-height: 1.7;
-  border-width: 3px;
-  border-color: black;
-  text-shadow: none;
-  width: 250px; }
-
-.button2 {
-  visibility: visible; }
-
-.green-banner-flex {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.green-buttons {
-  margin-bottom: 50px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row; }
-
-.button1 {
-  padding-bottom: 5px;
-  padding-right: 5%; }
-=======
->>>>>>> 5deb19461de5ef5e879e1b85c2e9674864856127
