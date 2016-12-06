@@ -60,7 +60,7 @@
 
 document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
-  var dataText = [ "Car Share.", "Bicycle.", "Bus.", "Train.", "Foot.", "Roller-blades."];
+  var dataText = [ "Car Share.","Bicycle.","Bus.","Train.","Foot.","Roller-blades."];
   
   // type one text in the typwriter
   // keeps calling itself until the text is finished
@@ -84,8 +84,8 @@ document.addEventListener('DOMContentLoaded',function(event){
    function StartTextAnimation(i) {
      if (typeof dataText[i] == 'undefined'){
         setTimeout(function() {
-          StartTextAnimation(0);
-        }, 10000);
+          StartTextAnimation(1);
+        }, 5000);
      }
      // check if dataText[i] exists
     if (i < dataText[i].length) {
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded',function(event){
 });
 
 
-//Typewriter end
+// Typewriter end
 
 
 //// Mobile Menu

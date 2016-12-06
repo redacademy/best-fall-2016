@@ -615,11 +615,14 @@ a {
   .logo .desktop {
     display: none; } }
 
-@media (min-width: 600px) {
-  .header-nav {
-    position: absolute;
-    bottom: 0;
-    right: 0; } }
+.header-nav {
+  width: 100%; }
+  @media (min-width: 600px) {
+    .header-nav {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: auto; } }
 
 #primary-menu {
   width: 100%;
@@ -2089,6 +2092,9 @@ this is the CONTACT PERSON INFO
 CUSTOM-FIELD-SUITE loop items with three blocks flexed
 ========================*/
   /*=======================
+ICONS
+========================*/
+  /*=======================
 RESOURCE-DOWNLOADS SECTION
 ========================*/
   /*=======================
@@ -2163,8 +2169,6 @@ DROPDOWN-MENU
     color: #303b46;
     margin-bottom: 0;
     margin-top: 0; }
-  .page-id-94 .activities {
-    background: #5a6f83; }
   .page-id-94 .custom-field-suite {
     display: -ms-flexbox;
     display: flex;
@@ -2172,13 +2176,16 @@ DROPDOWN-MENU
         align-items: center;
     -ms-flex-direction: column;
         flex-direction: column; }
+  .page-id-94 .activities {
+    background: url("../../assets/images/light-blue-curved-background.png") center bottom no-repeat;
+    background-image: cover; }
   .page-id-94 .activities h2 {
     text-transform: uppercase;
     font-family: 'montserrat';
     font-size: 36px;
     color: white;
     text-align: center;
-    padding-top: 67px; }
+    margin-bottom: 0; }
   .page-id-94 .activities-wrapper {
     padding-top: 50px;
     text-align: center;
@@ -2207,8 +2214,7 @@ DROPDOWN-MENU
     text-align: center;
     -ms-flex-align: center;
         align-items: center;
-    padding-top: 20px;
-    padding-bottom: 100px; }
+    padding-top: 20px; }
   .page-id-94 .single-activity-block {
     -ms-flex: 0 1 33%;
     flex: 0 1 33%;
@@ -2226,7 +2232,7 @@ DROPDOWN-MENU
   .page-id-94 .single-activity-block img:last-child {
     width: 24px;
     height: 23px;
-    margin-top: 150px; }
+    margin-top: 63px; }
   .page-id-94 .description-wrapper {
     display: -ms-flexbox;
     display: flex;
@@ -2239,7 +2245,7 @@ DROPDOWN-MENU
         align-items: center;
     background-color: white;
     width: 305.3px;
-    height: 400px;
+    height: 300px;
     border-top: 1px; }
   .page-id-94 .description-wrapper p {
     margin-top: 0rem;
@@ -2263,7 +2269,7 @@ DROPDOWN-MENU
     -ms-flex-direction: row;
         flex-direction: row; }
   .page-id-94 .download-area p {
-    margin-top: 138px;
+    margin-top: 50px;
     margin-left: -100px;
     padding-right: 10px;
     font-family: 'montserrat';
@@ -2289,9 +2295,27 @@ DROPDOWN-MENU
     margin-top: 36px;
     padding-left: 10px;
     margin-bottom: 75px; }
+  .page-id-94 .icons {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin-top: 22px;
+    padding-right: 20px; }
+  .page-id-94 .download-categories {
+    margin-top: 100px;
+    display: -ms-flexbox;
+    display: flex; }
+  .page-id-94 .icon {
+    padding-bottom: 40px; }
   .page-id-94 .resource-downloads {
-    background-color: lightgray;
+    background-color: white;
     height: 600px; }
+  .page-id-94 .resource-downloads h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    font-size: 34px; }
   .page-id-94 .nav {
     display: block;
     font-family: 'montserrat';
@@ -2337,6 +2361,10 @@ DROPDOWN-MENU
   .page-id-94 .nav li .dropdown-menu a {
     width: 200px;
     background: #5a6f83; }
+  .page-id-94 .download-categories {
+    margin-top: 100px;
+    display: -ms-flexbox;
+    display: flex; }
   .page-id-94 .page-heading, .page-id-94 .page-heading-participants {
     background-image: url(../../assets/images/gift-mobile.png);
     background-repeat: no-repeat;

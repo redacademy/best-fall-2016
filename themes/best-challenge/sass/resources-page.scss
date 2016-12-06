@@ -103,10 +103,7 @@ this is the CONTACT PERSON INFO
     margin-top:0;
 }
 
-.activities{
-    
-    background: #5a6f83;
-}
+
 
  /*=======================
 CUSTOM-FIELD-SUITE loop items with three blocks flexed
@@ -119,13 +116,23 @@ CUSTOM-FIELD-SUITE loop items with three blocks flexed
     
 }
 
+.activities{
+
+background:url('../../assets/images/light-blue-curved-background.png')center bottom no-repeat;
+background-image:cover;
+
+}
+
+
+
 .activities h2{
     text-transform:uppercase;
     font-family: 'montserrat';
     font-size: 36px;
     color:white;
     text-align:center;
-    padding-top:67px;
+    margin-bottom:0;
+  
 
 }
 
@@ -170,7 +177,7 @@ CUSTOM-FIELD-SUITE loop items with three blocks flexed
     text-align: center;
     align-items:center;
     padding-top:20px;
-    padding-bottom:100px;
+   
    
     
     }
@@ -195,7 +202,7 @@ CUSTOM-FIELD-SUITE loop items with three blocks flexed
 .single-activity-block img:last-child{
 	width: 24px;
 	height: 23px;
-    margin-top:150px;
+    margin-top:63px;
     
    }
 
@@ -208,7 +215,7 @@ CUSTOM-FIELD-SUITE loop items with three blocks flexed
     align-items:center;
     background-color:white;
     width: 305.3px;
-    height:400px;
+    height:300px;
     border-top: 1px;
 	
     }
@@ -245,7 +252,7 @@ flex-direction:row;
 }
 
 .download-area p {
-    margin-top:138px;
+    margin-top:50px;
     margin-left:-100px;
     padding-right:10px;
 	font-family: 'montserrat';
@@ -284,14 +291,57 @@ flex-direction:row;
 }
 
  /*=======================
+ICONS
+========================*/
+
+.icons{
+display:flex;
+flex-direction:column;
+margin-top:22px;
+padding-right:20px;
+}
+
+
+.download-categories{
+margin-top:100px;
+display:flex;
+
+
+}
+
+.icon{
+
+padding-bottom:40px;
+
+}
+
+
+
+
+
+
+
+
+ /*=======================
 RESOURCE-DOWNLOADS SECTION
 ========================*/
 
 .resource-downloads{
 
-    background-color:lightgray;
+    background-color:white;
     height:600px;
+    
 }
+
+.resource-downloads h2{
+text-transform:uppercase;
+text-align:center;
+color:black;
+font-size:34px;
+
+
+}
+
 .nav {
     display: block;
     font-family: 'montserrat';
@@ -353,6 +403,13 @@ RESOURCE-DOWNLOADS SECTION
 .nav li .dropdown-menu a {
     width: 200px;
     background: #5a6f83
+}
+
+
+.download-categories{
+margin-top:100px;
+display:flex;
+
 }
 
  /*=======================
