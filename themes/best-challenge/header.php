@@ -39,13 +39,14 @@
 					</a>
 				</div>
 			<div class="event-date">
-				<h2><span>June<span> 4 to 10, 2017</h2>
+				<h2><span>June<span> 4 to 10, 2017 <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?><i class="fa fa-bars" aria-hidden="true"></i></button></h2>
+					
 			</div>
 		</div>
 
 		<div class="header-nav">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?><i class="fa fa-bars" aria-hidden="true"></i></button>
+				
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</div>
