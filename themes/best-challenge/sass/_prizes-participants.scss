@@ -23,9 +23,9 @@
         }
     }
        
-       .heading {
+    .heading {
            @include heading-style;
-        }
+    }
     
     .title-wrapper {
         line-height: 0.5;
@@ -143,7 +143,8 @@
         }
     }
 
-    /*Prize Categories on Prizes Page*/
+
+/*Prize Categories on Prizes Page*/
     .prize-categories {
         width: 80%;
         margin: 5% auto;
@@ -189,5 +190,33 @@
     }
 
 
+
+.participants {
+    margin-top: 5%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+.map {
+    flex-basis: 60%;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    }
+
+/*Participant page buttons */
+
+.dark-button {
+    margin: 2%;
+}
+.dark-button input[type=submit] {
+        @include dark-button;
+    }
+    
+}
 
 }

@@ -1169,6 +1169,40 @@ users choice
     .page-template-default .prize-categories .category-description p, .tax-participant_location .prize-categories .category-description p {
       display: none;
       font-weight: 300; }
+  .page-template-default .participants, .tax-participant_location .participants {
+    margin-top: 5%;
+    width: 80%;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    /*Participant page buttons */ }
+    .page-template-default .participants .map, .tax-participant_location .participants .map {
+      -ms-flex-preferred-size: 60%;
+          flex-basis: 60%; }
+    .page-template-default .participants .buttons, .tax-participant_location .participants .buttons {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-preferred-size: 20%;
+          flex-basis: 20%; }
+    .page-template-default .participants .dark-button, .tax-participant_location .participants .dark-button {
+      margin: 2%; }
+    .page-template-default .participants .dark-button input[type=submit], .tax-participant_location .participants .dark-button input[type=submit] {
+      cursor: pointer;
+      padding: .25rem 2rem;
+      color: #dee2e6;
+      background-color: #303b46;
+      line-height: 1.7;
+      border-radius: 25px;
+      width: 200px;
+      font-size: 1rem;
+      box-shadow: none;
+      border: 1px solid #303b46; }
 
 .info-404 {
   display: -ms-flexbox;
