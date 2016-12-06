@@ -34,7 +34,7 @@ get_header(); ?>
 					$terms = get_terms('prize_type', array('order' => 'DESC'));  
 
 					foreach($terms as $prize_type) { ?>
-					
+						<div class="prizes">
 						<h2><?php echo $prize_type->name; ?> </h2>
 
 						<?php $args = array(
@@ -54,9 +54,8 @@ get_header(); ?>
 					
 					
 						<?php foreach( $prizes as $post ) : setup_postdata($post); ?>
-
-							
-							<div class="taxonomy-post">
+						
+								<div class="taxonomy-post">
 								<div class="prize-image">
 									<?php the_post_thumbnail( 'large' ); ?>							
 								</div>
@@ -68,9 +67,10 @@ get_header(); ?>
 									<p><?php the_content(); ?></p>
 								</div>
 							</div>
-
-						<?php endforeach; wp_reset_postdata();
-						
+					
+						<?php endforeach; wp_reset_postdata(); ?>
+				</div>
+				<?php
 				} ?>
 			</div> <!-- prize wrapper section ends -->
 

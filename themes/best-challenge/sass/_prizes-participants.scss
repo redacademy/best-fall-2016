@@ -143,7 +143,12 @@
         }
     }
 
-
+.prizes:first {
+   background-color: red;
+}
+.prizes:second {
+    background-color: blue;
+}
 /*Prize Categories on Prizes Page*/
     .prize-categories {
         width: 80%;

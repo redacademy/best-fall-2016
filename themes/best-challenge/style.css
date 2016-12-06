@@ -1164,6 +1164,10 @@ users choice
         font-weight: 300;
         font-size: 1rem;
         text-align: center; }
+  .page-template-default .prizes:first, .tax-participant_location .prizes:first {
+    background-color: red; }
+  .page-template-default .prizes:second, .tax-participant_location .prizes:second {
+    background-color: blue; }
   .page-template-default .prize-categories, .tax-participant_location .prize-categories {
     width: 80%;
     margin: 5% auto;
