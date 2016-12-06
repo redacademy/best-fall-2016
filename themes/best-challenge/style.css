@@ -887,7 +887,10 @@ users choice
         margin: 0; } }
 
 .travel-by-mobile {
-  text-align: center; }
+  text-align: center;
+  background: #dee2e6; }
+  .travel-by-mobile h3 {
+    margin: 0; }
 
 .ccbc-front {
   -ms-flex-direction: column;
