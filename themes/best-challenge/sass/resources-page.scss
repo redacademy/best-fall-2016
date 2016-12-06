@@ -355,4 +355,199 @@ RESOURCE-DOWNLOADS SECTION
     background: #5a6f83
 }
 
+ /*=======================
+DROPDOWN-MENU
+========================*/
+
+.page-heading, .page-heading-participants{
+        background-image: url(../../assets/images/gift-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;	
+        background-position: center;
+        justify-content: center;
+        max-width: 100%;
+        height: 300px;
+        color: white;
+        display: flex;
+        @include desktop {
+            background-image: url(../../assets/images/gift.png);
+        }
+    }
+    /* Participants page heading */
+    .page-heading-participants {
+        background-image: url(../../assets/images/participant-header.png);
+
+        @include desktop {
+            background-image: url(../../assets/images/participant-header.png);
+        }
+    }
+       
+       .heading {
+           @include heading-style;
+        }
+    
+    .title-wrapper {
+        line-height: 0.5;
+        margin-top: 10%;
+        height: 200px;
+        @include desktop {
+            margin-top: 5%;
+        }
+    }
+
+    .content {
+        width: 90%;
+        font-size: 20px;
+        font-weight: 300;
+        margin: 0 auto;
+        text-align: center;
+        color: $dark-text;
+        @include desktop {
+            width: 50%;
+        }
+    }
+    .taxonomy-wrapper {
+        width: 80%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        flex-basis: 80%;
+        margin: 0 auto;
+            @include desktop {
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-top: 5% auto 1% auto;
+            }
+
+            .taxonomy-image {
+                width: 230px;
+                img {
+                    width: 100%;
+                }
+            }
+
+            .location-title {
+                width: 100%;
+            }
+        
+            h2 {
+                font-size: 2.25rem;
+                color: $black-text;
+                @include section-heading;
+              
+            }
+            h3 {    
+                font-size: 1.88rem;
+                @include section-heading; 
+                line-height: 0;
+            }
+            h4 {
+                font-size: 1.25rem;
+                @include section-heading;
+                line-height: 0;
+            }
+            .taxonomy-post {
+                margin: 5% auto;
+                width: 230px;
+                height: 230px;
+                border: 1px solid white;
+                position: relative;
+                @include desktop {
+                    margin: 1%;
+                }
+            }
+        .taxonomy-title {
+            width: 230px;
+            height: 115px;
+            background-image: url(../../assets/images/overlay.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            opacity: 0.85;
+            bottom: 0%; 
+            h3 {
+                width: 171px;
+                font-size: 1rem;
+                position: absolute;
+                bottom: 0;
+                left: 10px;
+                color: $light-text;
+                line-height: 1;
+                text-align: left;
+            }       
+        }
+        .taxonomy-description {
+            background-color: $footer-background;
+            opacity: 0.9;
+            bottom: 43px;
+            display: none;
+            position: absolute;
+            height: 230px;
+            width: 230px;
+            z-index: 1;
+            top: 0%;
+            word-wrap: break-word;
+            p {
+                width: 90%;
+                margin: 1% auto;
+                color: $light-text;
+                font-weight: 300;
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+    }
+
+    /*Prize Categories on Prizes Page*/
+    .download-categories {
+        width: 80%;
+        margin: 5% auto;
+        color: $dark-text;
+        h2 {
+            font-weight: normal;
+            font-size: 2rem;
+            text-transform: uppercase;
+            text-align: center;
+            color: $black-text;
+            @include desktop {
+                font-size: 2.25rem;    
+            }
+        }
+
+        @include desktop {
+            width: 50%;
+            color: $light-blue-text;
+            p{
+                margin-left: 50px;
+            }
+        }
+        .category-name {
+            height: 57px;
+            border-bottom: 1px solid $best-green;
+            text-transform: capitalize;
+            h3 {
+                font-size: 1.8rem;
+                font-weight: 300;
+            }
+            @include desktop {
+                font-weight: bold;
+            }
+            
+        }
+        .category-description {
+            p {
+                display: none;
+                font-weight: 300;
+            }
+
+        }
+    }
+
+
+
+
+
+
 }

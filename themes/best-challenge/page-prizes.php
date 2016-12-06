@@ -79,6 +79,10 @@ get_header(); ?>
 
 					<?php $fields=CFS()->get( 'prize_categories' );
                         foreach ( $fields as $field ) { ?>
+   
+   									
+
+
                         <div class="category-name"> 
                                <h3><?php echo $field['category_name']; ?></h3>
                         </div>
