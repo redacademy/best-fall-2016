@@ -544,17 +544,6 @@ a {
   border-top-left-radius: 0;
   border-top-right-radius: 0; }
 
-.mobile {
-  display: none; }
-
-/* when screen is less than 600px wide
-     show mobile version and hide desktop */
-@media (max-width: 600px) {
-  .mobile {
-    display: block; }
-  .desktop {
-    display: none; } }
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -759,6 +748,17 @@ a {
 .bypostauthor {
   display: block; }
 
+.mobile {
+  display: none; }
+
+/* when screen is less than 600px wide
+     show mobile version and hide desktop */
+@media (max-width: 600px) {
+  .mobile {
+    display: block; }
+  .desktop {
+    display: none; } }
+
 /*=======================
 this is the css for the special template that will add and remove one of two buttons depending on the 
 users choice
@@ -832,18 +832,20 @@ users choice
   padding-right: 5%; }
 
 .hero-banner {
-  background: url(../../assets/images/hero-curve.png) top no-repeat, url(../../assets/images/hero-banner.png) top no-repeat;
-  height: 90vh;
-  background-size: contain, cover;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: start;
-      align-items: flex-start; }
+  background: url(../../assets/images/hero-banner-mobile.png) center no-repeat;
+  background-size: cover;
+  height: 50vh; }
   @media (min-width: 600px) {
     .hero-banner {
-      height: 80vh; } }
+      height: 80vh;
+      background: url(../../assets/images/hero-curve.png) top no-repeat, url(../../assets/images/hero-banner.png) top no-repeat;
+      background-size: contain, cover;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: start;
+          align-items: flex-start; } }
 
 .box {
   display: -ms-flexbox;
@@ -859,28 +861,33 @@ users choice
           align-items: stretch; } }
 
 .travel-by {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  margin-top: 2rem;
-  color: #fff; }
-  .travel-by span {
-    border-right: .05em solid;
-    animation: caret 1s steps(1) infinite; }
+  display: none; }
+  @media (min-width: 600px) {
+    .travel-by {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      margin-top: 2rem;
+      color: #fff; }
+      .travel-by span {
+        border-right: .05em solid;
+        animation: caret 1s steps(1) infinite; }
+    @keyframes caret {
+      50% {
+        border-color: transparent; } }
+      .travel-by #go-green-button {
+        color: #fff;
+        border-color: #fff; }
+      .travel-by h3 {
+        font-size: 2.75rem;
+        margin: 0; }
+      .travel-by p {
+        font-size: 1.5rem;
+        margin: 0; } }
 
-@keyframes caret {
-  50% {
-    border-color: transparent; } }
-  .travel-by #go-green-button {
-    color: #fff;
-    border-color: #fff; }
-  .travel-by h3 {
-    font-size: 3rem;
-    margin: 0; }
-  .travel-by p {
-    font-size: 2rem;
-    margin: 0; }
+.travel-by-mobile {
+  text-align: center; }
 
 .ccbc-front {
   -ms-flex-direction: column;

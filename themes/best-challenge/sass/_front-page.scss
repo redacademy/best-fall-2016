@@ -1,12 +1,15 @@
 .hero-banner {
-    background: url(../../assets/images/hero-curve.png) top no-repeat, url(../../assets/images/hero-banner.png) top no-repeat;
-    height: 90vh;
-    background-size: contain, cover;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    background: url(../../assets/images/hero-banner-mobile.png) center no-repeat;
+    background-size: cover;
+    height: 50vh;
+
     @include desktop {
         height: 80vh;
+        background: url(../../assets/images/hero-curve.png) top no-repeat, url(../../assets/images/hero-banner.png) top no-repeat;
+        background-size: contain, cover;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
     }
 }
 
@@ -21,31 +24,38 @@
 }
 
 .travel-by {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2rem;
-    color: #fff;
-    span {
-        border-right: .05em solid;
-        animation: caret 1s steps(1) infinite;
-    }
-    @keyframes caret {
-        50% {
-            border-color: transparent;
+    display: none;
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        color: #fff;
+        span {
+            border-right: .05em solid;
+            animation: caret 1s steps(1) infinite;
+        }
+        @keyframes caret {
+            50% {
+                border-color: transparent;
+            }
+        }
+        #go-green-button {
+            color: #fff;
+            border-color: #fff;
+        }
+        h3 {
+            font-size: 2.75rem;
+            margin: 0;
+        }
+        p {
+            font-size: 1.5rem;
+            margin: 0;
         }
     }
-    #go-green-button {
-        color: #fff;
-        border-color: #fff;
-    }
-    h3 {
-        font-size: 3rem;
-        margin: 0;
-    }
-    p {
-        font-size: 2rem;
-        margin: 0;
-    }
+}
+
+.travel-by-mobile {
+    text-align: center;
 }
 
 .ccbc-front {
