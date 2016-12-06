@@ -534,7 +534,26 @@ a {
     background-color: #a6ce39; }
     .menu-item-51 a,
     .menu-item-51:hover a {
-      color: #303b46; } }
+      color: #303b46; }
+  .main-navigation ul ul a {
+    width: 100%;
+    padding: 0.75rem; } }
+
+.sub-menu .menu-item:hover {
+  background-color: #5a6f83;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+.mobile {
+  display: none; }
+
+/* when screen is less than 600px wide
+     show mobile version and hide desktop */
+@media (max-width: 600px) {
+  .mobile {
+    display: block; }
+  .desktop {
+    display: none; } }
 
 /*--------------------------------------------------------------
 # Header
@@ -602,6 +621,14 @@ a {
   position: absolute;
   bottom: 0;
   right: 0; }
+
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block; }
+
+@media (min-width: 600px) {
+  .menu-toggle {
+    display: none; } }
 
 .page-template-faq .qa-section {
   display: -ms-flexbox;
@@ -927,9 +954,10 @@ users choice
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%; }
 
-.blog-posts {
-  background: url(../../assets/images/greycurve.png) center no-repeat;
-  background-size: cover; }
+@media (min-width: 600px) {
+  .blog-posts {
+    background: url(../../assets/images/greycurve.png) center no-repeat;
+    background-size: cover; } }
 
 .best-journal-container {
   display: -ms-flexbox;
@@ -939,7 +967,6 @@ users choice
   padding: 1rem; }
 
 .best-journal-content {
-  padding: 1rem;
   -ms-flex-align: center;
       align-items: center; }
   @media (min-width: 600px) {
@@ -951,8 +978,7 @@ users choice
 
 .best-post-thumb {
   -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
-  max-width: 472px; }
+      flex-basis: 48%; }
   .best-post-thumb img {
     height: auto;
     margin-top: 2rem; }
@@ -967,15 +993,24 @@ users choice
       flex-basis: 48%; }
   .best-post-info h3,
   .best-post-info p {
-    margin: 0; }
+    margin: 0;
+    padding: 1rem; }
 
 .best-post-title {
   font-size: 1.5rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding: 1rem; }
 
 .green-read {
   background: url(../../assets/images/green-read-story.png) no-repeat;
-  background-size: contain; }
+  background-size: 97%; }
+
+.read-green {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none; }
 
 .instagram-grid {
   text-align: center; }

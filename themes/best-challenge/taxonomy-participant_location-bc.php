@@ -1,38 +1,16 @@
 <?php
-/**
- * Template for the Prizes page. 
- *
- * @package RED_Starter_Theme
- */
+/*
+The temaplate to display taxonomy type archive 
+*/
+?>
+ 
+<?php get_header(); ?>
 
-get_header(); ?>
-	
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-			<div class = "page-heading-participants">	
-				<div class="title-wrapper">		
-					<?php the_title( '<div class="heading"><h1>', '</h1></div>' ); ?>
-					<?php
-						$props=CFS()->get_field_info('title_info');
-					?>
-            		<div class="title-info">
-						<?php echo CFS()->get( 'title_info'); ?>
-					</div>
-				</div>
-			</div>
-			<div class="content"> 
-				<?php
-					$id=61;
-					$post = get_post($id);
-					$content = apply_filters('the_content', $post->post_content);
-					echo $content;
-				?>	
-			</div>	
-			<div class="taxonomy-wrapper">
-				<?php 
-					$locations = get_terms('participant_location', array('order' => 'ASC'));  
-						foreach($locations as $participant_location) { ?>
+        <div id="primary" class="content-area">
+            <main id="main" class="site-main" role="main">
+               
+              <?php 
+					$participant_location = get_term_by('slug','bc','participant_location');  ?>
 							<div class="location-title">
 								<h2><?php echo $participant_location->name; ?> </h2>
 							</div>
@@ -77,9 +55,11 @@ get_header(); ?>
 							</div>
 						<?php endforeach; wp_reset_postdata();	
 							} //ends participant_location foreach foreach loop
-						} //ends participant_type foreach loop
 						?>
 			</div> <!-- taxonomy wrapper ends -->
-		<!--</div>-->
-	</div><!-- #primary -->
-<?php get_footer(); ?>
+        </div><!-- #content -->
+    </div><!-- #primary -->
+</div><!-- #main-content -->
+ 
+<?php
+get_footer();

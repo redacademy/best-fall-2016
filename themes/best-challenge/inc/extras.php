@@ -21,21 +21,6 @@ function best_challenge_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'best_challenge_body_classes' );
 
-/**
-*	Set custom archive title
-*/ 
-// function display_custom_archive_title ($title) {
-// 	if (is_post_type_archive ('prize' )) {
-// 		$title="Prizes";
-// 	}
-// 	elseif(is_tax() ) {
-//         $title=single_term_title( '', false );
-//     }
-// return $title;
-// }
-	
-// add_filter( 'get_the_archive_title', 'display_custom_archive_title');
-
 // custom login logo
 
 function my_login_logo() { ?>
@@ -50,8 +35,6 @@ function my_login_logo() { ?>
    </style>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
-
-/// custom logo end
 
 /// Excerpt script
 

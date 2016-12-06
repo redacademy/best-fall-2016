@@ -85,7 +85,7 @@ function register_participant_taxonomy_() {
 }
 add_action( 'init', 'register_participant_taxonomy_', 0 );
 
-function register_Location_taxonomy_() {
+function register_location_taxonomy_() {
 
 	$labels = array(
 		'name'                       => 'Participant Locations',
