@@ -80,11 +80,23 @@ get_header(); ?>
  				<div class="resource-downloads">
 					 <h2>resource downloads</h2>
 					<div class="download-categories">
+			<div>
+						<div class="icons">
+							<div class="icon"><img src=" <?php echo get_template_directory_uri() ?>/assets/images/clipboard-black.jpg" alt="logo"></div>
+							<div class="icon"><img src=" <?php echo get_template_directory_uri() ?>/assets/images/bugle-black.png" alt="logo"></div>
+							<div class="icon"><img src=" <?php echo get_template_directory_uri() ?>/assets/images/abacus-black.png" alt="logo"></div>
+						</div>
+
+			</div>
+
+			<div>
+
+
 						<?php 
 						$fields=CFS()->get( 'downloads_loop' ); 
                         foreach ( $fields as $field ) { ?>
 
-					
+				
 
 						<div class="category-name"> 
                                <h3><?php echo $field['category_name']; ?></h3>
@@ -93,6 +105,7 @@ get_header(); ?>
                                 <p><?php echo $field['category_description'];
 							} ?></p>
                         </div>
+			</div>
 					</div>
 				</div>
 			</div>
@@ -103,6 +116,32 @@ get_header(); ?>
                 <?php get_template_part( 'template-parts/contact-person' ); ?>
 
                 <?php get_template_part( 'template-parts/green-banner' ); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
