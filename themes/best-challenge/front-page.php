@@ -36,7 +36,7 @@ get_header(); ?>
 
 			<div class="travel-by-mobile mobile">
 		<div>
-		<h3 class="uppercase"> I travel by  <span id="typewrite"> </span></h3>
+		<h3 class="uppercase"> I travel by </h3>
 		<p>Join the Canada-wide competition.<br>
 			Celebrate sustainable commuting in BC.<p>
 		</div>
