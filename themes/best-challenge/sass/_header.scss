@@ -72,3 +72,28 @@
         bottom: 0;
         right: 0;
     }
+
+    // Small menu //
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@include desktop {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+	}
+}
+
+
+// #primary-menu {
+//     display: flex;
+//     flex-flow: column;
+//     justify-content: space-around;
+//     position: absolute;
+//     text-align: center;
+//     height: 00vh;
+//     z-index: 1;
+// }

@@ -71,5 +71,24 @@ document.addEventListener('DOMContentLoaded',function(event){
   StartTextAnimation(0);
 });
 
-})(jQuery);
 //Typewriter end
+
+//// Mobile Menu
+
+$('.menu-toggle').on('click', function(){
+   event.preventDefault();
+   $('#primary-menu').animate({width:'toggle'});
+  });
+
+  $('.menu-toggle').on('focusout', function(){
+    event.preventDefault();
+    //$('#primary-menu').slideToggle(350);
+   });
+
+
+
+/// Mobile menu end
+
+
+})(jQuery);
+

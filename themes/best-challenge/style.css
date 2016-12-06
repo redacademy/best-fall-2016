@@ -603,6 +603,14 @@ a {
   bottom: 0;
   right: 0; }
 
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block; }
+
+@media (min-width: 600px) {
+  .menu-toggle {
+    display: none; } }
+
 .page-template-faq .qa-section {
   display: -ms-flexbox;
   display: flex;
