@@ -123,9 +123,11 @@
 }
 
 /// ------------ Blog Post Area --------- //////
-.blog-posts {
-    background: url(../../assets/images/greycurve.png) center no-repeat;
-    background-size: cover;
+@include desktop {
+    .blog-posts {
+        background: url(../../assets/images/greycurve.png) center no-repeat;
+        background-size: cover;
+    }
 }
 
 .best-journal-container {
@@ -136,7 +138,6 @@
 }
 
 .best-journal-content {
-    padding: 1rem;
     align-items: center;
     @include desktop {
         display: flex;
@@ -146,7 +147,6 @@
 
 .best-post-thumb {
     flex-basis: 48%;
-    max-width: 472px;
     img {
         height: auto;
         margin-top: 2rem;
@@ -162,17 +162,27 @@
     h3,
     p {
         margin: 0;
+        padding: 1rem;
     }
 }
 
 .best-post-title {
     font-size: 1.5rem;
     text-transform: uppercase;
+    padding: 1rem;
 }
 
 .green-read {
     background: url(../../assets/images/green-read-story.png) no-repeat;
-    background-size: contain;
+    background-size: 97%;
+}
+
+.read-green {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 ///---------------- Instagram Area ---------- ///

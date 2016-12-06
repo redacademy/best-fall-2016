@@ -144,4 +144,33 @@ a {
 			color: #303b46;
 		}
 	}
+	.main-navigation ul ul a {
+		width: 100%;
+		padding: 0.75rem;
+	}
+}
+
+.sub-menu {
+	.menu-item:hover {
+		background-color: #5a6f83;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+}
+
+.mobile {
+	display: none;
+}
+
+
+/* when screen is less than 600px wide
+     show mobile version and hide desktop */
+
+@media (max-width: 600px) {
+	.mobile {
+		display: block;
+	}
+	.desktop {
+		display: none;
+	}
 }

@@ -11,7 +11,7 @@ get_header(); ?>
 <div class="hero-banner">
 	<div class="travel-by">
 		<div>
-		<h3 class="uppercase"> I travel by <span id="typewrite"></span></h3>
+		<h3 class="uppercase"> I travel by  <span id="typewrite"> </span></h3>
 		<p>Join the Canada-wide competition.<br>
 			Celebrate sustainable commuting in BC.<p>
 		</div>
@@ -121,15 +121,16 @@ get_header(); ?>
    <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
    	<div class ="best-journal-content">
 
-			<div class = "best-post-thumb"> 
+			<div class = "best-post-thumb">
+				<h3 class ="best-post-title mobile"><?php the_title();?></h3>
 					<?php the_post_thumbnail(); ?>
 			</div>
 
 			<div class = "best-post-info">
-				<h3 class ="best-post-title"><?php the_title();?></h3>
+				<h3 class ="best-post-title desktop"><?php the_title();?></h3>
 				<p class="best-post-content"><?php the_content(); ?></p>
 				<div class="green-read">
-				<a class ="read green" href="<?php the_permalink();?>">Read Entry</a>
+				<a class ="read-green" href="<?php the_permalink();?>">Read Full Story</a>
 				</div>
 			</div>
    	</div>

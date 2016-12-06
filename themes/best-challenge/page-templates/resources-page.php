@@ -48,7 +48,9 @@ get_header(); ?>
 
 									<div class="download-area">
 
-										<p><?php echo $field['download_word'];?></p>
+										<p><?php echo $field['word_download'];?></p>
+
+										
 
                                         <img src="<?php
                                         echo $field['download_image'];
@@ -74,14 +76,29 @@ get_header(); ?>
 
 
 
-
+		<!-- This is the custom field code for the download area-->
  				<div class="resource-downloads">
 					 <h2>resource downloads</h2>
+					<div class="download-categories">
+						<?php 
+						$fields=CFS()->get( 'downloads_loop' ); 
+                        foreach ( $fields as $field ) { ?>
 
+					
 
-			<?php get_template_part( 'template-parts/resources-download-dropdown' ); ?>
-
+						<div class="category-name"> 
+                               <h3><?php echo $field['category_name']; ?></h3>
+                        </div>
+                        <div class="category-description">
+                                <p><?php echo $field['category_description'];
+							} ?></p>
+                        </div>
+					</div>
+				</div>
 			</div>
+		</div>
+
+		<!-- End of custom field code for the download area-->	
 
                 <?php get_template_part( 'template-parts/contact-person' ); ?>
 

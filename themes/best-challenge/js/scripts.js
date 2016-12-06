@@ -16,13 +16,51 @@
     $(this).siblings().children().slideToggle('fast');
     $(this).siblings().children().next().toggle('fast');
   });
+
+
+
+})(jQuery);
+
+//Typewriter end
+
+
+
+
+
+(function ($) {
+
+  //function to show prize description on click 
+
+  $('.single-prize').on('click', function (event) {
+    event.preventDefault();
+    $(this).find('.prize-description').css('display', 'initial');
+  });
+  $('.prize-description').mouseleave(function () {
+    $(this).css('display', 'none');
+  });
+
+  //function to show prize category description on click 
+  // $('.category-name').on('click',function(event){
+  //      event.preventDefault();
+  //      $('.category-description').css('height', '300px');
+  //  });
+  //   $('.category-description').mouseleave(function(){
+  //     $(this).css('height' , '0px');
+  //  });
+
+
+  $('.download-categories').on('click', '.category-name', function () {
+    $(this).siblings().children().slideToggle('fast');
+    $(this).siblings().children().next().toggle('fast');
+  });
   //
 
+
 // Typewriter Effect 
-/*
+
 document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
-  var dataText = [ "Car Share.", "Bicycle.", "Bus.", "Roller-blades.", "Train.", "Foot."];
+  var dataText = [ "Car Share.", "Bicycle.", "Bus.", "Train.", "Foot.", "Roller-blades."];
   
   // type one text in the typwriter
   // keeps calling itself until the text is finished
@@ -64,20 +102,19 @@ document.addEventListener('DOMContentLoaded',function(event){
 
 
 //Typewriter end
-*/
 
-//Typewriter end
 
 //// Mobile Menu
 
 $('.menu-toggle').on('click', function(){
    event.preventDefault();
-   $('#primary-menu').animate({width:'toggle'});
+   $('#primary-menu').animate({height:'toggle'});
+   $('#primary-menu').css("display", "flex");
+  //  $("#primary-menu").toggleClass('hidden');
   });
 
-  $('.menu-toggle').on('focusout', function(){
+  $('.menu-toggle').on('blur', function(){
     event.preventDefault();
-    //$('#primary-menu').slideToggle(350);
    });
 
 
