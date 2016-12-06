@@ -2221,14 +2221,15 @@ RESOURCE-DOWNLOADS SECTION
     height: 600px; }
   .page-id-94 .nav {
     display: block;
-    font: 13px Helvetica, Tahoma, serif;
-    text-transform: uppercase;
+    font-family: 'montserrat';
+    font-weight: 300;
+    font-size: 30px;
     margin: 0;
     padding: 0;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column; }
+    -ms-flex-direction: row;
+        flex-direction: row; }
   .page-id-94 .nav li {
     display: inline-block;
     list-style: none; }
@@ -2246,7 +2247,7 @@ RESOURCE-DOWNLOADS SECTION
     font-size: 10px;
     color: #999; }
   .page-id-94 .nav li a:hover, .page-id-94 .nav li a.dropdown-toggle.active {
-    background-color: #289dcc;
+    background-color: #a6ce39;
     color: #fff; }
   .page-id-94 .nav li a:hover span, .page-id-94 .nav li a.dropdown-toggle.active span {
     color: #fff; }
@@ -2261,4 +2262,5 @@ RESOURCE-DOWNLOADS SECTION
   .page-id-94 .nav li .dropdown-menu.active {
     display: block; }
   .page-id-94 .nav li .dropdown-menu a {
-    width: 150px; }
+    width: 200px;
+    background: #5a6f83; }
