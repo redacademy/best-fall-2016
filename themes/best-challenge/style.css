@@ -2011,6 +2011,9 @@ this is the CONTACT PERSON INFO
 ========================*/
   /*=======================
 CUSTOM-FIELD-SUITE loop items with three blocks flexed
+========================*/
+  /*=======================
+RESOURCE-DOWNLOADS SECTION
 ========================*/ }
   .page-id-94 .entry-title {
     display: none; }
@@ -2155,7 +2158,8 @@ CUSTOM-FIELD-SUITE loop items with three blocks flexed
         align-items: center;
     background-color: white;
     width: 305.3px;
-    height: 400px; }
+    height: 400px;
+    border-top: 1px; }
   .page-id-94 .description-wrapper p {
     margin-top: 0rem;
     font-size: 18.1px;
@@ -2170,7 +2174,8 @@ CUSTOM-FIELD-SUITE loop items with three blocks flexed
   .page-id-94 .single-activity-block h3 {
     width: 80%;
     font-family: 'montserrat';
-    color: #0c0d0c; }
+    color: #0c0d0c;
+    border-bottom: 10px; }
   .page-id-94 .download-area {
     display: -ms-flexbox;
     display: flex;
@@ -2203,3 +2208,49 @@ CUSTOM-FIELD-SUITE loop items with three blocks flexed
     margin-top: 36px;
     padding-left: 10px;
     margin-bottom: 75px; }
+  .page-id-94 .resource-downloads {
+    background-color: lightgray;
+    height: 600px; }
+  .page-id-94 .nav {
+    display: block;
+    font: 13px Helvetica, Tahoma, serif;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .page-id-94 .nav li {
+    display: inline-block;
+    list-style: none; }
+  .page-id-94 .nav .button-dropdown {
+    position: relative; }
+  .page-id-94 .nav li a {
+    display: block;
+    color: #333;
+    background-color: #fff;
+    padding: 10px 20px;
+    text-decoration: none; }
+  .page-id-94 .nav li a span {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 10px;
+    color: #999; }
+  .page-id-94 .nav li a:hover, .page-id-94 .nav li a.dropdown-toggle.active {
+    background-color: #289dcc;
+    color: #fff; }
+  .page-id-94 .nav li a:hover span, .page-id-94 .nav li a.dropdown-toggle.active span {
+    color: #fff; }
+  .page-id-94 .nav li .dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    margin-top: 3px;
+    text-align: left; }
+  .page-id-94 .nav li .dropdown-menu.active {
+    display: block; }
+  .page-id-94 .nav li .dropdown-menu a {
+    width: 150px; }

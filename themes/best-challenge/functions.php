@@ -97,6 +97,8 @@ function Best_Challenge_scripts() {
 
 	wp_enqueue_script( 'redirect', get_template_directory_uri() . '/js/redirect.js', array ( 'jquery' ), 1.1, true);
 	
+	wp_enqueue_script( 'dropdown', get_template_directory_uri() . '/js/dropdown.js', array ( 'jquery' ), 1.1, true);
+
 	wp_enqueue_script ( 'faq-section', get_template_directory_uri() . '/js/scripts.js', array ( 'jquery' ), false, true);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

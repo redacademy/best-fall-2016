@@ -40,11 +40,10 @@ get_header(); ?>
                                         ?>" alt="" />
 
 								<div class="description-wrapper">
-                                 
+									
                                        <h3><?php
                                         echo $field['header'];?></h3>
-
-										
+									
                                     <p><?php echo $field['description'];?></p>
 
 									<div class="download-area">
@@ -63,15 +62,26 @@ get_header(); ?>
                                 
                             <?php endforeach; ?>
    
-            </div>
+            	</div>
 			<div class="load-more">
 			<p>Load More</p>
 			<img src=" <?php echo get_template_directory_uri() ?>/assets/images/arrow-down-small.png" alt="logo">
 			</div>
 		</div>
-		</div>
+	</div>
 
  <!-- This is the end of the custom field code -->
+
+
+
+
+ 				<div class="resource-downloads">
+					 <h2>resource downloads</h2>
+
+
+			<?php get_template_part( 'template-parts/resources-download-dropdown' ); ?>
+
+			</div>
 
                 <?php get_template_part( 'template-parts/contact-person' ); ?>
 
