@@ -73,4 +73,24 @@ document.addEventListener('DOMContentLoaded',function(event){
 //Typewriter end
 */
 
+//Typewriter end
+
+//// Mobile Menu
+
+$('.menu-toggle').on('click', function(){
+   event.preventDefault();
+   $('#primary-menu').animate({width:'toggle'});
+  });
+
+  $('.menu-toggle').on('focusout', function(){
+    event.preventDefault();
+    //$('#primary-menu').slideToggle(350);
+   });
+
+
+
+/// Mobile menu end
+
+
 })(jQuery);
+

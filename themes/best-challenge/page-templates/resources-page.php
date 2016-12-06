@@ -25,9 +25,9 @@ get_header(); ?>
 
 
             <div class="activities">
+				<h2>team activities and more!</h2>
 				<div class="activities-wrapper">
-                    
-                        <div class="activities-blocks">
+                    <div class="activities-blocks">
                             <?php
 
                                 $fields = CFS()->get( 'activities_loop' )?>
@@ -39,14 +39,12 @@ get_header(); ?>
                                         echo $field['image'];
                                         ?>" alt="" />
 
-										<div class="description-wrapper">
-                                 
+								<div class="description-wrapper">
+									
                                        <h3><?php
                                         echo $field['header'];?></h3>
-
-										
+									
                                     <p><?php echo $field['description'];?></p>
-										
 
 									<div class="download-area">
 
@@ -63,11 +61,27 @@ get_header(); ?>
                                      
                                 
                             <?php endforeach; ?>
-    <!-- This is the end of the custom field code -->
-            </div>
+   
+            	</div>
+			<div class="load-more">
+			<p>Load More</p>
+			<img src=" <?php echo get_template_directory_uri() ?>/assets/images/arrow-down-small.png" alt="logo">
+			</div>
 		</div>
+	</div>
+
+ <!-- This is the end of the custom field code -->
 
 
+
+
+ 				<div class="resource-downloads">
+					 <h2>resource downloads</h2>
+
+
+			<?php get_template_part( 'template-parts/resources-download-dropdown' ); ?>
+
+			</div>
 
                 <?php get_template_part( 'template-parts/contact-person' ); ?>
 

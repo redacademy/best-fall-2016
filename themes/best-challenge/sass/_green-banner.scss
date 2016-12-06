@@ -27,7 +27,7 @@ display:flex;
     font-weight:500;
    font-family: 'montserrat', sans-serif;
 font-weight:bold;
-font-size:40px;
+font-size:36px;
 margin-bottom:0;
 padding-top:30px;
 }
@@ -57,7 +57,7 @@ margin-bottom:25px;
     border-width:3px;
     border-color:black;
     text-shadow:none;
-    width:250px;
+    width:200px;
 
     
 }
@@ -79,6 +79,8 @@ margin-bottom:25px;
     margin-bottom:50px;
     display:flex;
     flex-direction:row;
+    justify-content:center;
+
     
     
 }
