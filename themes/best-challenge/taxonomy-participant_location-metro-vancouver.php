@@ -11,7 +11,7 @@ The temaplate to display taxonomy type archive
 				<div class = "page-heading-participants">
                		<div class="title-wrapper">		
 						<?php 
-							$participant_location = get_term_by('slug' ,"bc",'participant_location');  ?>
+							$participant_location = get_term_by('slug' ,'metro-vancouver','participant_location');  ?>
 								<div class="heading">
 									<h1><?php echo $participant_location->name; ?> participants</h1>
 								</div>
@@ -47,33 +47,24 @@ The temaplate to display taxonomy type archive
 				<!--posts loop-->
 						<?php foreach( $teams as $post ) : setup_postdata($post); ?>	
 							<div class="taxonomy-post">
-								<?php
-								$url =CFS()->get( 'participant_url' ); ?>
-								<a href="<?php CFS()->get( 'participant_url' ); ?>"></a>
-								<?php esc_url( $url, $protocols, $_context ); ?>
-								<div class="taxonomy-image">
-									<?php the_post_thumbnail( 'large' ); ?>							
-								</div>
-								<div class="taxonomy-title">
-									<h3><?php the_title(); ?></h3>
-								</div>
-								<div class="taxonomy-description">
-									<p><?php the_content(); ?></p>
-								</div>
+								<?php $url=CFS()->get( 'participant_url' ); ?>
+									
+								<a href="<?php echo esc_url($url);  ?>">
+									<div class="taxonomy-image">
+										<?php the_post_thumbnail( 'large' ); ?>							
+									</div>
+									
+									<div class="taxonomy-title">
+										<h3><?php the_title(); ?></h3>
+									</div>
+									<div class="taxonomy-description">
+										<p><?php the_content(); ?></p>
+									</div>
+								</a> 
 							</div>
-							<?php
-								if ( wp_is_mobile() ) { ?>
-								<div class="taxonomy-title">
-									<h3><?php the_title(); ?></h3>
-								</div>
-								<?php
-								}
-								?>
 						<?php endforeach; wp_reset_postdata();	
 							} //ends participant_location foreach foreach loop
 						?>
-
-						
 			</div> <!-- taxonomy wrapper ends -->
         <!--</div> #content -->
     <!--</div> #primary -->
