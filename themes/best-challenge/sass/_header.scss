@@ -66,29 +66,28 @@
         }
         
         // Main Menu //
-        
-        @include desktop {
-            .header-nav {
+        .header-nav {
+
+            width: 100%;
+            @include desktop {
                 position: absolute;
                 bottom: 0;
                 right: 0;
+                width: auto;
             }
         }
-
-
-#primary-menu {
-        width: 100%;
-        flex-direction: column;
-        @include desktop {
-            flex-direction: row;
+        
+        #primary-menu {
+            width: 100%;
+            flex-direction: column;
+            @include desktop {
+                flex-direction: row;
+            }
         }
-}
-
-// .hidden {
-
-//     display: none;
-
-//     @include desktop {
-//         display: block;
-//     }
-// }
+        
+        // .hidden {
+        //     display: none;
+        //     @include desktop {
+        //         display: block;
+        //     }
+        // }
