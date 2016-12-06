@@ -43,3 +43,16 @@
 @mixin category-title {
 
 }
+
+@mixin dark-button {
+	cursor: pointer;
+    padding: .25rem 2rem;
+	color: $light-text;
+	background-color: $dark-background;
+	line-height: 1.7;
+	border-radius: 25px;
+	width:200px;
+	font-size: 1rem;
+	box-shadow:none;
+	border: 1px solid $dark-background;
+}
