@@ -14,6 +14,7 @@
 			<div class="footer-column">
 				<div class="footer-section">
 					<div class="footer-content">
+						<div class="first-column">
 						<div class="logo-image">
 							<img src="<?php echo get_template_directory_uri() ?>/assets/images/best-logo.png"></img>
 						</div>
@@ -21,12 +22,14 @@
 							<div class="para-heading"><p>About<span> b.e.s.t</span></p></div>
 							<div class="para-content"><p>B.E.S.T is a non-profit charitable organization with a long history of
 							promoting sustainable transportation</p></div>
-						</div>
-						<div class="learn-more">
-							<div class="para-heading"><a href="">learn more ></a></div>
+								<div class="learn-more">
+									<div class="para-heading"><a href="">learn more ></a>
+									</div>
+								</div>
 							</div>
+						</div><!--end of first-column-->
 						<div class="contact-us">
-							<div class="para-heading"><p>contact us</p><div>
+							<div class="para-heading"><p>Contact us</p><div>
 						<div class="para-content"><p>Do you have any questions? Contact us today!</p></div>
 						</div>
 						<div class="commuterChallenge-contact-logos">
@@ -37,10 +40,13 @@
 							<p><a href="">commuterchallenge@best.bc.ca</a></p>
 							<div class="para-content"><p>(604)669-2860</p></div>
 						</div>
+					</div>	
+				</div>			
+					
 						<div class="newsletter-subscription">
 							<div class="para-heading"><p>Newsletter Subscription</p></div>
 							<div class="para-content"><p>Hear about upcoming events, new tools, and lots more!</p></div>
-						</div>
+						
 							<div class="subscribe-to-newsletter">
             					<div class="subscribeForm-for-newsLetter">
                 					<form id="newsLetter-formId">
@@ -51,6 +57,7 @@
         					</div>
 						</div>
 					</div>
+
 			<div class="footer-social">
 					<span>
 						<a href="http://facebook.com"><i class="fa fa-facebook-square"></i></a>
@@ -62,7 +69,7 @@
 						<a href="http://twitter.com"><i class="fa fa-twitter-square"></i></a>
 					</span>
 				</div>
-			</div>	
+				
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

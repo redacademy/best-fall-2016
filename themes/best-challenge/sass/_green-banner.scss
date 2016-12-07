@@ -4,12 +4,14 @@ users choice
 ========================*/
 
 .green-banner {
+  
     background: #a6ce39;
     height: 225px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
+    
 }
 
 .green-banner-data {
@@ -17,6 +19,7 @@ users choice
 }
 
 .green-banner-data p:first-child {
+  
     text-transform: uppercase;
     font-weight: 500;
     font-family: 'montserrat', sans-serif;
@@ -24,6 +27,7 @@ users choice
     font-size: 36px;
     margin-bottom: 0;
     padding-top: 30px;
+    
 }
 
 .green-banner-data p {
