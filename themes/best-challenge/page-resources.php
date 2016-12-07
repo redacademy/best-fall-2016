@@ -50,10 +50,23 @@ get_header(); ?>
 								),  
 							);
 
+							
 							$downloads = get_posts( $args ); ?>
 						
 						
-							<?php foreach( $downloads as $post ) : setup_postdata($post); ?>
+							<?php foreach( $downloads as $post ) : setup_postdata($post); 
+								//Show the child terms
+									$terms = get_terms($downloads, array(
+										'parent' => $post->term_id, 
+										'orderby' => 'slug', 
+										'hide_empty' => false
+									));
+									foreach ($terms as $term) {
+									echo '<li><a href="' . get_term_link( $term->name, $downloads) . '">' . $term->name . '</a></li>'; 
+									echo '</ul>';
+									}
+								?>;
+
 							
 								<div class="taxonomy-post">
 									<div class="prize-image">
