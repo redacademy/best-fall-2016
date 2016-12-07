@@ -1441,7 +1441,9 @@ object {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
-        flex-direction: row; } }
+        flex-direction: row;
+    padding-right: 40px;
+    height: 300px; } }
 
 .footer-column {
   display: -ms-flexbox;
@@ -1449,11 +1451,13 @@ object {
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  background-color: #5a6f83; }
 
 .footer-section {
-  background-color: #5a6f83;
-  color: white; }
+  color: white;
+  margin-left: 50px;
+  margin-right: 50px; }
 
 .footer-section span {
   text-transform: uppercase; }
@@ -1481,9 +1485,7 @@ object {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: row;
-          flex-direction: row;
-      padding-left: 10%;
-      padding-right: 10%; } }
+          flex-direction: row; } }
 
 .footer-section {
   background-color: #5a6f83;
@@ -1516,10 +1518,11 @@ object {
     .about-best {
       width: 70%;
       padding-left: 5%;
-      padding-right: 5%;
+      padding-right: 10%;
       -ms-flex-align: start;
           align-items: flex-start;
-      padding-bottom: 100px; } }
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
 
 .footer-social {
   height: 50px;
@@ -1563,7 +1566,6 @@ object {
   @media (min-width: 600px) {
     .para-heading p:first-child {
       padding-left: 0;
-      padding-bottom: 10px;
       -ms-flex-pack: start;
           justify-content: flex-start; } }
 
@@ -1581,7 +1583,8 @@ object {
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  padding-bottom: 10px; }
 
 para-content {
   margin: 0; }
@@ -1626,7 +1629,8 @@ para-content {
   @media (min-width: 600px) {
     .contact-us {
       padding-bottom: 50px;
-      padding-right: 5%; } }
+      padding-right: 5%;
+      height: 300px; } }
 
 .questions {
   padding-bottom: 0.8rem; }
@@ -1639,6 +1643,7 @@ para-content {
 
 @media (min-width: 600px) {
   .newsletter-subscription {
+    height: 300px;
     text-align: left; } }
 
 /*=======================
