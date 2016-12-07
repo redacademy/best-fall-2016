@@ -2,7 +2,7 @@
     display: flex;
     background: url('../../assets/images/results-header-mobile.png')center no-repeat;
     background-size: cover;
-    height: 200px;
+    height: 30vh;
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
@@ -10,6 +10,7 @@
     flex-direction: column;
     @include desktop {
         background: url('../../assets/images/results-header.png') center no-repeat;
+        background-size: cover;
     }
 }
 
@@ -28,5 +29,5 @@
     font-family: 'montserrat';
     font-weight: 300;
     margin-top: 0;
-    font-size: 2rem;
+    text-align: center;
 }
