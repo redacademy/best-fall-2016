@@ -1107,7 +1107,7 @@ users choice
         text-transform: uppercase;
         width: 100%;
         text-align: center;
-        line-height: 0;
+        line-height: 0.5;
         padding-top: 1%; }
       .page-template-default .taxonomy-wrapper .results h3, .tax-participant_location .taxonomy-wrapper .results h3 {
         font-size: 1.88rem;
@@ -1115,7 +1115,7 @@ users choice
         text-transform: uppercase;
         width: 100%;
         text-align: center;
-        line-height: 0;
+        line-height: 0.5;
         font-weight: 300; }
       .page-template-default .taxonomy-wrapper .results h4, .tax-participant_location .taxonomy-wrapper .results h4 {
         font-size: 1.25rem;
@@ -1123,7 +1123,7 @@ users choice
         text-transform: uppercase;
         width: 100%;
         text-align: center;
-        line-height: 0; }
+        line-height: 0.5; }
       .page-template-default .taxonomy-wrapper .results .taxonomy-post, .tax-participant_location .taxonomy-wrapper .results .taxonomy-post {
         margin: 5% auto;
         width: 230px;
