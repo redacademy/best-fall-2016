@@ -954,11 +954,13 @@ users choice
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+  margin: 1rem 10%; }
   @media (min-width: 600px) {
     .impact-results {
       -ms-flex-direction: row;
-          flex-direction: row; } }
+          flex-direction: row;
+      padding: 5%; } }
 
 .canada-map {
   padding: 1rem;
