@@ -1418,9 +1418,7 @@ object {
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
-      justify-content: center;
-  padding-right: 5%;
-  padding-left: 5%; }
+      justify-content: center; }
 
 .footer-section {
   background-color: #5a6f83;
@@ -1446,7 +1444,7 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  width: 120%; }
+  width: 100%; }
 
 .footer-social i {
   color: white;
@@ -1466,7 +1464,8 @@ object {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
-  margin-bottom: 4px; }
+  margin-bottom: 4px;
+  padding: 0 1rem; }
 
 .para-heading p:first-child {
   -ms-flex-direction: row;
