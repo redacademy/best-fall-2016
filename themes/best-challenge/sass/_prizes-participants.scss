@@ -15,7 +15,7 @@
         }
     }
     /* Participants page heading */
-    .page-heading-participants,  {
+    .page-heading-participants {
         background-image: url(../../assets/images/participant-header.png);
 
         @include desktop {
@@ -50,8 +50,14 @@
     .taxonomy-wrapper {
         width: 100%;
         height: auto;
-        &::nth-child(1){
-            background-color: red;
+        background-color: $dark-background;
+        &:nth-child(1){
+            background-image: url(../../assets/images/light-blue-bkgrnd.png);
+            @include background-image;
+            height: auto; 
+                @include desktop {
+                height: 430px;
+                }
         }
 
         .results {
@@ -116,7 +122,8 @@
             background-size: cover;
             position: absolute;
             opacity: 0.85;
-            bottom: 0%; 
+            bottom: -1px;
+            left: -1px;
             h3 {
                 width: 171px;
                 font-size: 1rem;
@@ -151,12 +158,6 @@
     }
     }
 
-.prizes:first {
-   background-color: red;
-}
-.prizes:second {
-    background-color: blue;
-}
 /*Prize Categories on Prizes Page*/
     .prize-categories {
         width: 80%;

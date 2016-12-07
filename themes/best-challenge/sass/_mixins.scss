@@ -56,3 +56,11 @@
 	box-shadow:none;
 	border: 1px solid $dark-background;
 }
+
+@mixin background-image {
+		background-repeat: no-repeat;
+        background-size: cover;	
+        background-position: center;
+        justify-content: center;
+        max-width: 100%;
+}
