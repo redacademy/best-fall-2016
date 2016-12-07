@@ -2,7 +2,6 @@
     background: url(../../assets/images/hero-banner-mobile.png) center no-repeat;
     background-size: cover;
     height: 50vh;
-
     @include desktop {
         height: 80vh;
         background: url(../../assets/images/hero-curve.png) top no-repeat, url(../../assets/images/hero-banner.png) top no-repeat;
@@ -56,10 +55,10 @@
 
 .travel-by-mobile {
     text-align: center;
-     background: #dee2e6;
-     h3 {
-         margin: 0;
-     }
+    background: #dee2e6;
+    h3 {
+        margin: 0;
+    }
 }
 
 .ccbc-front {
@@ -101,6 +100,7 @@
 .modologo {
     padding-bottom: 1rem;
 }
+
 .fp-sponsors-title {
     h2 {
         font-size: 1.5rem;
@@ -136,7 +136,25 @@
 }
 
 .fp-impact-results {
-    flex-basis: 48%
+    flex-basis: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.impact-box {
+    border: 2px solid #000;
+    padding: 1rem;
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.results-info {
+    display: flex;
+    justify-content: space-around;
 }
 
 /// ------------ Blog Post Area --------- //////

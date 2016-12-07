@@ -119,7 +119,24 @@ get_header(); ?>
 			</div>
 
 			<div class="fp-impact-results">
+				<div class="impact-box">
 				<h3> IMPACT RESULTS 2016</h3>
+				<p> Total ____ used </p>
+				<div class="results-info">
+					
+					<div class="bc-total">
+						<p></p>
+						<p>British Columbia Total</p>
+					</div>	
+
+					<div class="work-avg">
+						<p></p>
+						<p>Workplace Average</p>
+					</div>
+
+				</div>			
+				<button> See more results </button>
+				</div>
 		
 		</div>
 </div>
