@@ -46,24 +46,33 @@ The temaplate to display taxonomy type archive
 					
 				<!--posts loop-->
  
-						<?php foreach( $teams as $post ) : setup_postdata($post); ?>	
+						<?php foreach( $teams as $post ) : setup_postdata($post); ?>
+							<?php if ( wp_is_mobile() ) { ?>
+								<div class="taxonomy-title">
+									<h3><?php the_title(); ?></h3>
+								</div>
+								<?php
+								}	
+							 else { 
+								?>
 							<div class="taxonomy-post">
-								<?php $url=CFS()->get( 'participant_url' ); ?>
-									
-								<a href="<?php echo esc_url($url);  ?>">
-									<div class="taxonomy-image">
-										<?php the_post_thumbnail( 'large' ); ?>							
-									</div>
-									
-									<div class="taxonomy-title">
-										<h3><?php the_title(); ?></h3>
-									</div>
-									<div class="taxonomy-description">
-										<p><?php the_content(); ?></p>
-									</div>
-								</a> 
+								<?php
+								$url =CFS()->get( 'participant_url' ); ?>
+								<a href="<?php CFS()->get( 'participant_url' ); ?>"></a>
+								<?php esc_url( $url, $protocols, $_context ); ?>
+								<div class="taxonomy-image">
+									<?php the_post_thumbnail( 'large' ); ?>							
+								</div>
+								<div class="taxonomy-title">
+									<h3><?php the_title(); ?></h3>
+								</div>
+								<div class="taxonomy-description">
+									<p><?php the_content(); ?></p>
+								</div>
 							</div>
-						<?php endforeach; wp_reset_postdata();	
+							<?php
+							}
+						 	endforeach; wp_reset_postdata();	
 							} //ends participant_location foreach foreach loop
 						?>
 			</div> <!-- taxonomy wrapper ends -->

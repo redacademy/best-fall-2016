@@ -45,7 +45,15 @@ The temaplate to display taxonomy type archive
 						$teams = get_posts( $args ); ?>
 					
 				<!--posts loop-->
-						<?php foreach( $teams as $post ) : setup_postdata($post); ?>	
+						<?php foreach( $teams as $post ) : setup_postdata($post); ?>
+							<?php if ( wp_is_mobile() ) { ?>
+								<div class="taxonomy-title">
+									<h3><?php the_title(); ?></h3>
+								</div>
+								<?php
+								}	
+							 else { 
+								?>
 							<div class="taxonomy-post">
 								<?php
 								$url =CFS()->get( 'participant_url' ); ?>
@@ -62,14 +70,8 @@ The temaplate to display taxonomy type archive
 								</div>
 							</div>
 							<?php
-								if ( wp_is_mobile() ) { ?>
-								<div class="taxonomy-title">
-									<h3><?php the_title(); ?></h3>
-								</div>
-								<?php
-								}
-								?>
-						<?php endforeach; wp_reset_postdata();	
+							}
+						 	endforeach; wp_reset_postdata();	
 							} //ends participant_location foreach foreach loop
 						?>
 

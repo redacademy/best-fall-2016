@@ -28,9 +28,8 @@ get_header(); ?>
 				?>	
 			</div>
 			
-
-			
 			<?php
+// List posts by the terms for a custom taxonomy 
 				$terms = get_terms('download_type', array('order' => 'DESC'));  
 				foreach($terms as $download_type) { ?>
 					<div class="taxonomy-wrapper">
@@ -48,13 +47,11 @@ get_header(); ?>
 										
 									),
 								),  
-							);
-
+							);	
 							$downloads = get_posts( $args ); ?>
 						
 						
 							<?php foreach( $downloads as $post ) : setup_postdata($post); ?>
-							
 								<div class="taxonomy-post">
 									<div class="prize-image">
 										<?php the_post_thumbnail( 'large' ); ?>							
@@ -72,9 +69,7 @@ get_header(); ?>
 					</div> <!-- prize wrapper section ends -->
 				<?php
 				} ?>
-			
 
-			
 		</div>
 	</div><!-- #primary -->
 
