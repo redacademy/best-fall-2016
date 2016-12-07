@@ -1086,6 +1086,8 @@ users choice
   .page-template-default .taxonomy-wrapper, .tax-participant_location .taxonomy-wrapper {
     width: 100%;
     height: auto; }
+    .page-template-default .taxonomy-wrapper::nth-child(1), .tax-participant_location .taxonomy-wrapper::nth-child(1) {
+      background-color: red; }
     .page-template-default .taxonomy-wrapper .results, .tax-participant_location .taxonomy-wrapper .results {
       width: 80%;
       display: -ms-flexbox;
