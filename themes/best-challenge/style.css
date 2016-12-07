@@ -870,7 +870,7 @@ users choice
       display: flex;
       -ms-flex-direction: column;
           flex-direction: column;
-      margin-top: 2rem;
+      margin-top: 4rem;
       color: #fff; }
       .travel-by span {
         border-right: .05em solid;
@@ -886,7 +886,8 @@ users choice
         margin: 0; }
       .travel-by p {
         font-size: 1.5rem;
-        margin: 0; } }
+        margin: 0;
+        text-align: center; } }
 
 .travel-by-mobile {
   text-align: center;

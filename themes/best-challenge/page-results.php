@@ -20,8 +20,12 @@ get_header(); ?>
 							of British Columbia made an impact in 2016.</p>
 					</div>
 			</div>
-			<div class="content"> 
-				</div>
+		<div class="content"> 
+			
+
+
+
+		</div>
 			
 
 
