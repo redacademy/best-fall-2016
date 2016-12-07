@@ -996,7 +996,8 @@ users choice
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  font-weight: bold; }
 
 @media (min-width: 600px) {
   .blog-posts {
@@ -1043,7 +1044,11 @@ users choice
 .best-post-title {
   font-size: 1.5rem;
   text-transform: uppercase;
-  padding: 0 1rem; }
+  padding: 0 1rem;
+  text-align: center; }
+  @media (min-width: 600px) {
+    .best-post-title {
+      text-align: left; } }
 
 .green-read {
   background: url(../../assets/images/green-read-story.png) no-repeat;
