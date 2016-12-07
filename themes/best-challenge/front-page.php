@@ -147,7 +147,7 @@ get_header(); ?>
 
 			<div class = "best-post-info">
 				<h3 class ="best-post-title desktop"><?php the_title();?></h3>
-				<p class="best-post-content"><?php the_content(); ?></p>
+				<?php the_content();?>
 				<div class="green-read">
 				<a class ="read-green" href="<?php the_permalink();?>">Read Full Story</a>
 				</div>

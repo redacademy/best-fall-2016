@@ -549,11 +549,11 @@ a {
 --------------------------------------------------------------*/
 .site-header {
   background: #303B46;
-  height: 10vh;
-  padding: 0 5px; }
+  height: 10vh; }
   @media (min-width: 600px) {
     .site-header {
-      height: 144px; } }
+      height: 144px;
+      padding: 0 5px; } }
 
 .best-header {
   display: -ms-flexbox;
@@ -1012,7 +1012,7 @@ users choice
 .best-post-title {
   font-size: 1.5rem;
   text-transform: uppercase;
-  padding: 1rem; }
+  padding: 0 1rem; }
 
 .green-read {
   background: url(../../assets/images/green-read-story.png) no-repeat;

@@ -5,9 +5,9 @@
         .site-header {
             background: #303B46;
             height: 10vh;
-            padding: 0 5px;
             @include desktop {
                 height: 144px;
+                padding: 0 5px;
             }
         }
         
