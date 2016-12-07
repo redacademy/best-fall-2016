@@ -54,10 +54,13 @@
         &:nth-child(1){
             background-image: url(../../assets/images/light-blue-bkgrnd.png);
             @include background-image;
-            height: auto; 
-                @include desktop {
-                height: 430px;
-                }
+            min-height: 430px;   
+         
+        }
+        &:nth-child(2){
+            h2{
+                color: white;
+            }
         }
 
         .results {
@@ -208,13 +211,18 @@
 .participants {
     margin-top: 5%;
     width: 80%;
+    height: 300px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
 
-.map {
-    flex-basis: 60%;
+.bc-map {
+    background-image: url(../../assets/images/BC.png);
+    background-repeat: no-repeat;
+    flex-basis: 30%;
+
 }
 .buttons {
     display: flex;
