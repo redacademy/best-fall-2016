@@ -806,8 +806,10 @@ users choice
   line-height: 1.7;
   border-width: 3px;
   border-color: black;
-  text-shadow: none;
-  width: 200px; }
+  text-shadow: none; }
+  @media (min-width: 600px) {
+    #go-green-button {
+      width: 200px; } }
 
 .button2 {
   visibility: visible; }
