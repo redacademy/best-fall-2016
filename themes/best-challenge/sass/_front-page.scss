@@ -3,7 +3,7 @@
     background-size: cover;
     height: 50vh;
     @include desktop {
-        height: 80vh;
+        height: calc(100vh - 144px);
         background: url(../../assets/images/hero-curve.png) top no-repeat, url(../../assets/images/hero-banner.png) top no-repeat;
         background-size: contain, cover;
         display: flex;
