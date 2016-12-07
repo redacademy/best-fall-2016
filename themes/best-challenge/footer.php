@@ -57,7 +57,7 @@
         					</div>
 						</div>
 					</div>
-
+				</div>
 			<div class="footer-social">
 					<span>
 						<a href="http://facebook.com"><i class="fa fa-facebook-square"></i></a>
@@ -68,7 +68,7 @@
 					<span>
 						<a href="http://twitter.com"><i class="fa fa-twitter-square"></i></a>
 					</span>
-				</div>
+				
 				
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
