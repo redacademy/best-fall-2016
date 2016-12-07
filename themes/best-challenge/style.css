@@ -1599,8 +1599,9 @@ para-content {
     .para-content p {
       text-align: left; } }
 
-.logo-image i {
-  font-size: 2rem; }
+.logo-image {
+  font-size: 2rem;
+  text-align: center; }
 
 .commuterChallenge-contact-logos {
   display: -ms-flexbox;
@@ -1829,6 +1830,11 @@ this section is a testimonial
     -ms-flex-align: center;
         align-items: center;
     padding-top: 20px; }
+    @media (min-width: 600px) {
+      .page-id-34 .challenge-benefit-blocks {
+        -ms-flex-direction: row;
+            flex-direction: row;
+        padding-bottom: 60px; } }
   .page-id-34 .challenge-benefit-blocks p {
     font-family: 'montserrat';
     font-weight: 300; }
@@ -1899,6 +1905,12 @@ this section is a testimonial
     -ms-flex-align: center;
         align-items: center;
     height: 400px; }
+    @media (min-width: 600px) {
+      .page-id-34 .single-participate-block {
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex: 0 1 24%;
+        flex: 0 1 24%; } }
   .page-id-34 .description-wrapper {
     display: -ms-flexbox;
     display: flex;
@@ -1928,7 +1940,8 @@ this section is a testimonial
     font-size: 7px;
     margin-top: 0; }
   .page-id-34 .underline-under-button {
-    width: 150px; }
+    width: 150px;
+    padding-bottom: 100px; }
   .page-id-34 .underline-under-button p {
     font-style: italic;
     text-decoration: underline;
@@ -1968,7 +1981,32 @@ this section is a testimonial
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center;
-    padding-top: 20px; }
+    padding-top: 155px; }
+    @media (min-width: 600px) {
+      .page-id-34 .resources-section {
+        -ms-flex: 0 1 49%;
+        flex: 0 1 49%;
+        -ms-flex-item-align: center;
+            align-self: center;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -ms-flex-align: center;
+            align-items: center;
+        padding-bottom: 20px;
+        margin-top: -140px; } }
+  .page-id-34 .need-resources {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    @media (min-width: 600px) {
+      .page-id-34 .need-resources {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
   .page-id-34 .need-resources h2 {
     text-transform: uppercase;
     font-family: 'montserrat'; }
@@ -1977,7 +2015,7 @@ this section is a testimonial
     -moz-border-radius: 200px 200px 200px 200px;
     -webkit-border-radius: 200px 200px 200px 200px;
     border: 0px solid #000000;
-    width: 200px; }
+    height: 278px; }
   .page-id-34 .need-resources p {
     padding-left: 10%;
     padding-right: 10%;
@@ -1986,6 +2024,8 @@ this section is a testimonial
   .page-id-34 .need-resources a {
     text-decoration: none;
     color: black; }
+  .page-id-34 .need-prizes img {
+    width: 278px; }
   .page-id-34 .testimonial {
     padding-bottom: 30px; }
   .page-id-34 .testimonial p {

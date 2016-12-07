@@ -78,6 +78,7 @@ this is a section with three blocks flexed explaining the benefits of the Commut
 ========================*/
 
 .challenge-benefit-blocks{
+
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -88,6 +89,11 @@ this is a section with three blocks flexed explaining the benefits of the Commut
     flex-direction:column;
     align-items:center;
     padding-top:20px;
+      @include desktop {
+flex-direction:row;
+padding-bottom:60px;
+      }
+
 }
 
 .challenge-benefit-blocks p{
@@ -175,9 +181,7 @@ CUSTOM-FIELD-SUITE loop items with four blocks flexed
     flex-wrap:wrap;
     align-items:center;
     padding-top:20px;
-   
-    
-    }
+}
 
 .single-participate-block{
     -webkit-flex: 0 1 49%;
@@ -188,9 +192,12 @@ CUSTOM-FIELD-SUITE loop items with four blocks flexed
     flex-direction: column;
     align-items: center;
     height:400px;
-    
-   
- 
+    @include desktop {
+flex-direction: column;
+ -webkit-flex: 0 1 24%;
+    -ms-flex: 0 1 24%;
+    flex: 0 1 24%;
+    }
 }
 
 .description-wrapper{
@@ -240,6 +247,7 @@ this is the first form on the page consisting of a sign-up button which takes yo
 .underline-under-button{
 
     width:150px;
+    padding-bottom: 100px;
 }
 
 .underline-under-button p{
@@ -290,11 +298,39 @@ this section has two flexed blocks which links readers to additional resources
     text-align: center;
     flex-direction:column;
     align-items:center;
-    padding-top:20px;
-    
- 
+    padding-top: 155px;
+   
+        @include desktop {
+  -webkit-flex: 0 1 49%;
+    -ms-flex: 0 1 49%;
+    flex: 0 1 49%;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 20px;
+     margin-top:-140px;
+   
+        }
 
 }
+
+
+    
+ .need-resources{
+display:flex;
+flex-direction:column;
+
+
+ @include desktop {
+display:flex;
+flex-direction:row;
+
+ }
+
+ }
+
+
 .need-resources h2{
 text-transform:uppercase;
 font-family: 'montserrat';
@@ -307,7 +343,8 @@ font-family: 'montserrat';
     -moz-border-radius: 200px 200px 200px 200px;
     -webkit-border-radius: 200px 200px 200px 200px;
     border: 0px solid #000000;
-    width:200px;
+    height:278px;
+    
 }
 
 .need-resources p{
@@ -320,6 +357,11 @@ padding-left:10%;
 .need-resources a{
     text-decoration:none;
     color:black
+}
+
+.need-prizes img{
+
+width:278px;
 }
 
     /*=======================

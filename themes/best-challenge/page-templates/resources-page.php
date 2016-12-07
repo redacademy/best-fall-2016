@@ -47,14 +47,17 @@ get_header(); ?>
                                     <p><?php echo $field['description'];?></p>
 
 									<div class="download-area">
+					
+										<p><?php echo $field['download_word'];?></p>
 
-										<p><?php echo $field['word_download'];?></p>
-
-										
-
-                                        <img src="<?php
+									 <img src="<?php
                                         echo $field['download_image'];
                                         ?>" alt="" />
+									
+							
+
+
+
 
 									</div>
 
