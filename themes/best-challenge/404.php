@@ -19,7 +19,8 @@ get_header(); ?>
 
 				<div class="page-content info-404">
 					<div class="clock">
-						<img src="http://i1.istockimg.com/file_thumbview_approve/28439520/5/stock-illustration-28439520-digital-alarm-clock-cartoon.jpg" alt="clock">
+						<img src=" <?php echo get_template_directory_uri() ?>/assets/images/m-404-clock.png" alt="404 clock" class="mobile">
+						<img src=" <?php echo get_template_directory_uri() ?>/assets/images/404-clock.png" alt="404 clock" class="desktop">
 					</div>
 					<div>
 						<p>Looks like we hit the snooze button too many times and are late to work!</p>

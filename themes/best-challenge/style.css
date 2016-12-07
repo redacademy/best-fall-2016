@@ -544,27 +544,16 @@ a {
   border-top-left-radius: 0;
   border-top-right-radius: 0; }
 
-.mobile {
-  display: none; }
-
-/* when screen is less than 600px wide
-     show mobile version and hide desktop */
-@media (max-width: 600px) {
-  .mobile {
-    display: block; }
-  .desktop {
-    display: none; } }
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 .site-header {
   background: #303B46;
-  height: 10vh;
-  padding: 0 5px; }
+  height: 10vh; }
   @media (min-width: 600px) {
     .site-header {
-      height: 144px; } }
+      height: 144px;
+      padding: 0 5px; } }
 
 .best-header {
   display: -ms-flexbox;
@@ -759,6 +748,17 @@ a {
 .bypostauthor {
   display: block; }
 
+.mobile {
+  display: none; }
+
+/* when screen is less than 600px wide
+     show mobile version and hide desktop */
+@media (max-width: 600px) {
+  .mobile {
+    display: block; }
+  .desktop {
+    display: none; } }
+
 /*=======================
 this is the css for the special template that will add and remove one of two buttons depending on the 
 users choice
@@ -806,8 +806,10 @@ users choice
   line-height: 1.7;
   border-width: 3px;
   border-color: black;
-  text-shadow: none;
-  width: 200px; }
+  text-shadow: none; }
+  @media (min-width: 600px) {
+    #go-green-button {
+      width: 200px; } }
 
 .button2 {
   visibility: visible; }
@@ -832,18 +834,20 @@ users choice
   padding-right: 5%; }
 
 .hero-banner {
-  background: url(../../assets/images/hero-curve.png) top no-repeat, url(../../assets/images/hero-banner.png) top no-repeat;
-  height: 90vh;
-  background-size: contain, cover;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: start;
-      align-items: flex-start; }
+  background: url(../../assets/images/hero-banner-mobile.png) center no-repeat;
+  background-size: cover;
+  height: 50vh; }
   @media (min-width: 600px) {
     .hero-banner {
-      height: 80vh; } }
+      height: 80vh;
+      background: url(../../assets/images/hero-curve.png) top no-repeat, url(../../assets/images/hero-banner.png) top no-repeat;
+      background-size: contain, cover;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: start;
+          align-items: flex-start; } }
 
 .box {
   display: -ms-flexbox;
@@ -859,27 +863,35 @@ users choice
           align-items: stretch; } }
 
 .travel-by {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  margin-top: 2rem;
-  color: #fff; }
-  .travel-by span {
-    border-right: .05em solid;
-    animation: caret 1s steps(1) infinite; }
+  display: none; }
+  @media (min-width: 600px) {
+    .travel-by {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      margin-top: 2rem;
+      color: #fff; }
+      .travel-by span {
+        border-right: .05em solid;
+        animation: caret 1s steps(1) infinite; }
+    @keyframes caret {
+      50% {
+        border-color: transparent; } }
+      .travel-by #go-green-button {
+        color: #fff;
+        border-color: #fff; }
+      .travel-by h3 {
+        font-size: 2.75rem;
+        margin: 0; }
+      .travel-by p {
+        font-size: 1.5rem;
+        margin: 0; } }
 
-@keyframes caret {
-  50% {
-    border-color: transparent; } }
-  .travel-by #go-green-button {
-    color: #fff;
-    border-color: #fff; }
-  .travel-by h3 {
-    font-size: 3rem;
-    margin: 0; }
-  .travel-by p {
-    font-size: 2rem;
+.travel-by-mobile {
+  text-align: center;
+  background: #dee2e6; }
+  .travel-by-mobile h3 {
     margin: 0; }
 
 .ccbc-front {
@@ -1002,7 +1014,7 @@ users choice
 .best-post-title {
   font-size: 1.5rem;
   text-transform: uppercase;
-  padding: 1rem; }
+  padding: 0 1rem; }
 
 .green-read {
   background: url(../../assets/images/green-read-story.png) no-repeat;
@@ -1072,101 +1084,107 @@ users choice
       .page-template-default .content, .tax-participant_location .content {
         width: 50%; } }
   .page-template-default .taxonomy-wrapper, .tax-participant_location .taxonomy-wrapper {
-    width: 80%;
-    height: auto;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-preferred-size: 80%;
-        flex-basis: 80%;
-    margin: 0 auto; }
-    @media (min-width: 600px) {
-      .page-template-default .taxonomy-wrapper, .tax-participant_location .taxonomy-wrapper {
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        -ms-flex-direction: row;
-            flex-direction: row;
-        margin-top: 5% auto 1% auto; } }
-    .page-template-default .taxonomy-wrapper .taxonomy-image, .tax-participant_location .taxonomy-wrapper .taxonomy-image {
-      width: 230px; }
-      .page-template-default .taxonomy-wrapper .taxonomy-image img, .tax-participant_location .taxonomy-wrapper .taxonomy-image img {
-        width: 100%; }
-    .page-template-default .taxonomy-wrapper .location-title, .tax-participant_location .taxonomy-wrapper .location-title {
-      width: 100%; }
-    .page-template-default .taxonomy-wrapper h2, .tax-participant_location .taxonomy-wrapper h2 {
-      font-size: 2.25rem;
-      color: #303b46;
-      font-weight: bold;
-      text-transform: uppercase;
-      width: 100%;
-      text-align: center;
-      line-height: 0;
-      padding-top: 1%; }
-    .page-template-default .taxonomy-wrapper h3, .tax-participant_location .taxonomy-wrapper h3 {
-      font-size: 1.88rem;
-      font-weight: bold;
-      text-transform: uppercase;
-      width: 100%;
-      text-align: center;
-      line-height: 0;
-      font-weight: 300; }
-    .page-template-default .taxonomy-wrapper h4, .tax-participant_location .taxonomy-wrapper h4 {
-      font-size: 1.25rem;
-      font-weight: bold;
-      text-transform: uppercase;
-      width: 100%;
-      text-align: center;
-      line-height: 0; }
-    .page-template-default .taxonomy-wrapper .taxonomy-post, .tax-participant_location .taxonomy-wrapper .taxonomy-post {
-      margin: 5% auto;
-      width: 230px;
-      height: 230px;
-      border: 1px solid white;
-      position: relative; }
+    width: 100%;
+    height: auto; }
+    .page-template-default .taxonomy-wrapper .results, .tax-participant_location .taxonomy-wrapper .results {
+      width: 80%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-preferred-size: 80%;
+          flex-basis: 80%;
+      margin: 0 auto; }
       @media (min-width: 600px) {
-        .page-template-default .taxonomy-wrapper .taxonomy-post, .tax-participant_location .taxonomy-wrapper .taxonomy-post {
-          margin: 1%; } }
-    .page-template-default .taxonomy-wrapper .taxonomy-title, .tax-participant_location .taxonomy-wrapper .taxonomy-title {
-      width: 230px;
-      height: 115px;
-      background-image: url(../../assets/images/overlay.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: absolute;
-      opacity: 0.85;
-      bottom: 0%; }
-      .page-template-default .taxonomy-wrapper .taxonomy-title h3, .tax-participant_location .taxonomy-wrapper .taxonomy-title h3 {
-        width: 171px;
-        font-size: 1rem;
+        .page-template-default .taxonomy-wrapper .results, .tax-participant_location .taxonomy-wrapper .results {
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          -ms-flex-direction: row;
+              flex-direction: row;
+          margin-top: 5% auto 1% auto; } }
+      .page-template-default .taxonomy-wrapper .results .taxonomy-image, .tax-participant_location .taxonomy-wrapper .results .taxonomy-image {
+        width: 230px; }
+        .page-template-default .taxonomy-wrapper .results .taxonomy-image img, .tax-participant_location .taxonomy-wrapper .results .taxonomy-image img {
+          width: 100%; }
+      .page-template-default .taxonomy-wrapper .results .location-title, .tax-participant_location .taxonomy-wrapper .results .location-title {
+        width: 100%; }
+      .page-template-default .taxonomy-wrapper .results h2, .tax-participant_location .taxonomy-wrapper .results h2 {
+        font-size: 2.25rem;
+        color: #303b46;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        line-height: 0.5;
+        padding-top: 1%; }
+      .page-template-default .taxonomy-wrapper .results h3, .tax-participant_location .taxonomy-wrapper .results h3 {
+        font-size: 1.88rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        line-height: 0.5;
+        font-weight: 300; }
+      .page-template-default .taxonomy-wrapper .results h4, .tax-participant_location .taxonomy-wrapper .results h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        line-height: 0.5; }
+      .page-template-default .taxonomy-wrapper .results .taxonomy-post, .tax-participant_location .taxonomy-wrapper .results .taxonomy-post {
+        margin: 5% auto;
+        width: 230px;
+        height: 230px;
+        border: 1px solid white;
+        position: relative; }
+        @media (min-width: 600px) {
+          .page-template-default .taxonomy-wrapper .results .taxonomy-post, .tax-participant_location .taxonomy-wrapper .results .taxonomy-post {
+            margin: 1%; } }
+      .page-template-default .taxonomy-wrapper .results .taxonomy-title, .tax-participant_location .taxonomy-wrapper .results .taxonomy-title {
+        width: 230px;
+        height: 115px;
+        background-image: url(../../assets/images/overlay.png);
+        background-repeat: no-repeat;
+        background-size: cover;
         position: absolute;
-        bottom: 0;
-        left: 10px;
-        color: #dee2e6;
-        line-height: 1;
-        text-align: left; }
-    .page-template-default .taxonomy-wrapper .taxonomy-description, .tax-participant_location .taxonomy-wrapper .taxonomy-description {
-      background-color: #5a6f83;
-      opacity: 0.9;
-      bottom: 43px;
-      display: none;
-      position: absolute;
-      height: 230px;
-      width: 230px;
-      z-index: 1;
-      top: 0%;
-      word-wrap: break-word; }
-      .page-template-default .taxonomy-wrapper .taxonomy-description p, .tax-participant_location .taxonomy-wrapper .taxonomy-description p {
-        width: 90%;
-        margin: 1% auto;
-        color: #dee2e6;
-        font-weight: 300;
-        font-size: 1rem;
-        text-align: center; }
+        opacity: 0.85;
+        bottom: 0%; }
+        .page-template-default .taxonomy-wrapper .results .taxonomy-title h3, .tax-participant_location .taxonomy-wrapper .results .taxonomy-title h3 {
+          width: 171px;
+          font-size: 1rem;
+          position: absolute;
+          bottom: 0;
+          left: 10px;
+          color: #dee2e6;
+          line-height: 1;
+          text-align: left; }
+      .page-template-default .taxonomy-wrapper .results .taxonomy-description, .tax-participant_location .taxonomy-wrapper .results .taxonomy-description {
+        background-color: #5a6f83;
+        opacity: 0.9;
+        bottom: 43px;
+        display: none;
+        position: absolute;
+        height: 230px;
+        width: 230px;
+        z-index: 1;
+        top: 0%;
+        word-wrap: break-word; }
+        .page-template-default .taxonomy-wrapper .results .taxonomy-description p, .tax-participant_location .taxonomy-wrapper .results .taxonomy-description p {
+          width: 90%;
+          margin: 1% auto;
+          color: #dee2e6;
+          font-weight: 300;
+          font-size: 1rem;
+          text-align: center; }
+  .page-template-default .prizes:first, .tax-participant_location .prizes:first {
+    background-color: red; }
+  .page-template-default .prizes:second, .tax-participant_location .prizes:second {
+    background-color: blue; }
   .page-template-default .prize-categories, .tax-participant_location .prize-categories {
     width: 80%;
     margin: 5% auto;
@@ -1402,9 +1420,7 @@ object {
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
-      justify-content: center;
-  padding-right: 5%;
-  padding-left: 5%; }
+      justify-content: center; }
 
 .footer-section {
   background-color: #5a6f83;
@@ -1430,7 +1446,7 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  width: 120%; }
+  width: 100%; }
 
 .footer-social i {
   color: white;
@@ -1450,7 +1466,8 @@ object {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
-  margin-bottom: 4px; }
+  margin-bottom: 4px;
+  padding: 0 1rem; }
 
 .para-heading p:first-child {
   -ms-flex-direction: row;

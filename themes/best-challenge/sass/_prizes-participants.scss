@@ -48,19 +48,23 @@
         }
     }
     .taxonomy-wrapper {
-        width: 80%;
+        width: 100%;
         height: auto;
-        display: flex;
-        justify-content: center;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        flex-basis: 80%;
-        margin: 0 auto;
-            @include desktop {
-            flex-wrap: wrap;
-            flex-direction: row;
-            margin-top: 5% auto 1% auto;
-            }
+
+        .results {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            flex-basis: 80%;
+            margin: 0 auto;
+                @include desktop {
+                flex-wrap: wrap;
+                flex-direction: row;
+                margin-top: 5% auto 1% auto;
+                }
+             
 
             .taxonomy-image {
                 width: 230px;
@@ -77,19 +81,19 @@
                 font-size: 2.25rem;
                 color: $black-text;
                 @include section-heading;
-                line-height: 0;
+                line-height: 0.5;
                 padding-top: 1%;
             }
             h3 {    
                 font-size: 1.88rem;
                 @include section-heading; 
-                line-height: 0;
+                line-height: 0.5;
                 font-weight: 300;
             }
             h4 {
                 font-size: 1.25rem;
                 @include section-heading;
-                line-height: 0;
+                line-height: 0.5;
             }
             .taxonomy-post {
                 margin: 5% auto;
@@ -142,8 +146,14 @@
             }
         }
     }
+    }
 
-
+.prizes:first {
+   background-color: red;
+}
+.prizes:second {
+    background-color: blue;
+}
 /*Prize Categories on Prizes Page*/
     .prize-categories {
         width: 80%;

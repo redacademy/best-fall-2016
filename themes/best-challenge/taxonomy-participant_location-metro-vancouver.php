@@ -45,6 +45,7 @@ The temaplate to display taxonomy type archive
 						$teams = get_posts( $args ); ?>
 					
 				<!--posts loop-->
+ 
 						<?php foreach( $teams as $post ) : setup_postdata($post); ?>	
 							<div class="taxonomy-post">
 								<?php $url=CFS()->get( 'participant_url' ); ?>

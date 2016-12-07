@@ -13,7 +13,7 @@
 		<div class="site-info">
 			<div class="footer-column">
 				<div class="footer-section">
-					<div class="footer-content container">
+					<div class="footer-content">
 						<div class="logo-image">
 							<img src="<?php echo get_template_directory_uri() ?>/assets/images/best-logo.png"></img>
 						</div>

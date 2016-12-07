@@ -51,3 +51,19 @@
 .bypostauthor {
 	display: block;
 }
+
+
+.mobile {
+	display: none;
+}
+/* when screen is less than 600px wide
+     show mobile version and hide desktop */
+
+@media (max-width: 600px) {
+	.mobile {
+		display: block;
+	}
+	.desktop {
+		display: none;
+	}
+}

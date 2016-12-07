@@ -1,6 +1,6 @@
 <?php
 /**
- * Template for the Prizes page. 
+ * Template for the Resources page. 
  *
  * @package RED_Starter_Theme
  */
@@ -31,29 +31,29 @@ get_header(); ?>
 
 			
 			<?php
-				$terms = get_terms('prize_type', array('order' => 'DESC'));  
-				foreach($terms as $prize_type) { ?>
+				$terms = get_terms('download_type', array('order' => 'DESC'));  
+				foreach($terms as $download_type) { ?>
 					<div class="taxonomy-wrapper">
 						<div class="results">
-							<h2><?php echo $prize_type->name; ?> </h2>
+							<h2><?php echo $download_type->name; ?> </h2>
 
 							<?php $args = array(
-								'post_type' => 'prize',
+								'post_type' => 'resources',
 								// 'posts_per_page' => 4,
 								'tax_query' => array( 
 									array(
-										'taxonomy' => 'prize_type',
+										'taxonomy' => 'download_type',
 										'field'    => 'slug',
-										'terms'    =>  $prize_type,
+										'terms'    =>  $download_type,
 										
 									),
 								),  
 							);
 
-							$prizes = get_posts( $args ); ?>
+							$downloads = get_posts( $args ); ?>
 						
 						
-							<?php foreach( $prizes as $post ) : setup_postdata($post); ?>
+							<?php foreach( $downloads as $post ) : setup_postdata($post); ?>
 							
 								<div class="taxonomy-post">
 									<div class="prize-image">
@@ -74,19 +74,6 @@ get_header(); ?>
 				} ?>
 			
 
-			<div class="prize-categories">
-					<h2 class="section-title">prize categories</h2>
-
-					<?php $fields=CFS()->get( 'prize_categories' );
-                        foreach ( $fields as $field ) { ?>
-
-                        <div class="category-name"> 
-                               <h3><?php echo $field['category_name']; ?></h3>
-                        </div>
-                        <div class="category-description">
-                                <p><?php echo $field['category_description']; } ?></p>
-                        </div>
-			</div>
 			
 		</div>
 	</div><!-- #primary -->
