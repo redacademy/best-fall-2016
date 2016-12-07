@@ -839,7 +839,7 @@ users choice
   height: 50vh; }
   @media (min-width: 600px) {
     .hero-banner {
-      height: 80vh;
+      height: calc(100vh - 144px);
       background: url(../../assets/images/hero-curve.png) top no-repeat, url(../../assets/images/hero-banner.png) top no-repeat;
       background-size: contain, cover;
       display: -ms-flexbox;
@@ -2729,4 +2729,7 @@ DROPDOWN-MENU
   font-family: 'montserrat';
   font-weight: 300;
   margin-top: 0;
+  text-align: center; }
+
+.impact-results-info {
   text-align: center; }
