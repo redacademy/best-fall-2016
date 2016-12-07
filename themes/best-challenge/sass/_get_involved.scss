@@ -56,11 +56,21 @@ this is the first image on page
 .picture-wrapper h1{
    line-height:3.5rem;
     color:white;
+    font-size:60px;
+    width:80%;
+    text-align:center;
+    text-transform:uppercase;
+
+
+
+    @include desktop {
+   line-height:3.5rem;
+    color:white;
     font-size:44px;
     width:60%;
     text-align:center;
     text-transform:uppercase;
-
+    }
 }
 
     /*=======================

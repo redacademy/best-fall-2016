@@ -1,0 +1,33 @@
+.picture-wrapper-results {
+    display: flex;
+    background: url('../../assets/images/results-header-mobile.png')center no-repeat;
+    background-size: cover;
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-bottom: 4px;
+    flex-direction: column;
+    @include desktop {
+        background: url('../../assets/images/results-header.png') center no-repeat;
+        background-size: cover;
+    }
+}
+
+.picture-wrapper-results h1 {
+    line-height: 3.5rem;
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'montserrat';
+}
+
+.picture-wrapper-results p {
+    color: white;
+    font-family: 'montserrat';
+    font-weight: 300;
+    margin-top: 0;
+    text-align: center;
+}

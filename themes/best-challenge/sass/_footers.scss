@@ -1,17 +1,42 @@
-.about-best {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 0;
-    margin-bottom: 0;
+
+
+.first-column{
+@include desktop {
+    display:flex;
+    flex-direction:row;
+    
 }
+}
+
 
 .footer-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+  }
+
+.footer-section {
+    background-color: #5a6f83;
+    color: white;
+ 
+    
 }
+
+.footer-section span {
+    text-transform: uppercase;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    font-family: 'montserrat';
+}
+
+.footer-section a:hover {
+    color: midnightblue;
+}
+
 
 .footer-content {
     padding-top: 20px;
@@ -19,7 +44,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+         @include desktop {
+    
+    display: flex;
+    flex-direction: row;
+   padding-left:10%;
+   padding-right:10%;
+    
+    }
+ }
 
 .footer-section {
     background-color: #5a6f83;
@@ -38,6 +71,26 @@
 
 .footer-section a:hover {
     color: midnightblue;
+}
+
+
+.about-best {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0.5rem;
+
+             @include desktop {
+   width:70%;
+   padding-left:5%;
+   padding-right:5%;
+   align-items:flex-start;
+   padding-bottom:100px;
+
+    }
 }
 
 .footer-social {
@@ -67,10 +120,20 @@
     justify-content: center;
     margin-bottom: 4px;
     padding: 0 1rem;
+    @include desktop {
+  margin-top:0;
+  margin-bottom:0;
+
+    }
 }
 
 .para-heading p:first-child {
     flex-direction: row;
+    @include desktop {
+    padding-left:0;
+    padding-bottom:10px;
+    justify-content: flex-start;
+    }
 }
 
 .para-heading span {
@@ -97,15 +160,18 @@ para-content {
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
+    @include desktop {
+    text-align: left;
+    
+  
+    }
 }
 
 .logo-image i {
     font-size: 2rem;
 }
 
-.about-best {
-    padding-bottom: 0.5rem;
-}
+
 
 .commuterChallenge-contact-logos {
     display: flex;
@@ -113,28 +179,63 @@ para-content {
     align-items: center;
     justify-content: center;
     padding-top: 10px;
+          @include desktop {
+    justify-content:flex-start;
+    padding-top:30px;
+    
+   }
 }
 
 .commuterChallenge-contact-logos i {
     padding: 5px;
+        @include desktop {
+    
+    font-size:24px;
+   }
 }
 
 .contact-us {
     padding-bottom: 0.8rem;
+       @include desktop {
+    padding-bottom:50px;
+    padding-right:5%;
+   }
 }
 
 .questions {
     padding-bottom: 0.8rem;
+       @include desktop {
+    line-height: 0.8;
+   }
+
+.questions p{
+    @include desktop {
+    margin-bottom:0;
+   }
+}
+
+
 }
 
 .newsletter-subscription {
-    padding-bottom: 1rem;
+    
+     @include desktop {
+    
+    text-align: left;
+   }
 }
 
 
 /*=======================
 FORM at bottom of footer
 ========================*/
+
+.sign-up-button{
+    @include desktop {
+text-align: left;
+    }
+}
+
 
 #subscribe {
     background-color: #383B4C;
@@ -150,6 +251,10 @@ FORM at bottom of footer
     box-shadow: none;
     line-height: 1.2;
     border-width: 0px;
+           @include desktop {
+         height: 50px;
+        width: 162px;
+   }
 }
 
 #newsLetter-formId {
@@ -157,6 +262,7 @@ FORM at bottom of footer
     justify-content: space-between;
     padding-bottom: 0.8rem;
     flex-direction: column;
+    padding-bottom:20px;
 }
 
 #sign-up-form {
@@ -179,7 +285,7 @@ FORM at bottom of footer
     box-shadow: none;
     line-height: 1.2;
     border-width: 2px;
-    ;
+
 }
 
 .subscribeForm-for-newsLetter {
@@ -188,13 +294,21 @@ FORM at bottom of footer
     align-items: center;
     justify-content: center;
     text-align: center;
+        @include desktop {
+display:inline-block;
+    }
 }
+
 
 .sign-up-email {
     padding-bottom: 10px;
 }
 
+.subscribe-to-newsletter{
+margin-top:50px;
 
+
+}
 /*=======================
 INPUT field
 ========================*/
@@ -202,6 +316,11 @@ INPUT field
 #your-email {
     border-radius: 10px 10px 10px 10px;
     background-color: lightgray;
+    @include desktop {
+         height: 50px;
+        width: 252px;
+   }
+
 }
 
 ::-webkit-input-placeholder {
