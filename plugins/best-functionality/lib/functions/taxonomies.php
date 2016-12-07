@@ -122,3 +122,81 @@ function register_location_taxonomy_() {
 
 }
 add_action( 'init', 'register_location_taxonomy_', 0 );
+
+/* Register Activities taxonomy for Resources Post Type */
+function register_activities_taxonomy_() {
+
+	$labels = array(
+		'name'                       => 'Activity Types',
+		'singular_name'              => 'Activity Type',
+		'menu_name'                  => 'Activity Types',
+		'all_items'                  => 'All Activity Types',
+		'parent_item'                => 'Parent Activity Type',
+		'parent_item_colon'          => 'Parent Activity Type:',
+		'new_item_name'              => 'New Activity Type Name',
+		'add_new_item'               => 'Add New Activity Type Item',
+		'edit_item'                  => 'Edit Activity Type',
+		'update_item'                => 'Update Activity Type',
+		'view_item'                  => 'View Activity Type',
+		'separate_items_with_commas' => 'Separate Activity types with commas',
+		'add_or_remove_items'        => 'Add or remove Activity types',
+		'choose_from_most_used'      => 'Choose from the most used',
+		'popular_items'              => 'Popular Activity Types',
+		'search_items'               => 'Search Activity Types',
+		'not_found'                  => 'Not Found',
+		'no_terms'                   => 'No Activity Types',
+		'items_list'                 => 'Activity Type list',
+		'items_list_navigation'      => 'Activity Type list navigation',
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => false,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'activity_type', array( 'resources' ), $args );
+
+}
+add_action( 'init', 'register_activities_taxonomy_', 0 );
+
+/* Register Downloads taxonomy for Resources Post Type */
+function register_downloads_taxonomy_() {
+
+	$labels = array(
+		'name'                       => 'Download Types',
+		'singular_name'              => 'Download Type',
+		'menu_name'                  => 'Download Types',
+		'all_items'                  => 'All Download Types',
+		'parent_item'                => 'Parent Download Type',
+		'parent_item_colon'          => 'Parent Download Type:',
+		'new_item_name'              => 'New Download Type Name',
+		'add_new_item'               => 'Add New Download Type Item',
+		'edit_item'                  => 'Edit Download Type',
+		'update_item'                => 'Update Download Type',
+		'view_item'                  => 'View Download Type',
+		'separate_items_with_commas' => 'Separate Download types with commas',
+		'add_or_remove_items'        => 'Add or remove Download types',
+		'choose_from_most_used'      => 'Choose from the most used',
+		'popular_items'              => 'Popular Download Types',
+		'search_items'               => 'Search Download Types',
+		'not_found'                  => 'Not Found',
+		'no_terms'                   => 'No Download Types',
+		'items_list'                 => 'Download Type list',
+		'items_list_navigation'      => 'Download Type list navigation',
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => false,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'download_type', array( 'resources' ), $args );
+
+}
+add_action( 'init', 'register_downloads_taxonomy_', 0 );

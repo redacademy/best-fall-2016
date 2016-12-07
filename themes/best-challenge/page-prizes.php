@@ -29,59 +29,56 @@ get_header(); ?>
 			</div>
 			
 
-			<div class="taxonomy-wrapper">
-				<?php
-					$terms = get_terms('prize_type', array('order' => 'DESC'));  
+			
+			<?php
+				$terms = get_terms('prize_type', array('order' => 'DESC'));  
+				foreach($terms as $prize_type) { ?>
+					<div class="taxonomy-wrapper">
+						<div class="results">
+							<h2><?php echo $prize_type->name; ?> </h2>
 
-					foreach($terms as $prize_type) { ?>
-						<div class="prizes">
-						<h2><?php echo $prize_type->name; ?> </h2>
+							<?php $args = array(
+								'post_type' => 'prize',
+								// 'posts_per_page' => 4,
+								'tax_query' => array( 
+									array(
+										'taxonomy' => 'prize_type',
+										'field'    => 'slug',
+										'terms'    =>  $prize_type,
+										
+									),
+								),  
+							);
 
-						<?php $args = array(
-							'post_type' => 'prize',
-							// 'posts_per_page' => 4,
-							'tax_query' => array( 
-								array(
-									'taxonomy' => 'prize_type',
-									'field'    => 'slug',
-									'terms'    =>  $prize_type,
-									
-								),
-							),  
-						);
-
-						$prizes = get_posts( $args ); ?>
-					
-					
-						<?php foreach( $prizes as $post ) : setup_postdata($post); ?>
+							$prizes = get_posts( $args ); ?>
 						
+						
+							<?php foreach( $prizes as $post ) : setup_postdata($post); ?>
+							
 								<div class="taxonomy-post">
-								<div class="prize-image">
-									<?php the_post_thumbnail( 'large' ); ?>							
-								</div>
+									<div class="prize-image">
+										<?php the_post_thumbnail( 'large' ); ?>							
+									</div>
 
-								<div class="taxonomy-title">
-									<h3><?php the_title(); ?></h3>
+									<div class="taxonomy-title">
+										<h3><?php the_title(); ?></h3>
+									</div>
+									<div class="taxonomy-description">
+										<p><?php the_content(); ?></p>
+									</div>
 								</div>
-								<div class="taxonomy-description">
-									<p><?php the_content(); ?></p>
-								</div>
-							</div>
-					
-						<?php endforeach; wp_reset_postdata(); ?>
-				</div>
+							<?php endforeach; wp_reset_postdata(); ?>
+						</div>
+					</div> <!-- prize wrapper section ends -->
 				<?php
 				} ?>
-			</div> <!-- prize wrapper section ends -->
+			
 
 			<div class="prize-categories">
 					<h2 class="section-title">prize categories</h2>
 
 					<?php $fields=CFS()->get( 'prize_categories' );
                         foreach ( $fields as $field ) { ?>
-   
-   									
-
 
                         <div class="category-name"> 
                                <h3><?php echo $field['category_name']; ?></h3>

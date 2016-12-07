@@ -48,19 +48,23 @@
         }
     }
     .taxonomy-wrapper {
-        width: 80%;
+        width: 100%;
         height: auto;
-        display: flex;
-        justify-content: center;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        flex-basis: 80%;
-        margin: 0 auto;
-            @include desktop {
-            flex-wrap: wrap;
-            flex-direction: row;
-            margin-top: 5% auto 1% auto;
-            }
+
+        .results {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            flex-basis: 80%;
+            margin: 0 auto;
+                @include desktop {
+                flex-wrap: wrap;
+                flex-direction: row;
+                margin-top: 5% auto 1% auto;
+                }
+             
 
             .taxonomy-image {
                 width: 230px;
@@ -141,6 +145,7 @@
                 text-align: center;
             }
         }
+    }
     }
 
 .prizes:first {
