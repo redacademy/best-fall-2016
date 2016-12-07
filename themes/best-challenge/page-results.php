@@ -1,6 +1,6 @@
 <?php
 /**
- * Template for the Impact Results page. 
+ * Template Name: Impact Results 
  *
  * @package RED_Starter_Theme
  */
