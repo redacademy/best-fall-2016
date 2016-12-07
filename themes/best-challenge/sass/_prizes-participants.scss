@@ -50,6 +50,9 @@
     .taxonomy-wrapper {
         width: 100%;
         height: auto;
+        &::nth-child(1){
+            background-color: red;
+        }
 
         .results {
             width: 80%;
