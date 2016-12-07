@@ -13,7 +13,7 @@ get_header(); ?>
 					<?php the_title( '<div class="heading"><h1>', '</h1></div>' ); ?>
 					<p>British Columbia Commuter Challenge participants made a real impact!</p>
 				</div>
-				<div class="title-info">
+				<div class="impact-results-info">
 						<p>The Commuter Challenge 
 							is all about having fun while making a 
 							difference. Here’s how the community 

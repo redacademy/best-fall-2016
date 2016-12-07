@@ -125,12 +125,12 @@ get_header(); ?>
 				<div class="results-info">
 					
 					<div class="bc-total">
-						<p></p>
+						<?php echo CFS()->get( 'bc_avoided_co2_in_year' ); ?>
 						<p>British Columbia Total</p>
 					</div>	
 
 					<div class="work-avg">
-						<p></p>
+						<?php echo CFS()->get( 'workplace_co2_in_year' ); ?>
 						<p>Workplace Average</p>
 					</div>
 

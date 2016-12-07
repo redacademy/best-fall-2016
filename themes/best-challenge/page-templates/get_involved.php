@@ -119,24 +119,28 @@ get_header(); ?>
 
             <div class="resources-section">
                 <div class="need-resources">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/desktop-clipart.png"></img>
-                        <h2>need resources?</h2>
-                        <p>Check out our resources page for everything you need to know about engaging your coworkers and
+                    <div class="flex">
+                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/desktop-clipart.png"></img>
+                            <h2>need resources?</h2>
+                            <p>Check out our resources page for everything you need to know about engaging your coworkers and
                             promoting the event (email templates, posters and more!)
-                        </p>
-                    <div class="resources-link">
-                           <a href="">Check out resources ></a>
-                            <!-- This link will take user to another page for more resources -->
-                    </div>
-                    <div class="need-prizes">
-                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/gift-clipart.jpg"></img>
-                        <h2>prizes for everyone</h2>
-                        <p>We have prizes for everyone-those who are trying something new and those who are already commuting
+                            </p>
+                    
+                            <div class="resources-link">
+                                <a href="">Check out resources ></a>
+                                    <!-- This link will take user to another page for more resources -->
+                            </div>
+                    </div> 
+                    <div class="flex">
+                        <div class="need-prizes">
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/gift-clipart.jpg"></img>
+                            <h2>prizes for everyone</h2>
+                            <p>We have prizes for everyone-those who are trying something new and those who are already commuting
                             sustainably, high-achievers, and lucky ones, teams and individuals. Check them out!
-                        </p>
-                    <div class="resources-link">
-                            <a href="">Check out prizes ></a>
-                             <!-- This link will take user prizes page -->
+                            </p>
+                        <div class="resources-link">
+                                <a href="">Check out prizes ></a>
+                    </div>      <!-- This link will take user prizes page -->
                     </div>
                 </div>
             </div>

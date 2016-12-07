@@ -4,6 +4,8 @@
 @include desktop {
     display:flex;
     flex-direction:row;
+padding-right:40px;
+height:300px;
     
 }
 }
@@ -13,13 +15,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+        background-color: #5a6f83;
     
   }
 
 .footer-section {
-    background-color: #5a6f83;
+    
     color: white;
- 
+margin-left:50px;
+margin-right:50px;
     
 }
 
@@ -48,8 +52,7 @@
     
     display: flex;
     flex-direction: row;
-   padding-left:10%;
-   padding-right:10%;
+
     
     }
  }
@@ -82,13 +85,15 @@
     padding-bottom: 0;
     margin-bottom: 0;
     padding-bottom: 0.5rem;
+    
 
              @include desktop {
    width:70%;
    padding-left:5%;
-   padding-right:5%;
+   padding-right:10%;
    align-items:flex-start;
-   padding-bottom:100px;
+       justify-content: space-between;
+   
 
     }
 }
@@ -131,7 +136,7 @@
     flex-direction: row;
     @include desktop {
     padding-left:0;
-    padding-bottom:10px;
+    
     justify-content: flex-start;
     }
 }
@@ -148,6 +153,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+        padding-bottom: 10px;
 }
 
 para-content {
@@ -167,8 +173,12 @@ para-content {
     }
 }
 
-.logo-image i {
+.logo-image {
     font-size: 2rem;
+   text-align:center;
+    
+
+    
 }
 
 
@@ -199,6 +209,7 @@ para-content {
        @include desktop {
     padding-bottom:50px;
     padding-right:5%;
+    height:300px;
    }
 }
 
@@ -220,7 +231,7 @@ para-content {
 .newsletter-subscription {
     
      @include desktop {
-    
+    height:300px;
     text-align: left;
    }
 }
