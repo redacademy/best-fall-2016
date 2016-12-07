@@ -541,6 +541,7 @@ a {
 
 .sub-menu .menu-item:hover {
   background-color: #5a6f83;
+  width: auto;
   border-top-left-radius: 0;
   border-top-right-radius: 0; }
 
@@ -932,7 +933,7 @@ users choice
   background: #dee2e6; }
 
 .modologo {
-  padding-bottom: .5rem; }
+  padding-bottom: 1rem; }
 
 .fp-sponsors-title h2 {
   font-size: 1.5rem; }
@@ -2555,3 +2556,37 @@ DROPDOWN-MENU
     .page-id-94 .download-categories .category-description p {
       display: none;
       font-weight: 300; }
+
+.picture-wrapper-results {
+  display: -ms-flexbox;
+  display: flex;
+  background: url("../../assets/images/results-header-mobile.png") center no-repeat;
+  background-size: cover;
+  height: 200px;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding-bottom: 20px;
+  margin-bottom: 4px;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  @media (min-width: 600px) {
+    .picture-wrapper-results {
+      background: url("../../assets/images/results-header.png") center no-repeat; } }
+
+.picture-wrapper-results h1 {
+  line-height: 3.5rem;
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'montserrat'; }
+
+.picture-wrapper-results p {
+  color: white;
+  font-family: 'montserrat';
+  font-weight: 300;
+  margin-top: 0;
+  font-size: 2rem; }

@@ -153,8 +153,11 @@ a {
 .sub-menu {
 	.menu-item:hover {
 		background-color: #5a6f83;
+		width: auto;
 		border-top-left-radius: 0;
 		border-top-right-radius: 0;
 	}
+
+	.menu-item {}
 }
 
