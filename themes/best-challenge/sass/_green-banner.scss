@@ -4,7 +4,6 @@ users choice
 ========================*/
 
 .green-banner {
-  
     background: #a6ce39;
     height: 225px;
     display: flex;
@@ -19,9 +18,7 @@ users choice
 }
 
 .green-banner-data p:first-child {
-  
     text-transform: uppercase;
-    
     font-family: 'montserrat', sans-serif;
     font-weight: bold;
     font-size: 26px;
@@ -29,8 +26,8 @@ users choice
     padding-top: 50px;
     width:100%;
        @include desktop {
-    font-size: 36px;
-     padding-top: 30px;
+            font-size: 36px;
+            padding-top: 30px;
     }
 }
 
@@ -56,8 +53,8 @@ users choice
     border-width: 3px;
     border-color: black;
     text-shadow: none;
-    @include desktop {
-        width: 200px;
+        @include desktop {
+            width: 200px;
     }
 }
 

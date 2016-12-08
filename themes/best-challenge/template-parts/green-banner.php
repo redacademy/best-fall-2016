@@ -13,8 +13,8 @@
                                     <div class="button2">
                                         <input type="submit" name="submit" value="Workplace" id="go-green-button" >
                                     </div>
-                               
+                                </div><!-- End of green-buttons  -->
                             </form><!-- End of form  -->
                         </div><!-- End of green-banner-flex  -->
                     </div><!-- End of green-banner -->
-               </div>
+               

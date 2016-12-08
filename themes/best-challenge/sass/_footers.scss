@@ -1,13 +1,12 @@
 
 
 .first-column{
-@include desktop {
+        @include desktop {
     display:flex;
     flex-direction:row;
-padding-right:40px;
-height:300px;
-    
-}
+    padding-right:40px;
+    height:300px;
+    }
 }
 
 
@@ -15,15 +14,14 @@ height:300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-        background-color: #5a6f83;
+    background-color: #5a6f83;
     
   }
 
 .footer-section {
-    
     color: white;
-margin-left:50px;
-margin-right:50px;
+    margin-left:50px;
+    margin-right:50px;
     
 }
 
@@ -49,11 +47,8 @@ margin-right:50px;
     align-items: center;
     justify-content: center;
          @include desktop {
-    
     display: flex;
     flex-direction: row;
-
-    
     }
  }
 
@@ -85,17 +80,13 @@ margin-right:50px;
     padding-bottom: 0;
     margin-bottom: 0;
     padding-bottom: 0.5rem;
-    
-
-             @include desktop {
-   width:70%;
-   padding-left:5%;
-   padding-right:10%;
-   align-items:flex-start;
-       justify-content: space-between;
-   
-
-    }
+        @include desktop {
+    width:70%;
+    padding-left:5%;
+    padding-right:10%;
+    align-items:flex-start;
+    justify-content: space-between;
+   }
 }
 
 .footer-social {
@@ -125,10 +116,9 @@ margin-right:50px;
     justify-content: center;
     margin-bottom: 4px;
     padding: 0 1rem;
-    @include desktop {
-  margin-top:0;
-  margin-bottom:0;
-
+        @include desktop {
+    margin-top:0;
+    margin-bottom:0;
     }
 }
 
@@ -136,7 +126,6 @@ margin-right:50px;
     flex-direction: row;
     @include desktop {
     padding-left:0;
-    
     justify-content: flex-start;
     }
 }
@@ -153,7 +142,7 @@ margin-right:50px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-        padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 para-content {
@@ -168,18 +157,13 @@ para-content {
     margin-bottom: 0;
     @include desktop {
     text-align: left;
-    
-  
     }
 }
 
 .logo-image {
     font-size: 2rem;
     text-align: center;
-     
-}
-
-
+     }
 
 .commuterChallenge-contact-logos {
     display: flex;
@@ -190,14 +174,12 @@ para-content {
           @include desktop {
     justify-content:flex-start;
     padding-top:30px;
-    
-   }
+     }
 }
 
 .commuterChallenge-contact-logos i {
     padding: 5px;
         @include desktop {
-    
     font-size:24px;
    }
 }
@@ -218,17 +200,13 @@ para-content {
    }
 
 .questions p{
-    @include desktop {
+        @include desktop {
     margin-bottom:0;
    }
 }
 
-
-}
-
 .newsletter-subscription {
-    
-     @include desktop {
+        @include desktop {
     height:300px;
     text-align: left;
    }
@@ -248,7 +226,6 @@ text-align: left;
 
 #subscribe {
     background-color: #383B4C;
-    ;
     color: white;
     cursor: pointer;
     padding: .5rem 2rem;
@@ -261,7 +238,7 @@ text-align: left;
     line-height: 1.2;
     border-width: 0px;
            @include desktop {
-         height: 50px;
+        height: 50px;
         width: 162px;
    }
 }
@@ -304,7 +281,7 @@ text-align: left;
     justify-content: center;
     text-align: center;
         @include desktop {
-display:inline-block;
+    display:inline-block;
     }
 }
 
@@ -325,11 +302,10 @@ INPUT field
 #your-email {
     border-radius: 10px 10px 10px 10px;
     background-color: lightgray;
-    @include desktop {
-         height: 50px;
+        @include desktop {
+        height: 50px;
         width: 252px;
    }
-
 }
 
 ::-webkit-input-placeholder {
@@ -352,4 +328,5 @@ INPUT field
 :-ms-input-placeholder {
     color: #383B4C;
     padding: 1rem 1rem;
+}
 }

@@ -1,6 +1,6 @@
        <!-- This is the beginning of a template part that shows a picture and contact infor for contact person -->
   
-  <div class="contact-person-section">
+            <div class="contact-person-section">
                 <div class="contact-person-image">
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/stephen-white.png"></img>
                 </div>
