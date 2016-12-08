@@ -103,9 +103,29 @@ get_header(); ?>
 
                 <?php get_template_part( 'template-parts/contact-person' ); ?>
 
-                <?php get_template_part( 'template-parts/green-banner' ); ?>
-
-<div class="front-sponsors">
+                <!-- This is the beginning of a template part that toggles a button on and off -->
+                    <div class="green-banner">
+                        <div class="green-banner-flex">
+                            <div class="green-banner-data">
+                                <p>get involved</p>
+                                <p>Challenge yourself. Challenge your team.</p>
+                            </div>
+                            <form method="POST" action="">
+                                <div class="green-buttons">
+                                    <div class="button1">
+                                        <input type="submit" name="submit" value="Individual" id="go-green-button" >
+                                    </div>
+                                    <div class="button2">
+                                        <input type="submit" name="submit" value="Workplace" id="go-green-button" >
+                                    </div>
+                                </div><!-- End of green-buttons  -->
+                            </form><!-- End of form  -->
+                        </div><!-- End of green-banner-flex  -->
+                    </div><!-- End of green-banner -->
+            
+                   
+  <!-- sponsors -->
+                    	<div class="front-sponsors">
 				<div class="fp-sponsors-title container">
 					<h2 class="uppercase">Sponsored by</h2>
 				</div>

@@ -95,7 +95,7 @@ get_header(); ?>
                     <div class="green-banner">
                         <div class="green-banner-flex">
                             <div class="green-banner-data">
-                                <p>great prizes to be won!</p>
+                                <p>gret prizes to be won!</p>
                                 <p>Learn more about how to get involved.</p>
                             </div>
                             <form method="POST" action="">
@@ -110,8 +110,41 @@ get_header(); ?>
                             </form><!-- End of form  -->
                         </div><!-- End of green-banner-flex  -->
                     </div><!-- End of green-banner -->
+            
+                   
+  <!-- sponsors -->
+                    	<div class="front-sponsors">
+				<div class="fp-sponsors-title container">
+					<h2 class="uppercase">Sponsored by</h2>
+				</div>
+				<div class="fp-sponsors-img container">
+				<div>
+					<img src=" <?php echo get_template_directory_uri() ?>/assets/images/evo-logo.png" alt="logo">
+				</div>
+				<div>
+					<img src=" <?php echo get_template_directory_uri() ?>/assets/images/movcolorstack-300.png" alt="logo">
+				</div>
+				<div>
+					<img src=" <?php echo get_template_directory_uri() ?>/assets/images/bc-logo.png" alt="logo">
+				</div>
+				<div class="modologo">
+					<img src=" <?php echo get_template_directory_uri() ?>/assets/images/modo-logo.png" alt="logo">
+				</div>
+				<div>
+					<img src=" <?php echo get_template_directory_uri() ?>/assets/images/century-group-logo.png" alt="logo">
+				</div>
+				<div>
+					<img src=" <?php echo get_template_directory_uri() ?>/assets/images/goodlife-fitness-gym-logo.png" alt="logo">
+				</div>
+				<div>
+					<img src=" <?php echo get_template_directory_uri() ?>/assets/images/mec-rgb-trademark.png" alt="logo">
+				</div>
+			</div>
+		</div>
+        <!-- END of sponsors -->
+                    
+        </main><!-- #main -->
+	</div><!-- #primary -->
 
-	
-	
 
 <?php get_footer(); ?>

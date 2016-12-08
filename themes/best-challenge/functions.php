@@ -96,6 +96,8 @@ function Best_Challenge_scripts() {
 	wp_enqueue_script( 'jquery' );
 
 	wp_enqueue_script( 'redirect', get_template_directory_uri() . '/build/js/redirect.min.js', array ( 'jquery' ), 1.1, true);
+
+	wp_enqueue_script( 'green-button-redirect', get_template_directory_uri() . '/build/js/green-button-redirect.min.js', array ( 'jquery' ), 1.1, true);
 	
 	wp_enqueue_script( 'dropdown', get_template_directory_uri() . '/build/js/dropdown.min.js', array ( 'jquery' ), 1.1, true);
 

@@ -5,10 +5,10 @@
                                 <p>engage as individuals!</p>
                                 <p>Discover how you can get involved</p>
                             </div>
-                            <form method="POST" action="">
+                            <form method="POST" action="" >
                                 <div class="green-buttons">
                                     <div class="button1">
-                                        <input type="submit" name="submit" value="Individual" id="go-green-button" >
+                                      <input type="submit" name="submit" value="Individual" id="go-green-button" >
                                     </div>
                                     <div class="button2">
                                         <input type="submit" name="submit" value="Workplace" id="go-green-button" >
@@ -18,3 +18,6 @@
                         </div><!-- End of green-banner-flex  -->
                     </div><!-- End of green-banner -->
                
+
+
+ 
