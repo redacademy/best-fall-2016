@@ -144,7 +144,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .impact-box {
@@ -188,6 +187,7 @@
 
 .best-post-thumb {
     flex-basis: 48%;
+    text-align: center;
     img {
         height: auto;
         margin-top: 2rem;
@@ -211,7 +211,7 @@
     font-size: 1.5rem;
     text-transform: uppercase;
     padding: 0 1rem;
-    text-align: center; 
+    text-align: center;
     @include desktop {
         text-align: left;
     }
