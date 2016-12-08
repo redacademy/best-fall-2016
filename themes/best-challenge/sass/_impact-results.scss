@@ -52,7 +52,7 @@
     position: relative;
     div:not(:nth-child(3)) {
         height: 40vh;
-        background-size: cover;
+        background-size:  cover;
     }
     div:not(:first-child) {
             margin-top: -10vh;
@@ -78,7 +78,7 @@
 }
 
 .ir-register {
-    background: url('../../assets/images/ir-dark-concave.png')center  no-repeat;
+    background: url('../../assets/images/ir-dark-concave.png')top  no-repeat;
     background-size: cover;
     height: 50vh
 }
