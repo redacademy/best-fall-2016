@@ -1121,7 +1121,7 @@ users choice
   .page-template-default .taxonomy-wrapper, .tax-participant_location .taxonomy-wrapper {
     width: 100%;
     height: auto;
-    background-color: #303b46; }
+    /*background-color: $dark-background;*/ }
     .page-template-default .taxonomy-wrapper:nth-child(1), .tax-participant_location .taxonomy-wrapper:nth-child(1) {
       background-image: url(../../assets/images/light-blue-bkgrnd.png);
       background-repeat: no-repeat;
@@ -2297,6 +2297,9 @@ NEWLETTER SIGN-UP AREA
 /*=======================
 this is the css unique to page-id-94
 ========================*/
+.page-id-119 {
+  background-color: white; }
+
 .page-id-94 {
   /*=======================
 this is the CONTACT PERSON INFO

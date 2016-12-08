@@ -50,7 +50,7 @@
     .taxonomy-wrapper {
         width: 100%;
         height: auto;
-        background-color: $dark-background;
+        /*background-color: $dark-background;*/
         &:nth-child(1){
             background-image: url(../../assets/images/light-blue-bkgrnd.png);
             @include background-image;
