@@ -1,10 +1,11 @@
 /**
  * typewriter.js
  *
- * Helps with accessibility for keyboard only users.
+ * Typewriter effect on front page of BEST site..
  *
- * Learn more: https://github.com/Automattic/RED Starter Theme/pull/136
+ * 
  */
+
 // Typewriter Effect 
 
 document.addEventListener('DOMContentLoaded',function(event){
