@@ -965,7 +965,8 @@ users choice
     .impact-results {
       -ms-flex-direction: row;
           flex-direction: row;
-      padding: 5%; } }
+      padding: 5%;
+      margin: 0 auto; } }
 
 .canada-map {
   padding: 1rem;
