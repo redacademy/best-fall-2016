@@ -7,8 +7,6 @@
  */
 
 (function ($) {
-
-
     $('#sign-up').on("click", function (event) {
         event.preventDefault();
         $( "div" ).first().remove();
@@ -18,11 +16,10 @@
     $('.toggle-visible-hidden').css("height", "100vh");
     
 
-window.setTimeout(function () {
+    window.setTimeout(function () {
         location.href = "https://commuterchallenge.ca/";
     }, 5000)
     });
-
-
+    
 })(jQuery);
 
