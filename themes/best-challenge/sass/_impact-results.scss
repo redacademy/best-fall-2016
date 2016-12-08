@@ -42,8 +42,6 @@
             margin: 0 auto;
         }
     }
-
-
     .impact-results-area {
         position: relative;
         // //// The line through the middle of the divs ////
@@ -69,7 +67,6 @@
             height: 25vh;
             min-width: 20vw;
             background: teal;
-       
         }
         .ir-co2-image {
             position: absolute;
@@ -79,14 +76,29 @@
             bottom: 20%;
         }
     }
- 
     .ir-km {
         background: url('../../assets/images/ir-grey-curve-top.png') top no-repeat;
         background-size: cover;
         height: 50vh;
         margin-top: -9vh;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         @include desktop {
             margin-top: -11vh;
+        }
+        div {
+            height: 25vh;
+            min-width: 20vw;
+            background: teal;
+        }
+        .ir-km-image {
+            position: absolute;
+            background: url('../../assets/images/circle-distance.png') center no-repeat;
+            background-size: contain;
+            z-index: 1;
+            bottom: 20%;
         }
     }
     .ir-register {
@@ -94,8 +106,24 @@
         background-size: cover;
         height: 50vh;
         margin-top: -9vh;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         @include desktop {
             margin-top: -11vh;
+        }
+        div {
+            height: 25vh;
+            min-width: 20vw;
+            background: teal;
+        }
+        .ir-register-image {
+            position: absolute;
+            background: url('../../assets/images/circle-participants.png') center no-repeat;
+            background-size: contain;
+            z-index: 1;
+            bottom: 30%;
         }
     }
     .ir-calories {
@@ -103,8 +131,24 @@
         background-size: cover;
         height: 50vh;
         margin-top: -9vh;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         @include desktop {
             margin-top: -11vh;
+        }
+        div {
+            height: 25vh;
+            min-width: 20vw;
+            background: teal;
+        }
+        .ir-calories-image {
+            position: absolute;
+            background: url('../../assets/images/circle-carbs.png') center no-repeat;
+            background-size: contain;
+            z-index: 1;
+            bottom: 20%;
         }
     }
     .ir-fuel {
@@ -112,12 +156,31 @@
         background-size: cover;
         height: 50vh;
         margin-top: -9vh;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         @include desktop {
             margin-top: -11vh;
         }
+        div {
+            height: 25vh;
+            min-width: 20vw;
+            background: teal;
+        }
+        .ir-fuel-image {
+            position: absolute;
+            background: url('../../assets/images/circle-station.png') center no-repeat;
+            background-size: contain;
+            z-index: 1;
+            bottom: 20%;
+        }
     }
-
-   .ir-co2:after, .ir-km:after, .ir-register:after, .ir-calories:after, .ir-fuel:after  {
+    .ir-co2:after,
+    .ir-km:after,
+    .ir-register:after,
+    .ir-calories:after,
+    .ir-fuel:after {
         content: "";
         position: absolute;
         z-index: 0;
@@ -126,15 +189,8 @@
         left: 50%;
         border-left: 5px solid #fff;
     }
-
-
     .ir-numbers {
         background: purple;
         height: 40vh;
     }
-
-
-
-
-
 }
