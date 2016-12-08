@@ -23,61 +23,61 @@ get_header(); ?>
 		<div class="impact-results-area"> 
 
 			<div class="ir-co2"> 
-				<div class="">
+				<div class="ir-co2-avg">
 
 				</div>
-				<div class="">
+				<div class="ir-co2-image">
 
 				</div>
-				<div class="">
+				<div class="ir-co2-bc">
 
 				</div>
 			</div>
 			
 			<div class="ir-km"> 
-				<div class="">
+				<div class="ir-km-bc">
 
 				</div>
-				<div class="">
+				<div class="ir-km-image">
 
 				</div>
-				<div class="">
+				<div class="ir-km-commute">
 					
 				</div>
 			</div>
 
 			<div class="ir-register"> 
-				<div class="">
+				<div class="ir-register-work">
 
 				</div>
-				<div class="">
+				<div class="ir-register-image">
 
 				</div>
-				<div class="">
+				<div class="ir-register-indv">
 					
 				</div>
 			</div>
 
 			<div class="ir-calories"> 
-				<div class="">
+				<div class="ir-calories-exercise">
 
 				</div>
-				<div class="">
+				<div class="ir-calories-image">
 
 				</div>
-				<div class="">
+				<div class="ir-calories-burned-bc">
 					
 				</div>
 			</div>
 
 			<div class="ir-fuel"> 
-				<div class="">
+				<div class="ir-fuel-saved">
 
 				</div>
-				<div class="">
+				<div class="ir-fuel-image">
 
 				</div>
-				<div class="">
+				<div class="ir-fuel-sold">
 					
 				</div>
 			</div>	
@@ -86,7 +86,17 @@ get_header(); ?>
 
 		
 		<div class="ir-numbers"> 
-
+			<div class="ir-numbers-title">
+				<h3 class="uppercase">Commuter Challenge 2016</h3>
+				<p>in numbers</p>
+			</div>
+			<div class="ir-numbers-info">
+				<div class="ir-numbers-stats">
+				</div>
+				<div class="ir-numbers-bc">
+				</div>
+				<div class="ir-numbers-canada">
+				</div>
 		</div>
 
 
