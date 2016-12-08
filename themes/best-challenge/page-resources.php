@@ -29,47 +29,49 @@ get_header(); ?>
 			</div>
 			
 			
-			<div class="activity-section">
+			<div class="activities-section">
 				<?php
-					$terms = get_terms('activity_type', array('order' => 'DESC'));  
+					$terms = get_terms('activity_type', array('order' => 'DESC')); ?>
+					<div class="activities-wrapper"> 
+					<?php	
 					foreach($terms as $activity_type) { ?>
-						<div class="taxonomy-wrapper">
 							<div class="results">
 								<h2><?php echo $activity_type->name; ?> </h2>
 
 								<?php $args = array(
 									'post_type' => 'resources',
-									// 'posts_per_page' => 4,
+									'posts_per_page' => 3,
 									'tax_query' => array( 
 										array(
 											'taxonomy' => 'activity_type',
 											'field'    => 'slug',
-											'terms'    =>  $activity_type,
-											
+											'terms'    =>  $activity_type,		
 										),
 									),  
 								);
-
 								$activities = get_posts( $args ); ?>
 							
 							
-								<?php foreach( $activities as $post ) : setup_postdata($post); ?>
-								
-									<div class="taxonomy-post">
-										<div class="prize-image">
+								<?php foreach( $activities as $post ) : setup_postdata($post); ?>								
+									<div class="single-activity-post">
+										<div class="activity-image">
 											<?php the_post_thumbnail( 'large' ); ?>							
 										</div>
 
-										<div class="taxonomy-title">
+										<div class="activity-title">
 											<h3><?php the_title(); ?></h3>
 										</div>
-										<div class="taxonomy-description">
+										<div class="actiity-description">
 											<p><?php the_content(); ?></p>
 										</div>
 									</div>
 								<?php endforeach; wp_reset_postdata(); ?>
 							</div>
-						</div> <!-- prize wrapper section ends -->
+						</div> <!-- activity wrapper section ends -->
+						<div class="load-more">
+							<p>Load More</p>
+							<img src=" <?php echo get_template_directory_uri() ?>/assets/images/arrow-down-small.png" alt="logo">
+						</div>
 					<?php
 					} ?>
 			</div>
