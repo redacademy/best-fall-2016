@@ -1,3 +1,12 @@
+/**
+ * scripts.js
+ *
+ * Helps with accessibility for keyboard only users.
+ *
+ * Learn more: https://github.com/Automattic/RED Starter Theme/pull/136
+ */
+
+
 (function ($) {
   //function to show prize description on click 
 
@@ -17,12 +26,6 @@
     $(this).siblings().children().next().toggle('fast');
   });
 
-
-
-})(jQuery);
-
-
-(function ($) {
 
   //function to show prize description on click 
 
@@ -55,7 +58,7 @@ document.addEventListener('DOMContentLoaded',function(event){
     // chekc if text isn't finished yet
     if (i < (text.length)) {
       // add next character to h1
-     document.getElementById("typewrite").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+     document.getElementById("typewrite").innerHTML = text.substring(0, i+1);
 
       // wait for a while and call this function again for next character
       setTimeout(function() {

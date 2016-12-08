@@ -965,7 +965,8 @@ users choice
     .impact-results {
       -ms-flex-direction: row;
           flex-direction: row;
-      padding: 5%; } }
+      padding: 5%;
+      margin: 0 auto; } }
 
 .canada-map {
   padding: 1rem;
@@ -1125,7 +1126,7 @@ users choice
   .page-template-default .taxonomy-wrapper, .tax-participant_location .taxonomy-wrapper {
     width: 100%;
     height: auto;
-    background-color: #303b46; }
+    /*background-color: $dark-background;*/ }
     .page-template-default .taxonomy-wrapper:nth-child(1), .tax-participant_location .taxonomy-wrapper:nth-child(1) {
       background-image: url(../../assets/images/light-blue-bkgrnd.png);
       background-repeat: no-repeat;
@@ -1653,126 +1654,112 @@ para-content {
       height: 300px; } }
 
 .questions {
-  padding-bottom: 0.8rem; }
+  padding-bottom: 0.8rem;
+  /*=======================
+FORM at bottom of footer
+========================*/
+  /*=======================
+INPUT field
+========================*/ }
   @media (min-width: 600px) {
     .questions {
       line-height: 0.8; } }
   @media (min-width: 600px) {
     .questions .questions p {
       margin-bottom: 0; } }
-
-@media (min-width: 600px) {
-  .newsletter-subscription {
-    height: 300px;
-    text-align: left; } }
-
-/*=======================
-FORM at bottom of footer
-========================*/
-@media (min-width: 600px) {
-  .sign-up-button {
-    text-align: left; } }
-
-#subscribe {
-  background-color: #383B4C;
-  color: white;
-  cursor: pointer;
-  padding: .5rem 2rem;
-  border: 1;
-  border-radius: 25px;
-  font-family: 'montserrat';
-  font-weight: 100;
-  font-size: 0.8rem;
-  box-shadow: none;
-  line-height: 1.2;
-  border-width: 0px; }
   @media (min-width: 600px) {
-    #subscribe {
-      height: 50px;
-      width: 162px; } }
-
-#newsLetter-formId {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  padding-bottom: 0.8rem;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  padding-bottom: 20px; }
-
-#sign-up-form {
-  -ms-flex-pack: center;
-      justify-content: center;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  width: 10%;
-  -ms-flex-align: center;
-      align-items: center; }
-
-#sign-up {
-  background-color: #383B4C;
-  color: white;
-  cursor: pointer;
-  padding: .25rem 2rem;
-  border: 1;
-  border-radius: 25px;
-  font-family: ralewaylight, sans-serif;
-  font-size: 0.8rem;
-  box-shadow: none;
-  line-height: 1.2;
-  border-width: 2px; }
-
-.subscribeForm-for-newsLetter {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  text-align: center; }
+    .questions .newsletter-subscription {
+      height: 300px;
+      text-align: left; } }
   @media (min-width: 600px) {
-    .subscribeForm-for-newsLetter {
-      display: inline-block; } }
-
-.sign-up-email {
-  padding-bottom: 10px; }
-
-.subscribe-to-newsletter {
-  margin-top: 50px; }
-
-/*=======================
-INPUT field
-========================*/
-#your-email {
-  border-radius: 10px 10px 10px 10px;
-  background-color: lightgray; }
-  @media (min-width: 600px) {
-    #your-email {
-      height: 50px;
-      width: 252px; } }
-
-::-webkit-input-placeholder {
-  color: #383B4C;
-  padding: 1rem 1rem; }
-
-:-moz-placeholder {
-  /* Firefox 18- */
-  color: #383B4C;
-  padding: 1rem 1rem; }
-
-::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #383B4C;
-  padding: 1rem 1rem; }
-
-:-ms-input-placeholder {
-  color: #383B4C;
-  padding: 1rem 1rem; }
+    .questions .sign-up-button {
+      text-align: left; } }
+  .questions #subscribe {
+    background-color: #383B4C;
+    color: white;
+    cursor: pointer;
+    padding: .5rem 2rem;
+    border: 1;
+    border-radius: 25px;
+    font-family: 'montserrat';
+    font-weight: 100;
+    font-size: 0.8rem;
+    box-shadow: none;
+    line-height: 1.2;
+    border-width: 0px; }
+    @media (min-width: 600px) {
+      .questions #subscribe {
+        height: 50px;
+        width: 162px; } }
+  .questions #newsLetter-formId {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    padding-bottom: 0.8rem;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding-bottom: 20px; }
+  .questions #sign-up-form {
+    -ms-flex-pack: center;
+        justify-content: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 10%;
+    -ms-flex-align: center;
+        align-items: center; }
+  .questions #sign-up {
+    background-color: #383B4C;
+    color: white;
+    cursor: pointer;
+    padding: .25rem 2rem;
+    border: 1;
+    border-radius: 25px;
+    font-family: ralewaylight, sans-serif;
+    font-size: 0.8rem;
+    box-shadow: none;
+    line-height: 1.2;
+    border-width: 2px; }
+  .questions .subscribeForm-for-newsLetter {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    text-align: center; }
+    @media (min-width: 600px) {
+      .questions .subscribeForm-for-newsLetter {
+        display: inline-block; } }
+  .questions .sign-up-email {
+    padding-bottom: 10px; }
+  .questions .subscribe-to-newsletter {
+    margin-top: 50px; }
+  .questions #your-email {
+    border-radius: 10px 10px 10px 10px;
+    background-color: lightgray; }
+    @media (min-width: 600px) {
+      .questions #your-email {
+        height: 50px;
+        width: 252px; } }
+  .questions ::-webkit-input-placeholder {
+    color: #383B4C;
+    padding: 1rem 1rem; }
+  .questions :-moz-placeholder {
+    /* Firefox 18- */
+    color: #383B4C;
+    padding: 1rem 1rem; }
+  .questions ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #383B4C;
+    padding: 1rem 1rem; }
+  .questions :-ms-input-placeholder {
+    color: #383B4C;
+    padding: 1rem 1rem; }
 
 /*=======================
 this is the css unique to page-id-34
@@ -2358,6 +2345,9 @@ NEWLETTER SIGN-UP AREA
 /*=======================
 this is the css unique to page-id-94
 ========================*/
+.page-id-119 {
+  background-color: white; }
+
 .page-id-94 {
   /*=======================
 this is the CONTACT PERSON INFO
@@ -2848,22 +2838,25 @@ DROPDOWN-MENU
   text-align: center; }
 
 .impact-results-info {
-  text-align: center; }
+  text-align: center;
+  height: 10vh;
+  padding: 1rem 0; }
   .impact-results-info p {
     max-width: 60vw;
     margin: 0 auto; }
 
-.impact-results-area div {
-  height: 30vh; }
-
-.ir-results-area:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  border-left: 2px solid #fff; }
+.impact-results-area {
+  position: relative; }
+  .impact-results-area div {
+    height: 30vh; }
+  .impact-results-area div:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 3px solid #fff; }
 
 .ir-co2 {
   background: url("../../assets/images/ir-lightgrey-curve-top.png") center no-repeat; }
@@ -2879,3 +2872,7 @@ DROPDOWN-MENU
 
 .ir-fuel {
   background: url("../../assets/images/ir-lightgrey-curve-bottom.png") center no-repeat; }
+
+.ir-numbers {
+  background: purple;
+  height: 40vh; }

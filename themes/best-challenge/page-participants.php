@@ -37,13 +37,15 @@ get_header(); ?>
 
 				<div class="buttons">
 					<div class="dark-button" id="bc">
-						<input type="button" value="British Columbia">
-						<!--<a href= -->
+						<a href='http://best.academy.red/participant_location/bc/'>
+							<input type="button" value="British Columbia">
+						</a> 
 					</div>
 					
 					<div class="dark-button" id="vancouver">
-						<input type="button"  value="Metro-Vancouver">
-						<!--<a href= -->
+						<a href='http://best.academy.red/participant_location/metro-vancouver/'>
+							<input type="button"  value="Metro-Vancouver">
+						</a>
 					</div>
 				</div>
 			</div>
