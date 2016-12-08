@@ -21,6 +21,7 @@ The temaplate to display taxonomy type archive
 				<div class="taxonomy-wrapper">
 				<?php $types = get_terms('participant_type', array('order' => 'DESC'));  
 					foreach($types as $participant_type) { ?>
+						<div class="results">
 							<h2><?php echo $participant_type->name; ?> </h2>		
 							<h3><?php echo $participant_type->description; ?></h3>
 								
@@ -59,7 +60,7 @@ The temaplate to display taxonomy type archive
 								<?php
 								$url =CFS()->get( 'participant_url' ); ?>
 								<a href="<?php CFS()->get( 'participant_url' ); ?>"></a>
-								<?php esc_url( $url, $protocols, $_context ); ?>
+								<?php esc_url( $url ); ?>
 								<div class="taxonomy-image">
 									<?php the_post_thumbnail( 'large' ); ?>							
 								</div>
@@ -75,6 +76,7 @@ The temaplate to display taxonomy type archive
 						 	endforeach; wp_reset_postdata();	
 							} //ends participant_location foreach foreach loop
 						?>
+					</div>
 			</div> <!-- taxonomy wrapper ends -->
         <!--</div> #content -->
     <!--</div> #primary -->
