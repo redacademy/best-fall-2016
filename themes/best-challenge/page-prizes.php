@@ -89,28 +89,27 @@ get_header(); ?>
 							</div>
 				</div>
 </div>
-
-</div><!-- #primary -->
-     <!-- This is the beginning of a template part that toggles a button on and off -->
+   <!-- This is the beginning of a template part that toggles a button on and off -->
                     <div class="green-banner">
                         <div class="green-banner-flex">
                             <div class="green-banner-data">
-                                <p>gret prizes to be won!</p>
-                                <p>Learn more about how to get involved.</p>
+                                <p>engage as individuals!</p>
+                                <p>Discover how you can get involved</p>
                             </div>
-                            <form method="POST" action="">
+                            <form method="POST" action="" >
                                 <div class="green-buttons">
                                     <div class="button1">
-                                        <input type="submit" name="submit" value="Individual" id="go-green-button" >
+                                      <!--<input type="submit" name="submit" value="Individual" id="go-green-button" >-->
+                                        <a href="<?php echo esc_url( site_url( '/get-involved/' ) ); ?>" rel="program">Individual</a>
+
                                     </div>
                                     <div class="button2">
-                                        <input type="submit" name="submit" value="Workplace" id="go-green-button" >
+                                        <a href="<?php echo esc_url( site_url( '/get-involved/' ) ); ?>" rel="program">Workplace</a>
                                     </div>
                                 </div><!-- End of green-buttons  -->
                             </form><!-- End of form  -->
                         </div><!-- End of green-banner-flex  -->
                     </div><!-- End of green-banner -->
-            
                    
   <!-- sponsors -->
                     	<div class="front-sponsors">

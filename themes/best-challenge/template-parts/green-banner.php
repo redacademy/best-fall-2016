@@ -8,7 +8,9 @@
                             <form method="POST" action="" >
                                 <div class="green-buttons">
                                     <div class="button1">
-                                      <input type="submit" name="submit" value="Individual" id="go-green-button" >
+                                      <!--<input type="submit" name="submit" value="Individual" id="go-green-button" >-->
+<a href="<?php echo esc_url( site_url( '/contact-us/' ) ); ?>" rel="program"><input type="submit" name="submit" value="Individual"></a>
+
                                     </div>
                                     <div class="button2">
                                         <input type="submit" name="submit" value="Workplace" id="go-green-button" >
@@ -19,5 +21,5 @@
                     </div><!-- End of green-banner -->
                
 
-
- 
+<a href="<?php echo esc_url( site_url( '/program/' ) ); ?>" rel="program"><input type="submit" name="submit" value="Individual" id="go-green-button" ></a>
+   

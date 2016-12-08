@@ -9,12 +9,17 @@
 
 
 
-(function ($) {
+/*(function ($) {
     $('#go-green-button').on("click", function (event) {
         event.preventDefault();
 
-window.location="http://best.academy.red/get-involved/";
+window.location.href="http://best.academy.red/get-involved/";
+window.location.href="http://localhost/wordpress_BEST/"
 
 
     });
+
+
 })(jQuery);
+
+
