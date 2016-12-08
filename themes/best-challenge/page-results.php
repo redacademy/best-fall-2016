@@ -20,9 +20,35 @@ get_header(); ?>
 							of British Columbia made an impact in 2016.</p>
 					</div>
 			</div>
-		<div class="content"> 
+		<div class="impact-results-area"> 
+
+			<div class="ir-co2"> 
+
+			</div>
+			
+			<div class="ir-km"> 
+
+			</div>
+
+			<div class="ir-register"> 
+
+			</div>
+
+			<div class="ir-calories"> 
+
+			</div>
+
+			<div class="ir-fuel"> 
+
+			</div>
+
+			<div class="ir-numbers"> 
+
+			</div>
+			
 			
 
+		</div>
 
 
 		</div>
