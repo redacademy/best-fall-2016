@@ -59,10 +59,13 @@ get_header(); ?>
                             <div class="sign-up-email"><input type="email" name="your_email" id="your-email-input" value="" placeholder="Enter your email..." aria-label="Subscribe Email Input"></div>
                     	    <div class="sign-up-button"><input type="submit" name="subscribe" value="Subscribe" id="subscribe-newsletter"></div>
                         </div>
-                    </div>
-                </div>
-
-                    <?php get_template_part( 'template-parts/green-banner' ); ?>
+               </div>
+            </div>
+                
+ <?php get_template_part( 'template-parts/green-banner' ); ?>
+            
+                   
+  
 
 <!-- sponsors -->
                     	<div class="front-sponsors">
