@@ -15,19 +15,21 @@
 				<div class="footer-section">
 					<div class="footer-content">
 						<div class="first-column">
-						<div class="logo-image">
-							<img src="<?php echo get_template_directory_uri() ?>/assets/images/best-logo.png"></img>
-						</div>
-						<div class="about-best">
-							<div class="para-heading"><p>About<span> b.e.s.t</span></p></div>
-							<div class="para-content"><p>B.E.S.T is a non-profit charitable organization with a long history of
-							promoting sustainable transportation</p></div>
-								<div class="learn-more">
-									<div class="para-heading"><a href="">learn more ></a>
-									</div>
+							<div class="logo-image">
+								<img src="<?php echo get_template_directory_uri() ?>/assets/images/best-logo.png"></img>
+							</div>
+							<div class="about-best">
+								<div class="para-heading"><p>About<span> b.e.s.t</span></p>
 								</div>
+								<div class="para-content"><p>B.E.S.T is a non-profit charitable organization with a long history of
+								promoting sustainable transportation</p>
+								</div>
+									<div class="learn-more">
+										<div class="para-heading"><a href="">learn more ></a>
+									</div>
 							</div>
 						</div><!--end of first-column-->
+							
 						<div class="contact-us">
 							<div class="para-heading"><p>Contact us</p><div>
 						<div class="para-content"><p>Do you have any questions? Contact us today!</p></div>
@@ -58,6 +60,7 @@
 						</div>
 					</div>
 				</div>
+			</div>
 			<div class="footer-social">
 					<span>
 						<a href="http://facebook.com"><i class="fa fa-facebook-square"></i></a>

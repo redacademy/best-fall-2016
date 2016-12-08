@@ -16,29 +16,10 @@
     $('.toggle-visible-hidden').css("height", "100vh");
 
 window.setTimeout(function () {
+    
         location.href = "https://commuterchallenge.ca/";
+        
     }, 5000)
-
-
-      
-    });
 
 })(jQuery);
 
-/*$( "#sign-up" ).on( "click", function() {
-  console.log( "hello" );
-});
-
-     /*function redirect(){
-
-  $('.toggle-visible-hidden').remove("toggle-visible-hidden");
-console.log("hello")
-
-
-                 
-                        //wait five seconds function...//
-    }
-/*$('.toggle-visible-hidden').remove("toggle-visible-hidden");
-   /* window.setTimeout(function () {
-        location.href = "https://www.google.com";
-    }, 5000);*/

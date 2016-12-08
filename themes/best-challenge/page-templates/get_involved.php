@@ -9,11 +9,7 @@
 
 get_header(); ?>
 
-
-
-
-
-            </div>
+</div>
 
 
 
@@ -37,9 +33,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-
-                <div class="picture-wrapper">
+            <div class="picture-wrapper">
                     <h1>get your workplace involved!</h1>
                 </div>
 
@@ -47,9 +41,6 @@ get_header(); ?>
                 <?php while ( have_posts() ) : the_post(); ?>
                 <?php get_template_part( 'template-parts/content', 'page' ); ?>
                 <?php endwhile; // End of the loop. ?>
-
-
-
 
                 <div class="challenge-benefit-blocks">
                     <div class="single-benefit-block">
@@ -82,8 +73,7 @@ get_header(); ?>
 
                                  <div class="single-participate-block">
 
-
-                                    <p><?php echo $field['number'];?></p>
+                                        <p><?php echo $field['number'];?></p>
 
                                         <img src="<?php
                                         echo $field['image'];
@@ -102,34 +92,29 @@ get_header(); ?>
     <!-- This is the end of the custom field code -->
                         </div>
                      </div>
-
-                    <div class="signUpForm">
-                        <form action="" id="form" method="post" name="form" onsubmit="return redirect(); return false;">
+                        <div class="signUpForm">
+                            <form action="" id="form" method="post" name="form" onsubmit="return redirect(); return false;">
                              <!-- This link will take user to extrnal site -->
-						    <input type="submit" name="submit" value="Sign Up" id="sign-up">
-     
-
-                            <div class="font-under-button"><p>on Canada Site</p></div>
-                            <div class="underline-under-button"><p>or log in on the canada site</p><div>
-
-            	    </div>
+						        <input type="submit" name="submit" value="Sign Up" id="sign-up">
+                                <div class="font-under-button"><p>on Canada Site</p></div>
+                                <div class="underline-under-button"><p>or log in on the canada site</p><div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
             <div class="resources-section">
                 <div class="need-resources">
                     <div class="flex">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/desktop-clipart.png"></img>
-                            <h2>need resources?</h2>
-                            <p>Check out our resources page for everything you need to know about engaging your coworkers and
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/desktop-clipart.png"></img>
+                        <h2>need resources?</h2>
+                        <p>Check out our resources page for everything you need to know about engaging your coworkers and
                             promoting the event (email templates, posters and more!)
-                            </p>
-                    
-                            <div class="resources-link">
-                                <a href="">Check out resources ></a>
+                        </p>
+                        <div class="resources-link">
+                            <a href="">Check out resources ></a>
                                     <!-- This link will take user to another page for more resources -->
-                            </div>
+                        </div>
                     </div> 
                     <div class="flex">
                         <div class="need-prizes">
@@ -140,7 +125,7 @@ get_header(); ?>
                             </p>
                         <div class="resources-link">
                                 <a href="">Check out prizes ></a>
-                    </div>      <!-- This link will take user prizes page -->
+                        </div>      <!-- This link will take user prizes page -->
                     </div>
                 </div>
             </div>

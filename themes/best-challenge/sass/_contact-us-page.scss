@@ -13,7 +13,6 @@ this is the first banner section under the header
 
 
 .picture-wrapper-contact{
-
     display:flex;
     background:url('../../assets/images/get-involved-header.png')center bottom;
     height:200px;
@@ -26,7 +25,7 @@ this is the first banner section under the header
 }
 
 .picture-wrapper-contact h1{
-   line-height:3.5rem;
+    line-height:3.5rem;
     color:white;
     font-size:44px;
     margin-bottom:0;
@@ -49,13 +48,16 @@ this is the CONTACT PERSON INFO
 
 
 .contact-person-section{
-  
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     align-items:center;
-    flex-direction:row;
+     flex-direction:column;
     justify-content:center;
+        @include desktop {
+    flex-direction:row;
+    
+    }
 
 }
 
@@ -66,8 +68,12 @@ this is the CONTACT PERSON INFO
 
 .contact-person-data{
     line-height:1.3;
+    text-align:center;
+        @include desktop {
+    text-align:left;
+    
+    }
 }
-
 
 .contact-person-data h2{
     text-transform:uppercase;
@@ -89,26 +95,26 @@ this is the CONTACT PERSON INFO
 }
 
 /*=======================
-CONTACT FORM 7
+SEND A MESSAGE CONTACT FORM 7
 ========================*/
 
 
 .contact-form-area{
-    height: 614px;
-	background-color: #5a6f83;
+    background-color: #5a6f83;
     padding-top:20px;
 }
 
 .contact-form-area h2{
     text-align:center;
     text-transform:uppercase;
-    	font-family: 'montserrat';
+    font-family: 'montserrat';
 	font-size: 36px;
 	font-weight: bold;
     color:white;
-       margin-top:0;
+    margin-top:0;
     margin-bottom:0;
 }
+
 
 input[type="text"],
 input[type="email"],
@@ -118,8 +124,12 @@ input[type="tel"],{
 	height: 50px;
 	border-radius: 10px;
     width:100%;
+        @include desktop {
+    width:100%;
     
-}
+    }
+    }
+
 input[type=submit] {
     background-color: #5a6f83;
     color: white;
@@ -136,8 +146,7 @@ input[type=submit] {
     border-color:white;
     width: 144px;
 	height: 50px;
-
-
+   
 }
 
 textarea {
@@ -147,9 +156,11 @@ textarea {
     font-family:'montserrat';
     font-weight:100;
     color:#5a6f83;
+        @include desktop {
     width:110%;
     
-   
+    }
+    
 }
 
 input[placeholder] {
@@ -159,33 +170,56 @@ input[placeholder] {
 }
 
 .wpcf7-form {
-       display: -webkit-flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction:column;
+   align-items:center;
+        @include desktop {
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
    flex-wrap: row-wrap;
     flex-direction:row;
     align-self:center;
     align-items:center;
-    justify-content: center;
+    justify-content: space-between;
+    
+    }
 
 }
 
 
 .message-field{
-    padding-left:10%;
+    
+    width:100%;
+    padding-top:1%;
+        @include desktop {
     width:40%;
     padding-top:1%;
+    }
 
 }
+
 .submit-field{
     text-align:center;
+    padding-bottom:10px;
 
 }
 
-.contact-minus-submit-button p{
 
-    width:300px;
+.contact-form-7-area{
+ display: flex;
+   flex-direction:column;
+    align-self:center;
+    align-items:center;
+    justify-content: center;
+    text-align:center;
+    width:100%;
+
 }
+
+
 /*=======================
 MAP AREA
 ========================*/
@@ -199,12 +233,11 @@ MAP AREA
     align-items:center;
     justify-content:center;
 
-
 }
+
 .directions-area p {
     color:white;
 }
-
 
 .directions-area h2 {
     color:white;
@@ -214,21 +247,15 @@ MAP AREA
 }
 
 .google-map{
-
-margin-left:4%;
+    margin-left:4%;
 }
 
-
-
 .email-contact{
-
-padding-top:20px;
-
+    padding-top:20px;
 }
 
 .address{
-
-padding-left:5%;
+    padding-left:5%;
     font-family:'montserrat';
     font-weight: 300;
     padding-bottom:5%;
@@ -247,13 +274,10 @@ NEWLETTER SIGN-UP AREA
 
 .newsletter-sign-up{
 	background-color: #dee2e6;
-
-
 }
 
 .newsletter-sign-up h2{
-	
-font-family: 'montserrat';
+	font-family: 'montserrat';
 	font-size: 36px;
 	font-weight: bold;
     color: #303b46;
@@ -263,19 +287,18 @@ font-family: 'montserrat';
     justify-content:center;
     margin-left:9%;
     margin-bottom:0;
-    
-
-}
+    }
 
 
 .sign-up-text{
 display:flex;
-flex-direction:row;
+flex-direction:column;
 margin-left:9%;
 padding-bottom:5%;
+  @include desktop {
+flex-direction:row;
 
-
-
+    }
 }
 
 .sign-up-text-request p{
@@ -286,24 +309,31 @@ padding-bottom:5%;
     margin-bottom:0;
     font-family: 'montserrat';
 	font-weight: 300;
-   
-
-}
+   }
 
 .input-and-button{
-display:flex;
+    display:flex;
+    flex-direction:column;
+    padding-left:0%;
+    padding-top:10px;
+        @include desktop {
+    display:flex;
     padding-left:5%;
+    flex-direction: row;
+    }
 }
 
 .sign-up-email{
-margin-left:5%;
-
+margin-left:0%;
+    @include desktop {
+ margin-left:5%;
+    }
 }
 
 .sign-up-button{
-
-padding-left:5%;
-
+        @include desktop {
+    padding-left:5%;
+    }
 }
 
 #your-email-input{
@@ -312,8 +342,7 @@ padding-left:5%;
 }
 
 
-
-    #subscribe-newsletter{
+#subscribe-newsletter{
     background-color:#383B4C;;
     color: white;
     cursor: pointer;
@@ -327,6 +356,5 @@ padding-left:5%;
     line-height: 1.2;
     border-width:0px;
     width: 162px;
-    
     }
 }

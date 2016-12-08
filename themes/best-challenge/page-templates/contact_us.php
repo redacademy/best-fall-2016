@@ -61,10 +61,11 @@ get_header(); ?>
                         </div>
                     </div>
                 </div>
-
-                    <?php get_template_part( 'template-parts/green-banner' ); ?>
-
-<!-- sponsors -->
+                
+                <?php get_template_part( 'template-parts/green-banner' ); ?>
+            
+                   
+  <!-- sponsors -->
                     	<div class="front-sponsors">
 				<div class="fp-sponsors-title container">
 					<h2 class="uppercase">Sponsored by</h2>
