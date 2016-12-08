@@ -1130,10 +1130,9 @@ users choice
       -ms-flex-pack: center;
           justify-content: center;
       max-width: 100%;
-      height: auto; }
-      @media (min-width: 600px) {
-        .page-template-default .taxonomy-wrapper:nth-child(1), .tax-participant_location .taxonomy-wrapper:nth-child(1) {
-          height: 430px; } }
+      min-height: 430px; }
+    .page-template-default .taxonomy-wrapper:nth-child(2) h2, .tax-participant_location .taxonomy-wrapper:nth-child(2) h2 {
+      color: white; }
     .page-template-default .taxonomy-wrapper .results, .tax-participant_location .taxonomy-wrapper .results {
       width: 80%;
       display: -ms-flexbox;
@@ -1265,27 +1264,41 @@ users choice
   .page-template-default .participants, .tax-participant_location .participants {
     margin-top: 5%;
     width: 80%;
-    margin: 0 auto;
+    height: auto;
+    margin: 1% auto 5% auto;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-direction: row;
-        flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
     /*Participant page buttons */ }
-    .page-template-default .participants .map, .tax-participant_location .participants .map {
-      -ms-flex-preferred-size: 60%;
-          flex-basis: 60%; }
+    .page-template-default .participants .bc-map, .tax-participant_location .participants .bc-map {
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center;
+      text-align: center; }
+      .page-template-default .participants .bc-map img, .tax-participant_location .participants .bc-map img {
+        width: 50%; }
     .page-template-default .participants .buttons, .tax-participant_location .participants .buttons {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
           flex-direction: column;
-      -ms-flex-preferred-size: 20%;
-          flex-basis: 20%; }
+      -ms-flex-pack: center;
+          justify-content: center; }
+      @media (min-width: 600px) {
+        .page-template-default .participants .buttons, .tax-participant_location .participants .buttons {
+          -ms-flex-direction: row;
+              flex-direction: row; } }
     .page-template-default .participants .dark-button, .tax-participant_location .participants .dark-button {
-      margin: 2%; }
-    .page-template-default .participants .dark-button input[type=submit], .tax-participant_location .participants .dark-button input[type=submit] {
+      margin: 2%;
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center; }
+    .page-template-default .participants .dark-button input[type=button], .tax-participant_location .participants .dark-button input[type=button] {
       cursor: pointer;
       padding: .25rem 2rem;
       color: #dee2e6;
@@ -1296,6 +1309,8 @@ users choice
       font-size: 1rem;
       box-shadow: none;
       border: 1px solid #303b46; }
+      .page-template-default .participants .dark-button input[type=button]:focus, .tax-participant_location .participants .dark-button input[type=button]:focus {
+        outline: none; }
 
 .info-404 {
   display: -ms-flexbox;
