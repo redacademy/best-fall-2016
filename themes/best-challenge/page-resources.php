@@ -34,10 +34,9 @@ get_header(); ?>
 					$terms = get_terms('activity_type', array('order' => 'DESC')); ?>
 					<div class="activities-wrapper"> 
 					<?php	
-					foreach($terms as $activity_type) { ?>
-							<div class="results">
-								<h2><?php echo $activity_type->name; ?> </h2>
-
+						foreach($terms as $activity_type) { ?>
+							<h2><?php echo $activity_type->name; ?> </h2>
+							<div class="activity-posts">	
 								<?php $args = array(
 									'post_type' => 'resources',
 									'posts_per_page' => 3,
@@ -66,11 +65,14 @@ get_header(); ?>
 										</div>
 									</div>
 								<?php endforeach; wp_reset_postdata(); ?>
-							</div>
+							</div>	
 						</div> <!-- activity wrapper section ends -->
 						<div class="load-more">
-							<p>Load More</p>
-							<img src=" <?php echo get_template_directory_uri() ?>/assets/images/arrow-down-small.png" alt="logo">
+							<a href="">
+								<p>Read More
+									<img src=" <?php echo get_template_directory_uri() ?>/assets/images/arrow-down-small.png" alt="logo">
+								</p>
+							</a>
 						</div>
 					<?php
 					} ?>
