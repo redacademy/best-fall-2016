@@ -95,8 +95,8 @@ get_header(); ?>
                     <div class="green-banner">
                         <div class="green-banner-flex">
                             <div class="green-banner-data">
-                                <p>inspire and power your team!</p>
-                                <p>Challenge yourself! Challenge your team!</p>
+                                <p>great prizes to be won!</p>
+                                <p>Learn more about how to get involved.</p>
                             </div>
                             <form method="POST" action="">
                                 <div class="green-buttons">
