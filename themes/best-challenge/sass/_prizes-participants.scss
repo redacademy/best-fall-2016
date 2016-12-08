@@ -211,32 +211,40 @@
 .participants {
     margin-top: 5%;
     width: 80%;
-    height: 300px;
-    margin: 0 auto;
+    height: auto;
+    margin: 1% auto 5% auto;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-direction: column;
     justify-content: center;
 
 .bc-map {
-    background-image: url(../../assets/images/BC.png);
-    background-repeat: no-repeat;
-    flex-basis: 30%;
-
+    align-self: center;
+    text-align: center;
+    img {
+        width: 50%;
+    }
 }
 .buttons {
     display: flex;
     flex-direction: column;
-    flex-basis: 20%;
+    justify-content: center;
+    @include desktop {
+        flex-direction: row;
+        }
     }
 
 /*Participant page buttons */
 
 .dark-button {
     margin: 2%;
+    align-self: center;
 }
-.dark-button input[type=submit] {
+.dark-button input[type=button] {
         @include dark-button;
+        &:focus {
+				outline: none;
+			}
     }
     
 }

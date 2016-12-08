@@ -31,15 +31,19 @@ get_header(); ?>
 			</div>	
 			<div class= "participants">
 				<div class="bc-map">
-					<!--<img id="myImage" src="<?php echo get_template_directory_uri() ?>/assets/images/bcmap.jpg">-->
+					<img id="bc-map" src="<?php echo get_template_directory_uri() ?>/assets/images/maps/bc.png">
+					<img id="van-map" src="<?php echo get_template_directory_uri() ?>/assets/images/maps/metrovan.png">
 				</div>
+
 				<div class="buttons">
 					<div class="dark-button" id="bc">
-						<input type="submit" value="British Columbia">
+						<input type="button" value="British Columbia">
+						<!--<a href= -->
 					</div>
 					
 					<div class="dark-button" id="vancouver">
-						<input type="submit"  value="Metro-Vancouver">
+						<input type="button"  value="Metro-Vancouver">
+						<!--<a href= -->
 					</div>
 				</div>
 			</div>

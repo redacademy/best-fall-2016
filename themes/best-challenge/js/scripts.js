@@ -110,5 +110,25 @@ $('.menu-toggle').on('click', function(){
    });
 /// Mobile menu end
 
+
+//change bc map on click on Participants page 
+ $('#van-map').hide();
+ $('#vancouver').on('mouseover', function (event) {
+    event.preventDefault();
+    $('#bc-map').hide();
+    $('#van-map').show();
+ });
+
+  $('#vancouver').mouseleave(function () {
+    event.preventDefault();
+    $('#bc-map').hide();
+    $('#van-map').show();
+ });
+
+  $('#bc').on('mouseover', function (event) {
+    $('#van-map').hide();
+    $('#bc-map').show();
+  });
+
 })(jQuery);
 
