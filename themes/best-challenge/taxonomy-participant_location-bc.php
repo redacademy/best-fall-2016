@@ -58,7 +58,7 @@ The temaplate to display taxonomy type archive
 							<div class="taxonomy-post">
 								<?php
 								$url =CFS()->get( 'website_url' ); ?>
-								<a href="<?php CFS()->get( 'website_url' ); ?>"></a>
+								<a href="<?php echo esc_url( $url ); ?>">
 								<?php esc_url( $url ); ?>
 								<div class="taxonomy-image">
 									<?php the_post_thumbnail( 'large' ); ?>							
@@ -69,6 +69,7 @@ The temaplate to display taxonomy type archive
 								<div class="taxonomy-description">
 									<p><?php the_content(); ?></p>
 								</div>
+								</a>
 							</div>
 							<?php
 							} 
