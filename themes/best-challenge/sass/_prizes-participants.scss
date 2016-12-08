@@ -52,7 +52,7 @@
         height: auto;
         /*background-color: $dark-background;*/
         &:nth-child(1){
-            background-image: url(../../assets/images/light-blue-bkgrnd.png);
+            background-image: url("../../assets/images/light-blue-bkgrnd.png");
             @include background-image;
             min-height: 430px;   
          
@@ -120,7 +120,7 @@
         .taxonomy-title {
             width: 230px;
             height: 115px;
-            background-image: url(../../assets/images/overlay.png);
+            background-image: url("../../assets/images/overlay.png");
             background-repeat: no-repeat;
             background-size: cover;
             position: absolute;
