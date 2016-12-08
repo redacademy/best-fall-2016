@@ -34,37 +34,29 @@
 
 .impact-results-info {
     text-align: center;
+    height: 10vh;
+    padding: 1rem 0;
     p {
         max-width: 60vw;
         margin: 0 auto;
     }
 }
 
-.impact-results-area{
+.impact-results-area {
     position: relative;
-
-div {
-    height: 30vh;
+    div {
+        height: 30vh;
+    }
+    div:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        border-left: 3px solid #fff;
+    }
 }
-div:after {
-    content:"";
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    border-left: 2px solid white;
-}
-}
-// .impact-results-area:after {
-//     content: "";
-//     position: absolute;
-//     z-index: -1;
-//     top: 0;
-//     bottom: 0;
-//     left: 50%;
-//     border-left: 2px solid #fff;
-// }
 
 .ir-co2 {
     background: url('../../assets/images/ir-lightgrey-curve-top.png')center no-repeat;
@@ -86,4 +78,7 @@ div:after {
     background: url('../../assets/images/ir-lightgrey-curve-bottom.png')center no-repeat;
 }
 
-.ir-numbers {}
+.ir-numbers {
+    background: purple;
+    height: 40vh;
+}

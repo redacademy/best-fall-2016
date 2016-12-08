@@ -40,15 +40,12 @@ get_header(); ?>
 
 			<div class="ir-fuel"> 
 
-			</div>
+			</div>	
 
+		</div>
 			<div class="ir-numbers"> 
 
 			</div>
-			
-			
-
-		</div>
 
 
 		

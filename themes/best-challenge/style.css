@@ -2848,7 +2848,9 @@ DROPDOWN-MENU
   text-align: center; }
 
 .impact-results-info {
-  text-align: center; }
+  text-align: center;
+  height: 10vh;
+  padding: 1rem 0; }
   .impact-results-info p {
     max-width: 60vw;
     margin: 0 auto; }
@@ -2864,7 +2866,7 @@ DROPDOWN-MENU
     top: 0;
     bottom: 0;
     left: 50%;
-    border-left: 2px solid white; }
+    border-left: 3px solid #fff; }
 
 .ir-co2 {
   background: url("../../assets/images/ir-lightgrey-curve-top.png") center no-repeat; }
@@ -2880,3 +2882,7 @@ DROPDOWN-MENU
 
 .ir-fuel {
   background: url("../../assets/images/ir-lightgrey-curve-bottom.png") center no-repeat; }
+
+.ir-numbers {
+  background: purple;
+  height: 40vh; }
