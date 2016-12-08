@@ -2,9 +2,6 @@
 this is the css unique to page-id-34
 ========================*/
 
-
-
-
 .page-id-34{
 
 
@@ -13,7 +10,6 @@ this is the css for the redirect banner which appears on button click
 ========================*/
 
 .toggle-visible-hidden{
-
     height:0vh;
     visibility: hidden;
 }
@@ -29,14 +25,13 @@ this is the css for the redirect banner which appears on button click
 }
 
 .entry-content p{
-
     font-family:'montserrat', serif;
     font-weight: 300;
     font-size:20px;
     
 }
 
-    /*=======================
+ /*=======================
 this is the first image on page
 ========================*/
 
@@ -48,10 +43,7 @@ this is the first image on page
     justify-content:center;
     padding-bottom:20px;
     margin-bottom: 4px;
-   	
-
-    
-}
+   	}
 
 .picture-wrapper h1{
    line-height:3.5rem;
@@ -60,25 +52,21 @@ this is the first image on page
     width:80%;
     text-align:center;
     text-transform:uppercase;
-
-
-
-    @include desktop {
-   line-height:3.5rem;
-    color:white;
-    font-size:44px;
-    width:60%;
-    text-align:center;
-    text-transform:uppercase;
+        @include desktop {
+            line-height:3.5rem;
+            color:white;
+            font-size:44px;
+            width:60%;
+            text-align:center;
+            text-transform:uppercase;
     }
 }
 
-    /*=======================
+/*=======================
 this is a section with three blocks flexed explaining the benefits of the Commuter Challenge
 ========================*/
 
 .challenge-benefit-blocks{
-
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -90,10 +78,9 @@ this is a section with three blocks flexed explaining the benefits of the Commut
     align-items:center;
     padding-top:20px;
       @include desktop {
-flex-direction:row;
-padding-bottom:60px;
+        flex-direction:row;
+        padding-bottom:60px;
       }
-
 }
 
 .challenge-benefit-blocks p{
@@ -127,10 +114,9 @@ padding-bottom:60px;
 }
 
 
-    /*=======================
+ /*=======================
 CUSTOM-FIELD-SUITE loop items with four blocks flexed
 ========================*/
-
 
 
 .custom-field-suite{
@@ -141,12 +127,10 @@ CUSTOM-FIELD-SUITE loop items with four blocks flexed
 }
 
 .how-to-participate-wrapper{
-   
-    padding-top:50px;
+   padding-top:50px;
     background:url('../../assets/images/blue-background-small.png') center ;
     background-size: cover;
-    
-}
+    }
 
 .how-to-participate-wrapper h2{
     text-transform:uppercase;
@@ -166,7 +150,7 @@ CUSTOM-FIELD-SUITE loop items with four blocks flexed
     color:white;
     text-align:center;
     font-size:14px;
-      font-family:'montserrat';
+    font-family:'montserrat';
     font-weight: 300;
 }
 
@@ -193,23 +177,21 @@ CUSTOM-FIELD-SUITE loop items with four blocks flexed
     align-items: center;
     height:400px;
     @include desktop {
-flex-direction: column;
- -webkit-flex: 0 1 24%;
-    -ms-flex: 0 1 24%;
-    flex: 0 1 24%;
+        flex-direction: column;
+        -webkit-flex: 0 1 24%;
+         -ms-flex: 0 1 24%;
+        flex: 0 1 24%;
     }
 }
 
 .description-wrapper{
     display:flex;
     width:40%;
-   
-    }
+   }
 
 .description-wrapper p{
     margin-top:0rem;
-    
-}
+    }
 
 .single-participate-block i{
     color:white;
@@ -221,7 +203,7 @@ flex-direction: column;
   font-family: 'montserrat';
 }
 
-    /*=======================
+ /*=======================
 this is the first form on the page consisting of a sign-up button which takes you to external site
 ========================*/
 
@@ -245,7 +227,6 @@ this is the first form on the page consisting of a sign-up button which takes yo
 }
 
 .underline-under-button{
-
     width:150px;
     padding-bottom: 100px;
 }
@@ -281,7 +262,7 @@ this is the first form on the page consisting of a sign-up button which takes yo
     }
 
 
-    /*=======================
+ /*=======================
 this section has two flexed blocks which links readers to additional resources
 ========================*/
 
@@ -301,43 +282,32 @@ this section has two flexed blocks which links readers to additional resources
     padding-top: 155px;
     padding-bottom: 20px;
      margin-top:-140px;
-   
-        @include desktop {
-  -webkit-flex: 0 1 49%;
-    -ms-flex: 0 1 49%;
-    flex: 0 1 49%;
-    align-self: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 20px;
-     margin-top:-140px;
-   
-        }
-
+         @include desktop {
+            -webkit-flex: 0 1 49%;
+            -ms-flex: 0 1 49%;
+            flex: 0 1 49%;
+            align-self: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-bottom: 20px;
+            margin-top:-140px;
+   }
 }
 
-
-    
- .need-resources{
-display:flex;
-flex-direction:column;
-
-
- @include desktop {
-display:flex;
-flex-direction:row;
-
- }
-
- }
+.need-resources{
+    display:flex;
+    flex-direction:column;
+        @include desktop {
+            display:flex;
+            flex-direction:row;
+    }
+}
 
 
 .need-resources h2{
 text-transform:uppercase;
 font-family: 'montserrat';
-
-
 }
 
 .need-resources img{
@@ -346,13 +316,12 @@ font-family: 'montserrat';
     -webkit-border-radius: 200px 200px 200px 200px;
     border: 0px solid #000000;
     height:278px;
-    
-}
+    }
 
 .need-resources p{
-padding-left:10%;
-  padding-right:10%;  
-     font-family:'montserrat';
+    padding-left:10%;
+    padding-right:10%;  
+    font-family:'montserrat';
     font-weight: 300;
 }
 
@@ -361,9 +330,8 @@ padding-left:10%;
     color:black
 }
 
-.need-prizes img{
-
-width:278px;
+.need-prizes img{   
+    width:278px;
 }
 
     /*=======================
@@ -371,16 +339,14 @@ this section is a testimonial
 ========================*/
 
 .testimonial{
-
     padding-bottom:30px;
 }
-
 
 .testimonial p{
     padding-left:25%;
     padding-right:25%;
     padding-top:3%;
-     font-family:'montserrat';
+    font-family:'montserrat';
     font-weight: 300;
     font-size:18px;
 }
@@ -395,7 +361,7 @@ this section is a testimonial
     padding-top:0%;
     margin-bottom:0;
     margin-top:0;
-     font-family:'montserrat';
+    font-family:'montserrat';
     font-weight: 300;
     }
 
