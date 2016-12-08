@@ -1616,8 +1616,7 @@ para-content {
 
 .logo-image {
   font-size: 2rem;
-  text-align: center;
-  width: 100%; }
+  text-align: center; }
 
 .commuterChallenge-contact-logos {
   display: -ms-flexbox;
@@ -2830,3 +2829,33 @@ DROPDOWN-MENU
 
 .impact-results-info {
   text-align: center; }
+  .impact-results-info p {
+    max-width: 60vw;
+    margin: 0 auto; }
+
+.impact-results-area div {
+  height: 30vh; }
+
+.ir-results-area:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 2px solid #fff; }
+
+.ir-co2 {
+  background: url("../../assets/images/ir-lightgrey-curve-top.png") center no-repeat; }
+
+.ir-km {
+  background: url("../../assets/images/ir-grey-curve-top.png") center no-repeat; }
+
+.ir-register {
+  background: url("../../assets/images/ir-dark-concave.png") center no-repeat; }
+
+.ir-calories {
+  background: url("../../assets/images/ir-grey-curve-bottom.png") center no-repeat; }
+
+.ir-fuel {
+  background: url("../../assets/images/ir-lightgrey-curve-bottom.png") center no-repeat; }

@@ -85,11 +85,11 @@ margin-right:50px;
     padding-bottom: 0;
     margin-bottom: 0;
     padding-bottom: 0.5rem;
-    padding-right:10%;
+    
 
              @include desktop {
    width:70%;
-   
+   padding-left:5%;
    padding-right:10%;
    align-items:flex-start;
        justify-content: space-between;
@@ -175,11 +175,8 @@ para-content {
 
 .logo-image {
     font-size: 2rem;
-   text-align:center;
-       width: 100%;
-    
-
-    
+    text-align: center;
+     
 }
 
 
@@ -207,7 +204,6 @@ para-content {
 
 .contact-us {
     padding-bottom: 0.8rem;
-    
        @include desktop {
     padding-bottom:50px;
     padding-right:5%;
