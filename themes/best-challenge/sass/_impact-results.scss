@@ -1,3 +1,9 @@
+.page-id-113 {
+
+.page-heading {
+    margin-bottom: 1rem;
+}
+
 .picture-wrapper-results {
     display: flex;
     background: url('../../assets/images/results-header-mobile.png')center no-repeat;
@@ -45,8 +51,13 @@
 .impact-results-area {
     position: relative;
     div {
-        height: 30vh;
+        height: 50vh;
+
+        @include desktop {
+            height: 40vh
+        }
     }
+    ////// The line through the middle of the divs ////
     div:after {
         content: "";
         position: absolute;
@@ -54,7 +65,7 @@
         top: 0;
         bottom: 0;
         left: 50%;
-        border-left: 3px solid #fff;
+        border-left: 5px solid #fff;
     }
 }
 
@@ -81,4 +92,8 @@
 .ir-numbers {
     background: purple;
     height: 40vh;
+}
+
+
+
 }
