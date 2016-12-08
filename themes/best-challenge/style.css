@@ -845,7 +845,7 @@ users choice
     .hero-banner {
       height: calc(100vh - 144px);
       background: url(../../assets/images/hero-curve.png) top no-repeat, url(../../assets/images/hero-banner.png) top no-repeat;
-      background-size: contain, cover;
+      background-size: cover, cover;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
@@ -2856,11 +2856,11 @@ DROPDOWN-MENU
 
 .page-id-113 .impact-results-area {
   position: relative; }
-  .page-id-113 .impact-results-area div {
-    height: 50vh; }
-    @media (min-width: 600px) {
-      .page-id-113 .impact-results-area div {
-        height: 40vh; } }
+  .page-id-113 .impact-results-area div:not(:nth-child(3)) {
+    height: 40vh;
+    background-size: cover; }
+  .page-id-113 .impact-results-area div:not(:first-child) {
+    margin-top: -10vh; }
   .page-id-113 .impact-results-area div:after {
     content: "";
     position: absolute;
@@ -2868,22 +2868,24 @@ DROPDOWN-MENU
     top: 0;
     bottom: 0;
     left: 50%;
-    border-left: calc(1/75vw) solid #fff; }
+    border-left: 5px solid #fff; }
 
 .page-id-113 .ir-co2 {
-  background: url("../../assets/images/ir-lightgrey-curve-top.png") center no-repeat; }
+  background: url("../../assets/images/ir-lightgrey-curve-top.png") top no-repeat; }
 
 .page-id-113 .ir-km {
-  background: url("../../assets/images/ir-grey-curve-top.png") center no-repeat; }
+  background: url("../../assets/images/ir-grey-curve-top.png") top no-repeat; }
 
 .page-id-113 .ir-register {
-  background: url("../../assets/images/ir-dark-concave.png") center no-repeat; }
+  background: url("../../assets/images/ir-dark-concave.png") center no-repeat;
+  background-size: cover;
+  height: 50vh; }
 
 .page-id-113 .ir-calories {
-  background: url("../../assets/images/ir-grey-curve-bottom.png") center no-repeat; }
+  background: url("../../assets/images/ir-grey-curve-bottom.png") top no-repeat; }
 
 .page-id-113 .ir-fuel {
-  background: url("../../assets/images/ir-lightgrey-curve-bottom.png") center no-repeat; }
+  background: url("../../assets/images/ir-lightgrey-curve-bottom.png") top no-repeat; }
 
 .page-id-113 .ir-numbers {
   background: purple;
