@@ -1,7 +1,9 @@
 
 		<div class="redirect-page-area">
+	
 			<div class="page-banner">
 				<h1>hooray!!!</h1>
+				
 				<h2>See you later!</h2>
 			</div>
 			<div class="redirect-explain">

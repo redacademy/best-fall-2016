@@ -198,6 +198,7 @@ para-content {
        @include desktop {
     line-height: 0.8;
    }
+}
 
 .questions p{
         @include desktop {
@@ -295,6 +296,7 @@ margin-top:50px;
 
 
 }
+
 /*=======================
 INPUT field
 ========================*/
@@ -308,25 +310,4 @@ INPUT field
    }
 }
 
-::-webkit-input-placeholder {
-    color: #383B4C;
-    padding: 1rem 1rem;
-}
 
-:-moz-placeholder {
-    /* Firefox 18- */
-    color: #383B4C;
-    padding: 1rem 1rem;
-}
-
-::-moz-placeholder {
-    /* Firefox 19+ */
-    color: #383B4C;
-    padding: 1rem 1rem;
-}
-
-:-ms-input-placeholder {
-    color: #383B4C;
-    padding: 1rem 1rem;
-}
-}

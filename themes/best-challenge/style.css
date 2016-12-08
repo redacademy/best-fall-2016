@@ -792,8 +792,8 @@ users choice
 
 .green-banner-data p {
   font-family: 'montserrat', sans-serif;
-  font-weight: 300;
-  font-size: 30px;
+  font-weight: 100;
+  font-size: 20px;
   margin-top: 0;
   margin-bottom: 25px; }
 
@@ -1420,6 +1420,9 @@ object {
   -ms-flex-align: center;
       align-items: center; }
 
+.challenge-logo {
+  color: white; }
+
 .page-banner {
   -ms-flex-align: center;
       align-items: center;
@@ -1433,7 +1436,8 @@ object {
 .page-banner h1 {
   text-transform: uppercase;
   font-size: 48px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-top: 0; }
 
 .page-banner h2 {
   font-size: 28px;
@@ -1658,112 +1662,109 @@ para-content {
       height: 300px; } }
 
 .questions {
-  padding-bottom: 0.8rem;
-  /*=======================
-FORM at bottom of footer
-========================*/
-  /*=======================
-INPUT field
-========================*/ }
+  padding-bottom: 0.8rem; }
   @media (min-width: 600px) {
     .questions {
       line-height: 0.8; } }
+
+@media (min-width: 600px) {
+  .questions p {
+    margin-bottom: 0; } }
+
+@media (min-width: 600px) {
+  .newsletter-subscription {
+    height: 300px;
+    text-align: left; } }
+
+/*=======================
+FORM at bottom of footer
+========================*/
+@media (min-width: 600px) {
+  .sign-up-button {
+    text-align: left; } }
+
+#subscribe {
+  background-color: #383B4C;
+  color: white;
+  cursor: pointer;
+  padding: .5rem 2rem;
+  border: 1;
+  border-radius: 25px;
+  font-family: 'montserrat';
+  font-weight: 100;
+  font-size: 0.8rem;
+  box-shadow: none;
+  line-height: 1.2;
+  border-width: 0px; }
   @media (min-width: 600px) {
-    .questions .questions p {
-      margin-bottom: 0; } }
+    #subscribe {
+      height: 50px;
+      width: 162px; } }
+
+#newsLetter-formId {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding-bottom: 0.8rem;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding-bottom: 20px; }
+
+#sign-up-form {
+  -ms-flex-pack: center;
+      justify-content: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 10%;
+  -ms-flex-align: center;
+      align-items: center; }
+
+#sign-up {
+  background-color: #383B4C;
+  color: white;
+  cursor: pointer;
+  padding: .25rem 2rem;
+  border: 1;
+  border-radius: 25px;
+  font-family: ralewaylight, sans-serif;
+  font-size: 0.8rem;
+  box-shadow: none;
+  line-height: 1.2;
+  border-width: 2px; }
+
+.subscribeForm-for-newsLetter {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-align: center; }
   @media (min-width: 600px) {
-    .questions .newsletter-subscription {
-      height: 300px;
-      text-align: left; } }
+    .subscribeForm-for-newsLetter {
+      display: inline-block; } }
+
+.sign-up-email {
+  padding-bottom: 10px; }
+
+.subscribe-to-newsletter {
+  margin-top: 50px; }
+
+/*=======================
+INPUT field
+========================*/
+#your-email {
+  border-radius: 10px 10px 10px 10px;
+  background-color: lightgray; }
   @media (min-width: 600px) {
-    .questions .sign-up-button {
-      text-align: left; } }
-  .questions #subscribe {
-    background-color: #383B4C;
-    color: white;
-    cursor: pointer;
-    padding: .5rem 2rem;
-    border: 1;
-    border-radius: 25px;
-    font-family: 'montserrat';
-    font-weight: 100;
-    font-size: 0.8rem;
-    box-shadow: none;
-    line-height: 1.2;
-    border-width: 0px; }
-    @media (min-width: 600px) {
-      .questions #subscribe {
-        height: 50px;
-        width: 162px; } }
-  .questions #newsLetter-formId {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    padding-bottom: 0.8rem;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    padding-bottom: 20px; }
-  .questions #sign-up-form {
-    -ms-flex-pack: center;
-        justify-content: center;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    width: 10%;
-    -ms-flex-align: center;
-        align-items: center; }
-  .questions #sign-up {
-    background-color: #383B4C;
-    color: white;
-    cursor: pointer;
-    padding: .25rem 2rem;
-    border: 1;
-    border-radius: 25px;
-    font-family: ralewaylight, sans-serif;
-    font-size: 0.8rem;
-    box-shadow: none;
-    line-height: 1.2;
-    border-width: 2px; }
-  .questions .subscribeForm-for-newsLetter {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center;
-    text-align: center; }
-    @media (min-width: 600px) {
-      .questions .subscribeForm-for-newsLetter {
-        display: inline-block; } }
-  .questions .sign-up-email {
-    padding-bottom: 10px; }
-  .questions .subscribe-to-newsletter {
-    margin-top: 50px; }
-  .questions #your-email {
-    border-radius: 10px 10px 10px 10px;
-    background-color: lightgray; }
-    @media (min-width: 600px) {
-      .questions #your-email {
-        height: 50px;
-        width: 252px; } }
-  .questions ::-webkit-input-placeholder {
-    color: #383B4C;
-    padding: 1rem 1rem; }
-  .questions :-moz-placeholder {
-    /* Firefox 18- */
-    color: #383B4C;
-    padding: 1rem 1rem; }
-  .questions ::-moz-placeholder {
-    /* Firefox 19+ */
-    color: #383B4C;
-    padding: 1rem 1rem; }
-  .questions :-ms-input-placeholder {
-    color: #383B4C;
-    padding: 1rem 1rem; }
+    #your-email {
+      height: 50px;
+      width: 252px; } }
 
 /*=======================
 this is the css unique to page-id-34

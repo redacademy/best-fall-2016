@@ -14,10 +14,12 @@
         $('.content-area').remove()
     $('.toggle-visible-hidden').css("visibility", "visible");
     $('.toggle-visible-hidden').css("height", "100vh");
-    });
+    
 
-window.setTimeout(function () {
+    window.setTimeout(function () {
         location.href = "https://commuterchallenge.ca/";
     }, 5000)
+    });
+    
 })(jQuery);
 
