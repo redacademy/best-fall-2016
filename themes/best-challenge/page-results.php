@@ -23,29 +23,71 @@ get_header(); ?>
 		<div class="impact-results-area"> 
 
 			<div class="ir-co2"> 
+				<div class="">
 
+				</div>
+				<div class="">
+
+				</div>
+				<div class="">
+
+				</div>
 			</div>
 			
 			<div class="ir-km"> 
+				<div class="">
 
+				</div>
+				<div class="">
+
+				</div>
+				<div class="">
+					
+				</div>
 			</div>
 
 			<div class="ir-register"> 
+				<div class="">
 
+				</div>
+				<div class="">
+
+				</div>
+				<div class="">
+					
+				</div>
 			</div>
 
 			<div class="ir-calories"> 
+				<div class="">
 
+				</div>
+				<div class="">
+
+				</div>
+				<div class="">
+					
+				</div>
 			</div>
 
 			<div class="ir-fuel"> 
+				<div class="">
 
+				</div>
+				<div class="">
+
+				</div>
+				<div class="">
+					
+				</div>
 			</div>	
 
 		</div>
-			<div class="ir-numbers"> 
 
-			</div>
+		
+		<div class="ir-numbers"> 
+
+		</div>
 
 
 		
