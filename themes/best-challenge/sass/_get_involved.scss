@@ -299,6 +299,8 @@ this section has two flexed blocks which links readers to additional resources
     flex-direction:column;
     align-items:center;
     padding-top: 155px;
+    padding-bottom: 20px;
+     margin-top:-140px;
    
         @include desktop {
   -webkit-flex: 0 1 49%;

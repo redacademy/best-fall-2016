@@ -1997,7 +1997,9 @@ this section is a testimonial
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center;
-    padding-top: 155px; }
+    padding-top: 155px;
+    padding-bottom: 20px;
+    margin-top: -140px; }
     @media (min-width: 600px) {
       .page-id-34 .resources-section {
         -ms-flex: 0 1 49%;
