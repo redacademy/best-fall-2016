@@ -5,17 +5,16 @@
                                 <p>engage as individuals!</p>
                                 <p>Discover how you can get involved</p>
                             </div>
-                        <form method="POST" action="">
-                           <div class="green-buttons">
-                        <div class="button1">
-                            <input type="submit" name="submit" value="Individual" id="go-green-button" >
-                        </div>
-                        <div class="button2">
-
-                            <input type="submit" name="submit" value="Workplace" id="go-green-button" >
-                        </div>
-                        </div>
-                        </div>
-                        </form>
-                    </div>
-                <!-- This is the end of that template part  -->
+                            <form method="POST" action="">
+                                <div class="green-buttons">
+                                    <div class="button1">
+                                        <input type="submit" name="submit" value="Individual" id="go-green-button" >
+                                    </div>
+                                    <div class="button2">
+                                        <input type="submit" name="submit" value="Workplace" id="go-green-button" >
+                                    </div>
+                               
+                            </form><!-- End of form  -->
+                        </div><!-- End of green-banner-flex  -->
+                    </div><!-- End of green-banner -->
+               
