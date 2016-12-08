@@ -1317,6 +1317,10 @@ users choice
       .page-template-default .participants .dark-button input[type=button]:focus, .tax-participant_location .participants .dark-button input[type=button]:focus {
         outline: none; }
 
+.page-id-119 .activities-section {
+  width: 100%;
+  background-color: blue; }
+
 .info-404 {
   display: -ms-flexbox;
   display: flex;
