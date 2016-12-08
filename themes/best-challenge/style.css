@@ -1128,7 +1128,7 @@ users choice
     height: auto;
     /*background-color: $dark-background;*/ }
     .page-template-default .taxonomy-wrapper:nth-child(1), .tax-participant_location .taxonomy-wrapper:nth-child(1) {
-      background-image: url(../../assets/images/light-blue-bkgrnd.png);
+      background-image: url("../../assets/images/light-blue-bkgrnd.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -1200,7 +1200,7 @@ users choice
       .page-template-default .taxonomy-wrapper .results .taxonomy-title, .tax-participant_location .taxonomy-wrapper .results .taxonomy-title {
         width: 230px;
         height: 115px;
-        background-image: url(../../assets/images/overlay.png);
+        background-image: url("../../assets/images/overlay.png");
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
