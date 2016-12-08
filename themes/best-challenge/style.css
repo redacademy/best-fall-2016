@@ -2853,17 +2853,18 @@ DROPDOWN-MENU
     max-width: 60vw;
     margin: 0 auto; }
 
-.impact-results-area div {
-  height: 30vh; }
-
-.ir-results-area:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  border-left: 2px solid #fff; }
+.impact-results-area {
+  position: relative; }
+  .impact-results-area div {
+    height: 30vh; }
+  .impact-results-area div:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 2px solid white; }
 
 .ir-co2 {
   background: url("../../assets/images/ir-lightgrey-curve-top.png") center no-repeat; }
