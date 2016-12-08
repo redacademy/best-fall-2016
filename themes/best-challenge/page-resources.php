@@ -28,11 +28,56 @@ get_header(); ?>
 				?>	
 			</div>
 			
+			
+			<div class="activity-section">
+				<?php
+					$terms = get_terms('activity_type', array('order' => 'DESC'));  
+					foreach($terms as $activity_type) { ?>
+						<div class="taxonomy-wrapper">
+							<div class="results">
+								<h2><?php echo $activity_type->name; ?> </h2>
+
+								<?php $args = array(
+									'post_type' => 'resources',
+									// 'posts_per_page' => 4,
+									'tax_query' => array( 
+										array(
+											'taxonomy' => 'activity_type',
+											'field'    => 'slug',
+											'terms'    =>  $activity_type,
+											
+										),
+									),  
+								);
+
+								$activities = get_posts( $args ); ?>
+							
+							
+								<?php foreach( $activities as $post ) : setup_postdata($post); ?>
+								
+									<div class="taxonomy-post">
+										<div class="prize-image">
+											<?php the_post_thumbnail( 'large' ); ?>							
+										</div>
+
+										<div class="taxonomy-title">
+											<h3><?php the_title(); ?></h3>
+										</div>
+										<div class="taxonomy-description">
+											<p><?php the_content(); ?></p>
+										</div>
+									</div>
+								<?php endforeach; wp_reset_postdata(); ?>
+							</div>
+						</div> <!-- prize wrapper section ends -->
+					<?php
+					} ?>
+			</div>
+		
+		
+	   		<!--for every child of  show with sub-children show sub-children-->
+			<!--get all from main parent - download_type-->
 			<?php
-
-	   // for every child of  show with sub-children show sub-children
-		// get all from main parent - download_type
-
 			$taxonomy = 'download_type';
 			$terms = get_terms($taxonomy, array('parent' => 0, 'order' => 'DESC'));   
 				foreach($terms as $download_type) { ?>
