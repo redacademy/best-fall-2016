@@ -1264,32 +1264,41 @@ users choice
   .page-template-default .participants, .tax-participant_location .participants {
     margin-top: 5%;
     width: 80%;
-    height: 300px;
-    margin: 0 auto;
+    height: auto;
+    margin: 1% auto 5% auto;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-direction: row;
-        flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-direction: column;
+        flex-direction: column;
     -ms-flex-pack: center;
         justify-content: center;
     /*Participant page buttons */ }
     .page-template-default .participants .bc-map, .tax-participant_location .participants .bc-map {
-      background-image: url(../../assets/images/BC.png);
-      background-repeat: no-repeat;
-      -ms-flex-preferred-size: 30%;
-          flex-basis: 30%; }
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center;
+      text-align: center; }
+      .page-template-default .participants .bc-map img, .tax-participant_location .participants .bc-map img {
+        width: 50%; }
     .page-template-default .participants .buttons, .tax-participant_location .participants .buttons {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
           flex-direction: column;
-      -ms-flex-preferred-size: 20%;
-          flex-basis: 20%; }
+      -ms-flex-pack: center;
+          justify-content: center; }
+      @media (min-width: 600px) {
+        .page-template-default .participants .buttons, .tax-participant_location .participants .buttons {
+          -ms-flex-direction: row;
+              flex-direction: row; } }
     .page-template-default .participants .dark-button, .tax-participant_location .participants .dark-button {
-      margin: 2%; }
-    .page-template-default .participants .dark-button input[type=submit], .tax-participant_location .participants .dark-button input[type=submit] {
+      margin: 2%;
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center; }
+    .page-template-default .participants .dark-button input[type=button], .tax-participant_location .participants .dark-button input[type=button] {
       cursor: pointer;
       padding: .25rem 2rem;
       color: #dee2e6;
@@ -1300,6 +1309,8 @@ users choice
       font-size: 1rem;
       box-shadow: none;
       border: 1px solid #303b46; }
+      .page-template-default .participants .dark-button input[type=button]:focus, .tax-participant_location .participants .dark-button input[type=button]:focus {
+        outline: none; }
 
 .info-404 {
   display: -ms-flexbox;
@@ -1517,11 +1528,11 @@ object {
       justify-content: center;
   padding-bottom: 0;
   margin-bottom: 0;
-  padding-bottom: 0.5rem; }
+  padding-bottom: 0.5rem;
+  padding-right: 10%; }
   @media (min-width: 600px) {
     .about-best {
       width: 70%;
-      padding-left: 5%;
       padding-right: 10%;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -2099,15 +2110,23 @@ NEWLETTER SIGN-UP AREA
     display: flex;
     -ms-flex-align: center;
         align-items: center;
-    -ms-flex-direction: row;
-        flex-direction: row;
+    -ms-flex-direction: column;
+        flex-direction: column;
     -ms-flex-pack: center;
         justify-content: center; }
+    @media (min-width: 600px) {
+      .page-id-91 .contact-person-section {
+        -ms-flex-direction: row;
+            flex-direction: row; } }
   .page-id-91 .contact-person-image {
     padding-top: 30px;
     padding-right: 35px; }
   .page-id-91 .contact-person-data {
-    line-height: 1.3; }
+    line-height: 1.3;
+    text-align: center; }
+    @media (min-width: 600px) {
+      .page-id-91 .contact-person-data {
+        text-align: left; } }
   .page-id-91 .contact-person-data h2 {
     text-transform: uppercase;
     margin-top: 0;
@@ -2124,7 +2143,6 @@ NEWLETTER SIGN-UP AREA
     margin-bottom: 0;
     margin-top: 0; }
   .page-id-91 .contact-form-area {
-    height: 614px;
     background-color: #5a6f83;
     padding-top: 20px; }
   .page-id-91 .contact-form-area h2 {
@@ -2143,7 +2161,12 @@ NEWLETTER SIGN-UP AREA
     border: none;
     height: 50px;
     border-radius: 10px;
-    width: 100%; }
+    width: 60%; }
+    @media (min-width: 600px) {
+      .page-id-91 input[type="text"],
+      .page-id-91 input[type="email"],
+      .page-id-91 input[type="tel"] {
+        width: 100%; } }
   .page-id-91 input[type=submit] {
     background-color: #5a6f83;
     color: white;
@@ -2167,7 +2190,10 @@ NEWLETTER SIGN-UP AREA
     font-family: 'montserrat';
     font-weight: 100;
     color: #5a6f83;
-    width: 110%; }
+    width: 275px; }
+    @media (min-width: 600px) {
+      .page-id-91 textarea {
+        width: 110%; } }
   .page-id-91 input[placeholder] {
     font-family: 'montserrat';
     font-weight: 100;
@@ -2175,24 +2201,30 @@ NEWLETTER SIGN-UP AREA
   .page-id-91 .wpcf7-form {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: row-wrap;
-        flex-wrap: row-wrap;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    -ms-flex-item-align: center;
-        align-self: center;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center; }
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    @media (min-width: 600px) {
+      .page-id-91 .wpcf7-form {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: row-wrap;
+            flex-wrap: row-wrap;
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -ms-flex-item-align: center;
+            align-self: center;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
   .page-id-91 .message-field {
-    padding-left: 10%;
     width: 40%;
     padding-top: 1%; }
+    @media (min-width: 600px) {
+      .page-id-91 .message-field {
+        padding-left: 10%; } }
   .page-id-91 .submit-field {
     text-align: center; }
-  .page-id-91 .contact-minus-submit-button p {
-    width: 300px; }
   .page-id-91 .directions-area {
     height: 540px;
     background-color: #303b46;
@@ -2242,10 +2274,14 @@ NEWLETTER SIGN-UP AREA
   .page-id-91 .sign-up-text {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
+    -ms-flex-direction: column;
+        flex-direction: column;
     margin-left: 9%;
     padding-bottom: 5%; }
+    @media (min-width: 600px) {
+      .page-id-91 .sign-up-text {
+        -ms-flex-direction: row;
+            flex-direction: row; } }
   .page-id-91 .sign-up-text-request p {
     -ms-flex-direction: row;
         flex-direction: row;
@@ -2260,11 +2296,25 @@ NEWLETTER SIGN-UP AREA
   .page-id-91 .input-and-button {
     display: -ms-flexbox;
     display: flex;
-    padding-left: 5%; }
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding-left: 0%;
+    padding-top: 10px; }
+    @media (min-width: 600px) {
+      .page-id-91 .input-and-button {
+        display: -ms-flexbox;
+        display: flex;
+        padding-left: 5%;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
   .page-id-91 .sign-up-email {
-    margin-left: 5%; }
-  .page-id-91 .sign-up-button {
-    padding-left: 5%; }
+    margin-left: 0%; }
+    @media (min-width: 600px) {
+      .page-id-91 .sign-up-email {
+        margin-left: 5%; } }
+  @media (min-width: 600px) {
+    .page-id-91 .sign-up-button {
+      padding-left: 5%; } }
   .page-id-91 #your-email-input {
     background-color: white;
     width: 250px; }

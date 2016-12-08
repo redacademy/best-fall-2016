@@ -54,8 +54,12 @@ this is the CONTACT PERSON INFO
     display: -ms-flexbox;
     display: flex;
     align-items:center;
-    flex-direction:row;
+     flex-direction:column;
     justify-content:center;
+      @include desktop {
+flex-direction:row;
+    
+    }
 
 }
 
@@ -66,6 +70,11 @@ this is the CONTACT PERSON INFO
 
 .contact-person-data{
     line-height:1.3;
+    text-align:center;
+        @include desktop {
+    text-align:left;
+    
+    }
 }
 
 
@@ -94,7 +103,7 @@ CONTACT FORM 7
 
 
 .contact-form-area{
-    height: 614px;
+    
 	background-color: #5a6f83;
     padding-top:20px;
 }
@@ -110,6 +119,7 @@ CONTACT FORM 7
     margin-bottom:0;
 }
 
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],{
@@ -117,7 +127,12 @@ input[type="tel"],{
     border:none;
 	height: 50px;
 	border-radius: 10px;
-    width:100%;
+    width:60%;
+    
+          @include desktop {
+width:100%;
+    
+    }
     
 }
 input[type=submit] {
@@ -136,6 +151,7 @@ input[type=submit] {
     border-color:white;
     width: 144px;
 	height: 50px;
+  
 
 
 }
@@ -147,7 +163,11 @@ textarea {
     font-family:'montserrat';
     font-weight:100;
     color:#5a6f83;
+    width:275px;
+       @include desktop {
     width:110%;
+    
+    }
     
    
 }
@@ -162,19 +182,36 @@ input[placeholder] {
        display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+   
+    flex-direction:column;
+    
+ 
+   
+         @include desktop {
+         display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
    flex-wrap: row-wrap;
     flex-direction:row;
     align-self:center;
     align-items:center;
     justify-content: center;
+    
+    
+    }
 
 }
 
 
 .message-field{
-    padding-left:10%;
+    
     width:40%;
     padding-top:1%;
+     @include desktop {
+      padding-left:10%;
+  
+    
+    }
 
 }
 .submit-field{
@@ -182,10 +219,9 @@ input[placeholder] {
 
 }
 
-.contact-minus-submit-button p{
 
-    width:300px;
-}
+
+
 /*=======================
 MAP AREA
 ========================*/
@@ -270,10 +306,15 @@ font-family: 'montserrat';
 
 .sign-up-text{
 display:flex;
-flex-direction:row;
+flex-direction:column;
 margin-left:9%;
 padding-bottom:5%;
+  @include desktop {
+    
+flex-direction:row;
 
+    
+    }
 
 
 }
@@ -292,18 +333,36 @@ padding-bottom:5%;
 
 .input-and-button{
 display:flex;
-    padding-left:5%;
+flex-direction:column;
+    padding-left:0%;
+    padding-top:10px;
+      @include desktop {
+    display:flex;
+padding-left:5%;
+flex-direction: row;
+
+    
+    }
 }
 
 .sign-up-email{
-margin-left:5%;
+margin-left:0%;
+    @include desktop {
+ margin-left:5%;
+
+    
+    }
 
 }
 
 .sign-up-button{
 
-padding-left:5%;
 
+  @include desktop {
+    padding-left:5%;
+
+    
+    }
 }
 
 #your-email-input{
