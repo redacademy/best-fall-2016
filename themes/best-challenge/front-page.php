@@ -125,7 +125,7 @@ get_header(); ?>
 				<div class="results-info">
 					
 					<div class="bc-total">
-						<?php echo CFS()->get( 'bc_avoided_co2_in_year' ); ?>
+						<?php echo "the fuckkk" ?>
 						<p>British Columbia Total</p>
 					</div>	
 
