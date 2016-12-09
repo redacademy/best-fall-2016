@@ -409,14 +409,7 @@ DROPDOWN-MENU
            @include heading-style;
         }
     
-    .title-wrapper {
-        line-height: 0.5;
-        margin-top: 10%;
-        height: 200px;
-        @include desktop {
-            margin-top: 5%;
-        }
-    }
+    
 
     .content {
         width: 90%;

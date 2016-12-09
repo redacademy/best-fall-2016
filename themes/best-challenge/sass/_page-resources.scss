@@ -1,16 +1,30 @@
+    .resources-page-heading {
+         background-image: url(../../assets/images/participant-header.png);
+         @include heading-backgrounds;
+
+        @include desktop {
+            background-image: url(../../assets/images/participant-header.png);
+        }
+    }
+
     .activities-section {
         width: 100%;
-        background-color: blue;
+        background:url('../../assets/images/light-blue-curved-background.png')center bottom no-repeat;
+
     }
     .activities-wrapper {
         width: 80%;
         margin: 0 auto;
+        padding-top: 3%;
 
         h2 {
             @include section-heading;
+            font-size: 2.25rem;
+            color: white;
         }
         
         .activity-posts {
+            padding: 2% 0;
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
@@ -22,6 +36,8 @@
             .single-activity-post {
                 height: 458.9px;
                 box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.2);
+                position: relative;
+                background-color: white;
                 @include desktop {
                     width: 305.3px;
                 }
@@ -43,7 +59,7 @@
                         
                     }
                 }
-                .actiity-description {
+                .activity-description {
                    width: 257px;
                    text-align: left;
                    margin: 0 auto;
@@ -52,10 +68,24 @@
                        font-weight: 300;
                        margin: 0;
                    }
+                   a {
+                       color: $best-green;
+                       text-decoration: none;
+                       font-size: 1.7rem;
+                       font-weight: 300;
+                       position: absolute;
+                       bottom: 10px;
+                       left: 10px;
+                       &:before {
+                           content: url('../../assets/images/icons/green-arrow.png');
+                           margin: 10px;
+                       }
+                   }
                 }
             }           
         }       
     }
     .load-more {
         @include white-load-more;
+        padding: 1%;
     }

@@ -54,7 +54,7 @@ users choice
     flex-direction: column;
     @include desktop {
         flex-direction: row;
-}
+    }
 }
 
 .green-buttons {
@@ -66,7 +66,7 @@ users choice
         margin-bottom: 0px;
         margin-top: 0px;
         padding-left:100px;
-}
+    }
 }
 
 .button1{
@@ -77,17 +77,11 @@ users choice
     padding-right:5%;
 }
 
-
-
-
 .button2{
     display: flex;
     align-items: center;
     justify-content: center;
     align-items:center;
-
-
-
 }
 
 
@@ -96,7 +90,7 @@ users choice
     background-color: transparent;
     color: black;
     cursor: pointer;
-    padding: .5rem 2rem;
+    padding:  .5rem 3rem;
     border: 1;
     border-radius: 25px;
     font-family: 'montserrat', sans-serif;
@@ -113,24 +107,22 @@ users choice
         @include desktop {
             width: 162px;
                 height: 50px;
-
+        padding: .5rem 2.3rem;
 
 }
 }
 .button1 a:hover{
-background-color: #303b46;;
-color:#a6ce39;
+    background-color: #303b46;;
+    color:#a6ce39;
 
 }
-
-
 
 .button2 a{
     border:1px solid black;
     background-color: transparent;
     color: black;
     cursor: pointer;
-    padding: .5rem 2rem;
+    padding:  .5rem 3.3rem;
     border: 1;
     border-radius: 25px;
     font-family: 'montserrat', sans-serif;
@@ -146,18 +138,15 @@ color:#a6ce39;
     padding-right: 5%;
         @include desktop {
             width: 162px;
-                height: 50px;
-
-
+            height: 50px;
+            padding: .5rem 2.3rem;
+    }
 }
-}
+
 .button2 a:hover{
 background-color: #303b46;;
 color:#a6ce39;
-
 }
-
-
 
 form{
     align-items:center;

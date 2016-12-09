@@ -59,7 +59,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "forms";
 @import "navigation";
 @import "header";
-@import "faq";
+@import "global";
 @import "modules";
 @import "widgets";
 @import "content";
@@ -70,10 +70,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "404";
 @import "media";
 @import "page-templates";
-@import "footers.scss";
 @import "get_involved.scss";
 @import "contact-us-page.scss";
 @import "impact-results";
+@import "footers.scss";
 
 
 
