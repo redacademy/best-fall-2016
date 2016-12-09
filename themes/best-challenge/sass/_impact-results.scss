@@ -1,67 +1,193 @@
 .page-id-113 {
-
-.page-heading {
-    margin-bottom: 1rem;
-}
-
-.picture-wrapper-results {
-    display: flex;
-    background: url('../../assets/images/results-header-mobile.png')center no-repeat;
-    background-size: cover;
-    height: 30vh;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 20px;
-    margin-bottom: 4px;
-    flex-direction: column;
-    @include desktop {
-        background: url('../../assets/images/results-header.png') center no-repeat;
+    .page-heading {
+        margin-bottom: 1rem;
+    }
+    .picture-wrapper-results {
+        display: flex;
+        background: url('../../assets/images/results-header-mobile.png')center no-repeat;
         background-size: cover;
+        height: 30vh;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+        margin-bottom: 4px;
+        flex-direction: column;
+        @include desktop {
+            background: url('../../assets/images/results-header.png') center no-repeat;
+            background-size: cover;
+        }
     }
-}
-
-.picture-wrapper-results h1 {
-    line-height: 3.5rem;
-    color: white;
-    font-size: 3rem;
-    margin-bottom: 0;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'montserrat';
-}
-
-.picture-wrapper-results p {
-    color: white;
-    font-family: 'montserrat';
-    font-weight: 300;
-    margin-top: 0;
-    text-align: center;
-}
-
-.impact-results-info {
-    text-align: center;
-    height: 10vh;
-    padding: 1rem 0;
-    p {
-        max-width: 60vw;
-        margin: 0 auto;
+    .picture-wrapper-results h1 {
+        line-height: 3.5rem;
+        color: white;
+        font-size: 3rem;
+        margin-bottom: 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'montserrat';
     }
-}
-
-.impact-results-area {
-    position: relative;
-    div:not(:nth-child(3)) {
+    .picture-wrapper-results p {
+        color: white;
+        font-family: 'montserrat';
+        font-weight: 300;
+        margin-top: 0;
+        text-align: center;
+    }
+    .impact-results-info {
+        text-align: center;
+        height: 10vh;
+        padding: 1rem 0;
+        p {
+            max-width: 60vw;
+            margin: 0 auto;
+        }
+    }
+    .impact-results-area {
+        position: relative;
+        // //// The line through the middle of the divs ////
+        // div:after {
+        //     content: "";
+        //     position: absolute;
+        //     z-index: 0;
+        //     top: 0;
+        //     bottom: 0;
+        //     left: 50%;
+        //     border-left: 5px solid #fff;
+        // }
+    }
+    .ir-co2 {
+        background: url('../../assets/images/ir-lightgrey-curve-top.png') top no-repeat;
+        background-size: cover;
         height: 40vh;
-        background-size:  cover;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        div {
+            height: 25vh;
+            min-width: 20vw;
+            background: teal;
+        }
+        .ir-co2-image {
+            position: absolute;
+            background: url('../../assets/images/circle-co2.png') center no-repeat;
+            background-size: contain;
+            z-index: 1;
+            bottom: 20%;
+        }
     }
-    div:not(:first-child) {
-            margin-top: -10vh;
+    .ir-km {
+        background: url('../../assets/images/ir-grey-curve-top.png') top no-repeat;
+        background-size: cover;
+        height: 50vh;
+        margin-top: -9vh;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @include desktop {
+            margin-top: -11vh;
+        }
+        div {
+            height: 25vh;
+            min-width: 20vw;
+            background: teal;
+        }
+        .ir-km-image {
+            position: absolute;
+            background: url('../../assets/images/circle-distance.png') center no-repeat;
+            background-size: contain;
+            z-index: 1;
+            bottom: 20%;
+        }
     }
-    ////// The line through the middle of the divs ////
-    div:after {
+    .ir-register {
+        background: url('../../assets/images/ir-dark-concave.png')top no-repeat;
+        background-size: cover;
+        height: 60vh;
+        margin-top: -9vh;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @include desktop {
+            margin-top: -11vh;
+        }
+        div {
+            height: 25vh;
+            min-width: 20vw;
+            background: teal;
+        }
+        .ir-register-image {
+            position: absolute;
+            background: url('../../assets/images/circle-participants.png') center no-repeat;
+            background-size: contain;
+            z-index: 1;
+            bottom: 30%;
+        }
+    }
+    .ir-calories {
+        background: url('../../assets/images/ir-grey-curve-bottom.png')top no-repeat;
+        background-size: cover;
+        height: 50vh;
+        margin-top: -9vh;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 9vh;
+        @include desktop {
+            margin-top: -11vh;
+            padding-bottom: 11vh;
+        }
+        div {
+            height: 25vh;
+            min-width: 20vw;
+            background: teal;
+        }
+        .ir-calories-image {
+            position: absolute;
+            background: url('../../assets/images/circle-carbs.png') center no-repeat;
+            background-size: contain;
+            z-index: 1;
+            bottom: 36%;
+        }
+    }
+    .ir-fuel {
+        background: url('../../assets/images/ir-lightgrey-curve-bottom.png')top no-repeat;
+        background-size: cover;
+        height: 53vh;
+        margin-top: -9vh;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 9vh;
+        @include desktop {
+            margin-top: -11vh;
+            padding-bottom: 11vh;
+        }
+        div {
+            height: 25vh;
+            min-width: 20vw;
+            background: teal;
+        }
+        .ir-fuel-image {
+            position: absolute;
+            background: url('../../assets/images/circle-station.png') center no-repeat;
+            background-size: contain;
+            z-index: 1;
+            bottom: 36%;
+        }
+    }
+    .ir-co2:after,
+    .ir-km:after,
+    .ir-register:after,
+    .ir-calories:after,
+    .ir-fuel:after {
         content: "";
         position: absolute;
-        z-index: 1;
+        z-index: 0;
         top: 0;
         bottom: 0;
         left: 50%;
@@ -69,33 +195,8 @@
     }
 }
 
-.ir-co2 {
-    background: url('../../assets/images/ir-lightgrey-curve-top.png') top no-repeat;
-}
-
-.ir-km {
-    background: url('../../assets/images/ir-grey-curve-top.png') top no-repeat;
-}
-
-.ir-register {
-    background: url('../../assets/images/ir-dark-concave.png')top  no-repeat;
-    background-size: cover;
-    height: 50vh
-}
-
-.ir-calories {
-    background: url('../../assets/images/ir-grey-curve-bottom.png')top  no-repeat;
-}
-
-.ir-fuel {
-    background: url('../../assets/images/ir-lightgrey-curve-bottom.png')top no-repeat;
-}
-
 .ir-numbers {
-    background: purple;
+ 
     height: 40vh;
-}
-
-
-
+    text-align: center;
 }

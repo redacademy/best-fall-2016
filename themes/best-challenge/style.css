@@ -584,19 +584,26 @@ a {
   -ms-flex-pack: justify;
       justify-content: space-between; }
   @media (min-width: 600px) {
-    .logo-date .menu-icon {
-      display: none; } }
-
-.event-date {
-  color: white; }
-
-.logo img {
-  height: 40px;
-  width: 22vw; }
-  @media (min-width: 600px) {
-    .logo img {
-      height: 40px;
-      width: 276px; } }
+    .logo-date {
+      -ms-flex-align: start;
+          align-items: flex-start;
+      margin-top: 2vh; }
+      .logo-date .menu-icon {
+        display: none; } }
+  .logo-date .event-date {
+    color: white; }
+    @media (min-width: 600px) {
+      .logo-date .event-date h2 {
+        margin-top: 0; } }
+    .logo-date .event-date .logo-header {
+      padding-top: 1vh; }
+      .logo-date .event-date .logo-header img {
+        height: 40px;
+        width: 22vw; }
+        @media (min-width: 600px) {
+          .logo-date .event-date .logo-header img {
+            height: 40px;
+            width: 276px; } }
 
 /* hide mobile version by default */
 .logo .mobile {
@@ -978,7 +985,21 @@ form {
         border-color: transparent; } }
       .travel-by #go-green-button {
         color: #fff;
-        border-color: #fff; }
+        border: 3px solid #fff;
+        background-color: transparent;
+        cursor: pointer;
+        padding: .5rem 2rem;
+        border-radius: 25px;
+        font-family: "montserrat", sans-serif;
+        font-size: 1rem;
+        box-shadow: none;
+        line-height: 1.7;
+        text-shadow: none;
+        width: 200px;
+        text-decoration: none; }
+      .travel-by .green-buttons {
+        padding: 0;
+        margin: 0 auto; }
       .travel-by h3 {
         font-size: 2.75rem;
         margin: 0; }
@@ -989,20 +1010,38 @@ form {
 
 .travel-by-mobile {
   text-align: center;
-  background: #dee2e6; }
+  background: #dee2e6;
+  margin: 0 auto; }
   .travel-by-mobile h3 {
     margin: 0; }
+  .travel-by-mobile #go-green-button {
+    color: #000;
+    border: 3px solid #000;
+    background-color: transparent;
+    cursor: pointer;
+    padding: .5rem 2rem;
+    border-radius: 25px;
+    font-family: "montserrat", sans-serif;
+    font-size: 1rem;
+    box-shadow: none;
+    line-height: 1.7;
+    text-shadow: none;
+    width: 200px;
+    text-decoration: none; }
+  .travel-by-mobile form {
+    -ms-flex-pack: center;
+        justify-content: center; }
 
 .ccbc-front {
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
-  .ccbc-front div {
+  .ccbc-front p {
+    max-width: 250px;
+    margin: 0 auto; }
+  .ccbc-front div:not(:last-child) {
     margin-bottom: 2rem; }
-    .ccbc-front div p {
-      max-width: 250px;
-      margin: 0 auto; }
 
 .ccbc-title {
   margin-bottom: 3rem; }
@@ -1021,20 +1060,22 @@ form {
 .front-sponsors {
   display: -ms-flexbox;
   display: flex;
-  height: auto;
+  height: 40vh;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: justify;
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
-  background: #dee2e6; }
+  background: url("../../assets/images/sponsors-grey-bg.png") top no-repeat;
+  background-size: cover; }
 
 .modologo {
   padding-bottom: 1rem; }
 
 .fp-sponsors-title h2 {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  padding-top: 30%; }
 
 .fp-sponsors-img {
   width: 100%;
@@ -2314,40 +2355,153 @@ NEWLETTER SIGN-UP AREA
 
 .page-id-113 .impact-results-area {
   position: relative; }
-  .page-id-113 .impact-results-area div:not(:nth-child(3)) {
-    height: 40vh;
-    background-size: cover; }
-  .page-id-113 .impact-results-area div:not(:first-child) {
-    margin-top: -10vh; }
-  .page-id-113 .impact-results-area div:after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    border-left: 5px solid #fff; }
 
 .page-id-113 .ir-co2 {
-  background: url("../../assets/images/ir-lightgrey-curve-top.png") top no-repeat; }
+  background: url("../../assets/images/ir-lightgrey-curve-top.png") top no-repeat;
+  background-size: cover;
+  height: 40vh;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center; }
+  .page-id-113 .ir-co2 div {
+    height: 25vh;
+    min-width: 20vw;
+    background: teal; }
+  .page-id-113 .ir-co2 .ir-co2-image {
+    position: absolute;
+    background: url("../../assets/images/circle-co2.png") center no-repeat;
+    background-size: contain;
+    z-index: 1;
+    bottom: 20%; }
 
 .page-id-113 .ir-km {
-  background: url("../../assets/images/ir-grey-curve-top.png") top no-repeat; }
+  background: url("../../assets/images/ir-grey-curve-top.png") top no-repeat;
+  background-size: cover;
+  height: 50vh;
+  margin-top: -9vh;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center; }
+  @media (min-width: 600px) {
+    .page-id-113 .ir-km {
+      margin-top: -11vh; } }
+  .page-id-113 .ir-km div {
+    height: 25vh;
+    min-width: 20vw;
+    background: teal; }
+  .page-id-113 .ir-km .ir-km-image {
+    position: absolute;
+    background: url("../../assets/images/circle-distance.png") center no-repeat;
+    background-size: contain;
+    z-index: 1;
+    bottom: 20%; }
 
 .page-id-113 .ir-register {
   background: url("../../assets/images/ir-dark-concave.png") top no-repeat;
   background-size: cover;
-  height: 50vh; }
+  height: 60vh;
+  margin-top: -9vh;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center; }
+  @media (min-width: 600px) {
+    .page-id-113 .ir-register {
+      margin-top: -11vh; } }
+  .page-id-113 .ir-register div {
+    height: 25vh;
+    min-width: 20vw;
+    background: teal; }
+  .page-id-113 .ir-register .ir-register-image {
+    position: absolute;
+    background: url("../../assets/images/circle-participants.png") center no-repeat;
+    background-size: contain;
+    z-index: 1;
+    bottom: 30%; }
 
 .page-id-113 .ir-calories {
-  background: url("../../assets/images/ir-grey-curve-bottom.png") top no-repeat; }
+  background: url("../../assets/images/ir-grey-curve-bottom.png") top no-repeat;
+  background-size: cover;
+  height: 50vh;
+  margin-top: -9vh;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-bottom: 9vh; }
+  @media (min-width: 600px) {
+    .page-id-113 .ir-calories {
+      margin-top: -11vh;
+      padding-bottom: 11vh; } }
+  .page-id-113 .ir-calories div {
+    height: 25vh;
+    min-width: 20vw;
+    background: teal; }
+  .page-id-113 .ir-calories .ir-calories-image {
+    position: absolute;
+    background: url("../../assets/images/circle-carbs.png") center no-repeat;
+    background-size: contain;
+    z-index: 1;
+    bottom: 36%; }
 
 .page-id-113 .ir-fuel {
-  background: url("../../assets/images/ir-lightgrey-curve-bottom.png") top no-repeat; }
+  background: url("../../assets/images/ir-lightgrey-curve-bottom.png") top no-repeat;
+  background-size: cover;
+  height: 53vh;
+  margin-top: -9vh;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-bottom: 9vh; }
+  @media (min-width: 600px) {
+    .page-id-113 .ir-fuel {
+      margin-top: -11vh;
+      padding-bottom: 11vh; } }
+  .page-id-113 .ir-fuel div {
+    height: 25vh;
+    min-width: 20vw;
+    background: teal; }
+  .page-id-113 .ir-fuel .ir-fuel-image {
+    position: absolute;
+    background: url("../../assets/images/circle-station.png") center no-repeat;
+    background-size: contain;
+    z-index: 1;
+    bottom: 36%; }
 
-.page-id-113 .ir-numbers {
-  background: purple;
-  height: 40vh; }
+.page-id-113 .ir-co2:after,
+.page-id-113 .ir-km:after,
+.page-id-113 .ir-register:after,
+.page-id-113 .ir-calories:after,
+.page-id-113 .ir-fuel:after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 5px solid #fff; }
+
+.ir-numbers {
+  height: 40vh;
+  text-align: center; }
 
 @media (min-width: 600px) {
   .first-column {

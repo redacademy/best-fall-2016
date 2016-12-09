@@ -40,7 +40,22 @@
         }
         #go-green-button {
             color: #fff;
-            border-color: #fff;
+            border: 3px solid #fff;
+            background-color: transparent;
+            cursor: pointer;
+            padding: .5rem 2rem;
+            border-radius: 25px;
+            font-family: "montserrat", sans-serif;
+            font-size: 1rem;
+            box-shadow: none;
+            line-height: 1.7;
+            text-shadow: none;
+            width: 200px;
+            text-decoration: none;
+        }
+        .green-buttons {
+            padding: 0;
+            margin: 0 auto;
         }
         h3 {
             font-size: 2.75rem;
@@ -57,20 +72,39 @@
 .travel-by-mobile {
     text-align: center;
     background: #dee2e6;
+    margin: 0 auto;
     h3 {
         margin: 0;
+    }
+    #go-green-button {
+        color: #000;
+        border: 3px solid #000;
+        background-color: transparent;
+        cursor: pointer;
+        padding: .5rem 2rem;
+        border-radius: 25px;
+        font-family: "montserrat", sans-serif;
+        font-size: 1rem;
+        box-shadow: none;
+        line-height: 1.7;
+        text-shadow: none;
+        width: 200px;
+        text-decoration: none;
+    }
+    form {
+        justify-content: center;
     }
 }
 
 .ccbc-front {
     flex-direction: column;
     justify-content: space-around;
-    div {
+    p {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    div:not(:last-child) {
         margin-bottom: 2rem;
-        p {
-            max-width: 250px;
-            margin: 0 auto;
-        }
     }
 }
 
@@ -91,11 +125,12 @@
 
 .front-sponsors {
     display: flex;
-    height: auto;
+    height: 40vh;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background: #dee2e6;
+    background: url('../../assets/images/sponsors-grey-bg.png')top no-repeat;
+    background-size: cover;
 }
 
 .modologo {
@@ -105,6 +140,7 @@
 .fp-sponsors-title {
     h2 {
         font-size: 1.5rem;
+        padding-top: 30%;
     }
 }
 
