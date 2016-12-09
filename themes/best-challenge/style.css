@@ -1477,13 +1477,17 @@ form {
 
 .activities-section {
   width: 100%;
-  background: url("../../assets/images/light-blue-curved-background.png");
+  background-image: url("../../assets/images/light-blue-curved-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   -ms-flex-pack: center;
       justify-content: center;
   max-width: 100%; }
+
+.tax-activity_type .activities-section {
+  margin: 5% 0;
+  background-image: none; }
 
 .activities-wrapper {
   width: 90%;
@@ -1533,6 +1537,7 @@ form {
         -ms-flex-direction: row;
             flex-direction: row; } }
     .activities-wrapper .activity-posts .single-activity-post {
+      margin: 1%;
       height: 458.9px;
       width: 310.8px;
       box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.2);
@@ -1540,7 +1545,8 @@ form {
       background-color: white; }
       @media (min-width: 600px) {
         .activities-wrapper .activity-posts .single-activity-post {
-          width: 305.3px; } }
+          width: 305.3px;
+          margin: 0; } }
       .activities-wrapper .activity-posts .single-activity-post .activity-image {
         width: 310.8px;
         height: auto; }

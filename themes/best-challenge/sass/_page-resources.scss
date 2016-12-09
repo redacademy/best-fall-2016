@@ -9,8 +9,14 @@
 
     .activities-section {
         width: 100%;
-        background:url('../../assets/images/light-blue-curved-background.png');
+        background-image:url('../../assets/images/light-blue-curved-background.png');
         @include background-image;
+    }
+    .tax-activity_type {
+        .activities-section {
+            margin: 5% 0;
+            background-image: none;
+        }
     }
     .activities-wrapper {
         width: 90%;
@@ -43,6 +49,7 @@
                 flex-direction: row;
             }
             .single-activity-post {
+                margin: 1%;
                 height: 458.9px;
                 width: 310.8px;
                 box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.2);
@@ -50,6 +57,7 @@
                 background-color: white;
                 @include desktop {
                     width: 305.3px;
+                    margin: 0;
                 }
                 .activity-image {
                     width: 310.8px;

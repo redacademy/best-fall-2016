@@ -31,13 +31,13 @@ get_header(); ?>
 
 				<div class="buttons">
 					<div class="dark-button" id="bc">
-						<a href='http://best.academy.red/participant_location/bc/'>
+						<a href="<?php echo esc_url( site_url( '/participant_location/bc/' ) ); ?>" >
 							<input type="button" value="British Columbia">
 						</a> 
 					</div>
 					
 					<div class="dark-button" id="vancouver">
-						<a href='http://best.academy.red/participant_location/metro-vancouver/'>
+						<a href="<?php echo esc_url( site_url( '/participant_location/vancouver/' ) ); ?>">
 							<input type="button"  value="Metro-Vancouver">
 						</a>
 					</div>
