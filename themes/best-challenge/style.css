@@ -1734,315 +1734,6 @@ object {
 .resources a:hover {
   color: brown; }
 
-<<<<<<< HEAD
-@media (min-width: 600px) {
-  .first-column {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    padding-right: 40px;
-    height: 300px; } }
-
-.footer-column {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center;
-  background-color: #5a6f83; }
-
-.footer-section {
-  color: white;
-  margin-left: 50px;
-  margin-right: 50px; }
-
-.footer-section span {
-  text-transform: uppercase; }
-
-.footer-section a {
-  color: white;
-  text-decoration: none;
-  font-family: 'montserrat'; }
-
-.footer-section a:hover {
-  color: midnightblue; }
-
-.footer-content {
-  padding-top: 20px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center; }
-  @media (min-width: 600px) {
-    .footer-content {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: row;
-          flex-direction: row; } }
-
-.footer-section {
-  background-color: #5a6f83;
-  color: white; }
-
-.footer-section span {
-  text-transform: uppercase; }
-
-.footer-section a {
-  color: white;
-  text-decoration: none;
-  font-family: 'montserrat'; }
-
-.footer-section a:hover {
-  color: midnightblue; }
-
-.about-best {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  padding-bottom: 0.5rem; }
-  @media (min-width: 600px) {
-    .about-best {
-      width: 70%;
-      padding-left: 5%;
-      padding-right: 10%;
-      -ms-flex-align: start;
-          align-items: flex-start;
-      -ms-flex-pack: justify;
-          justify-content: space-between; } }
-
-.footer-social {
-  height: 50px;
-  background: #383B4C;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  width: 100%; }
-
-.footer-social i {
-  color: white;
-  padding: 1rem; }
-
-.footer-social i:hover {
-  color: midnightblue; }
-
-.para-heading p {
-  font-family: 'montserrat';
-  font-weight: 600;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  margin-bottom: 4px;
-  padding: 0 1rem; }
-  @media (min-width: 600px) {
-    .para-heading p {
-      margin-top: 0;
-      margin-bottom: 0; } }
-
-.para-heading p:first-child {
-  -ms-flex-direction: row;
-      flex-direction: row; }
-  @media (min-width: 600px) {
-    .para-heading p:first-child {
-      padding-left: 0;
-      -ms-flex-pack: start;
-          justify-content: flex-start; } }
-
-.para-heading span {
-  padding-left: 10px; }
-
-.para-heading a {
-  font-family: 'montserrat';
-  font-weight: 300;
-  text-transform: capitalize;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  padding-bottom: 10px; }
-
-para-content {
-  margin: 0; }
-
-.para-content p {
-  font-family: 'montserrat';
-  font-weight: 200;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 0; }
-  @media (min-width: 600px) {
-    .para-content p {
-      text-align: left; } }
-
-.logo-image {
-  font-size: 2rem;
-  text-align: center; }
-
-.commuterChallenge-contact-logos {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  padding-top: 10px; }
-  @media (min-width: 600px) {
-    .commuterChallenge-contact-logos {
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-      padding-top: 30px; } }
-
-.commuterChallenge-contact-logos i {
-  padding: 5px; }
-  @media (min-width: 600px) {
-    .commuterChallenge-contact-logos i {
-      font-size: 24px; } }
-
-.contact-us {
-  padding-bottom: 0.8rem; }
-  @media (min-width: 600px) {
-    .contact-us {
-      padding-bottom: 50px;
-      padding-right: 5%;
-      height: 300px; } }
-
-.questions {
-  padding-bottom: 0.8rem; }
-  @media (min-width: 600px) {
-    .questions {
-      line-height: 0.8; } }
-
-@media (min-width: 600px) {
-  .questions p {
-    margin-bottom: 0; } }
-
-@media (min-width: 600px) {
-  .newsletter-subscription {
-    height: 300px;
-    text-align: left; } }
-
-/*=======================
-FORM at bottom of footer
-========================*/
-@media (min-width: 600px) {
-  .sign-up-button {
-    text-align: left; } }
-
-#subscribe {
-  background-color: #383B4C;
-  color: white;
-  cursor: pointer;
-  padding: .5rem 2rem;
-  border: 1;
-  border-radius: 25px;
-  font-family: 'montserrat';
-  font-weight: 100;
-  font-size: 0.8rem;
-  box-shadow: none;
-  line-height: 1.2;
-  border-width: 0px; }
-  @media (min-width: 600px) {
-    #subscribe {
-      height: 50px;
-      width: 162px; } }
-
-#newsLetter-formId {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  padding-bottom: 0.8rem;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  padding-bottom: 20px; }
-
-#sign-up-form {
-  -ms-flex-pack: center;
-      justify-content: center;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  width: 10%;
-  -ms-flex-align: center;
-      align-items: center; }
-
-#sign-up {
-  background-color: #383B4C;
-  color: white;
-  cursor: pointer;
-  padding: .25rem 2rem;
-  border: 1;
-  border-radius: 25px;
-  font-family: ralewaylight, sans-serif;
-  font-size: 0.8rem;
-  box-shadow: none;
-  line-height: 1.2;
-  border-width: 2px; }
-
-.subscribeForm-for-newsLetter {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  text-align: center; }
-  @media (min-width: 600px) {
-    .subscribeForm-for-newsLetter {
-      display: inline-block; } }
-
-.sign-up-email {
-  padding-bottom: 10px; }
-
-.subscribe-to-newsletter {
-  margin-top: 50px; }
-
-.subscribeForm-for-newsLetter form {
-  -ms-flex-align: start;
-      align-items: flex-start; }
-
-/*=======================
-INPUT field
-========================*/
-#your-email {
-  border-radius: 10px 10px 10px 10px;
-  background-color: lightgray; }
-  @media (min-width: 600px) {
-    #your-email {
-      height: 50px;
-      width: 252px; } }
-
-=======
->>>>>>> a3223eb37bc8cf60a7e29d6078ef08af8c9382bf
 /*=======================
 this is the css unique to page-id-34
 ========================*/
@@ -2059,6 +1750,11 @@ this is a section with three blocks flexed explaining the benefits of the Commut
   /*=======================
 CUSTOM-FIELD-SUITE loop items with four blocks flexed
 ========================*/
+  /*.challenge-participate-blocks p:first-child{
+   font-size:20px;
+  font-family: 'montserrat';
+  font-weight:bold;
+}*/
   /*=======================
 this is the first form on the page consisting of a sign-up button which takes you to external site
 ========================*/
@@ -2167,9 +1863,9 @@ this section is a testimonial
   .page-id-34 .how-to-participate-wrapper p {
     color: white;
     text-align: center;
-    font-size: 14px;
+    font-size: 20px;
     font-family: 'montserrat';
-    font-weight: 300; }
+    font-weight: bold; }
   .page-id-34 .challenge-participate-blocks {
     display: -ms-flexbox;
     display: flex;
@@ -2204,7 +1900,12 @@ this section is a testimonial
     display: flex;
     width: 40%; }
   .page-id-34 .description-wrapper p {
-    margin-top: 0rem; }
+    margin-top: 0rem;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'montserrat';
+    font-weight: 300; }
   .page-id-34 .single-participate-block i {
     color: white;
     font-size: 32px; }
@@ -3114,6 +2815,10 @@ FORM at bottom of footer
 
 .subscribe-to-newsletter {
   margin-top: 50px; }
+
+.subscribeForm-for-newsLetter form {
+  -ms-flex-align: start;
+      align-items: flex-start; }
 
 /*=======================
 INPUT field

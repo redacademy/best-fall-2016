@@ -149,9 +149,9 @@ CUSTOM-FIELD-SUITE loop items with four blocks flexed
 .how-to-participate-wrapper p{
     color:white;
     text-align:center;
-    font-size:14px;
+    font-size:20px;
     font-family:'montserrat';
-    font-weight: 300;
+    font-weight: bold;
 }
 
 .challenge-participate-blocks{
@@ -191,7 +191,13 @@ CUSTOM-FIELD-SUITE loop items with four blocks flexed
 
 .description-wrapper p{
     margin-top:0rem;
-    }
+       color:white;
+    text-align:center;
+    font-size:14px;
+    font-family:'montserrat';
+    font-weight: 300;
+}
+    
 
 .single-participate-block i{
     color:white;
@@ -203,6 +209,12 @@ CUSTOM-FIELD-SUITE loop items with four blocks flexed
   font-family: 'montserrat';
 }
 
+
+/*.challenge-participate-blocks p:first-child{
+   font-size:20px;
+  font-family: 'montserrat';
+  font-weight:bold;
+}*/
  /*=======================
 this is the first form on the page consisting of a sign-up button which takes you to external site
 ========================*/
