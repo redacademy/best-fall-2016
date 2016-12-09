@@ -955,7 +955,21 @@ form {
         border-color: transparent; } }
       .travel-by #go-green-button {
         color: #fff;
-        border-color: #fff; }
+        border: 3px solid #fff;
+        background-color: transparent;
+        cursor: pointer;
+        padding: .5rem 2rem;
+        border-radius: 25px;
+        font-family: "montserrat", sans-serif;
+        font-size: 1rem;
+        box-shadow: none;
+        line-height: 1.7;
+        text-shadow: none;
+        width: 200px;
+        text-decoration: none; }
+      .travel-by .green-buttons {
+        padding: 0;
+        margin: 0 auto; }
       .travel-by h3 {
         font-size: 2.75rem;
         margin: 0; }
@@ -966,9 +980,27 @@ form {
 
 .travel-by-mobile {
   text-align: center;
-  background: #dee2e6; }
+  background: #dee2e6;
+  margin: 0 auto; }
   .travel-by-mobile h3 {
     margin: 0; }
+  .travel-by-mobile #go-green-button {
+    color: #000;
+    border: 3px solid #000;
+    background-color: transparent;
+    cursor: pointer;
+    padding: .5rem 2rem;
+    border-radius: 25px;
+    font-family: "montserrat", sans-serif;
+    font-size: 1rem;
+    box-shadow: none;
+    line-height: 1.7;
+    text-shadow: none;
+    width: 200px;
+    text-decoration: none; }
+  .travel-by-mobile form {
+    -ms-flex-pack: center;
+        justify-content: center; }
 
 .ccbc-front {
   -ms-flex-direction: column;
