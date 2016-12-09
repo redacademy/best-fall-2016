@@ -104,7 +104,7 @@
     .ir-register {
         background: url('../../assets/images/ir-dark-concave.png')top no-repeat;
         background-size: cover;
-        height: 50vh;
+        height: 60vh;
         margin-top: -9vh;
         position: relative;
         display: flex;
@@ -135,8 +135,10 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        padding-bottom: 9vh;
         @include desktop {
             margin-top: -11vh;
+            padding-bottom: 11vh;
         }
         div {
             height: 25vh;
@@ -148,7 +150,7 @@
             background: url('../../assets/images/circle-carbs.png') center no-repeat;
             background-size: contain;
             z-index: 1;
-            bottom: 20%;
+            bottom: 36%;
         }
     }
     .ir-fuel {
@@ -160,8 +162,10 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        padding-bottom: 9vh;
         @include desktop {
             margin-top: -11vh;
+            padding-bottom: 11vh;
         }
         div {
             height: 25vh;
@@ -173,7 +177,7 @@
             background: url('../../assets/images/circle-station.png') center no-repeat;
             background-size: contain;
             z-index: 1;
-            bottom: 20%;
+            bottom: 36%;
         }
     }
     .ir-co2:after,
@@ -189,8 +193,10 @@
         left: 50%;
         border-left: 5px solid #fff;
     }
-    .ir-numbers {
-        background: purple;
-        height: 40vh;
-    }
+}
+
+.ir-numbers {
+ 
+    height: 40vh;
+    text-align: center;
 }
