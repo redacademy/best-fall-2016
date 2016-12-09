@@ -10,7 +10,6 @@
     /* Participants page heading */
     .page-heading-participants {
         background-image: url(../../assets/images/participant-header.png);
-
         @include desktop {
             background-image: url(../../assets/images/participant-header.png);
         }
@@ -62,19 +61,19 @@
                 font-size: 2.25rem;
                 color: $black-text;
                 @include section-heading;
-                line-height: 0.5;
+                margin: 0;
                 padding-top: 1%;
             }
             h3 {    
                 font-size: 1.88rem;
                 @include section-heading; 
-                line-height: 0.5;
+                margin: 0;
                 font-weight: 300;
             }
             h4 {
                 font-size: 1.25rem;
                 @include section-heading;
-                line-height: 0.5;
+                margin: 0;
             }
             .taxonomy-post {
                 margin: 5% auto;
