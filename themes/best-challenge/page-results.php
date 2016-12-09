@@ -8,18 +8,19 @@
 get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class = "page-heading">	
-				 <div class="picture-wrapper-results">		
+			<div class = "picture-wrapper-results">	
+				<div class="title-wrapper">		
 					<?php the_title( '<div class="heading"><h1>', '</h1></div>' ); ?>
-					<p>British Columbia Commuter Challenge participants made a real impact!</p>
-				</div>
-				<div class="impact-results-info">
-						<p>The Commuter Challenge 
-							is all about having fun while making a 
-							difference. Here’s how the community 
-							of British Columbia made an impact in 2016.</p>
+				
+            		<div class="title-info">	
+						<p><?php echo CFS()->get( 'title_info'); ?></p>
 					</div>
-			</div>
+				</div> <!-- title wrapper ends -->
+			</div> <!-- page heading ends -->
+			
+			<div class="page-description"> 
+					<p><?php echo CFS()->get( 'page_description'); ?></p>
+			</div>	
 		<div class="impact-results-area"> 
 
 			<div class="ir-co2"> 
