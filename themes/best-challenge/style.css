@@ -1046,7 +1046,7 @@ form {
 .front-sponsors {
   display: -ms-flexbox;
   display: flex;
-  height: auto;
+  height: 40vh;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: justify;

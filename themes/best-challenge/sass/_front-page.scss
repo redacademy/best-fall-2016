@@ -53,7 +53,6 @@
             width: 200px;
             text-decoration: none;
         }
-
         .green-buttons {
             padding: 0;
             margin: 0 auto;
@@ -77,26 +76,25 @@
     h3 {
         margin: 0;
     }
-        #go-green-button {
-            color: #000;
-            border: 3px solid #000;
-            background-color: transparent;
-            cursor: pointer;
-            padding: .5rem 2rem;
-            border-radius: 25px;
-            font-family: "montserrat", sans-serif;
-            font-size: 1rem;
-            box-shadow: none;
-            line-height: 1.7;
-            text-shadow: none;
-            width: 200px;
-            text-decoration: none;
-        }
-     form {
-         justify-content: center;
-     }
+    #go-green-button {
+        color: #000;
+        border: 3px solid #000;
+        background-color: transparent;
+        cursor: pointer;
+        padding: .5rem 2rem;
+        border-radius: 25px;
+        font-family: "montserrat", sans-serif;
+        font-size: 1rem;
+        box-shadow: none;
+        line-height: 1.7;
+        text-shadow: none;
+        width: 200px;
+        text-decoration: none;
     }
-
+    form {
+        justify-content: center;
+    }
+}
 
 .ccbc-front {
     flex-direction: column;
@@ -127,7 +125,7 @@
 
 .front-sponsors {
     display: flex;
-    height: auto;
+    height: 40vh;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
