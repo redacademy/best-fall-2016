@@ -186,7 +186,10 @@ CUSTOM-FIELD-SUITE loop items with four blocks flexed
 
 .description-wrapper{
     display:flex;
-    width:60%;
+    width:100%;
+     @include desktop {
+     width:80%;
+    }
    }
 
 .description-wrapper p{
@@ -336,6 +339,7 @@ this section has two flexed blocks which links readers to additional resources
 .need-resources h2{
 text-transform:uppercase;
 font-family: 'montserrat';
+color:#303b46;
 }
 
 .need-resources img{
@@ -351,12 +355,19 @@ font-family: 'montserrat';
     padding-right:10%;  
     font-family:'montserrat';
     font-weight: 300;
+    color:#303b46;
 }
 
 .need-resources a{
     text-decoration:none;
-    color:black
+    color:#303b46;
 }
+
+.need-resources a:hover{
+    text-decoration:none;
+    color:white;
+}
+
 
 .need-prizes img{   
     width:278px;

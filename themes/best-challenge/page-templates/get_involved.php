@@ -115,7 +115,7 @@ get_header(); ?>
                             promoting the event (email templates, posters and more!)
                         </p>
                         <div class="resources-link">
-                            <a href="">Check out resources ></a>
+                            <a href="<?php echo esc_url( site_url( '/resources/' ) ); ?>">Check out resources ></a>
                                     <!-- This link will take user to another page for more resources -->
                         </div>
                     </div> 
@@ -127,7 +127,7 @@ get_header(); ?>
                             sustainably, high-achievers, and lucky ones, teams and individuals. Check them out!
                             </p>
                         <div class="resources-link">
-                                <a href="">Check out prizes ></a>
+                                <a href="<?php echo esc_url( site_url( '/prizes/' ) ); ?>">Check out prizes ></a>
                         </div>      <!-- This link will take user prizes page -->
                     </div>
                 </div>

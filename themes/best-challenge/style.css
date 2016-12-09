@@ -1968,7 +1968,10 @@ this section is a testimonial
   .page-id-34 .description-wrapper {
     display: -ms-flexbox;
     display: flex;
-    width: 60%; }
+    width: 100%; }
+    @media (min-width: 600px) {
+      .page-id-34 .description-wrapper {
+        width: 80%; } }
   .page-id-34 .description-wrapper p {
     margin-top: 0rem;
     color: white;
@@ -2083,7 +2086,8 @@ this section is a testimonial
             flex-direction: row; } }
   .page-id-34 .need-resources h2 {
     text-transform: uppercase;
-    font-family: 'montserrat'; }
+    font-family: 'montserrat';
+    color: #303b46; }
   .page-id-34 .need-resources img {
     border-radius: 200px 200px 200px 200px;
     -moz-border-radius: 200px 200px 200px 200px;
@@ -2094,10 +2098,14 @@ this section is a testimonial
     padding-left: 10%;
     padding-right: 10%;
     font-family: 'montserrat';
-    font-weight: 300; }
+    font-weight: 300;
+    color: #303b46; }
   .page-id-34 .need-resources a {
     text-decoration: none;
-    color: black; }
+    color: #303b46; }
+  .page-id-34 .need-resources a:hover {
+    text-decoration: none;
+    color: white; }
   .page-id-34 .need-prizes img {
     width: 278px; }
   .page-id-34 .testimonial {
