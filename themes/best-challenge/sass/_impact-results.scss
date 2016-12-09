@@ -50,12 +50,12 @@
 
 .impact-results-area {
     position: relative;
-    div {
-        height: 50vh;
-
-        @include desktop {
-            height: 40vh
-        }
+    div:not(:nth-child(3)) {
+        height: 40vh;
+        background-size:  cover;
+    }
+    div:not(:first-child) {
+            margin-top: -10vh;
     }
     ////// The line through the middle of the divs ////
     div:after {
@@ -70,23 +70,25 @@
 }
 
 .ir-co2 {
-    background: url('../../assets/images/ir-lightgrey-curve-top.png')center no-repeat;
+    background: url('../../assets/images/ir-lightgrey-curve-top.png') top no-repeat;
 }
 
 .ir-km {
-    background: url('../../assets/images/ir-grey-curve-top.png')center no-repeat;
+    background: url('../../assets/images/ir-grey-curve-top.png') top no-repeat;
 }
 
 .ir-register {
-    background: url('../../assets/images/ir-dark-concave.png')center no-repeat;
+    background: url('../../assets/images/ir-dark-concave.png')top  no-repeat;
+    background-size: cover;
+    height: 50vh
 }
 
 .ir-calories {
-    background: url('../../assets/images/ir-grey-curve-bottom.png')center no-repeat;
+    background: url('../../assets/images/ir-grey-curve-bottom.png')top  no-repeat;
 }
 
 .ir-fuel {
-    background: url('../../assets/images/ir-lightgrey-curve-bottom.png')center no-repeat;
+    background: url('../../assets/images/ir-lightgrey-curve-bottom.png')top no-repeat;
 }
 
 .ir-numbers {

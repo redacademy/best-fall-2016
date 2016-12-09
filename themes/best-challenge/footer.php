@@ -25,7 +25,7 @@
 								promoting sustainable transportation</p>
 								</div>
 									<div class="learn-more">
-										<div class="para-heading"><a href="">learn more ></a>
+										<div class="para-heading"><a href='http://google.com'>learn more ></a>
 									</div>
 							</div>
 						</div><!--end of first-column-->

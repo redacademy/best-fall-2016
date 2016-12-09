@@ -5,7 +5,7 @@
     @include desktop {
         height: calc(100vh - 144px);
         background: url(../../assets/images/hero-curve.png) top no-repeat, url(../../assets/images/hero-banner.png) top no-repeat;
-        background-size: contain, cover;
+        background-size: cover, cover;
         display: flex;
         justify-content: center;
         align-items: flex-start;
