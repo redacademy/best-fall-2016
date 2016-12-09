@@ -870,6 +870,10 @@ users choice
       width: 162px;
       height: 50px; } }
 
+.button1 a:hover {
+  background-color: #303b46;
+  color: #a6ce39; }
+
 .button2 a {
   border: 1px solid black;
   background-color: transparent;
@@ -893,6 +897,10 @@ users choice
     .button2 a {
       width: 162px;
       height: 50px; } }
+
+.button2 a:hover {
+  background-color: #303b46;
+  color: #a6ce39; }
 
 form {
   -ms-flex-align: center;
