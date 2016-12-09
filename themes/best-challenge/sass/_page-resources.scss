@@ -13,14 +13,22 @@
         @include background-image;
     }
     .activities-wrapper {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         padding-top: 3%;
+        text-align: center;
+            @include desktop {
+                width: 80%;
+            }
 
         h2 {
             @include section-heading;
-            font-size: 2.25rem;
+            width: 100%;
+            font-size: 30px;
             color: white;
+            @include desktop {
+                font-size: 40px;
+            }
         }
         
         .activity-posts {
@@ -28,6 +36,7 @@
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
+            align-items: center;
             @include desktop {
                 flex-wrap: wrap;
                 justify-content: space-between; 
@@ -35,6 +44,7 @@
             }
             .single-activity-post {
                 height: 458.9px;
+                width: 310.8px;
                 box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.2);
                 position: relative;
                 background-color: white;
@@ -42,18 +52,21 @@
                     width: 305.3px;
                 }
                 .activity-image {
-                    width: 305.3px;
+                    width: 310.8px;
                     height: auto;
+                    @include desktop {
+                        width: 305.2px;
+                    }
                 }
                 .activity-title {
                     width: 273.7px;
                     margin: 0 auto;
                     border-bottom: 2px solid $best-green;
                     h3 {
-                        font-size: 1.25rem;
+                        font-size: 20px;
                         text-align: center;
                         color: $black-text;
-                        font-weight: 300;
+                        font-weight: normal;
                         margin: 0;
                         padding: 5px 0;
                         
@@ -71,8 +84,8 @@
                    a {
                        color: $best-green;
                        text-decoration: none;
-                       font-size: 1.7rem;
-                       font-weight: 300;
+                       font-size: 1.6rem;
+                       font-weight: normal;
                        position: absolute;
                        bottom: 10px;
                        left: 10px;

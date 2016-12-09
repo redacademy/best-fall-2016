@@ -239,16 +239,16 @@ th {
 
 @font-face {
   font-family: 'montserrat';
-  src: url("../../assets/fonts/montserrat-light-webfont.eot");
-  src: url("../../assets/fonts/montserrat-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/montserrat-light-webfont.woff2") format("woff2"), url("../../assets/fonts/montserrat-light-webfont.woff") format("woff"), url("../../assets/fonts/montserrat-light-webfont.svg#montserratsemibold") format("svg");
+  src: url("../../assets/fonts/montserrat-extralight-webfont.eot");
+  src: url("../../assets/fonts/montserrat-extralight-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/montserrat-extralight-webfont.woff2") format("woff2"), url("../../assets/fonts/montserrat-extralight-webfont.woff") format("woff"), url("../../assets/fonts/montserrat-extralight-webfont.svg#montserratsemibold") format("svg");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'montserrat';
-  src: url("../../assets/fonts/montserrat-extralight-webfont.eot");
-  src: url("../../assets/fonts/montserrat-extralight-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/montserrat-extralight-webfont.woff2") format("woff2"), url("../../assets/fonts/montserrat-extralight-webfont.woff") format("woff"), url("../../assets/fonts/montserrat-extralight-webfont.svg#montserratsemibold") format("svg");
-  font-weight: 200;
+  src: url("../../assets/fonts/montserrat-light-webfont.eot");
+  src: url("../../assets/fonts/montserrat-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/montserrat-light-webfont.woff2") format("woff2"), url("../../assets/fonts/montserrat-light-webfont.woff") format("woff"), url("../../assets/fonts/montserrat-light-webfont.svg#montserratsemibold") format("svg");
+  font-weight: 500;
   font-style: normal; }
 
 /*--------------------------------------------------------------
@@ -647,15 +647,16 @@ a {
     font-size: 55px;
     font-weight: bold;
     text-transform: uppercase;
-    text-align: center; }
+    text-align: center;
+    margin: 0; }
   .title-wrapper p {
-    font-size: 30px;
-    font-weight: 200; }
+    font-size: 25px;
+    font-weight: 300; }
 
 .page-description {
   width: 90%;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 300;
   text-align: center;
   color: #303b46; }
@@ -1487,15 +1488,20 @@ form {
   max-width: 100%; }
 
 .activities-wrapper {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
-  padding-top: 3%; }
+  padding-top: 3%;
+  text-align: center; }
+  @media (min-width: 600px) {
+    .activities-wrapper {
+      width: 80%; } }
   .activities-wrapper h2 {
     font-weight: bold;
     text-transform: uppercase;
     width: 100%;
     text-align: center;
-    font-size: 2.25rem;
+    width: 100%;
+    font-size: 30px;
     color: white; }
     .activities-wrapper h2 h1 {
       font-size: 2.62rem;
@@ -1507,6 +1513,9 @@ form {
     .activities-wrapper h2 p {
       font-size: 1.1rem;
       font-weight: 300; }
+    @media (min-width: 600px) {
+      .activities-wrapper h2 {
+        font-size: 40px; } }
   .activities-wrapper .activity-posts {
     padding: 2% 0;
     display: -ms-flexbox;
@@ -1514,7 +1523,9 @@ form {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-direction: column;
-        flex-direction: column; }
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center; }
     @media (min-width: 600px) {
       .activities-wrapper .activity-posts {
         -ms-flex-wrap: wrap;
@@ -1525,6 +1536,7 @@ form {
             flex-direction: row; } }
     .activities-wrapper .activity-posts .single-activity-post {
       height: 458.9px;
+      width: 310.8px;
       box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.2);
       position: relative;
       background-color: white; }
@@ -1532,17 +1544,20 @@ form {
         .activities-wrapper .activity-posts .single-activity-post {
           width: 305.3px; } }
       .activities-wrapper .activity-posts .single-activity-post .activity-image {
-        width: 305.3px;
+        width: 310.8px;
         height: auto; }
+        @media (min-width: 600px) {
+          .activities-wrapper .activity-posts .single-activity-post .activity-image {
+            width: 305.2px; } }
       .activities-wrapper .activity-posts .single-activity-post .activity-title {
         width: 273.7px;
         margin: 0 auto;
         border-bottom: 2px solid #a6ce39; }
         .activities-wrapper .activity-posts .single-activity-post .activity-title h3 {
-          font-size: 1.25rem;
+          font-size: 20px;
           text-align: center;
           color: #303b46;
-          font-weight: 300;
+          font-weight: normal;
           margin: 0;
           padding: 5px 0; }
       .activities-wrapper .activity-posts .single-activity-post .activity-description {
@@ -1556,8 +1571,8 @@ form {
         .activities-wrapper .activity-posts .single-activity-post .activity-description a {
           color: #a6ce39;
           text-decoration: none;
-          font-size: 1.7rem;
-          font-weight: 300;
+          font-size: 1.6rem;
+          font-weight: normal;
           position: absolute;
           bottom: 10px;
           left: 10px; }
@@ -1569,15 +1584,14 @@ form {
   font-size: 1.85rem;
   text-align: center;
   color: #dee2e6;
-  font-weight: 300;
+  font-weight: 500;
   cursor: pointer;
   padding: 1%; }
-  .load-more img {
-    width: 23px;
-    height: 11px; }
   .load-more a {
     color: inherit;
     text-decoration: none; }
+    .load-more a:hover {
+      color: #a6ce39; }
 
 .info-404 {
   display: -ms-flexbox;

@@ -62,10 +62,8 @@ get_header(); ?>
 							</div>	
 						</div> <!-- activity wrapper section ends -->
 						<div class="load-more">
-							<a href="">
-								<p>Read More
-									<img src=" <?php echo get_template_directory_uri() ?>/assets/images/arrow-down-small.png" alt="logo">
-								</p>
+							<a href="<?php echo esc_url( site_url( '/get-involved/' ) ); ?>">
+								<p>Read More</p>
 							</a>
 						</div>
 					<?php
