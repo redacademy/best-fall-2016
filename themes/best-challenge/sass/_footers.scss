@@ -293,7 +293,7 @@ text-align: left;
 }
 
 .subscribe-to-newsletter{
-margin-top:50px;
+margin-top:10px;
 
 
 }
@@ -318,3 +318,29 @@ INPUT field
 }
 
 
+#wpcf7-f134-o1 input{
+    border-radius: 10px 10px 10px 10px;
+    background-color: lightgray;
+        @include desktop {
+        height: 50px;
+        width: 252px;
+   }
+}
+#wpcf7-f134-o1 input[type=submit] { 
+    background-color: #383B4C;
+    color: white;
+    cursor: pointer;
+    padding: .5rem 2rem;
+    border: 1;
+    border-radius: 25px;
+    font-family: 'montserrat';
+    font-weight: 100;
+    font-size: 0.8rem;
+    box-shadow: none;
+    line-height: 1.2;
+    border-width: 0px;
+           @include desktop {
+        height: 50px;
+        width: 162px;
+   }
+} 

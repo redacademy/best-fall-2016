@@ -2123,8 +2123,6 @@ this section is a testimonial
     -ms-flex-direction: column;
         flex-direction: column;
     padding-top: 60px; }
-  .page-id-34 input:hover {
-    color: red; }
 
 /*=======================
 this is the css unique to page-id-91
@@ -2899,7 +2897,7 @@ FORM at bottom of footer
   padding-bottom: 10px; }
 
 .subscribe-to-newsletter {
-  margin-top: 50px; }
+  margin-top: 10px; }
 
 .subscribeForm-for-newsLetter form {
   -ms-flex-align: start;
@@ -2915,3 +2913,29 @@ INPUT field
     #your-email {
       height: 50px;
       width: 252px; } }
+
+#wpcf7-f134-o1 input {
+  border-radius: 10px 10px 10px 10px;
+  background-color: lightgray; }
+  @media (min-width: 600px) {
+    #wpcf7-f134-o1 input {
+      height: 50px;
+      width: 252px; } }
+
+#wpcf7-f134-o1 input[type=submit] {
+  background-color: #383B4C;
+  color: white;
+  cursor: pointer;
+  padding: .5rem 2rem;
+  border: 1;
+  border-radius: 25px;
+  font-family: 'montserrat';
+  font-weight: 100;
+  font-size: 0.8rem;
+  box-shadow: none;
+  line-height: 1.2;
+  border-width: 0px; }
+  @media (min-width: 600px) {
+    #wpcf7-f134-o1 input[type=submit] {
+      height: 50px;
+      width: 162px; } }

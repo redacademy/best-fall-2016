@@ -39,28 +39,22 @@
 							<i class="fa fa-envelope-o" aria-hidden="true"></i>
 						</div>
 						<div class="questions">
-							<p><a href="">commuterchallenge@best.bc.ca</a></p>
+							<p><a href="mailto:commuterchallenge@best.bc.ca">commuterchallenge@best.bc.ca</a></p>
 							<div class="para-content"><p>(604)669-2860</p></div>
 						</div>
 					</div>	
 				</div>			
-					
-						<div class="newsletter-subscription">
-							<div class="para-heading"><p>Newsletter Subscription</p></div>
-							<div class="para-content"><p>Hear about upcoming events, new tools, and lots more!</p></div>
-						
-							<div class="subscribe-to-newsletter">
-            					<div class="subscribeForm-for-newsLetter">
-                					<form id="newsLetter-formId">
-									<div class="sign-up-email"><input type="email" name="your_email" id="your-email" value="" placeholder="Enter your email..." aria-label="Subscribe Email Input"></div>
-                    				<div class="sign-up-button"><input type="submit" name="subscribe" value="Subscribe" id="subscribe"></div>
-                					</form>
-            					</div>
-        					</div>
-						</div>
+
+
+<?php echo do_shortcode( '[contact-form-7 id="134" title="Newsletter Subscription From"]' ); ?>
 					</div>
 				</div>
 			</div>
+
+
+
+<?php echo do_shortcode( '[contact-form-7 id="134" title="Newsletter Subscription From"]' ); ?>
+
 			<div class="footer-social">
 					<span>
 						<a href="http://facebook.com"><i class="fa fa-facebook-square"></i></a>
