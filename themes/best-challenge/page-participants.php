@@ -50,8 +50,8 @@ get_header(); ?>
                     <div class="green-banner">
                         <div class="green-banner-flex">
                             <div class="green-banner-data">
-                                <p>engage as individuals!</p>
-                                <p>Discover how you can get involved</p>
+                                <p>reduce your footprint</p>
+                                <p>Learn more about how to get involved.</p>
                             </div>
                             <form method="POST" action="" >
                                 <div class="green-buttons">
