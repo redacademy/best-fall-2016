@@ -17,16 +17,26 @@
 	}
 }
 
-@mixin section-heading {
-	font-weight: bold;
-	text-transform: uppercase;
-	width: 100%;
-	text-align: center;
+@mixin heading-backgrounds{
+	  	background-repeat: no-repeat;
+		background-size: 100% 100%;	
+		justify-content: center;
+		max-width: 100%;
+		height: 300px;
+		color: white;
+		display: flex;
+		@include desktop {
+			background-position: center;
+		}
 }
 
-/* used on most of the pages in the header*/
-@mixin heading-style {
-        h1, h2 {
+/*Used in participants and prizes*/
+@mixin section-heading {
+		font-weight: bold;
+		text-transform: uppercase;
+		width: 100%;
+		text-align: center;
+	 	h1 {
             font-size: 2.62rem;
             text-align: center;
             width: 100%;
@@ -34,14 +44,11 @@
             text-transform: uppercase;
             font-weight: bold;
         }
+		
         p {
             font-size: 1.1rem;
             font-weight: 300;
         }
-}
-/*Used in participants and prizes*/
-@mixin category-title {
-
 }
 
 @mixin dark-button {
@@ -65,18 +72,19 @@
 	max-width: 100%;
 }
 
+//used for Load More link  
 @mixin white-load-more{
 	font-size: 1.85rem;
 	text-align: center;
 	color: $light-text;
-	font-weight: 300;
+	font-weight: 500;
 	cursor: pointer;
-	img {
-		width: 23px;
-		height: 11px;
-	}
+	
 	a {
 		color: inherit;
 		text-decoration: none;
+		&:hover {
+			color: $best-green;
+		}
 	}
 }

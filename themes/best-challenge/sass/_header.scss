@@ -1,85 +1,92 @@
-        /*--------------------------------------------------------------
+            /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-        
-        .site-header {
-            background: #303B46;
-            height: 10vh;
-            @include desktop {
-                height: 144px;
-                padding: 0 5px;
+            
+            .site-header {
+                background: #303B46;
+                height: 10vh;
+                @include desktop {
+                    height: 144px;
+                    padding: 0 5px;
+                }
             }
-        }
-        
-        .best-header {
-            display: flex;
-            height: inherit;
-            position: relative;
-            flex-wrap: wrap;
-            @include desktop {
-                flex-wrap: nowrap;
+            
+            .best-header {
+                display: flex;
+                height: inherit;
+                position: relative;
+                flex-wrap: wrap;
+                @include desktop {
+                    flex-wrap: nowrap;
+                }
             }
-        }
-        
-        .logo-date {
-            height: inherit;
-            display: flex;
-            width: 100%;
-            align-items: center;
-            margin-left: 5px;
-            justify-content: space-between;
-            @include desktop {
-                .menu-icon {
+            
+            .logo-date {
+                height: inherit;
+                display: flex;
+                width: 100%;
+                align-items: center;
+                margin-left: 5px;
+                justify-content: space-between;
+                @include desktop {
+                    align-items: flex-start;
+                    margin-top: 2vh;
+                    .menu-icon {
+                        display: none;
+                    }
+                }
+                .event-date {
+                    color: white;
+                    @include desktop {
+                        h2 {
+                            margin-top: 0;
+                        }
+                    }
+                    .logo-header {
+                        padding-top: 1vh;
+                        img {
+                            height: 40px;
+                            width: 22vw;
+                            @include desktop {
+                                height: 40px;
+                                width: 276px;
+                            }
+                        }
+                    }
+                }
+            }
+            /* hide mobile version by default */
+            
+            .logo .mobile {
+                display: none;
+            }
+            /* when screen is less than 600px wide
+     show mobile version and hide desktop */
+            
+            @media (max-width: 600px) {
+                .logo .mobile {
+                    display: block;
+                }
+                .logo .desktop {
                     display: none;
                 }
             }
-        }
-        
-        .event-date {
-            color: white;
-            @include desktop {}
-        }
-        
-        .logo img {
-            height: 40px;
-            width: 22vw;
-            @include desktop {
-                height: 40px;
-                width: 276px;
+            
+            // Main Menu //
+            .header-nav {
+                width: 100%;
+                @include desktop {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: auto;
+                }
             }
-        }
-        /* hide mobile version by default */
-        
-        .logo .mobile {
-            display: none;
-        }
-        /* when screen is less than 600px wide
-     show mobile version and hide desktop */
-        
-        @media (max-width: 600px) {
-            .logo .mobile {
-                display: block;
+            
+            #primary-menu {
+                width: 100%;
+                flex-direction: column;
+                @include desktop {
+                    flex-direction: row;
+                }
             }
-            .logo .desktop {
-                display: none;
-            }
-        }
-        
-        // Main Menu //
-        .header-nav {
-            width: 100%;
-            @include desktop {
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                width: auto;
-            }
-        }
-        
-        #primary-menu {
-            width: 100%;
-            flex-direction: column;
-            @include desktop {
-                flex-direction: row;
-            }
-        }

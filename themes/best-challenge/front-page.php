@@ -14,7 +14,7 @@ get_header(); ?>
 		<h3 class="uppercase"> I travel by  <span id="typewrite"> </span></h3>
 		<p>Join the Canada-wide competition.<br>
 			Celebrate sustainable commuting in BC.<p>
-		</div>
+		
 
 			<form method="POST" action="">
 				<div class="green-buttons">
@@ -25,7 +25,7 @@ get_header(); ?>
 								<input type="submit" name="submit" value="Workplace" id="go-green-button" >
 						</div>
 				</div>
-
+</div>
 			</form>
 		</div>
 		</div>
@@ -125,7 +125,7 @@ get_header(); ?>
 				<div class="results-info">
 					
 					<div class="bc-total">
-						<?php echo CFS()->get( 'bc_avoided_co2_in_year' ); ?>
+						<?php echo "the fuckkk" ?>
 						<p>British Columbia Total</p>
 					</div>	
 

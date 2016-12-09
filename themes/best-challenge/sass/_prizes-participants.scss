@@ -2,14 +2,7 @@
 
     .page-heading, .page-heading-participants {
         background-image: url(../../assets/images/gift-mobile.png);
-        background-repeat: no-repeat;
-        background-size: cover;	
-        background-position: center;
-        justify-content: center;
-        max-width: 100%;
-        height: 300px;
-        color: white;
-        display: flex;
+        @include heading-backgrounds;
         @include desktop {
             background-image: url(../../assets/images/gift.png);
         }
@@ -17,36 +10,11 @@
     /* Participants page heading */
     .page-heading-participants {
         background-image: url(../../assets/images/participant-header.png);
-
         @include desktop {
             background-image: url(../../assets/images/participant-header.png);
         }
     }
        
-    .heading {
-           @include heading-style;
-    }
-    
-    .title-wrapper {
-        line-height: 0.5;
-        margin-top: 10%;
-        height: 200px;
-        @include desktop {
-            margin-top: 5%;
-        }
-    }
-
-    .content {
-        width: 90%;
-        font-size: 20px;
-        font-weight: 300;
-        margin: 0 auto;
-        text-align: center;
-        color: $dark-text;
-        @include desktop {
-            width: 50%;
-        }
-    }
     .taxonomy-wrapper {
         width: 100%;
         height: auto;
@@ -93,19 +61,19 @@
                 font-size: 2.25rem;
                 color: $black-text;
                 @include section-heading;
-                line-height: 0.5;
+                margin: 0;
                 padding-top: 1%;
             }
             h3 {    
                 font-size: 1.88rem;
                 @include section-heading; 
-                line-height: 0.5;
+                margin: 0;
                 font-weight: 300;
             }
             h4 {
                 font-size: 1.25rem;
                 @include section-heading;
-                line-height: 0.5;
+                margin: 0;
             }
             .taxonomy-post {
                 margin: 5% auto;

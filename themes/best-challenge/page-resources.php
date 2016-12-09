@@ -8,24 +8,18 @@
 get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class = "page-heading">	
+			<div class = "resources-page-heading">	
 				<div class="title-wrapper">		
 					<?php the_title( '<div class="heading"><h1>', '</h1></div>' ); ?>
-					<?php
-						$props=CFS()->get_field_info('title_info');
-					?>
-            		<div class="title-info">
-						<?php echo CFS()->get( 'title_info'); ?>
+				
+            		<div class="title-info">	
+						<p><?php echo CFS()->get( 'title_info'); ?></p>
 					</div>
-				</div>
-			</div>
-			<div class="content"> 
-				<?php
-					$id=61;
-					$post = get_post($id);
-					$content = apply_filters('the_content', $post->post_content);
-					echo $content;
-				?>	
+				</div> <!-- title wrapper ends -->
+			</div> <!-- page heading ends -->
+			
+			<div class="page-description"> 
+					<p><?php echo CFS()->get( 'page_description'); ?></p>
 			</div>
 			
 			
@@ -60,7 +54,7 @@ get_header(); ?>
 										<div class="activity-title">
 											<h3><?php the_title(); ?></h3>
 										</div>
-										<div class="actiity-description">
+										<div class="activity-description">
 											<p><?php the_content(); ?></p>
 										</div>
 									</div>
@@ -68,10 +62,8 @@ get_header(); ?>
 							</div>	
 						</div> <!-- activity wrapper section ends -->
 						<div class="load-more">
-							<a href="">
-								<p>Read More
-									<img src=" <?php echo get_template_directory_uri() ?>/assets/images/arrow-down-small.png" alt="logo">
-								</p>
+							<a href="<?php echo esc_url( site_url( '/get-involved/' ) ); ?>">
+								<p>Read More</p>
 							</a>
 						</div>
 					<?php
