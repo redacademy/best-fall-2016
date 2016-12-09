@@ -99,12 +99,12 @@
 .ccbc-front {
     flex-direction: column;
     justify-content: space-around;
-    div {
+    p {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    div:not(:last-child) {
         margin-bottom: 2rem;
-        p {
-            max-width: 250px;
-            margin: 0 auto;
-        }
     }
 }
 

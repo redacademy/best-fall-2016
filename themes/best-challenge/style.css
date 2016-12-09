@@ -577,19 +577,26 @@ a {
   -ms-flex-pack: justify;
       justify-content: space-between; }
   @media (min-width: 600px) {
-    .logo-date .menu-icon {
-      display: none; } }
-
-.event-date {
-  color: white; }
-
-.logo img {
-  height: 40px;
-  width: 22vw; }
-  @media (min-width: 600px) {
-    .logo img {
-      height: 40px;
-      width: 276px; } }
+    .logo-date {
+      -ms-flex-align: start;
+          align-items: flex-start;
+      margin-top: 2vh; }
+      .logo-date .menu-icon {
+        display: none; } }
+  .logo-date .event-date {
+    color: white; }
+    @media (min-width: 600px) {
+      .logo-date .event-date h2 {
+        margin-top: 0; } }
+    .logo-date .event-date .logo-header {
+      padding-top: 1vh; }
+      .logo-date .event-date .logo-header img {
+        height: 40px;
+        width: 22vw; }
+        @media (min-width: 600px) {
+          .logo-date .event-date .logo-header img {
+            height: 40px;
+            width: 276px; } }
 
 /* hide mobile version by default */
 .logo .mobile {
@@ -1023,11 +1030,11 @@ form {
       flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
-  .ccbc-front div {
+  .ccbc-front p {
+    max-width: 250px;
+    margin: 0 auto; }
+  .ccbc-front div:not(:last-child) {
     margin-bottom: 2rem; }
-    .ccbc-front div p {
-      max-width: 250px;
-      margin: 0 auto; }
 
 .ccbc-title {
   margin-bottom: 3rem; }
