@@ -110,3 +110,51 @@
         @include white-load-more;
         padding: 1%;
     }
+
+    /*Download resources categories */
+
+    .downloads {
+        margin: 5% 0;
+        h2 {
+            @include section-heading;
+            width: 100%;
+            font-size: 25px;
+            color: $dark-text;
+            margin-bottom: 5%;
+            @include desktop {
+                font-size: 35px;
+            }
+        }
+    }
+    .download-categories{
+    width: 90%;
+    margin: 37px auto;
+    color: $dark-text;
+        @include desktop {
+            width: 76%;
+        }
+    .category-titles {
+        border-bottom: 1px solid $best-green;
+        height: 57px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        
+        h2 {
+            margin: auto 0;
+            text-transform: capitalize;
+            font-size: 25px;
+            font-weight: 300;
+            @include desktop {
+                font-size: 35px;
+            }
+        }
+        .arrow {
+            margin: auto 0;
+            font-family: FontAwesome;
+            color: $best-green;
+            font-size: 1.8rem;
+        }
+
+    }
+    }
