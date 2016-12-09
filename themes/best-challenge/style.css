@@ -1053,13 +1053,15 @@ form {
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
-  background: url("../../assets/images/sponsors-grey-bg.png") top no-repeat; }
+  background: url("../../assets/images/sponsors-grey-bg.png") top no-repeat;
+  background-size: cover; }
 
 .modologo {
   padding-bottom: 1rem; }
 
 .fp-sponsors-title h2 {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  padding-top: 30%; }
 
 .fp-sponsors-img {
   width: 100%;
@@ -2439,7 +2441,7 @@ NEWLETTER SIGN-UP AREA
 .page-id-113 .ir-fuel {
   background: url("../../assets/images/ir-lightgrey-curve-bottom.png") top no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 53vh;
   margin-top: -9vh;
   position: relative;
   display: -ms-flexbox;

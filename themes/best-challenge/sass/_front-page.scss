@@ -130,6 +130,7 @@
     justify-content: space-between;
     align-items: center;
     background: url('../../assets/images/sponsors-grey-bg.png')top no-repeat;
+    background-size: cover;
 }
 
 .modologo {
@@ -139,6 +140,7 @@
 .fp-sponsors-title {
     h2 {
         font-size: 1.5rem;
+        padding-top: 30%;
     }
 }
 
