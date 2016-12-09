@@ -847,9 +847,9 @@ users choice
   align-items: center; }
 
 .button1 a {
-  border: 1px solid black;
+  border: 1px solid #303b46;
   background-color: transparent;
-  color: black;
+  color: #303b46;
   cursor: pointer;
   padding: .5rem 3rem;
   border: 1;
@@ -859,7 +859,6 @@ users choice
   box-shadow: none;
   line-height: 1.7;
   border-width: 3px;
-  border-color: black;
   text-shadow: none;
   width: 200px;
   text-decoration: none;
@@ -876,9 +875,9 @@ users choice
   color: #a6ce39; }
 
 .button2 a {
-  border: 1px solid black;
+  border: 1px solid #303b46;
   background-color: transparent;
-  color: black;
+  color: #303b46;
   cursor: pointer;
   padding: .5rem 3.3rem;
   border: 1;
@@ -888,7 +887,6 @@ users choice
   box-shadow: none;
   line-height: 1.7;
   border-width: 3px;
-  border-color: black;
   text-shadow: none;
   width: 200px;
   text-decoration: none;
@@ -1893,6 +1891,10 @@ FORM at bottom of footer
 
 .subscribe-to-newsletter {
   margin-top: 50px; }
+
+.subscribeForm-for-newsLetter form {
+  -ms-flex-align: start;
+      align-items: flex-start; }
 
 /*=======================
 INPUT field
