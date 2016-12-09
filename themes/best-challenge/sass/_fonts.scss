@@ -14,9 +14,6 @@
 
 }
 
-
-
-
 @font-face {
     font-family: 'montserrat';
     src: url('../../assets/fonts/montserrat-semibold-webfont.eot');
@@ -39,6 +36,17 @@
     font-weight: 300;
     font-style: normal;
 
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('../../assets/fonts/montserrat-extralight-webfont.eot');
+    src: url('../../assets/fonts/montserrat-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/montserrat-extralight-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/montserrat-extralight-webfont.woff') format('woff'),
+         url('../../assets/fonts/montserrat-extralight-webfont.svg#montserratsemibold') format('svg');
+    font-weight: 200;
+    font-style: normal;
 }
 
 

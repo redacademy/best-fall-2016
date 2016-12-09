@@ -244,6 +244,13 @@ th {
   font-weight: 300;
   font-style: normal; }
 
+@font-face {
+  font-family: 'montserrat';
+  src: url("../../assets/fonts/montserrat-extralight-webfont.eot");
+  src: url("../../assets/fonts/montserrat-extralight-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/montserrat-extralight-webfont.woff2") format("woff2"), url("../../assets/fonts/montserrat-extralight-webfont.woff") format("woff"), url("../../assets/fonts/montserrat-extralight-webfont.svg#montserratsemibold") format("svg");
+  font-weight: 200;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -629,7 +636,7 @@ a {
           flex-direction: row; } }
 
 .title-wrapper {
-  line-height: 0.5;
+  margin: 0;
   margin-top: 5%;
   height: 200px;
   text-align: center; }
@@ -637,13 +644,13 @@ a {
     .title-wrapper {
       margin-top: 5%; } }
   .title-wrapper h1 {
-    font-size: 60px;
+    font-size: 55px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center; }
   .title-wrapper p {
-    font-size: 20px;
-    font-weight: 300; }
+    font-size: 30px;
+    font-weight: 200; }
 
 .page-description {
   width: 90%;
@@ -1275,7 +1282,7 @@ form {
         text-transform: uppercase;
         width: 100%;
         text-align: center;
-        line-height: 0.5;
+        margin: 0;
         padding-top: 1%; }
         .page-template-default .taxonomy-wrapper .results h2 h1, .tax-participant_location .taxonomy-wrapper .results h2 h1 {
           font-size: 2.62rem;
@@ -1293,7 +1300,7 @@ form {
         text-transform: uppercase;
         width: 100%;
         text-align: center;
-        line-height: 0.5;
+        margin: 0;
         font-weight: 300; }
         .page-template-default .taxonomy-wrapper .results h3 h1, .tax-participant_location .taxonomy-wrapper .results h3 h1 {
           font-size: 2.62rem;
@@ -1311,7 +1318,7 @@ form {
         text-transform: uppercase;
         width: 100%;
         text-align: center;
-        line-height: 0.5; }
+        margin: 0; }
         .page-template-default .taxonomy-wrapper .results h4 h1, .tax-participant_location .taxonomy-wrapper .results h4 h1 {
           font-size: 2.62rem;
           text-align: center;
@@ -1452,7 +1459,7 @@ form {
         outline: none; }
 
 .resources-page-heading {
-  background-image: url(../../assets/images/participant-header.png);
+  background-image: url(../../assets/images/backgrounds/resources-header.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   -ms-flex-pack: center;
@@ -1467,11 +1474,17 @@ form {
       background-position: center; } }
   @media (min-width: 600px) {
     .resources-page-heading {
-      background-image: url(../../assets/images/participant-header.png); } }
+      background-image: url(../../assets/images/backgrounds/resources-header-mobile.png); } }
 
 .activities-section {
   width: 100%;
-  background: url("../../assets/images/light-blue-curved-background.png") center bottom no-repeat; }
+  background: url("../../assets/images/light-blue-curved-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  max-width: 100%; }
 
 .activities-wrapper {
   width: 80%;
