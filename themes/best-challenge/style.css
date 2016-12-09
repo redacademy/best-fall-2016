@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: BEST Challenge Theme
 Theme URI: http://underscores.me/
@@ -1756,11 +1757,6 @@ this is a section with three blocks flexed explaining the benefits of the Commut
   /*=======================
 CUSTOM-FIELD-SUITE loop items with four blocks flexed
 ========================*/
-  /*.challenge-participate-blocks p:first-child{
-   font-size:20px;
-  font-family: 'montserrat';
-  font-weight:bold;
-}*/
   /*=======================
 this is the first form on the page consisting of a sign-up button which takes you to external site
 ========================*/
@@ -1854,7 +1850,7 @@ this section is a testimonial
         flex-direction: column; }
   .page-id-34 .how-to-participate-wrapper {
     padding-top: 50px;
-    background: url("../../assets/images/blue-background-small.png") center;
+    background: url("../../assets/images/blue-background-large@3x.png") center;
     background-size: cover; }
   .page-id-34 .how-to-participate-wrapper h2 {
     text-transform: uppercase;
@@ -1904,12 +1900,12 @@ this section is a testimonial
   .page-id-34 .description-wrapper {
     display: -ms-flexbox;
     display: flex;
-    width: 40%; }
+    width: 60%; }
   .page-id-34 .description-wrapper p {
     margin-top: 0rem;
     color: white;
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     font-family: 'montserrat';
     font-weight: 300; }
   .page-id-34 .single-participate-block i {
@@ -1932,16 +1928,21 @@ this section is a testimonial
         align-items: center;
     text-align: center; }
   .page-id-34 .font-under-button p {
-    font-size: 7px;
-    margin-top: 0; }
+    font-size: 14px;
+    margin-top: 0;
+    font-family: 'montserrat';
+    font-weight: 300; }
   .page-id-34 .underline-under-button {
     width: 150px;
     padding-bottom: 100px; }
-  .page-id-34 .underline-under-button p {
+  .page-id-34 .underline-under-button a {
     font-style: italic;
     text-decoration: underline;
-    font-size: 10px;
-    margin-top: 0; }
+    font-size: 16px;
+    margin-top: 0;
+    color: white; }
+  .page-id-34 .underline-under-button a:hover {
+    color: midnightblue; }
   .page-id-34 #sign-up-form {
     -ms-flex-pack: center;
         justify-content: center;
@@ -1953,17 +1954,25 @@ this section is a testimonial
     -ms-flex-align: center;
         align-items: center; }
   .page-id-34 #sign-up {
-    background-color: #383B4C;
+    background-color: transparent;
     color: white;
     cursor: pointer;
-    padding: .25rem 2rem;
+    padding: .2å5rem 2rem;
     border: 1;
     border-radius: 25px;
-    font-family: ralewaylight, sans-serif;
-    font-size: 0.8rem;
     box-shadow: none;
     line-height: 1.2;
-    border-width: 2px; }
+    border-width: 3px;
+    width: 193px;
+    height: 50px;
+    font-size: 18px;
+    font-family: 'montserrat';
+    font-weight: normal;
+    border-color: white; }
+  .page-id-34 #sign-up:hover {
+    background-color: white;
+    color: #303b46;
+    border-color: #303b46; }
   .page-id-34 .resources-section {
     background: url("../../assets/images/curved-gray-background.png") center;
     background-size: cover;
@@ -2045,7 +2054,13 @@ this section is a testimonial
   .page-id-34 form {
     -ms-flex-align: center;
         align-items: center;
-    display: block; }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding-top: 60px; }
+  .page-id-34 input:hover {
+    color: red; }
 
 /*=======================
 this is the css unique to page-id-91

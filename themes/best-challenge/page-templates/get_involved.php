@@ -100,7 +100,7 @@ get_header(); ?>
                              <!-- This link will take user to extrnal site -->
 						        <input type="submit" name="submit" value="Sign Up" id="sign-up">
                                 <div class="font-under-button"><p>on Canada Site</p></div>
-                                <div class="underline-under-button"><p>or log in on the canada site</p><div>
+                                <div class="underline-under-button"><a href="https://commuterchallenge.ca/">or log in on the canada site</a><div>
                         </div>
                     </div>
                 </div>
