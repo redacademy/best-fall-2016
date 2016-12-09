@@ -62,7 +62,7 @@ get_header(); ?>
 							</div>	
 						</div> <!-- activity wrapper section ends -->
 						<div class="load-more">
-							<a href="<?php echo esc_url( site_url( '/get-involved/' ) ); ?>">
+							<a href="<?php echo esc_url( site_url( 'activity_type/team-activities/' ) ); ?>">
 								<p>Read More</p>
 							</a>
 						</div>
