@@ -170,12 +170,21 @@
         color: $black-text;
         text-transform: uppercase;
     }   
+    .results {
+        margin: 50px 0 50px 30px;
+        display: flex;
+        flex-direction: column;
+        @include desktop {
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+    }
 
     .download-post {
         width: 265px;
         height: 368px;
         margin-right: 23px;
-        margin-left: 15px;
         background-color: $light-grey-background;
         display: flex;
         flex-direction: column;
@@ -219,13 +228,5 @@
         }
     }
 
-    .results {
-        display: flex;
-        flex-direction: column;
-        @include desktop {
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-    }
+    
 }
