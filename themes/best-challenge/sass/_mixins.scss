@@ -88,3 +88,26 @@
 		}
 	}
 }
+
+//Content Width 
+
+@mixin content-wrapper {
+	width: 90%;
+    margin: 0 auto;
+    padding-top: 3%;   
+        @include desktop {                
+			width: 80%;
+         }
+}
+
+//Download Link style 
+@mixin download-link {
+	color: $best-green;
+	text-decoration: none;
+	font-size: 1.6rem;
+	font-weight: normal;
+	&:before {
+		content: url('../../assets/images/icons/green-arrow.png');
+		margin: 10px;
+	}
+}
