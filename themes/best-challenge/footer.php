@@ -53,7 +53,6 @@
 
 
 
-<?php echo do_shortcode( '[contact-form-7 id="134" title="Newsletter Subscription From"]' ); ?>
 
 			<div class="footer-social">
 					<span>
