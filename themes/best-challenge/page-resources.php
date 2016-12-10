@@ -75,12 +75,17 @@ get_header(); ?>
 				<!--Show only the Download Categories-->
 				<?php
 				$taxonomy = 'download_type';
+				
 				$terms = get_terms($taxonomy, array('parent' => 0, 'order' => 'DESC'));   
 					foreach($terms as $download_type) { ?>
 						<div class="download-categories">
 							<div class="category-titles">
-								<div class=download-name><h2><?php echo $download_type->name; ?> </h2></div>
-								<div class="arrow"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></div>
+								<div class=download-name>
+									<?php echo "<img src=" . get_template_directory_uri() . "/assets/images/icons/download-icons/" . $download_type->slug . ".png>"; ?>
+									<?php $url=get_term_link($download_type->slug , 'download_type'); ?>
+									<a href="<?php echo $url ?>"><h2><?php echo $download_type->name ?></h2></a>
+								</div>
+								<div class="arrow"><a href="<?php echo $url ?>" class="arrow-link"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
 							</div>		
 						</div>
 				<?php

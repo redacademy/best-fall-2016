@@ -114,7 +114,10 @@
     /*Download resources categories */
 
     .downloads {
-        margin: 5% 0;
+        margin: 10% 0;
+        @include desktop{
+            margin: 5% 0;
+        }
         h2 {
             @include section-heading;
             width: 100%;
@@ -135,18 +138,24 @@
         }
     .category-titles {
         border-bottom: 1px solid $best-green;
-        height: 57px;
+        height: 63px;
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-        
-        h2 {
-            margin: auto 0;
-            text-transform: capitalize;
-            font-size: 25px;
-            font-weight: 300;
-            @include desktop {
-                font-size: 35px;
+        .download-name {
+            display: inherit;
+            a {
+                text-decoration: none;
+            }
+            h2 {
+                padding-left: 10px;
+                margin: auto 0;
+                text-transform: capitalize;
+                font-size: 25px;
+                font-weight: 300;
+                @include desktop {
+                    font-size: 35px;
+                }
             }
         }
         .arrow {
@@ -154,6 +163,11 @@
             font-family: FontAwesome;
             color: $best-green;
             font-size: 1.8rem;
+            padding-right: 10px;
+            .arrow-link {
+                color: $best-green;
+                text-decoration: none;
+            }
         }
 
     }

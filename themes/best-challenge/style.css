@@ -1600,7 +1600,10 @@ form {
 
 /*Download resources categories */
 .downloads {
-  margin: 5% 0; }
+  margin: 10% 0; }
+  @media (min-width: 600px) {
+    .downloads {
+      margin: 5% 0; } }
   .downloads h2 {
     font-weight: bold;
     text-transform: uppercase;
@@ -1633,26 +1636,35 @@ form {
       width: 76%; } }
   .download-categories .category-titles {
     border-bottom: 1px solid #a6ce39;
-    height: 57px;
+    height: 63px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between;
     -ms-flex-align: baseline;
         align-items: baseline; }
-    .download-categories .category-titles h2 {
-      margin: auto 0;
-      text-transform: capitalize;
-      font-size: 25px;
-      font-weight: 300; }
-      @media (min-width: 600px) {
-        .download-categories .category-titles h2 {
-          font-size: 35px; } }
+    .download-categories .category-titles .download-name {
+      display: inherit; }
+      .download-categories .category-titles .download-name a {
+        text-decoration: none; }
+      .download-categories .category-titles .download-name h2 {
+        padding-left: 10px;
+        margin: auto 0;
+        text-transform: capitalize;
+        font-size: 25px;
+        font-weight: 300; }
+        @media (min-width: 600px) {
+          .download-categories .category-titles .download-name h2 {
+            font-size: 35px; } }
     .download-categories .category-titles .arrow {
       margin: auto 0;
       font-family: FontAwesome;
       color: #a6ce39;
-      font-size: 1.8rem; }
+      font-size: 1.8rem;
+      padding-right: 10px; }
+      .download-categories .category-titles .arrow .arrow-link {
+        color: #a6ce39;
+        text-decoration: none; }
 
 .info-404 {
   display: -ms-flexbox;
@@ -2123,8 +2135,6 @@ this section is a testimonial
     -ms-flex-direction: column;
         flex-direction: column;
     padding-top: 60px; }
-  .page-id-34 input:hover {
-    color: red; }
 
 /*=======================
 this is the css unique to page-id-91
@@ -2899,7 +2909,7 @@ FORM at bottom of footer
   padding-bottom: 10px; }
 
 .subscribe-to-newsletter {
-  margin-top: 50px; }
+  margin-top: 10px; }
 
 .subscribeForm-for-newsLetter form {
   -ms-flex-align: start;
@@ -2915,3 +2925,29 @@ INPUT field
     #your-email {
       height: 50px;
       width: 252px; } }
+
+#wpcf7-f134-o1 input {
+  border-radius: 10px 10px 10px 10px;
+  background-color: lightgray; }
+  @media (min-width: 600px) {
+    #wpcf7-f134-o1 input {
+      height: 50px;
+      width: 252px; } }
+
+#wpcf7-f134-o1 input[type=submit] {
+  background-color: #383B4C;
+  color: white;
+  cursor: pointer;
+  padding: .5rem 2rem;
+  border: 1;
+  border-radius: 25px;
+  font-family: 'montserrat';
+  font-weight: 100;
+  font-size: 0.8rem;
+  box-shadow: none;
+  line-height: 1.2;
+  border-width: 0px; }
+  @media (min-width: 600px) {
+    #wpcf7-f134-o1 input[type=submit] {
+      height: 50px;
+      width: 162px; } }
