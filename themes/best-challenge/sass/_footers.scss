@@ -102,12 +102,36 @@ padding-bottom:1rem;
     justify-content: center;
     align-items: center;
     width: 100%;
+    
+     @include desktop {
+ justify-content: flex-start;
+
+     }
 }
 
 .footer-social i {
     color: white;
     padding: 1rem;
+   
 }
+
+.footer-social p {
+   visibility:hidden;
+   justify-content:flex-end;
+    color:white;
+    padding-left:0%;
+    text-align:right;
+    width:1px;
+     @include desktop {
+        color: white;
+        padding: 1rem;
+        font-family: 'montserrat';
+        font-weight: 100;
+        padding-left:30%;
+     }
+
+}
+
 
 .footer-social i:hover {
     color: midnightblue;
@@ -341,14 +365,24 @@ INPUT field
     padding: .5rem 2rem;
     border: 1;
     border-radius: 25px;
-    font-family: 'montserrat';
-    font-weight: 100;
-    font-size: 0.8rem;
     box-shadow: none;
     line-height: 1.2;
     border-width: 0px;
+       font-size:18px;
+    font-family:'montserrat';
+    font-weight: normal;
            @include desktop {
         height: 50px;
         width: 162px;
    }
 } 
+
+#wpcf7-f134-o1 input[type=submit]:hover{
+background-color: white;
+color: #303b46;
+border-color:#303b46;
+   font-size:18px;
+    font-family:'montserrat';
+    font-weight: normal;
+
+}

@@ -65,7 +65,7 @@
 					<span>
 						<a href="http://twitter.com"><i class="fa fa-twitter-square"></i></a>
 					</span>
-				
+					<p>Copyright © 2016 B.E.S.T.</p>
 				
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
