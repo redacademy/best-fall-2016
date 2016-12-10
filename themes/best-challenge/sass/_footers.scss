@@ -112,6 +112,7 @@ padding-bottom:1rem;
 .footer-social i {
     color: white;
     padding: 1rem;
+    font-size:1.8rem;
    
 }
 
@@ -120,14 +121,16 @@ padding-bottom:1rem;
    justify-content:flex-end;
     color:white;
     padding-left:0%;
-    text-align:right;
     width:1px;
      @include desktop {
         color: white;
-        padding: 1rem;
+        padding-right: 8rem;
         font-family: 'montserrat';
         font-weight: 100;
-        padding-left:30%;
+        text-align:right;
+        visibility:visible;
+         width:100%;
+         
      }
 
 }
@@ -325,15 +328,14 @@ text-align: left;
 }
 
 .subscribe-to-newsletter{
-margin-top:10px;
+    margin-top:10px;
 
 
 }
 
 
 .subscribeForm-for-newsLetter form {
-
-align-items:flex-start;
+    align-items:flex-start;
 
 }
 /*=======================
@@ -353,6 +355,8 @@ INPUT field
 #wpcf7-f134-o1 input{
     border-radius: 10px 10px 10px 10px;
     background-color: lightgray;
+    height: 50px;
+        width: 262px;
         @include desktop {
         height: 50px;
         width: 100%;
@@ -371,6 +375,8 @@ INPUT field
        font-size:18px;
     font-family:'montserrat';
     font-weight: normal;
+    height: 50px;
+        width: 162px;
            @include desktop {
         height: 50px;
         width: 162px;
@@ -385,4 +391,15 @@ border-color:#303b46;
     font-family:'montserrat';
     font-weight: normal;
 
+}
+
+.font-awesome{
+
+    display:flex;
+    flex-direction:row;
+    padding-left:0%;
+    text-align:center;
+    @include desktop {
+        padding-left:10%;
+}
 }

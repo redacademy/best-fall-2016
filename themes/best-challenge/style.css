@@ -936,7 +936,9 @@ form {
   -ms-flex-align: center;
       align-items: center;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 .hero-banner {
   background: url(../../assets/images/hero-banner-mobile.png) center no-repeat;
@@ -2805,7 +2807,8 @@ NEWLETTER SIGN-UP AREA
 
 .footer-social i {
   color: white;
-  padding: 1rem; }
+  padding: 1rem;
+  font-size: 1.8rem; }
 
 .footer-social p {
   visibility: hidden;
@@ -2813,15 +2816,16 @@ NEWLETTER SIGN-UP AREA
       justify-content: flex-end;
   color: white;
   padding-left: 0%;
-  text-align: right;
   width: 1px; }
   @media (min-width: 600px) {
     .footer-social p {
       color: white;
-      padding: 1rem;
+      padding-right: 8rem;
       font-family: 'montserrat';
       font-weight: 100;
-      padding-left: 30%; } }
+      text-align: right;
+      visibility: visible;
+      width: 100%; } }
 
 .footer-social i:hover {
   color: midnightblue; }
@@ -3029,7 +3033,9 @@ INPUT field
 
 #wpcf7-f134-o1 input {
   border-radius: 10px 10px 10px 10px;
-  background-color: lightgray; }
+  background-color: lightgray;
+  height: 50px;
+  width: 262px; }
   @media (min-width: 600px) {
     #wpcf7-f134-o1 input {
       height: 50px;
@@ -3047,7 +3053,9 @@ INPUT field
   border-width: 0px;
   font-size: 18px;
   font-family: 'montserrat';
-  font-weight: normal; }
+  font-weight: normal;
+  height: 50px;
+  width: 162px; }
   @media (min-width: 600px) {
     #wpcf7-f134-o1 input[type=submit] {
       height: 50px;
@@ -3060,3 +3068,14 @@ INPUT field
   font-size: 18px;
   font-family: 'montserrat';
   font-weight: normal; }
+
+.font-awesome {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  padding-left: 0%;
+  text-align: center; }
+  @media (min-width: 600px) {
+    .font-awesome {
+      padding-left: 10%; } }
