@@ -65,6 +65,7 @@
     color: white;
     text-decoration: none;
     font-family: 'montserrat';
+        line-height: 1.2;
 }
 
 .footer-section a:hover {
@@ -76,7 +77,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding-bottom: 0;
     margin-bottom: 0;
     padding-bottom: 0.5rem;
@@ -85,9 +85,15 @@
     padding-left:5%;
     padding-right:2%;
     align-items:flex-start;
-    justify-content: space-between;
+    
    }
 }
+
+.about-best p{
+padding-top:1rem;
+padding-bottom:1rem;
+}
+
 
 .footer-social {
     height: 50px;

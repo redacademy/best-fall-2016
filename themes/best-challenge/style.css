@@ -2680,7 +2680,8 @@ NEWLETTER SIGN-UP AREA
 .footer-section a {
   color: white;
   text-decoration: none;
-  font-family: 'montserrat'; }
+  font-family: 'montserrat';
+  line-height: 1.2; }
 
 .footer-section a:hover {
   color: midnightblue; }
@@ -2692,8 +2693,6 @@ NEWLETTER SIGN-UP AREA
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
   padding-bottom: 0;
   margin-bottom: 0;
   padding-bottom: 0.5rem; }
@@ -2703,9 +2702,11 @@ NEWLETTER SIGN-UP AREA
       padding-left: 5%;
       padding-right: 2%;
       -ms-flex-align: start;
-          align-items: flex-start;
-      -ms-flex-pack: justify;
-          justify-content: space-between; } }
+          align-items: flex-start; } }
+
+.about-best p {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
 
 .footer-social {
   height: 50px;
