@@ -4,7 +4,7 @@
         @include desktop {
     display:flex;
     flex-direction:row;
-    padding-right:40px;
+    
     height:300px;
     }
 }
@@ -83,7 +83,7 @@
         @include desktop {
     width:70%;
     padding-left:5%;
-    padding-right:10%;
+    padding-right:2%;
     align-items:flex-start;
     justify-content: space-between;
    }
@@ -162,7 +162,9 @@ para-content {
 
 .logo-image {
     font-size: 2rem;
-    text-align: center;
+    text-align: left;
+    width:100%;
+
      }
 
 .commuterChallenge-contact-logos {
@@ -323,7 +325,7 @@ INPUT field
     background-color: lightgray;
         @include desktop {
         height: 50px;
-        width: 252px;
+        width: 100%;
    }
 }
 #wpcf7-f134-o1 input[type=submit] { 

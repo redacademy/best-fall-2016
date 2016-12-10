@@ -855,7 +855,7 @@ users choice
     .green-buttons {
       margin-bottom: 0px;
       margin-top: 0px;
-      padding-left: 100px; } }
+      padding-left: 20px; } }
 
 .button1 {
   display: -ms-flexbox;
@@ -2626,7 +2626,6 @@ NEWLETTER SIGN-UP AREA
     display: flex;
     -ms-flex-direction: row;
         flex-direction: row;
-    padding-right: 40px;
     height: 300px; } }
 
 .footer-column {
@@ -2702,7 +2701,7 @@ NEWLETTER SIGN-UP AREA
     .about-best {
       width: 70%;
       padding-left: 5%;
-      padding-right: 10%;
+      padding-right: 2%;
       -ms-flex-align: start;
           align-items: flex-start;
       -ms-flex-pack: justify;
@@ -2785,7 +2784,8 @@ para-content {
 
 .logo-image {
   font-size: 2rem;
-  text-align: center; }
+  text-align: left;
+  width: 100%; }
 
 .commuterChallenge-contact-logos {
   display: -ms-flexbox;
@@ -2932,7 +2932,7 @@ INPUT field
   @media (min-width: 600px) {
     #wpcf7-f134-o1 input {
       height: 50px;
-      width: 252px; } }
+      width: 100%; } }
 
 #wpcf7-f134-o1 input[type=submit] {
   background-color: #383B4C;
