@@ -48,7 +48,7 @@ get_header(); ?>
 							
 								<?php foreach( $prizes as $post ) : setup_postdata($post); ?>
 								
-									<div class="taxonomy-post">
+									<div class="taxonomy-post" id="prize-posts">
 										<div class="prize-image">
 											<?php the_post_thumbnail( 'large' ); ?>							
 										</div>

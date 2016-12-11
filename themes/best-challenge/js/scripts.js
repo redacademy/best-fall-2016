@@ -10,11 +10,11 @@
 (function ($) {
   //function to show prize description on click 
 
-  $('.single-prize').on('click', function (event) {
+  $('#prize-posts').on('click', function (event) {
     event.preventDefault();
-    $(this).find('.prize-description').css('display', 'initial');
+    $(this).find('.taxonomy-description').css('display', 'initial');
   });
-  $('.prize-description').mouseleave(function () {
+  $('.taxonomy-description').mouseleave(function () {
     $(this).css('display', 'none');
   });
 
