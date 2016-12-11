@@ -1416,12 +1416,13 @@ form {
 
 /*Prize Categories on Prizes Page*/
 .prize-categories {
-  width: 80%;
+  width: 90%;
   margin: 15% auto;
   color: #303b46; }
   @media (min-width: 600px) {
     .prize-categories {
-      margin: 5% auto; } }
+      margin: 5% auto;
+      width: 80%; } }
   .prize-categories h2 {
     font-weight: normal;
     font-size: 1.9rem;
@@ -1450,18 +1451,24 @@ form {
       cursor: pointer; }
     .prize-categories .category-name .arrow {
       margin: auto 0;
-      font-family: FontAwesome;
-      color: #a6ce39;
-      font-size: 1.8rem;
-      padding-right: 10px; }
+      /*font-family: FontAwesome;
+            color: $best-green;
+            font-size: 1.8rem;
+            padding-right: 10px;*/ }
+      .prize-categories .category-name .arrow img {
+        width: 40%;
+        position: relative;
+        bottom: -10px;
+        right: -55px; }
     .prize-categories .category-name .category-title h3 {
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       font-weight: 300;
       margin: 0;
       padding-top: 10px; }
       @media (min-width: 600px) {
         .prize-categories .category-name .category-title h3 {
-          font-weight: bold; } }
+          font-weight: bold;
+          font-size: 1.7rem; } }
   .prize-categories .category-description p {
     display: none;
     font-weight: 300; }

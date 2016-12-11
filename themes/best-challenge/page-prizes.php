@@ -76,7 +76,8 @@ get_header(); ?>
 
 							<div class="category-name"> 
 								<div class="category-title"><h3><?php echo $field['category_name']; ?></h3></div>
-								<div class="arrow"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></div>
+								<!--<div class="arrow"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></div>-->
+							<div class="arrow"><?php echo "<img src=" . get_template_directory_uri() . "/assets/images/icons/green-checkmark.png>"; ?></div>
 							</div>
 							<div class="category-description">
 									<p><?php echo $field['category_description']; } ?></p>
