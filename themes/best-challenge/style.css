@@ -1377,7 +1377,7 @@ form {
         padding-bottom: 10px; }
     .taxonomy-wrapper .results .taxonomy-description {
       background-color: #5a6f83;
-      opacity: 0.9;
+      opacity: 0.95;
       bottom: 43px;
       display: none;
       position: absolute;
@@ -1388,10 +1388,10 @@ form {
       word-wrap: break-word; }
       .taxonomy-wrapper .results .taxonomy-description p {
         width: 90%;
-        margin: 1% auto;
+        margin: 5% auto;
         color: #dee2e6;
-        font-weight: 300;
-        font-size: 1rem;
+        font-weight: normal;
+        font-size: 15px;
         text-align: center; }
 
 .tax-participant_location .taxonomy-wrapper {

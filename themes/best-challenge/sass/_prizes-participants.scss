@@ -113,7 +113,7 @@
        
         .taxonomy-description {
             background-color: $footer-background;
-            opacity: 0.9;
+            opacity: 0.95;
             bottom: 43px;
             display: none;
             position: absolute;
@@ -124,10 +124,10 @@
             word-wrap: break-word;
             p {
                 width: 90%;
-                margin: 1% auto;
+                margin: 5% auto;
                 color: $light-text;
-                font-weight: 300;
-                font-size: 1rem;
+                font-weight: normal;
+                font-size: 15px;
                 text-align: center;
             }
         }
