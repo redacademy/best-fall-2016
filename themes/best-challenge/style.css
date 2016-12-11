@@ -1283,13 +1283,10 @@ form {
         -ms-flex-item-align: center;
             -ms-grid-row-align: center;
             align-self: center;
-        margin: 35px;
+        margin: 17px;
         width: 230px;
         height: 230px;
         position: relative; }
-        @media (min-width: 600px) {
-          .page-template-default .taxonomy-wrapper .results .taxonomy-post, .tax-participant_location .taxonomy-wrapper .results .taxonomy-post {
-            margin: 17px; } }
       .page-template-default .taxonomy-wrapper .results .taxonomy-image, .tax-participant_location .taxonomy-wrapper .results .taxonomy-image {
         width: 230px;
         background-color: #ffffff; }
@@ -1298,7 +1295,7 @@ form {
       .page-template-default .taxonomy-wrapper .results .location-title, .tax-participant_location .taxonomy-wrapper .results .location-title {
         width: 100%; }
       .page-template-default .taxonomy-wrapper .results h2, .tax-participant_location .taxonomy-wrapper .results h2 {
-        font-size: 2.25rem;
+        font-size: 1.9rem;
         color: #303b46;
         font-weight: bold;
         text-transform: uppercase;
@@ -1315,6 +1312,9 @@ form {
         .page-template-default .taxonomy-wrapper .results h2 p, .tax-participant_location .taxonomy-wrapper .results h2 p {
           font-size: 1.1rem;
           font-weight: 300; }
+        @media (min-width: 600px) {
+          .page-template-default .taxonomy-wrapper .results h2, .tax-participant_location .taxonomy-wrapper .results h2 {
+            font-size: 2.25rem; } }
       .page-template-default .taxonomy-wrapper .results h3, .tax-participant_location .taxonomy-wrapper .results h3 {
         font-size: 1.88rem;
         font-weight: bold;
@@ -1411,7 +1411,7 @@ form {
           font-weight: bold; } }
     @media (min-width: 600px) {
       .page-template-default .prize-categories, .tax-participant_location .prize-categories {
-        width: 50%;
+        width: 54%;
         color: #5a6f83; }
         .page-template-default .prize-categories p, .tax-participant_location .prize-categories p {
           margin-left: 50px; } }
