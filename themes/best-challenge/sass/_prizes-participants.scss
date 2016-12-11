@@ -19,7 +19,6 @@
         width: 100%;
         height: auto;
         background-color: $footer-background;
-        padding-bottom: 98px;
         &:nth-child(1){
             background-image: url("../../assets/images/light-blue-bkgrnd.png");
             @include background-image;
@@ -34,16 +33,27 @@
         .results {
             width: 80%;
             display: flex;
-            justify-content: center;
             flex-wrap: nowrap;
             flex-direction: column;
+            justify-content: center;
             flex-basis: 80%;
             margin: 0 auto;
+            padding-bottom: 95px;
             @include desktop {
                 flex-wrap: wrap;
                 flex-direction: row;
             }
-             
+            
+            .taxonomy-post {
+                align-self: center;
+                margin: 35px;
+                width: 230px;
+                height: 230px;
+                position: relative;
+                @include desktop {
+                    margin: 17px;
+                }
+            }
 
             .taxonomy-image {
                 width: 230px;
@@ -74,15 +84,7 @@
                 @include section-heading;
                 margin: 0;
             }
-            .taxonomy-post {
-                margin: 5% auto;
-                width: 230px;
-                height: 230px;
-                position: relative;
-                @include desktop {
-                    margin: 1%;
-                }
-            }
+            
         .taxonomy-title {
             width: 230.5px;
             height: 115px;
