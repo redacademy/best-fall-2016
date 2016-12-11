@@ -1578,7 +1578,7 @@ form {
         -ms-flex-direction: row;
             flex-direction: row; } }
     .activities-wrapper .activity-posts .single-activity-post {
-      margin: 1%;
+      margin: 3% 0;
       height: 458.9px;
       width: 310.8px;
       box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.2);
@@ -1677,32 +1677,46 @@ form {
       width: 76%; } }
   .download-categories .category-titles {
     border-bottom: 1px solid #a6ce39;
-    height: 63px;
+    height: 53px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between;
     -ms-flex-align: baseline;
         align-items: baseline; }
+    @media (min-width: 600px) {
+      .download-categories .category-titles {
+        height: 63px; } }
     .download-categories .category-titles .download-name {
       display: inherit; }
+      .download-categories .category-titles .download-name img {
+        width: 37px;
+        height: 41px; }
+        @media (min-width: 600px) {
+          .download-categories .category-titles .download-name img {
+            width: 45px;
+            height: 59px; } }
       .download-categories .category-titles .download-name a {
         text-decoration: none; }
       .download-categories .category-titles .download-name h2 {
         padding-left: 10px;
+        padding-top: 10px;
         margin: auto 0;
         text-transform: capitalize;
-        font-size: 25px;
+        font-size: 22px;
         font-weight: 300; }
         @media (min-width: 600px) {
           .download-categories .category-titles .download-name h2 {
             font-size: 35px; } }
+        .download-categories .category-titles .download-name h2:hover {
+          font-weight: normal; }
     .download-categories .category-titles .arrow {
       margin: auto 0;
       font-family: FontAwesome;
       color: #a6ce39;
       font-size: 1.8rem;
-      padding-right: 10px; }
+      padding-right: 10px;
+      padding-top: 10px; }
       .download-categories .category-titles .arrow .arrow-link {
         color: #a6ce39;
         text-decoration: none; }
