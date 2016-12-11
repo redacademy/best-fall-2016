@@ -80,11 +80,14 @@
 
 //used for Load More link  
 @mixin white-load-more{
-	font-size: 1.85rem;
+	font-size: 1.5rem;
 	text-align: center;
 	color: $light-text;
 	font-weight: 500;
 	cursor: pointer;
+	@include desktop {
+		font-size: 1.85rem;
+	}
 	
 	a {
 		color: inherit;

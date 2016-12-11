@@ -139,7 +139,7 @@
                 width: 37px;
                 height: 41px;
                 @include desktop {
-                    width: 45px;
+                    width: 50px;
                     height: 59px;
                 }
             }
@@ -154,7 +154,7 @@
                 font-size: 22px;
                 font-weight: 300;
                 @include desktop {
-                    font-size: 35px;
+                    font-size: 33px;
                 }
                 &:hover {
                     font-weight: normal;
