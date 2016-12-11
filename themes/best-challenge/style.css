@@ -1247,7 +1247,8 @@ form {
   .page-template-default .taxonomy-wrapper, .tax-participant_location .taxonomy-wrapper {
     width: 100%;
     height: auto;
-    background-color: #5a6f83; }
+    background-color: #5a6f83;
+    padding-bottom: 98px; }
     .page-template-default .taxonomy-wrapper:nth-child(1), .tax-participant_location .taxonomy-wrapper:nth-child(1) {
       background-image: url("../../assets/images/light-blue-bkgrnd.png");
       background-repeat: no-repeat;
@@ -1277,8 +1278,7 @@ form {
           -ms-flex-wrap: wrap;
               flex-wrap: wrap;
           -ms-flex-direction: row;
-              flex-direction: row;
-          margin-top: 5% auto 1% auto; } }
+              flex-direction: row; } }
       .page-template-default .taxonomy-wrapper .results .taxonomy-image, .tax-participant_location .taxonomy-wrapper .results .taxonomy-image {
         width: 230px;
         background-color: #ffffff; }
@@ -1293,8 +1293,7 @@ form {
         text-transform: uppercase;
         width: 100%;
         text-align: center;
-        margin: 0;
-        padding-top: 1%; }
+        margin: 45px 0; }
         .page-template-default .taxonomy-wrapper .results h2 h1, .tax-participant_location .taxonomy-wrapper .results h2 h1 {
           font-size: 2.62rem;
           text-align: center;

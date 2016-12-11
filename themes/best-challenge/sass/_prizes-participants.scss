@@ -14,11 +14,12 @@
             background-image: url(../../assets/images/backgrounds/participants-header.png);
         }
     }
-       
+    
     .taxonomy-wrapper {
         width: 100%;
         height: auto;
         background-color: $footer-background;
+        padding-bottom: 98px;
         &:nth-child(1){
             background-image: url("../../assets/images/light-blue-bkgrnd.png");
             @include background-image;
@@ -38,11 +39,10 @@
             flex-direction: column;
             flex-basis: 80%;
             margin: 0 auto;
-                @include desktop {
+            @include desktop {
                 flex-wrap: wrap;
                 flex-direction: row;
-                margin-top: 5% auto 1% auto;
-                }
+            }
              
 
             .taxonomy-image {
@@ -61,8 +61,7 @@
                 font-size: 2.25rem;
                 color: $black-text;
                 @include section-heading;
-                margin: 0;
-                padding-top: 1%;
+                margin: 45px 0;
             }
             h3 {    
                 font-size: 1.88rem;
