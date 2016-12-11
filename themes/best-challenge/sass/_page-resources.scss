@@ -1,9 +1,9 @@
     .resources-page-heading {
-         background-image: url(../../assets/images/backgrounds/resources-header.png);
+         background-image: url(../../assets/images/backgrounds/resources-header-mobile.png);
          @include heading-backgrounds;
 
         @include desktop {
-            background-image: url(../../assets/images/backgrounds/resources-header-mobile.png);
+            background-image: url(../../assets/images/backgrounds/resources-header.png);
         }
     }
 
@@ -19,13 +19,8 @@
         }
     }
     .activities-wrapper {
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 3%;
+        @include content-wrapper;
         text-align: center;
-            @include desktop {
-                width: 80%;
-            }
 
         h2 {
             @include section-heading;
@@ -71,7 +66,7 @@
                     margin: 0 auto;
                     border-bottom: 2px solid $best-green;
                     h3 {
-                        font-size: 20px;
+                        font-size: 18px;
                         text-align: center;
                         color: $black-text;
                         font-weight: normal;
@@ -90,17 +85,10 @@
                        margin: 0;
                    }
                    a {
-                       color: $best-green;
-                       text-decoration: none;
-                       font-size: 1.6rem;
-                       font-weight: normal;
+                       @include download-link;
                        position: absolute;
-                       bottom: 10px;
-                       left: 10px;
-                       &:before {
-                           content: url('../../assets/images/icons/green-arrow.png');
-                           margin: 10px;
-                       }
+	                   bottom: 10px;
+	                   left: 10px;
                    }
                 }
             }           
@@ -172,3 +160,73 @@
 
     }
     }
+
+.download-wrapper {
+    @include content-wrapper;
+    h3 {
+        margin-top: 40px;
+        font-size: 28px;
+        font-weight: bold;
+        color: $black-text;
+        text-transform: uppercase;
+    }   
+    .results {
+        margin: 50px 0 50px 30px;
+        display: flex;
+        flex-direction: column;
+        @include desktop {
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+    }
+
+    .download-post {
+        width: 265px;
+        height: 368px;
+        margin-right: 23px;
+        background-color: $light-grey-background;
+        display: flex;
+        flex-direction: column;
+        .taxonomy-image {
+            align-self: center;
+            margin-top: 23px;
+            width: 217px;
+            height: 229px;
+            img {
+                width: 217px;
+                height: 229px;
+                /*object-fit: fill;*/
+            }
+        }
+        .taxonomy-title {
+            align-self: center;
+            width: 217px;
+            text-align: center;
+            h3 {
+                color: $black-text;
+                font-size: 18px;
+                font-weight: normal;
+                text-transform: uppercase;
+                margin: 0;
+                margin-top: 10px;
+            }
+        }
+        .taxonomy-description {
+            align-self: center;
+            a {
+                @include download-link;
+                color: $black-text;
+                font-size: 16px;
+                margin: 0;
+                margin-top: 10px;
+                &:before {
+                    content: url('../../assets/images/icons/black-arrow-down.png');
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+    
+}

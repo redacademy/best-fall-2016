@@ -9,16 +9,21 @@
             margin-top: 5%;
         }
 		h1 {
-			font-size: 55px;
+			font-size: 50px;
 			font-weight: bold;
 			text-transform: uppercase;
 			text-align: center;
             margin: 0;
+			@include desktop {
+				font-size: 55px;
+			}
 		}
 		p {
-			font-size: 25px;
+			font-size: 20px;
 			font-weight: 300;
-            
+            @include desktop {
+				font-size: 25px;
+			}
 		}
 }
 

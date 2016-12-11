@@ -645,14 +645,20 @@ a {
     .title-wrapper {
       margin-top: 5%; } }
   .title-wrapper h1 {
-    font-size: 55px;
+    font-size: 50px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     margin: 0; }
+    @media (min-width: 600px) {
+      .title-wrapper h1 {
+        font-size: 55px; } }
   .title-wrapper p {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300; }
+    @media (min-width: 600px) {
+      .title-wrapper p {
+        font-size: 25px; } }
 
 .page-description {
   width: 90%;
@@ -1215,27 +1221,28 @@ form {
   /* Participants page heading */
   /*Prize Categories on Prizes Page*/ }
   .page-template-default .page-heading, .page-template-default .page-heading-participants, .tax-participant_location .page-heading, .tax-participant_location .page-heading-participants {
-    background-image: url(../../assets/images/gift-mobile.png);
+    background-image: url(../../assets/images/backgrounds/prizes-header-mobile.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     -ms-flex-pack: center;
         justify-content: center;
     max-width: 100%;
-    height: 300px;
+    height: 255px;
     color: white;
     display: -ms-flexbox;
     display: flex; }
     @media (min-width: 600px) {
       .page-template-default .page-heading, .page-template-default .page-heading-participants, .tax-participant_location .page-heading, .tax-participant_location .page-heading-participants {
-        background-position: center; } }
+        background-position: center;
+        height: 300px; } }
     @media (min-width: 600px) {
       .page-template-default .page-heading, .page-template-default .page-heading-participants, .tax-participant_location .page-heading, .tax-participant_location .page-heading-participants {
-        background-image: url(../../assets/images/gift.png); } }
+        background-image: url(../../assets/images/backgrounds/prizes-header.png); } }
   .page-template-default .page-heading-participants, .tax-participant_location .page-heading-participants {
-    background-image: url(../../assets/images/participant-header.png); }
+    background-image: url(../../assets/images/backgrounds/participants-header-mobile.png); }
     @media (min-width: 600px) {
       .page-template-default .page-heading-participants, .tax-participant_location .page-heading-participants {
-        background-image: url(../../assets/images/participant-header.png); } }
+        background-image: url(../../assets/images/backgrounds/participants-header.png); } }
   .page-template-default .taxonomy-wrapper, .tax-participant_location .taxonomy-wrapper {
     width: 100%;
     height: auto;
@@ -1461,22 +1468,23 @@ form {
         outline: none; }
 
 .resources-page-heading {
-  background-image: url(../../assets/images/backgrounds/resources-header.png);
+  background-image: url(../../assets/images/backgrounds/resources-header-mobile.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   -ms-flex-pack: center;
       justify-content: center;
   max-width: 100%;
-  height: 300px;
+  height: 255px;
   color: white;
   display: -ms-flexbox;
   display: flex; }
   @media (min-width: 600px) {
     .resources-page-heading {
-      background-position: center; } }
+      background-position: center;
+      height: 300px; } }
   @media (min-width: 600px) {
     .resources-page-heading {
-      background-image: url(../../assets/images/backgrounds/resources-header-mobile.png); } }
+      background-image: url(../../assets/images/backgrounds/resources-header.png); } }
 
 .activities-section {
   width: 100%;
@@ -1561,7 +1569,7 @@ form {
         margin: 0 auto;
         border-bottom: 2px solid #a6ce39; }
         .activities-wrapper .activity-posts .single-activity-post .activity-title h3 {
-          font-size: 20px;
+          font-size: 18px;
           text-align: center;
           color: #303b46;
           font-weight: normal;
@@ -1578,8 +1586,9 @@ form {
         .activities-wrapper .activity-posts .single-activity-post .activity-description a {
           color: #a6ce39;
           text-decoration: none;
-          font-size: 1.6rem;
+          font-size: 1.4rem;
           font-weight: normal;
+          cursor: pointer;
           position: absolute;
           bottom: 10px;
           left: 10px; }
@@ -1667,6 +1676,87 @@ form {
       .download-categories .category-titles .arrow .arrow-link {
         color: #a6ce39;
         text-decoration: none; }
+
+.download-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 3%; }
+  @media (min-width: 600px) {
+    .download-wrapper {
+      width: 80%; } }
+  .download-wrapper h3 {
+    margin-top: 40px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #303b46;
+    text-transform: uppercase; }
+  .download-wrapper .results {
+    margin: 50px 0 50px 30px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    @media (min-width: 600px) {
+      .download-wrapper .results {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -ms-flex-pack: start;
+            justify-content: flex-start; } }
+  .download-wrapper .download-post {
+    width: 265px;
+    height: 368px;
+    margin-right: 23px;
+    background-color: #dee2e6;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    .download-wrapper .download-post .taxonomy-image {
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center;
+      margin-top: 23px;
+      width: 217px;
+      height: 229px; }
+      .download-wrapper .download-post .taxonomy-image img {
+        width: 217px;
+        height: 229px;
+        /*object-fit: fill;*/ }
+    .download-wrapper .download-post .taxonomy-title {
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center;
+      width: 217px;
+      text-align: center; }
+      .download-wrapper .download-post .taxonomy-title h3 {
+        color: #303b46;
+        font-size: 18px;
+        font-weight: normal;
+        text-transform: uppercase;
+        margin: 0;
+        margin-top: 10px; }
+    .download-wrapper .download-post .taxonomy-description {
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center; }
+      .download-wrapper .download-post .taxonomy-description a {
+        color: #a6ce39;
+        text-decoration: none;
+        font-size: 1.4rem;
+        font-weight: normal;
+        cursor: pointer;
+        color: #303b46;
+        font-size: 16px;
+        margin: 0;
+        margin-top: 10px; }
+        .download-wrapper .download-post .taxonomy-description a:before {
+          content: url("../../assets/images/icons/green-arrow.png");
+          margin: 10px; }
+        .download-wrapper .download-post .taxonomy-description a:before {
+          content: url("../../assets/images/icons/black-arrow-down.png");
+          margin-right: 5px; }
 
 .info-404 {
   display: -ms-flexbox;

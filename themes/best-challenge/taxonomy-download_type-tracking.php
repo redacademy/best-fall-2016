@@ -29,6 +29,7 @@ The temaplate to display taxonomy type archive
 							foreach( $children_ids as $child_id ) {
 								$child = get_term($child_id, $taxonomy); ?>
 									<h3><?php echo $child->name; ?> </h3> 
+									<div class='results'>
 									<?php
 										$args = array(
 											'post_type' => 'resources',
@@ -56,9 +57,14 @@ The temaplate to display taxonomy type archive
 											<p><?php the_content(); ?></p>
 										</div>
 									</div>
-								<?php endforeach; wp_reset_postdata();
+								<?php endforeach; wp_reset_postdata(); ?>
+								</div>
+							<?php
 							}
 						?>
 					</div>
 				</div> <!-- prize wrapper section ends -->
 		</div>
+ <?php get_template_part( 'template-parts/green-banner' ); ?>
+<?php get_template_part ('template-parts/sponsors-banner'); ?>
+<?php get_footer(); ?>
