@@ -80,29 +80,11 @@ get_header(); ?>
 							<div class="category-description">
 									<p><?php echo $field['category_description']; } ?></p>
 							</div>
-				</div>
+					</div>
+			</div>
 </div>
-   <!-- This is the beginning of a template part that toggles a button on and off -->
-                    <div class="green-banner">
-                        <div class="green-banner-flex">
-                            <div class="green-banner-data">
-                                <p>great prizes to be won!</p>
-                                <p>Learn more about how to get involved.</p>
-                            </div>
-                            <form method="POST" action="" >
-                                <div class="green-buttons">
-                                    <div class="button1">
-                                      <!--<input type="submit" name="submit" value="Individual" id="go-green-button" >-->
-                                        <a href="<?php echo esc_url( site_url( '/get-involved/' ) ); ?>" rel="program">Individual</a>
+ <?php get_template_part( 'template-parts/green-banner' ); ?>
 
-                                    </div>
-                                    <div class="button2">
-                                        <a href="<?php echo esc_url( site_url( '/get-involved/' ) ); ?>" rel="program">Workplace</a>
-                                    </div>
-                                </div><!-- End of green-buttons  -->
-                            </form><!-- End of form  -->
-                        </div><!-- End of green-banner-flex  -->
-                    </div><!-- End of green-banner -->
                    
   <!-- sponsors -->
                     	<div class="front-sponsors">
