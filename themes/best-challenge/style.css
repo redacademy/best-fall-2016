@@ -645,14 +645,20 @@ a {
     .title-wrapper {
       margin-top: 5%; } }
   .title-wrapper h1 {
-    font-size: 55px;
+    font-size: 50px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     margin: 0; }
+    @media (min-width: 600px) {
+      .title-wrapper h1 {
+        font-size: 55px; } }
   .title-wrapper p {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300; }
+    @media (min-width: 600px) {
+      .title-wrapper p {
+        font-size: 25px; } }
 
 .page-description {
   width: 90%;
@@ -1215,7 +1221,7 @@ form {
   /* Participants page heading */
   /*Prize Categories on Prizes Page*/ }
   .page-template-default .page-heading, .page-template-default .page-heading-participants, .tax-participant_location .page-heading, .tax-participant_location .page-heading-participants {
-    background-image: url(../../assets/images/gift-mobile.png);
+    background-image: url(../../assets/images/backgrounds/prizes-header-mobile.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     -ms-flex-pack: center;
@@ -1231,12 +1237,12 @@ form {
         height: 300px; } }
     @media (min-width: 600px) {
       .page-template-default .page-heading, .page-template-default .page-heading-participants, .tax-participant_location .page-heading, .tax-participant_location .page-heading-participants {
-        background-image: url(../../assets/images/gift.png); } }
+        background-image: url(../../assets/images/backgrounds/prizes-header.png); } }
   .page-template-default .page-heading-participants, .tax-participant_location .page-heading-participants {
-    background-image: url(../../assets/images/participant-header.png); }
+    background-image: url(../../assets/images/backgrounds/participants-header-mobile.png); }
     @media (min-width: 600px) {
       .page-template-default .page-heading-participants, .tax-participant_location .page-heading-participants {
-        background-image: url(../../assets/images/participant-header.png); } }
+        background-image: url(../../assets/images/backgrounds/participants-header.png); } }
   .page-template-default .taxonomy-wrapper, .tax-participant_location .taxonomy-wrapper {
     width: 100%;
     height: auto;

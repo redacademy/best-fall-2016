@@ -1,17 +1,17 @@
 .page-template-default , .tax-participant_location {
 
     .page-heading, .page-heading-participants {
-        background-image: url(../../assets/images/gift-mobile.png);
+        background-image: url(../../assets/images/backgrounds/prizes-header-mobile.png);
         @include heading-backgrounds;
         @include desktop {
-            background-image: url(../../assets/images/gift.png);
+            background-image: url(../../assets/images/backgrounds/prizes-header.png);
         }
     }
     /* Participants page heading */
     .page-heading-participants {
-        background-image: url(../../assets/images/participant-header.png);
+        background-image: url(../../assets/images/backgrounds/participants-header-mobile.png);
         @include desktop {
-            background-image: url(../../assets/images/participant-header.png);
+            background-image: url(../../assets/images/backgrounds/participants-header.png);
         }
     }
        
