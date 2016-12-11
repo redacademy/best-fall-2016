@@ -18,15 +18,14 @@
     .taxonomy-wrapper {
         width: 100%;
         height: auto;
-        /*background-color: $dark-background;*/
+        background-color: $footer-background;
         &:nth-child(1){
             background-image: url("../../assets/images/light-blue-bkgrnd.png");
             @include background-image;
             min-height: 430px;   
-         
-        }
+            }
         &:nth-child(2){
-            h2{
+            .results h2 {
                 color: white;
             }
         }
@@ -48,6 +47,7 @@
 
             .taxonomy-image {
                 width: 230px;
+                background-color:#ffffff; 
                 img {
                     width: 100%;
                 }
@@ -97,15 +97,22 @@
             left: -1px;
             h3 {
                 width: 171px;
-                font-size: 1rem;
+                font-size: 18px;
+                font-weight: normal;
                 position: absolute;
                 bottom: 0;
                 left: 10px;
                 color: $light-text;
                 line-height: 1;
                 text-align: left;
+                text-transform: capitalize;
+                padding-bottom: 10px;
             }       
         }
+        .tax-participant_location.taxonomy-title h3 {
+            text-transform: uppercase;
+        }
+
         .taxonomy-description {
             background-color: $footer-background;
             opacity: 0.9;

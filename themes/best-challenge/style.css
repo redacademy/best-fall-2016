@@ -1247,7 +1247,7 @@ form {
   .page-template-default .taxonomy-wrapper, .tax-participant_location .taxonomy-wrapper {
     width: 100%;
     height: auto;
-    /*background-color: $dark-background;*/ }
+    background-color: #5a6f83; }
     .page-template-default .taxonomy-wrapper:nth-child(1), .tax-participant_location .taxonomy-wrapper:nth-child(1) {
       background-image: url("../../assets/images/light-blue-bkgrnd.png");
       background-repeat: no-repeat;
@@ -1257,7 +1257,7 @@ form {
           justify-content: center;
       max-width: 100%;
       min-height: 430px; }
-    .page-template-default .taxonomy-wrapper:nth-child(2) h2, .tax-participant_location .taxonomy-wrapper:nth-child(2) h2 {
+    .page-template-default .taxonomy-wrapper:nth-child(2) .results h2, .tax-participant_location .taxonomy-wrapper:nth-child(2) .results h2 {
       color: white; }
     .page-template-default .taxonomy-wrapper .results, .tax-participant_location .taxonomy-wrapper .results {
       width: 80%;
@@ -1280,7 +1280,8 @@ form {
               flex-direction: row;
           margin-top: 5% auto 1% auto; } }
       .page-template-default .taxonomy-wrapper .results .taxonomy-image, .tax-participant_location .taxonomy-wrapper .results .taxonomy-image {
-        width: 230px; }
+        width: 230px;
+        background-color: #ffffff; }
         .page-template-default .taxonomy-wrapper .results .taxonomy-image img, .tax-participant_location .taxonomy-wrapper .results .taxonomy-image img {
           width: 100%; }
       .page-template-default .taxonomy-wrapper .results .location-title, .tax-participant_location .taxonomy-wrapper .results .location-title {
@@ -1360,13 +1361,18 @@ form {
         left: -1px; }
         .page-template-default .taxonomy-wrapper .results .taxonomy-title h3, .tax-participant_location .taxonomy-wrapper .results .taxonomy-title h3 {
           width: 171px;
-          font-size: 1rem;
+          font-size: 18px;
+          font-weight: normal;
           position: absolute;
           bottom: 0;
           left: 10px;
           color: #dee2e6;
           line-height: 1;
-          text-align: left; }
+          text-align: left;
+          text-transform: capitalize;
+          padding-bottom: 10px; }
+      .page-template-default .taxonomy-wrapper .results .tax-participant_location.taxonomy-title h3, .tax-participant_location .taxonomy-wrapper .results .tax-participant_location.taxonomy-title h3 {
+        text-transform: uppercase; }
       .page-template-default .taxonomy-wrapper .results .taxonomy-description, .tax-participant_location .taxonomy-wrapper .results .taxonomy-description {
         background-color: #5a6f83;
         opacity: 0.9;
