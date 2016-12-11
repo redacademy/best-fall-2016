@@ -1,9 +1,9 @@
     .resources-page-heading {
-         background-image: url(../../assets/images/backgrounds/resources-header.png);
+         background-image: url(../../assets/images/backgrounds/resources-header-mobile.png);
          @include heading-backgrounds;
 
         @include desktop {
-            background-image: url(../../assets/images/backgrounds/resources-header-mobile.png);
+            background-image: url(../../assets/images/backgrounds/resources-header.png);
         }
     }
 
