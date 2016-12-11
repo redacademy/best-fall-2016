@@ -4,7 +4,6 @@
         @include desktop {
     display:flex;
     flex-direction:row;
-    
     height:300px;
     }
 }
@@ -15,14 +14,12 @@
     flex-direction: column;
     justify-content: center;
     background-color: #5a6f83;
-    
-  }
+}
 
 .footer-section {
     color: white;
     margin-left:50px;
     margin-right:50px;
-    
 }
 
 .footer-section span {
@@ -38,7 +35,6 @@
 .footer-section a:hover {
     color: midnightblue;
 }
-
 
 .footer-content {
     padding-top: 20px;
@@ -65,13 +61,12 @@
     color: white;
     text-decoration: none;
     font-family: 'montserrat';
-        line-height: 1.2;
+    line-height: 1.2;
 }
 
 .footer-section a:hover {
     color: midnightblue;
 }
-
 
 .about-best {
     display: flex;
@@ -85,15 +80,13 @@
     padding-left:5%;
     padding-right:2%;
     align-items:flex-start;
-    
-   }
+    }
 }
 
 .about-best p{
-padding-top:1rem;
-padding-bottom:1rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
 }
-
 
 .footer-social {
     height: 50px;
@@ -102,18 +95,15 @@ padding-bottom:1rem;
     justify-content: center;
     align-items: center;
     width: 100%;
-    
-     @include desktop {
- justify-content: flex-start;
-
-     }
+    @include desktop {
+        justify-content: flex-start;
+    }
 }
 
 .footer-social i {
     color: white;
     padding: 1rem;
     font-size:1.8rem;
-   
 }
 
 .footer-social p {
@@ -130,9 +120,7 @@ padding-bottom:1rem;
         text-align:right;
         visibility:visible;
          width:100%;
-         
-     }
-
+         }
 }
 
 
@@ -150,16 +138,16 @@ padding-bottom:1rem;
     margin-bottom: 4px;
     padding: 0 1rem;
         @include desktop {
-    margin-top:0;
-    margin-bottom:0;
+            margin-top:0;
+            margin-bottom:0;
     }
 }
 
 .para-heading p:first-child {
     flex-direction: row;
-    @include desktop {
-    padding-left:0;
-    justify-content: flex-start;
+        @include desktop {
+            padding-left:0;
+            justify-content: flex-start;
     }
 }
 
@@ -197,8 +185,7 @@ para-content {
     font-size: 2rem;
     text-align: left;
     width:100%;
-
-     }
+}
 
 .commuterChallenge-contact-logos {
     display: flex;
@@ -207,44 +194,44 @@ para-content {
     justify-content: center;
     padding-top: 10px;
           @include desktop {
-    justify-content:flex-start;
-    padding-top:30px;
+            justify-content:flex-start;
+            padding-top:30px;
      }
 }
 
 .commuterChallenge-contact-logos i {
     padding: 5px;
         @include desktop {
-    font-size:24px;
+            font-size:24px;
    }
 }
 
 .contact-us {
     padding-bottom: 0.8rem;
        @include desktop {
-    padding-bottom:50px;
-    padding-right:5%;
-    height:300px;
+            padding-bottom:50px;
+            padding-right:5%;
+            height:300px;
    }
 }
 
 .questions {
     padding-bottom: 0.8rem;
        @include desktop {
-    line-height: 0.8;
+            line-height: 0.8;
    }
 }
 
 .questions p{
         @include desktop {
-    margin-bottom:0;
+            margin-bottom:0;
    }
 }
 
 .newsletter-subscription {
         @include desktop {
-    height:300px;
-    text-align: left;
+            height:300px;
+            text-align: left;
    }
 }
 
@@ -255,7 +242,7 @@ FORM at bottom of footer
 
 .sign-up-button{
     @include desktop {
-text-align: left;
+        text-align: left;
     }
 }
 
@@ -273,9 +260,9 @@ text-align: left;
     box-shadow: none;
     line-height: 1.2;
     border-width: 0px;
-           @include desktop {
-        height: 50px;
-        width: 162px;
+        @include desktop {
+            height: 50px;
+            width: 162px;
    }
 }
 
@@ -285,7 +272,6 @@ text-align: left;
     padding-bottom: 0.8rem;
     flex-direction: column;
     padding-bottom:20px;
-    
 }
 
 #sign-up-form {
@@ -308,7 +294,6 @@ text-align: left;
     box-shadow: none;
     line-height: 1.2;
     border-width: 2px;
-
 }
 
 .subscribeForm-for-newsLetter {
@@ -318,7 +303,7 @@ text-align: left;
     justify-content: center;
     text-align: center;
         @include desktop {
-    display:inline-block;
+            display:inline-block;
     }
 }
 
@@ -329,15 +314,12 @@ text-align: left;
 
 .subscribe-to-newsletter{
     margin-top:10px;
-
-
 }
-
 
 .subscribeForm-for-newsLetter form {
     align-items:flex-start;
-
 }
+
 /*=======================
 INPUT field
 ========================*/
@@ -346,23 +328,24 @@ INPUT field
     border-radius: 10px 10px 10px 10px;
     background-color: lightgray;
         @include desktop {
-        height: 50px;
-        width: 252px;
+            height: 50px;
+            width: 252px;
    }
 }
 
 
-#wpcf7-f134-o1 input{
+#wpcf7-f196-o1 input{
     border-radius: 10px 10px 10px 10px;
     background-color: lightgray;
     height: 50px;
-        width: 262px;
+    width: 262px;
         @include desktop {
-        height: 50px;
-        width: 100%;
+            height: 50px;
+            width: 100%;
    }
 }
-#wpcf7-f134-o1 input[type=submit] { 
+
+#wpcf7-f196-o1 input[type=submit] { 
     background-color: #383B4C;
     color: white;
     cursor: pointer;
@@ -372,34 +355,32 @@ INPUT field
     box-shadow: none;
     line-height: 1.2;
     border-width: 0px;
-       font-size:18px;
+    font-size:18px;
     font-family:'montserrat';
     font-weight: normal;
     height: 50px;
-        width: 162px;
-           @include desktop {
-        height: 50px;
-        width: 162px;
+    width: 162px;
+        @include desktop {
+            height: 50px;
+            width: 162px;
    }
 } 
 
-#wpcf7-f134-o1 input[type=submit]:hover{
-background-color: white;
-color: #303b46;
-border-color:#303b46;
-   font-size:18px;
+#wpcf7-f196-o1 input[type=submit]:hover{
+    background-color: white;
+    color: #303b46;
+    border-color:#303b46;
+    font-size:18px;
     font-family:'montserrat';
     font-weight: normal;
-
 }
 
 .font-awesome{
-
     display:flex;
     flex-direction:row;
     padding-left:0%;
     text-align:center;
-    @include desktop {
+        @include desktop {
         padding-left:10%;
-}
+    }
 }

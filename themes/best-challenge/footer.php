@@ -47,7 +47,7 @@
 				</div>			
 
 
-<?php echo do_shortcode( '[contact-form-7 id="134" title="Newsletter Subscription From"]' ); ?>
+<?php echo do_shortcode( '[contact-form-7 id="196" title="Newsletter Subscription Form"]' ); ?>
 					</div>
 				</div>
 			</div>
