@@ -75,7 +75,8 @@ get_header(); ?>
 							foreach ( $fields as $field ) { ?>
 
 							<div class="category-name"> 
-								<h3><?php echo $field['category_name']; ?></h3>
+								<div class="category-title"><h3><?php echo $field['category_name']; ?></h3></div>
+								<div class="arrow"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></div>
 							</div>
 							<div class="category-description">
 									<p><?php echo $field['category_description']; } ?></p>

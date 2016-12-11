@@ -38,13 +38,6 @@
   });
 
 
-//function to display downloads categories on resources page 
-  $('.download-categories').on('click', '.category-name', function () {
-    $(this).siblings().children().slideToggle('fast');
-    $(this).siblings().children().next().toggle('fast');
-  });
-  //
-
 //// Mobile Menu
 
 $('.menu-toggle').on('click', function(){

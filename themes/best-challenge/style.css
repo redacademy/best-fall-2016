@@ -1343,21 +1343,20 @@ form {
         margin: 5% auto;
         width: 230px;
         height: 230px;
-        border: 1px solid white;
         position: relative; }
         @media (min-width: 600px) {
           .page-template-default .taxonomy-wrapper .results .taxonomy-post, .tax-participant_location .taxonomy-wrapper .results .taxonomy-post {
             margin: 1%; } }
       .page-template-default .taxonomy-wrapper .results .taxonomy-title, .tax-participant_location .taxonomy-wrapper .results .taxonomy-title {
-        width: 230px;
+        width: 230.5px;
         height: 115px;
         background-image: url("../../assets/images/overlay.png");
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
         opacity: 0.85;
-        bottom: -1px;
-        left: -1px; }
+        bottom: 0px;
+        left: 0px; }
         .page-template-default .taxonomy-wrapper .results .taxonomy-title h3, .tax-participant_location .taxonomy-wrapper .results .taxonomy-title h3 {
           width: 171px;
           font-size: 18px;
@@ -1392,17 +1391,21 @@ form {
           text-align: center; }
   .page-template-default .prize-categories, .tax-participant_location .prize-categories {
     width: 80%;
-    margin: 5% auto;
+    margin: 15% auto;
     color: #303b46; }
+    @media (min-width: 600px) {
+      .page-template-default .prize-categories, .tax-participant_location .prize-categories {
+        margin: 5% auto; } }
     .page-template-default .prize-categories h2, .tax-participant_location .prize-categories h2 {
       font-weight: normal;
-      font-size: 2rem;
+      font-size: 1.9rem;
       text-transform: uppercase;
       text-align: center;
       color: #303b46; }
       @media (min-width: 600px) {
         .page-template-default .prize-categories h2, .tax-participant_location .prize-categories h2 {
-          font-size: 2.25rem; } }
+          font-size: 2.25rem;
+          font-weight: bold; } }
     @media (min-width: 600px) {
       .page-template-default .prize-categories, .tax-participant_location .prize-categories {
         width: 50%;
@@ -1412,13 +1415,27 @@ form {
     .page-template-default .prize-categories .category-name, .tax-participant_location .prize-categories .category-name {
       height: 57px;
       border-bottom: 1px solid #a6ce39;
-      text-transform: capitalize; }
-      .page-template-default .prize-categories .category-name h3, .tax-participant_location .prize-categories .category-name h3 {
+      text-transform: capitalize;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+      .page-template-default .prize-categories .category-name:hover, .tax-participant_location .prize-categories .category-name:hover {
+        cursor: pointer; }
+      .page-template-default .prize-categories .category-name .arrow, .tax-participant_location .prize-categories .category-name .arrow {
+        margin: auto 0;
+        font-family: FontAwesome;
+        color: #a6ce39;
         font-size: 1.8rem;
-        font-weight: 300; }
-      @media (min-width: 600px) {
-        .page-template-default .prize-categories .category-name, .tax-participant_location .prize-categories .category-name {
-          font-weight: bold; } }
+        padding-right: 10px; }
+      .page-template-default .prize-categories .category-name .category-title h3, .tax-participant_location .prize-categories .category-name .category-title h3 {
+        font-size: 1.7rem;
+        font-weight: 300;
+        margin: 0;
+        padding-top: 10px; }
+        @media (min-width: 600px) {
+          .page-template-default .prize-categories .category-name .category-title h3, .tax-participant_location .prize-categories .category-name .category-title h3 {
+            font-weight: bold; } }
     .page-template-default .prize-categories .category-description p, .tax-participant_location .prize-categories .category-description p {
       display: none;
       font-weight: 300; }

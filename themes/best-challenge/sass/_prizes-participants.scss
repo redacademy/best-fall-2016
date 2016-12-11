@@ -78,22 +78,21 @@
                 margin: 5% auto;
                 width: 230px;
                 height: 230px;
-                border: 1px solid white;
                 position: relative;
                 @include desktop {
                     margin: 1%;
                 }
             }
         .taxonomy-title {
-            width: 230px;
+            width: 230.5px;
             height: 115px;
             background-image: url("../../assets/images/overlay.png");
             background-repeat: no-repeat;
             background-size: cover;
             position: absolute;
             opacity: 0.85;
-            bottom: -1px;
-            left: -1px;
+            bottom: 0px;
+            left: 0px;
             h3 {
                 width: 171px;
                 font-size: 18px;
@@ -138,16 +137,20 @@
 /*Prize Categories on Prizes Page*/
     .prize-categories {
         width: 80%;
-        margin: 5% auto;
+        margin: 15% auto;
         color: $dark-text;
+        @include desktop {
+            margin: 5% auto;
+        }
         h2 {
             font-weight: normal;
-            font-size: 2rem;
+            font-size: 1.9rem;
             text-transform: uppercase;
             text-align: center;
             color: $black-text;
             @include desktop {
-                font-size: 2.25rem;    
+                font-size: 2.25rem; 
+                font-weight: bold;   
             }
         }
 
@@ -162,12 +165,28 @@
             height: 57px;
             border-bottom: 1px solid $best-green;
             text-transform: capitalize;
-            h3 {
-                font-size: 1.8rem;
-                font-weight: 300;
+            display: flex;
+            justify-content: space-between;
+            &:hover {
+                cursor: pointer;
             }
-            @include desktop {
-                font-weight: bold;
+            .arrow {
+            margin: auto 0;
+            font-family: FontAwesome;
+            color: $best-green;
+            font-size: 1.8rem;
+            padding-right: 10px;
+            }
+            .category-title{
+            h3 {
+                font-size: 1.7rem;
+                font-weight: 300;
+                margin: 0;
+                padding-top: 10px;
+                @include desktop {
+                    font-weight: bold;
+                }
+            }
             }
             
         }
@@ -224,3 +243,4 @@
 }
 
 }
+
