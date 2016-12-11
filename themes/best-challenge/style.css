@@ -654,23 +654,23 @@ a {
       .title-wrapper h1 {
         font-size: 55px; } }
   .title-wrapper p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300; }
     @media (min-width: 600px) {
       .title-wrapper p {
-        font-size: 25px; } }
+        font-size: 20px; } }
 
 .page-description {
   width: 90%;
-  margin: 49px auto;
-  font-size: 20px;
+  margin: 35px auto 49px auto;
+  font-size: 18px;
   font-weight: 300;
   text-align: center;
   color: #303b46; }
   @media (min-width: 600px) {
     .page-description {
       margin: 67px auto;
-      font-size: 25px;
+      font-size: 20px;
       width: 70%; } }
 
 /*--------------------------------------------------------------
@@ -1575,7 +1575,7 @@ form {
     width: 100%;
     text-align: center;
     width: 100%;
-    font-size: 30px;
+    font-size: 25px;
     color: white; }
     .activities-wrapper h2 h1 {
       font-size: 2.62rem;

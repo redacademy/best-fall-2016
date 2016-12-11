@@ -19,24 +19,24 @@
 			}
 		}
 		p {
-			font-size: 20px;
+			font-size: 18px;
 			font-weight: 300;
             @include desktop {
-				font-size: 25px;
+				font-size: 20px;
 			}
 		}
 }
 
 .page-description {
 	 	width: 90%;
-		margin: 49px auto;
-		font-size: 20px;
+		margin: 35px auto 49px auto;
+		font-size: 18px;
 		font-weight: 300;
 		text-align: center;
 		color: $dark-text;
         @include desktop {
 			margin: 67px auto;
-			font-size: 25px;
+			font-size: 20px;
             width: 70%;
         }
 }
