@@ -28,7 +28,6 @@ this is the css for the redirect banner which appears on button click
     font-family:'montserrat', serif;
     font-weight: 300;
     font-size:20px;
-    
 }
 
  /*=======================
@@ -123,7 +122,6 @@ CUSTOM-FIELD-SUITE loop items with four blocks flexed
     display:flex;
     align-items:center;
     flex-direction:column;
-    
 }
 
 .how-to-participate-wrapper{
@@ -190,7 +188,7 @@ CUSTOM-FIELD-SUITE loop items with four blocks flexed
      @include desktop {
      width:80%;
     }
-   }
+}
 
 .description-wrapper p{
     margin-top:0rem;
@@ -208,8 +206,8 @@ CUSTOM-FIELD-SUITE loop items with four blocks flexed
 }
 
 .single-participate-block h3{
-   width:80%;
-  font-family: 'montserrat';
+    width:80%;
+    font-family: 'montserrat';
 }
 
 
@@ -254,7 +252,7 @@ this is the first form on the page consisting of a sign-up button which takes yo
 }
 
 .underline-under-button a:hover{
-color:midnightblue;
+    color:midnightblue;
 
 
 }
@@ -337,9 +335,9 @@ this section has two flexed blocks which links readers to additional resources
 
 
 .need-resources h2{
-text-transform:uppercase;
-font-family: 'montserrat';
-color:#303b46;
+    text-transform:uppercase;
+    font-family: 'montserrat';
+    color:#303b46;
 }
 
 .need-resources img{
@@ -411,9 +409,6 @@ form{
     padding-top:60px;
     
 }
-
-
-
 }
 
 
