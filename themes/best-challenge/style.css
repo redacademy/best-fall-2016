@@ -1218,234 +1218,49 @@ form {
 .wdi_photo_wrap li {
   border: 5px solid black; }
 
-.page-template-default, .tax-participant_location {
-  /* Participants page heading */
-  /*Prize Categories on Prizes Page*/ }
-  .page-template-default .page-heading, .page-template-default .page-heading-participants, .tax-participant_location .page-heading, .tax-participant_location .page-heading-participants {
-    background-image: url(../../assets/images/backgrounds/prizes-header-mobile.png);
+.page-heading, .page-heading-participants {
+  background-image: url(../../assets/images/backgrounds/prizes-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
+  max-width: 100%;
+  height: 255px;
+  color: white;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (min-width: 600px) {
+    .page-heading, .page-heading-participants {
+      background-position: center;
+      height: 300px; } }
+  @media (min-width: 600px) {
+    .page-heading, .page-heading-participants {
+      background-image: url(../../assets/images/backgrounds/prizes-header.png); } }
+
+/* Participants page heading */
+.page-heading-participants {
+  background-image: url(../../assets/images/backgrounds/participants-header-mobile.png); }
+  @media (min-width: 600px) {
+    .page-heading-participants {
+      background-image: url(../../assets/images/backgrounds/participants-header.png); } }
+
+.taxonomy-wrapper {
+  width: 100%;
+  height: auto;
+  background-color: #5a6f83; }
+  .taxonomy-wrapper:nth-child(1) {
+    background-image: url("../../assets/images/light-blue-bkgrnd.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
     -ms-flex-pack: center;
         justify-content: center;
     max-width: 100%;
-    height: 255px;
-    color: white;
-    display: -ms-flexbox;
-    display: flex; }
-    @media (min-width: 600px) {
-      .page-template-default .page-heading, .page-template-default .page-heading-participants, .tax-participant_location .page-heading, .tax-participant_location .page-heading-participants {
-        background-position: center;
-        height: 300px; } }
-    @media (min-width: 600px) {
-      .page-template-default .page-heading, .page-template-default .page-heading-participants, .tax-participant_location .page-heading, .tax-participant_location .page-heading-participants {
-        background-image: url(../../assets/images/backgrounds/prizes-header.png); } }
-  .page-template-default .page-heading-participants, .tax-participant_location .page-heading-participants {
-    background-image: url(../../assets/images/backgrounds/participants-header-mobile.png); }
-    @media (min-width: 600px) {
-      .page-template-default .page-heading-participants, .tax-participant_location .page-heading-participants {
-        background-image: url(../../assets/images/backgrounds/participants-header.png); } }
-  .page-template-default .taxonomy-wrapper, .tax-participant_location .taxonomy-wrapper {
-    width: 100%;
-    height: auto;
-    background-color: #5a6f83; }
-    .page-template-default .taxonomy-wrapper:nth-child(1), .tax-participant_location .taxonomy-wrapper:nth-child(1) {
-      background-image: url("../../assets/images/light-blue-bkgrnd.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-      max-width: 100%;
-      min-height: 430px; }
-    .page-template-default .taxonomy-wrapper:nth-child(2) .results h2, .tax-participant_location .taxonomy-wrapper:nth-child(2) .results h2 {
-      color: white; }
-    .page-template-default .taxonomy-wrapper .results, .tax-participant_location .taxonomy-wrapper .results {
-      width: 80%;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      -ms-flex-pack: center;
-          justify-content: center;
-      -ms-flex-preferred-size: 80%;
-          flex-basis: 80%;
-      margin: 0 auto;
-      padding-bottom: 95px; }
-      @media (min-width: 600px) {
-        .page-template-default .taxonomy-wrapper .results, .tax-participant_location .taxonomy-wrapper .results {
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-          -ms-flex-direction: row;
-              flex-direction: row; } }
-      .page-template-default .taxonomy-wrapper .results .taxonomy-post, .tax-participant_location .taxonomy-wrapper .results .taxonomy-post {
-        -ms-flex-item-align: center;
-            -ms-grid-row-align: center;
-            align-self: center;
-        margin: 17px;
-        width: 230px;
-        height: 230px;
-        position: relative; }
-      .page-template-default .taxonomy-wrapper .results .taxonomy-image, .tax-participant_location .taxonomy-wrapper .results .taxonomy-image {
-        width: 230px;
-        background-color: #ffffff; }
-        .page-template-default .taxonomy-wrapper .results .taxonomy-image img, .tax-participant_location .taxonomy-wrapper .results .taxonomy-image img {
-          width: 100%; }
-      .page-template-default .taxonomy-wrapper .results .location-title, .tax-participant_location .taxonomy-wrapper .results .location-title {
-        width: 100%; }
-      .page-template-default .taxonomy-wrapper .results h2, .tax-participant_location .taxonomy-wrapper .results h2 {
-        font-size: 1.9rem;
-        color: #303b46;
-        font-weight: bold;
-        text-transform: uppercase;
-        width: 100%;
-        text-align: center;
-        margin: 45px 0; }
-        .page-template-default .taxonomy-wrapper .results h2 h1, .tax-participant_location .taxonomy-wrapper .results h2 h1 {
-          font-size: 2.62rem;
-          text-align: center;
-          width: 100%;
-          color: white;
-          text-transform: uppercase;
-          font-weight: bold; }
-        .page-template-default .taxonomy-wrapper .results h2 p, .tax-participant_location .taxonomy-wrapper .results h2 p {
-          font-size: 1.1rem;
-          font-weight: 300; }
-        @media (min-width: 600px) {
-          .page-template-default .taxonomy-wrapper .results h2, .tax-participant_location .taxonomy-wrapper .results h2 {
-            font-size: 2.25rem; } }
-      .page-template-default .taxonomy-wrapper .results h3, .tax-participant_location .taxonomy-wrapper .results h3 {
-        font-size: 1.88rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        width: 100%;
-        text-align: center;
-        margin: 0;
-        font-weight: 300; }
-        .page-template-default .taxonomy-wrapper .results h3 h1, .tax-participant_location .taxonomy-wrapper .results h3 h1 {
-          font-size: 2.62rem;
-          text-align: center;
-          width: 100%;
-          color: white;
-          text-transform: uppercase;
-          font-weight: bold; }
-        .page-template-default .taxonomy-wrapper .results h3 p, .tax-participant_location .taxonomy-wrapper .results h3 p {
-          font-size: 1.1rem;
-          font-weight: 300; }
-      .page-template-default .taxonomy-wrapper .results h4, .tax-participant_location .taxonomy-wrapper .results h4 {
-        font-size: 1.25rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        width: 100%;
-        text-align: center;
-        margin: 0; }
-        .page-template-default .taxonomy-wrapper .results h4 h1, .tax-participant_location .taxonomy-wrapper .results h4 h1 {
-          font-size: 2.62rem;
-          text-align: center;
-          width: 100%;
-          color: white;
-          text-transform: uppercase;
-          font-weight: bold; }
-        .page-template-default .taxonomy-wrapper .results h4 p, .tax-participant_location .taxonomy-wrapper .results h4 p {
-          font-size: 1.1rem;
-          font-weight: 300; }
-      .page-template-default .taxonomy-wrapper .results .taxonomy-title, .tax-participant_location .taxonomy-wrapper .results .taxonomy-title {
-        width: 230.5px;
-        height: 115px;
-        background-image: url("../../assets/images/overlay.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: absolute;
-        opacity: 0.85;
-        bottom: 0px;
-        left: 0px; }
-        .page-template-default .taxonomy-wrapper .results .taxonomy-title h3, .tax-participant_location .taxonomy-wrapper .results .taxonomy-title h3 {
-          width: 171px;
-          font-size: 18px;
-          font-weight: normal;
-          position: absolute;
-          bottom: 0;
-          left: 10px;
-          color: #dee2e6;
-          line-height: 1;
-          text-align: left;
-          text-transform: capitalize;
-          padding-bottom: 10px; }
-      .page-template-default .taxonomy-wrapper .results .tax-participant_location.taxonomy-title h3, .tax-participant_location .taxonomy-wrapper .results .tax-participant_location.taxonomy-title h3 {
-        text-transform: uppercase; }
-      .page-template-default .taxonomy-wrapper .results .taxonomy-description, .tax-participant_location .taxonomy-wrapper .results .taxonomy-description {
-        background-color: #5a6f83;
-        opacity: 0.9;
-        bottom: 43px;
-        display: none;
-        position: absolute;
-        height: 230px;
-        width: 230px;
-        z-index: 1;
-        top: 0%;
-        word-wrap: break-word; }
-        .page-template-default .taxonomy-wrapper .results .taxonomy-description p, .tax-participant_location .taxonomy-wrapper .results .taxonomy-description p {
-          width: 90%;
-          margin: 1% auto;
-          color: #dee2e6;
-          font-weight: 300;
-          font-size: 1rem;
-          text-align: center; }
-  .page-template-default .prize-categories, .tax-participant_location .prize-categories {
+    min-height: 430px; }
+  .taxonomy-wrapper:nth-child(2) .results h2 {
+    color: white; }
+  .taxonomy-wrapper .results {
     width: 80%;
-    margin: 15% auto;
-    color: #303b46; }
-    @media (min-width: 600px) {
-      .page-template-default .prize-categories, .tax-participant_location .prize-categories {
-        margin: 5% auto; } }
-    .page-template-default .prize-categories h2, .tax-participant_location .prize-categories h2 {
-      font-weight: normal;
-      font-size: 1.9rem;
-      text-transform: uppercase;
-      text-align: center;
-      color: #303b46; }
-      @media (min-width: 600px) {
-        .page-template-default .prize-categories h2, .tax-participant_location .prize-categories h2 {
-          font-size: 2.25rem;
-          font-weight: bold; } }
-    @media (min-width: 600px) {
-      .page-template-default .prize-categories, .tax-participant_location .prize-categories {
-        width: 54%;
-        color: #5a6f83; }
-        .page-template-default .prize-categories p, .tax-participant_location .prize-categories p {
-          margin-left: 50px; } }
-    .page-template-default .prize-categories .category-name, .tax-participant_location .prize-categories .category-name {
-      height: 57px;
-      border-bottom: 1px solid #a6ce39;
-      text-transform: capitalize;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-      .page-template-default .prize-categories .category-name:hover, .tax-participant_location .prize-categories .category-name:hover {
-        cursor: pointer; }
-      .page-template-default .prize-categories .category-name .arrow, .tax-participant_location .prize-categories .category-name .arrow {
-        margin: auto 0;
-        font-family: FontAwesome;
-        color: #a6ce39;
-        font-size: 1.8rem;
-        padding-right: 10px; }
-      .page-template-default .prize-categories .category-name .category-title h3, .tax-participant_location .prize-categories .category-name .category-title h3 {
-        font-size: 1.7rem;
-        font-weight: 300;
-        margin: 0;
-        padding-top: 10px; }
-        @media (min-width: 600px) {
-          .page-template-default .prize-categories .category-name .category-title h3, .tax-participant_location .prize-categories .category-name .category-title h3 {
-            font-weight: bold; } }
-    .page-template-default .prize-categories .category-description p, .tax-participant_location .prize-categories .category-description p {
-      display: none;
-      font-weight: 300; }
-  .page-template-default .participants, .tax-participant_location .participants {
-    width: 80%;
-    height: auto;
-    margin: 0 auto 8% auto;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: nowrap;
@@ -1454,48 +1269,252 @@ form {
         flex-direction: column;
     -ms-flex-pack: center;
         justify-content: center;
-    /*Participant page buttons */ }
-    .page-template-default .participants .bc-map, .tax-participant_location .participants .bc-map {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+    margin: 0 auto;
+    padding-bottom: 95px; }
+    @media (min-width: 600px) {
+      .taxonomy-wrapper .results {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
+    .taxonomy-wrapper .results .taxonomy-post {
       -ms-flex-item-align: center;
           -ms-grid-row-align: center;
           align-self: center;
-      text-align: center; }
-      .page-template-default .participants .bc-map img, .tax-participant_location .participants .bc-map img {
-        width: 50%; }
-    .page-template-default .participants .buttons, .tax-participant_location .participants .buttons {
-      margin-top: 10px;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      -ms-flex-pack: center;
-          justify-content: center; }
+      margin: 17px;
+      width: 230px;
+      height: 230px;
+      position: relative; }
+    .taxonomy-wrapper .results .taxonomy-image {
+      width: 230px;
+      background-color: #ffffff; }
+      .taxonomy-wrapper .results .taxonomy-image img {
+        width: 100%; }
+    .taxonomy-wrapper .results .location-title {
+      width: 100%; }
+    .taxonomy-wrapper .results h2 {
+      font-size: 1.9rem;
+      color: #303b46;
+      font-weight: bold;
+      text-transform: uppercase;
+      width: 100%;
+      text-align: center;
+      margin: 45px 0; }
+      .taxonomy-wrapper .results h2 h1 {
+        font-size: 2.62rem;
+        text-align: center;
+        width: 100%;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold; }
+      .taxonomy-wrapper .results h2 p {
+        font-size: 1.1rem;
+        font-weight: 300; }
       @media (min-width: 600px) {
-        .page-template-default .participants .buttons, .tax-participant_location .participants .buttons {
-          -ms-flex-direction: row;
-              flex-direction: row; } }
-    .page-template-default .participants .dark-button, .tax-participant_location .participants .dark-button {
-      margin: 2%;
-      -ms-flex-item-align: center;
-          -ms-grid-row-align: center;
-          align-self: center; }
-    .page-template-default .participants .dark-button input[type=button], .tax-participant_location .participants .dark-button input[type=button] {
-      cursor: pointer;
-      padding: .25rem 2rem;
-      color: #dee2e6;
-      background-color: #303b46;
-      line-height: 1.7;
-      width: 200px;
-      border-radius: 25px;
-      font-size: 18px;
-      font-weight: normal;
-      text-shadow: none;
-      box-shadow: none;
-      border: 1px solid #303b46; }
-      .page-template-default .participants .dark-button input[type=button]:hover, .tax-participant_location .participants .dark-button input[type=button]:hover {
-        color: #a6ce39; }
-      .page-template-default .participants .dark-button input[type=button]:focus, .tax-participant_location .participants .dark-button input[type=button]:focus {
-        outline: none; }
+        .taxonomy-wrapper .results h2 {
+          font-size: 2.25rem; } }
+    .taxonomy-wrapper .results h3 {
+      font-size: 1.88rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      font-weight: 300; }
+      .taxonomy-wrapper .results h3 h1 {
+        font-size: 2.62rem;
+        text-align: center;
+        width: 100%;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold; }
+      .taxonomy-wrapper .results h3 p {
+        font-size: 1.1rem;
+        font-weight: 300; }
+    .taxonomy-wrapper .results h4 {
+      font-size: 1.25rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      width: 100%;
+      text-align: center;
+      margin: 0; }
+      .taxonomy-wrapper .results h4 h1 {
+        font-size: 2.62rem;
+        text-align: center;
+        width: 100%;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold; }
+      .taxonomy-wrapper .results h4 p {
+        font-size: 1.1rem;
+        font-weight: 300; }
+    .taxonomy-wrapper .results .taxonomy-title {
+      width: 230.5px;
+      height: 115px;
+      background-image: url("../../assets/images/overlay.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      opacity: 0.85;
+      bottom: 0px;
+      left: 0px; }
+      .taxonomy-wrapper .results .taxonomy-title h3 {
+        width: 171px;
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        color: #dee2e6;
+        line-height: 1;
+        text-align: left;
+        text-transform: capitalize;
+        padding-bottom: 10px; }
+    .taxonomy-wrapper .results .taxonomy-description {
+      background-color: #5a6f83;
+      opacity: 0.9;
+      bottom: 43px;
+      display: none;
+      position: absolute;
+      height: 230px;
+      width: 230px;
+      z-index: 1;
+      top: 0%;
+      word-wrap: break-word; }
+      .taxonomy-wrapper .results .taxonomy-description p {
+        width: 90%;
+        margin: 1% auto;
+        color: #dee2e6;
+        font-weight: 300;
+        font-size: 1rem;
+        text-align: center; }
+
+.tax-participant_location .taxonomy-wrapper {
+  margin-top: 42px;
+  background-color: white; }
+  .tax-participant_location .taxonomy-wrapper .results h2 {
+    color: #303b46;
+    margin: 0;
+    margin-top: 30px; }
+  .tax-participant_location .taxonomy-wrapper .results h3 {
+    font-size: 1.4rem;
+    padding-bottom: 20px; }
+  .tax-participant_location .taxonomy-wrapper .results .taxonomy-title {
+    position: absolute;
+    left: 0px;
+    bottom: -6px; }
+    .tax-participant_location .taxonomy-wrapper .results .taxonomy-title h3 {
+      text-transform: uppercase;
+      font-size: 18px; }
+
+/*Prize Categories on Prizes Page*/
+.prize-categories {
+  width: 80%;
+  margin: 15% auto;
+  color: #303b46; }
+  @media (min-width: 600px) {
+    .prize-categories {
+      margin: 5% auto; } }
+  .prize-categories h2 {
+    font-weight: normal;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #303b46; }
+    @media (min-width: 600px) {
+      .prize-categories h2 {
+        font-size: 2.25rem;
+        font-weight: bold; } }
+  @media (min-width: 600px) {
+    .prize-categories {
+      width: 54%;
+      color: #5a6f83; }
+      .prize-categories p {
+        margin-left: 50px; } }
+  .prize-categories .category-name {
+    height: 57px;
+    border-bottom: 1px solid #a6ce39;
+    text-transform: capitalize;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .prize-categories .category-name:hover {
+      cursor: pointer; }
+    .prize-categories .category-name .arrow {
+      margin: auto 0;
+      font-family: FontAwesome;
+      color: #a6ce39;
+      font-size: 1.8rem;
+      padding-right: 10px; }
+    .prize-categories .category-name .category-title h3 {
+      font-size: 1.7rem;
+      font-weight: 300;
+      margin: 0;
+      padding-top: 10px; }
+      @media (min-width: 600px) {
+        .prize-categories .category-name .category-title h3 {
+          font-weight: bold; } }
+  .prize-categories .category-description p {
+    display: none;
+    font-weight: 300; }
+
+.participants {
+  width: 80%;
+  height: auto;
+  margin: 0 auto 8% auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  /*Participant page buttons */ }
+  .participants .bc-map {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center; }
+    .participants .bc-map img {
+      width: 50%; }
+  .participants .buttons {
+    margin-top: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    @media (min-width: 600px) {
+      .participants .buttons {
+        -ms-flex-direction: row;
+            flex-direction: row; } }
+  .participants .dark-button {
+    margin: 2%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center; }
+  .participants .dark-button input[type=button] {
+    cursor: pointer;
+    padding: .25rem 2rem;
+    color: #dee2e6;
+    background-color: #303b46;
+    line-height: 1.7;
+    width: 200px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: normal;
+    text-shadow: none;
+    box-shadow: none;
+    border: 1px solid #303b46; }
+    .participants .dark-button input[type=button]:hover {
+      color: #a6ce39; }
+    .participants .dark-button input[type=button]:focus {
+      outline: none; }
 
 .resources-page-heading {
   background-image: url(../../assets/images/backgrounds/resources-header-mobile.png);
