@@ -74,7 +74,9 @@ The temaplate to display taxonomy type archive
 							</div>
 							<?php
 							}
-						 	endforeach; wp_reset_postdata();	
+						 	endforeach; wp_reset_postdata(); ?>
+							</div>
+							<?php 	
 							} //ends participant_location foreach foreach loop
 						?>
 					</div>

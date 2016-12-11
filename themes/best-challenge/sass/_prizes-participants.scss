@@ -36,10 +36,11 @@
             justify-content: center;
             flex-basis: 80%;
             margin: 0 auto;
-            padding-bottom: 95px;
+            padding-bottom: 45px;
             @include desktop {
                 flex-wrap: wrap;
                 flex-direction: row;
+                padding-bottom: 95px;
             }
             
             .taxonomy-post {
@@ -48,11 +49,13 @@
                 width: 230px;
                 height: 230px;
                 position: relative;
+                background-color: white;
             }
 
             .taxonomy-image {
                 width: 230px;
-                background-color:#ffffff; 
+                background-color: #dee2e6;
+                opacity: 0.5;
                 img {
                     width: 100%;
                 }
@@ -136,6 +139,9 @@
         .taxonomy-wrapper{
             margin-top: 42px;
             background-color: white;
+            .taxonomy-post {
+                background-color: $light-grey-background;
+            }
             .results{
                 h2 {
                     color: $dark-text;
