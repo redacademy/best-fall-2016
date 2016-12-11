@@ -82,6 +82,7 @@ The temaplate to display taxonomy type archive
         <!--</div> #content -->
     <!--</div> #primary -->
 </div><!-- #main-content -->
- 
-<?php
-get_footer();
+
+<?php get_template_part( 'template-parts/green-banner' ); ?>
+<?php get_template_part ('template-parts/sponsors-banner'); ?>
+<?php get_footer(); ?>
