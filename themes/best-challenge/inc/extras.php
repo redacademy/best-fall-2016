@@ -23,7 +23,7 @@ add_filter( 'body_class', 'best_challenge_body_classes' );
 
 // custom login logo
 
-function my_login_logo() { ?>
+function best_my_login_logo() { ?>
    <style type="text/css">
        #login h1 a, .login h1 a {
             background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bccommuterchallenge.png);
@@ -34,11 +34,11 @@ function my_login_logo() { ?>
        }
    </style>
 <?php }
-add_action( 'login_enqueue_scripts', 'my_login_logo' );
+add_action( 'login_enqueue_scripts', 'best_my_login_logo' );
 
 /// Excerpt script
 
-function red_wp_trim_excerpt( $text ) {
+function best_wp_trim_excerpt( $text ) {
     $raw_excerpt = $text;
     
     if ( '' == $text ) {
@@ -79,6 +79,6 @@ function red_wp_trim_excerpt( $text ) {
 }
 
 remove_filter( 'get_the_excerpt', 'wp_trim_excerpt' );
-add_filter( 'get_the_excerpt', 'red_wp_trim_excerpt' );
+add_filter( 'get_the_excerpt', 'best_wp_trim_excerpt' );
 
 //// excerpt end
