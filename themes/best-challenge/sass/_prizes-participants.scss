@@ -177,10 +177,9 @@
 
 
 .participants {
-    margin-top: 5%;
     width: 80%;
     height: auto;
-    margin: 1% auto 5% auto;
+    margin: 0 auto 8% auto;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -194,6 +193,7 @@
     }
 }
 .buttons {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;

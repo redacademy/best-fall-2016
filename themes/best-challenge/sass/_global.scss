@@ -29,13 +29,14 @@
 
 .page-description {
 	 	width: 90%;
-		margin: 0 auto;
-		font-size: 25px;
+		margin: 49px auto;
+		font-size: 20px;
 		font-weight: 300;
 		text-align: center;
 		color: $dark-text;
         @include desktop {
-            width: 65%;
-			padding: 50px 0;
+			margin: 67px auto;
+			font-size: 25px;
+            width: 70%;
         }
 }

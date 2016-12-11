@@ -662,15 +662,16 @@ a {
 
 .page-description {
   width: 90%;
-  margin: 0 auto;
-  font-size: 25px;
+  margin: 49px auto;
+  font-size: 20px;
   font-weight: 300;
   text-align: center;
   color: #303b46; }
   @media (min-width: 600px) {
     .page-description {
-      width: 65%;
-      padding: 50px 0; } }
+      margin: 67px auto;
+      font-size: 25px;
+      width: 70%; } }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1417,10 +1418,9 @@ form {
       display: none;
       font-weight: 300; }
   .page-template-default .participants, .tax-participant_location .participants {
-    margin-top: 5%;
     width: 80%;
     height: auto;
-    margin: 1% auto 5% auto;
+    margin: 0 auto 8% auto;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: nowrap;
@@ -1438,6 +1438,7 @@ form {
       .page-template-default .participants .bc-map img, .tax-participant_location .participants .bc-map img {
         width: 50%; }
     .page-template-default .participants .buttons, .tax-participant_location .participants .buttons {
+      margin-top: 10px;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
@@ -1459,11 +1460,15 @@ form {
       color: #dee2e6;
       background-color: #303b46;
       line-height: 1.7;
-      border-radius: 25px;
       width: 200px;
-      font-size: 1rem;
+      border-radius: 25px;
+      font-size: 18px;
+      font-weight: normal;
+      text-shadow: none;
       box-shadow: none;
       border: 1px solid #303b46; }
+      .page-template-default .participants .dark-button input[type=button]:hover, .tax-participant_location .participants .dark-button input[type=button]:hover {
+        color: #a6ce39; }
       .page-template-default .participants .dark-button input[type=button]:focus, .tax-participant_location .participants .dark-button input[type=button]:focus {
         outline: none; }
 
