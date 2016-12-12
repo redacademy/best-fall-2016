@@ -52,12 +52,12 @@ get_header(); ?>
                     <h2>sign up for our newsletter</h2>
                     <div class="sign-up-text">
                         <div class="sign-up-text-request">
-                            <p>get involved</p> 
+                            <p>Get Involved!</p> 
                             <p>Challenge yourself. Challenge your team.</p>
                         </div>
-                        <div class="input-and-button">
-                            <div class="sign-up-email"><input type="email" name="your_email" id="your-email-input" value="" placeholder="Enter your email..." aria-label="Subscribe Email Input"></div>
-                    	    <div class="sign-up-button"><input type="submit" name="subscribe" value="Subscribe" id="subscribe-newsletter"></div>
+                        <div class="input-and-buttons">
+                            <div class="sign-up-email"><input type="email" name="your_email" id="your-email-inputs" value="" placeholder="Enter your email..." aria-label="Subscribe Email Input"></div>
+                    	    <div class="sign-up-button"><input type="submit" name="subscribe" value="Subscribe" id="subscribe-newsletters"></div>
                         </div>
                     </div>
                 </div>
@@ -84,39 +84,14 @@ get_header(); ?>
                         </div><!-- End of green-banner-flex  -->
                     </div><!-- End of green-banner -->
                    
-  <!-- sponsors -->
-                    	<div class="front-sponsors">
-				<div class="fp-sponsors-title container">
-					<h2 class="uppercase">Sponsored by</h2>
-				</div>
-				<div class="fp-sponsors-img container">
-				<div>
-					<img src=" <?php echo get_template_directory_uri() ?>/assets/images/evo-logo.png" alt="logo">
-				</div>
-				<div>
-					<img src=" <?php echo get_template_directory_uri() ?>/assets/images/movcolorstack-300.png" alt="logo">
-				</div>
-				<div>
-					<img src=" <?php echo get_template_directory_uri() ?>/assets/images/bc-logo.png" alt="logo">
-				</div>
-				<div class="modologo">
-					<img src=" <?php echo get_template_directory_uri() ?>/assets/images/modo-logo.png" alt="logo">
-				</div>
-				<div>
-					<img src=" <?php echo get_template_directory_uri() ?>/assets/images/century-group-logo.png" alt="logo">
-				</div>
-				<div>
-					<img src=" <?php echo get_template_directory_uri() ?>/assets/images/goodlife-fitness-gym-logo.png" alt="logo">
-				</div>
-				<div>
-					<img src=" <?php echo get_template_directory_uri() ?>/assets/images/mec-rgb-trademark.png" alt="logo">
-				</div>
-			</div>
-		</div>
-        <!-- END of sponsors -->
-                    
+<?php get_template_part ('template-parts/sponsors-banner'); ?>
+         </div>
+          
         </main><!-- #main -->
 	</div><!-- #primary -->
-
+</div>
+</div>
 
 <?php get_footer(); ?>
+
+
