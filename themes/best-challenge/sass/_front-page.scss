@@ -108,18 +108,44 @@
 }
 
 .ccbc-title {
+    h2 {
+        display: none;
+    }
+    @include desktop {
     margin-bottom: 3rem;
     h2 {
         font-size: 2rem;
     }
+    }
 }
 
 .ccbc-info {
+    .info-content {
+        .black-line{
+        width: 250px;
+        margin: 0 auto;
+        padding: 30px 0;
+        border-bottom: 3px solid $light-blue-text;
+        @include desktop {
+            display: none;
+        }
+        }
+        h3 {
+            font-size: 35px;
+            font-weight: normal;
+        }
+        p {
+            font-size: 25px;
+            font-weight: 300;
+            color: $black-text;
+        }
+    }
     @include desktop {
         display: flex;
         justify-content: space-around;
         align-items: baseline;
     }
+    
 }
 
 .front-sponsors {
