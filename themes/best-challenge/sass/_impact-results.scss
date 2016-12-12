@@ -65,7 +65,11 @@
             font-weight: bold;
             font-size: 1rem;
             max-width: 24vw;
-            @include desktop {
+            @media (min-width: 600px) {
+                font-size: 1.2rem;
+                line-height: 1.2;
+            }
+            @media (min-width: 1200px) {
                 line-height: 1.5;
                 font-size: 1.5rem;
             }
@@ -93,7 +97,9 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding-bottom: 5vh;
+        @include desktop {
+            padding-bottom: 5vh;
+        }
         div {
             height: 25vh;
             min-width: 20vw;
@@ -179,7 +185,11 @@
         justify-content: space-around;
         align-items: center;
         padding-bottom: 11vh;
-        @include desktop {
+        @media (min-width: 600px) {
+            margin-top: -11vh;
+            padding-bottom: 16vh;
+        }
+        @media (min-width: 800px) {
             margin-top: -11vh;
             padding-bottom: 11vh;
         }
@@ -189,7 +199,7 @@
             p {
                 max-width: 24vw;
                 padding-bottom: 2vw;
-                color: #fbfcfc;
+                color: #dee2e6;
             }
         }
         .ir-calories-image {
@@ -244,12 +254,12 @@
         top: 0;
         bottom: 0;
         left: 50%;
-        border-left: 5px solid #fff;
+        border-left: 7px solid #fff;
     }
 }
 
 .ir-numbers {
-    height: 60vh;
+    height: 35vh;
     text-align: center;
     @include desktop {
         height: 40vh;
@@ -262,10 +272,14 @@
         margin-top: -4vh;
     }
     h3 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        margin-bottom: 0;
         @include desktop {
             font-size: 2rem;
         }
+    }
+    p {
+        margin-top: 0;
     }
 }
 
@@ -273,24 +287,49 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    max-width: 80%;
     margin: 0 auto;
     line-height: 2;
+    color: #5a6f83;
+    @include desktop {
+        max-width: 80%;
+    }
     div {
         display: flex;
         flex-direction: column;
     }
     .ir-numbers-stats {
         align-items: baseline;
+        span:first-child {
+            display: none;
+        }
         span {
             font-size: .85rem;
-            justify-content: center;
+            font-weight: 500;
+            height: 2rem;
+            @include desktop {
+                font-size: .9rem;
+                font-weight: 500;
+                height: 2.4rem;
+            }
         }
-       
     }
     .ir-numbers-location {
         flex-direction: row;
         justify-content: space-around;
+        div {
+            span:first-child {
+                font-size: .85rem;
+                font-weight: 500;
+            }
+            span {
+                font-size: 1rem;
+                font-weight: bold;
+                text-align: left;
+                @include desktop {
+                    font-size: 1.25rem;
+                }
+            }
+        }
     }
     .ir-numbers-bc {
         margin-right: 2rem;

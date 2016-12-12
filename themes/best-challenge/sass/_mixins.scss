@@ -17,44 +17,46 @@
 	}
 }
 
-@mixin heading-backgrounds{
-	  	background-repeat: no-repeat;
-		background-size: 100% 100%;	
-		justify-content: center;
-		max-width: 100%;
-		height: 255px;
-		color: white;
-		display: flex;
-		@include desktop {
-			background-position: center;
-			height: 300px;
-		}
+
+@mixin heading-backgrounds {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	justify-content: center;
+	max-width: 100%;
+	height: 255px;
+	color: white;
+	display: flex;
+	@include desktop {
+		background-position: center;
+		height: 300px;
+	}
 }
 
+
 /*Used in participants and prizes*/
+
 @mixin section-heading {
-		font-weight: bold;
-		text-transform: uppercase;
-		width: 100%;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	h1 {
+		font-size: 2.62rem;
 		text-align: center;
-	 	h1 {
-            font-size: 2.62rem;
-            text-align: center;
-            width: 100%;
-            color: white;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-		
-        p {
-            font-size: 1.1rem;
-            font-weight: 300;
-        }
+		width: 100%;
+		color: white;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	p {
+		font-size: 1.1rem;
+		font-weight: 300;
+	}
 }
 
 @mixin dark-button {
 	cursor: pointer;
-    padding: .25rem 2rem;
+	padding: .25rem 2rem;
 	color: $light-text;
 	background-color: $dark-background;
 	line-height: 1.7;
@@ -63,7 +65,7 @@
 	font-size: 18px;
 	font-weight: normal;
 	text-shadow: none;
-	box-shadow:none;
+	box-shadow: none;
 	border: 1px solid $dark-background;
 	&:hover {
 		color: $best-green;
@@ -72,14 +74,14 @@
 
 @mixin background-image {
 	background-repeat: no-repeat;
-	background-size: cover;	
+	background-size: cover;
 	background-position: center;
 	justify-content: center;
 	max-width: 100%;
 }
 
 //used for Load More link  
-@mixin white-load-more{
+@mixin white-load-more {
 	font-size: 1.5rem;
 	text-align: center;
 	color: $light-text;
@@ -88,7 +90,6 @@
 	@include desktop {
 		font-size: 1.85rem;
 	}
-	
 	a {
 		color: inherit;
 		text-decoration: none;
@@ -99,14 +100,13 @@
 }
 
 //Content Width 
-
 @mixin content-wrapper {
 	width: 90%;
-    margin: 0 auto;
-    padding-top: 3%;   
-        @include desktop {                
-			width: 80%;
-         }
+	margin: 0 auto;
+	padding-top: 3%;
+	@include desktop {
+		width: 80%;
+	}
 }
 
 //Download Link style 
@@ -132,8 +132,11 @@
 	font-size: 18px;
 	box-shadow: none;
 	text-shadow: none;
-	width: 180px;
+	width: 170px;
 	height: 50px;
 	text-decoration: none;
 	text-transform: uppercase;
+	@include desktop {
+	width: 180px;
+	}
 }

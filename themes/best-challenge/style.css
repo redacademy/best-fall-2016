@@ -1188,12 +1188,16 @@ this is for the rest of the site
         font-size: 18px;
         box-shadow: none;
         text-shadow: none;
-        width: 180px;
+        width: 170px;
         height: 50px;
         text-decoration: none;
         text-transform: uppercase;
         color: #fff;
-        border-color: #fff; }
+        border-color: #fff; } }
+    @media (min-width: 600px) and (min-width: 600px) {
+      .travel-by #go-green-button {
+        width: 180px; } }
+  @media (min-width: 600px) {
       .travel-by .green-buttons {
         padding: 0;
         /*margin: 0 auto;*/ }
@@ -1222,6 +1226,11 @@ this is for the rest of the site
     .travel-by-mobile .travel-by-content p {
       font-size: 28px;
       font-weight: 300; }
+  .travel-by-mobile .green-buttons {
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .travel-by-mobile .green-buttons .button1 {
+      padding-right: 1%; }
   .travel-by-mobile #go-green-button {
     border: 3px solid #000;
     background-color: transparent;
@@ -1232,7 +1241,7 @@ this is for the rest of the site
     font-size: 18px;
     box-shadow: none;
     text-shadow: none;
-    width: 180px;
+    width: 170px;
     height: 50px;
     text-decoration: none;
     text-transform: uppercase;
@@ -1240,6 +1249,9 @@ this is for the rest of the site
     border-color: #303b46;
     text-transform: initial;
     font-size: 20px; }
+    @media (min-width: 600px) {
+      .travel-by-mobile #go-green-button {
+        width: 180px; } }
   .travel-by-mobile form {
     -ms-flex-pack: center;
         justify-content: center; }
@@ -1249,9 +1261,10 @@ this is for the rest of the site
       flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
-  .ccbc-front p {
-    max-width: 250px;
-    margin: 0 auto; }
+  @media (min-width: 600px) {
+    .ccbc-front p {
+      max-width: 250px;
+      margin: 0 auto; } }
   .ccbc-front div:not(:last-child) {
     margin-bottom: 2rem; }
 
@@ -1260,27 +1273,38 @@ this is for the rest of the site
 
 @media (min-width: 600px) {
   .ccbc-title {
-    margin-bottom: 3rem; }
+    margin: 70px auto;
+    width: 50%; }
     .ccbc-title h2 {
-      font-size: 2rem; } }
+      display: initial;
+      font-size: 36px; } }
 
-.ccbc-info .info-content .black-line {
-  width: 250px;
-  margin: 0 auto;
-  padding: 30px 0;
-  border-bottom: 3px solid #5a6f83; }
-  @media (min-width: 600px) {
-    .ccbc-info .info-content .black-line {
-      display: none; } }
-
-.ccbc-info .info-content h3 {
-  font-size: 35px;
-  font-weight: normal; }
-
-.ccbc-info .info-content p {
-  font-size: 25px;
-  font-weight: 300;
-  color: #303b46; }
+.ccbc-info .info-content {
+  width: 90%;
+  margin: 35px auto 0 auto; }
+  .ccbc-info .info-content .black-line {
+    width: 250px;
+    margin: 0 auto;
+    border-bottom: 3px solid #303b46; }
+    @media (min-width: 600px) {
+      .ccbc-info .info-content .black-line {
+        display: none; } }
+  .ccbc-info .info-content h3 {
+    font-size: 35px;
+    font-weight: normal; }
+    @media (min-width: 600px) {
+      .ccbc-info .info-content h3 {
+        font-size: 18px;
+        width: 177px;
+        margin: 20px auto; } }
+  .ccbc-info .info-content p {
+    font-size: 25px;
+    font-weight: 300;
+    color: #303b46; }
+    @media (min-width: 600px) {
+      .ccbc-info .info-content p {
+        font-size: 16px;
+        font-weight: 300; } }
 
 @media (min-width: 600px) {
   .ccbc-info {
@@ -1299,7 +1323,7 @@ this is for the rest of the site
       justify-content: space-around;
   -ms-flex-direction: column;
       flex-direction: column;
-  margin: 1rem 10%; }
+  margin: 3rem 10%; }
   @media (min-width: 600px) {
     .impact-results {
       -ms-flex-direction: row;
@@ -1308,14 +1332,25 @@ this is for the rest of the site
       margin: 0 auto; } }
 
 .canada-map {
-  padding: 1rem;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%; }
   .canada-map .bcbutton {
-    border-right: 1px solid black;
-    padding: .5rem; }
+    border-right: 3px solid #303b46;
+    padding-right: 10px; }
+
+.map-buttons {
+  padding: 30px 0; }
+  .map-buttons a {
+    font-size: 28px;
+    color: #303b46;
+    font-weight: 300; }
+    .map-buttons a:active {
+      font-weight: bold; }
+    .map-buttons a:hover {
+      font-weight: bold; }
 
 .fp-impact-results {
+  color: #303b46;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
   display: -ms-flexbox;
@@ -1326,7 +1361,7 @@ this is for the rest of the site
       align-items: center; }
 
 .impact-box {
-  border: 2px solid #000;
+  border: 2px solid #303b46;
   padding: 1rem;
   width: 100%;
   height: 95%;
@@ -1336,6 +1371,8 @@ this is for the rest of the site
       flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
+  .impact-box h3 {
+    font-size: 30px; }
 
 .results-info {
   display: -ms-flexbox;
@@ -2904,6 +2941,10 @@ NEWLETTER SIGN-UP AREA
     max-width: 24vw; }
     @media (min-width: 600px) {
       .page-id-113 .impact-results-area p {
+        font-size: 1.2rem;
+        line-height: 1.2; } }
+    @media (min-width: 1200px) {
+      .page-id-113 .impact-results-area p {
         line-height: 1.5;
         font-size: 1.5rem; } }
     .page-id-113 .impact-results-area p span {
@@ -2930,8 +2971,10 @@ NEWLETTER SIGN-UP AREA
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-align: center;
-      align-items: center;
-  padding-bottom: 5vh; }
+      align-items: center; }
+  @media (min-width: 600px) {
+    .page-id-113 .ir-co2 {
+      padding-bottom: 5vh; } }
   .page-id-113 .ir-co2 div {
     height: 25vh;
     min-width: 20vw; }
@@ -3020,6 +3063,10 @@ NEWLETTER SIGN-UP AREA
   @media (min-width: 600px) {
     .page-id-113 .ir-calories {
       margin-top: -11vh;
+      padding-bottom: 16vh; } }
+  @media (min-width: 800px) {
+    .page-id-113 .ir-calories {
+      margin-top: -11vh;
       padding-bottom: 11vh; } }
   .page-id-113 .ir-calories div {
     height: 25vh;
@@ -3082,7 +3129,7 @@ NEWLETTER SIGN-UP AREA
   border-left: 5px solid #fff; }
 
 .ir-numbers {
-  height: 60vh;
+  height: 35vh;
   text-align: center; }
   @media (min-width: 600px) {
     .ir-numbers {
@@ -3094,10 +3141,13 @@ NEWLETTER SIGN-UP AREA
     .ir-numbers-title {
       margin-top: -4vh; } }
   .ir-numbers-title h3 {
-    font-size: 1.5rem; }
+    font-size: 1.2rem;
+    margin-bottom: 0; }
     @media (min-width: 600px) {
       .ir-numbers-title h3 {
         font-size: 2rem; } }
+  .ir-numbers-title p {
+    margin-top: 0; }
 
 .ir-numbers-info {
   display: -ms-flexbox;
@@ -3106,9 +3156,12 @@ NEWLETTER SIGN-UP AREA
       justify-content: space-around;
   -ms-flex-align: end;
       align-items: flex-end;
-  max-width: 80%;
   margin: 0 auto;
-  line-height: 2; }
+  line-height: 2;
+  color: #5a6f83; }
+  @media (min-width: 600px) {
+    .ir-numbers-info {
+      max-width: 80%; } }
   .ir-numbers-info div {
     display: -ms-flexbox;
     display: flex;
@@ -3117,15 +3170,32 @@ NEWLETTER SIGN-UP AREA
   .ir-numbers-info .ir-numbers-stats {
     -ms-flex-align: baseline;
         align-items: baseline; }
+    .ir-numbers-info .ir-numbers-stats span:first-child {
+      display: none; }
     .ir-numbers-info .ir-numbers-stats span {
       font-size: .85rem;
-      -ms-flex-pack: center;
-          justify-content: center; }
+      font-weight: 500;
+      height: 2rem; }
+      @media (min-width: 600px) {
+        .ir-numbers-info .ir-numbers-stats span {
+          font-size: .9rem;
+          font-weight: 500;
+          height: 2.4rem; } }
   .ir-numbers-info .ir-numbers-location {
     -ms-flex-direction: row;
         flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
+    .ir-numbers-info .ir-numbers-location div span:first-child {
+      font-size: .85rem;
+      font-weight: 500; }
+    .ir-numbers-info .ir-numbers-location div span {
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: left; }
+      @media (min-width: 600px) {
+        .ir-numbers-info .ir-numbers-location div span {
+          font-size: 1.25rem; } }
   .ir-numbers-info .ir-numbers-bc {
     margin-right: 2rem; }
 

@@ -70,40 +70,11 @@ get_header(); ?>
                     <img src=" <?php echo get_template_directory_uri() ?>/assets/images/cc-heart.png" alt="logo">
                     <h3>Boost physical and mental health</h3>
                     <p>Get your daily exercise needs in and arrive at work relaxed and ready to go!</p>
-                    <div class="black-line"> </div>
                 </div>
             </div>
         </div>
 
-        <div class="front-sponsors">
-                <div class="fp-sponsors-title container">
-                    <h2 class="uppercase">Sponsored by</h2>
-                </div>
-                <div class="fp-sponsors-img container">
-                <div>
-                    <img src=" <?php echo get_template_directory_uri() ?>/assets/images/evo-logo.png" alt="logo" class="desktop">
-                </div>
-                <div>
-                    <img src=" <?php echo get_template_directory_uri() ?>/assets/images/movcolorstack-300.png" alt="logo" class="desktop">
-                </div>
-                <div>
-                    <img src=" <?php echo get_template_directory_uri() ?>/assets/images/bc-logo.png" alt="logo">
-                </div>
-                <div class="modologo">
-                    <img src=" <?php echo get_template_directory_uri() ?>/assets/images/modo-logo.png" alt="logo">
-                </div>
-                <div>
-                    <img src=" <?php echo get_template_directory_uri() ?>/assets/images/century-group-logo.png" alt="logo">
-                </div>
-                <div>
-                    <img src=" <?php echo get_template_directory_uri() ?>/assets/images/goodlife-fitness-gym-logo.png" alt="logo" class="desktop">
-                </div>
-                <div>
-                    <img src=" <?php echo get_template_directory_uri() ?>/assets/images/mec-rgb-trademark.png" alt="logo" class="desktop">
-                </div>
-            </div>
-        </div>
-
+        <?php get_template_part ('template-parts/sponsors-banner'); ?>
 
 <div class="impact-results container">
 
@@ -111,7 +82,7 @@ get_header(); ?>
                     <img id="myImage" src="<?php echo get_template_directory_uri() ?>/assets/images/bcmap.jpg">
                     <div class="map-buttons">
                     <a class="bcbutton" onclick="document.getElementById('myImage').src='<?php echo get_template_directory_uri() ?>/assets/images/bcmap.jpg'">BC</a>
-                    <a onclick="document.getElementById('myImage').src='<?php echo get_template_directory_uri() ?>/assets/images/canadamap.jpg'"> Canada</a>
+                    <a class="canadabutton" onclick="document.getElementById('myImage').src='<?php echo get_template_directory_uri() ?>/assets/images/canadamap.jpg'"> Canada</a>
                     </div>
             </div>
 

@@ -42,9 +42,7 @@
 
   $('.menu-toggle').on('click', function () {
     event.preventDefault();
-    $('#primary-menu').animate({
-      height: 'toggle'
-    });
+    $('#primary-menu').animate({ height: 'toggle' });
     $('#primary-menu').css("display", "flex");
     //  $("#primary-menu").toggleClass('hidden');
   });
@@ -77,8 +75,6 @@
     stickyBar();
   });
 
-
-
   //change bc map on click on Participants page 
   $('#van-map').hide();
   $('#vancouver').on('mouseover', function (event) {
@@ -99,4 +95,3 @@
   });
 
 })(jQuery);
-
