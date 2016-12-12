@@ -2,11 +2,11 @@
 
 .title-wrapper {
         margin: 0;
-        margin-top: 5%;
+        margin-top: 64px;
         height: 200px;
 		text-align: center;
         @include desktop {
-            margin-top: 5%;
+            margin-top: 68px;
         }
 		h1 {
 			font-size: 45px;
