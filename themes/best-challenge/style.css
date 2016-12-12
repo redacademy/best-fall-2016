@@ -665,6 +665,9 @@ a {
   position: fixed;
   top: 0;
   left: 0; }
+  @media (min-width: 600px) {
+    .stickyIsFixed {
+      position: relative; } }
 
 .title-wrapper {
   margin: 0;

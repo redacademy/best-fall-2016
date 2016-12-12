@@ -148,13 +148,22 @@
                 }
             }
             
+
+
             .stickyBar {
                 width: 100%;
                 position: relative;
+                @include desktop 
+                   
             }
             
             .stickyIsFixed {
                 position: fixed;
                 top: 0;
                 left: 0;
+
+                @include desktop {
+                    position: relative;
+                }
             }
+        
