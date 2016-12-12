@@ -567,7 +567,7 @@ a {
   .logo-date .event-date {
     color: white; }
     .logo-date .event-date h2 {
-      font-size: 1rem; }
+      font-size: 1.5rem; }
     @media (min-width: 600px) {
       .logo-date .event-date h2 {
         font-size: 2rem;
@@ -2994,7 +2994,7 @@ NEWLETTER SIGN-UP AREA
     .page-id-113 .ir-calories div p {
       max-width: 24vw;
       padding-bottom: 2vw;
-      color: #fbfcfc; }
+      color: #dee2e6; }
   .page-id-113 .ir-calories .ir-calories-image {
     position: absolute;
     background: url("../../assets/images/circle-carbs.png") center no-repeat;
@@ -3046,7 +3046,7 @@ NEWLETTER SIGN-UP AREA
   top: 0;
   bottom: 0;
   left: 50%;
-  border-left: 5px solid #fff; }
+  border-left: 7px solid #fff; }
 
 .ir-numbers {
   height: 35vh;
@@ -3306,8 +3306,11 @@ para-content {
 
 .logo-image {
   font-size: 2rem;
-  text-align: left;
+  text-align: center;
   width: 100%; }
+  @media (min-width: 600px) {
+    .logo-image {
+      text-align: left; } }
 
 .commuterChallenge-contact-logos {
   display: -ms-flexbox;
