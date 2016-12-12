@@ -83,6 +83,12 @@
             font-weight: 300;
         }
     }
+    .green-buttons {
+        justify-content: space-between;
+        .button1 {
+            padding-right: 1%;
+        }
+    }
     #go-green-button {
         @include go-green-button;
         color: $black-text;
@@ -99,8 +105,10 @@
     flex-direction: column;
     justify-content: space-around;
     p {
-        max-width: 250px;
-        margin: 0 auto;
+        @include desktop {
+            max-width: 250px;
+            margin: 0 auto;
+        }
     }
     div:not(:last-child) {
         margin-bottom: 2rem;
@@ -121,14 +129,15 @@
 
 .ccbc-info {
     .info-content {
+        width: 90%;
+        margin: 35px auto 0 auto;
         .black-line{
-        width: 250px;
-        margin: 0 auto;
-        padding: 30px 0;
-        border-bottom: 3px solid $light-blue-text;
-        @include desktop {
-            display: none;
-        }
+            width: 250px;
+            margin: 0 auto;
+            border-bottom: 3px solid $dark-text;
+            @include desktop {
+                display: none;
+            }
         }
         h3 {
             font-size: 35px;

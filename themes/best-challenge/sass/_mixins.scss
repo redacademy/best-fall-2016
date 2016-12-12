@@ -132,8 +132,11 @@
 	font-size: 18px;
 	box-shadow: none;
 	text-shadow: none;
-	width: 180px;
+	width: 170px;
 	height: 50px;
 	text-decoration: none;
 	text-transform: uppercase;
+	@include desktop {
+	width: 180px;
+	}
 }

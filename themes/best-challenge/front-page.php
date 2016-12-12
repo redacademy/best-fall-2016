@@ -70,7 +70,6 @@ get_header(); ?>
                     <img src=" <?php echo get_template_directory_uri() ?>/assets/images/cc-heart.png" alt="logo">
                     <h3>Boost physical and mental health</h3>
                     <p>Get your daily exercise needs in and arrive at work relaxed and ready to go!</p>
-                    <div class="black-line"> </div>
                 </div>
             </div>
         </div>
