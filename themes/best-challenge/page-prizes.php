@@ -70,43 +70,47 @@ get_header(); ?>
 
 				<div class="prize-categories">
 						<h2 class="section-title">prize categories</h2>
-
 						<?php $fields=CFS()->get( 'prize_categories' );
 							foreach ( $fields as $field ) { ?>
-
 							<div class="category-name"> 
-								<div class="category-title"><h3><?php echo $field['category_name']; ?></h3></div>
-								<!--<div class="arrow"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></div>-->
-							<div class="arrow"><?php echo "<img src=" . get_template_directory_uri() . "/assets/images/icons/green-checkmark.png>"; ?></div>
-							</div>
+								<div class="category-title">
+									<h3><?php echo $field['category_name']; ?></h3>
+								</div>
+								<div class="arrow">
+									<?php echo "<img src=" . get_template_directory_uri() . "/assets/images/icons/green-checkmark.png>"; ?>
+								</div>
+							</div>				
 							<div class="category-description">
-									<p><?php echo $field['category_description']; } ?></p>
+									<p><?php echo $field['category_description']; ?></p>
 							</div>
-					</div>
-			</div>
-</div>
+							<?php 
+							}
+							?>
+						
+				</div> <!-- prize categories -->
+	</div> <!-- primary content -->
 
    <!-- This is the beginning of a template part that toggles a button on and off -->
-                    <div class="green-banner">
-                        <div class="green-banner-flex">
-                            <div class="green-banner-data">
-                                <p>great prizes to be won</p>
-                                <p>Learn more about how to get involved</p>
-                            </div>
-                            <form method="POST" action="" >
-                                <div class="green-buttons">
-                                    <div class="button1">
-                                      <!--<input type="submit" name="submit" value="Individual" id="go-green-button" >-->
-                                        <a href="<?php echo esc_url( site_url( '/get-involved/' ) ); ?>" rel="program">Individual</a>
+	<div class="green-banner">
+		<div class="green-banner-flex">
+			<div class="green-banner-data">
+				<p>great prizes to be won</p>
+				<p>Learn more about how to get involved</p>
+			</div>
+			<form method="POST" action="" >
+				<div class="green-buttons">
+					<div class="button1">
+						<!--<input type="submit" name="submit" value="Individual" id="go-green-button" >-->
+						<a href="<?php echo esc_url( site_url( '/get-involved/' ) ); ?>" rel="program">Individual</a>
 
-                                    </div>
-                                    <div class="button2">
-                                        <a href="<?php echo esc_url( site_url( '/get-involved/' ) ); ?>" rel="program">Workplace</a>
-                                    </div>
-                                </div><!-- End of green-buttons  -->
-                            </form><!-- End of form  -->
-                        </div><!-- End of green-banner-flex  -->
-                    </div><!-- End of green-banner -->
+					</div>
+					<div class="button2">
+						<a href="<?php echo esc_url( site_url( '/get-involved/' ) ); ?>" rel="program">Workplace</a>
+					</div>
+				</div><!-- End of green-buttons  -->
+			</form><!-- End of form  -->
+		</div><!-- End of green-banner-flex  -->
+	</div><!-- End of green-banner -->
 
 <?php get_template_part ('template-parts/sponsors-banner'); ?>
 <?php get_footer(); ?>
