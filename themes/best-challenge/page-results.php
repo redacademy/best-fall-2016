@@ -23,63 +23,63 @@ get_header(); ?>
 			</div>	
 		<div class="impact-results-area"> 
 
-			<div class="ir-co2"> 
-				<div class="ir-co2-avg">
-
+			<div class="ir-co2">
+				<div class="ir-co2-avg left">
+					<p>The average commuter in Canada emits <?php echo CFS()->get( 'avg_commuter_co2' ); ?> of CO2 per week. </p>
 				</div>
 				<div class="ir-co2-image">
 
 				</div>
-				<div class="ir-co2-bc">
-
+				<div class="ir-co2-bc right">
+					<p>The average commuter in Canada emits <?php echo CFS()->get( 'bc_year_co2' ); ?> of CO2 per week. </p>
 				</div>
 			</div>
 			
 			<div class="ir-km"> 
-				<div class="ir-km-bc">
-
+				<div class="ir-km-bc  left">
+					<p>The average commuter in Canada emits <?php echo CFS()->get( 'avg_commute_work_canada' ); ?> of CO2 per week. </p>
 				</div>
 				<div class="ir-km-image">
 
 				</div>
-				<div class="ir-km-commute">
-					
+				<div class="ir-km-commute right">
+					<p>The average commuter in Canada emits <?php echo CFS()->get( 'bc_year_co2' ); ?> of CO2 per week. </p>
 				</div>
 			</div>
 
 			<div class="ir-register"> 
-				<div class="ir-register-work">
-
+				<div class="ir-register-work left">
+					<p>The average commuter in Canada emits <?php echo CFS()->get( 'bc_year_co2' ); ?> of CO2 per week. </p>
 				</div>
 				<div class="ir-register-image">
 
 				</div>
-				<div class="ir-register-indv">
-					
+				<div class="ir-register-indv right">
+					<p>The average commuter in Canada emits <?php echo CFS()->get( 'bc_year_co2' ); ?> of CO2 per week. </p>
 				</div>
 			</div>
 
 			<div class="ir-calories"> 
-				<div class="ir-calories-exercise">
-
+				<div class="ir-calories-exercise left">
+					<p>The average commuter in Canada emits <?php echo CFS()->get( 'bc_year_co2' ); ?> of CO2 per week. </p>
 				</div>
 				<div class="ir-calories-image">
 
 				</div>
-				<div class="ir-calories-burned-bc">
-					
+				<div class="ir-calories-burned-bc right">
+					<p>The average commuter in Canada emits <?php echo CFS()->get( 'bc_year_co2' ); ?> of CO2 per week. </p>
 				</div>
 			</div>
 
 			<div class="ir-fuel"> 
-				<div class="ir-fuel-saved">
-
+				<div class="ir-fuel-saved left">
+					<p>The average commuter in Canada emits <?php echo CFS()->get( 'bc_year_co2' ); ?> of CO2 per week. </p>
 				</div>
 				<div class="ir-fuel-image">
 
 				</div>
-				<div class="ir-fuel-sold">
-					
+				<div class="ir-fuel-sold right">
+					<p>The average commuter in Canada emits <?php echo CFS()->get( 'bc_year_co2' ); ?> of CO2 per week. </p>
 				</div>
 			</div>	
 

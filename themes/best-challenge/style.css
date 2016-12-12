@@ -667,6 +667,7 @@ a {
 
 .stickyIsFixed {
   position: fixed;
+  z-index: 9999;
   top: 0;
   left: 0; }
   @media (min-width: 600px) {
@@ -2677,18 +2678,25 @@ NEWLETTER SIGN-UP AREA
 .page-id-113 .picture-wrapper-results h1 {
   line-height: 3.5rem;
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 0;
   text-align: center;
   text-transform: uppercase;
   font-family: 'montserrat'; }
+  @media (min-width: 600px) {
+    .page-id-113 .picture-wrapper-results h1 {
+      font-size: 3rem; } }
 
 .page-id-113 .picture-wrapper-results p {
   color: white;
   font-family: 'montserrat';
   font-weight: 300;
   margin-top: 0;
-  text-align: center; }
+  text-align: center;
+  font-size: 1rem; }
+  @media (min-width: 600px) {
+    .page-id-113 .picture-wrapper-results p {
+      font-size: 1.5rem; } }
 
 .page-id-113 .impact-results-info {
   text-align: center;
@@ -2700,6 +2708,15 @@ NEWLETTER SIGN-UP AREA
 
 .page-id-113 .impact-results-area {
   position: relative; }
+  .page-id-113 .impact-results-area p {
+    font-weight: 700;
+    line-height: 1.5; }
+
+.page-id-113 .left {
+  text-align: left; }
+
+.page-id-113 .right {
+  text-align: right; }
 
 .page-id-113 .ir-co2 {
   background: url("../../assets/images/ir-lightgrey-curve-top.png") top no-repeat;
@@ -2711,11 +2728,15 @@ NEWLETTER SIGN-UP AREA
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  padding-bottom: 5vh; }
   .page-id-113 .ir-co2 div {
     height: 25vh;
-    min-width: 20vw;
-    background: teal; }
+    min-width: 20vw; }
+    .page-id-113 .ir-co2 div p {
+      max-width: 20vw;
+      font-size: 1.5rem;
+      padding-bottom: 2vw; }
   .page-id-113 .ir-co2 .ir-co2-image {
     position: absolute;
     background: url("../../assets/images/circle-co2.png") center no-repeat;
@@ -2740,8 +2761,12 @@ NEWLETTER SIGN-UP AREA
       margin-top: -11vh; } }
   .page-id-113 .ir-km div {
     height: 25vh;
-    min-width: 20vw;
-    background: teal; }
+    min-width: 20vw; }
+    .page-id-113 .ir-km div p {
+      max-width: 20vw;
+      font-size: 1.5rem;
+      padding-bottom: 2vw;
+      color: #fbfcfc; }
   .page-id-113 .ir-km .ir-km-image {
     position: absolute;
     background: url("../../assets/images/circle-distance.png") center no-repeat;
@@ -2760,14 +2785,19 @@ NEWLETTER SIGN-UP AREA
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  padding-bottom: 5vh; }
   @media (min-width: 600px) {
     .page-id-113 .ir-register {
       margin-top: -11vh; } }
   .page-id-113 .ir-register div {
     height: 25vh;
-    min-width: 20vw;
-    background: teal; }
+    min-width: 20vw; }
+    .page-id-113 .ir-register div p {
+      max-width: 20vw;
+      font-size: 1.5rem;
+      padding-bottom: 2vw;
+      color: #a6ce39; }
   .page-id-113 .ir-register .ir-register-image {
     position: absolute;
     background: url("../../assets/images/circle-participants.png") center no-repeat;
@@ -2794,8 +2824,12 @@ NEWLETTER SIGN-UP AREA
       padding-bottom: 11vh; } }
   .page-id-113 .ir-calories div {
     height: 25vh;
-    min-width: 20vw;
-    background: teal; }
+    min-width: 20vw; }
+    .page-id-113 .ir-calories div p {
+      max-width: 20vw;
+      font-size: 1.5rem;
+      padding-bottom: 2vw;
+      color: #fbfcfc; }
   .page-id-113 .ir-calories .ir-calories-image {
     position: absolute;
     background: url("../../assets/images/circle-carbs.png") center no-repeat;
@@ -2822,8 +2856,11 @@ NEWLETTER SIGN-UP AREA
       padding-bottom: 11vh; } }
   .page-id-113 .ir-fuel div {
     height: 25vh;
-    min-width: 20vw;
-    background: teal; }
+    min-width: 20vw; }
+    .page-id-113 .ir-fuel div p {
+      max-width: 20vw;
+      font-size: 1.5rem;
+      padding-bottom: 2vw; }
   .page-id-113 .ir-fuel .ir-fuel-image {
     position: absolute;
     background: url("../../assets/images/circle-station.png") center no-repeat;

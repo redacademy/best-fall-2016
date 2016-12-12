@@ -121,11 +121,11 @@ get_header(); ?>
             <div class="fp-impact-results">
                 <div class="impact-box">
                 <h3> IMPACT RESULTS 2016</h3>
-                <p> Total ____ used </p>
+                <h4> Total <span>CO2</span> Used </h4>
             <div class="results-info">
              
                     <div class="bc-total">
-                        <?php echo CFS()->get( 'co2_bc_year' ); ?>
+                        <?php echo CFS()->get( 'bc_year_co2' ); ?>
                         <p>British Columbia Total</p>
                     </div>      
 
@@ -133,14 +133,13 @@ get_header(); ?>
                         <?php echo CFS()->get( 'avg_commuter_co2' ); ?>
                         <p>Workplace Average</p>
                     </div>
-
                 </div>          
                 <button> See more results </button>
         </div>
         </div>
 </div>
 
-        
+    
     <!--Blog-->
 
 
