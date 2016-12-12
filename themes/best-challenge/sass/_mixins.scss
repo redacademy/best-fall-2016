@@ -121,3 +121,19 @@
 		margin: 10px;
 	}
 }
+
+@mixin go-green-button {
+	border: 3px solid #000;
+	background-color: transparent;
+	cursor: pointer;
+	padding: 5px 0;
+	border-radius: 25px;
+	font-family: "montserrat", sans-serif;
+	font-size: 18px;
+	box-shadow: none;
+	text-shadow: none;
+	width: 180px;
+	height: 50px;
+	text-decoration: none;
+	text-transform: uppercase;
+}

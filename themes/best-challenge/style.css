@@ -723,7 +723,7 @@ a {
   display: none; }
 
 /* when screen is less than 600px wide
-     show mobile version and hide desktop */
+show mobile version and hide desktop */
 @media (max-width: 600px) {
   .logo .mobile {
     display: block; }
@@ -1015,10 +1015,8 @@ form {
       background-size: cover, cover;
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-pack: center;
-          justify-content: center;
-      -ms-flex-align: start;
-          align-items: flex-start; } }
+      /*justify-content: flex-start;
+        align-items: flex-start;*/ } }
 
 .box {
   display: -ms-flexbox;
@@ -1037,6 +1035,9 @@ form {
   display: none; }
   @media (min-width: 600px) {
     .travel-by {
+      width: 1140px;
+      padding-left: 15px;
+      margin: 0 auto;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
@@ -1050,29 +1051,34 @@ form {
       50% {
         border-color: transparent; } }
       .travel-by #go-green-button {
-        color: #fff;
-        border: 3px solid #fff;
+        border: 3px solid #000;
         background-color: transparent;
         cursor: pointer;
-        padding: .5rem 2rem;
+        padding: 5px 0;
         border-radius: 25px;
         font-family: "montserrat", sans-serif;
-        font-size: 1rem;
+        font-size: 18px;
         box-shadow: none;
-        line-height: 1.7;
         text-shadow: none;
-        width: 200px;
-        text-decoration: none; }
+        width: 180px;
+        height: 50px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        border-color: #fff; }
       .travel-by .green-buttons {
         padding: 0;
-        margin: 0 auto; }
+        /*margin: 0 auto;*/ }
       .travel-by h3 {
-        font-size: 2.75rem;
+        font-size: 3.5rem;
         margin: 0; }
       .travel-by p {
-        font-size: 1.5rem;
-        margin: 0;
-        text-align: center; } }
+        font-size: 1.8rem;
+        margin: 33px 0 54px 0;
+        font-weight: normal; }
+      .travel-by form {
+        -ms-flex-pack: start;
+            justify-content: flex-start; } }
 
 .travel-by-mobile {
   text-align: center;
@@ -1081,19 +1087,21 @@ form {
   .travel-by-mobile h3 {
     margin: 0; }
   .travel-by-mobile #go-green-button {
-    color: #000;
     border: 3px solid #000;
     background-color: transparent;
     cursor: pointer;
-    padding: .5rem 2rem;
+    padding: 5px 0;
     border-radius: 25px;
     font-family: "montserrat", sans-serif;
-    font-size: 1rem;
+    font-size: 18px;
     box-shadow: none;
-    line-height: 1.7;
     text-shadow: none;
-    width: 200px;
-    text-decoration: none; }
+    width: 180px;
+    height: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    border-color: #000; }
   .travel-by-mobile form {
     -ms-flex-pack: center;
         justify-content: center; }
