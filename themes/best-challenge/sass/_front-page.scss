@@ -120,10 +120,13 @@
         display: none;
     }
     @include desktop {
-    margin-bottom: 3rem;
-    h2 {
-        font-size: 2rem;
-    }
+        margin: 70px auto;
+        width: 50%;
+
+        h2 { 
+            display: initial;
+            font-size: 36px;
+        }
     }
 }
 
@@ -142,11 +145,20 @@
         h3 {
             font-size: 35px;
             font-weight: normal;
+            @include desktop {
+                font-size: 18px;
+                width: 177px;
+                margin: 20px auto;
+            }
         }
         p {
             font-size: 25px;
             font-weight: 300;
             color: $black-text;
+            @include desktop {
+                font-size: 16px;
+                font-weight: 300;
+            }
         }
     }
     @include desktop {

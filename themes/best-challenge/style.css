@@ -1193,9 +1193,11 @@ form {
 
 @media (min-width: 600px) {
   .ccbc-title {
-    margin-bottom: 3rem; }
+    margin: 70px auto;
+    width: 50%; }
     .ccbc-title h2 {
-      font-size: 2rem; } }
+      display: initial;
+      font-size: 36px; } }
 
 .ccbc-info .info-content {
   width: 90%;
@@ -1210,10 +1212,19 @@ form {
   .ccbc-info .info-content h3 {
     font-size: 35px;
     font-weight: normal; }
+    @media (min-width: 600px) {
+      .ccbc-info .info-content h3 {
+        font-size: 18px;
+        width: 177px;
+        margin: 20px auto; } }
   .ccbc-info .info-content p {
     font-size: 25px;
     font-weight: 300;
     color: #303b46; }
+    @media (min-width: 600px) {
+      .ccbc-info .info-content p {
+        font-size: 16px;
+        font-weight: 300; } }
 
 @media (min-width: 600px) {
   .ccbc-info {
