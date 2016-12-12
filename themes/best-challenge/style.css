@@ -596,8 +596,7 @@ a {
       align-items: flex-start;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  text-transform: uppercase;
-  padding-left: 5%; }
+  text-transform: uppercase; }
   @media (min-width: 600px) {
     #primary-menu {
       display: -ms-flexbox;
@@ -606,12 +605,11 @@ a {
           flex-direction: row; } }
 
 .menu-item {
-  width: 107px;
-  height: 36px;
   bottom: 0; }
   .menu-item a {
-    padding-top: 7px;
-    color: #fff; }
+    font-size: 1.5rem;
+    color: #fff;
+    padding-left: 5vw; }
 
 .menu-item:hover {
   background-color: #5a6f83;
@@ -633,7 +631,9 @@ a {
     bottom: 0; }
     .menu-item a {
       padding-top: 7px;
-      color: #fff; }
+      font-size: 1rem;
+      color: #fff;
+      padding-left: 0; }
   .menu-item:hover {
     background-color: #5a6f83;
     border-top-left-radius: 18.5px;

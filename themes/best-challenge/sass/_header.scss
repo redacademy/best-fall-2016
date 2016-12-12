@@ -78,7 +78,6 @@
                 align-items: flex-start;
                 justify-content: space-around;
                 text-transform: uppercase;
-                padding-left: 5%;
                 @include desktop {
                     display: flex;
                     flex-direction: row;
@@ -86,12 +85,12 @@
             }
             
             .menu-item {
-                width: 107px;
-                height: 36px;
                 bottom: 0;
+                
                 a {
-                    padding-top: 7px;
+                    font-size: 1.5rem;
                     color: #fff;
+                    padding-left: 5vw;
                 }
             }
             
@@ -115,7 +114,9 @@
                     bottom: 0;
                     a {
                         padding-top: 7px;
+                        font-size: 1rem;
                         color: #fff;
+                        padding-left: 0;
                     }
                 }
                 .menu-item:hover {
@@ -148,22 +149,17 @@
                 }
             }
             
-
-
             .stickyBar {
                 width: 100%;
                 position: relative;
-                @include desktop 
-                   
+                @include desktop
             }
             
             .stickyIsFixed {
                 position: fixed;
                 top: 0;
                 left: 0;
-
                 @include desktop {
                     position: relative;
                 }
             }
-        
