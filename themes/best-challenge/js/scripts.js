@@ -77,8 +77,6 @@
     stickyBar();
   });
 
-
-
   //change bc map on click on Participants page 
   $('#van-map').hide();
   $('#vancouver').on('mouseover', function (event) {

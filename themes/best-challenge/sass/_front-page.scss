@@ -175,7 +175,7 @@
     text-align: center;
     justify-content: space-around;
     flex-direction: column;
-    margin: 1rem 10%;
+    margin: 3rem 10%;
     @include desktop {
         flex-direction: row;
         padding: 5%;
@@ -184,37 +184,55 @@
 }
 
 .canada-map {
-    padding: 1rem;
     flex-basis: 48%;
     .bcbutton {
-        border-right: 1px solid black;
-        padding: .5rem;
+        border-right: 3px solid $dark-text;
+        padding-right: 10px;
+    }
+}
+.map-buttons {
+    padding: 30px 0;
+    a{
+        font-size: 28px;
+        color: $dark-text;
+        font-weight: 300;
+        &:active{
+            font-weight: bold;
+        }
+        &:hover {
+            font-weight: bold;
+        }
     }
 }
 
-.fp-impact-results {
-    flex-basis: 48%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+// Impact Results Box 
+    .fp-impact-results {
+        color: $dark-text;
+        flex-basis: 48%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.impact-box {
-    border: 2px solid #000;
-    padding: 1rem;
-    width: 100%;
-    height: 95%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
+    .impact-box {
+        border: 2px solid $dark-text;
+        padding: 1rem;
+        width: 100%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        h3{
+            font-size: 30px;
+        }
+    }
 
-.results-info {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    font-weight: bold;
-}
+    .results-info {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        font-weight: bold;
+    }
 
 /// ------------ Blog Post Area --------- //////
 @include desktop {
