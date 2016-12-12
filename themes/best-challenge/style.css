@@ -686,14 +686,14 @@ a {
 
 .title-wrapper {
   margin: 0;
-  margin-top: 64px;
+  margin-top: 30px;
   height: 200px;
   text-align: center; }
   @media (min-width: 600px) {
     .title-wrapper {
       margin-top: 68px; } }
   .title-wrapper h1 {
-    font-size: 45px;
+    font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -732,6 +732,21 @@ show mobile version and hide desktop */
     display: block; }
   .logo .desktop {
     display: none; } }
+
+#go-green-button {
+  color: #000;
+  border: 3px solid #000;
+  background-color: transparent;
+  cursor: pointer;
+  padding: .5rem 2rem;
+  border-radius: 25px;
+  font-family: "montserrat", sans-serif;
+  font-size: 1rem;
+  box-shadow: none;
+  line-height: 1.7;
+  text-shadow: none;
+  width: 200px;
+  text-decoration: none; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1515,6 +1530,16 @@ form {
     .tax-participant_location .taxonomy-wrapper .results .taxonomy-title h3 {
       text-transform: uppercase;
       font-size: 18px; }
+  .tax-participant_location .taxonomy-wrapper .results .taxonomy-title-mobile {
+    background: white;
+    background-image: none; }
+    .tax-participant_location .taxonomy-wrapper .results .taxonomy-title-mobile h3 {
+      color: #303b46;
+      font-size: 18px;
+      text-transform: capitalize;
+      font-size: 16px;
+      text-transform: uppercase;
+      text-decoration: underline; }
 
 /*Prize Categories on Prizes Page*/
 .prize-categories {

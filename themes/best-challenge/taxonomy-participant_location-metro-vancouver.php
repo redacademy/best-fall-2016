@@ -49,10 +49,16 @@ The temaplate to display taxonomy type archive
  
 						<?php foreach( $teams as $post ) : setup_postdata($post); ?>
 							<?php if ( wp_is_mobile() ) { ?>
-								<div class="taxonomy-title">
-									<h3><?php the_title(); ?></h3>
+							<div class="taxonomy-post-mobile">
+								<div class="taxonomy-title-mobile">
+									<?php $url =CFS()->get( 'website_url' ); ?>
+									<a href="<?php echo esc_url( $url ); ?>">
+										<?php esc_url( $url ); ?>
+										<h3><?php the_title(); ?></h3>
+									</a>
 								</div>
-								<?php
+							</div>								
+							<?php							
 								}	
 							 else { 
 								?>
