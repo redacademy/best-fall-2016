@@ -1,11 +1,25 @@
+
+
+/*=======================
+this is the css unique to page-id-52
+========================*/
+
+.page-id-52{
+
+
+/*=======================
+this is the first banner section under the header
+========================*/
+
 .front-sponsors {
     display: flex;
-    height: 40vh;
+    height:80vh;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background: url('../../assets/images/sponsors-grey-bg.png')top no-repeat;
     background-size: cover;
+    
 }
 
 .modologo {
@@ -14,8 +28,7 @@
 
 .fp-sponsors-title {
     h2 {
-        font-size: 1.5rem;
-        padding-top: 30%;
+        visibility:hidden;
     }
 }
 
@@ -25,4 +38,84 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    }
 }
+
+/*=======================
+this is for the rest of the site
+========================*/
+
+.front-sponsors {
+    display: flex;
+    height:40vh;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: transparent;
+        @include desktop;
+        text-align: center;
+        display: flex;
+        height:40vh;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background: transparent;
+        background-size: cover;
+        margin-bottom:6rem;
+
+}
+
+.modologo {
+    margin-bottom: 6rem;
+    margin-top: 6rem;
+     @include desktop{
+        padding-bottom: 1rem;
+    }
+}
+
+.modologo img{
+padding-top:1rem;
+    @include desktop{
+height:35vh;
+
+}
+}
+
+.fp-sponsors-title h2{
+        visibility:hidden;
+         @include desktop{
+            visibility:visible;
+            padding-bottom:2rem;
+    }
+}
+.fp-sponsors-img {
+    width: 100%;
+    opacity: .5;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    height:100px;
+     @include desktop{
+    width: 100%;
+    opacity: .5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    }
+}
+
+.noMobile img{
+    visibility:hidden;
+    width:1px;
+        @include desktop{
+            visibility:visible;
+            width:100%;
+        }
+     }
+
+
+
+
+
