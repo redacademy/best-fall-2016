@@ -552,21 +552,23 @@ a {
       align-items: center;
   margin-left: 5px;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  padding: 0 1vw; }
   @media (min-width: 600px) {
     .logo-date {
+      padding: 0;
       -ms-flex-align: start;
           align-items: flex-start;
       margin-top: 2vh; }
       .logo-date .menu-icon {
         display: none; } }
+  .logo-date .mobile-logo {
+    max-width: 25vw; }
   .logo-date .event-date {
     color: white; }
     @media (min-width: 600px) {
       .logo-date .event-date h2 {
         margin-top: 0; } }
-    .logo-date .event-date .mobile-logo {
-      max-width: 25vw; }
     .logo-date .event-date .logo-header {
       padding-top: 1vh; }
       .logo-date .event-date .logo-header img {
@@ -596,7 +598,8 @@ a {
       align-items: flex-start;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  position: absolute; }
   @media (min-width: 600px) {
     #primary-menu {
       display: -ms-flexbox;
@@ -610,6 +613,8 @@ a {
     font-size: 1.5rem;
     color: #fff;
     padding-left: 5vw; }
+  .menu-item ul li:hover ul {
+    display: block; }
 
 .menu-item:hover {
   background-color: #5a6f83;
@@ -668,6 +673,13 @@ a {
   @media (min-width: 600px) {
     .stickyIsFixed {
       position: relative; } }
+
+.lines a {
+  font-size: 2rem;
+  color: #fff; }
+
+.navi-menu {
+  overflow: visible; }
 
 .title-wrapper {
   margin: 0;
@@ -1192,6 +1204,8 @@ form {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-align: end;
+      align-items: flex-end;
   font-weight: bold; }
 
 @media (min-width: 600px) {

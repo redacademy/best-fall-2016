@@ -28,12 +28,17 @@
                 align-items: center;
                 margin-left: 5px;
                 justify-content: space-between;
+                padding: 0 1vw;
                 @include desktop {
+                    padding: 0;
                     align-items: flex-start;
                     margin-top: 2vh;
                     .menu-icon {
                         display: none;
                     }
+                }
+                .mobile-logo {
+                    max-width: 25vw;
                 }
                 .event-date {
                     color: white;
@@ -41,9 +46,6 @@
                         h2 {
                             margin-top: 0;
                         }
-                    }
-                    .mobile-logo {
-                        max-width: 25vw;
                     }
                     .logo-header {
                         padding-top: 1vh;
@@ -78,6 +80,7 @@
                 align-items: flex-start;
                 justify-content: space-around;
                 text-transform: uppercase;
+                position: absolute;
                 @include desktop {
                     display: flex;
                     flex-direction: row;
@@ -86,11 +89,13 @@
             
             .menu-item {
                 bottom: 0;
-                
                 a {
                     font-size: 1.5rem;
                     color: #fff;
                     padding-left: 5vw;
+                }
+                ul li:hover ul {
+                    display: block;
                 }
             }
             
@@ -99,6 +104,16 @@
                 border-top-left-radius: 18.5px;
                 border-top-right-radius: 18.5px;
             }
+            
+            // #primary-menu li:hover>ul {
+            //     display: block!important
+            // }
+            
+            /// shows sub menu items
+
+            // #primary-menu ul li:focus>ul {
+            //     display: block
+            // }
             
             @include desktop {
                 #primary-menu {
@@ -162,4 +177,13 @@
                 @include desktop {
                     position: relative;
                 }
+            }
+            
+            .lines a {
+                font-size: 2rem;
+                color: #fff;
+            }
+            
+            .navi-menu {
+                overflow: visible;
             }
