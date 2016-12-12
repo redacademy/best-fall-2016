@@ -490,36 +490,6 @@ a {
     text-decoration: none;
     text-align: center; }
 
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block; }
-
-@media screen and (min-width: 37.5em) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
-
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
-  margin: 0 0 1.5em;
-  overflow: hidden; }
-
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%; }
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%; }
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -1032,7 +1002,7 @@ this is the first banner section under the header
   .page-id-52 .front-sponsors {
     display: -ms-flexbox;
     display: flex;
-    height: 80vh;
+    height: 70vh;
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-pack: justify;
@@ -1041,10 +1011,14 @@ this is the first banner section under the header
         align-items: center;
     background: url("../../assets/images/sponsors-grey-bg.png") top no-repeat;
     background-size: cover; }
-  .page-id-52 .modologo {
-    padding-bottom: 1rem; }
+  .page-id-52 .modologo img {
+    height: 100%;
+    padding-bottom: 5rem; }
   .page-id-52 .fp-sponsors-title h2 {
-    visibility: hidden; }
+    visibility: visible;
+    padding-top: 5rem;
+    margin-bottom: 6rem;
+    padding-left: 2rem; }
   .page-id-52 .fp-sponsors-img {
     width: 100%;
     opacity: .5;
@@ -1053,7 +1027,8 @@ this is the first banner section under the header
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -ms-flex-align: center;
-        align-items: center; }
+        align-items: center;
+    margin-bottom: 2rem; }
 
 /*=======================
 this is for the rest of the site
@@ -1081,6 +1056,9 @@ this is for the rest of the site
   background-size: cover;
   margin-bottom: 6rem; }
 
+.banner-heading {
+  text-align: center; }
+
 .modologo {
   margin-bottom: 6rem;
   margin-top: 6rem; }
@@ -1098,6 +1076,10 @@ this is for the rest of the site
   visibility: hidden; }
   @media (min-width: 600px) {
     .fp-sponsors-title h2 {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
       visibility: visible;
       padding-bottom: 2rem; } }
 
@@ -2547,8 +2529,7 @@ this section is a testimonial
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
-        flex-direction: column;
-    padding-top: 60px; }
+        flex-direction: column; }
 
 /*=======================
 this is the css unique to page-id-91
@@ -3074,7 +3055,7 @@ NEWLETTER SIGN-UP AREA
     .page-id-113 .ir-calories div p {
       max-width: 24vw;
       padding-bottom: 2vw;
-      color: #fbfcfc; }
+      color: #dee2e6; }
   .page-id-113 .ir-calories .ir-calories-image {
     position: absolute;
     background: url("../../assets/images/circle-carbs.png") center no-repeat;
@@ -3126,7 +3107,7 @@ NEWLETTER SIGN-UP AREA
   top: 0;
   bottom: 0;
   left: 50%;
-  border-left: 5px solid #fff; }
+  border-left: 7px solid #fff; }
 
 .ir-numbers {
   height: 35vh;
@@ -3465,8 +3446,7 @@ FORM at bottom of footer
       justify-content: space-between;
   padding-bottom: 0.8rem;
   -ms-flex-direction: column;
-      flex-direction: column;
-  padding-bottom: 20px; }
+      flex-direction: column; }
 
 #sign-up-form {
   -ms-flex-pack: center;
