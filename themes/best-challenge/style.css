@@ -566,8 +566,11 @@ a {
     max-width: 25vw; }
   .logo-date .event-date {
     color: white; }
+    .logo-date .event-date h2 {
+      font-size: 1rem; }
     @media (min-width: 600px) {
       .logo-date .event-date h2 {
+        font-size: 2rem;
         margin-top: 0; } }
     .logo-date .event-date .logo-header {
       padding-top: 1vh; }
@@ -2710,7 +2713,7 @@ NEWLETTER SIGN-UP AREA
   position: relative; }
   .page-id-113 .impact-results-area p {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     max-width: 24vw; }
     @media (min-width: 600px) {
       .page-id-113 .impact-results-area p {
@@ -2826,7 +2829,7 @@ NEWLETTER SIGN-UP AREA
       justify-content: space-around;
   -ms-flex-align: center;
       align-items: center;
-  padding-bottom: 15vh; }
+  padding-bottom: 11vh; }
   @media (min-width: 600px) {
     .page-id-113 .ir-calories {
       margin-top: -11vh;
@@ -2835,7 +2838,7 @@ NEWLETTER SIGN-UP AREA
     height: 25vh;
     min-width: 20vw; }
     .page-id-113 .ir-calories div p {
-      max-width: 25vw;
+      max-width: 24vw;
       padding-bottom: 2vw;
       color: #fbfcfc; }
   .page-id-113 .ir-calories .ir-calories-image {
@@ -2857,7 +2860,7 @@ NEWLETTER SIGN-UP AREA
       justify-content: space-around;
   -ms-flex-align: center;
       align-items: center;
-  padding-bottom: 9vh; }
+  padding-bottom: 10vh; }
   @media (min-width: 600px) {
     .page-id-113 .ir-fuel {
       margin-top: -11vh;
@@ -2868,6 +2871,9 @@ NEWLETTER SIGN-UP AREA
     .page-id-113 .ir-fuel div p {
       max-width: 25vw;
       padding-bottom: 2vw; }
+      @media (min-width: 600px) {
+        .page-id-113 .ir-fuel div p {
+          max-width: 19vw; } }
   .page-id-113 .ir-fuel .ir-fuel-image {
     position: absolute;
     background: url("../../assets/images/circle-station.png") center no-repeat;
@@ -2889,8 +2895,46 @@ NEWLETTER SIGN-UP AREA
   border-left: 5px solid #fff; }
 
 .ir-numbers {
-  height: 40vh;
+  height: 60vh;
   text-align: center; }
+  @media (min-width: 600px) {
+    .ir-numbers {
+      height: 40vh; } }
+
+.ir-numbers-title {
+  margin-top: -8vh; }
+  @media (min-width: 600px) {
+    .ir-numbers-title {
+      margin-top: -4vh; } }
+  .ir-numbers-title h3 {
+    font-size: 1.5rem; }
+    @media (min-width: 600px) {
+      .ir-numbers-title h3 {
+        font-size: 2rem; } }
+
+.ir-numbers-info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  max-width: 80%;
+  margin: 0 auto;
+  line-height: 2; }
+  .ir-numbers-info div {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .ir-numbers-info .ir-numbers-stats {
+    -ms-flex-align: baseline;
+        align-items: baseline; }
+  .ir-numbers-info .ir-numbers-location {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
 
 @media (min-width: 600px) {
   .first-column {
