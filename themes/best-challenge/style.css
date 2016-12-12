@@ -1022,35 +1022,115 @@ form {
   -ms-flex-pack: center;
       justify-content: center; }
 
+/*=======================
+this is the css unique to page-id-52
+========================*/
+.page-id-52 {
+  /*=======================
+this is the first banner section under the header
+========================*/ }
+  .page-id-52 .front-sponsors {
+    display: -ms-flexbox;
+    display: flex;
+    height: 80vh;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    background: url("../../assets/images/sponsors-grey-bg.png") top no-repeat;
+    background-size: cover; }
+  .page-id-52 .modologo {
+    padding-bottom: 1rem; }
+  .page-id-52 .fp-sponsors-title h2 {
+    visibility: hidden; }
+  .page-id-52 .fp-sponsors-img {
+    width: 100%;
+    opacity: .5;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-align: center;
+        align-items: center; }
+
+/*=======================
+this is for the rest of the site
+========================*/
 .front-sponsors {
   display: -ms-flexbox;
+  display: flex;
+  height: 40vh;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  background: transparent;
+  text-align: center;
   display: flex;
   height: 40vh;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  -ms-flex-align: center;
-      align-items: center;
-  background: url("../../assets/images/sponsors-grey-bg.png") top no-repeat;
-  background-size: cover; }
+  align-items: center;
+  background: transparent;
+  background-size: cover;
+  margin-bottom: 6rem; }
 
 .modologo {
-  padding-bottom: 1rem; }
+  margin-bottom: 6rem;
+  margin-top: 6rem; }
+  @media (min-width: 600px) {
+    .modologo {
+      padding-bottom: 1rem; } }
+
+.modologo img {
+  padding-top: 1rem; }
+  @media (min-width: 600px) {
+    .modologo img {
+      height: 35vh; } }
 
 .fp-sponsors-title h2 {
-  font-size: 1.5rem;
-  padding-top: 30%; }
+  visibility: hidden; }
+  @media (min-width: 600px) {
+    .fp-sponsors-title h2 {
+      visibility: visible;
+      padding-bottom: 2rem; } }
 
 .fp-sponsors-img {
   width: 100%;
   opacity: .5;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  height: 100px; }
+  @media (min-width: 600px) {
+    .fp-sponsors-img {
+      width: 100%;
+      opacity: .5;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -ms-flex-align: center;
+          align-items: center; } }
+
+.noMobile img {
+  visibility: hidden;
+  width: 1px; }
+  @media (min-width: 600px) {
+    .noMobile img {
+      visibility: visible;
+      width: 100%; } }
 
 .hero-banner {
   background: url(../../assets/images/hero-banner-mobile.png) center no-repeat;
@@ -3124,8 +3204,7 @@ NEWLETTER SIGN-UP AREA
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
-        flex-direction: row;
-    height: 300px; } }
+        flex-direction: row; } }
 
 .footer-column {
   display: -ms-flexbox;
