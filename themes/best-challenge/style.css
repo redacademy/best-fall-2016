@@ -2694,7 +2694,7 @@ NEWLETTER SIGN-UP AREA
     margin-bottom: 0;
     font-family: 'montserrat';
     font-weight: 300; }
-  .page-id-91 .input-and-button {
+  .page-id-91 .input-and-buttons {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -2702,7 +2702,7 @@ NEWLETTER SIGN-UP AREA
     padding-left: 0%;
     padding-top: 10px; }
     @media (min-width: 600px) {
-      .page-id-91 .input-and-button {
+      .page-id-91 .input-and-buttons {
         display: -ms-flexbox;
         display: flex;
         padding-left: 5%;
@@ -2716,10 +2716,10 @@ NEWLETTER SIGN-UP AREA
   @media (min-width: 600px) {
     .page-id-91 .sign-up-button {
       padding-left: 5%; } }
-  .page-id-91 #your-email-input {
+  .page-id-91 #your-email-inputs {
     background-color: white;
     width: 250px; }
-  .page-id-91 #subscribe-newsletter {
+  .page-id-91 #subscribe-newsletters {
     background-color: #383B4C;
     color: white;
     cursor: pointer;
@@ -2733,6 +2733,48 @@ NEWLETTER SIGN-UP AREA
     line-height: 1.2;
     border-width: 0px;
     width: 162px; }
+  .page-id-91 #your-email {
+    border-radius: 10px 10px 10px 10px;
+    background-color: lightgray; }
+    @media (min-width: 600px) {
+      .page-id-91 #your-email {
+        height: 50px;
+        width: 252px; } }
+  .page-id-91 #your-email {
+    border-radius: 10px 10px 10px 10px;
+    background-color: lightgray; }
+    @media (min-width: 600px) {
+      .page-id-91 #your-email {
+        height: 50px;
+        width: 252px; } }
+  .page-id-91 #wpcf7-f196-o1 input {
+    border-radius: 10px 10px 10px 10px;
+    background-color: lightgray;
+    height: 50px;
+    width: 262px; }
+    @media (min-width: 600px) {
+      .page-id-91 #wpcf7-f196-o1 input {
+        height: 50px;
+        width: 100%; } }
+  .page-id-91 input[type=submit] {
+    background-color: #383B4C;
+    color: white;
+    cursor: pointer;
+    padding: .5rem 2rem;
+    border: 1;
+    border-radius: 25px;
+    box-shadow: none;
+    line-height: 1.2;
+    border-width: 0px;
+    font-size: 18px;
+    font-family: 'montserrat';
+    font-weight: normal;
+    height: 50px;
+    width: 162px; }
+    @media (min-width: 600px) {
+      .page-id-91 input[type=submit] {
+        height: 50px;
+        width: 162px; } }
 
 .page-id-113 .page-heading {
   margin-bottom: 1rem; }
@@ -3008,6 +3050,10 @@ NEWLETTER SIGN-UP AREA
   .ir-numbers-info .ir-numbers-stats {
     -ms-flex-align: baseline;
         align-items: baseline; }
+    .ir-numbers-info .ir-numbers-stats span {
+      font-size: .85rem;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .ir-numbers-info .ir-numbers-location {
     -ms-flex-direction: row;
         flex-direction: row;
