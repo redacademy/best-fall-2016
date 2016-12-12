@@ -20,7 +20,7 @@
 
                     </div>
                     <div class="button2">
-                        <a href="<?php echo esc_url( site_url( '/get-involved/' ) ); ?>" rel="program"><input type="submit" name="submit" value="Individual"></a> 
+                        <a href="<?php echo esc_url( site_url( '/get-involved/' ) ); ?>" rel="program"><input type="submit" name="submit" value="Workplace"></a> 
                     </div>
                 </div><!-- End of green-buttons  -->
             </form><!-- End of form  -->
