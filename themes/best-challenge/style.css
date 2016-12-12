@@ -2970,6 +2970,10 @@ NEWLETTER SIGN-UP AREA
   .ir-numbers-info .ir-numbers-stats {
     -ms-flex-align: baseline;
         align-items: baseline; }
+    .ir-numbers-info .ir-numbers-stats span {
+      font-size: .85rem;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .ir-numbers-info .ir-numbers-location {
     -ms-flex-direction: row;
         flex-direction: row;
