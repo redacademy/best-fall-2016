@@ -3000,6 +3000,8 @@ NEWLETTER SIGN-UP AREA
         flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
+  .ir-numbers-info .ir-numbers-bc {
+    margin-right: 2rem; }
 
 @media (min-width: 600px) {
   .first-column {

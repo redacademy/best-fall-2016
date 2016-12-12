@@ -114,10 +114,10 @@ get_header(); ?>
                     </div>
                     <div class="ir-numbers-canada">
                         <span> Canada </span>
-                        <span>Workplaces Invovled</span>
-                        <span>Participants</span>
-                        <span>Distance Travelled</span>
-                        <span>Carbon Dioxide Saved</span>
+                        <span><?php echo CFS()->get( 'workplaces_involved_canada' ); ?></span>
+                        <span><?php echo CFS()->get( 'participants_canada' ); ?></span>
+                        <span><?php echo CFS()->get( 'distance_traveled_canada' ); ?></span>
+                        <span><?php echo CFS()->get( 'co2_saved_canada' ); ?></span>
                     </div>
                 </div>
              
