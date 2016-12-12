@@ -25,61 +25,61 @@ get_header(); ?>
 
 			<div class="ir-co2">
 				<div class="ir-co2-avg left">
-					<p>The average commuter in Canada emits <?php echo CFS()->get( 'avg_commuter_co2' ); ?> of CO2 per week. </p>
+					<p>The average commuter in Canada emits<span> <?php echo CFS()->get( 'avg_commuter_co2' ); ?></span> of CO2 per week. </p>
 				</div>
 				<div class="ir-co2-image">
 
 				</div>
 				<div class="ir-co2-bc right">
-					<p>The average commuter in Canada emits <?php echo CFS()->get( 'bc_year_co2' ); ?> of CO2 per week. </p>
+					<p> <span><?php echo CFS()->get( 'bc_year_co2' ); ?></span> of CO2 was avoided by BC commuters in 2016! </p>
 				</div>
 			</div>
 			
 			<div class="ir-km"> 
 				<div class="ir-km-bc  left">
-					<p>The average commuter in Canada emits <?php echo CFS()->get( 'avg_commute_work_canada' ); ?> of CO2 per week. </p>
+					<p><span> <?php echo CFS()->get( 'bc_total_traveled_in_year' ); ?></span> in total was travelled by BC participants in 2016.</p>
 				</div>
 				<div class="ir-km-image">
 
 				</div>
 				<div class="ir-km-commute right">
-					<p>The average commuter in Canada emits <?php echo CFS()->get( 'bc_year_co2' ); ?> of CO2 per week. </p>
+					<p>The average commute to work is about <span><?php echo CFS()->get( 'avg_commute_work_canada' ); ?></span> in Canada.</p>
 				</div>
 			</div>
 
 			<div class="ir-register"> 
 				<div class="ir-register-work left">
-					<p>The average commuter in Canada emits <?php echo CFS()->get( 'bc_year_co2' ); ?> of CO2 per week. </p>
+					<p> <span><?php echo CFS()->get( 'workplaces_registered_year' ); ?></span> workplaces registered and completed in 2016.</p>
 				</div>
 				<div class="ir-register-image">
 
 				</div>
 				<div class="ir-register-indv right">
-					<p>The average commuter in Canada emits <?php echo CFS()->get( 'bc_year_co2' ); ?> of CO2 per week. </p>
+					<p><span><?php echo CFS()->get( 'ind_registered_participants' ); ?></span> registered individuals participated in the commuter Challenge BC.</p>
 				</div>
 			</div>
 
 			<div class="ir-calories"> 
 				<div class="ir-calories-exercise left">
-					<p>The average commuter in Canada emits <?php echo CFS()->get( 'bc_year_co2' ); ?> of CO2 per week. </p>
+					<p>The average commuter in Canada emits <span><?php echo CFS()->get( 'percent_exercise' ); ?></span> of Canadians don't get enough exercise.</p>
 				</div>
 				<div class="ir-calories-image">
 
 				</div>
 				<div class="ir-calories-burned-bc right">
-					<p>The average commuter in Canada emits <?php echo CFS()->get( 'bc_year_co2' ); ?> of CO2 per week. </p>
+					<p>In British Columbia, we burned a collective of <span><?php echo CFS()->get( 'bc_burned_calories' ); ?></span> calories. Way to go!</p>
 				</div>
 			</div>
 
 			<div class="ir-fuel"> 
 				<div class="ir-fuel-saved left">
-					<p>The average commuter in Canada emits <?php echo CFS()->get( 'bc_year_co2' ); ?> of CO2 per week. </p>
+					<p>Participants in the Commuter Challenge saved <span><?php echo CFS()->get( 'bc_saved_fuel' ); ?></span> of fuel in BC. </p>
 				</div>
 				<div class="ir-fuel-image">
 
 				</div>
 				<div class="ir-fuel-sold right">
-					<p>The average commuter in Canada emits <?php echo CFS()->get( 'bc_year_co2' ); ?> of CO2 per week. </p>
+					<p>Everyday across BC <span><?php echo CFS()->get( 'bc_fuel_sold_daily' ); ?></span> litres of petrol are sold. </p>
 				</div>
 			</div>	
 

@@ -37,7 +37,7 @@
         text-align: center;
         font-size: 1rem;
         @include desktop {
-            font-size: 1.5rem;
+            font-size: 1rem;
         }
     }
     .impact-results-info {
@@ -62,8 +62,21 @@
         //     border-left: 5px solid #fff;
         // }
         p {
-            font-weight: 700;
-            line-height: 1.5;
+            font-weight: bold;
+            font-size: 1.2rem;
+            max-width: 24vw;
+            @include desktop {
+                line-height: 1.5;
+                font-size: 1.5rem;
+            }
+            span {
+                display: block;
+                font-size: 2rem;
+                font-weight: 700;
+                @include desktop {
+                    font-size: 2.5rem;
+                }
+            }
         }
     }
     .left {
@@ -85,9 +98,9 @@
             height: 25vh;
             min-width: 20vw;
             p {
-                max-width: 20vw;
-                font-size: 1.5rem;
+                max-width: 25vw;
                 padding-bottom: 2vw;
+                color: #303b46;
             }
         }
         .ir-co2-image {
@@ -114,8 +127,6 @@
             height: 25vh;
             min-width: 20vw;
             p {
-                max-width: 20vw;
-                font-size: 1.5rem;
                 padding-bottom: 2vw;
                 color: #fbfcfc;
             }
@@ -145,8 +156,7 @@
             height: 25vh;
             min-width: 20vw;
             p {
-                max-width: 20vw;
-                font-size: 1.5rem;
+                max-width: 25vw;
                 padding-bottom: 2vw;
                 color: $best-green;
             }
@@ -168,7 +178,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding-bottom: 9vh;
+        padding-bottom: 15vh;
         @include desktop {
             margin-top: -11vh;
             padding-bottom: 11vh;
@@ -177,8 +187,7 @@
             height: 25vh;
             min-width: 20vw;
             p {
-                max-width: 20vw;
-                font-size: 1.5rem;
+                max-width: 25vw;
                 padding-bottom: 2vw;
                 color: #fbfcfc;
             }
@@ -209,9 +218,9 @@
             height: 25vh;
             min-width: 20vw;
             p {
-                max-width: 20vw;
-                font-size: 1.5rem;
+                max-width: 25vw;
                 padding-bottom: 2vw;
+                @include desktop
             }
         }
         .ir-fuel-image {
