@@ -686,14 +686,14 @@ a {
 
 .title-wrapper {
   margin: 0;
-  margin-top: 64px;
+  margin-top: 30px;
   height: 200px;
   text-align: center; }
   @media (min-width: 600px) {
     .title-wrapper {
       margin-top: 68px; } }
   .title-wrapper h1 {
-    font-size: 45px;
+    font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -732,6 +732,21 @@ show mobile version and hide desktop */
     display: block; }
   .logo .desktop {
     display: none; } }
+
+#go-green-button {
+  color: #000;
+  border: 3px solid #000;
+  background-color: transparent;
+  cursor: pointer;
+  padding: .5rem 2rem;
+  border-radius: 25px;
+  font-family: "montserrat", sans-serif;
+  font-size: 1rem;
+  box-shadow: none;
+  line-height: 1.7;
+  text-shadow: none;
+  width: 200px;
+  text-decoration: none; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1007,6 +1022,36 @@ form {
   -ms-flex-pack: center;
       justify-content: center; }
 
+.front-sponsors {
+  display: -ms-flexbox;
+  display: flex;
+  height: 40vh;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  background: url("../../assets/images/sponsors-grey-bg.png") top no-repeat;
+  background-size: cover; }
+
+.modologo {
+  padding-bottom: 1rem; }
+
+.fp-sponsors-title h2 {
+  font-size: 1.5rem;
+  padding-top: 30%; }
+
+.fp-sponsors-img {
+  width: 100%;
+  opacity: .5;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center; }
+
 .hero-banner {
   background: url(../../assets/images/hero-banner-mobile.png) center no-repeat;
   background-size: cover;
@@ -1165,36 +1210,6 @@ form {
         justify-content: space-around;
     -ms-flex-align: baseline;
         align-items: baseline; } }
-
-.front-sponsors {
-  display: -ms-flexbox;
-  display: flex;
-  height: 40vh;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-align: center;
-      align-items: center;
-  background: url("../../assets/images/sponsors-grey-bg.png") top no-repeat;
-  background-size: cover; }
-
-.modologo {
-  padding-bottom: 1rem; }
-
-.fp-sponsors-title h2 {
-  font-size: 1.5rem;
-  padding-top: 30%; }
-
-.fp-sponsors-img {
-  width: 100%;
-  opacity: .5;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-align: center;
-      align-items: center; }
 
 .impact-results {
   display: -ms-flexbox;
@@ -1515,6 +1530,16 @@ form {
     .tax-participant_location .taxonomy-wrapper .results .taxonomy-title h3 {
       text-transform: uppercase;
       font-size: 18px; }
+  .tax-participant_location .taxonomy-wrapper .results .taxonomy-title-mobile {
+    background: white;
+    background-image: none; }
+    .tax-participant_location .taxonomy-wrapper .results .taxonomy-title-mobile h3 {
+      color: #303b46;
+      font-size: 18px;
+      text-transform: capitalize;
+      font-size: 16px;
+      text-transform: uppercase;
+      text-decoration: underline; }
 
 /*Prize Categories on Prizes Page*/
 .prize-categories {
@@ -1563,7 +1588,7 @@ form {
         bottom: -10px;
         right: -55px; }
     .prize-categories .category-name .category-title h3 {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       font-weight: 300;
       margin: 0;
       padding-top: 10px; }
@@ -3012,6 +3037,10 @@ NEWLETTER SIGN-UP AREA
   .ir-numbers-info .ir-numbers-stats {
     -ms-flex-align: baseline;
         align-items: baseline; }
+    .ir-numbers-info .ir-numbers-stats span {
+      font-size: .85rem;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .ir-numbers-info .ir-numbers-location {
     -ms-flex-direction: row;
         flex-direction: row;

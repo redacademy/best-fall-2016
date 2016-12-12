@@ -282,6 +282,11 @@
     }
     .ir-numbers-stats {
         align-items: baseline;
+        span {
+            font-size: .85rem;
+            justify-content: center;
+        }
+       
     }
     .ir-numbers-location {
         flex-direction: row;
