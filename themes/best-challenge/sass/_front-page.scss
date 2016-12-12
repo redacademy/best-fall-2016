@@ -148,35 +148,6 @@
     
 }
 
-.front-sponsors {
-    display: flex;
-    height: 40vh;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background: url('../../assets/images/sponsors-grey-bg.png')top no-repeat;
-    background-size: cover;
-}
-
-.modologo {
-    padding-bottom: 1rem;
-}
-
-.fp-sponsors-title {
-    h2 {
-        font-size: 1.5rem;
-        padding-top: 30%;
-    }
-}
-
-.fp-sponsors-img {
-    width: 100%;
-    opacity: .5;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 //////----------- Impact Results -------------////
 .impact-results {
     display: flex;
