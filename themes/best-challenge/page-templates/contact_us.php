@@ -52,8 +52,8 @@ get_header(); ?>
                     <h2>sign up for our newsletter</h2>
                     <div class="sign-up-text">
                         <div class="sign-up-text-request">
-                            <p>Hear about upcoming event, new tools and lots</p> 
-                            <p>more! Sign up for our newsletter today!</p>
+                            <p>get involved</p> 
+                            <p>Challenge yourself. Challenge your team.</p>
                         </div>
                         <div class="input-and-button">
                             <div class="sign-up-email"><input type="email" name="your_email" id="your-email-input" value="" placeholder="Enter your email..." aria-label="Subscribe Email Input"></div>
