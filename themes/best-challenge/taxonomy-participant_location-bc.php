@@ -13,16 +13,7 @@ The temaplate to display taxonomy type archive
 						<?php 
 							$participant_location = get_term_by('slug' ,"bc",'participant_location');  ?>
 							<div class="heading">
-								<?php if ( wp_is_mobile() ) { ?>
-								<span class="mobile"><h1><?php echo $participant_location->name; ?> participants</h1></span>
-								<?php 
-								}
-								else {
-								?>
 								<h1><?php echo $participant_location->name; ?> participants</h1>
-								<?php
-								}
-								?>
 							</div>
 					</div>
 				</div>

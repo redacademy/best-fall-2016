@@ -1022,6 +1022,36 @@ form {
   -ms-flex-pack: center;
       justify-content: center; }
 
+.front-sponsors {
+  display: -ms-flexbox;
+  display: flex;
+  height: 40vh;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  background: url("../../assets/images/sponsors-grey-bg.png") top no-repeat;
+  background-size: cover; }
+
+.modologo {
+  padding-bottom: 1rem; }
+
+.fp-sponsors-title h2 {
+  font-size: 1.5rem;
+  padding-top: 30%; }
+
+.fp-sponsors-img {
+  width: 100%;
+  opacity: .5;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center; }
+
 .hero-banner {
   background: url(../../assets/images/hero-banner-mobile.png) center no-repeat;
   background-size: cover;
@@ -1180,36 +1210,6 @@ form {
         justify-content: space-around;
     -ms-flex-align: baseline;
         align-items: baseline; } }
-
-.front-sponsors {
-  display: -ms-flexbox;
-  display: flex;
-  height: 40vh;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-align: center;
-      align-items: center;
-  background: url("../../assets/images/sponsors-grey-bg.png") top no-repeat;
-  background-size: cover; }
-
-.modologo {
-  padding-bottom: 1rem; }
-
-.fp-sponsors-title h2 {
-  font-size: 1.5rem;
-  padding-top: 30%; }
-
-.fp-sponsors-img {
-  width: 100%;
-  opacity: .5;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-align: center;
-      align-items: center; }
 
 .impact-results {
   display: -ms-flexbox;
