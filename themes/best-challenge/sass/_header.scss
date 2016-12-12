@@ -80,7 +80,6 @@
                 align-items: flex-start;
                 justify-content: space-around;
                 text-transform: uppercase;
-                position: absolute;
                 @include desktop {
                     display: flex;
                     flex-direction: row;

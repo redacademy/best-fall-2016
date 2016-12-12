@@ -598,8 +598,7 @@ a {
       align-items: flex-start;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  text-transform: uppercase;
-  position: absolute; }
+  text-transform: uppercase; }
   @media (min-width: 600px) {
     #primary-menu {
       display: -ms-flexbox;
