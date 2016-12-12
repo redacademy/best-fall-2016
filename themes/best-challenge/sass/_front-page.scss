@@ -83,6 +83,12 @@
             font-weight: 300;
         }
     }
+    .green-buttons {
+        justify-content: space-between;
+        .button1 {
+            padding-right: 1%;
+        }
+    }
     #go-green-button {
         @include go-green-button;
         color: $black-text;
@@ -99,8 +105,10 @@
     flex-direction: column;
     justify-content: space-around;
     p {
-        max-width: 250px;
-        margin: 0 auto;
+        @include desktop {
+            max-width: 250px;
+            margin: 0 auto;
+        }
     }
     div:not(:last-child) {
         margin-bottom: 2rem;
@@ -112,32 +120,45 @@
         display: none;
     }
     @include desktop {
-    margin-bottom: 3rem;
-    h2 {
-        font-size: 2rem;
-    }
+        margin: 70px auto;
+        width: 50%;
+
+        h2 { 
+            display: initial;
+            font-size: 36px;
+        }
     }
 }
 
 .ccbc-info {
     .info-content {
+        width: 90%;
+        margin: 35px auto 0 auto;
         .black-line{
-        width: 250px;
-        margin: 0 auto;
-        padding: 30px 0;
-        border-bottom: 3px solid $light-blue-text;
-        @include desktop {
-            display: none;
-        }
+            width: 250px;
+            margin: 0 auto;
+            border-bottom: 3px solid $dark-text;
+            @include desktop {
+                display: none;
+            }
         }
         h3 {
             font-size: 35px;
             font-weight: normal;
+            @include desktop {
+                font-size: 18px;
+                width: 177px;
+                margin: 20px auto;
+            }
         }
         p {
             font-size: 25px;
             font-weight: 300;
             color: $black-text;
+            @include desktop {
+                font-size: 16px;
+                font-weight: 300;
+            }
         }
     }
     @include desktop {

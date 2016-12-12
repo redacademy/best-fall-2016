@@ -311,7 +311,7 @@ flex-direction:row;
 	font-weight: 300;
    }
 
-.input-and-button{
+.input-and-buttons{
     display:flex;
     flex-direction:column;
     padding-left:0%;
@@ -336,13 +336,13 @@ margin-left:0%;
     }
 }
 
-#your-email-input{
+#your-email-inputs{
     background-color:white;
     width:250px;
 }
 
 
-#subscribe-newsletter{
+#subscribe-newsletters{
     background-color:#383B4C;;
     color: white;
     cursor: pointer;
@@ -357,4 +357,63 @@ margin-left:0%;
     border-width:0px;
     width: 162px;
     }
+
+#your-email {
+    border-radius: 10px 10px 10px 10px;
+    background-color: lightgray;
+        @include desktop {
+            height: 50px;
+            width: 252px;
+   }
+}
+
+
+
+#your-email {
+    border-radius: 10px 10px 10px 10px;
+    background-color: lightgray;
+        @include desktop {
+            height: 50px;
+            width: 252px;
+   }
+}
+
+
+#wpcf7-f196-o1 input{
+    border-radius: 10px 10px 10px 10px;
+    background-color: lightgray;
+    height: 50px;
+    width: 262px;
+        @include desktop {
+            height: 50px;
+            width: 100%;
+   }
+}
+
+  input[type=submit] { 
+    background-color: #383B4C;
+    color: white;
+    cursor: pointer;
+    padding: .5rem 2rem;
+    border: 1;
+    border-radius: 25px;
+    box-shadow: none;
+    line-height: 1.2;
+    border-width: 0px;
+    font-size:18px;
+    font-family:'montserrat';
+    font-weight: normal;
+    height: 50px;
+    width: 162px;
+        @include desktop {
+            height: 50px;
+            width: 162px;
+   }
+} 
+
+
+
+
+
+
 }

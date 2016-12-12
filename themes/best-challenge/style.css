@@ -1108,12 +1108,16 @@ form {
         font-size: 18px;
         box-shadow: none;
         text-shadow: none;
-        width: 180px;
+        width: 170px;
         height: 50px;
         text-decoration: none;
         text-transform: uppercase;
         color: #fff;
-        border-color: #fff; }
+        border-color: #fff; } }
+    @media (min-width: 600px) and (min-width: 600px) {
+      .travel-by #go-green-button {
+        width: 180px; } }
+  @media (min-width: 600px) {
       .travel-by .green-buttons {
         padding: 0;
         /*margin: 0 auto;*/ }
@@ -1142,6 +1146,11 @@ form {
     .travel-by-mobile .travel-by-content p {
       font-size: 28px;
       font-weight: 300; }
+  .travel-by-mobile .green-buttons {
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .travel-by-mobile .green-buttons .button1 {
+      padding-right: 1%; }
   .travel-by-mobile #go-green-button {
     border: 3px solid #000;
     background-color: transparent;
@@ -1152,7 +1161,7 @@ form {
     font-size: 18px;
     box-shadow: none;
     text-shadow: none;
-    width: 180px;
+    width: 170px;
     height: 50px;
     text-decoration: none;
     text-transform: uppercase;
@@ -1160,6 +1169,9 @@ form {
     border-color: #303b46;
     text-transform: initial;
     font-size: 20px; }
+    @media (min-width: 600px) {
+      .travel-by-mobile #go-green-button {
+        width: 180px; } }
   .travel-by-mobile form {
     -ms-flex-pack: center;
         justify-content: center; }
@@ -1169,9 +1181,10 @@ form {
       flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
-  .ccbc-front p {
-    max-width: 250px;
-    margin: 0 auto; }
+  @media (min-width: 600px) {
+    .ccbc-front p {
+      max-width: 250px;
+      margin: 0 auto; } }
   .ccbc-front div:not(:last-child) {
     margin-bottom: 2rem; }
 
@@ -1180,27 +1193,38 @@ form {
 
 @media (min-width: 600px) {
   .ccbc-title {
-    margin-bottom: 3rem; }
+    margin: 70px auto;
+    width: 50%; }
     .ccbc-title h2 {
-      font-size: 2rem; } }
+      display: initial;
+      font-size: 36px; } }
 
-.ccbc-info .info-content .black-line {
-  width: 250px;
-  margin: 0 auto;
-  padding: 30px 0;
-  border-bottom: 3px solid #5a6f83; }
-  @media (min-width: 600px) {
-    .ccbc-info .info-content .black-line {
-      display: none; } }
-
-.ccbc-info .info-content h3 {
-  font-size: 35px;
-  font-weight: normal; }
-
-.ccbc-info .info-content p {
-  font-size: 25px;
-  font-weight: 300;
-  color: #303b46; }
+.ccbc-info .info-content {
+  width: 90%;
+  margin: 35px auto 0 auto; }
+  .ccbc-info .info-content .black-line {
+    width: 250px;
+    margin: 0 auto;
+    border-bottom: 3px solid #303b46; }
+    @media (min-width: 600px) {
+      .ccbc-info .info-content .black-line {
+        display: none; } }
+  .ccbc-info .info-content h3 {
+    font-size: 35px;
+    font-weight: normal; }
+    @media (min-width: 600px) {
+      .ccbc-info .info-content h3 {
+        font-size: 18px;
+        width: 177px;
+        margin: 20px auto; } }
+  .ccbc-info .info-content p {
+    font-size: 25px;
+    font-weight: 300;
+    color: #303b46; }
+    @media (min-width: 600px) {
+      .ccbc-info .info-content p {
+        font-size: 16px;
+        font-weight: 300; } }
 
 @media (min-width: 600px) {
   .ccbc-info {
@@ -2681,7 +2705,7 @@ NEWLETTER SIGN-UP AREA
     margin-bottom: 0;
     font-family: 'montserrat';
     font-weight: 300; }
-  .page-id-91 .input-and-button {
+  .page-id-91 .input-and-buttons {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -2689,7 +2713,7 @@ NEWLETTER SIGN-UP AREA
     padding-left: 0%;
     padding-top: 10px; }
     @media (min-width: 600px) {
-      .page-id-91 .input-and-button {
+      .page-id-91 .input-and-buttons {
         display: -ms-flexbox;
         display: flex;
         padding-left: 5%;
@@ -2703,10 +2727,10 @@ NEWLETTER SIGN-UP AREA
   @media (min-width: 600px) {
     .page-id-91 .sign-up-button {
       padding-left: 5%; } }
-  .page-id-91 #your-email-input {
+  .page-id-91 #your-email-inputs {
     background-color: white;
     width: 250px; }
-  .page-id-91 #subscribe-newsletter {
+  .page-id-91 #subscribe-newsletters {
     background-color: #383B4C;
     color: white;
     cursor: pointer;
@@ -2720,6 +2744,48 @@ NEWLETTER SIGN-UP AREA
     line-height: 1.2;
     border-width: 0px;
     width: 162px; }
+  .page-id-91 #your-email {
+    border-radius: 10px 10px 10px 10px;
+    background-color: lightgray; }
+    @media (min-width: 600px) {
+      .page-id-91 #your-email {
+        height: 50px;
+        width: 252px; } }
+  .page-id-91 #your-email {
+    border-radius: 10px 10px 10px 10px;
+    background-color: lightgray; }
+    @media (min-width: 600px) {
+      .page-id-91 #your-email {
+        height: 50px;
+        width: 252px; } }
+  .page-id-91 #wpcf7-f196-o1 input {
+    border-radius: 10px 10px 10px 10px;
+    background-color: lightgray;
+    height: 50px;
+    width: 262px; }
+    @media (min-width: 600px) {
+      .page-id-91 #wpcf7-f196-o1 input {
+        height: 50px;
+        width: 100%; } }
+  .page-id-91 input[type=submit] {
+    background-color: #383B4C;
+    color: white;
+    cursor: pointer;
+    padding: .5rem 2rem;
+    border: 1;
+    border-radius: 25px;
+    box-shadow: none;
+    line-height: 1.2;
+    border-width: 0px;
+    font-size: 18px;
+    font-family: 'montserrat';
+    font-weight: normal;
+    height: 50px;
+    width: 162px; }
+    @media (min-width: 600px) {
+      .page-id-91 input[type=submit] {
+        height: 50px;
+        width: 162px; } }
 
 .page-id-113 .page-heading {
   margin-bottom: 1rem; }
