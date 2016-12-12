@@ -19,7 +19,7 @@
   });
 
 
-// Prize categories drop down list 
+  // Prize categories drop down list 
 
   $('.prize-categories').on('click', '.category-name', function () {
     $(this).siblings().children().slideToggle('fast');
@@ -38,34 +38,60 @@
   });
 
 
-//// Mobile Menu
+  //// Mobile Menu
 
-$('.menu-toggle').on('click', function(){
-   event.preventDefault();
-   $('#primary-menu').animate({height:'toggle'});
-   $('#primary-menu').css("display", "flex");
-  //  $("#primary-menu").toggleClass('hidden');
+  $('.menu-toggle').on('click', function () {
+    event.preventDefault();
+    $('#primary-menu').animate({
+      height: 'toggle'
+    });
+    $('#primary-menu').css("display", "flex");
+    //  $("#primary-menu").toggleClass('hidden');
   });
 
-  $('.menu-toggle').on('blur', function(){
+  $('.menu-toggle').on('blur', function () {
     event.preventDefault();
-   });
-/// Mobile menu end
+  });
+  /// Mobile menu end
+
+  var stickyOffset = $('.stickyBar').offset().top;
+
+  // our function that decides weather the navigation bar should have "fixed" css position or not.
+  var stickyBar = function () {
+    var scroll_top = $(window).scrollTop(); // our current vertical position from the top
+
+    // if we've scrolled more than the bar, change its position to fixed to stick to top,
+    // otherwise change it back to relative
+    if (scroll_top > stickyOffset) {
+      $('.stickyBar').addClass('stickyIsFixed');
+    } else {
+      $('.stickyBar').removeClass('stickyIsFixed');
+    }
+  };
+
+  // run our function on load
+  stickyBar();
+
+  // and run it again every time you scroll
+  $(window).scroll(function () {
+    stickyBar();
+  });
 
 
-//change bc map on click on Participants page 
- $('#van-map').hide();
- $('#vancouver').on('mouseover', function (event) {
+
+  //change bc map on click on Participants page 
+  $('#van-map').hide();
+  $('#vancouver').on('mouseover', function (event) {
     event.preventDefault();
     $('#bc-map').hide();
     $('#van-map').show();
- });
+  });
 
   $('#vancouver').mouseleave(function () {
     event.preventDefault();
     $('#bc-map').hide();
     $('#van-map').show();
- });
+  });
 
   $('#bc').on('mouseover', function (event) {
     $('#van-map').hide();

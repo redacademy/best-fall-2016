@@ -25,7 +25,7 @@
 	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
-			<header id="masthead" class="site-header" role="banner">
+			<header id="masthead" class="site-header stickyBar" role="banner">
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				</div><!-- .site-branding -->
@@ -34,14 +34,14 @@
 			<div class="logo-date">				
 				<div class="logo-header">
 					<a href="<?php echo get_template_directory_uri() ?>">
-						<img src=" <?php echo get_template_directory_uri() ?>/assets/images/logotitlebc-mobile.png" alt="mobile-logo" class= "mobile">
+						<img src=" <?php echo get_template_directory_uri() ?>/assets/images/logotitlebc-mobile.png" alt="mobile-logo" class= "mobile mobile-logo">
 						<img src=" <?php echo get_template_directory_uri() ?>/assets/images/bccommuterchallenge.png" alt="desktop-logo" class= "desktop">
 					</a>
 				</div>
 			<div class="event-date">
 				<h2><span>June<span> 4 to 10, 2017 </h2>
 			</div>
-			<div class="menu-icon"><a class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?><i class="fa fa-bars" aria-hidden="true"></i></a></div>
+			<div class="menu-icon lines"><a class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?><i class="fa fa-bars" aria-hidden="true"></i></a></div>
 		</div>
 
 		<div class="header-nav">
