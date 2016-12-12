@@ -2861,6 +2861,10 @@ NEWLETTER SIGN-UP AREA
     max-width: 24vw; }
     @media (min-width: 600px) {
       .page-id-113 .impact-results-area p {
+        font-size: 1.2rem;
+        line-height: 1.2; } }
+    @media (min-width: 1200px) {
+      .page-id-113 .impact-results-area p {
         line-height: 1.5;
         font-size: 1.5rem; } }
     .page-id-113 .impact-results-area p span {
@@ -2887,8 +2891,10 @@ NEWLETTER SIGN-UP AREA
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-align: center;
-      align-items: center;
-  padding-bottom: 5vh; }
+      align-items: center; }
+  @media (min-width: 600px) {
+    .page-id-113 .ir-co2 {
+      padding-bottom: 5vh; } }
   .page-id-113 .ir-co2 div {
     height: 25vh;
     min-width: 20vw; }
@@ -2977,6 +2983,10 @@ NEWLETTER SIGN-UP AREA
   @media (min-width: 600px) {
     .page-id-113 .ir-calories {
       margin-top: -11vh;
+      padding-bottom: 16vh; } }
+  @media (min-width: 800px) {
+    .page-id-113 .ir-calories {
+      margin-top: -11vh;
       padding-bottom: 11vh; } }
   .page-id-113 .ir-calories div {
     height: 25vh;
@@ -3039,7 +3049,7 @@ NEWLETTER SIGN-UP AREA
   border-left: 5px solid #fff; }
 
 .ir-numbers {
-  height: 60vh;
+  height: 35vh;
   text-align: center; }
   @media (min-width: 600px) {
     .ir-numbers {
@@ -3051,10 +3061,13 @@ NEWLETTER SIGN-UP AREA
     .ir-numbers-title {
       margin-top: -4vh; } }
   .ir-numbers-title h3 {
-    font-size: 1.5rem; }
+    font-size: 1.2rem;
+    margin-bottom: 0; }
     @media (min-width: 600px) {
       .ir-numbers-title h3 {
         font-size: 2rem; } }
+  .ir-numbers-title p {
+    margin-top: 0; }
 
 .ir-numbers-info {
   display: -ms-flexbox;
@@ -3063,9 +3076,12 @@ NEWLETTER SIGN-UP AREA
       justify-content: space-around;
   -ms-flex-align: end;
       align-items: flex-end;
-  max-width: 80%;
   margin: 0 auto;
-  line-height: 2; }
+  line-height: 2;
+  color: #5a6f83; }
+  @media (min-width: 600px) {
+    .ir-numbers-info {
+      max-width: 80%; } }
   .ir-numbers-info div {
     display: -ms-flexbox;
     display: flex;
@@ -3074,15 +3090,32 @@ NEWLETTER SIGN-UP AREA
   .ir-numbers-info .ir-numbers-stats {
     -ms-flex-align: baseline;
         align-items: baseline; }
+    .ir-numbers-info .ir-numbers-stats span:first-child {
+      display: none; }
     .ir-numbers-info .ir-numbers-stats span {
       font-size: .85rem;
-      -ms-flex-pack: center;
-          justify-content: center; }
+      font-weight: 500;
+      height: 2rem; }
+      @media (min-width: 600px) {
+        .ir-numbers-info .ir-numbers-stats span {
+          font-size: .9rem;
+          font-weight: 500;
+          height: 2.4rem; } }
   .ir-numbers-info .ir-numbers-location {
     -ms-flex-direction: row;
         flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
+    .ir-numbers-info .ir-numbers-location div span:first-child {
+      font-size: .85rem;
+      font-weight: 500; }
+    .ir-numbers-info .ir-numbers-location div span {
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: left; }
+      @media (min-width: 600px) {
+        .ir-numbers-info .ir-numbers-location div span {
+          font-size: 1.25rem; } }
   .ir-numbers-info .ir-numbers-bc {
     margin-right: 2rem; }
 
