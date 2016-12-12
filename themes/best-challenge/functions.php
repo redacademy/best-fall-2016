@@ -13,11 +13,11 @@
 
 
 
-if ( ! function_exists( 'Best_Challenge_setup' ) ) :
+if ( ! function_exists( 'best_Challenge_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  */
-function Best_Challenge_setup() {
+function best_Challenge_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
@@ -42,25 +42,25 @@ function Best_Challenge_setup() {
 	) );
 
 }
-endif; // Best_Challenge_setup
-add_action( 'after_setup_theme', 'Best_Challenge_setup' );
+endif; // best_Challenge_setup
+add_action( 'after_setup_theme', 'best_Challenge_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
  * @global int $content_width
  */
-function Best_Challenge_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'Best_Challenge_content_width', 640 );
+function best_Challenge_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'best_Challenge_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'Best_Challenge_content_width', 0 );
+add_action( 'after_setup_theme', 'best_Challenge_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function Best_Challenge_widgets_init() {
+function best_challenge_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html( 'Sidebar' ),
 		'id'            => 'sidebar-1',
@@ -71,24 +71,24 @@ function Best_Challenge_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'Best_Challenge_widgets_init' );
+add_action( 'widgets_init', 'best_challenge_widgets_init' );
 
 /**
  * Filter the stylesheet_uri to output the minified CSS file.
  */
-function Best_Challenge_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
+function best_Challenge_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
 	if ( file_exists( get_template_directory() . '/build/css/style.min.css' ) ) {
 		$stylesheet_uri = $stylesheet_dir_uri . '/build/css/style.min.css';
 	}
 
 	return $stylesheet_uri;
 }
-add_filter( 'stylesheet_uri', 'Best_Challenge_minified_css', 10, 2 );
+add_filter( 'stylesheet_uri', 'best_Challenge_minified_css', 10, 2 );
 
 /**
  * Enqueue scripts and styles.
  */
-function Best_Challenge_scripts() {
+function best_challenge_scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
@@ -113,7 +113,7 @@ function Best_Challenge_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'Best_Challenge_scripts' );
+add_action( 'wp_enqueue_scripts', 'best_challenge_scripts' );
 
 /**
  * Custom template tags for this theme.

@@ -7,8 +7,8 @@
         background: url(../../assets/images/hero-curve.png) top no-repeat, url(../../assets/images/hero-banner.png) top no-repeat;
         background-size: cover, cover;
         display: flex;
-        justify-content: center;
-        align-items: flex-start;
+        /*justify-content: flex-start;
+        align-items: flex-start;*/
     }
 }
 
@@ -25,6 +25,9 @@
 .travel-by {
     display: none;
     @include desktop {
+        width: 1140px;
+        padding-left: 15px;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         margin-top: 4rem;
@@ -39,57 +42,53 @@
             }
         }
         #go-green-button {
+            @include go-green-button;
             color: #fff;
-            border: 3px solid #fff;
-            background-color: transparent;
-            cursor: pointer;
-            padding: .5rem 2rem;
-            border-radius: 25px;
-            font-family: "montserrat", sans-serif;
-            font-size: 1rem;
-            box-shadow: none;
-            line-height: 1.7;
-            text-shadow: none;
-            width: 200px;
-            text-decoration: none;
+            border-color: #fff;
+
         }
         .green-buttons {
             padding: 0;
-            margin: 0 auto;
+            /*margin: 0 auto;*/
         }
         h3 {
-            font-size: 2.75rem;
+            font-size: 3.5rem;
             margin: 0;
         }
         p {
-            font-size: 1.5rem;
-            margin: 0;
-            text-align: center;
+            font-size: 1.8rem;
+            margin: 33px 0 54px 0;
+            font-weight: normal;
+            }
+        form {
+        justify-content: flex-start;
         }
     }
 }
 
 .travel-by-mobile {
     text-align: center;
-    background: #dee2e6;
-    margin: 0 auto;
-    h3 {
-        margin: 0;
+    background: $light-grey-background;
+    .travel-by-content {
+        width: 96%;
+        margin: 0 auto;
+        padding-top: 35px;
+        h3 {
+            font-size: 3rem;
+            margin: 0;
+            color: $black-text;
+        }
+        p {
+            font-size: 28px;
+            font-weight: 300;
+        }
     }
     #go-green-button {
-        color: #000;
-        border: 3px solid #000;
-        background-color: transparent;
-        cursor: pointer;
-        padding: .5rem 2rem;
-        border-radius: 25px;
-        font-family: "montserrat", sans-serif;
-        font-size: 1rem;
-        box-shadow: none;
-        line-height: 1.7;
-        text-shadow: none;
-        width: 200px;
-        text-decoration: none;
+        @include go-green-button;
+        color: $black-text;
+        border-color: $black-text;
+        text-transform: initial;
+        font-size: 20px;
     }
     form {
         justify-content: center;
@@ -109,18 +108,44 @@
 }
 
 .ccbc-title {
+    h2 {
+        display: none;
+    }
+    @include desktop {
     margin-bottom: 3rem;
     h2 {
         font-size: 2rem;
     }
+    }
 }
 
 .ccbc-info {
+    .info-content {
+        .black-line{
+        width: 250px;
+        margin: 0 auto;
+        padding: 30px 0;
+        border-bottom: 3px solid $light-blue-text;
+        @include desktop {
+            display: none;
+        }
+        }
+        h3 {
+            font-size: 35px;
+            font-weight: normal;
+        }
+        p {
+            font-size: 25px;
+            font-weight: 300;
+            color: $black-text;
+        }
+    }
     @include desktop {
         display: flex;
         justify-content: space-around;
         align-items: baseline;
     }
+    
 }
 
 .front-sponsors {
@@ -195,6 +220,7 @@
 .results-info {
     display: flex;
     justify-content: space-around;
+    align-items: flex-end;
     font-weight: bold;
 }
 

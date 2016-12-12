@@ -2,14 +2,14 @@
 
 .title-wrapper {
         margin: 0;
-        margin-top: 5%;
+        margin-top: 64px;
         height: 200px;
 		text-align: center;
         @include desktop {
-            margin-top: 5%;
+            margin-top: 68px;
         }
 		h1 {
-			font-size: 50px;
+			font-size: 45px;
 			font-weight: bold;
 			text-transform: uppercase;
 			text-align: center;
@@ -19,23 +19,41 @@
 			}
 		}
 		p {
-			font-size: 20px;
+			font-size: 18px;
 			font-weight: 300;
             @include desktop {
-				font-size: 25px;
+				font-size: 20px;
 			}
 		}
 }
 
 .page-description {
 	 	width: 90%;
-		margin: 0 auto;
-		font-size: 25px;
+		margin: 35px auto 49px auto;
+		font-size: 18px;
 		font-weight: 300;
 		text-align: center;
 		color: $dark-text;
         @include desktop {
-            width: 65%;
-			padding: 50px 0;
+			margin: 67px auto;
+			font-size: 20px;
+            width: 70%;
         }
+}
+
+/* hide mobile version by default */
+
+.logo .mobile {
+    display: none;
+}
+/* when screen is less than 600px wide
+show mobile version and hide desktop */
+
+@media (max-width: 600px) {
+    .logo .mobile {
+        display: block;
+    }
+    .logo .desktop {
+        display: none;
+    }
 }

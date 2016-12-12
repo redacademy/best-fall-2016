@@ -73,10 +73,12 @@ The temaplate to display taxonomy type archive
 							</div>
 							<?php
 							} 
-						 	endforeach; wp_reset_postdata();	
-							} //ends participant_location foreach foreach loop
+						 	endforeach; wp_reset_postdata(); ?>
+							 </div>
+							<?php
+							} //ends participant_location foreach loop
 						?>
-						</div>
+						
 						
 			</div> <!-- taxonomy wrapper ends -->
         <!--</div> #content -->

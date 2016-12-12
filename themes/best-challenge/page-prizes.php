@@ -48,7 +48,7 @@ get_header(); ?>
 							
 								<?php foreach( $prizes as $post ) : setup_postdata($post); ?>
 								
-									<div class="taxonomy-post">
+									<div class="taxonomy-post" id="prize-posts">
 										<div class="prize-image">
 											<?php the_post_thumbnail( 'large' ); ?>							
 										</div>
@@ -75,7 +75,9 @@ get_header(); ?>
 							foreach ( $fields as $field ) { ?>
 
 							<div class="category-name"> 
-								<h3><?php echo $field['category_name']; ?></h3>
+								<div class="category-title"><h3><?php echo $field['category_name']; ?></h3></div>
+								<!--<div class="arrow"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></div>-->
+							<div class="arrow"><?php echo "<img src=" . get_template_directory_uri() . "/assets/images/icons/green-checkmark.png>"; ?></div>
 							</div>
 							<div class="category-description">
 									<p><?php echo $field['category_description']; } ?></p>
@@ -83,6 +85,7 @@ get_header(); ?>
 					</div>
 			</div>
 </div>
+
    <!-- This is the beginning of a template part that toggles a button on and off -->
                     <div class="green-banner">
                         <div class="green-banner-flex">
@@ -104,5 +107,6 @@ get_header(); ?>
                             </form><!-- End of form  -->
                         </div><!-- End of green-banner-flex  -->
                     </div><!-- End of green-banner -->
+
 <?php get_template_part ('template-parts/sponsors-banner'); ?>
 <?php get_footer(); ?>

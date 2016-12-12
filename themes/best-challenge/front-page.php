@@ -11,11 +11,9 @@ get_header(); ?>
 <div class="hero-banner">
     <div class="travel-by desktop">
         <div>
-        <h3 class="uppercase"> I travel by  <span id="typewrite"> </span></h3>
-        <p>Join the Canada-wide competition.<br>
-            Celebrate sustainable commuting in BC.<p>
-        
-
+            <h3 class="uppercase"> I travel by  <span id="typewrite"> </span></h3>
+            <p>Join the Canada-wide competition.<br>
+                Celebrate sustainable commuting in BC.<p>
             <form method="POST" action="">
                 <div class="green-buttons">
                         <div class="button1">
@@ -25,33 +23,30 @@ get_header(); ?>
                                 <input type="submit" name="submit" value="Workplace" id="go-green-button" >
                         </div>
                 </div>
-</div>
             </form>
         </div>
-        </div>
+    </div>
+</div>
         
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-
-            <div class="travel-by-mobile mobile">
-        <div>
-        <h3 class="uppercase"> I travel by </h3>
-        <p>Join the Canada-wide competition.<br>
-            Celebrate sustainable commuting in BC.<p>
-        </div>
-
-            <form method="POST" action="">
-                <div class="green-buttons">
-                        <div class="button1">
-                                <input type="submit" name="submit" value="Individual" id="go-green-button" >
-                        </div>
-                        <div class="button2">
-                                <input type="submit" name="submit" value="Workplace" id="go-green-button" >
-                        </div>
-                </div>
-
-            </form>
+        <div class="travel-by-mobile mobile">
+            <div class="travel-by-content">
+                <h3 class="uppercase"> I travel by </h3>
+                <p>Join the Canada-wide competition.<br>
+                    Celebrate sustainable commuting in BC.<p>
+                <form method="POST" action="">
+                    <div class="green-buttons">
+                            <div class="button1">
+                                    <input type="submit" name="submit" value="Individual" id="go-green-button" >
+                            </div>
+                            <div class="button2">
+                                    <input type="submit" name="submit" value="Workplace" id="go-green-button" >
+                            </div>
+                    </div>
+                </form>
+            </div>
         </div>
     
         <div class="ccbc-front box container">
@@ -59,23 +54,25 @@ get_header(); ?>
                 <h2 class="uppercase">Welcome to commuter challenge bc!</h2>
             </div>
             <div class="ccbc-info">
-            <div>
-                <img src=" <?php echo get_template_directory_uri() ?>/assets/images/cc-group.png" alt="logo">
-                <h3>Join the multi-modal movement</h3>
-                <p>Get a team together at work and have fun with sustainable commuting.</p>
+                <div class="info-content">
+                    <img src=" <?php echo get_template_directory_uri() ?>/assets/images/cc-group.png" alt="logo">
+                    <h3>Join the multi-modal movement</h3>
+                    <p>Get a team together at work and have fun with sustainable commuting.</p>
+                    <div class="black-line"> </div>
+                </div>
+                <div class="info-content">
+                    <img src=" <?php echo get_template_directory_uri() ?>/assets/images/cc-partyhat.png" alt="logo">
+                    <h3>Celebrate, compete and win prizes!</h3>
+                    <p>Track your stats and see how you stack up against the rest of BC and Canada.</p>
+                    <div class="black-line"> </div>
+                </div>
+                <div class="info-content">
+                    <img src=" <?php echo get_template_directory_uri() ?>/assets/images/cc-heart.png" alt="logo">
+                    <h3>Boost physical and mental health</h3>
+                    <p>Get your daily exercise needs in and arrive at work relaxed and ready to go!</p>
+                    <div class="black-line"> </div>
+                </div>
             </div>
-            <div>
-                <img src=" <?php echo get_template_directory_uri() ?>/assets/images/cc-partyhat.png" alt="logo">
-                <h3>Celebrate, compete and win prizes!</h3>
-                <p>Track your stats and see how you stack up against the rest of BC and Canada.</p>
-            </div>
-
-            <div>
-                <img src=" <?php echo get_template_directory_uri() ?>/assets/images/cc-heart.png" alt="logo">
-                <h3>Boost physical and mental health</h3>
-                <p>Get your daily exercise needs in and arrive at work relaxed and ready to go!</p>
-            </div>
-        </div>
         </div>
 
         <div class="front-sponsors">
@@ -121,11 +118,11 @@ get_header(); ?>
             <div class="fp-impact-results">
                 <div class="impact-box">
                 <h3> IMPACT RESULTS 2016</h3>
-                <p> Total ____ used </p>
+                <h4> Total <span>CO2</span> Used </h4>
             <div class="results-info">
              
                     <div class="bc-total">
-                        <?php echo CFS()->get( 'co2_bc_year' ); ?>
+                        <?php echo CFS()->get( 'bc_year_co2' ); ?>
                         <p>British Columbia Total</p>
                     </div>      
 
@@ -133,14 +130,13 @@ get_header(); ?>
                         <?php echo CFS()->get( 'avg_commuter_co2' ); ?>
                         <p>Workplace Average</p>
                     </div>
-
                 </div>          
                 <button> See more results </button>
         </div>
         </div>
 </div>
 
-        
+    
     <!--Blog-->
 
 

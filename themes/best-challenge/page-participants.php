@@ -37,7 +37,7 @@ get_header(); ?>
 					</div>
 					
 					<div class="dark-button" id="vancouver">
-						<a href="<?php echo esc_url( site_url( '/participant_location/vancouver/' ) ); ?>">
+						<a href="<?php echo esc_url( site_url( '/participant_location/metro-vancouver/' ) ); ?>">
 							<input type="button"  value="Metro-Vancouver">
 						</a>
 					</div>

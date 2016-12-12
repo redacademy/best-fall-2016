@@ -1,5 +1,3 @@
-.page-template-default , .tax-participant_location {
-
     .page-heading, .page-heading-participants {
         background-image: url(../../assets/images/backgrounds/prizes-header-mobile.png);
         @include heading-backgrounds;
@@ -14,19 +12,18 @@
             background-image: url(../../assets/images/backgrounds/participants-header.png);
         }
     }
-       
+    
     .taxonomy-wrapper {
         width: 100%;
         height: auto;
-        /*background-color: $dark-background;*/
+        background-color: $footer-background;
         &:nth-child(1){
             background-image: url("../../assets/images/light-blue-bkgrnd.png");
             @include background-image;
             min-height: 430px;   
-         
-        }
+            }
         &:nth-child(2){
-            h2{
+            .results h2 {
                 color: white;
             }
         }
@@ -34,20 +31,31 @@
         .results {
             width: 80%;
             display: flex;
-            justify-content: center;
             flex-wrap: nowrap;
             flex-direction: column;
+            justify-content: center;
             flex-basis: 80%;
             margin: 0 auto;
-                @include desktop {
+            padding-bottom: 45px;
+            @include desktop {
                 flex-wrap: wrap;
                 flex-direction: row;
-                margin-top: 5% auto 1% auto;
-                }
-             
+                padding-bottom: 95px;
+            }
+            
+            .taxonomy-post {
+                align-self: center;
+                margin: 17px;
+                width: 230px;
+                height: 230px;
+                position: relative;
+                background-color: white;
+            }
 
             .taxonomy-image {
                 width: 230px;
+                background-color: #dee2e6;
+                opacity: 0.5;
                 img {
                     width: 100%;
                 }
@@ -58,11 +66,13 @@
             }
         
             h2 {
-                font-size: 2.25rem;
+                font-size: 1.9rem;
                 color: $black-text;
                 @include section-heading;
-                margin: 0;
-                padding-top: 1%;
+                margin: 45px 0;
+                @include desktop {
+                    font-size: 2.25rem;
+                }
             }
             h3 {    
                 font-size: 1.88rem;
@@ -75,40 +85,35 @@
                 @include section-heading;
                 margin: 0;
             }
-            .taxonomy-post {
-                margin: 5% auto;
-                width: 230px;
-                height: 230px;
-                border: 1px solid white;
-                position: relative;
-                @include desktop {
-                    margin: 1%;
-                }
-            }
+            
         .taxonomy-title {
-            width: 230px;
+            width: 230.5px;
             height: 115px;
             background-image: url("../../assets/images/overlay.png");
             background-repeat: no-repeat;
             background-size: cover;
             position: absolute;
             opacity: 0.85;
-            bottom: -1px;
-            left: -1px;
+            bottom: 0px;
+            left: 0px;
             h3 {
                 width: 171px;
-                font-size: 1rem;
+                font-size: 18px;
+                font-weight: normal;
                 position: absolute;
                 bottom: 0;
                 left: 10px;
                 color: $light-text;
                 line-height: 1;
                 text-align: left;
+                text-transform: capitalize;
+                padding-bottom: 10px;
             }       
         }
+       
         .taxonomy-description {
             background-color: $footer-background;
-            opacity: 0.9;
+            opacity: 0.95;
             bottom: 43px;
             display: none;
             position: absolute;
@@ -119,34 +124,70 @@
             word-wrap: break-word;
             p {
                 width: 90%;
-                margin: 1% auto;
+                margin: 5% auto;
                 color: $light-text;
-                font-weight: 300;
-                font-size: 1rem;
+                font-weight: normal;
+                font-size: 15px;
                 text-align: center;
             }
         }
     }
     }
 
+    .tax-participant_location {
+
+        .taxonomy-wrapper{
+            margin-top: 42px;
+            background-color: white;
+            .taxonomy-post {
+                background-color: $light-grey-background;
+            }
+            .results{
+                h2 {
+                    color: $dark-text;
+                    margin: 0;
+                    margin-top: 30px;
+                } 
+                h3 {
+                    font-size: 1.4rem;
+                    padding-bottom: 20px;
+                }
+            .taxonomy-title{
+                position: absolute;
+                left: 0px;
+                bottom: -6px;
+                h3 {
+                text-transform: uppercase;
+                    font-size: 18px;
+                }
+            } 
+        }
+    }
+    }
+
 /*Prize Categories on Prizes Page*/
     .prize-categories {
-        width: 80%;
-        margin: 5% auto;
+        width: 90%;
+        margin: 15% auto;
         color: $dark-text;
+        @include desktop {
+            margin: 5% auto;
+            width: 80%;
+        }
         h2 {
             font-weight: normal;
-            font-size: 2rem;
+            font-size: 1.9rem;
             text-transform: uppercase;
             text-align: center;
             color: $black-text;
             @include desktop {
-                font-size: 2.25rem;    
+                font-size: 2.25rem; 
+                font-weight: bold;   
             }
         }
 
         @include desktop {
-            width: 50%;
+            width: 54%;
             color: $light-blue-text;
             p{
                 margin-left: 50px;
@@ -156,12 +197,36 @@
             height: 57px;
             border-bottom: 1px solid $best-green;
             text-transform: capitalize;
-            h3 {
-                font-size: 1.8rem;
-                font-weight: 300;
+            display: flex;
+            justify-content: space-between;
+            &:hover {
+                cursor: pointer;
             }
-            @include desktop {
-                font-weight: bold;
+            .arrow {
+            margin: auto 0;
+            /*font-family: FontAwesome;
+            color: $best-green;
+            font-size: 1.8rem;
+            padding-right: 10px;*/
+            img {
+                width: 40%;
+                position: relative;
+                bottom: -10px;
+                right: -55px;
+            }
+
+            }
+            .category-title{
+            h3 {
+                font-size: 1.6rem;
+                font-weight: 300;
+                margin: 0;
+                padding-top: 10px;
+                @include desktop {
+                    font-weight: bold;
+                    font-size: 1.7rem;
+                }
+            }
             }
             
         }
@@ -177,10 +242,9 @@
 
 
 .participants {
-    margin-top: 5%;
     width: 80%;
     height: auto;
-    margin: 1% auto 5% auto;
+    margin: 0 auto 8% auto;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -194,6 +258,7 @@
     }
 }
 .buttons {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -217,4 +282,4 @@
     
 }
 
-}
+

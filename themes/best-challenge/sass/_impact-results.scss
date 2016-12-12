@@ -20,11 +20,14 @@
     .picture-wrapper-results h1 {
         line-height: 3.5rem;
         color: white;
-        font-size: 3rem;
+        font-size: 2rem;
         margin-bottom: 0;
         text-align: center;
         text-transform: uppercase;
         font-family: 'montserrat';
+        @include desktop {
+            font-size: 3rem;
+        }
     }
     .picture-wrapper-results p {
         color: white;
@@ -32,6 +35,10 @@
         font-weight: 300;
         margin-top: 0;
         text-align: center;
+        font-size: 1rem;
+        @include desktop {
+            font-size: 1rem;
+        }
     }
     .impact-results-info {
         text-align: center;
@@ -54,6 +61,29 @@
         //     left: 50%;
         //     border-left: 5px solid #fff;
         // }
+        p {
+            font-weight: bold;
+            font-size: 1rem;
+            max-width: 24vw;
+            @include desktop {
+                line-height: 1.5;
+                font-size: 1.5rem;
+            }
+            span {
+                display: block;
+                font-size: 2rem;
+                font-weight: 700;
+                @include desktop {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+    .left {
+        text-align: left;
+    }
+    .right {
+        text-align: right;
     }
     .ir-co2 {
         background: url('../../assets/images/ir-lightgrey-curve-top.png') top no-repeat;
@@ -63,10 +93,15 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        padding-bottom: 5vh;
         div {
             height: 25vh;
             min-width: 20vw;
-            background: teal;
+            p {
+                max-width: 25vw;
+                padding-bottom: 2vw;
+                color: #303b46;
+            }
         }
         .ir-co2-image {
             position: absolute;
@@ -91,7 +126,10 @@
         div {
             height: 25vh;
             min-width: 20vw;
-            background: teal;
+            p {
+                padding-bottom: 2vw;
+                color: #fbfcfc;
+            }
         }
         .ir-km-image {
             position: absolute;
@@ -110,13 +148,18 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        padding-bottom: 5vh;
         @include desktop {
             margin-top: -11vh;
         }
         div {
             height: 25vh;
             min-width: 20vw;
-            background: teal;
+            p {
+                max-width: 25vw;
+                padding-bottom: 2vw;
+                color: $best-green;
+            }
         }
         .ir-register-image {
             position: absolute;
@@ -135,7 +178,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding-bottom: 9vh;
+        padding-bottom: 11vh;
         @include desktop {
             margin-top: -11vh;
             padding-bottom: 11vh;
@@ -143,7 +186,11 @@
         div {
             height: 25vh;
             min-width: 20vw;
-            background: teal;
+            p {
+                max-width: 24vw;
+                padding-bottom: 2vw;
+                color: #fbfcfc;
+            }
         }
         .ir-calories-image {
             position: absolute;
@@ -162,7 +209,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding-bottom: 9vh;
+        padding-bottom: 10vh;
         @include desktop {
             margin-top: -11vh;
             padding-bottom: 11vh;
@@ -170,7 +217,13 @@
         div {
             height: 25vh;
             min-width: 20vw;
-            background: teal;
+            p {
+                max-width: 25vw;
+                padding-bottom: 2vw;
+                @include desktop {
+                    max-width: 19vw;
+                }
+            }
         }
         .ir-fuel-image {
             position: absolute;
@@ -196,7 +249,45 @@
 }
 
 .ir-numbers {
- 
-    height: 40vh;
+    height: 60vh;
     text-align: center;
+    @include desktop {
+        height: 40vh;
+    }
+}
+
+.ir-numbers-title {
+    margin-top: -8vh;
+    @include desktop {
+        margin-top: -4vh;
+    }
+    h3 {
+        font-size: 1.5rem;
+        @include desktop {
+            font-size: 2rem;
+        }
+    }
+}
+
+.ir-numbers-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    max-width: 80%;
+    margin: 0 auto;
+    line-height: 2;
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+    .ir-numbers-stats {
+        align-items: baseline;
+    }
+    .ir-numbers-location {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .ir-numbers-bc {
+        margin-right: 2rem;
+    }
 }
