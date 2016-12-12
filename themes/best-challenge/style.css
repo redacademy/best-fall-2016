@@ -520,37 +520,6 @@ a {
   text-align: right;
   width: 50%; }
 
-@media (min-width: 600px) {
-  .menu-item {
-    width: 107px;
-    height: 36px;
-    bottom: 0; }
-    .menu-item a {
-      padding-top: 7px;
-      color: #fff; }
-  .menu-item:hover {
-    background-color: #5a6f83;
-    border-top-left-radius: 18.5px;
-    border-top-right-radius: 18.5px; }
-  .menu-item-51,
-  .menu-item-51:hover {
-    margin-left: 5px;
-    width: 189px;
-    height: 36px;
-    border-radius: 18.5px;
-    background-color: #a6ce39; }
-    .menu-item-51 a,
-    .menu-item-51:hover a {
-      color: #303b46; }
-  .main-navigation ul ul a {
-    width: 100%;
-    padding: 0.75rem; } }
-
-.sub-menu .menu-item:hover {
-  background-color: #5a6f83;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0; }
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -583,14 +552,18 @@ a {
       align-items: center;
   margin-left: 5px;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  padding: 0 1vw; }
   @media (min-width: 600px) {
     .logo-date {
+      padding: 0;
       -ms-flex-align: start;
           align-items: flex-start;
       margin-top: 2vh; }
       .logo-date .menu-icon {
         display: none; } }
+  .logo-date .mobile-logo {
+    max-width: 25vw; }
   .logo-date .event-date {
     color: white; }
     @media (min-width: 600px) {
@@ -606,18 +579,6 @@ a {
             height: 40px;
             width: 276px; } }
 
-/* hide mobile version by default */
-.logo .mobile {
-  display: none; }
-
-/* when screen is less than 600px wide
-     show mobile version and hide desktop */
-@media (max-width: 600px) {
-  .logo .mobile {
-    display: block; }
-  .logo .desktop {
-    display: none; } }
-
 .header-nav {
   width: 100%; }
   @media (min-width: 600px) {
@@ -630,11 +591,95 @@ a {
 #primary-menu {
   width: 100%;
   -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+  height: 50vh;
+  background: #5a6f83;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-transform: uppercase; }
   @media (min-width: 600px) {
     #primary-menu {
+      display: -ms-flexbox;
+      display: flex;
       -ms-flex-direction: row;
           flex-direction: row; } }
+
+.menu-item {
+  bottom: 0; }
+  .menu-item a {
+    font-size: 1.5rem;
+    color: #fff;
+    padding-left: 5vw; }
+  .menu-item ul li:hover ul {
+    display: block; }
+
+.menu-item:hover {
+  background-color: #5a6f83;
+  border-top-left-radius: 18.5px;
+  border-top-right-radius: 18.5px; }
+
+@media (min-width: 600px) {
+  #primary-menu {
+    height: auto;
+    background: none;
+    -ms-flex-align: left;
+        align-items: left;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    text-transform: none; }
+  .menu-item {
+    width: 107px;
+    height: 36px;
+    bottom: 0; }
+    .menu-item a {
+      padding-top: 7px;
+      font-size: 1rem;
+      color: #fff;
+      padding-left: 0; }
+  .menu-item:hover {
+    background-color: #5a6f83;
+    border-top-left-radius: 18.5px;
+    border-top-right-radius: 18.5px; }
+  .menu-item-51,
+  .menu-item-51:hover {
+    margin-left: 5px;
+    width: 189px;
+    height: 36px;
+    border-radius: 18.5px;
+    background-color: #a6ce39; }
+    .menu-item-51 a,
+    .menu-item-51:hover a {
+      color: #303b46; }
+  .main-navigation ul ul a {
+    width: 100%;
+    padding: 0.75rem; } }
+
+.sub-menu .menu-item:hover {
+  background-color: #5a6f83;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+.stickyBar {
+  width: 100%;
+  position: relative; }
+
+.stickyIsFixed {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0; }
+  @media (min-width: 600px) {
+    .stickyIsFixed {
+      position: relative; } }
+
+.lines a {
+  font-size: 2rem;
+  color: #fff; }
+
+.navi-menu {
+  overflow: visible; }
 
 .title-wrapper {
   margin: 0;
@@ -672,6 +717,18 @@ a {
       margin: 67px auto;
       font-size: 20px;
       width: 70%; } }
+
+/* hide mobile version by default */
+.logo .mobile {
+  display: none; }
+
+/* when screen is less than 600px wide
+     show mobile version and hide desktop */
+@media (max-width: 600px) {
+  .logo .mobile {
+    display: block; }
+  .logo .desktop {
+    display: none; } }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1147,6 +1204,8 @@ form {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-align: end;
+      align-items: flex-end;
   font-weight: bold; }
 
 @media (min-width: 600px) {
@@ -2619,18 +2678,25 @@ NEWLETTER SIGN-UP AREA
 .page-id-113 .picture-wrapper-results h1 {
   line-height: 3.5rem;
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 0;
   text-align: center;
   text-transform: uppercase;
   font-family: 'montserrat'; }
+  @media (min-width: 600px) {
+    .page-id-113 .picture-wrapper-results h1 {
+      font-size: 3rem; } }
 
 .page-id-113 .picture-wrapper-results p {
   color: white;
   font-family: 'montserrat';
   font-weight: 300;
   margin-top: 0;
-  text-align: center; }
+  text-align: center;
+  font-size: 1rem; }
+  @media (min-width: 600px) {
+    .page-id-113 .picture-wrapper-results p {
+      font-size: 1.5rem; } }
 
 .page-id-113 .impact-results-info {
   text-align: center;
@@ -2642,6 +2708,15 @@ NEWLETTER SIGN-UP AREA
 
 .page-id-113 .impact-results-area {
   position: relative; }
+  .page-id-113 .impact-results-area p {
+    font-weight: 700;
+    line-height: 1.5; }
+
+.page-id-113 .left {
+  text-align: left; }
+
+.page-id-113 .right {
+  text-align: right; }
 
 .page-id-113 .ir-co2 {
   background: url("../../assets/images/ir-lightgrey-curve-top.png") top no-repeat;
@@ -2653,11 +2728,15 @@ NEWLETTER SIGN-UP AREA
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  padding-bottom: 5vh; }
   .page-id-113 .ir-co2 div {
     height: 25vh;
-    min-width: 20vw;
-    background: teal; }
+    min-width: 20vw; }
+    .page-id-113 .ir-co2 div p {
+      max-width: 20vw;
+      font-size: 1.5rem;
+      padding-bottom: 2vw; }
   .page-id-113 .ir-co2 .ir-co2-image {
     position: absolute;
     background: url("../../assets/images/circle-co2.png") center no-repeat;
@@ -2682,8 +2761,12 @@ NEWLETTER SIGN-UP AREA
       margin-top: -11vh; } }
   .page-id-113 .ir-km div {
     height: 25vh;
-    min-width: 20vw;
-    background: teal; }
+    min-width: 20vw; }
+    .page-id-113 .ir-km div p {
+      max-width: 20vw;
+      font-size: 1.5rem;
+      padding-bottom: 2vw;
+      color: #fbfcfc; }
   .page-id-113 .ir-km .ir-km-image {
     position: absolute;
     background: url("../../assets/images/circle-distance.png") center no-repeat;
@@ -2702,14 +2785,19 @@ NEWLETTER SIGN-UP AREA
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  padding-bottom: 5vh; }
   @media (min-width: 600px) {
     .page-id-113 .ir-register {
       margin-top: -11vh; } }
   .page-id-113 .ir-register div {
     height: 25vh;
-    min-width: 20vw;
-    background: teal; }
+    min-width: 20vw; }
+    .page-id-113 .ir-register div p {
+      max-width: 20vw;
+      font-size: 1.5rem;
+      padding-bottom: 2vw;
+      color: #a6ce39; }
   .page-id-113 .ir-register .ir-register-image {
     position: absolute;
     background: url("../../assets/images/circle-participants.png") center no-repeat;
@@ -2736,8 +2824,12 @@ NEWLETTER SIGN-UP AREA
       padding-bottom: 11vh; } }
   .page-id-113 .ir-calories div {
     height: 25vh;
-    min-width: 20vw;
-    background: teal; }
+    min-width: 20vw; }
+    .page-id-113 .ir-calories div p {
+      max-width: 20vw;
+      font-size: 1.5rem;
+      padding-bottom: 2vw;
+      color: #fbfcfc; }
   .page-id-113 .ir-calories .ir-calories-image {
     position: absolute;
     background: url("../../assets/images/circle-carbs.png") center no-repeat;
@@ -2764,8 +2856,11 @@ NEWLETTER SIGN-UP AREA
       padding-bottom: 11vh; } }
   .page-id-113 .ir-fuel div {
     height: 25vh;
-    min-width: 20vw;
-    background: teal; }
+    min-width: 20vw; }
+    .page-id-113 .ir-fuel div p {
+      max-width: 20vw;
+      font-size: 1.5rem;
+      padding-bottom: 2vw; }
   .page-id-113 .ir-fuel .ir-fuel-image {
     position: absolute;
     background: url("../../assets/images/circle-station.png") center no-repeat;
