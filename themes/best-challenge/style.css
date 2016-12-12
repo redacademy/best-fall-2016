@@ -1082,10 +1082,18 @@ form {
 
 .travel-by-mobile {
   text-align: center;
-  background: #dee2e6;
-  margin: 0 auto; }
-  .travel-by-mobile h3 {
-    margin: 0; }
+  background: #dee2e6; }
+  .travel-by-mobile .travel-by-content {
+    width: 96%;
+    margin: 0 auto;
+    padding-top: 35px; }
+    .travel-by-mobile .travel-by-content h3 {
+      font-size: 3rem;
+      margin: 0;
+      color: #303b46; }
+    .travel-by-mobile .travel-by-content p {
+      font-size: 28px;
+      font-weight: 300; }
   .travel-by-mobile #go-green-button {
     border: 3px solid #000;
     background-color: transparent;
@@ -1100,8 +1108,10 @@ form {
     height: 50px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #000;
-    border-color: #000; }
+    color: #303b46;
+    border-color: #303b46;
+    text-transform: initial;
+    font-size: 20px; }
   .travel-by-mobile form {
     -ms-flex-pack: center;
         justify-content: center; }

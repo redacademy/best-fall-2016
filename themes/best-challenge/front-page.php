@@ -11,11 +11,9 @@ get_header(); ?>
 <div class="hero-banner">
     <div class="travel-by desktop">
         <div>
-        <h3 class="uppercase"> I travel by  <span id="typewrite"> </span></h3>
-        <p>Join the Canada-wide competition.<br>
-            Celebrate sustainable commuting in BC.<p>
-        
-
+            <h3 class="uppercase"> I travel by  <span id="typewrite"> </span></h3>
+            <p>Join the Canada-wide competition.<br>
+                Celebrate sustainable commuting in BC.<p>
             <form method="POST" action="">
                 <div class="green-buttons">
                         <div class="button1">
@@ -25,33 +23,30 @@ get_header(); ?>
                                 <input type="submit" name="submit" value="Workplace" id="go-green-button" >
                         </div>
                 </div>
-</div>
             </form>
         </div>
-        </div>
+    </div>
+</div>
         
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-
-            <div class="travel-by-mobile mobile">
-        <div>
-        <h3 class="uppercase"> I travel by </h3>
-        <p>Join the Canada-wide competition.<br>
-            Celebrate sustainable commuting in BC.<p>
-        </div>
-
-            <form method="POST" action="">
-                <div class="green-buttons">
-                        <div class="button1">
-                                <input type="submit" name="submit" value="Individual" id="go-green-button" >
-                        </div>
-                        <div class="button2">
-                                <input type="submit" name="submit" value="Workplace" id="go-green-button" >
-                        </div>
-                </div>
-
-            </form>
+        <div class="travel-by-mobile mobile">
+            <div class="travel-by-content">
+                <h3 class="uppercase"> I travel by </h3>
+                <p>Join the Canada-wide competition.<br>
+                    Celebrate sustainable commuting in BC.<p>
+                <form method="POST" action="">
+                    <div class="green-buttons">
+                            <div class="button1">
+                                    <input type="submit" name="submit" value="Individual" id="go-green-button" >
+                            </div>
+                            <div class="button2">
+                                    <input type="submit" name="submit" value="Workplace" id="go-green-button" >
+                            </div>
+                    </div>
+                </form>
+            </div>
         </div>
     
         <div class="ccbc-front box container">

@@ -68,15 +68,27 @@
 
 .travel-by-mobile {
     text-align: center;
-    background: #dee2e6;
-    margin: 0 auto;
-    h3 {
-        margin: 0;
+    background: $light-grey-background;
+    .travel-by-content {
+        width: 96%;
+        margin: 0 auto;
+        padding-top: 35px;
+        h3 {
+            font-size: 3rem;
+            margin: 0;
+            color: $black-text;
+        }
+        p {
+            font-size: 28px;
+            font-weight: 300;
+        }
     }
     #go-green-button {
         @include go-green-button;
-        color: #000;
-        border-color: #000;
+        color: $black-text;
+        border-color: $black-text;
+        text-transform: initial;
+        font-size: 20px;
     }
     form {
         justify-content: center;
