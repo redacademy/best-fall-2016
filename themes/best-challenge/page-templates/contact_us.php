@@ -13,12 +13,16 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-            <div class="picture-wrapper-contact">
-                <h1>contact us</h1>
-                <p>Get in touch with the organizers here at B.E.S.T</p>
-            </div>
-
-
+            <div class = "picture-wrapper-contact"> 
+                <div class="title-wrapper">     
+                    <?php the_title( '<div class="heading"><h1>', '</h1></div>' ); ?>              
+                    <div class="title-info">    
+                        <p><?php echo CFS()->get( 'title_info'); ?></p>
+                    </div>
+                </div> <!-- title wrapper ends -->
+            </div> <!-- page heading ends -->
+            
+           
              <?php get_template_part( 'template-parts/contact-person' ); ?>
 
          

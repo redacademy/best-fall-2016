@@ -13,35 +13,13 @@ this is the first banner section under the header
 
 
 .picture-wrapper-contact{
-    display:flex;
-    background:url('../../assets/images/get-involved-header.png')center bottom;
-    height:200px;
-    align-items:center;
-    justify-content:center;
-    padding-bottom:20px;
-    margin-bottom: 4px;
-    flex-direction:column;
-    
+    background:url('../../assets/images/backgrounds/contact-header-mobile.png');
+    @include heading-backgrounds;
+    @include desktop {
+        background:url('../../assets/images/backgrounds/contact-header.png');
+        @include heading-backgrounds;
+    }   
 }
-
-.picture-wrapper-contact h1{
-    line-height:3.5rem;
-    color:white;
-    font-size:44px;
-    margin-bottom:0;
-    text-align:center;
-    text-transform:uppercase;
-
-}
-
-.picture-wrapper-contact p{
-    color:white;
-    font-family:'montserrat';
-    font-weight:200;
-    margin-top:0;
-    
-}
-
 /*=======================
 this is the CONTACT PERSON INFO
 ========================*/

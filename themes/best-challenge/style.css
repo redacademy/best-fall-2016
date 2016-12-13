@@ -2784,30 +2784,36 @@ MAP AREA
 NEWLETTER SIGN-UP AREA
 ========================*/ }
   .page-id-91 .picture-wrapper-contact {
-    display: -ms-flexbox;
-    display: flex;
-    background: url("../../assets/images/get-involved-header.png") center bottom;
-    height: 200px;
-    -ms-flex-align: center;
-        align-items: center;
+    background: url("../../assets/images/backgrounds/contact-header-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     -ms-flex-pack: center;
         justify-content: center;
-    padding-bottom: 20px;
-    margin-bottom: 4px;
-    -ms-flex-direction: column;
-        flex-direction: column; }
-  .page-id-91 .picture-wrapper-contact h1 {
-    line-height: 3.5rem;
+    max-width: 100%;
+    height: 255px;
     color: white;
-    font-size: 44px;
-    margin-bottom: 0;
-    text-align: center;
-    text-transform: uppercase; }
-  .page-id-91 .picture-wrapper-contact p {
-    color: white;
-    font-family: 'montserrat';
-    font-weight: 200;
-    margin-top: 0; }
+    display: -ms-flexbox;
+    display: flex; }
+    @media (min-width: 600px) {
+      .page-id-91 .picture-wrapper-contact {
+        background-position: center;
+        height: 300px; } }
+    @media (min-width: 600px) {
+      .page-id-91 .picture-wrapper-contact {
+        background: url("../../assets/images/backgrounds/contact-header.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        -ms-flex-pack: center;
+            justify-content: center;
+        max-width: 100%;
+        height: 255px;
+        color: white;
+        display: -ms-flexbox;
+        display: flex; } }
+  @media (min-width: 600px) and (min-width: 600px) {
+    .page-id-91 .picture-wrapper-contact {
+      background-position: center;
+      height: 300px; } }
   .page-id-91 .contact-person-section {
     display: -ms-flexbox;
     display: flex;
