@@ -225,8 +225,9 @@
         h2{
             margin: 0;
             font-size: 28px;
+            text-transform: uppercase;
             @include desktop {
-            font-size: 30px;
+                font-size: 30px;
             }
         }
         h3 {

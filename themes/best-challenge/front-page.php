@@ -89,7 +89,7 @@ get_header(); ?>
 
             <div class="fp-impact-results">
                 <div class="impact-box">
-                    <h2> IMPACT RESULTS 2016</h2>
+                    <h2> <?php echo CFS()->get( 'impact_results_title' ); ?></h2>
                     <h3> Total <span>CO2</span> Used </h3>
                     <div class="bc-results-info">            
                         <div class="total">
