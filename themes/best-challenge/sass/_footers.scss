@@ -95,9 +95,11 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-
+    
     @include desktop {
-        justify-content: flex-start;
+        display:flex;
+        justify-content: space-between;
+        display: row;
     }
 }
 
@@ -110,22 +112,15 @@
 .footer-social p {
    visibility:visible;
    align-items:center;
-   justify-content:center;
+   justify-content:flex-end;
     color:white;
-    padding-left:0%;
     text-align:center;
-    margin-top:-10px;
     margin-bottom:10px;
     
      @include desktop {
-        color: white;
-        padding-right: 8rem;
-        font-family: 'montserrat';
         font-weight: 100;
-        text-align:right;
-        visibility:visible;
-         width:100%;
-    }
+        padding-right:40px;
+      }
 }
 
 .font-awesome{
@@ -136,6 +131,7 @@
     text-align:center;
         @include desktop {
         padding-left:10%;
+        justify-content:flex-start;
     }
 }
 

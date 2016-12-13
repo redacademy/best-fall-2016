@@ -3617,8 +3617,11 @@ a#sign-up {
   width: 100%; }
   @media (min-width: 600px) {
     .footer-social {
-      -ms-flex-pack: start;
-          justify-content: flex-start; } }
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      display: row; } }
 
 .footer-social i {
   color: white;
@@ -3629,22 +3632,15 @@ a#sign-up {
   visibility: visible;
   -ms-flex-align: center;
       align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
   color: white;
-  padding-left: 0%;
   text-align: center;
-  margin-top: -10px;
   margin-bottom: 10px; }
   @media (min-width: 600px) {
     .footer-social p {
-      color: white;
-      padding-right: 8rem;
-      font-family: 'montserrat';
       font-weight: 100;
-      text-align: right;
-      visibility: visible;
-      width: 100%; } }
+      padding-right: 40px; } }
 
 .font-awesome {
   display: -ms-flexbox;
@@ -3657,7 +3653,9 @@ a#sign-up {
   text-align: center; }
   @media (min-width: 600px) {
     .font-awesome {
-      padding-left: 10%; } }
+      padding-left: 10%;
+      -ms-flex-pack: start;
+          justify-content: flex-start; } }
 
 .footer-social i:hover {
   color: midnightblue; }
