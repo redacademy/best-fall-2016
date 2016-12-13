@@ -943,14 +943,17 @@ users choice
 ========================*/
 .green-banner {
   background: #a6ce39;
+  padding: 0;
   height: 225px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  padding-bottom: 20px; }
+  justify-content: center; }
+  @media (min-width: 600px) {
+    .green-banner {
+      padding-bottom: 20px; } }
 
 .green-banner-data {
   text-align: center; }
@@ -1038,7 +1041,7 @@ users choice
   line-height: 1.7;
   border-width: 3px;
   text-shadow: none;
-  width: 200px;
+  width: 180px;
   text-decoration: none;
   padding-bottom: 5px; }
   @media (min-width: 600px) {
@@ -1056,8 +1059,8 @@ users choice
   background-color: transparent;
   color: #303b46;
   cursor: pointer;
-  padding: .5rem 3.3rem;
-  border: 1;
+  text-align: center;
+  padding: .5rem;
   border-radius: 25px;
   font-family: 'montserrat', sans-serif;
   font-size: 1rem;
@@ -1065,7 +1068,7 @@ users choice
   line-height: 1.7;
   border-width: 3px;
   text-shadow: none;
-  width: 200px;
+  width: 180px;
   text-decoration: none;
   padding-bottom: 5px;
   padding-right: 5%; }
@@ -1107,9 +1110,12 @@ this is the first banner section under the header
     padding-bottom: 5rem; }
   .front-sponsors .fp-sponsors-title h2 {
     visibility: visible;
-    padding-top: 5rem;
+    padding-top: 0;
     margin-bottom: 6rem;
     padding-left: 2rem; }
+    @media (min-width: 600px) {
+      .front-sponsors .fp-sponsors-title h2 {
+        padding-top: 5rem; } }
   .front-sponsors .fp-sponsors-img {
     width: 100%;
     opacity: 0.75;
@@ -1154,7 +1160,7 @@ this is for the rest of the site
 .front-sponsors {
   display: -ms-flexbox;
   display: flex;
-  height: 40vh;
+  margin-bottom: 0;
   -ms-flex-direction: row;
       flex-direction: row;
   -ms-flex-pack: distribute;
@@ -1171,8 +1177,10 @@ this is for the rest of the site
       justify-content: space-between;
   align-items: center;
   background: transparent;
-  background-size: cover;
-  margin-bottom: 6rem; }
+  background-size: cover; }
+  @media (min-width: 600px) {
+    .front-sponsors {
+      margin-bottom: 6rem; } }
 
 .banner-heading {
   text-align: center; }
@@ -1191,7 +1199,9 @@ this is for the rest of the site
       height: 35vh; } }
 
 .fp-sponsors-title h2 {
-  visibility: hidden; }
+  visibility: hidden;
+  padding-top: 1rem;
+  margin-bottom: 1rem; }
   @media (min-width: 600px) {
     .fp-sponsors-title h2 {
       display: -ms-flexbox;
@@ -1600,12 +1610,15 @@ this is for the rest of the site
   padding-top: 15%; }
   @media (min-width: 600px) {
     .best-post-info {
+      -ms-flex-direction: column;
+          flex-direction: column;
       height: 316px;
       padding-top: 0; } }
   .best-post-info p {
+    padding-top: 5px;
     color: #303b46;
     font-weight: 300;
-    text-align: left;
+    text-align: center;
     font-size: 25px; }
     @media (min-width: 600px) {
       .best-post-info p {
@@ -1613,13 +1626,27 @@ this is for the rest of the site
         font-size: 18px;
         margin-top: 0; } }
   .best-post-info .read-more {
+<<<<<<< HEAD
+    padding-top: 0;
+    padding-bottom: 0;
+    visibility: hidden; }
+=======
     visibility: hidden; }
   .best-post-info .green-read {
     display: initial; }
+>>>>>>> 504dd34e7387c6461a2414c8f6627ba8d0afc005
   .best-post-info h3 {
     font-size: 32px;
     text-transform: uppercase;
     color: white; }
+    @media (min-width: 600px) {
+      .best-post-info h3 {
+        font-size: 20px; } }
+    @media (min-width: 1140px) {
+      .best-post-info h3 {
+        text-align: left;
+        padding: 0;
+        font-size: 32px; } }
 
 .best-post-title {
   font-size: 1.5rem;
@@ -1629,7 +1656,13 @@ this is for the rest of the site
   @media (min-width: 600px) {
     .best-post-title {
       text-align: left;
-      padding: 0; } }
+      padding: 0;
+      font-size: 1rem; } }
+  @media (min-width: 1140px) {
+    .best-post-title {
+      text-align: left;
+      padding: 0;
+      font-size: 1.5rem; } }
 
 .green-read {
   background: url(../../assets/images/green-read-story.png) no-repeat;
@@ -1637,17 +1670,40 @@ this is for the rest of the site
   height: 47px; }
   @media (min-width: 600px) {
     .green-read {
+      background-size: 80%;
+      background-size: 318px 41px; } }
+  @media (min-width: 950px) {
+    .green-read {
+      background-size: 418px 41px; } }
+  @media (min-width: 1140px) {
+    .green-read {
       background-size: 418px 41px;
-      margin-left: 30rem;
-      margin-top: 10px; } }
+      margin-left: -83px;
+      margin-top: -74px; } }
   .green-read a {
     display: -ms-flexbox;
     display: flex;
     color: #303b46;
-    font-size: 25px;
+    font-size: 18px;
     padding: 0.1rem 0 0 5rem;
     cursor: pointer; }
     @media (min-width: 600px) {
+      .green-read a {
+        display: -ms-flexbox;
+        display: flex;
+        color: white;
+        font-size: 18px;
+        padding: .3rem 0 0 1rem;
+        cursor: pointer; } }
+    @media (min-width: 950px) {
+      .green-read a {
+        display: -ms-flexbox;
+        display: flex;
+        color: white;
+        font-size: 18px;
+        padding: .5rem 0 0 1rem;
+        cursor: pointer; } }
+    @media (min-width: 1140px) {
       .green-read a {
         color: white;
         font-size: 18px;
@@ -3658,7 +3714,6 @@ a#sign-up {
 
 .para-heading a {
   font-family: 'montserrat';
-  font-weight: 300;
   text-transform: capitalize;
   display: -ms-flexbox;
   display: flex;
@@ -3669,8 +3724,11 @@ a#sign-up {
   -ms-flex-pack: center;
       justify-content: center;
   padding-bottom: 10px; }
+  @media (min-width: 600px) {
+    .para-heading a {
+      font-weight: bold; } }
 
-para-content {
+.para-content {
   margin: 0; }
 
 .para-content p {
@@ -3703,9 +3761,7 @@ para-content {
   padding-top: 10px; }
   @media (min-width: 600px) {
     .commuterChallenge-contact-logos {
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-      padding-top: 30px; } }
+      visibility: hidden; } }
 
 .commuterChallenge-contact-logos i {
   padding: 5px; }
@@ -3722,10 +3778,12 @@ para-content {
       height: 300px; } }
 
 .questions {
-  padding-bottom: 0.8rem; }
+  padding: 15px 0 0.8rem 0; }
   @media (min-width: 600px) {
     .questions {
       line-height: 0.8; } }
+  .questions #email {
+    font-weight: 300; }
 
 @media (min-width: 600px) {
   .questions p {

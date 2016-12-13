@@ -333,19 +333,22 @@
 }
 
 .best-post-info {
+    
     width: 90%;
     flex-direction: column;
     flex-basis: 48%;
     padding-top: 15%;
     @include desktop {
+        flex-direction: column;
         height: 316px;
         padding-top: 0;
     }
     
     p {
+        padding-top:5px;
         color: $black-text;
         font-weight: 300;
-        text-align: left;
+        text-align: center;
         font-size: 25px; 
         @include desktop {
             color: white;
@@ -354,16 +357,25 @@
         }     
     }
     .read-more {
-        
+        padding-top:0;
+        padding-bottom:0;
         visibility:hidden;
+        
     }
-    .green-read {
-        display: initial;
-    }
+  
     h3 {
         font-size: 32px;
         text-transform: uppercase;
         color: white;
+         @media (min-width: 600px) {
+         font-size:20px;
+            }
+            @media (min-width: 1140px) {
+               text-align: left;
+                padding: 0;
+                font-size: 32px;
+   
+        }
     }
 }
 
@@ -373,10 +385,17 @@
     text-transform: uppercase;
     padding: 0 1rem;
     text-align: center;
-    @include desktop {
-        text-align: left;
-        padding: 0;
-    }
+        @media (min-width: 600px) {
+          text-align: left;
+                padding: 0;
+                font-size: 1rem;
+            }
+            @media (min-width: 1140px) {
+               text-align: left;
+                padding: 0;
+                font-size: 1.5rem;
+        }
+  
 }
 
 
@@ -384,18 +403,44 @@
     background: url(../../assets/images/green-read-story.png) no-repeat;
     background-size: 100%;
     height: 47px;
-    @include desktop {
-        background-size: 418px 41px;
-        margin-left: 30rem;
-        margin-top: 10px;
+    
+       @media (min-width: 600px) {
+          background-size: 80%;
+            background-size: 318px 41px; 
+            }
+            @media (min-width: 950px) {
+            background-size: 418px 41px;
+            
+            }
+            @media (min-width: 1140px) {
+                background-size: 418px 41px;
+                margin-left: -83px;
+                margin-top: -74px;
+   
         }
     a{
         display:flex;
         color:$dark-text;
-        font-size: 25px;
+        font-size: 18px;
         padding: 0.1rem 0 0 5rem;
         cursor: pointer;
-        @include desktop {
+   @media (min-width: 600px) {
+        display:flex;
+        color: white;
+        font-size: 18px;
+        padding: .3rem 0 0 1rem;
+        cursor: pointer;
+            }
+            @media (min-width: 950px) {
+          
+        display:flex;
+        color: white;
+        font-size: 18px;
+        padding:.5rem 0 0 1rem;
+        cursor: pointer;
+            }
+
+        @media (min-width: 1140px) { 
             color: white;
             font-size: 18px;
             font-weight: normal;

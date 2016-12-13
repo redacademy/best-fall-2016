@@ -24,9 +24,12 @@ this is the first banner section under the header
 .fp-sponsors-title {
     h2 {
         visibility:visible;
-       padding-top:5rem;
+        padding-top: 0;
         margin-bottom:6rem;
         padding-left:2rem;
+        @include desktop {
+            padding-top:5rem;
+        }
     }
 }
 
@@ -77,22 +80,22 @@ this is for the rest of the site
 
 .front-sponsors {
     display: flex;
-    height:40vh;
+    margin-bottom: 0;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     background: transparent;
-        @include desktop;
-        text-align: center;
-        display: flex;
-        height:40vh;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        background: transparent;
-        background-size: cover;
-        margin-bottom:6rem;
-
+    text-align: center;
+    display: flex;
+    height:40vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    background-size: cover;
+        @include desktop{  
+            margin-bottom:6rem;
+        }
 }
 
 .banner-heading{
@@ -118,9 +121,12 @@ text-align:center;
 
 .fp-sponsors-title h2{
         visibility:hidden;
+        padding-top: 1rem;
+        margin-bottom: 1rem;
+
          @include desktop{
-             display:flex;
-             justify-content:center;
+            display:flex;
+            justify-content:center;
             visibility:visible;
             padding-bottom:2rem;
     }
