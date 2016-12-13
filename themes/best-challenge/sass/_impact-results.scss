@@ -71,7 +71,7 @@
     .right {
         text-align: right;
         margin-left: 10vw;
-          @media (min-width: 480px) {
+        @media (min-width: 480px) {
             margin-left: 20vw;
         }
         @media (min-width: 800px) {
@@ -96,6 +96,16 @@
                 max-width: 20vw;
                 padding-bottom: 2vw;
                 color: #303b46;
+            }
+        }
+        .right {
+            text-align: right;
+            margin-left: 5vw;
+            @media (min-width: 480px) {
+                margin-left: 5vw;
+            }
+            @media (min-width: 800px) {
+                margin-left: 9vw;
             }
         }
         .ir-co2-image {
@@ -225,6 +235,16 @@
                 @include desktop {
                     max-width: 18vw;
                 }
+            }
+        }
+        .right {
+            text-align: right;
+            margin-left: 5vw;
+            @media (min-width: 480px) {
+                margin-left: 5vw;
+            }
+            @media (min-width: 800px) {
+                margin-left: 9vw;
             }
         }
         .ir-fuel-image {

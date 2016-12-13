@@ -16,6 +16,7 @@
                 height: inherit;
                 position: relative;
                 flex-wrap: wrap;
+                padding-top: 1vh;
                 @include desktop {
                     flex-wrap: nowrap;
                 }
@@ -38,7 +39,8 @@
                     }
                 }
                 .mobile-logo {
-                    max-width: 25vw;
+                    min-width: 25vw;
+
                 }
                 .event-date {
                     color: white;
@@ -53,10 +55,10 @@
                     }
                 }
                 .logo-header {
-                    padding-top: 1vh;
+                    
                     img {
                         height: 40px;
-                        width: 22vw;
+                        width: 100%;
                         @include desktop {
                             height: 40px;
                             width: 276px;

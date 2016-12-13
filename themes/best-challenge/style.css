@@ -476,7 +476,7 @@ a {
   .main-navigation .menu-item-has-children,
   .main-navigation .menu-item-51,
   .main-navigation .menu-item-121 {
-    border-bottom: 1px solid black; }
+    border-bottom: 2px solid black; }
   .main-navigation .sub-menu .menu-item a {
     color: #1a2025;
     font-weight: 500;
@@ -575,7 +575,8 @@ a {
   height: inherit;
   position: relative;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  padding-top: 1vh; }
   @media (min-width: 600px) {
     .best-header {
       -ms-flex-wrap: nowrap;
@@ -601,7 +602,7 @@ a {
       .logo-date .menu-icon {
         display: none; } }
   .logo-date .mobile-logo {
-    max-width: 25vw; }
+    min-width: 25vw; }
   .logo-date .event-date {
     color: white; }
     .logo-date .event-date h2 {
@@ -610,15 +611,13 @@ a {
       .logo-date .event-date h2 {
         font-size: 2rem;
         margin-top: 0; } }
-  .logo-date .logo-header {
-    padding-top: 1vh; }
-    .logo-date .logo-header img {
-      height: 40px;
-      width: 22vw; }
-      @media (min-width: 600px) {
-        .logo-date .logo-header img {
-          height: 40px;
-          width: 276px; } }
+  .logo-date .logo-header img {
+    height: 40px;
+    width: 100%; }
+    @media (min-width: 600px) {
+      .logo-date .logo-header img {
+        height: 40px;
+        width: 276px; } }
 
 .header-nav {
   width: 100%; }
@@ -3229,6 +3228,15 @@ NEWLETTER SIGN-UP AREA
       max-width: 20vw;
       padding-bottom: 2vw;
       color: #303b46; }
+  .page-template-page-results .ir-co2 .right {
+    text-align: right;
+    margin-left: 5vw; }
+    @media (min-width: 480px) {
+      .page-template-page-results .ir-co2 .right {
+        margin-left: 5vw; } }
+    @media (min-width: 800px) {
+      .page-template-page-results .ir-co2 .right {
+        margin-left: 9vw; } }
   .page-template-page-results .ir-co2 .ir-co2-image {
     position: absolute;
     background: url("../../assets/images/circle-co2.png") center no-repeat;
@@ -3358,6 +3366,15 @@ NEWLETTER SIGN-UP AREA
       @media (min-width: 600px) {
         .page-template-page-results .ir-fuel div p {
           max-width: 18vw; } }
+  .page-template-page-results .ir-fuel .right {
+    text-align: right;
+    margin-left: 5vw; }
+    @media (min-width: 480px) {
+      .page-template-page-results .ir-fuel .right {
+        margin-left: 5vw; } }
+    @media (min-width: 800px) {
+      .page-template-page-results .ir-fuel .right {
+        margin-left: 9vw; } }
   .page-template-page-results .ir-fuel .ir-fuel-image {
     position: absolute;
     background: url("../../assets/images/circle-station.png") center no-repeat;
