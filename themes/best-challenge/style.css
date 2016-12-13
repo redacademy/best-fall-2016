@@ -1414,7 +1414,8 @@ this is for the rest of the site
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: justify;
-          justify-content: space-between; } }
+          justify-content: space-between;
+      padding-top: 3.5rem; } }
 
 .best-post-thumb {
   -ms-flex-preferred-size: 48%;
@@ -1437,7 +1438,8 @@ this is for the rest of the site
     margin: 0;
     padding: 0.5rem;
     color: white;
-    font-family: 'montserrat'; }
+    font-family: 'montserrat';
+    margin-left: -40px; }
 
 .best-post-title {
   font-size: 1.5rem;
@@ -1463,7 +1465,7 @@ this is for the rest of the site
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
-  padding-bottom: 6rem; }
+  padding-bottom: 10rem; }
 
 .green-read a {
   display: -ms-flexbox;
