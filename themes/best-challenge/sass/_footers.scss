@@ -42,10 +42,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-         @include desktop {
-    display: flex;
-    flex-direction: row;
-    }
+        @include desktop {
+        display: flex;
+        flex-direction: row;
+        }
  }
 
 .footer-section {
@@ -157,16 +157,18 @@
 
 .para-heading a {
     font-family: 'montserrat';
-    font-weight: 300;
     text-transform: capitalize;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-bottom: 10px;
+    @include desktop {
+        font-weight: bold;
+    }
 }
 
-para-content {
+.para-content {
     margin: 0;
 }
 
@@ -197,8 +199,7 @@ para-content {
     justify-content: center;
     padding-top: 10px;
           @include desktop {
-            justify-content:flex-start;
-            padding-top:30px;
+            visibility: hidden;
      }
 }
 
@@ -219,10 +220,13 @@ para-content {
 }
 
 .questions {
-    padding-bottom: 0.8rem;
+    padding: 15px 0 0.8rem 0;
        @include desktop {
             line-height: 0.8;
-   }
+        }
+    #email {
+        font-weight: 300;
+    }
 }
 
 .questions p{

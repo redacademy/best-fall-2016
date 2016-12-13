@@ -40,7 +40,7 @@
 							<i class="fa fa-envelope-o" aria-hidden="true"></i>
 						</div>
 						<div class="questions">
-							<p><a href="mailto:commuterchallenge@best.bc.ca">commuterchallenge@<br>best.bc.ca</a></p>
+							<p><a id='email' href="mailto:commuterchallenge@best.bc.ca">commuterchallenge@best.bc.ca</a></p>
 							<div class="para-content"><p>(604)669-2860</p></div>
 						</div>
 					</div>	
