@@ -1,8 +1,8 @@
 /*=======================
-this is the css unique to page-id-34
+this is the css unique to page-template-get_involved
 ========================*/
 
-.page-id-34{
+.page-template-get_involved{
 
 
 /*=======================
@@ -34,32 +34,15 @@ this is the css for the redirect banner which appears on button click
 this is the first image on page
 ========================*/
 
-.picture-wrapper{
-    display:flex;
-    background:url('../../assets/images/get-involved-header.png')center bottom;
-    height:200px;
-    align-items:center;
-    justify-content:center;
-    padding-bottom:20px;
-    margin-bottom: 4px;
-   	}
-
-.picture-wrapper h1{
-   line-height:3.5rem;
-    color:white;
-    font-size:60px;
-    width:80%;
-    text-align:center;
-    text-transform:uppercase;
-        @include desktop {
-            line-height:3.5rem;
-            color:white;
-            font-size:44px;
-            width:60%;
-            text-align:center;
-            text-transform:uppercase;
+.get-involved-background{
+    background:url('../../assets/images/backgrounds/involved-header-mobile.png');
+    @include heading-backgrounds;
+    @include desktop {
+        background:url('../../assets/images/backgrounds/involved-header.png');
+        @include heading-backgrounds;
     }
 }
+
 
 /*=======================
 this is a section with three blocks flexed explaining the benefits of the Commuter Challenge

@@ -11,9 +11,6 @@ get_header(); ?>
 
 </div>
 
-
-
-
 <div class="toggle-visible-hidden">
    <div class="redirect-page-area"> 
 			<div class="page-banner">
@@ -36,14 +33,18 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-            <div class="picture-wrapper">
-                    <h1>get your workplace involved!</h1>
-                </div>
-
-
-                <?php while ( have_posts() ) : the_post(); ?>
-                <?php get_template_part( 'template-parts/content', 'page' ); ?>
-                <?php endwhile; // End of the loop. ?>
+            <div class = "get-involved-background"> 
+                <div class="title-wrapper">     
+                    <?php the_title( '<div class="heading"><h1>', '</h1></div>' ); ?>              
+                    <div class="title-info">    
+                        <p><?php echo CFS()->get( 'title_info'); ?></p>
+                    </div>
+                </div> <!-- title wrapper ends -->
+            </div> <!-- page heading ends -->
+            
+            <div class="page-description"> 
+                    <p><?php echo CFS()->get( 'page_description'); ?></p>
+            </div> 
 
                 <div class="challenge-benefit-blocks">
                     <div class="single-benefit-block">

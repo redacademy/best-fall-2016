@@ -2438,9 +2438,9 @@ object {
   color: brown; }
 
 /*=======================
-this is the css unique to page-id-34
+this is the css unique to page-template-get_involved
 ========================*/
-.page-id-34 {
+.page-template-get_involved {
   /*=======================
 this is the css for the redirect banner which appears on button click
 ========================*/
@@ -2462,46 +2462,51 @@ this section has two flexed blocks which links readers to additional resources
   /*=======================
 this section is a testimonial
 ========================*/ }
-  .page-id-34 .toggle-visible-hidden {
+  .page-template-get_involved .toggle-visible-hidden {
     height: 0vh;
     visibility: hidden; }
-  .page-id-34 .entry-title {
+  .page-template-get_involved .entry-title {
     display: none; }
-  .page-id-34 .entry-content {
+  .page-template-get_involved .entry-content {
     padding-left: 10%;
     padding-right: 10%;
     text-align: center; }
-  .page-id-34 .entry-content p {
+  .page-template-get_involved .entry-content p {
     font-family: 'montserrat', serif;
     font-weight: 300;
     font-size: 20px; }
-  .page-id-34 .picture-wrapper {
-    display: -ms-flexbox;
-    display: flex;
-    background: url("../../assets/images/get-involved-header.png") center bottom;
-    height: 200px;
-    -ms-flex-align: center;
-        align-items: center;
+  .page-template-get_involved .get-involved-background {
+    background: url("../../assets/images/backgrounds/involved-header-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     -ms-flex-pack: center;
         justify-content: center;
-    padding-bottom: 20px;
-    margin-bottom: 4px; }
-  .page-id-34 .picture-wrapper h1 {
-    line-height: 3.5rem;
+    max-width: 100%;
+    height: 255px;
     color: white;
-    font-size: 60px;
-    width: 80%;
-    text-align: center;
-    text-transform: uppercase; }
+    display: -ms-flexbox;
+    display: flex; }
     @media (min-width: 600px) {
-      .page-id-34 .picture-wrapper h1 {
-        line-height: 3.5rem;
+      .page-template-get_involved .get-involved-background {
+        background-position: center;
+        height: 300px; } }
+    @media (min-width: 600px) {
+      .page-template-get_involved .get-involved-background {
+        background: url("../../assets/images/backgrounds/involved-header.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        -ms-flex-pack: center;
+            justify-content: center;
+        max-width: 100%;
+        height: 255px;
         color: white;
-        font-size: 44px;
-        width: 60%;
-        text-align: center;
-        text-transform: uppercase; } }
-  .page-id-34 .challenge-benefit-blocks {
+        display: -ms-flexbox;
+        display: flex; } }
+  @media (min-width: 600px) and (min-width: 600px) {
+    .page-template-get_involved .get-involved-background {
+      background-position: center;
+      height: 300px; } }
+  .page-template-get_involved .challenge-benefit-blocks {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -2513,58 +2518,58 @@ this section is a testimonial
         align-items: center;
     padding-top: 20px; }
     @media (min-width: 600px) {
-      .page-id-34 .challenge-benefit-blocks {
+      .page-template-get_involved .challenge-benefit-blocks {
         -ms-flex-direction: row;
             flex-direction: row;
         padding-bottom: 60px; } }
-  .page-id-34 .challenge-benefit-blocks p {
+  .page-template-get_involved .challenge-benefit-blocks p {
     font-family: 'montserrat';
     font-weight: 300; }
-  .page-id-34 .single-benefit-block {
+  .page-template-get_involved .single-benefit-block {
     -ms-flex: 0 1 33%;
     flex: 0 1 33%;
     max-width: 33%;
     -ms-flex-align: center;
         align-items: center; }
-  .page-id-34 .single-benefit-block {
+  .page-template-get_involved .single-benefit-block {
     -ms-flex: 0 1 33%;
     flex: 0 1 33%;
     max-width: 33%;
     -ms-flex-align: center;
         align-items: center; }
-  .page-id-34 .single-benefit-block i {
+  .page-template-get_involved .single-benefit-block i {
     font-size: 30px;
     color: black; }
-  .page-id-34 .single-benefit-block h3 {
+  .page-template-get_involved .single-benefit-block h3 {
     font-family: 'montserrat'; }
-  .page-id-34 .custom-field-suite {
+  .page-template-get_involved .custom-field-suite {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
         align-items: center;
     -ms-flex-direction: column;
         flex-direction: column; }
-  .page-id-34 .how-to-participate-wrapper {
+  .page-template-get_involved .how-to-participate-wrapper {
     padding-top: 50px;
     background: url("../../assets/images/blue-background-large@3x.png") center;
     background-size: cover; }
-  .page-id-34 .how-to-participate-wrapper h2 {
+  .page-template-get_involved .how-to-participate-wrapper h2 {
     text-transform: uppercase;
     color: white;
     text-align: center;
     font-family: 'montserrat'; }
-  .page-id-34 .how-to-participate-wrapper h3 {
+  .page-template-get_involved .how-to-participate-wrapper h3 {
     color: white;
     font-size: 16px;
     width: 60%;
     font-family: 'montserrat'; }
-  .page-id-34 .how-to-participate-wrapper p {
+  .page-template-get_involved .how-to-participate-wrapper p {
     color: white;
     text-align: center;
     font-size: 20px;
     font-family: 'montserrat';
     font-weight: bold; }
-  .page-id-34 .challenge-participate-blocks {
+  .page-template-get_involved .challenge-participate-blocks {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -2575,7 +2580,7 @@ this section is a testimonial
     -ms-flex-align: center;
         align-items: center;
     padding-top: 20px; }
-  .page-id-34 .single-participate-block {
+  .page-template-get_involved .single-participate-block {
     -ms-flex: 0 1 49%;
     flex: 0 1 49%;
     -ms-flex-item-align: center;
@@ -2588,37 +2593,37 @@ this section is a testimonial
         align-items: center;
     height: 400px; }
     @media (min-width: 600px) {
-      .page-id-34 .single-participate-block {
+      .page-template-get_involved .single-participate-block {
         -ms-flex-direction: column;
             flex-direction: column;
         -ms-flex: 0 1 24%;
         flex: 0 1 24%; } }
-  .page-id-34 .description-wrapper {
+  .page-template-get_involved .description-wrapper {
     display: -ms-flexbox;
     display: flex;
     width: 100%; }
     @media (min-width: 600px) {
-      .page-id-34 .description-wrapper {
+      .page-template-get_involved .description-wrapper {
         width: 80%; } }
-  .page-id-34 .description-wrapper p {
+  .page-template-get_involved .description-wrapper p {
     margin-top: 0rem;
     color: white;
     text-align: center;
     font-size: 18px;
     font-family: 'montserrat';
     font-weight: 300; }
-  .page-id-34 .single-participate-block i {
+  .page-template-get_involved .single-participate-block i {
     color: white;
     font-size: 32px; }
-  .page-id-34 .single-participate-block h3 {
+  .page-template-get_involved .single-participate-block h3 {
     width: 80%;
     font-family: 'montserrat'; }
-  .page-id-34 .subscribeForm {
+  .page-template-get_involved .subscribeForm {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
         justify-content: center; }
-  .page-id-34 .signUpForm {
+  .page-template-get_involved .signUpForm {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
@@ -2627,23 +2632,23 @@ this section is a testimonial
         align-items: center;
     text-align: center;
     padding-top: 6rem; }
-  .page-id-34 .font-under-button p {
+  .page-template-get_involved .font-under-button p {
     font-size: 14px;
     margin-top: 0;
     font-family: 'montserrat';
     font-weight: 300; }
-  .page-id-34 .underline-under-button {
+  .page-template-get_involved .underline-under-button {
     width: 150px;
     padding-bottom: 100px; }
-  .page-id-34 .underline-under-button a {
+  .page-template-get_involved .underline-under-button a {
     font-style: italic;
     text-decoration: underline;
     font-size: 16px;
     margin-top: 0;
     color: white; }
-  .page-id-34 .underline-under-button a:hover {
+  .page-template-get_involved .underline-under-button a:hover {
     color: midnightblue; }
-  .page-id-34 #sign-up-form {
+  .page-template-get_involved #sign-up-form {
     -ms-flex-pack: center;
         justify-content: center;
     display: -ms-flexbox;
@@ -2653,7 +2658,7 @@ this section is a testimonial
     width: 10%;
     -ms-flex-align: center;
         align-items: center; }
-  .page-id-34 #sign-up {
+  .page-template-get_involved #sign-up {
     background-color: transparent;
     color: white;
     cursor: pointer;
@@ -2669,11 +2674,11 @@ this section is a testimonial
     font-family: 'montserrat';
     font-weight: normal;
     border-color: white; }
-  .page-id-34 #sign-up:hover {
+  .page-template-get_involved #sign-up:hover {
     background-color: white;
     color: #303b46;
     border-color: #303b46; }
-  .page-id-34 .resources-section {
+  .page-template-get_involved .resources-section {
     background: url("../../assets/images/curved-gray-background.png") center;
     background-size: cover;
     display: -ms-flexbox;
@@ -2689,7 +2694,7 @@ this section is a testimonial
     padding-bottom: 20px;
     margin-top: -140px; }
     @media (min-width: 600px) {
-      .page-id-34 .resources-section {
+      .page-template-get_involved .resources-section {
         -ms-flex: 0 1 49%;
         flex: 0 1 49%;
         -ms-flex-item-align: center;
@@ -2702,53 +2707,53 @@ this section is a testimonial
             align-items: center;
         padding-bottom: 20px;
         margin-top: -140px; } }
-  .page-id-34 .need-resources {
+  .page-template-get_involved .need-resources {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column; }
     @media (min-width: 600px) {
-      .page-id-34 .need-resources {
+      .page-template-get_involved .need-resources {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-direction: row;
             flex-direction: row; } }
-  .page-id-34 .need-resources h2 {
+  .page-template-get_involved .need-resources h2 {
     text-transform: uppercase;
     font-family: 'montserrat';
     color: #303b46; }
-  .page-id-34 .need-resources img {
+  .page-template-get_involved .need-resources img {
     border-radius: 200px 200px 200px 200px;
     -moz-border-radius: 200px 200px 200px 200px;
     -webkit-border-radius: 200px 200px 200px 200px;
     border: 0px solid #000000;
     height: 278px; }
-  .page-id-34 .need-resources p {
+  .page-template-get_involved .need-resources p {
     padding-left: 10%;
     padding-right: 10%;
     font-family: 'montserrat';
     font-weight: 300;
     color: #303b46; }
-  .page-id-34 .need-resources a {
+  .page-template-get_involved .need-resources a {
     text-decoration: none;
     color: #303b46; }
-  .page-id-34 .need-resources a:hover {
+  .page-template-get_involved .need-resources a:hover {
     text-decoration: none;
     color: white; }
-  .page-id-34 .need-prizes img {
+  .page-template-get_involved .need-prizes img {
     width: 278px; }
-  .page-id-34 .testimonial {
+  .page-template-get_involved .testimonial {
     padding-bottom: 30px; }
-  .page-id-34 .testimonial p {
+  .page-template-get_involved .testimonial p {
     padding-left: 25%;
     padding-right: 25%;
     padding-top: 3%;
     font-family: 'montserrat';
     font-weight: 300;
     font-size: 18px; }
-  .page-id-34 .testimonial-author {
+  .page-template-get_involved .testimonial-author {
     text-align: left; }
-  .page-id-34 .testimonial-author p {
+  .page-template-get_involved .testimonial-author p {
     padding-left: 25%;
     padding-right: 0%;
     padding-top: 0%;
@@ -2756,7 +2761,7 @@ this section is a testimonial
     margin-top: 0;
     font-family: 'montserrat';
     font-weight: 300; }
-  .page-id-34 form {
+  .page-template-get_involved form {
     -ms-flex-align: center;
         align-items: center;
     display: -ms-flexbox;
