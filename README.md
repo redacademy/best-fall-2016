@@ -1,5 +1,3 @@
-# inhabitent
-
 SYNOPSIS
 
 B.E.S.T is a fully funtional wordpress site featuring a stylish, modern design and leading-edge functionality. The B.E.S.T was built for Better Environmentally Sound Transportation, a national non-profit organization promoting environmentally friendly transportation.
@@ -17,20 +15,23 @@ Custom Post Types
 
 LANGUAGES USED
 
-Javascript JQuery HTML5 CSS3/SASS
+*Javascript
+*JQuery
+*HTML5
+*CSS3/SASS
 
 PROGRAMS
 
-WordPress
-MAMP
-Apache
-mySQL
+*WordPress
+*MAMP
+*Apache
+*mySQL
 
 PLUGINS
 
-Contact Form 7
-Instagram Feed WD
-WP Migrate DB Pro
+*Contact Form 7
+*Instagram Feed WD
+*WP Migrate DB Pro
 
 MOTIVATION
 
@@ -39,14 +40,12 @@ is to strengthen out WordPress and PHP skills
 
 TESTS
 
-Tests used include theme-check and debug-bar.
+Tests used include theme-check, debug-bar, and cross-browser testing.
 
 Contributors
 
-Anna Kviese
-Brandon Izzard
-Brett MacDonald
+*Anna Kviese
+*Brandon Izzard
+*Brett MacDonald
 
-License
 
-This project utilizes MAMP (Apache and mySQL)
