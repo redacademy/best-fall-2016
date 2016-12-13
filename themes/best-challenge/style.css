@@ -1063,33 +1063,29 @@ form {
   justify-content: center; }
 
 /*=======================
-this is the css unique to page-id-52
-========================*/
-.page-id-52 {
-  /*=======================
 this is the first banner section under the header
-========================*/ }
-  .page-id-52 .front-sponsors {
-    display: -ms-flexbox;
-    display: flex;
-    height: 70vh;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-align: center;
-        align-items: center;
-    background: url("../../assets/images/sponsors-grey-bg.png") top no-repeat;
-    background-size: cover; }
-  .page-id-52 .modologo img {
+========================*/
+.front-sponsors {
+  display: -ms-flexbox;
+  display: flex;
+  height: 70vh;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  background: url("../../assets/images/sponsors-grey-bg.png") top no-repeat;
+  background-size: cover; }
+  .front-sponsors .modologo img {
     height: 100%;
     padding-bottom: 5rem; }
-  .page-id-52 .fp-sponsors-title h2 {
+  .front-sponsors .fp-sponsors-title h2 {
     visibility: visible;
     padding-top: 5rem;
     margin-bottom: 6rem;
     padding-left: 2rem; }
-  .page-id-52 .fp-sponsors-img {
+  .front-sponsors .fp-sponsors-img {
     width: 100%;
     opacity: .5;
     display: -ms-flexbox;
@@ -1099,6 +1095,27 @@ this is the first banner section under the header
     -ms-flex-align: center;
         align-items: center;
     margin-bottom: 2rem; }
+
+/*=======================
+this is the css unique to front-page 
+========================*/
+.home .front-sponsors {
+  height: 312px;
+  background: url("../../assets/images/sponsors-grey-bg.png") top no-repeat;
+  background-size: cover;
+  height: 312px;
+  margin-bottom: 0; }
+
+.home .fp-sponsors-img {
+  position: relative;
+  bottom: 67px; }
+
+.home .modologo img {
+  height: 100%;
+  padding-bottom: 0rem; }
+
+.home .fp-sponsors-title h2 {
+  visibility: hidden; }
 
 /*=======================
 this is for the rest of the site
@@ -1426,7 +1443,7 @@ this is for the rest of the site
   .impact-box h3 {
     font-size: 30px; }
 
-.results-info {
+.bc-results-info, .canada-results-info {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
