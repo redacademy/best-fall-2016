@@ -51,6 +51,7 @@
                             margin-top: 0;
                         }
                     }
+                }
                     .logo-header {
                         padding-top: 1vh;
                         img {
@@ -63,7 +64,7 @@
                         }
                     }
                 }
-            }
+            
             
             // Main Menu //
             .header-nav {
@@ -93,9 +94,12 @@
             .menu-item {
                 bottom: 0;
                 a {
-                    font-size: 1.5rem;
+                    font-size: 2rem;
                     color: #fff;
                     padding-left: 5vw;
+                    @include desktop {
+                        font-size: 1.5rem;
+                    }
                 }
                 ul li:hover ul {
                     display: block;

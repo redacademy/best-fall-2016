@@ -62,7 +62,7 @@
         //     border-left: 5px solid #fff;
         // }
         p {
-            font-weight: bold;
+            font-weight: 300;
             font-size: 1rem;
             max-width: 24vw;
             @media (min-width: 600px) {
@@ -262,7 +262,7 @@
     height: 35vh;
     text-align: center;
     @include desktop {
-        height: 40vh;
+        height: 45vh;
     }
 }
 
@@ -289,9 +289,10 @@
     align-items: flex-end;
     margin: 0 auto;
     line-height: 2;
+    max-width: 80%;
     color: #5a6f83;
     @include desktop {
-        max-width: 80%;
+        max-width: 100%;
     }
     div {
         display: flex;
@@ -307,9 +308,9 @@
             font-weight: 500;
             height: 2rem;
             @include desktop {
-                font-size: .9rem;
+                font-size: 1.4rem;
                 font-weight: 500;
-                height: 2.4rem;
+                height: 3.8rem;
             }
         }
     }
@@ -320,13 +321,17 @@
             span:first-child {
                 font-size: .85rem;
                 font-weight: 500;
+                @include desktop {
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                }
             }
             span {
                 font-size: 1rem;
                 font-weight: bold;
                 text-align: left;
                 @include desktop {
-                    font-size: 1.25rem;
+                    font-size: 2rem;
                 }
             }
         }

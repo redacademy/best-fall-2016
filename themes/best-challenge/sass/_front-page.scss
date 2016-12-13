@@ -244,17 +244,26 @@
 
 .best-journal-container {
     display: flex;
+    flex-direction:column;
+    padding: 1rem;
+    @include desktop {
+    display: flex;
     justify-content: space-between;
     padding: 1rem;
-    @include desktop {}
+
+    }
 }
 
 .best-journal-content {
     align-items: center;
+    display: flex;
+    flex-direction:column;
     @include desktop {
         display: flex;
         justify-content: space-between;
         padding-top: 3.5rem;
+        flex-direction:row;
+        
     }
 }
 
@@ -265,10 +274,9 @@
         height: auto;
         margin-top: 2rem;
         @include desktop {
-            width: 413px;
-            
-    outline: 2px solid white;
-    outline-offset: -20px;
+            width: 30rem;
+            outline: 2px solid white;
+            outline-offset: -20px;
             
         }
     }
@@ -277,13 +285,19 @@
 .best-post-info {
     flex-direction: column;
     flex-basis: 48%;
+    color:black;
+    text-align:center;
+    @include desktop {
     h3,
     p {
         margin: 0;
         padding: 0.5rem;
         color:white;
         font-family: 'montserrat';
-        margin-left: -40px;
+        margin-left: -2rem;
+         
+    }
+
     }
 }
 
@@ -298,7 +312,7 @@
     }
 }
 .best-post-info p{
-
+padding-bottom:0rem;
     @include desktop {
         padding-bottom:3rem;
         
@@ -309,9 +323,15 @@
 
 .green-read {
     background: url(../../assets/images/green-read-story.png) no-repeat;
+    background-size: 100%;
+   
+   
+     @include desktop {
+    
     background-size: 70%;
-    margin-left: 480px;
-    margin-top:-51px;
+    margin-left: 30rem;
+    margin-top:-3.2rem;
+     }
 }
 
 .read-green {
@@ -327,8 +347,8 @@
 display:flex;
     color:white;
     font-size:20px;
-    padding-left:70px;
-    padding-top:3px;
+    padding-left:8rem;
+    padding-top:0.5rem;
 
 }
 
