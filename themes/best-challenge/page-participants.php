@@ -25,6 +25,7 @@ get_header(); ?>
 			</div>	
 			<div class= "participants">
 				<div class="bc-map">
+					<img id="default-map" src="<?php echo get_template_directory_uri() ?>/assets/images/maps/bc-default.png">
 					<img id="bc-map" src="<?php echo get_template_directory_uri() ?>/assets/images/maps/bc.png">
 					<img id="van-map" src="<?php echo get_template_directory_uri() ?>/assets/images/maps/metrovan.png">
 				</div>
