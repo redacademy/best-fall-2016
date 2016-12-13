@@ -97,13 +97,13 @@
 
   //change to Canada results on click
   $('.canada-results-info').hide();
-  $('.canadabutton').on('mouseover', function(event){
+  $('.canadabutton').on('click', function(event){
     event.preventDefault();
     $('.bc-results-info').hide();
     $('.canada-results-info').show();
   });
 
-  $('.bcbutton').on('mouseover', function(event){
+  $('.bcbutton').on('click', function(event){
     event.preventDefault();
     $('.canada-results-info').hide();
     $('.bc-results-info').show();

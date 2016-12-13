@@ -1200,20 +1200,6 @@ this is for the rest of the site
       visibility: visible;
       width: 100%; } }
 
-/*=======================
-this is the css unique to front-page 
-========================*/
-.home .front-sponsors {
-  height: 312px;
-  background: url("../../assets/images/sponsors-grey-bg.png") top no-repeat;
-  background-size: cover;
-  height: 312px;
-  margin-bottom: 0; }
-
-.home .fp-sponsors-img {
-  position: relative;
-  bottom: 67px; }
-
 .hero-banner {
   background: url(../../assets/images/hero-banner-mobile.png) center no-repeat;
   background-size: cover;
