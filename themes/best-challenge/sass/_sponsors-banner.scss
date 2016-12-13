@@ -1,12 +1,4 @@
 
-
-/*=======================
-this is the css unique to page-id-52
-========================*/
-
-.page-id-52{
-
-
 /*=======================
 this is the first banner section under the header
 ========================*/
@@ -19,8 +11,6 @@ this is the first banner section under the header
     align-items: center;
     background: url('../../assets/images/sponsors-grey-bg.png')top no-repeat;
     background-size: cover;
-    
-}
 
 .modologo {
     padding-bottom: 1rem;
@@ -117,5 +107,21 @@ height:35vh;
 
 
 
+/*=======================
+this is the css unique to front-page 
+========================*/
+.home {
+    .front-sponsors {
+        height: 312px;
+        background: url('../../assets/images/sponsors-grey-bg.png')top no-repeat;
+        background-size: cover;
+        height: 312px;
+        margin-bottom: 0;
+        }
+    .fp-sponsors-img{        
+        position: relative;
+        bottom: 67px;
+    }
+}
 
 

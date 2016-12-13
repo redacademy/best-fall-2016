@@ -993,29 +993,25 @@ form {
       justify-content: center; }
 
 /*=======================
-this is the css unique to page-id-52
-========================*/
-.page-id-52 {
-  /*=======================
 this is the first banner section under the header
-========================*/ }
-  .page-id-52 .front-sponsors {
-    display: -ms-flexbox;
-    display: flex;
-    height: 80vh;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-align: center;
-        align-items: center;
-    background: url("../../assets/images/sponsors-grey-bg.png") top no-repeat;
-    background-size: cover; }
-  .page-id-52 .modologo {
+========================*/
+.front-sponsors {
+  display: -ms-flexbox;
+  display: flex;
+  height: 80vh;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  background: url("../../assets/images/sponsors-grey-bg.png") top no-repeat;
+  background-size: cover; }
+  .front-sponsors .modologo {
     padding-bottom: 1rem; }
-  .page-id-52 .fp-sponsors-title h2 {
+  .front-sponsors .fp-sponsors-title h2 {
     visibility: hidden; }
-  .page-id-52 .fp-sponsors-img {
+  .front-sponsors .fp-sponsors-img {
     width: 100%;
     opacity: .5;
     display: -ms-flexbox;
@@ -1101,6 +1097,20 @@ this is for the rest of the site
     .noMobile img {
       visibility: visible;
       width: 100%; } }
+
+/*=======================
+this is the css unique to front-page 
+========================*/
+.home .front-sponsors {
+  height: 312px;
+  background: url("../../assets/images/sponsors-grey-bg.png") top no-repeat;
+  background-size: cover;
+  height: 312px;
+  margin-bottom: 0; }
+
+.home .fp-sponsors-img {
+  position: relative;
+  bottom: 67px; }
 
 .hero-banner {
   background: url(../../assets/images/hero-banner-mobile.png) center no-repeat;
