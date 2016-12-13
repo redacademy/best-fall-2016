@@ -1610,12 +1610,15 @@ this is for the rest of the site
   padding-top: 15%; }
   @media (min-width: 600px) {
     .best-post-info {
+      -ms-flex-direction: column;
+          flex-direction: column;
       height: 316px;
       padding-top: 0; } }
   .best-post-info p {
+    padding-top: 5px;
     color: #303b46;
     font-weight: 300;
-    text-align: left;
+    text-align: center;
     font-size: 25px; }
     @media (min-width: 600px) {
       .best-post-info p {
@@ -1623,13 +1626,27 @@ this is for the rest of the site
         font-size: 18px;
         margin-top: 0; } }
   .best-post-info .read-more {
+<<<<<<< HEAD
+    padding-top: 0;
+    padding-bottom: 0;
+    visibility: hidden; }
+=======
     visibility: hidden; }
   .best-post-info .green-read {
     display: initial; }
+>>>>>>> 504dd34e7387c6461a2414c8f6627ba8d0afc005
   .best-post-info h3 {
     font-size: 32px;
     text-transform: uppercase;
     color: white; }
+    @media (min-width: 600px) {
+      .best-post-info h3 {
+        font-size: 20px; } }
+    @media (min-width: 1140px) {
+      .best-post-info h3 {
+        text-align: left;
+        padding: 0;
+        font-size: 32px; } }
 
 .best-post-title {
   font-size: 1.5rem;
@@ -1639,7 +1656,13 @@ this is for the rest of the site
   @media (min-width: 600px) {
     .best-post-title {
       text-align: left;
-      padding: 0; } }
+      padding: 0;
+      font-size: 1rem; } }
+  @media (min-width: 1140px) {
+    .best-post-title {
+      text-align: left;
+      padding: 0;
+      font-size: 1.5rem; } }
 
 .green-read {
   background: url(../../assets/images/green-read-story.png) no-repeat;
@@ -1647,17 +1670,40 @@ this is for the rest of the site
   height: 47px; }
   @media (min-width: 600px) {
     .green-read {
+      background-size: 80%;
+      background-size: 318px 41px; } }
+  @media (min-width: 950px) {
+    .green-read {
+      background-size: 418px 41px; } }
+  @media (min-width: 1140px) {
+    .green-read {
       background-size: 418px 41px;
-      margin-left: 30rem;
-      margin-top: 10px; } }
+      margin-left: -83px;
+      margin-top: -74px; } }
   .green-read a {
     display: -ms-flexbox;
     display: flex;
     color: #303b46;
-    font-size: 25px;
+    font-size: 18px;
     padding: 0.1rem 0 0 5rem;
     cursor: pointer; }
     @media (min-width: 600px) {
+      .green-read a {
+        display: -ms-flexbox;
+        display: flex;
+        color: white;
+        font-size: 18px;
+        padding: .3rem 0 0 1rem;
+        cursor: pointer; } }
+    @media (min-width: 950px) {
+      .green-read a {
+        display: -ms-flexbox;
+        display: flex;
+        color: white;
+        font-size: 18px;
+        padding: .5rem 0 0 1rem;
+        cursor: pointer; } }
+    @media (min-width: 1140px) {
       .green-read a {
         color: white;
         font-size: 18px;
