@@ -13,12 +13,12 @@ get_header(); ?>
 
 	
 
-		    <div class="blog-posts">
+		      <div class="blog-posts">
         <div class = "best-journal container">
             <?php
             $args = array(
                 'post_type' => 'post',
-                'posts_per_page' => 5,
+                'posts_per_page' => 1,
                 'order' => 'DESC');
             $journal_posts = get_posts( $args ); // returns an array of posts
              foreach ($journal_posts as $post) : setup_postdata( $post ); ?>
@@ -33,14 +33,17 @@ get_header(); ?>
                     <div class="excerpt"><p><?php the_excerpt(); ?></p></div>      
                 
              <div class="green-read">
-                <a class ="read-green" href="<?php the_permalink();?>">Read Full Story</a>
+                <a class ="read-green" href="<?php the_permalink();?>">Read Kelsey's Full Story</a>
             </div>
         </div>
     </div><!-- best-journal-content -->
-		</main><!-- #main -->
-</div><!-- #primary -->
+        
 
-	
+            <?php endforeach; wp_reset_postdata(); ?>
+        </div> <!--best journal container -->
+    </div> <!-- blog pos section ends -->
+
+
 </div>
 
 <?php get_footer(); ?>

@@ -88,7 +88,7 @@ get_header(); ?>
 
                 </div>
                 <div class="ir-calories-burned-bc right">
-                    <p>In British Columbia, we burned a collective of <span><?php echo CFS()->get( 'bc_burned_calories' ); ?></span> calories. Way to go!</p>
+                    <p>In BC, we burned a collective of <span><?php echo CFS()->get( 'bc_burned_calories' ); ?></span> calories. Way to go!</p>
                 </div>
             </div>
 

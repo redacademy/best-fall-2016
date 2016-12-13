@@ -33,7 +33,7 @@
 		<div class="best-header container">
 			<div class="logo-date">				
 				<div class="logo-header">
-					<a href="<?php echo get_template_directory_uri() ?>">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 						<img src=" <?php echo get_template_directory_uri() ?>/assets/images/logotitlebc-mobile.png" alt="mobile-logo" class= "mobile mobile-logo">
 						<img src=" <?php echo get_template_directory_uri() ?>/assets/images/bccommuterchallenge.png" alt="desktop-logo" class= "desktop">
 					</a>

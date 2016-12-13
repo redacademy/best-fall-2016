@@ -3209,13 +3209,14 @@ NEWLETTER SIGN-UP AREA
 .page-template-page-results .impact-results-area {
   position: relative; }
   .page-template-page-results .impact-results-area p {
-    font-weight: 300;
+    font-weight: 700;
     font-size: 1rem;
     max-width: 24vw; }
     @media (min-width: 600px) {
       .page-template-page-results .impact-results-area p {
         font-size: 1.2rem;
-        line-height: 1.2; } }
+        line-height: 1.2;
+        font-weight: 300; } }
     @media (min-width: 1200px) {
       .page-template-page-results .impact-results-area p {
         line-height: 1.5;
@@ -3233,7 +3234,7 @@ NEWLETTER SIGN-UP AREA
   margin-right: 24vw; }
   @media (min-width: 480px) {
     .page-template-page-results .left {
-      margin-right: 12vw; } }
+      margin-right: 20vw; } }
   @media (min-width: 800px) {
     .page-template-page-results .left {
       margin-right: 10vw; } }
@@ -3430,7 +3431,7 @@ NEWLETTER SIGN-UP AREA
   text-align: center; }
   @media (min-width: 600px) {
     .ir-numbers {
-      height: 45vh; } }
+      height: 50vh; } }
 
 .ir-numbers-title {
   margin-top: -8vh; }
@@ -3442,8 +3443,10 @@ NEWLETTER SIGN-UP AREA
     margin-bottom: 0; }
     @media (min-width: 600px) {
       .ir-numbers-title h3 {
-        font-size: 2rem; } }
+        font-size: 2.5rem; } }
   .ir-numbers-title p {
+    font-size: 1.2rem;
+    font-weight: 500;
     margin-top: 0; }
 
 .ir-numbers-info {
