@@ -23,7 +23,7 @@
             }
             
             .logo-date {
-                height: inherit;
+                
                 display: flex;
                 width: 100%;
                 align-items: center;
@@ -58,10 +58,10 @@
                     
                     img {
                         height: 40px;
-                        width: 100%;
+                       
                         @include desktop {
                             height: 40px;
-                            width: 276px;
+                           
                         }
                     }
                 }
