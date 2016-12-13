@@ -112,7 +112,7 @@ get_header(); ?>
                         </div>
                     </div>         
                     <div class="dark-button">
-						<a href="<?php echo esc_url( site_url( '/participant_location/results/' ) ); ?>">
+						<a href="<?php echo esc_url( site_url( '/impact-results/' ) ); ?>">
 							<input type="button"  value="See More Results">
 						</a>
 					</div>

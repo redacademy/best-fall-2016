@@ -1106,7 +1106,7 @@ this is the first banner section under the header
     padding-left: 2rem; }
   .front-sponsors .fp-sponsors-img {
     width: 100%;
-    opacity: .5;
+    opacity: 0.75;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
@@ -1119,11 +1119,13 @@ this is the first banner section under the header
 this is the css unique to front-page 
 ========================*/
 .home .front-sponsors {
-  height: 312px;
   background: url("../../assets/images/sponsors-grey-bg.png") top no-repeat;
   background-size: cover;
-  height: 312px;
+  height: 356px;
   margin-bottom: 0; }
+  @media (min-width: 600px) {
+    .home .front-sponsors {
+      height: 312px; } }
 
 .home .fp-sponsors-img {
   position: relative;
@@ -1134,7 +1136,11 @@ this is the css unique to front-page
   padding-bottom: 0rem; }
 
 .home .fp-sponsors-title h2 {
-  visibility: hidden; }
+  visibility: visible;
+  padding: 6rem 0 2rem 0; }
+  @media (min-width: 600px) {
+    .home .fp-sponsors-title h2 {
+      visibility: hidden; } }
 
 /*=======================
 this is for the rest of the site

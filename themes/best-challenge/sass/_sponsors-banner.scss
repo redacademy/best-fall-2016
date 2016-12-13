@@ -32,7 +32,7 @@ this is the first banner section under the header
 
 .fp-sponsors-img {
     width: 100%;
-    opacity: .5;
+    opacity: 0.75;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -45,11 +45,13 @@ this is the css unique to front-page
 ========================*/
 .home {
     .front-sponsors {
-        height: 312px;
         background: url('../../assets/images/sponsors-grey-bg.png')top no-repeat;
         background-size: cover;
-        height: 312px;
+        height: 356px;
         margin-bottom: 0;
+        @include desktop {
+            height: 312px;
+        }
         }
     .fp-sponsors-img{        
         position: relative;
@@ -60,7 +62,11 @@ this is the css unique to front-page
         padding-bottom: 0rem;
         }
     .fp-sponsors-title h2{
-        visibility:hidden;
+        visibility: visible;
+        padding: 6rem 0 2rem 0;
+        @include desktop{
+            visibility: hidden;
+        }
     }
 }
 
