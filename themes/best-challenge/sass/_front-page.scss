@@ -275,7 +275,6 @@
             @include background-image;
             min-height: 499px;
         }
-
 }
 
 
@@ -345,20 +344,18 @@
     }
     
     p {
-        padding-top:5px;
+        
         color: $black-text;
         font-weight: 300;
-        text-align: center;
+        text-align: left;
         font-size: 25px; 
-        @include desktop {
-            color: white;
-            font-size: 18px;
-            margin-top: 0; 
+            @include desktop {
+                color: white;
+                font-size: 18px;
+                margin-top: 0; 
         }     
     }
     .read-more {
-        padding-top:0;
-        padding-bottom:0;
         visibility:hidden;
         
     }
@@ -367,16 +364,8 @@
         font-size: 32px;
         text-transform: uppercase;
         color: white;
-         @media (min-width: 600px) {
-         font-size:20px;
-            }
-            @media (min-width: 1140px) {
-               text-align: left;
-                padding: 0;
-                font-size: 32px;
-   
-        }
-    }
+      
+           }
 }
 
 
@@ -385,67 +374,40 @@
     text-transform: uppercase;
     padding: 0 1rem;
     text-align: center;
-        @media (min-width: 600px) {
-          text-align: left;
-                padding: 0;
-                font-size: 1rem;
-            }
-            @media (min-width: 1140px) {
+        @include desktop {
                text-align: left;
                 padding: 0;
                 font-size: 1.5rem;
         }
-  
-}
+  }
 
 
 .green-read {
     background: url(../../assets/images/green-read-story.png) no-repeat;
     background-size: 100%;
-    height: 47px;
-    
-       @media (min-width: 600px) {
-          background-size: 80%;
-            background-size: 318px 41px; 
-            }
-            @media (min-width: 950px) {
-            background-size: 418px 41px;
-            
-            }
-            @media (min-width: 1140px) {
-                background-size: 418px 41px;
-                margin-left: -83px;
-                margin-top: -74px;
-   
-        }
+    height: 57px;
+    margin-top: -75px;
+     
     a{
         display:flex;
         color:$dark-text;
         font-size: 18px;
-        padding: 0.1rem 0 0 5rem;
+        padding: .5rem 0 0 3rem;
         cursor: pointer;
-   @media (min-width: 600px) {
-        display:flex;
-        color: white;
-        font-size: 18px;
-        padding: .3rem 0 0 1rem;
-        cursor: pointer;
-            }
-            @media (min-width: 950px) {
-          
-        display:flex;
-        color: white;
-        font-size: 18px;
-        padding:.5rem 0 0 1rem;
-        cursor: pointer;
-            }
-
-        @media (min-width: 1140px) { 
+ @include desktop {
             color: white;
             font-size: 18px;
             font-weight: normal;
-        }
+            height: 57px;
+a{
+        display:flex;
+        color:$dark-text;
+        font-size: 18px;
+        padding: .5rem 0 0 3rem;
+        cursor: pointer;
 
+            }
+        }
     }
 }
 
