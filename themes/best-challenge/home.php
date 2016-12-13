@@ -13,33 +13,34 @@ get_header(); ?>
 
 	
 
-		<?php if ( have_posts() ) : ?>
-
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
-
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content' ); ?>
-
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
+		    <div class="blog-posts">
+        <div class = "best-journal container">
+            <?php
+            $args = array(
+                'post_type' => 'post',
+                'posts_per_page' => 5,
+                'order' => 'DESC');
+            $journal_posts = get_posts( $args ); // returns an array of posts
+             foreach ($journal_posts as $post) : setup_postdata( $post ); ?>
+            
+            <div class ="best-journal-content">
+                <div class = "best-post-thumb">
+                    <h3 class ="best-post-title mobile"><?php the_title();?></h3>
+                    <?php the_post_thumbnail(); ?>
+                </div>
+                <div class = "best-post-info">
+                    <div class ="best-post-title desktop"><h3><?php the_title();?></h3></div>
+                    <div class="excerpt"><p><?php the_excerpt(); ?></p></div>      
+                
+             <div class="green-read">
+                <a class ="read-green" href="<?php the_permalink();?>">Read Full Story</a>
+            </div>
+        </div>
+    </div><!-- best-journal-content -->
 		</main><!-- #main -->
 </div><!-- #primary -->
 
-		
-<?php get_sidebar(); ?>
 	
 </div>
+
 <?php get_footer(); ?>

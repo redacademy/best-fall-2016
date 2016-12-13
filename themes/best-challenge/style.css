@@ -1626,15 +1626,9 @@ this is for the rest of the site
         font-size: 18px;
         margin-top: 0; } }
   .best-post-info .read-more {
-<<<<<<< HEAD
     padding-top: 0;
     padding-bottom: 0;
     visibility: hidden; }
-=======
-    visibility: hidden; }
-  .best-post-info .green-read {
-    display: initial; }
->>>>>>> 504dd34e7387c6461a2414c8f6627ba8d0afc005
   .best-post-info h3 {
     font-size: 32px;
     text-transform: uppercase;
