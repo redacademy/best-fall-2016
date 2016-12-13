@@ -37,7 +37,7 @@ is to strengthen out WordPress and PHP skills
 
 TESTS
 
-Tests used include theme-check and debug-bar.
+Tests used include theme-check, debug-bar, and cross-browser testing.
 
 Contributors
 
@@ -45,6 +45,4 @@ Anna Kviese
 Brandon Izzard
 Brett MacDonald
 
-License
 
-This project utilizes MAMP (Apache and mySQL)
