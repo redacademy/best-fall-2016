@@ -4,7 +4,8 @@ users choice
 ========================*/
 
 .green-banner {
-    background: #a6ce39;
+    background: $best-green;
+    padding: 0;
     height: 225px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -15,8 +16,9 @@ users choice
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    @include desktop {
     padding-bottom: 20px;
-    
+    }
 }
 
 .green-banner-data {
@@ -132,7 +134,7 @@ users choice
     line-height: 1.7;
     border-width: 3px;
     text-shadow: none;
-    width:200px;
+    width:180px;
     text-decoration:none;
        padding-bottom: 5px;
     
@@ -154,17 +156,16 @@ users choice
     background-color: transparent;
     color: #303b46;
     cursor: pointer;
-    padding:  .5rem 3.3rem;
-    border: 1;
+    text-align: center;
+    padding:  .5rem;
     border-radius: 25px;
     font-family: 'montserrat', sans-serif;
     font-size: 1rem;
     box-shadow: none;
     line-height: 1.7;
     border-width: 3px;
-    
     text-shadow: none;
-    width:200px;
+    width:180px;
     text-decoration:none;
        padding-bottom: 5px;
     padding-right: 5%;

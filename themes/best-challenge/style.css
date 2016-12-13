@@ -943,14 +943,17 @@ users choice
 ========================*/
 .green-banner {
   background: #a6ce39;
+  padding: 0;
   height: 225px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  padding-bottom: 20px; }
+  justify-content: center; }
+  @media (min-width: 600px) {
+    .green-banner {
+      padding-bottom: 20px; } }
 
 .green-banner-data {
   text-align: center; }
@@ -1038,7 +1041,7 @@ users choice
   line-height: 1.7;
   border-width: 3px;
   text-shadow: none;
-  width: 200px;
+  width: 180px;
   text-decoration: none;
   padding-bottom: 5px; }
   @media (min-width: 600px) {
@@ -1056,8 +1059,8 @@ users choice
   background-color: transparent;
   color: #303b46;
   cursor: pointer;
-  padding: .5rem 3.3rem;
-  border: 1;
+  text-align: center;
+  padding: .5rem;
   border-radius: 25px;
   font-family: 'montserrat', sans-serif;
   font-size: 1rem;
@@ -1065,7 +1068,7 @@ users choice
   line-height: 1.7;
   border-width: 3px;
   text-shadow: none;
-  width: 200px;
+  width: 180px;
   text-decoration: none;
   padding-bottom: 5px;
   padding-right: 5%; }
@@ -1107,9 +1110,12 @@ this is the first banner section under the header
     padding-bottom: 5rem; }
   .front-sponsors .fp-sponsors-title h2 {
     visibility: visible;
-    padding-top: 5rem;
+    padding-top: 0;
     margin-bottom: 6rem;
     padding-left: 2rem; }
+    @media (min-width: 600px) {
+      .front-sponsors .fp-sponsors-title h2 {
+        padding-top: 5rem; } }
   .front-sponsors .fp-sponsors-img {
     width: 100%;
     opacity: 0.75;
@@ -1154,7 +1160,7 @@ this is for the rest of the site
 .front-sponsors {
   display: -ms-flexbox;
   display: flex;
-  height: 40vh;
+  margin-bottom: 0;
   -ms-flex-direction: row;
       flex-direction: row;
   -ms-flex-pack: distribute;
@@ -1171,8 +1177,10 @@ this is for the rest of the site
       justify-content: space-between;
   align-items: center;
   background: transparent;
-  background-size: cover;
-  margin-bottom: 6rem; }
+  background-size: cover; }
+  @media (min-width: 600px) {
+    .front-sponsors {
+      margin-bottom: 6rem; } }
 
 .banner-heading {
   text-align: center; }
@@ -1191,7 +1199,9 @@ this is for the rest of the site
       height: 35vh; } }
 
 .fp-sponsors-title h2 {
-  visibility: hidden; }
+  visibility: hidden;
+  padding-top: 1rem;
+  margin-bottom: 1rem; }
   @media (min-width: 600px) {
     .fp-sponsors-title h2 {
       display: -ms-flexbox;
