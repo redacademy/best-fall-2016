@@ -183,8 +183,11 @@ para-content {
 
 .logo-image {
     font-size: 2rem;
-    text-align: left;
+    text-align: center;
     width:100%;
+    @include desktop {
+        text-align: left;
+    }
 }
 
 .commuterChallenge-contact-logos {
@@ -271,7 +274,7 @@ FORM at bottom of footer
     justify-content: space-between;
     padding-bottom: 0.8rem;
     flex-direction: column;
-    padding-bottom:20px;
+    
 }
 
 #sign-up-form {

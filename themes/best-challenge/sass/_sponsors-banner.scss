@@ -5,20 +5,28 @@ this is the first banner section under the header
 
 .front-sponsors {
     display: flex;
-    height:80vh;
+    height:70vh;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background: url('../../assets/images/sponsors-grey-bg.png')top no-repeat;
     background-size: cover;
 
-.modologo {
-    padding-bottom: 1rem;
+
+
+.modologo img{
+   height:100%; 
+   padding-bottom:5rem;
 }
+
+
 
 .fp-sponsors-title {
     h2 {
-        visibility:hidden;
+        visibility:visible;
+       padding-top:5rem;
+        margin-bottom:6rem;
+        padding-left:2rem;
     }
 }
 
@@ -28,8 +36,12 @@ this is the first banner section under the header
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom:2rem;
     }
 }
+
+
+
 
 /*=======================
 this is for the rest of the site
@@ -55,6 +67,11 @@ this is for the rest of the site
 
 }
 
+.banner-heading{
+text-align:center;
+}
+
+
 .modologo {
     margin-bottom: 6rem;
     margin-top: 6rem;
@@ -64,9 +81,9 @@ this is for the rest of the site
 }
 
 .modologo img{
-padding-top:1rem;
+    padding-top:1rem;
     @include desktop{
-height:35vh;
+        height:35vh;
 
 }
 }
@@ -74,6 +91,8 @@ height:35vh;
 .fp-sponsors-title h2{
         visibility:hidden;
          @include desktop{
+             display:flex;
+             justify-content:center;
             visibility:visible;
             padding-bottom:2rem;
     }
