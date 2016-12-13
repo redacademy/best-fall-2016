@@ -139,11 +139,13 @@ get_header(); ?>
                 <div class = "best-post-info">
                     <div class ="best-post-title desktop"><h3><?php the_title();?></h3></div>
                     <div class="excerpt"><p><?php the_excerpt(); ?></p></div>      
-                </div>
-            </div><!-- best-journal-content -->
-            <div class="green-read">
+                
+             <div class="green-read">
                 <a class ="read-green" href="<?php the_permalink();?>">Read Kelsey's Full Story</a>
             </div>
+        </div>
+    </div><!-- best-journal-content -->
+        
 
             <?php endforeach; wp_reset_postdata(); ?>
         </div> <!--best journal container -->
