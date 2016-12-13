@@ -56,7 +56,7 @@ get_header(); ?>
 										<div class="taxonomy-title">
 											<h3><?php the_title(); ?></h3>
 										</div>
-										<div class="taxonomy-description">
+										<div class="taxonomy-description" id="prize-description">
 											<p><?php the_content(); ?></p>
 										</div>
 									</div>

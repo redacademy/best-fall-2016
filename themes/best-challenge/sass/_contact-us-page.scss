@@ -4,7 +4,7 @@
 this is the css unique to page-id-91
 ========================*/
 
-.page-id-91{
+.page-template-contact_us{
 
 
 /*=======================
@@ -40,8 +40,10 @@ this is the CONTACT PERSON INFO
 }
 
 .contact-person-image{
-    padding-top:30px;
-    padding-right:35px;
+    @include desktop {
+        padding-top:30px;
+        padding-right:35px;
+    }
 }
 
 .contact-person-data{

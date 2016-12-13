@@ -12,29 +12,17 @@
 
   $('#prize-posts').on('click', function (event) {
     event.preventDefault();
-    $(this).find('.taxonomy-description').css('display', 'initial');
+    $(this).find('#prize-description').css('display', 'initial');
   });
-  $('.taxonomy-description').mouseleave(function () {
+  $('#prize-description').mouseleave(function () {
     $(this).css('display', 'none');
   });
 
 
   // Prize categories drop down list 
 
-  $('.prize-categories').on('click', '.category-name', function () {
-    $(this).siblings().children().slideToggle('fast');
-    $(this).siblings().children().next().toggle('fast');
-  });
-
-
-  //function to show prize description on click 
-
-  $('.single-prize').on('click', function (event) {
-    event.preventDefault();
-    $(this).find('.prize-description').css('display', 'initial');
-  });
-  $('.prize-description').mouseleave(function () {
-    $(this).css('display', 'none');
+  $('.prize-categories .category-name').on('click', function () {
+    $(this).next().children().toggle('fast');
   });
 
 
