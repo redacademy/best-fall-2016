@@ -54,8 +54,8 @@
 
 
 
-
 			<div class="footer-social">
+				
 				<div class="font-awesome">
 					<span>
 						<a href="http://facebook.com"><i class="fa fa-facebook-square"></i></a>
@@ -66,9 +66,12 @@
 					<span>
 						<a href="http://twitter.com"><i class="fa fa-twitter-square"></i></a>
 					</span>
-					</div>
-					<p>Copyright © 2016 B.E.S.T.</p>
+				</div>
 				
+					<div class="copyright">
+					<p>Copyright © 2016 B.E.S.T.</p>
+					</div>
+			
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
