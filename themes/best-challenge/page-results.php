@@ -31,7 +31,7 @@ get_header(); ?>
 
                 </div>
                 <div class="ir-co2-bc right">
-                    <p> <span><?php echo CFS()->get( 'co2_saved_bc' ); ?></span> of CO2 was avoided by BC commuters in 2016! </p>
+                    <p>Last years Commuter Challege<span><?php echo CFS()->get( 'co2_saved_bc' ); ?></span> of CO2 was avoided by BC commuters. </p>
                 </div>
             </div>
             
@@ -61,7 +61,7 @@ get_header(); ?>
 
             <div class="ir-calories"> 
                 <div class="ir-calories-exercise left">
-                    <p>The average commuter in Canada emits <span><?php echo CFS()->get( 'percent_exercise' ); ?></span> of Canadians don't get enough exercise.</p>
+                    <p><span><?php echo CFS()->get( 'percent_exercise' ); ?></span> of Canadians don't get enough exercise.</p>
                 </div>
                 <div class="ir-calories-image">
 

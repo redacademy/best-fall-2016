@@ -457,38 +457,76 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
   width: 100%; }
   .main-navigation ul {
     display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
-    .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5em;
-      left: -999em;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999em;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
-  .main-navigation a {
+  .main-navigation ul {
     display: block;
-    text-decoration: none;
-    text-align: center; }
+    padding-top: 7px;
+    font-size: 1rem;
+    color: #fff; }
+    .main-navigation ul ul {
+      top: 0;
+      display: block; }
+    .main-navigation ul a {
+      text-decoration: none; }
+  .main-navigation .menu-item-has-children,
+  .main-navigation .menu-item-51,
+  .main-navigation .menu-item-121 {
+    border-bottom: 1px solid black; }
+  .main-navigation .sub-menu .menu-item a {
+    color: #1a2025;
+    font-weight: 500;
+    font-size: 1.75rem; }
+
+@media (min-width: 600px) {
+  .main-navigation {
+    clear: both;
+    display: block;
+    float: left;
+    width: 100%; }
+    .main-navigation ul {
+      display: none;
+      list-style: none;
+      margin: 0;
+      padding-left: 0; }
+      .main-navigation ul ul {
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+        float: left;
+        position: absolute;
+        padding-top: 7px;
+        top: 1.5em;
+        left: -999em;
+        z-index: 99999;
+        display: block; }
+        .main-navigation ul ul ul {
+          left: -999em;
+          top: 0;
+          padding-left: 0; }
+        .main-navigation ul ul li:hover > ul,
+        .main-navigation ul ul li.focus > ul {
+          left: 100%; }
+      .main-navigation ul li:hover > ul,
+      .main-navigation ul li.focus > ul {
+        left: auto; }
+    .main-navigation li {
+      float: left;
+      position: relative; }
+    .main-navigation a {
+      display: block;
+      text-decoration: none;
+      text-align: center; }
+    .main-navigation .menu-item-has-children,
+    .main-navigation .menu-item-51,
+    .main-navigation .menu-item-121 {
+      border-bottom: none; }
+    .main-navigation .sub-menu .menu-item a {
+      color: #fff;
+      font-weight: 400;
+      font-size: 1rem; } }
 
 /* Small menu. */
 .menu-toggle,
@@ -572,15 +610,15 @@ a {
       .logo-date .event-date h2 {
         font-size: 2rem;
         margin-top: 0; } }
-    .logo-date .event-date .logo-header {
-      padding-top: 1vh; }
-      .logo-date .event-date .logo-header img {
-        height: 40px;
-        width: 22vw; }
-        @media (min-width: 600px) {
-          .logo-date .event-date .logo-header img {
-            height: 40px;
-            width: 276px; } }
+  .logo-date .logo-header {
+    padding-top: 1vh; }
+    .logo-date .logo-header img {
+      height: 40px;
+      width: 22vw; }
+      @media (min-width: 600px) {
+        .logo-date .logo-header img {
+          height: 40px;
+          width: 276px; } }
 
 .header-nav {
   width: 100%; }
@@ -612,9 +650,12 @@ a {
 .menu-item {
   bottom: 0; }
   .menu-item a {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #fff;
     padding-left: 5vw; }
+    @media (min-width: 600px) {
+      .menu-item a {
+        font-size: 1.5rem; } }
   .menu-item ul li:hover ul {
     display: block; }
 
@@ -2936,7 +2977,7 @@ NEWLETTER SIGN-UP AREA
 .page-id-113 .impact-results-area {
   position: relative; }
   .page-id-113 .impact-results-area p {
-    font-weight: bold;
+    font-weight: 300;
     font-size: 1rem;
     max-width: 24vw; }
     @media (min-width: 600px) {
@@ -3133,7 +3174,7 @@ NEWLETTER SIGN-UP AREA
   text-align: center; }
   @media (min-width: 600px) {
     .ir-numbers {
-      height: 40vh; } }
+      height: 45vh; } }
 
 .ir-numbers-title {
   margin-top: -8vh; }
@@ -3158,10 +3199,11 @@ NEWLETTER SIGN-UP AREA
       align-items: flex-end;
   margin: 0 auto;
   line-height: 2;
+  max-width: 80%;
   color: #5a6f83; }
   @media (min-width: 600px) {
     .ir-numbers-info {
-      max-width: 80%; } }
+      max-width: 100%; } }
   .ir-numbers-info div {
     display: -ms-flexbox;
     display: flex;
@@ -3178,9 +3220,9 @@ NEWLETTER SIGN-UP AREA
       height: 2rem; }
       @media (min-width: 600px) {
         .ir-numbers-info .ir-numbers-stats span {
-          font-size: .9rem;
+          font-size: 1.4rem;
           font-weight: 500;
-          height: 2.4rem; } }
+          height: 3.8rem; } }
   .ir-numbers-info .ir-numbers-location {
     -ms-flex-direction: row;
         flex-direction: row;
@@ -3189,13 +3231,17 @@ NEWLETTER SIGN-UP AREA
     .ir-numbers-info .ir-numbers-location div span:first-child {
       font-size: .85rem;
       font-weight: 500; }
+      @media (min-width: 600px) {
+        .ir-numbers-info .ir-numbers-location div span:first-child {
+          font-size: 1.4rem;
+          font-weight: 500; } }
     .ir-numbers-info .ir-numbers-location div span {
       font-size: 1rem;
       font-weight: bold;
       text-align: left; }
       @media (min-width: 600px) {
         .ir-numbers-info .ir-numbers-location div span {
-          font-size: 1.25rem; } }
+          font-size: 2rem; } }
   .ir-numbers-info .ir-numbers-bc {
     margin-right: 2rem; }
 
