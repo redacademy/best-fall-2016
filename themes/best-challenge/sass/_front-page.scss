@@ -267,6 +267,9 @@
         @include desktop {
             width: 413px;
             
+    outline: 2px solid white;
+    outline-offset: -20px;
+            
         }
     }
 }
