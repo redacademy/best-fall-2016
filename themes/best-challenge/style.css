@@ -1611,11 +1611,6 @@ this is for the rest of the site
         font-size: 18px;
         margin-top: 0; } }
   .best-post-info .read-more {
-<<<<<<< HEAD
-=======
-    padding-top: 0;
-    padding-bottom: 0;
->>>>>>> ebaef79a4d78b4b3d451cb8ad2e2648d71b278b8
     visibility: hidden; }
   .best-post-info h3 {
     font-size: 32px;
@@ -2690,7 +2685,6 @@ this section is a testimonial
     color: #303b46;
     border-color: #303b46; }
   .page-template-get_involved .resources-section {
-    background: url("../../assets/images/curved-gray-background.png") center;
     background-size: cover;
     display: -ms-flexbox;
     display: flex;
@@ -2754,7 +2748,8 @@ this section is a testimonial
   .page-template-get_involved .need-prizes img {
     width: 278px; }
   .page-template-get_involved .testimonial {
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    background: lightgrey; }
   .page-template-get_involved .testimonial p {
     padding-left: 25%;
     padding-right: 25%;
