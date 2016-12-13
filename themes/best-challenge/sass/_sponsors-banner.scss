@@ -40,7 +40,29 @@ this is the first banner section under the header
     }
 }
 
-
+/*=======================
+this is the css unique to front-page 
+========================*/
+.home {
+    .front-sponsors {
+        height: 312px;
+        background: url('../../assets/images/sponsors-grey-bg.png')top no-repeat;
+        background-size: cover;
+        height: 312px;
+        margin-bottom: 0;
+        }
+    .fp-sponsors-img{        
+        position: relative;
+        bottom: 67px;
+    }
+    .modologo img{
+        height:100%; 
+        padding-bottom: 0rem;
+        }
+    .fp-sponsors-title h2{
+        visibility:hidden;
+    }
+}
 
 
 /*=======================
@@ -125,22 +147,5 @@ text-align:center;
      }
 
 
-
-/*=======================
-this is the css unique to front-page 
-========================*/
-.home {
-    .front-sponsors {
-        height: 312px;
-        background: url('../../assets/images/sponsors-grey-bg.png')top no-repeat;
-        background-size: cover;
-        height: 312px;
-        margin-bottom: 0;
-        }
-    .fp-sponsors-img{        
-        position: relative;
-        bottom: 67px;
-    }
-}
 
 
