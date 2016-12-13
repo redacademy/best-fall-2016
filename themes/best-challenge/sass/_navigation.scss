@@ -1,120 +1,172 @@
-/*--------------------------------------------------------------
+	/*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-
-
-/* Links */
-
-a {
-	color: $link;
-	&:visited {
-		color: $link-visited;
+	/* Links */
+	
+	a {
+		color: $link;
+		&:visited {
+			color: $link-visited;
+		}
+		&:hover,
+		&:focus,
+		&:active {
+			color: $link-hover;
+		}
+		&:focus {
+			outline: thin dotted;
+		}
+		&:hover,
+		&:active {
+			outline: 0;
+		}
 	}
-	&:hover,
-	&:focus,
-	&:active {
-		color: $link-hover;
-	}
-	&:focus {
-		outline: thin dotted;
-	}
-	&:hover,
-	&:active {
-		outline: 0;
-	}
-}
-
-
-/* Menus */
-
-.main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
-	ul {
-		display: none;
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
+	/* Menus */
+	
+	.main-navigation {
+		clear: both;
+		display: block;
+		width: 100%;
 		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
-			position: absolute;
-			top: $base__space-unit;
-			left: -999em;
-			z-index: 99999;
+			display: none;
+			list-style: none;
+			margin: 0;
+			padding-left: 0;
+		}
+		ul {
+			display: block;
+			padding-top: 7px;
+			font-size: 1rem;
+			color: #fff;
 			ul {
-				left: -999em;
 				top: 0;
+				display: block;
 			}
 			li {
 				&:hover>ul,
-				&.focus>ul {
-					left: 100%;
-				}
+				&.focus>ul {}
 			}
 			a {
-				width: 200px;
+				text-decoration: none;
 			}
-			:hover>a,
-			.focus>a {}
-			a:hover,
-			a.focus {}
 		}
-		li:hover>ul,
-		li.focus>ul {
-			left: auto;
+		.menu-item-has-children,
+		.menu-item-51,
+		.menu-item-121 {
+			border-bottom: 1px solid black;
+			
+		}
+		.sub-menu {
+			.menu-item a {
+				color: #1a2025;
+				font-weight: 500;
+				font-size: 1.75rem;
+			}
 		}
 	}
-	li {
-		float: left;
-		position: relative;
-		&:hover>a,
-		&.focus>a {}
+	
+	@include desktop {
+		.main-navigation {
+			clear: both;
+			display: block;
+			float: left;
+			width: 100%;
+			ul {
+				display: none;
+				list-style: none;
+				margin: 0;
+				padding-left: 0;
+				ul {
+					box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+					float: left;
+					position: absolute;
+					padding-top: 7px;
+					top: $base__space-unit;
+					left: -999em;
+					z-index: 99999;
+					display: block;
+					ul {
+						left: -999em;
+						top: 0;
+						padding-left: 0;
+					}
+					li {
+						&:hover>ul,
+						&.focus>ul {
+							left: 100%;
+						}
+					}
+					:hover>a,
+					.focus>a {}
+					a:hover,
+					a.focus {}
+				}
+				li:hover>ul,
+				li.focus>ul {
+					left: auto;
+				}
+			}
+			li {
+				float: left;
+				position: relative;
+				&:hover>a,
+				&.focus>a {}
+			}
+			a {
+				display: block;
+				text-decoration: none;
+				text-align: center;
+			}
+			.current_page_item>a,
+			.current-menu-item>a,
+			.current_page_ancestor>a {
+
+			}
+			.menu-item-has-children,
+			.menu-item-51,
+			.menu-item-121 {
+				border-bottom: none;
+				
+			}
+			.sub-menu {
+				.menu-item a {
+					color: #fff;
+					font-weight: 400;
+					font-size: 1rem;
+				}
+			}
+		}
 	}
-	a {
+	/* Small menu. */
+	
+	.menu-toggle,
+	.main-navigation.toggled ul {
 		display: block;
-		text-decoration: none;
-		text-align: center;
 	}
-	.current_page_item>a,
-	.current-menu-item>a,
-	.current_page_ancestor>a {}
-}
-
-
-/* Small menu. */
-
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
+	
+	@media screen and (min-width: 37.5em) {
+		.menu-toggle {
+			display: none;
+		}
+		.main-navigation ul {
+			display: block;
+		}
 	}
-	.main-navigation ul {
-		display: block;
+	
+	.comment-navigation,
+	.posts-navigation,
+	.post-navigation {
+		.site-main & {
+			margin: 0 0 $base__space-unit;
+			overflow: hidden;
+		}
+		.nav-previous {
+			float: left;
+			width: 50%;
+		}
+		.nav-next {
+			float: right;
+			text-align: right;
+			width: 50%;
+		}
 	}
-}
-
-.comment-navigation,
-.posts-navigation,
-.post-navigation {
-	.site-main & {
-		margin: 0 0 $base__space-unit;
-		overflow: hidden;
-	}
-	.nav-previous {
-		float: left;
-		width: 50%;
-	}
-	.nav-next {
-		float: right;
-		text-align: right;
-		width: 50%;
-	}
-}
-
