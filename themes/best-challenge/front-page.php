@@ -132,11 +132,12 @@ get_header(); ?>
             <div class = "best-post-info">
                 <h3 class ="best-post-title desktop"><?php the_title();?></h3>
                 <?php the_content();?>
-                <div class="green-read">
-                <a class ="read-green" href="<?php the_permalink();?>">Read Full Story</a>
                 </div>
-            </div>
+        </div>
+    <div class="green-read">
+        <a class ="read-green" href="<?php the_permalink();?>">Read Kelsey's Full Story</a>
     </div>
+
     <?php endforeach;
 wp_reset_postdata(); ?>
 </div>

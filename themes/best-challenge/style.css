@@ -1425,7 +1425,7 @@ this is for the rest of the site
     margin-top: 2rem; }
     @media (min-width: 600px) {
       .best-post-thumb img {
-        width: 640px; } }
+        width: 413px; } }
 
 .best-post-info {
   -ms-flex-direction: column;
@@ -1435,7 +1435,9 @@ this is for the rest of the site
   .best-post-info h3,
   .best-post-info p {
     margin: 0;
-    padding: 1rem; }
+    padding: 0.5rem;
+    color: white;
+    font-family: 'montserrat'; }
 
 .best-post-title {
   font-size: 1.5rem;
@@ -1446,16 +1448,30 @@ this is for the rest of the site
     .best-post-title {
       text-align: left; } }
 
+@media (min-width: 600px) {
+  .best-post-info p {
+    padding-bottom: 3rem; } }
+
 .green-read {
   background: url(../../assets/images/green-read-story.png) no-repeat;
-  background-size: 97%; }
+  background-size: 70%;
+  margin-left: 480px;
+  margin-top: -51px; }
 
 .read-green {
   display: block;
-  text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
-  text-decoration: none; }
+  text-decoration: none;
+  padding-bottom: 6rem; }
+
+.green-read a {
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-size: 20px;
+  padding-left: 70px;
+  padding-top: 3px; }
 
 .instagram-grid {
   text-align: center; }

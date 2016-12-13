@@ -264,7 +264,8 @@
         height: auto;
         margin-top: 2rem;
         @include desktop {
-            width: 640px;
+            width: 413px;
+            
         }
     }
 }
@@ -275,7 +276,9 @@
     h3,
     p {
         margin: 0;
-        padding: 1rem;
+        padding: 0.5rem;
+        color:white;
+        font-family: 'montserrat';
     }
 }
 
@@ -286,20 +289,42 @@
     text-align: center;
     @include desktop {
         text-align: left;
+
+    }
+}
+.best-post-info p{
+
+    @include desktop {
+        padding-bottom:3rem;
+        
     }
 }
 
+
+
 .green-read {
     background: url(../../assets/images/green-read-story.png) no-repeat;
-    background-size: 97%;
+    background-size: 70%;
+    margin-left: 480px;
+    margin-top:-51px;
 }
 
 .read-green {
     display: block;
-    text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
+    padding-bottom:6rem;
+    
+}
+
+.green-read a{
+display:flex;
+    color:white;
+    font-size:20px;
+    padding-left:70px;
+    padding-top:3px;
+
 }
 
 ///---------------- Instagram Area ---------- ///
