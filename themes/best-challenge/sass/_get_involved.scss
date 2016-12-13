@@ -66,25 +66,30 @@ this is a section with three blocks flexed explaining the benefits of the Commut
 }
 
 .challenge-benefit-blocks p{
+ 
+ 
+    @include desktop {
     font-family:'montserrat';
     font-weight: 300;
+    }
 }
 
 .single-benefit-block{
     -webkit-flex: 0 1 33%;
     -ms-flex: 0 1 33%;
     flex: 0 1 33%;
-    max-width: 33%;
+    max-width: 50%;
     align-items:center;
-}
 
-.single-benefit-block{
+
+     @include desktop {
     -webkit-flex: 0 1 33%;
     -ms-flex: 0 1 33%;
     flex: 0 1 33%;
     max-width: 33%;
     align-items:center;
    }
+}
 
 .single-benefit-block i{
     font-size:30px;

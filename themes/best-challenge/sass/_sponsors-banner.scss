@@ -5,7 +5,6 @@ this is the first banner section under the header
 
 .front-sponsors {
     display: flex;
-    height:70vh;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -16,7 +15,7 @@ this is the first banner section under the header
 
 .modologo img{
    height:100%; 
-   padding-bottom:5rem;
+   
 }
 
 
@@ -25,11 +24,9 @@ this is the first banner section under the header
     h2 {
         visibility:visible;
         padding-top: 0;
-        margin-bottom:6rem;
+        margin-bottom:2rem;
         padding-left:2rem;
-        @include desktop {
-            padding-top:5rem;
-        }
+      
     }
 }
 
@@ -39,7 +36,7 @@ this is the first banner section under the header
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom:2rem;
+    margin-bottom:3rem;
     }
 }
 
@@ -87,15 +84,12 @@ this is for the rest of the site
     background: transparent;
     text-align: center;
     display: flex;
-    height:40vh;
+    
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background: transparent;
     background-size: cover;
-        @include desktop{  
-            margin-bottom:6rem;
-        }
 }
 
 .banner-heading{
@@ -107,7 +101,7 @@ text-align:center;
     margin-bottom: 6rem;
     margin-top: 6rem;
      @include desktop{
-        padding-bottom: 1rem;
+        
     }
 }
 
@@ -128,7 +122,7 @@ text-align:center;
             display:flex;
             justify-content:center;
             visibility:visible;
-            padding-bottom:2rem;
+            
     }
 }
 .fp-sponsors-img {

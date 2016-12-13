@@ -1095,7 +1095,6 @@ this is the first banner section under the header
 .front-sponsors {
   display: -ms-flexbox;
   display: flex;
-  height: 70vh;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: justify;
@@ -1105,16 +1104,12 @@ this is the first banner section under the header
   background: url("../../assets/images/sponsors-grey-bg.png") top no-repeat;
   background-size: cover; }
   .front-sponsors .modologo img {
-    height: 100%;
-    padding-bottom: 5rem; }
+    height: 100%; }
   .front-sponsors .fp-sponsors-title h2 {
     visibility: visible;
     padding-top: 0;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
     padding-left: 2rem; }
-    @media (min-width: 600px) {
-      .front-sponsors .fp-sponsors-title h2 {
-        padding-top: 5rem; } }
   .front-sponsors .fp-sponsors-img {
     width: 100%;
     opacity: 0.75;
@@ -1124,7 +1119,7 @@ this is the first banner section under the header
         justify-content: space-around;
     -ms-flex-align: center;
         align-items: center;
-    margin-bottom: 2rem; }
+    margin-bottom: 3rem; }
 
 /*=======================
 this is the css unique to front-page 
@@ -1169,7 +1164,6 @@ this is for the rest of the site
   background: transparent;
   text-align: center;
   display: flex;
-  height: 40vh;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: justify;
@@ -1177,9 +1171,6 @@ this is for the rest of the site
   align-items: center;
   background: transparent;
   background-size: cover; }
-  @media (min-width: 600px) {
-    .front-sponsors {
-      margin-bottom: 6rem; } }
 
 .banner-heading {
   text-align: center; }
@@ -1187,9 +1178,6 @@ this is for the rest of the site
 .modologo {
   margin-bottom: 6rem;
   margin-top: 6rem; }
-  @media (min-width: 600px) {
-    .modologo {
-      padding-bottom: 1rem; } }
 
 .modologo img {
   padding-top: 1rem; }
@@ -1207,8 +1195,7 @@ this is for the rest of the site
       display: flex;
       -ms-flex-pack: center;
           justify-content: center;
-      visibility: visible;
-      padding-bottom: 2rem; } }
+      visibility: visible; } }
 
 .fp-sponsors-img {
   width: 100%;
@@ -1614,10 +1601,9 @@ this is for the rest of the site
       height: 316px;
       padding-top: 0; } }
   .best-post-info p {
-    padding-top: 5px;
     color: #303b46;
     font-weight: 300;
-    text-align: center;
+    text-align: left;
     font-size: 25px; }
     @media (min-width: 600px) {
       .best-post-info p {
@@ -1625,21 +1611,16 @@ this is for the rest of the site
         font-size: 18px;
         margin-top: 0; } }
   .best-post-info .read-more {
+<<<<<<< HEAD
+=======
     padding-top: 0;
     padding-bottom: 0;
+>>>>>>> ebaef79a4d78b4b3d451cb8ad2e2648d71b278b8
     visibility: hidden; }
   .best-post-info h3 {
     font-size: 32px;
     text-transform: uppercase;
     color: white; }
-    @media (min-width: 600px) {
-      .best-post-info h3 {
-        font-size: 20px; } }
-    @media (min-width: 1140px) {
-      .best-post-info h3 {
-        text-align: left;
-        padding: 0;
-        font-size: 32px; } }
 
 .best-post-title {
   font-size: 1.5rem;
@@ -1650,57 +1631,33 @@ this is for the rest of the site
     .best-post-title {
       text-align: left;
       padding: 0;
-      font-size: 1rem; } }
-  @media (min-width: 1140px) {
-    .best-post-title {
-      text-align: left;
-      padding: 0;
       font-size: 1.5rem; } }
 
 .green-read {
   background: url(../../assets/images/green-read-story.png) no-repeat;
   background-size: 100%;
-  height: 47px; }
-  @media (min-width: 600px) {
-    .green-read {
-      background-size: 80%;
-      background-size: 318px 41px; } }
-  @media (min-width: 950px) {
-    .green-read {
-      background-size: 418px 41px; } }
-  @media (min-width: 1140px) {
-    .green-read {
-      background-size: 418px 41px;
-      margin-left: -83px;
-      margin-top: -74px; } }
+  height: 57px;
+  margin-top: -75px; }
   .green-read a {
     display: -ms-flexbox;
     display: flex;
     color: #303b46;
     font-size: 18px;
-    padding: 0.1rem 0 0 5rem;
+    padding: .5rem 0 0 3rem;
     cursor: pointer; }
     @media (min-width: 600px) {
       .green-read a {
-        display: -ms-flexbox;
-        display: flex;
         color: white;
         font-size: 18px;
-        padding: .3rem 0 0 1rem;
-        cursor: pointer; } }
-    @media (min-width: 950px) {
-      .green-read a {
-        display: -ms-flexbox;
-        display: flex;
-        color: white;
-        font-size: 18px;
-        padding: .5rem 0 0 1rem;
-        cursor: pointer; } }
-    @media (min-width: 1140px) {
-      .green-read a {
-        color: white;
-        font-size: 18px;
-        font-weight: normal; } }
+        font-weight: normal;
+        height: 57px; }
+        .green-read a a {
+          display: -ms-flexbox;
+          display: flex;
+          color: #303b46;
+          font-size: 18px;
+          padding: .5rem 0 0 3rem;
+          cursor: pointer; } }
 
 .read-green {
   display: block;
@@ -2574,21 +2531,23 @@ this section is a testimonial
         -ms-flex-direction: row;
             flex-direction: row;
         padding-bottom: 60px; } }
-  .page-template-get_involved .challenge-benefit-blocks p {
-    font-family: 'montserrat';
-    font-weight: 300; }
+  @media (min-width: 600px) {
+    .page-template-get_involved .challenge-benefit-blocks p {
+      font-family: 'montserrat';
+      font-weight: 300; } }
   .page-template-get_involved .single-benefit-block {
     -ms-flex: 0 1 33%;
     flex: 0 1 33%;
-    max-width: 33%;
+    max-width: 50%;
     -ms-flex-align: center;
         align-items: center; }
-  .page-template-get_involved .single-benefit-block {
-    -ms-flex: 0 1 33%;
-    flex: 0 1 33%;
-    max-width: 33%;
-    -ms-flex-align: center;
-        align-items: center; }
+    @media (min-width: 600px) {
+      .page-template-get_involved .single-benefit-block {
+        -ms-flex: 0 1 33%;
+        flex: 0 1 33%;
+        max-width: 33%;
+        -ms-flex-align: center;
+            align-items: center; } }
   .page-template-get_involved .single-benefit-block i {
     font-size: 30px;
     color: black; }
