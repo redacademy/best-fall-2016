@@ -21,9 +21,8 @@
 
   // Prize categories drop down list 
 
-  $('.prize-categories').on('click', '.category-name', function () {
-    $(this).siblings().children().slideToggle('fast');
-    $(this).siblings().children().next().toggle('fast');
+  $('.prize-categories .category-name').on('click', function () {
+    $(this).next().children().toggle('fast');
   });
 
 

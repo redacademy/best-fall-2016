@@ -1611,7 +1611,7 @@ this is for the rest of the site
         font-size: 18px;
         margin-top: 0; } }
   .best-post-info .read-more {
-    display: none; }
+    visibility: hidden; }
   .best-post-info .green-read {
     display: initial; }
   .best-post-info h3 {
