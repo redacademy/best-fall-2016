@@ -2,7 +2,7 @@ SYNOPSIS
 
 B.E.S.T is a fully funtional wordpress site featuring a stylish, modern design and leading-edge functionality. The B.E.S.T was built for Better Environmentally Sound Transportation, a national non-profit organization promoting environmentally friendly transportation.
 
-![Img](https://http://i.imgur.com/5Fk0irI.png)
+![Img](http://i.imgur.com/5Fk0irI.png)
 
 
 FEATURES
