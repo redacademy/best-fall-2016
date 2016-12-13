@@ -1519,7 +1519,7 @@ this is for the rest of the site
 
 .blog-posts {
   background-image: none;
-  backround-color: white; }
+  background-color: white; }
   @media (min-width: 600px) {
     .blog-posts {
       background: url(../../assets/images/greycurve.png);
@@ -1590,17 +1590,17 @@ this is for the rest of the site
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
-  color: black;
-  text-align: center; }
+      flex-basis: 48%; }
   .best-post-info p {
     color: #303b46;
     font-weight: 300;
     text-align: left;
-    font-size: 28px; }
+    font-size: 25px; }
     @media (min-width: 600px) {
       .best-post-info p {
-        color: white; } }
+        color: white;
+        font-size: 28px;
+        text-align: center; } }
   .best-post-info a {
     display: none; }
 
@@ -1615,7 +1615,8 @@ this is for the rest of the site
 
 .green-read {
   background: url(../../assets/images/green-read-story.png) no-repeat;
-  background-size: 100%; }
+  background-size: 100%;
+  height: 47px; }
   @media (min-width: 600px) {
     .green-read {
       background-size: 70%;
@@ -1624,10 +1625,13 @@ this is for the rest of the site
   .green-read a {
     display: -ms-flexbox;
     display: flex;
-    color: white;
-    font-size: 20px;
-    padding-left: 8rem;
-    padding-top: 0.5rem; }
+    color: #303b46;
+    font-size: 25px;
+    padding: 0.1rem 0 0 7rem;
+    cursor: pointer; }
+    @media (min-width: 600px) {
+      .green-read a {
+        color: white; } }
 
 .read-green {
   display: block;
