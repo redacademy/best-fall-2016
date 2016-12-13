@@ -6,6 +6,28 @@
  */
 
 get_header(); ?>
+
+<div class="toggle-visible-hidden">
+   <div class="redirect-page-area"> 
+			<div class="page-banner">
+        <div class="challenge-logo">
+		 <img src="<?php echo get_template_directory_uri() ?>/assets/images/commuterchallengebc-copy.png"></img>
+		 </div>
+			<h1>hooray!!!</h1>
+			<h2>See you later!</h2>
+			</div>
+
+			<div class="redirect-explain">
+				<p>You are now leaving Commuter Challenge BC and will 
+					automatically be redirected to <span>Commuter Challenge - Canada to Register.</span>
+			</div>
+			<div class ="resources">
+				<p>Don't forget we have got your back with fun and unique <a href="">BC Resources</a></p>
+			</div>
+    </div>
+</div>
+
+
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
             <div class = "picture-wrapper-results"> 
@@ -121,9 +143,19 @@ get_header(); ?>
                 </div>
              
         </div>
+</div>
 
-
-        
+        <div class="more-stats">
+            <div class="more-stats-cc">
+                <h3>Commuter Challenge</h3>
+            </div>
+            <div class="more-stats-info">
+                For more awesome statistics about 
+                the Commuter Challenge, visit the<br>
+                <a id="sign-up">Commuter Challenge Canada Site.</a>
+            </div> 
+            
+        </div>
             
                 
 
@@ -151,7 +183,7 @@ get_header(); ?>
                     </div><!-- End of green-banner -->
             
                    
-  		<!-- sponsors -->
+        <!-- sponsors -->
 
         <!-- END of sponsors -->
                     
