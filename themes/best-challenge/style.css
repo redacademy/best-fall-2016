@@ -3333,7 +3333,8 @@ NEWLETTER SIGN-UP AREA
     min-width: 20vw; }
     .page-template-page-results .ir-fuel div p {
       max-width: 25vw;
-      padding-bottom: 2vw; }
+      padding-bottom: 2vw;
+      color: #303b46; }
       @media (min-width: 600px) {
         .page-template-page-results .ir-fuel div p {
           max-width: 19vw; } }
@@ -3592,7 +3593,6 @@ NEWLETTER SIGN-UP AREA
 
 .para-heading a {
   font-family: 'montserrat';
-  font-weight: 300;
   text-transform: capitalize;
   display: -ms-flexbox;
   display: flex;
@@ -3603,8 +3603,11 @@ NEWLETTER SIGN-UP AREA
   -ms-flex-pack: center;
       justify-content: center;
   padding-bottom: 10px; }
+  @media (min-width: 600px) {
+    .para-heading a {
+      font-weight: bold; } }
 
-para-content {
+.para-content {
   margin: 0; }
 
 .para-content p {
@@ -3637,9 +3640,7 @@ para-content {
   padding-top: 10px; }
   @media (min-width: 600px) {
     .commuterChallenge-contact-logos {
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-      padding-top: 30px; } }
+      visibility: hidden; } }
 
 .commuterChallenge-contact-logos i {
   padding: 5px; }
@@ -3656,10 +3657,12 @@ para-content {
       height: 300px; } }
 
 .questions {
-  padding-bottom: 0.8rem; }
+  padding: 15px 0 0.8rem 0; }
   @media (min-width: 600px) {
     .questions {
       line-height: 0.8; } }
+  .questions #email {
+    font-weight: 300; }
 
 @media (min-width: 600px) {
   .questions p {
