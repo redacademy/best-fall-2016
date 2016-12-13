@@ -630,6 +630,7 @@ a {
       width: auto; } }
 
 #primary-menu {
+  display: none;
   width: 100%;
   -ms-flex-direction: column;
       flex-direction: column;
@@ -651,10 +652,13 @@ a {
   .menu-item a {
     font-size: 2rem;
     color: #fff;
-    padding-left: 5vw; }
+    padding-left: 2vw;
+    font-weight: 700;
+    letter-spacing: 1px; }
     @media (min-width: 600px) {
       .menu-item a {
-        font-size: 1.5rem; } }
+        font-size: 1.5rem;
+        font-weight: 400; } }
   .menu-item ul li:hover ul {
     display: block; }
 
@@ -669,16 +673,22 @@ a {
     background: none;
     -ms-flex-align: left;
         align-items: left;
-    -ms-flex-pack: start;
-        justify-content: flex-start;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
     text-transform: none; }
+  #primary-menu li:hover > ul {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    background: #5a6f83;
+    margin-top: 10%; }
   .menu-item {
-    width: 107px;
+    width: 120px;
     height: 36px;
-    bottom: 0; }
+    bottom: 0;
+    margin: 0 1rem; }
     .menu-item a {
       padding-top: 7px;
-      font-size: 1rem;
+      font-size: 1.1rem;
       color: #fff;
       padding-left: 0; }
   .menu-item:hover {
@@ -699,10 +709,20 @@ a {
     width: 100%;
     padding: 0.75rem; } }
 
-.sub-menu .menu-item:hover {
-  background-color: #5a6f83;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0; }
+.sub-menu {
+  width: 150%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column; }
+  .sub-menu .menu-item:hover {
+    background-color: #5a6f83;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+  .sub-menu .menu-item a {
+    width: 150%;
+    font-size: 1rem;
+    text-align: left; }
 
 .stickyBar {
   width: 100%;
@@ -1096,6 +1116,27 @@ this is the first banner section under the header
     margin-bottom: 2rem; }
 
 /*=======================
+this is the css unique to front-page 
+========================*/
+.home .front-sponsors {
+  height: 312px;
+  background: url("../../assets/images/sponsors-grey-bg.png") top no-repeat;
+  background-size: cover;
+  height: 312px;
+  margin-bottom: 0; }
+
+.home .fp-sponsors-img {
+  position: relative;
+  bottom: 67px; }
+
+.home .modologo img {
+  height: 100%;
+  padding-bottom: 0rem; }
+
+.home .fp-sponsors-title h2 {
+  visibility: hidden; }
+
+/*=======================
 this is for the rest of the site
 ========================*/
 .front-sponsors {
@@ -1178,20 +1219,6 @@ this is for the rest of the site
     .noMobile img {
       visibility: visible;
       width: 100%; } }
-
-/*=======================
-this is the css unique to front-page 
-========================*/
-.home .front-sponsors {
-  height: 312px;
-  background: url("../../assets/images/sponsors-grey-bg.png") top no-repeat;
-  background-size: cover;
-  height: 312px;
-  margin-bottom: 0; }
-
-.home .fp-sponsors-img {
-  position: relative;
-  bottom: 67px; }
 
 .hero-banner {
   background: url(../../assets/images/hero-banner-mobile.png) center no-repeat;
