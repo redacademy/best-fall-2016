@@ -723,9 +723,10 @@ a {
   .sub-menu .menu-item a {
     width: 150%;
     font-size: 1rem;
-    text-align: left; }
-    .sub-menu .menu-item a a:hover {
-      color: #5a6f83; }
+    text-align: left;
+    font-weight: 300; }
+  .sub-menu .menu-item a:hover {
+    color: #303B46; }
 
 .stickyBar {
   width: 100%;

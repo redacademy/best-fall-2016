@@ -180,10 +180,11 @@
                         width: 150%;
                         font-size: 1rem;
                         text-align: left;
-                        a:hover {
-                            color: #5a6f83;
-                        }
+                        font-weight: 300;
                     }
+                }
+                .menu-item a:hover {
+                    color: #303B46;
                 }
             }
             
