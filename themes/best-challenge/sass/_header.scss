@@ -100,7 +100,7 @@
                     letter-spacing: 1px;
                     @include desktop {
                         font-size: 1.5rem;
-                        font-weight: 400;
+                        font-weight: 300;
                     }
                 }
                 ul li:hover ul {
@@ -157,6 +157,7 @@
                     background-color: #a6ce39;
                     a {
                         color: #303b46;
+                        font-weight: 700;
                     }
                 }
                 .main-navigation ul ul a {
@@ -174,10 +175,15 @@
                     border-top-left-radius: 0;
                     border-top-right-radius: 0;
                 }
-                .menu-item a {
-                    width: 150%;
-                    font-size: 1rem;
-                    text-align: left;
+                .menu-item {
+                    a {
+                        width: 150%;
+                        font-size: 1rem;
+                        text-align: left;
+                        a:hover {
+                            color: #5a6f83;
+                        }
+                    }
                 }
             }
             

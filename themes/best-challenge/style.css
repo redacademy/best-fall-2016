@@ -658,7 +658,7 @@ a {
     @media (min-width: 600px) {
       .menu-item a {
         font-size: 1.5rem;
-        font-weight: 400; } }
+        font-weight: 300; } }
   .menu-item ul li:hover ul {
     display: block; }
 
@@ -704,7 +704,8 @@ a {
     background-color: #a6ce39; }
     .menu-item-51 a,
     .menu-item-51:hover a {
-      color: #303b46; }
+      color: #303b46;
+      font-weight: 700; }
   .main-navigation ul ul a {
     width: 100%;
     padding: 0.75rem; } }
@@ -723,6 +724,8 @@ a {
     width: 150%;
     font-size: 1rem;
     text-align: left; }
+    .sub-menu .menu-item a a:hover {
+      color: #5a6f83; }
 
 .stickyBar {
   width: 100%;
