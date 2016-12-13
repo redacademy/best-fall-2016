@@ -1465,7 +1465,8 @@ this is for the rest of the site
       justify-content: space-around; }
   .impact-box h2 {
     margin: 0;
-    font-size: 28px; }
+    font-size: 28px;
+    text-transform: uppercase; }
     @media (min-width: 600px) {
       .impact-box h2 {
         font-size: 30px; } }
