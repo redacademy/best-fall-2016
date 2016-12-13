@@ -119,72 +119,66 @@ get_header(); ?>
                 </div>
 
             </div> <!-- impact results box -->
-
-    </div>
-    <!--Blog-->
-
-
-        <div class="blog-posts">
-            <div class = "best-journal container">
-        <?php
-        $args = array(
-            'post_type' => 'post',
-            'posts_per_page' => 1,
-            'order' => 'DESC');
-        $journal_posts = get_posts( $args ); // returns an array of posts
-    ?>
-    <?php foreach ($journal_posts as $post) :
-        setup_postdata( $post ); ?>
-    <div class ="best-journal-content">
-
-            <div class = "best-post-thumb">
-                <h3 class ="best-post-title mobile"><?php the_title();?></h3>
+    </div> <!-- impact restult container ends -->
+ <!--Blog-->
+    <div class="blog-posts">
+        <div class = "best-journal container">
+            <?php
+            $args = array(
+                'post_type' => 'post',
+                'posts_per_page' => 1,
+                'order' => 'DESC');
+            $journal_posts = get_posts( $args ); // returns an array of posts
+             foreach ($journal_posts as $post) : setup_postdata( $post ); ?>
+            
+            <div class ="best-journal-content">
+                <div class = "best-post-thumb">
+                    <h3 class ="best-post-title mobile"><?php the_title();?></h3>
                     <?php the_post_thumbnail(); ?>
+                </div>
+
+                <div class = "best-post-info">
+                    <h3 class ="best-post-title desktop"><?php the_title();?></h3>
+                        <?php the_content();?>
+                </div>
+            </div><!-- best-journal-content -->
+            <div class="green-read">
+                <a class ="read-green" href="<?php the_permalink();?>">Read Kelsey's Full Story</a>
             </div>
 
-            <div class = "best-post-info">
-                <h3 class ="best-post-title desktop"><?php the_title();?></h3>
-                <?php the_content();?>
-                </div>
-        </div>
-    <div class="green-read">
-        <a class ="read-green" href="<?php the_permalink();?>">Read Kelsey's Full Story</a>
-    </div>
-
-    <?php endforeach;
-wp_reset_postdata(); ?>
-</div>
-</div>
+            <?php endforeach; wp_reset_postdata(); ?>
+        </div> <!--best journal container -->
+    </div> <!-- blog pos section ends -->
 
  <!--Instagram-->
  
-<div class="instagram-grid container">
-    <h2 class="uppercase">#commuterchallenge</h2>
-    <?php echo wdi_feed(array('id'=>'1')); ?>
-</div>
+    <div class="instagram-grid container">
+        <h2 class="uppercase">#commuterchallenge</h2>
+        <?php echo wdi_feed(array('id'=>'1')); ?>
+    </div>
 
  
    <!-- This is the beginning of a template part that toggles a button on and off -->
-                    <div class="green-banner">
-                        <div class="green-banner-flex">
-                            <div class="green-banner-data">
-                                <p>inspire and empower your team!</p>
-                                <p>Challenge yourself! Challenge your team!</p>
-                            </div>
-                            <form method="POST" action="" >
-                                <div class="green-buttons">
-                                    <div class="button1">
-                                      <!--<input type="submit" name="submit" value="Individual" id="go-green-button" >-->
-                                        <a href="<?php echo esc_url( site_url( '/get-involved/' ) ); ?>" rel="program">Individual</a>
+    <div class="green-banner">
+        <div class="green-banner-flex">
+            <div class="green-banner-data">
+                <p>inspire and empower your team!</p>
+                <p>Challenge yourself! Challenge your team!</p>
+            </div>
+            <form method="POST" action="" >
+                <div class="green-buttons">
+                    <div class="button1">
+                        <!--<input type="submit" name="submit" value="Individual" id="go-green-button" >-->
+                        <a href="<?php echo esc_url( site_url( '/get-involved/' ) ); ?>" rel="program">Individual</a>
 
-                                    </div>
-                                    <div class="button2">
-                                        <a href="<?php echo esc_url( site_url( '/get-involved/' ) ); ?>" rel="program">Workplace</a>
-                                    </div>
-                                </div><!-- End of green-buttons  -->
-                            </form><!-- End of form  -->
-                        </div><!-- End of green-banner-flex  -->
-                    </div><!-- End of green-banner -->
+                    </div>
+                    <div class="button2">
+                        <a href="<?php echo esc_url( site_url( '/get-involved/' ) ); ?>" rel="program">Workplace</a>
+                    </div>
+                </div><!-- End of green-buttons  -->
+            </form><!-- End of form  -->
+        </div><!-- End of green-banner-flex  -->
+    </div><!-- End of green-banner -->
                
 
     </main><!-- #main -->
