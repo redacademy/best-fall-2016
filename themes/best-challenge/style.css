@@ -1563,6 +1563,7 @@ this is for the rest of the site
           flex-direction: row; } }
 
 .best-post-thumb {
+  padding-top: 40px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
   text-align: center;
@@ -1616,6 +1617,12 @@ this is for the rest of the site
     font-size: 32px;
     text-transform: uppercase;
     color: white; }
+
+.excerpt {
+  padding-top: 60px; }
+  @media (min-width: 600px) {
+    .excerpt {
+      padding-top: 0; } }
 
 .best-post-title {
   font-size: 1.5rem;
