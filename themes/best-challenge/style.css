@@ -633,7 +633,6 @@ a {
   width: 100%;
   -ms-flex-direction: column;
       flex-direction: column;
-  height: 50vh;
   background: #5a6f83;
   -ms-flex-align: start;
       align-items: flex-start;
@@ -1200,6 +1199,20 @@ this is for the rest of the site
     .noMobile img {
       visibility: visible;
       width: 100%; } }
+
+/*=======================
+this is the css unique to front-page 
+========================*/
+.home .front-sponsors {
+  height: 312px;
+  background: url("../../assets/images/sponsors-grey-bg.png") top no-repeat;
+  background-size: cover;
+  height: 312px;
+  margin-bottom: 0; }
+
+.home .fp-sponsors-img {
+  position: relative;
+  bottom: 67px; }
 
 .hero-banner {
   background: url(../../assets/images/hero-banner-mobile.png) center no-repeat;
