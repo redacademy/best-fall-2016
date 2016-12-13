@@ -525,8 +525,8 @@ a {
       border-bottom: none; }
     .main-navigation .sub-menu .menu-item a {
       color: #fff;
-      font-weight: 400;
-      font-size: 1rem; } }
+      font-weight: 300;
+      font-size: 1.05rem; } }
 
 /* Small menu. */
 .menu-toggle,
@@ -708,7 +708,7 @@ a {
       font-weight: 700; }
   .main-navigation ul ul a {
     width: 100%;
-    padding: 0.75rem; } }
+    padding-left: 0.75rem; } }
 
 .sub-menu {
   width: 150%;
@@ -767,7 +767,9 @@ a {
         font-size: 55px; } }
   .title-wrapper p {
     font-size: 18px;
-    font-weight: 300; }
+    font-weight: 300;
+    max-width: 60vw;
+    margin: 0 auto; }
     @media (min-width: 600px) {
       .title-wrapper p {
         font-size: 20px; } }
@@ -3341,7 +3343,7 @@ NEWLETTER SIGN-UP AREA
   position: absolute;
   z-index: 0;
   top: 0;
-  bottom: 0;
+  bottom: 75px;
   left: 50%;
   border-left: 7px solid #fff; }
 

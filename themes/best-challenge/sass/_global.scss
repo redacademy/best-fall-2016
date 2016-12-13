@@ -1,51 +1,55 @@
 //Styles that are reused throughout the whole website 
-
 .title-wrapper {
+    margin: 0;
+    margin-top: 30px;
+    height: 200px;
+    text-align: center;
+    @include desktop {
+        margin-top: 68px;
+    }
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
         margin: 0;
-        margin-top: 30px;
-        height: 200px;
-		text-align: center;
         @include desktop {
-            margin-top: 68px;
+            font-size: 55px;
         }
-		h1 {
-			font-size: 40px;
-			font-weight: bold;
-			text-transform: uppercase;
-			text-align: center;
-            margin: 0;
-			@include desktop {
-				font-size: 55px;
-			}
-		}
-		p {
-			font-size: 18px;
-			font-weight: 300;
-            @include desktop {
-				font-size: 20px;
-			}
-		}
+    }
+    p {
+        font-size: 18px;
+        font-weight: 300;
+        max-width: 60vw;
+        margin: 0 auto;
+        @include desktop {
+            font-size: 20px;
+        }
+    }
 }
 
 .page-description {
-	 	width: 90%;
-		margin: 35px auto 49px auto;
-		font-size: 18px;
-		font-weight: 300;
-		text-align: center;
-		color: $dark-text;
-        @include desktop {
-			margin: 67px auto;
-			font-size: 20px;
-            width: 70%;
-        }
+    width: 90%;
+    margin: 35px auto 49px auto;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    color: $dark-text;
+    @include desktop {
+        margin: 67px auto;
+        font-size: 20px;
+        width: 70%;
+    }
 }
+
 
 /* hide mobile version by default */
 
 .logo .mobile {
     display: none;
 }
+
+
 /* when screen is less than 600px wide
 show mobile version and hide desktop */
 

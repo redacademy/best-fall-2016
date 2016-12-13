@@ -10,7 +10,6 @@
             @include heading-backgrounds;
         }
     }
-    
     .impact-results-info {
         text-align: center;
         height: 10vh;
@@ -223,7 +222,7 @@
         position: absolute;
         z-index: 0;
         top: 0;
-        bottom: 0;
+        bottom: 75px;
         left: 50%;
         border-left: 7px solid #fff;
     }
