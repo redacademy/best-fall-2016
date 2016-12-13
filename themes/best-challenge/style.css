@@ -2283,6 +2283,7 @@ this is for the rest of the site
         font-size: 1.4rem;
         font-weight: normal;
         cursor: pointer;
+        display: initial;
         color: #303b46;
         font-size: 16px;
         margin: 0;
@@ -2772,7 +2773,7 @@ this section is a testimonial
 /*=======================
 this is the css unique to page-id-91
 ========================*/
-.page-id-91 {
+.page-template-contact_us {
   /*=======================
 this is the first banner section under the header
 ========================*/
@@ -2788,7 +2789,7 @@ MAP AREA
   /*=======================
 NEWLETTER SIGN-UP AREA
 ========================*/ }
-  .page-id-91 .picture-wrapper-contact {
+  .page-template-contact_us .picture-wrapper-contact {
     background: url("../../assets/images/backgrounds/contact-header-mobile.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -2800,11 +2801,11 @@ NEWLETTER SIGN-UP AREA
     display: -ms-flexbox;
     display: flex; }
     @media (min-width: 600px) {
-      .page-id-91 .picture-wrapper-contact {
+      .page-template-contact_us .picture-wrapper-contact {
         background-position: center;
         height: 300px; } }
     @media (min-width: 600px) {
-      .page-id-91 .picture-wrapper-contact {
+      .page-template-contact_us .picture-wrapper-contact {
         background: url("../../assets/images/backgrounds/contact-header.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;
@@ -2816,10 +2817,10 @@ NEWLETTER SIGN-UP AREA
         display: -ms-flexbox;
         display: flex; } }
   @media (min-width: 600px) and (min-width: 600px) {
-    .page-id-91 .picture-wrapper-contact {
+    .page-template-contact_us .picture-wrapper-contact {
       background-position: center;
       height: 300px; } }
-  .page-id-91 .contact-person-section {
+  .page-template-contact_us .contact-person-section {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -2829,19 +2830,20 @@ NEWLETTER SIGN-UP AREA
     -ms-flex-pack: center;
         justify-content: center; }
     @media (min-width: 600px) {
-      .page-id-91 .contact-person-section {
+      .page-template-contact_us .contact-person-section {
         -ms-flex-direction: row;
             flex-direction: row; } }
-  .page-id-91 .contact-person-image {
-    padding-top: 30px;
-    padding-right: 35px; }
-  .page-id-91 .contact-person-data {
+  @media (min-width: 600px) {
+    .page-template-contact_us .contact-person-image {
+      padding-top: 30px;
+      padding-right: 35px; } }
+  .page-template-contact_us .contact-person-data {
     line-height: 1.3;
     text-align: center; }
     @media (min-width: 600px) {
-      .page-id-91 .contact-person-data {
+      .page-template-contact_us .contact-person-data {
         text-align: left; } }
-  .page-id-91 .contact-person-data h2 {
+  .page-template-contact_us .contact-person-data h2 {
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 0;
@@ -2849,17 +2851,17 @@ NEWLETTER SIGN-UP AREA
     font-family: 'montserrat';
     font-weight: bold;
     color: #303b46; }
-  .page-id-91 .contact-person-data p {
+  .page-template-contact_us .contact-person-data p {
     font-family: 'montserrat';
     font-size: 20px;
     font-weight: 300;
     color: #303b46;
     margin-bottom: 0;
     margin-top: 0; }
-  .page-id-91 .contact-form-area {
+  .page-template-contact_us .contact-form-area {
     background-color: #5a6f83;
     padding-top: 20px; }
-  .page-id-91 .contact-form-area h2 {
+  .page-template-contact_us .contact-form-area h2 {
     text-align: center;
     text-transform: uppercase;
     font-family: 'montserrat';
@@ -2868,20 +2870,20 @@ NEWLETTER SIGN-UP AREA
     color: white;
     margin-top: 0;
     margin-bottom: 0; }
-  .page-id-91 input[type="text"],
-  .page-id-91 input[type="email"],
-  .page-id-91 input[type="tel"] {
+  .page-template-contact_us input[type="text"],
+  .page-template-contact_us input[type="email"],
+  .page-template-contact_us input[type="tel"] {
     background-color: #dee2e6;
     border: none;
     height: 50px;
     border-radius: 10px;
     width: 100%; }
     @media (min-width: 600px) {
-      .page-id-91 input[type="text"],
-      .page-id-91 input[type="email"],
-      .page-id-91 input[type="tel"] {
+      .page-template-contact_us input[type="text"],
+      .page-template-contact_us input[type="email"],
+      .page-template-contact_us input[type="tel"] {
         width: 100%; } }
-  .page-id-91 input[type=submit] {
+  .page-template-contact_us input[type=submit] {
     background-color: #5a6f83;
     color: white;
     cursor: pointer;
@@ -2897,7 +2899,7 @@ NEWLETTER SIGN-UP AREA
     border-color: white;
     width: 144px;
     height: 50px; }
-  .page-id-91 textarea {
+  .page-template-contact_us textarea {
     height: 275px;
     border-radius: 10px;
     background-color: #dee2e6;
@@ -2905,13 +2907,13 @@ NEWLETTER SIGN-UP AREA
     font-weight: 100;
     color: #5a6f83; }
     @media (min-width: 600px) {
-      .page-id-91 textarea {
+      .page-template-contact_us textarea {
         width: 110%; } }
-  .page-id-91 input[placeholder] {
+  .page-template-contact_us input[placeholder] {
     font-family: 'montserrat';
     font-weight: 100;
     color: #5a6f83; }
-  .page-id-91 .wpcf7-form {
+  .page-template-contact_us .wpcf7-form {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -2919,7 +2921,7 @@ NEWLETTER SIGN-UP AREA
     -ms-flex-align: center;
         align-items: center; }
     @media (min-width: 600px) {
-      .page-id-91 .wpcf7-form {
+      .page-template-contact_us .wpcf7-form {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: row-wrap;
@@ -2932,17 +2934,17 @@ NEWLETTER SIGN-UP AREA
             align-items: center;
         -ms-flex-pack: justify;
             justify-content: space-between; } }
-  .page-id-91 .message-field {
+  .page-template-contact_us .message-field {
     width: 100%;
     padding-top: 1%; }
     @media (min-width: 600px) {
-      .page-id-91 .message-field {
+      .page-template-contact_us .message-field {
         width: 40%;
         padding-top: 1%; } }
-  .page-id-91 .submit-field {
+  .page-template-contact_us .submit-field {
     text-align: center;
     padding-bottom: 10px; }
-  .page-id-91 .contact-form-7-area {
+  .page-template-contact_us .contact-form-7-area {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -2955,7 +2957,7 @@ NEWLETTER SIGN-UP AREA
         justify-content: center;
     text-align: center;
     width: 100%; }
-  .page-id-91 .directions-area {
+  .page-template-contact_us .directions-area {
     height: 540px;
     background-color: #303b46;
     display: -ms-flexbox;
@@ -2966,30 +2968,30 @@ NEWLETTER SIGN-UP AREA
         align-items: center;
     -ms-flex-pack: center;
         justify-content: center; }
-  .page-id-91 .directions-area p {
+  .page-template-contact_us .directions-area p {
     color: white; }
-  .page-id-91 .directions-area h2 {
+  .page-template-contact_us .directions-area h2 {
     color: white;
     text-transform: uppercase;
     font-size: 36px;
     margin-bottom: 10px; }
-  .page-id-91 .google-map {
+  .page-template-contact_us .google-map {
     margin-left: 4%; }
-  .page-id-91 .email-contact {
+  .page-template-contact_us .email-contact {
     padding-top: 20px; }
-  .page-id-91 .address {
+  .page-template-contact_us .address {
     padding-left: 5%;
     font-family: 'montserrat';
     font-weight: 300;
     padding-bottom: 5%; }
-  .page-id-91 .address p {
+  .page-template-contact_us .address p {
     margin-top: 0;
     margin-bottom: 0;
     font-family: 'montserrat';
     font-weight: 300; }
-  .page-id-91 .newsletter-sign-up {
+  .page-template-contact_us .newsletter-sign-up {
     background-color: #dee2e6; }
-  .page-id-91 .newsletter-sign-up h2 {
+  .page-template-contact_us .newsletter-sign-up h2 {
     font-family: 'montserrat';
     font-size: 36px;
     font-weight: bold;
@@ -3001,7 +3003,7 @@ NEWLETTER SIGN-UP AREA
         justify-content: center;
     margin-left: 9%;
     margin-bottom: 0; }
-  .page-id-91 .sign-up-text {
+  .page-template-contact_us .sign-up-text {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -3009,10 +3011,10 @@ NEWLETTER SIGN-UP AREA
     margin-left: 9%;
     padding-bottom: 5%; }
     @media (min-width: 600px) {
-      .page-id-91 .sign-up-text {
+      .page-template-contact_us .sign-up-text {
         -ms-flex-direction: row;
             flex-direction: row; } }
-  .page-id-91 .sign-up-text-request p {
+  .page-template-contact_us .sign-up-text-request p {
     -ms-flex-direction: row;
         flex-direction: row;
     -ms-flex-align: center;
@@ -3023,7 +3025,7 @@ NEWLETTER SIGN-UP AREA
     margin-bottom: 0;
     font-family: 'montserrat';
     font-weight: 300; }
-  .page-id-91 .input-and-buttons {
+  .page-template-contact_us .input-and-buttons {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -3031,24 +3033,24 @@ NEWLETTER SIGN-UP AREA
     padding-left: 0%;
     padding-top: 10px; }
     @media (min-width: 600px) {
-      .page-id-91 .input-and-buttons {
+      .page-template-contact_us .input-and-buttons {
         display: -ms-flexbox;
         display: flex;
         padding-left: 5%;
         -ms-flex-direction: row;
             flex-direction: row; } }
-  .page-id-91 .sign-up-email {
+  .page-template-contact_us .sign-up-email {
     margin-left: 0%; }
     @media (min-width: 600px) {
-      .page-id-91 .sign-up-email {
+      .page-template-contact_us .sign-up-email {
         margin-left: 5%; } }
   @media (min-width: 600px) {
-    .page-id-91 .sign-up-button {
+    .page-template-contact_us .sign-up-button {
       padding-left: 5%; } }
-  .page-id-91 #your-email-inputs {
+  .page-template-contact_us #your-email-inputs {
     background-color: white;
     width: 250px; }
-  .page-id-91 #subscribe-newsletters {
+  .page-template-contact_us #subscribe-newsletters {
     background-color: #383B4C;
     color: white;
     cursor: pointer;
@@ -3062,30 +3064,30 @@ NEWLETTER SIGN-UP AREA
     line-height: 1.2;
     border-width: 0px;
     width: 162px; }
-  .page-id-91 #your-email {
+  .page-template-contact_us #your-email {
     border-radius: 10px 10px 10px 10px;
     background-color: lightgray; }
     @media (min-width: 600px) {
-      .page-id-91 #your-email {
+      .page-template-contact_us #your-email {
         height: 50px;
         width: 252px; } }
-  .page-id-91 #your-email {
+  .page-template-contact_us #your-email {
     border-radius: 10px 10px 10px 10px;
     background-color: lightgray; }
     @media (min-width: 600px) {
-      .page-id-91 #your-email {
+      .page-template-contact_us #your-email {
         height: 50px;
         width: 252px; } }
-  .page-id-91 #wpcf7-f196-o1 input {
+  .page-template-contact_us #wpcf7-f196-o1 input {
     border-radius: 10px 10px 10px 10px;
     background-color: lightgray;
     height: 50px;
     width: 262px; }
     @media (min-width: 600px) {
-      .page-id-91 #wpcf7-f196-o1 input {
+      .page-template-contact_us #wpcf7-f196-o1 input {
         height: 50px;
         width: 100%; } }
-  .page-id-91 input[type=submit] {
+  .page-template-contact_us input[type=submit] {
     background-color: #383B4C;
     color: white;
     cursor: pointer;
@@ -3101,7 +3103,7 @@ NEWLETTER SIGN-UP AREA
     height: 50px;
     width: 162px; }
     @media (min-width: 600px) {
-      .page-id-91 input[type=submit] {
+      .page-template-contact_us input[type=submit] {
         height: 50px;
         width: 162px; } }
 

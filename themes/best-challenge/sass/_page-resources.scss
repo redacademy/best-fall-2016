@@ -232,6 +232,7 @@
             align-self: center;
             a {
                 @include download-link;
+                display: initial;
                 color: $black-text;
                 font-size: 16px;
                 margin: 0;
