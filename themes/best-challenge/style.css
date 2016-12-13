@@ -922,9 +922,9 @@ users choice
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   padding-bottom: 20px; }
 
 .green-banner-data {
@@ -960,20 +960,20 @@ users choice
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column; }
+  flex-direction: column; }
   @media (min-width: 600px) {
     .green-banner-flex {
       -ms-flex-direction: row;
-          flex-direction: row; } }
+      flex-direction: row; } }
 
 .green-buttons {
   margin-bottom: 50px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
-      flex-direction: row;
+  flex-direction: row;
   -ms-flex-pack: center;
-      justify-content: center; }
+  justify-content: center; }
   @media (min-width: 600px) {
     .green-buttons {
       margin-bottom: 0px;
@@ -984,9 +984,9 @@ users choice
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   align-items: center;
   padding-right: 5%; }
 
@@ -994,9 +994,9 @@ users choice
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   align-items: center; }
 
 .button1 a {
@@ -1015,8 +1015,7 @@ users choice
   text-shadow: none;
   width: 200px;
   text-decoration: none;
-  padding-bottom: 5px;
-  padding-right: 5%; }
+  padding-bottom: 5px; }
   @media (min-width: 600px) {
     .button1 a {
       width: 162px;
@@ -1024,7 +1023,7 @@ users choice
       padding: .5rem 2.3rem; } }
 
 .button1 a:hover {
-  background-color: #303b46;
+  background: #303b46;
   color: #a6ce39; }
 
 .button2 a {
@@ -1052,16 +1051,16 @@ users choice
       padding: .5rem 2.3rem; } }
 
 .button2 a:hover {
-  background-color: #303b46;
+  background: #303b46;
   color: #a6ce39; }
 
 form {
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-      justify-content: center; }
+  justify-content: center; }
 
 /*=======================
 this is the css unique to page-id-52
@@ -1073,7 +1072,7 @@ this is the first banner section under the header
   .page-id-52 .front-sponsors {
     display: -ms-flexbox;
     display: flex;
-    height: 80vh;
+    height: 70vh;
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-pack: justify;
@@ -1082,10 +1081,14 @@ this is the first banner section under the header
         align-items: center;
     background: url("../../assets/images/sponsors-grey-bg.png") top no-repeat;
     background-size: cover; }
-  .page-id-52 .modologo {
-    padding-bottom: 1rem; }
+  .page-id-52 .modologo img {
+    height: 100%;
+    padding-bottom: 5rem; }
   .page-id-52 .fp-sponsors-title h2 {
-    visibility: hidden; }
+    visibility: visible;
+    padding-top: 5rem;
+    margin-bottom: 6rem;
+    padding-left: 2rem; }
   .page-id-52 .fp-sponsors-img {
     width: 100%;
     opacity: .5;
@@ -1094,7 +1097,8 @@ this is the first banner section under the header
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -ms-flex-align: center;
-        align-items: center; }
+        align-items: center;
+    margin-bottom: 2rem; }
 
 /*=======================
 this is for the rest of the site
@@ -1122,6 +1126,9 @@ this is for the rest of the site
   background-size: cover;
   margin-bottom: 6rem; }
 
+.banner-heading {
+  text-align: center; }
+
 .modologo {
   margin-bottom: 6rem;
   margin-top: 6rem; }
@@ -1139,6 +1146,10 @@ this is for the rest of the site
   visibility: hidden; }
   @media (min-width: 600px) {
     .fp-sponsors-title h2 {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
       visibility: visible;
       padding-bottom: 2rem; } }
 
@@ -1444,7 +1455,8 @@ this is for the rest of the site
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: justify;
-          justify-content: space-between; } }
+          justify-content: space-between;
+      padding-top: 3.5rem; } }
 
 .best-post-thumb {
   -ms-flex-preferred-size: 48%;
@@ -1455,7 +1467,9 @@ this is for the rest of the site
     margin-top: 2rem; }
     @media (min-width: 600px) {
       .best-post-thumb img {
-        width: 640px; } }
+        width: 413px;
+        outline: 2px solid white;
+        outline-offset: -20px; } }
 
 .best-post-info {
   -ms-flex-direction: column;
@@ -1465,7 +1479,10 @@ this is for the rest of the site
   .best-post-info h3,
   .best-post-info p {
     margin: 0;
-    padding: 1rem; }
+    padding: 0.5rem;
+    color: white;
+    font-family: 'montserrat';
+    margin-left: -40px; }
 
 .best-post-title {
   font-size: 1.5rem;
@@ -1476,16 +1493,30 @@ this is for the rest of the site
     .best-post-title {
       text-align: left; } }
 
+@media (min-width: 600px) {
+  .best-post-info p {
+    padding-bottom: 3rem; } }
+
 .green-read {
   background: url(../../assets/images/green-read-story.png) no-repeat;
-  background-size: 97%; }
+  background-size: 70%;
+  margin-left: 480px;
+  margin-top: -51px; }
 
 .read-green {
   display: block;
-  text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
-  text-decoration: none; }
+  text-decoration: none;
+  padding-bottom: 10rem; }
+
+.green-read a {
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-size: 20px;
+  padding-left: 70px;
+  padding-top: 3px; }
 
 .instagram-grid {
   text-align: center; }
@@ -2452,7 +2483,8 @@ this section is a testimonial
         justify-content: space-around;
     -ms-flex-align: center;
         align-items: center;
-    text-align: center; }
+    text-align: center;
+    padding-top: 6rem; }
   .page-id-34 .font-under-button p {
     font-size: 14px;
     margin-top: 0;
@@ -2588,8 +2620,7 @@ this section is a testimonial
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
-        flex-direction: column;
-    padding-top: 60px; }
+        flex-direction: column; }
 
 /*=======================
 this is the css unique to page-id-91
@@ -3514,8 +3545,7 @@ FORM at bottom of footer
       justify-content: space-between;
   padding-bottom: 0.8rem;
   -ms-flex-direction: column;
-      flex-direction: column;
-  padding-bottom: 20px; }
+      flex-direction: column; }
 
 #sign-up-form {
   -ms-flex-pack: center;

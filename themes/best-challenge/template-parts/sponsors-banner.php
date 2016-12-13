@@ -9,7 +9,9 @@
   <!-- sponsors -->
     <div class="front-sponsors">
         <div class="fp-sponsors-title container">
+            <div class="banner-heading">
             <h2 class="uppercase">Sponsored by</h2>
+            </div>
         </div>
         <div class="fp-sponsors-img container">
             <div class="noMobile">

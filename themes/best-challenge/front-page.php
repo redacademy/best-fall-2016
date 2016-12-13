@@ -74,10 +74,11 @@ get_header(); ?>
             </div>
         </div>
 
-        <?php get_template_part ('template-parts/sponsors-banner'); ?>
+<!-- Sponsors Banner Template Part -->
+    <?php get_template_part ('template-parts/sponsors-banner'); ?>
+<!-- sponsors banner ends--> 
 
-<div class="impact-results container">
-
+    <div class="impact-results container">
             <div class="canada-map">
                     <img id="myImage" src="<?php echo get_template_directory_uri() ?>/assets/images/bcmap.jpg">
                     <div class="map-buttons">
@@ -90,13 +91,11 @@ get_header(); ?>
                 <div class="impact-box">
                 <h3> IMPACT RESULTS 2016</h3>
                 <h4> Total <span>CO2</span> Used </h4>
-            <div class="results-info">
-             
+            <div class="results-info">            
                     <div class="bc-total">
                         <?php echo CFS()->get( 'bc_year_co2' ); ?>
                         <p>British Columbia Total</p>
                     </div>      
-
                     <div class="work-avg">
                         <?php echo CFS()->get( 'avg_commuter_co2' ); ?>
                         <p>Workplace Average</p>
@@ -132,11 +131,12 @@ get_header(); ?>
             <div class = "best-post-info">
                 <h3 class ="best-post-title desktop"><?php the_title();?></h3>
                 <?php the_content();?>
-                <div class="green-read">
-                <a class ="read-green" href="<?php the_permalink();?>">Read Full Story</a>
                 </div>
-            </div>
+        </div>
+    <div class="green-read">
+        <a class ="read-green" href="<?php the_permalink();?>">Read Kelsey's Full Story</a>
     </div>
+
     <?php endforeach;
 wp_reset_postdata(); ?>
 </div>
