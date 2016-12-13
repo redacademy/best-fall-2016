@@ -6,9 +6,15 @@ users choice
 .green-banner {
     background: #a6ce39;
     height: 225px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-bottom: 20px;
     
 }
@@ -50,18 +56,33 @@ users choice
 }
 
 .green-banner-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     @include desktop {
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
     }
 }
 
 .green-buttons {
     margin-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
         @include desktop {
         margin-bottom: 0px;
         margin-top: 0px;
@@ -70,17 +91,29 @@ users choice
 }
 
 .button1{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     align-items:center;
     padding-right:5%;
 }
 
 .button2{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     align-items:center;
 }
 
@@ -98,12 +131,11 @@ users choice
     box-shadow: none;
     line-height: 1.7;
     border-width: 3px;
-    
     text-shadow: none;
     width:200px;
     text-decoration:none;
        padding-bottom: 5px;
-    padding-right: 5%;
+    
         @include desktop {
             width: 162px;
                 height: 50px;
@@ -112,7 +144,7 @@ users choice
 }
 }
 .button1 a:hover{
-    background-color: #303b46;;
+    background: #303b46;;
     color:#a6ce39;
 
 }
@@ -144,12 +176,18 @@ users choice
 }
 
 .button2 a:hover{
-background-color: #303b46;
+background: #303b46;
 color:#a6ce39;
 }
 
 form{
-    align-items:center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content:center;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
 }

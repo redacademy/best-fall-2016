@@ -851,9 +851,9 @@ users choice
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   padding-bottom: 20px; }
 
 .green-banner-data {
@@ -889,20 +889,20 @@ users choice
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column; }
+  flex-direction: column; }
   @media (min-width: 600px) {
     .green-banner-flex {
       -ms-flex-direction: row;
-          flex-direction: row; } }
+      flex-direction: row; } }
 
 .green-buttons {
   margin-bottom: 50px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
-      flex-direction: row;
+  flex-direction: row;
   -ms-flex-pack: center;
-      justify-content: center; }
+  justify-content: center; }
   @media (min-width: 600px) {
     .green-buttons {
       margin-bottom: 0px;
@@ -913,9 +913,9 @@ users choice
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   align-items: center;
   padding-right: 5%; }
 
@@ -923,9 +923,9 @@ users choice
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   align-items: center; }
 
 .button1 a {
@@ -944,8 +944,7 @@ users choice
   text-shadow: none;
   width: 200px;
   text-decoration: none;
-  padding-bottom: 5px;
-  padding-right: 5%; }
+  padding-bottom: 5px; }
   @media (min-width: 600px) {
     .button1 a {
       width: 162px;
@@ -953,7 +952,7 @@ users choice
       padding: .5rem 2.3rem; } }
 
 .button1 a:hover {
-  background-color: #303b46;
+  background: #303b46;
   color: #a6ce39; }
 
 .button2 a {
@@ -981,16 +980,16 @@ users choice
       padding: .5rem 2.3rem; } }
 
 .button2 a:hover {
-  background-color: #303b46;
+  background: #303b46;
   color: #a6ce39; }
 
 form {
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-      justify-content: center; }
+  justify-content: center; }
 
 /*=======================
 this is the css unique to page-id-52
@@ -2393,7 +2392,8 @@ this section is a testimonial
         justify-content: space-around;
     -ms-flex-align: center;
         align-items: center;
-    text-align: center; }
+    text-align: center;
+    padding-top: 6rem; }
   .page-id-34 .font-under-button p {
     font-size: 14px;
     margin-top: 0;
