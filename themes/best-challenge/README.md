@@ -4,34 +4,35 @@ B.E.S.T is a fully funtional wordpress site featuring a stylish, modern design a
 
 FEATURES
 
-Instanews Feed - used on front page to showcase community involvement.
+- Instanews Feed - used on front page to showcase community involvement.
 
-Typewriter Animation - a nifty animation that auto populates text on the
+- Typewriter Animation - a nifty animation that auto populates text on the
 front page.
 
-Custom Fields
-Custom Post Types
+- Custom Fields
+
+- Custom Post Types
 
 
 LANGUAGES USED
 
--Javascript 
--JQuery 
--HTML5 
--CSS3/SASS
+- Javascript 
+- JQuery 
+- HTML5 
+- CSS3/SASS
 
 PROGRAMS
 
--WordPress
--MAMP
--Apache
--mySQL
+- WordPress
+- MAMP
+- Apache
+- mySQL
 
 PLUGINS
 
--Contact Form 7
--Instagram Feed WD
--WP Migrate DB Pro
+- Contact Form 7
+- Instagram Feed WD
+- WP Migrate DB Pro
 
 MOTIVATION
 
@@ -44,8 +45,8 @@ Tests used include theme-check, debug-bar, and cross-browser testing.
 
 Contributors
 
--Anna Kviese
--Brandon Izzard
--Brett MacDonald
+- Anna Kviese
+- Brandon Izzard
+- Brett MacDonald
 
 
