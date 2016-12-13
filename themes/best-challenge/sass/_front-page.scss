@@ -354,7 +354,8 @@
         }     
     }
     .read-more {
-        display: none;
+        
+        visibility:hidden;
     }
     .green-read {
         display: initial;
