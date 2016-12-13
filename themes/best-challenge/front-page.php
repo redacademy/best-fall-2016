@@ -139,7 +139,7 @@ get_header(); ?>
 
                 <div class = "best-post-info">
                     <h3 class ="best-post-title desktop"><?php the_title();?></h3>
-                        <?php the_content();?>
+                    <?php the_excerpt(); ?>
                 </div>
             </div><!-- best-journal-content -->
             <div class="green-read">
