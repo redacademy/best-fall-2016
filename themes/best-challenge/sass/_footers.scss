@@ -183,8 +183,11 @@ para-content {
 
 .logo-image {
     font-size: 2rem;
-    text-align: left;
+    text-align: center;
     width:100%;
+    @include desktop {
+        text-align: left;
+    }
 }
 
 .commuterChallenge-contact-logos {
