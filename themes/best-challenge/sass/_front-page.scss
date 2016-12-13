@@ -217,17 +217,47 @@
     .impact-box {
         border: 2px solid $dark-text;
         padding: 1rem;
-        width: 100%;
-        height: 95%;
+        width: 450px;
+        height: 391px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        h3{
+        h2{
+            margin: 0;
+            font-size: 28px;
+            @include desktop {
             font-size: 30px;
+            }
         }
+        h3 {
+            margin: 0;
+            font-size: 30px;
+            font-weight: 300;
+            span {              
+                font-weight: bold;
+            }
+        }
+        .total , .work-avg {
+            h4{
+            margin: 0;
+            font-size: 30px;
+            font-weight: bold;
+            }
+            p {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 300;
+            }
+        }
+        .dark-button input[type=button] {
+        @include dark-button;
+        &:focus {
+				outline: none;
+			}
+    }
     }
 
-    .results-info {
+    .bc-results-info , .canada-results-info {
         display: flex;
         justify-content: space-around;
         align-items: flex-end;

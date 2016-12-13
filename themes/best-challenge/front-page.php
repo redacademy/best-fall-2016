@@ -82,31 +82,45 @@ get_header(); ?>
             <div class="canada-map">
                     <img id="myImage" src="<?php echo get_template_directory_uri() ?>/assets/images/bcmap.jpg">
                     <div class="map-buttons">
-                    <a class="bcbutton" onclick="document.getElementById('myImage').src='<?php echo get_template_directory_uri() ?>/assets/images/bcmap.jpg'">BC</a>
-                    <a class="canadabutton" onclick="document.getElementById('myImage').src='<?php echo get_template_directory_uri() ?>/assets/images/canadamap.jpg'"> Canada</a>
+                        <a class="bcbutton" onclick="document.getElementById('myImage').src='<?php echo get_template_directory_uri() ?>/assets/images/bcmap.jpg'">BC</a>
+                        <a class="canadabutton" onclick="document.getElementById('myImage').src='<?php echo get_template_directory_uri() ?>/assets/images/canadamap.jpg'"> Canada</a>
                     </div>
             </div>
 
             <div class="fp-impact-results">
                 <div class="impact-box">
-                <h3> IMPACT RESULTS 2016</h3>
-                <h4> Total <span>CO2</span> Used </h4>
-            <div class="results-info">            
-                    <div class="bc-total">
-                        <?php echo CFS()->get( 'bc_year_co2' ); ?>
-                        <p>British Columbia Total</p>
-                    </div>      
-                    <div class="work-avg">
-                        <?php echo CFS()->get( 'avg_commuter_co2' ); ?>
-                        <p>Workplace Average</p>
-                    </div>
-                </div>          
-                <button> See more results </button>
-        </div>
-        </div>
-</div>
+                    <h2> IMPACT RESULTS 2016</h2>
+                    <h3> Total <span>CO2</span> Used </h3>
+                    <div class="bc-results-info">            
+                        <div class="total">
+                            <h4><?php echo CFS()->get( 'bc_co2_total' ); ?></h4>
+                            <p>British Columbia Total</p>
+                        </div>      
+                        <div class="work-avg">
+                            <h4><?php echo CFS()->get( 'bc_average' ); ?></h4>
+                            <p>Workplace Average</p>
+                        </div>
+                    </div> 
+                    <div class="canada-results-info">            
+                        <div class="total">
+                            <h4><?php echo CFS()->get( 'canada_co2_total' ); ?></h4>
+                            <p>British Columbia Total</p>
+                        </div>      
+                        <div class="work-avg">
+                            <h4><?php echo CFS()->get( 'canada_average' ); ?></h4>
+                            <p>Workplace Average</p>
+                        </div>
+                    </div>         
+                    <div class="dark-button">
+						<a href="<?php echo esc_url( site_url( '/participant_location/results/' ) ); ?>">
+							<input type="button"  value="See More Results">
+						</a>
+					</div>
+                </div>
 
-    
+            </div> <!-- impact results box -->
+
+    </div>
     <!--Blog-->
 
 
