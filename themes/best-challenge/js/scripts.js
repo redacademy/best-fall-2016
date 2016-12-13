@@ -43,7 +43,7 @@
   $('.menu-toggle').on('click', function () {
     event.preventDefault();
     $('#primary-menu').animate({ height: 'toggle' });
-    $('#primary-menu').css("display", "flex");
+    // $('#primary-menu').css("display", "flex");
     //  $("#primary-menu").toggleClass('hidden');
   });
 
