@@ -10,8 +10,7 @@ get_header(); ?>
         <main id="main" class="site-main" role="main">
             <div class = "picture-wrapper-results"> 
                 <div class="title-wrapper">     
-                    <?php the_title( '<div class="heading"><h1>', '</h1></div>' ); ?>
-                
+                    <?php the_title( '<div class="heading"><h1>', '</h1></div>' ); ?>              
                     <div class="title-info">    
                         <p><?php echo CFS()->get( 'title_info'); ?></p>
                     </div>
@@ -21,8 +20,8 @@ get_header(); ?>
             <div class="page-description"> 
                     <p><?php echo CFS()->get( 'page_description'); ?></p>
             </div>  
+            
         <div class="impact-results-area"> 
-
             <div class="ir-co2">
                 <div class="ir-co2-avg left">
                     <p>The average commuter in Canada emits<span> <?php echo CFS()->get( 'avg_commuter_co2' ); ?></span> of CO2 per week. </p>

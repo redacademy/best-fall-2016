@@ -3094,88 +3094,78 @@ NEWLETTER SIGN-UP AREA
         height: 50px;
         width: 162px; } }
 
-.page-id-113 .page-heading {
+.page-template-page-results .page-heading {
   margin-bottom: 1rem; }
 
-.page-id-113 .picture-wrapper-results {
-  display: -ms-flexbox;
-  display: flex;
-  background: url("../../assets/images/results-header-mobile.png") center no-repeat;
-  background-size: cover;
-  height: 30vh;
-  -ms-flex-align: center;
-      align-items: center;
+.page-template-page-results .picture-wrapper-results {
+  background: url("../../assets/images/backgrounds/impact-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   -ms-flex-pack: center;
       justify-content: center;
-  padding-bottom: 20px;
-  margin-bottom: 4px;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-  @media (min-width: 600px) {
-    .page-id-113 .picture-wrapper-results {
-      background: url("../../assets/images/results-header.png") center no-repeat;
-      background-size: cover; } }
-
-.page-id-113 .picture-wrapper-results h1 {
-  line-height: 3.5rem;
+  max-width: 100%;
+  height: 255px;
   color: white;
-  font-size: 2rem;
-  margin-bottom: 0;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'montserrat'; }
+  display: -ms-flexbox;
+  display: flex; }
   @media (min-width: 600px) {
-    .page-id-113 .picture-wrapper-results h1 {
-      font-size: 3rem; } }
-
-.page-id-113 .picture-wrapper-results p {
-  color: white;
-  font-family: 'montserrat';
-  font-weight: 300;
-  margin-top: 0;
-  text-align: center;
-  font-size: 1rem; }
+    .page-template-page-results .picture-wrapper-results {
+      background-position: center;
+      height: 300px; } }
   @media (min-width: 600px) {
-    .page-id-113 .picture-wrapper-results p {
-      font-size: 1rem; } }
+    .page-template-page-results .picture-wrapper-results {
+      background: url("../../assets/images/backgrounds/impact-header.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      -ms-flex-pack: center;
+          justify-content: center;
+      max-width: 100%;
+      height: 255px;
+      color: white;
+      display: -ms-flexbox;
+      display: flex; } }
+  @media (min-width: 600px) and (min-width: 600px) {
+    .page-template-page-results .picture-wrapper-results {
+      background-position: center;
+      height: 300px; } }
 
-.page-id-113 .impact-results-info {
+.page-template-page-results .impact-results-info {
   text-align: center;
   height: 10vh;
   padding: 1rem 0; }
-  .page-id-113 .impact-results-info p {
+  .page-template-page-results .impact-results-info p {
     max-width: 60vw;
     margin: 0 auto; }
 
-.page-id-113 .impact-results-area {
+.page-template-page-results .impact-results-area {
   position: relative; }
-  .page-id-113 .impact-results-area p {
+  .page-template-page-results .impact-results-area p {
     font-weight: 300;
     font-size: 1rem;
     max-width: 24vw; }
     @media (min-width: 600px) {
-      .page-id-113 .impact-results-area p {
+      .page-template-page-results .impact-results-area p {
         font-size: 1.2rem;
         line-height: 1.2; } }
     @media (min-width: 1200px) {
-      .page-id-113 .impact-results-area p {
+      .page-template-page-results .impact-results-area p {
         line-height: 1.5;
         font-size: 1.5rem; } }
-    .page-id-113 .impact-results-area p span {
+    .page-template-page-results .impact-results-area p span {
       display: block;
       font-size: 2rem;
       font-weight: 700; }
       @media (min-width: 600px) {
-        .page-id-113 .impact-results-area p span {
+        .page-template-page-results .impact-results-area p span {
           font-size: 2.5rem; } }
 
-.page-id-113 .left {
+.page-template-page-results .left {
   text-align: left; }
 
-.page-id-113 .right {
+.page-template-page-results .right {
   text-align: right; }
 
-.page-id-113 .ir-co2 {
+.page-template-page-results .ir-co2 {
   background: url("../../assets/images/ir-lightgrey-curve-top.png") top no-repeat;
   background-size: cover;
   height: 40vh;
@@ -3187,23 +3177,23 @@ NEWLETTER SIGN-UP AREA
   -ms-flex-align: center;
       align-items: center; }
   @media (min-width: 600px) {
-    .page-id-113 .ir-co2 {
+    .page-template-page-results .ir-co2 {
       padding-bottom: 5vh; } }
-  .page-id-113 .ir-co2 div {
+  .page-template-page-results .ir-co2 div {
     height: 25vh;
     min-width: 20vw; }
-    .page-id-113 .ir-co2 div p {
+    .page-template-page-results .ir-co2 div p {
       max-width: 25vw;
       padding-bottom: 2vw;
       color: #303b46; }
-  .page-id-113 .ir-co2 .ir-co2-image {
+  .page-template-page-results .ir-co2 .ir-co2-image {
     position: absolute;
     background: url("../../assets/images/circle-co2.png") center no-repeat;
     background-size: contain;
     z-index: 1;
     bottom: 20%; }
 
-.page-id-113 .ir-km {
+.page-template-page-results .ir-km {
   background: url("../../assets/images/ir-grey-curve-top.png") top no-repeat;
   background-size: cover;
   height: 50vh;
@@ -3216,22 +3206,22 @@ NEWLETTER SIGN-UP AREA
   -ms-flex-align: center;
       align-items: center; }
   @media (min-width: 600px) {
-    .page-id-113 .ir-km {
+    .page-template-page-results .ir-km {
       margin-top: -11vh; } }
-  .page-id-113 .ir-km div {
+  .page-template-page-results .ir-km div {
     height: 25vh;
     min-width: 20vw; }
-    .page-id-113 .ir-km div p {
+    .page-template-page-results .ir-km div p {
       padding-bottom: 2vw;
       color: #fbfcfc; }
-  .page-id-113 .ir-km .ir-km-image {
+  .page-template-page-results .ir-km .ir-km-image {
     position: absolute;
     background: url("../../assets/images/circle-distance.png") center no-repeat;
     background-size: contain;
     z-index: 1;
     bottom: 20%; }
 
-.page-id-113 .ir-register {
+.page-template-page-results .ir-register {
   background: url("../../assets/images/ir-dark-concave.png") top no-repeat;
   background-size: cover;
   height: 60vh;
@@ -3245,23 +3235,23 @@ NEWLETTER SIGN-UP AREA
       align-items: center;
   padding-bottom: 5vh; }
   @media (min-width: 600px) {
-    .page-id-113 .ir-register {
+    .page-template-page-results .ir-register {
       margin-top: -11vh; } }
-  .page-id-113 .ir-register div {
+  .page-template-page-results .ir-register div {
     height: 25vh;
     min-width: 20vw; }
-    .page-id-113 .ir-register div p {
+    .page-template-page-results .ir-register div p {
       max-width: 25vw;
       padding-bottom: 2vw;
       color: #a6ce39; }
-  .page-id-113 .ir-register .ir-register-image {
+  .page-template-page-results .ir-register .ir-register-image {
     position: absolute;
     background: url("../../assets/images/circle-participants.png") center no-repeat;
     background-size: contain;
     z-index: 1;
     bottom: 30%; }
 
-.page-id-113 .ir-calories {
+.page-template-page-results .ir-calories {
   background: url("../../assets/images/ir-grey-curve-bottom.png") top no-repeat;
   background-size: cover;
   height: 50vh;
@@ -3275,28 +3265,28 @@ NEWLETTER SIGN-UP AREA
       align-items: center;
   padding-bottom: 11vh; }
   @media (min-width: 600px) {
-    .page-id-113 .ir-calories {
+    .page-template-page-results .ir-calories {
       margin-top: -11vh;
       padding-bottom: 16vh; } }
   @media (min-width: 800px) {
-    .page-id-113 .ir-calories {
+    .page-template-page-results .ir-calories {
       margin-top: -11vh;
       padding-bottom: 11vh; } }
-  .page-id-113 .ir-calories div {
+  .page-template-page-results .ir-calories div {
     height: 25vh;
     min-width: 20vw; }
-    .page-id-113 .ir-calories div p {
+    .page-template-page-results .ir-calories div p {
       max-width: 24vw;
       padding-bottom: 2vw;
       color: #dee2e6; }
-  .page-id-113 .ir-calories .ir-calories-image {
+  .page-template-page-results .ir-calories .ir-calories-image {
     position: absolute;
     background: url("../../assets/images/circle-carbs.png") center no-repeat;
     background-size: contain;
     z-index: 1;
     bottom: 36%; }
 
-.page-id-113 .ir-fuel {
+.page-template-page-results .ir-fuel {
   background: url("../../assets/images/ir-lightgrey-curve-bottom.png") top no-repeat;
   background-size: cover;
   height: 53vh;
@@ -3310,30 +3300,30 @@ NEWLETTER SIGN-UP AREA
       align-items: center;
   padding-bottom: 10vh; }
   @media (min-width: 600px) {
-    .page-id-113 .ir-fuel {
+    .page-template-page-results .ir-fuel {
       margin-top: -11vh;
       padding-bottom: 11vh; } }
-  .page-id-113 .ir-fuel div {
+  .page-template-page-results .ir-fuel div {
     height: 25vh;
     min-width: 20vw; }
-    .page-id-113 .ir-fuel div p {
+    .page-template-page-results .ir-fuel div p {
       max-width: 25vw;
       padding-bottom: 2vw; }
       @media (min-width: 600px) {
-        .page-id-113 .ir-fuel div p {
+        .page-template-page-results .ir-fuel div p {
           max-width: 19vw; } }
-  .page-id-113 .ir-fuel .ir-fuel-image {
+  .page-template-page-results .ir-fuel .ir-fuel-image {
     position: absolute;
     background: url("../../assets/images/circle-station.png") center no-repeat;
     background-size: contain;
     z-index: 1;
     bottom: 36%; }
 
-.page-id-113 .ir-co2:after,
-.page-id-113 .ir-km:after,
-.page-id-113 .ir-register:after,
-.page-id-113 .ir-calories:after,
-.page-id-113 .ir-fuel:after {
+.page-template-page-results .ir-co2:after,
+.page-template-page-results .ir-km:after,
+.page-template-page-results .ir-register:after,
+.page-template-page-results .ir-calories:after,
+.page-template-page-results .ir-fuel:after {
   content: "";
   position: absolute;
   z-index: 0;
