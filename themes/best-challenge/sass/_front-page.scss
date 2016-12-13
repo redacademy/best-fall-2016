@@ -273,6 +273,7 @@
         @include desktop {
             background: url(../../assets/images/greycurve.png);
             @include background-image;
+            min-height: 499px;
         }
 
 }
@@ -284,11 +285,10 @@
     flex-direction:column;
     padding: 1rem;
     @include desktop {
-        max-width: 1140px;
+        /*max-width: 1140px;*/
         display: flex;
         justify-content: space-between;
-        padding: 1rem;
-
+        padding-top: 5%;
     }
 }
 
@@ -299,7 +299,7 @@
     @include desktop {
         display: flex;
         justify-content: space-between;
-        padding-top: 3.5rem;
+        padding-top: 1.5rem;
         flex-direction:row;
         
     }
@@ -308,19 +308,22 @@
 .best-post-thumb {
     flex-basis: 48%;
     text-align: center;
+    width: 472px;
+    height: 316px;
+    @include desktop {
+        /*padding-top: 50px;*/
+    }
     img {
         width: 90%;
         height: auto;
         outline: 2px solid white;
         outline-offset: -20px;
-        margin-top: 2rem;
         @include desktop {
             width: 472px;
             height: 316px;
         }
     }
     h3 {
-        margin: 0;
         font-size: 28px;
         text-transform: uppercase;
         @include desktop {
@@ -333,20 +336,33 @@
     width: 90%;
     flex-direction: column;
     flex-basis: 48%;
+    padding-top: 15%;
+    @include desktop {
+        height: 316px;
+        padding-top: 0;
+    }
     
     p {
         color: $black-text;
         font-weight: 300;
         text-align: left;
-        font-size: 25px;  
+        font-size: 25px; 
         @include desktop {
             color: white;
-            font-size: 28px;
-            text-align: center;  
+            font-size: 18px;
+            margin-top: 0; 
         }     
     }
-    a {
+    .read-more {
         display: none;
+    }
+    .green-read {
+        display: initial;
+    }
+    h3 {
+        font-size: 32px;
+        text-transform: uppercase;
+        color: white;
     }
 }
 
@@ -358,7 +374,7 @@
     text-align: center;
     @include desktop {
         text-align: left;
-
+        padding: 0;
     }
 }
 
@@ -368,18 +384,20 @@
     background-size: 100%;
     height: 47px;
     @include desktop {
-        background-size: 70%;
+        background-size: 418px 41px;
         margin-left: 30rem;
-        margin-top:-3.2rem;
+        margin-top: 10px;
         }
     a{
         display:flex;
         color:$dark-text;
         font-size: 25px;
-        padding: 0.1rem 0 0 7rem;
+        padding: 0.1rem 0 0 5rem;
         cursor: pointer;
         @include desktop {
             color: white;
+            font-size: 18px;
+            font-weight: normal;
         }
 
     }
@@ -397,6 +415,9 @@
 ///---------------- Instagram Area ---------- ///
 .instagram-grid {
     text-align: center;
+    h2 {
+        font-size: 35px;
+    }
 }
 
 .wdi_photo_wrap {

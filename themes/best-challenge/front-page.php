@@ -136,10 +136,9 @@ get_header(); ?>
                     <h3 class ="best-post-title mobile"><?php the_title();?></h3>
                     <?php the_post_thumbnail(); ?>
                 </div>
-
                 <div class = "best-post-info">
-                    <h3 class ="best-post-title desktop"><?php the_title();?></h3>
-                    <?php the_excerpt(); ?>
+                    <div class ="best-post-title desktop"><h3><?php the_title();?></h3></div>
+                    <div class="excerpt"><p><?php the_excerpt(); ?></p></div>      
                 </div>
             </div><!-- best-journal-content -->
             <div class="green-read">

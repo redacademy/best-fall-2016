@@ -1528,7 +1528,8 @@ this is for the rest of the site
       background-position: center;
       -ms-flex-pack: center;
           justify-content: center;
-      max-width: 100%; } }
+      max-width: 100%;
+      min-height: 499px; } }
 
 .best-journal-container {
   width: 90%;
@@ -1539,12 +1540,12 @@ this is for the rest of the site
   padding: 1rem; }
   @media (min-width: 600px) {
     .best-journal-container {
-      max-width: 1140px;
+      /*max-width: 1140px;*/
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: justify;
           justify-content: space-between;
-      padding: 1rem; } }
+      padding-top: 5%; } }
 
 .best-journal-content {
   -ms-flex-align: center;
@@ -1559,26 +1560,29 @@ this is for the rest of the site
       display: flex;
       -ms-flex-pack: justify;
           justify-content: space-between;
-      padding-top: 3.5rem;
+      padding-top: 1.5rem;
       -ms-flex-direction: row;
           flex-direction: row; } }
 
 .best-post-thumb {
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
-  text-align: center; }
+  text-align: center;
+  width: 472px;
+  height: 316px; }
+  @media (min-width: 600px) {
+    .best-post-thumb {
+      /*padding-top: 50px;*/ } }
   .best-post-thumb img {
     width: 90%;
     height: auto;
     outline: 2px solid white;
-    outline-offset: -20px;
-    margin-top: 2rem; }
+    outline-offset: -20px; }
     @media (min-width: 600px) {
       .best-post-thumb img {
         width: 472px;
         height: 316px; } }
   .best-post-thumb h3 {
-    margin: 0;
     font-size: 28px;
     text-transform: uppercase; }
     @media (min-width: 600px) {
@@ -1590,7 +1594,12 @@ this is for the rest of the site
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-preferred-size: 48%;
-      flex-basis: 48%; }
+      flex-basis: 48%;
+  padding-top: 15%; }
+  @media (min-width: 600px) {
+    .best-post-info {
+      height: 316px;
+      padding-top: 0; } }
   .best-post-info p {
     color: #303b46;
     font-weight: 300;
@@ -1599,10 +1608,16 @@ this is for the rest of the site
     @media (min-width: 600px) {
       .best-post-info p {
         color: white;
-        font-size: 28px;
-        text-align: center; } }
-  .best-post-info a {
+        font-size: 18px;
+        margin-top: 0; } }
+  .best-post-info .read-more {
     display: none; }
+  .best-post-info .green-read {
+    display: initial; }
+  .best-post-info h3 {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: white; }
 
 .best-post-title {
   font-size: 1.5rem;
@@ -1611,7 +1626,8 @@ this is for the rest of the site
   text-align: center; }
   @media (min-width: 600px) {
     .best-post-title {
-      text-align: left; } }
+      text-align: left;
+      padding: 0; } }
 
 .green-read {
   background: url(../../assets/images/green-read-story.png) no-repeat;
@@ -1619,19 +1635,21 @@ this is for the rest of the site
   height: 47px; }
   @media (min-width: 600px) {
     .green-read {
-      background-size: 70%;
+      background-size: 418px 41px;
       margin-left: 30rem;
-      margin-top: -3.2rem; } }
+      margin-top: 10px; } }
   .green-read a {
     display: -ms-flexbox;
     display: flex;
     color: #303b46;
     font-size: 25px;
-    padding: 0.1rem 0 0 7rem;
+    padding: 0.1rem 0 0 5rem;
     cursor: pointer; }
     @media (min-width: 600px) {
       .green-read a {
-        color: white; } }
+        color: white;
+        font-size: 18px;
+        font-weight: normal; } }
 
 .read-green {
   display: block;
@@ -1642,6 +1660,8 @@ this is for the rest of the site
 
 .instagram-grid {
   text-align: center; }
+  .instagram-grid h2 {
+    font-size: 35px; }
 
 .wdi_photo_wrap li {
   border: 5px solid black; }
