@@ -22,13 +22,14 @@ this is the css for the redirect banner which appears on button click
     padding-left:10%;
     padding-right:10%;
     text-align:center;
-}
-
-.entry-content p{
+    p{
     font-family:'montserrat', serif;
     font-weight: 300;
     font-size:20px;
+    }
 }
+
+
 
  /*=======================
 this is the first image on page
@@ -59,15 +60,14 @@ this is a section with three blocks flexed explaining the benefits of the Commut
     flex-direction:column;
     align-items:center;
     padding-top:20px;
-      @include desktop {
+    
+        @include desktop {
         flex-direction:row;
         padding-bottom:60px;
       }
 }
 
 .challenge-benefit-blocks p{
- 
- 
     @include desktop {
     font-family:'montserrat';
     font-weight: 300;
@@ -80,9 +80,7 @@ this is a section with three blocks flexed explaining the benefits of the Commut
     flex: 0 1 33%;
     max-width: 50%;
     align-items:center;
-
-
-     @include desktop {
+    @include desktop {
     -webkit-flex: 0 1 33%;
     -ms-flex: 0 1 33%;
     flex: 0 1 33%;
@@ -116,29 +114,34 @@ CUSTOM-FIELD-SUITE loop items with four blocks flexed
    padding-top:50px;
     background:url('../../assets/images/blue-background-large@3x.png') center ;
     background-size: cover;
-    }
-
-.how-to-participate-wrapper h2{
+    h2{
     text-transform:uppercase;
     color:white;
     text-align:center;
     font-family: 'montserrat';
+    }
+h2{
+font-size:36px;
+text-transform:uppercase;
+
 }
 
-.how-to-participate-wrapper h3{
+h3{
     color:white;
     font-size:16px;
     width:60%;
     font-family: 'montserrat';
-}
-
-.how-to-participate-wrapper p{
+    }
+p{
     color:white;
     text-align:center;
     font-size:20px;
     font-family:'montserrat';
     font-weight: bold;
+    }
 }
+
+
 
 .challenge-participate-blocks{
    display: -webkit-flex;
@@ -317,6 +320,7 @@ this section has two flexed blocks which links readers to additional resources
     display:flex;
     flex-direction:column;
         @include desktop {
+            padding-top: 40px;
             display:flex;
             flex-direction:row;
     }

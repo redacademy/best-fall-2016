@@ -2472,10 +2472,10 @@ this section is a testimonial
     padding-left: 10%;
     padding-right: 10%;
     text-align: center; }
-  .page-template-get_involved .entry-content p {
-    font-family: 'montserrat', serif;
-    font-weight: 300;
-    font-size: 20px; }
+    .page-template-get_involved .entry-content p {
+      font-family: 'montserrat', serif;
+      font-weight: 300;
+      font-size: 20px; }
   .page-template-get_involved .get-involved-background {
     background: url("../../assets/images/backgrounds/involved-header-mobile.png");
     background-repeat: no-repeat;
@@ -2556,22 +2556,25 @@ this section is a testimonial
     padding-top: 50px;
     background: url("../../assets/images/blue-background-large@3x.png") center;
     background-size: cover; }
-  .page-template-get_involved .how-to-participate-wrapper h2 {
-    text-transform: uppercase;
-    color: white;
-    text-align: center;
-    font-family: 'montserrat'; }
-  .page-template-get_involved .how-to-participate-wrapper h3 {
-    color: white;
-    font-size: 16px;
-    width: 60%;
-    font-family: 'montserrat'; }
-  .page-template-get_involved .how-to-participate-wrapper p {
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    font-family: 'montserrat';
-    font-weight: bold; }
+    .page-template-get_involved .how-to-participate-wrapper h2 {
+      text-transform: uppercase;
+      color: white;
+      text-align: center;
+      font-family: 'montserrat'; }
+    .page-template-get_involved .how-to-participate-wrapper h2 {
+      font-size: 36px;
+      text-transform: uppercase; }
+    .page-template-get_involved .how-to-participate-wrapper h3 {
+      color: white;
+      font-size: 16px;
+      width: 60%;
+      font-family: 'montserrat'; }
+    .page-template-get_involved .how-to-participate-wrapper p {
+      color: white;
+      text-align: center;
+      font-size: 20px;
+      font-family: 'montserrat';
+      font-weight: bold; }
   .page-template-get_involved .challenge-participate-blocks {
     display: -ms-flexbox;
     display: flex;
@@ -2716,6 +2719,7 @@ this section is a testimonial
         flex-direction: column; }
     @media (min-width: 600px) {
       .page-template-get_involved .need-resources {
+        padding-top: 40px;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-direction: row;
@@ -2842,36 +2846,36 @@ NEWLETTER SIGN-UP AREA
   .page-template-contact_us .contact-person-data {
     line-height: 1.3;
     text-align: center; }
+    .page-template-contact_us .contact-person-data h2 {
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 36px;
+      font-family: 'montserrat';
+      font-weight: bold;
+      color: #303b46; }
+    .page-template-contact_us .contact-person-data p {
+      font-family: 'montserrat';
+      font-size: 20px;
+      font-weight: 300;
+      color: #303b46;
+      margin-bottom: 0;
+      margin-top: 0; }
     @media (min-width: 600px) {
       .page-template-contact_us .contact-person-data {
         text-align: left; } }
-  .page-template-contact_us .contact-person-data h2 {
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 36px;
-    font-family: 'montserrat';
-    font-weight: bold;
-    color: #303b46; }
-  .page-template-contact_us .contact-person-data p {
-    font-family: 'montserrat';
-    font-size: 20px;
-    font-weight: 300;
-    color: #303b46;
-    margin-bottom: 0;
-    margin-top: 0; }
   .page-template-contact_us .contact-form-area {
     background-color: #5a6f83;
     padding-top: 20px; }
-  .page-template-contact_us .contact-form-area h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'montserrat';
-    font-size: 36px;
-    font-weight: bold;
-    color: white;
-    margin-top: 0;
-    margin-bottom: 0; }
+    .page-template-contact_us .contact-form-area h2 {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'montserrat';
+      font-size: 36px;
+      font-weight: bold;
+      color: white;
+      margin-top: 0;
+      margin-bottom: 0; }
   .page-template-contact_us input[type="text"],
   .page-template-contact_us input[type="email"],
   .page-template-contact_us input[type="tel"] {
@@ -2970,13 +2974,13 @@ NEWLETTER SIGN-UP AREA
         align-items: center;
     -ms-flex-pack: center;
         justify-content: center; }
-  .page-template-contact_us .directions-area p {
-    color: white; }
-  .page-template-contact_us .directions-area h2 {
-    color: white;
-    text-transform: uppercase;
-    font-size: 36px;
-    margin-bottom: 10px; }
+    .page-template-contact_us .directions-area p {
+      color: white; }
+    .page-template-contact_us .directions-area h2 {
+      color: white;
+      text-transform: uppercase;
+      font-size: 36px;
+      margin-bottom: 10px; }
   .page-template-contact_us .google-map {
     margin-left: 4%; }
   .page-template-contact_us .email-contact {
@@ -2986,11 +2990,11 @@ NEWLETTER SIGN-UP AREA
     font-family: 'montserrat';
     font-weight: 300;
     padding-bottom: 5%; }
-  .page-template-contact_us .address p {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: 'montserrat';
-    font-weight: 300; }
+    .page-template-contact_us .address p {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-family: 'montserrat';
+      font-weight: 300; }
   .page-template-contact_us .newsletter-sign-up {
     background-color: #dee2e6; }
   .page-template-contact_us .newsletter-sign-up h2 {
@@ -3066,13 +3070,6 @@ NEWLETTER SIGN-UP AREA
     line-height: 1.2;
     border-width: 0px;
     width: 162px; }
-  .page-template-contact_us #your-email {
-    border-radius: 10px 10px 10px 10px;
-    background-color: lightgray; }
-    @media (min-width: 600px) {
-      .page-template-contact_us #your-email {
-        height: 50px;
-        width: 252px; } }
   .page-template-contact_us #your-email {
     border-radius: 10px 10px 10px 10px;
     background-color: lightgray; }
