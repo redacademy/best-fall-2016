@@ -32,7 +32,7 @@ get_header(); ?>
 
 								<?php $args = array(
 									'post_type' => 'prize',
-									// 'posts_per_page' => 4,
+									'posts_per_page' => 8,
 									'tax_query' => array( 
 										array(
 											'taxonomy' => 'prize_type',
