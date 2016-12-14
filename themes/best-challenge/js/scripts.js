@@ -10,13 +10,17 @@
 (function ($) {
   //function to show prize description on click 
 
-  $('#prize-posts').on('click', function (event) {
+  $('.prizes-posts').on('click', function (event) {
     event.preventDefault();
-    $(this).find('#prize-description').css('display', 'initial');
+    $(this).children('.taxonomy-description').toggle();
   });
-  $('#prize-description').mouseleave(function () {
+  $('.taxonomy-description').mouseleave(function () {
     $(this).css('display', 'none');
   });
+  //   $(window).on('click', function () {
+  //     console.log("smarahfiahfa");
+  //   $('.taxonomy-description').css('display', 'none');
+  // });
 
 
   // Prize categories drop down list 

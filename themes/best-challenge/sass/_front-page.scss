@@ -275,8 +275,34 @@
             min-height: 499px;
         }
     }
+
     
     .best-journal-container {
+
+
+.best-journal-content {
+    align-items: center;
+    display: flex;
+    flex-direction:column;
+    @include desktop {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1.5rem;
+        flex-direction:row;
+        
+    }
+}
+
+.best-post-thumb {
+    padding-top: 40px;
+    flex-basis: 48%;
+    text-align: center;
+    width: 472px;
+    height: 316px;
+    @include desktop {
+        /*padding-top: 50px;*/
+    }
+    img {
         width: 90%;
         display: flex;
         flex-direction: column;
@@ -346,6 +372,7 @@
             @include desktop {
                 color: white;
                 font-size: 18px;
+
                 margin-top: 0;
             }
         }
@@ -357,13 +384,39 @@
             text-transform: uppercase;
             color: white;
         }
+
+                margin-top: 0; 
+        }     
+    }
+    .read-more {
+        visibility:hidden;
+
     }
     
     .best-post-title {
         font-size: 1.5rem;
         text-transform: uppercase;
+
         padding: 0 1rem;
         text-align: center;
+
+        color: white;
+      
+           }
+}
+
+.excerpt {    
+    padding-top: 60px;
+    @include desktop {
+        padding-top: 0;
+    }
+}
+
+.best-post-title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 0 1rem;
+    text-align: center;
         @include desktop {
             text-align: left;
             padding: 0;

@@ -1132,7 +1132,10 @@ this is the css unique to front-page
 
 .home .fp-sponsors-img {
   position: relative;
-  bottom: 67px; }
+  bottom: 35px; }
+  @media (min-width: 600px) {
+    .home .fp-sponsors-img {
+      bottom: 67px; } }
 
 .home .modologo img {
   height: 100%;
@@ -1563,6 +1566,7 @@ this is for the rest of the site
           flex-direction: row; } }
 
 .best-post-thumb {
+  padding-top: 40px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
   text-align: center;
@@ -1616,6 +1620,12 @@ this is for the rest of the site
     font-size: 32px;
     text-transform: uppercase;
     color: white; }
+
+.excerpt {
+  padding-top: 60px; }
+  @media (min-width: 600px) {
+    .excerpt {
+      padding-top: 0; } }
 
 .best-post-title {
   font-size: 1.5rem;
@@ -3658,10 +3668,8 @@ a#sign-up {
   padding-bottom: 1rem; }
 
 .footer-social {
-  height: 50px;
   background: #383B4C;
-  display: -ms-flexbox;
-  display: flex;
+  display: column;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
@@ -3669,8 +3677,11 @@ a#sign-up {
   width: 100%; }
   @media (min-width: 600px) {
     .footer-social {
-      -ms-flex-pack: start;
-          justify-content: flex-start; } }
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      display: row; } }
 
 .footer-social i {
   color: white;
@@ -3678,21 +3689,33 @@ a#sign-up {
   font-size: 1.8rem; }
 
 .footer-social p {
-  visibility: hidden;
+  visibility: visible;
+  -ms-flex-align: center;
+      align-items: center;
   -ms-flex-pack: end;
       justify-content: flex-end;
   color: white;
-  padding-left: 0%;
-  width: 1px; }
+  text-align: center;
+  margin-bottom: 10px; }
   @media (min-width: 600px) {
     .footer-social p {
-      color: white;
-      padding-right: 8rem;
-      font-family: 'montserrat';
       font-weight: 100;
-      text-align: right;
-      visibility: visible;
-      width: 100%; } }
+      padding-right: 40px; } }
+
+.font-awesome {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  padding-left: 0%;
+  text-align: center; }
+  @media (min-width: 600px) {
+    .font-awesome {
+      padding-left: 10%;
+      -ms-flex-pack: start;
+          justify-content: flex-start; } }
 
 .footer-social i:hover {
   color: midnightblue; }
@@ -3916,6 +3939,7 @@ INPUT field
   background-color: #383B4C;
   color: white;
   cursor: pointer;
+  text-shadow: none;
   padding: .5rem 2rem;
   border: 1;
   border-radius: 25px;
@@ -3931,22 +3955,13 @@ INPUT field
     #wpcf7-f196-o1 input[type=submit] {
       height: 50px;
       width: 162px; } }
+  #wpcf7-f196-o1 input[type=submit] #wpcf7-f196-o1 input[type=submit]:hover {
+    background-color: white;
+    color: #303b46;
+    border-color: #303b46;
+    font-size: 18px;
+    font-family: 'montserrat';
+    font-weight: normal; }
 
-#wpcf7-f196-o1 input[type=submit]:hover {
-  background-color: white;
-  color: #303b46;
-  border-color: #303b46;
-  font-size: 18px;
-  font-family: 'montserrat';
-  font-weight: normal; }
-
-.font-awesome {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  padding-left: 0%;
-  text-align: center; }
-  @media (min-width: 600px) {
-    .font-awesome {
-      padding-left: 10%; } }
+.copyright {
+  font-weight: 300; }
