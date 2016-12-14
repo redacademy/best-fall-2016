@@ -68,8 +68,10 @@ get_header(); ?>
 
 
                 <div class="how-to-participate-wrapper">
+                    <h2>how to participate as a workplace</h2>
                     <div class="how-to-participate">
                         <div class="challenge-participate-blocks">
+                           
                             <?php
 
                                 $fields = CFS()->get( 'instruction_details' )?>
