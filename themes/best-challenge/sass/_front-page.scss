@@ -1,211 +1,209 @@
-.hero-banner {
-    background: url(../../assets/images/hero-banner-mobile.png) center no-repeat;
-    background-size: cover;
-    height: 50vh;
-    @include desktop {
-        height: calc(100vh - 144px);
-        background: url(../../assets/images/hero-curve.png) top no-repeat, url(../../assets/images/hero-banner.png) top no-repeat;
-        background-size: cover, cover;
-        display: flex;
-        /*justify-content: flex-start;
+    .hero-banner {
+        background: url(../../assets/images/hero-banner-mobile.png) center no-repeat;
+        background-size: cover;
+        height: 50vh;
+        @include desktop {
+            height: calc(100vh - 144px);
+            background: url(../../assets/images/hero-curve.png) top no-repeat, url(../../assets/images/hero-banner.png) top no-repeat;
+            background-size: cover, cover;
+            display: flex;
+            /*justify-content: flex-start;
         align-items: flex-start;*/
-    }
-}
-
-.box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    @include desktop {
-        align-items: stretch;
-    }
-}
-
-.travel-by {
-    display: none;
-    @include desktop {
-        width: 1140px;
-        padding-left: 15px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        margin-top: 4rem;
-        color: #fff;
-        span {
-            border-right: .05em solid;
-            animation: caret 1s steps(1) infinite;
         }
-        @keyframes caret {
-            50% {
-                border-color: transparent;
+    }
+    
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        @include desktop {
+            align-items: stretch;
+        }
+    }
+    
+    .travel-by {
+        display: none;
+        @include desktop {
+            width: 1140px;
+            padding-left: 15px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            margin-top: 4rem;
+            color: #fff;
+            span {
+                border-right: .05em solid;
+                animation: caret 1s steps(1) infinite;
+            }
+            @keyframes caret {
+                50% {
+                    border-color: transparent;
+                }
+            }
+            #go-green-button {
+                @include go-green-button;
+                color: #fff;
+                border-color: #fff;
+            }
+            .green-buttons {
+                padding: 0;
+                /*margin: 0 auto;*/
+            }
+            h3 {
+                font-size: 3.5rem;
+                margin: 0;
+            }
+            p {
+                font-size: 1.8rem;
+                margin: 33px 0 54px 0;
+                font-weight: normal;
+            }
+            form {
+                justify-content: flex-start;
+            }
+        }
+    }
+    
+    .travel-by-mobile {
+        text-align: center;
+        background: $light-grey-background;
+        .travel-by-content {
+            width: 96%;
+            margin: 0 auto;
+            padding-top: 35px;
+            h3 {
+                font-size: 3rem;
+                margin: 0;
+                color: $black-text;
+            }
+            p {
+                font-size: 28px;
+                font-weight: 300;
+            }
+        }
+        .green-buttons {
+            justify-content: space-between;
+            .button1 {
+                padding-right: 1%;
             }
         }
         #go-green-button {
             @include go-green-button;
-            color: #fff;
-            border-color: #fff;
-
+            color: $black-text;
+            border-color: $black-text;
+            text-transform: initial;
+            font-size: 20px;
         }
-        .green-buttons {
-            padding: 0;
-            /*margin: 0 auto;*/
-        }
-        h3 {
-            font-size: 3.5rem;
-            margin: 0;
-        }
-        p {
-            font-size: 1.8rem;
-            margin: 33px 0 54px 0;
-            font-weight: normal;
-            }
         form {
-        justify-content: flex-start;
+            justify-content: center;
         }
-    }
-}
-
-.travel-by-mobile {
-    text-align: center;
-    background: $light-grey-background;
-    .travel-by-content {
-        width: 96%;
-        margin: 0 auto;
-        padding-top: 35px;
-        h3 {
-            font-size: 3rem;
-            margin: 0;
-            color: $black-text;
-        }
-        p {
-            font-size: 28px;
-            font-weight: 300;
-        }
-    }
-    .green-buttons {
-        justify-content: space-between;
-        .button1 {
-            padding-right: 1%;
-        }
-    }
-    #go-green-button {
-        @include go-green-button;
-        color: $black-text;
-        border-color: $black-text;
-        text-transform: initial;
-        font-size: 20px;
-    }
-    form {
-        justify-content: center;
-    }
-}
-
-.ccbc-front {
-    flex-direction: column;
-    justify-content: space-around;
-    p {
-        @include desktop {
-            max-width: 250px;
-            margin: 0 auto;
-        }
-    }
-    div:not(:last-child) {
-        margin-bottom: 2rem;
-    }
-}
-
-.ccbc-title {
-    h2 {
-        display: none;
-    }
-    @include desktop {
-        margin: 70px auto;
-        width: 50%;
-
-        h2 { 
-            display: initial;
-            font-size: 36px;
-        }
-    }
-}
-
-.ccbc-info {
-    .info-content {
-        width: 90%;
-        margin: 35px auto 0 auto;
-        .black-line{
-            width: 250px;
-            margin: 0 auto;
-            border-bottom: 3px solid $dark-text;
-            @include desktop {
-                display: none;
-            }
-        }
-        h3 {
-            font-size: 35px;
-            font-weight: normal;
-            @include desktop {
-                font-size: 18px;
-                width: 177px;
-                margin: 20px auto;
-            }
-        }
-        p {
-            font-size: 25px;
-            font-weight: 300;
-            color: $black-text;
-            @include desktop {
-                font-size: 16px;
-                font-weight: 300;
-            }
-        }
-    }
-    @include desktop {
-        display: flex;
-        justify-content: space-around;
-        align-items: baseline;
     }
     
-}
-
-//////----------- Impact Results -------------////
-.impact-results {
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    flex-direction: column;
-    margin: 3rem 10%;
-    @include desktop {
-        flex-direction: row;
-        padding: 5%;
-        margin: 0 auto;
-    }
-}
-
-.canada-map {
-    flex-basis: 48%;
-    .bcbutton {
-        border-right: 3px solid $dark-text;
-        padding-right: 10px;
-    }
-}
-.map-buttons {
-    padding: 30px 0;
-    a{
-        font-size: 28px;
-        color: $dark-text;
-        font-weight: 300;
-        &:active{
-            font-weight: bold;
+    .ccbc-front {
+        flex-direction: column;
+        justify-content: space-around;
+        p {
+            @include desktop {
+                max-width: 250px;
+                margin: 0 auto;
+            }
         }
-        &:hover {
-            font-weight: bold;
+        div:not(:last-child) {
+            margin-bottom: 2rem;
         }
     }
-}
-
-// Impact Results Box 
+    
+    .ccbc-title {
+        h2 {
+            display: none;
+        }
+        @include desktop {
+            margin: 70px auto;
+            width: 50%;
+            h2 {
+                display: initial;
+                font-size: 36px;
+            }
+        }
+    }
+    
+    .ccbc-info {
+        .info-content {
+            width: 90%;
+            margin: 35px auto 0 auto;
+            .black-line {
+                width: 250px;
+                margin: 0 auto;
+                border-bottom: 3px solid $dark-text;
+                @include desktop {
+                    display: none;
+                }
+            }
+            h3 {
+                font-size: 35px;
+                font-weight: normal;
+                @include desktop {
+                    font-size: 18px;
+                    width: 177px;
+                    margin: 20px auto;
+                }
+            }
+            p {
+                font-size: 25px;
+                font-weight: 300;
+                color: $black-text;
+                @include desktop {
+                    font-size: 16px;
+                    font-weight: 300;
+                }
+            }
+        }
+        @include desktop {
+            display: flex;
+            justify-content: space-around;
+            align-items: baseline;
+        }
+    }
+    
+    //////----------- Impact Results -------------////
+    .impact-results {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        flex-direction: column;
+        margin: 3rem 10%;
+        @include desktop {
+            flex-direction: row;
+            padding: 5%;
+            margin: 0 auto;
+        }
+    }
+    
+    .canada-map {
+        flex-basis: 48%;
+        .bcbutton {
+            border-right: 3px solid $dark-text;
+            padding-right: 10px;
+        }
+    }
+    
+    .map-buttons {
+        padding: 30px 0;
+        a {
+            font-size: 28px;
+            color: $dark-text;
+            font-weight: 300;
+            &:active {
+                font-weight: bold;
+            }
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+    
+    // Impact Results Box 
     .fp-impact-results {
         color: $dark-text;
         flex-basis: 48%;
@@ -213,7 +211,7 @@
         justify-content: center;
         align-items: center;
     }
-
+    
     .impact-box {
         border: 2px solid $dark-text;
         padding: 1rem;
@@ -222,7 +220,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        h2{
+        h2 {
             margin: 0;
             font-size: 28px;
             text-transform: uppercase;
@@ -234,40 +232,41 @@
             margin: 0;
             font-size: 30px;
             font-weight: 300;
-            span {              
+            span {
                 font-weight: bold;
             }
         }
-        .total , .work-avg {
-            h4{
-            margin: 0;
-            font-size: 30px;
-            font-weight: bold;
+        .total,
+        .work-avg {
+            h4 {
+                margin: 0;
+                font-size: 30px;
+                font-weight: bold;
             }
             p {
-            margin: 0;
-            font-size: 18px;
-            font-weight: 300;
+                margin: 0;
+                font-size: 18px;
+                font-weight: 300;
             }
         }
         .dark-button input[type=button] {
-        @include dark-button;
-        &:focus {
-				outline: none;
-			}
+            @include dark-button;
+            &:focus {
+                outline: none;
+            }
+        }
     }
-    }
-
-    .bc-results-info , .canada-results-info {
+    
+    .bc-results-info,
+    .canada-results-info {
         display: flex;
         justify-content: space-around;
         align-items: flex-end;
         font-weight: bold;
     }
-
-/// ------------ Blog Post Area --------- //////
-
-.blog-posts {
+    
+    /// ------------ Blog Post Area --------- //////
+    .blog-posts {
         background-image: none;
         background-color: white;
         @include desktop {
@@ -275,21 +274,11 @@
             @include background-image;
             min-height: 499px;
         }
-}
-
-
-.best-journal-container {
-    width: 90%;
-    display: flex;
-    flex-direction:column;
-    padding: 1rem;
-    @include desktop {
-        /*max-width: 1140px;*/
-        display: flex;
-        justify-content: space-between;
-        padding-top: 5%;
     }
-}
+
+    
+    .best-journal-container {
+
 
 .best-journal-content {
     align-items: center;
@@ -305,6 +294,7 @@
 }
 
 .best-post-thumb {
+    padding-top: 40px;
     flex-basis: 48%;
     text-align: center;
     width: 472px;
@@ -314,60 +304,113 @@
     }
     img {
         width: 90%;
-        height: auto;
-        outline: 2px solid white;
-        outline-offset: -20px;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
         @include desktop {
-            width: 472px;
-            height: 316px;
+            /*max-width: 1140px;*/
+            display: flex;
+            justify-content: space-between;
+            padding-top: 5%;
         }
     }
-    h3 {
-        font-size: 28px;
-        text-transform: uppercase;
-        @include desktop {
-            font-size: 30px;
-            }
-    }
-}
-
-.best-post-info {
     
-    width: 90%;
-    flex-direction: column;
-    flex-basis: 48%;
-    padding-top: 15%;
-    @include desktop {
+    .best-journal-content {
+        align-items: center;
+        display: flex;
         flex-direction: column;
-        height: 316px;
-        padding-top: 0;
+        @include desktop {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 1.5rem;
+            flex-direction: row;
+        }
     }
     
-    p {
-        
-        color: $black-text;
-        font-weight: 300;
-        text-align: left;
-        font-size: 25px; 
+    .best-post-thumb {
+        flex-basis: 48%;
+        text-align: center;
+        width: 472px;
+        height: 316px;
+        @include desktop {
+            /*padding-top: 50px;*/
+        }
+        img {
+            width: 90%;
+            height: auto;
+            outline: 2px solid white;
+            outline-offset: -20px;
+            @include desktop {
+                width: 472px;
+                height: 316px;
+            }
+        }
+        h3 {
+            font-size: 28px;
+            text-transform: uppercase;
+            @include desktop {
+                font-size: 30px;
+            }
+        }
+    }
+    
+    .best-post-info {
+        width: 90%;
+        flex-direction: column;
+        flex-basis: 48%;
+        padding-top: 15%;
+        @include desktop {
+            flex-direction: column;
+            height: 316px;
+            padding-top: 0;
+        }
+        p {
+            color: $black-text;
+            font-weight: 300;
+            text-align: left;
+            font-size: 25px;
             @include desktop {
                 color: white;
                 font-size: 18px;
+
+                margin-top: 0;
+            }
+        }
+        .read-more {
+            visibility: hidden;
+        }
+        h3 {
+            font-size: 32px;
+            text-transform: uppercase;
+            color: white;
+        }
+
                 margin-top: 0; 
         }     
     }
     .read-more {
         visibility:hidden;
-        
+
     }
-  
-    h3 {
-        font-size: 32px;
+    
+    .best-post-title {
+        font-size: 1.5rem;
         text-transform: uppercase;
+
+        padding: 0 1rem;
+        text-align: center;
+
         color: white;
       
            }
 }
 
+.excerpt {    
+    padding-top: 60px;
+    @include desktop {
+        padding-top: 0;
+    }
+}
 
 .best-post-title {
     font-size: 1.5rem;
@@ -375,61 +418,95 @@
     padding: 0 1rem;
     text-align: center;
         @include desktop {
-               text-align: left;
-                padding: 0;
-                font-size: 1.5rem;
+            text-align: left;
+            padding: 0;
+            font-size: 1.5rem;
         }
-  }
-
-
-.green-read {
-    background: url(../../assets/images/green-read-story.png) no-repeat;
-    background-size: 100%;
-    height: 57px;
-    margin-top: -75px;
-     
-    a{
-        display:flex;
-        color:$dark-text;
-        font-size: 18px;
-        padding: .5rem 0 0 3rem;
-        cursor: pointer;
- @include desktop {
-            color: white;
+    }
+    
+    .green-read {
+        background: url(../../assets/images/green-read-story.png) no-repeat;
+        background-size: 100%;
+        height: 57px;
+        margin-top: -75px;
+        a {
+            display: flex;
+            color: $dark-text;
             font-size: 18px;
-            font-weight: normal;
-            height: 57px;
-a{
-        display:flex;
-        color:$dark-text;
-        font-size: 18px;
-        padding: .5rem 0 0 3rem;
-        cursor: pointer;
-
+            padding: .5rem 0 0 3rem;
+            cursor: pointer;
+            @include desktop {
+                color: white;
+                font-size: 18px;
+                font-weight: normal;
+                height: 57px;
+                a {
+                    display: flex;
+                    color: $dark-text;
+                    font-size: 18px;
+                    padding: .5rem 0 0 3rem;
+                    cursor: pointer;
+                }
             }
         }
     }
-}
-
-.read-green {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    padding-bottom:10rem;
-}
-
-
-///---------------- Instagram Area ---------- ///
-.instagram-grid {
-    text-align: center;
-    h2 {
-        font-size: 30px;
+    
+    .read-green {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+        padding-bottom: 10rem;
     }
-}
-
-.wdi_photo_wrap {
-    li {
-        border: 5px solid black;
+    
+    ///---------------- Instagram Area ---------- ///
+    .instagram-grid {
+        text-align: center;
+        h2 {
+            font-size: 30px;
+        }
     }
-}
+    
+    .wdi_photo_wrap {
+        li {
+            border: 5px solid black;
+        }
+    }
+    
+    .challenge {
+        h3 {
+            text-align: center;
+        }
+    }
+    
+    .challenge {
+        height: 30vh;
+        color: #303b46;
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+        .challenge-info {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            @include desktop {
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            h4 {
+                font-size: 2rem;
+                margin-right: 5vw;
+            }
+        }
+        input[type=button] {
+            @include dark-button;
+            font-size: 1.5rem;
+            display: inline-block;
+            &:focus {
+                outline: none;
+            }
+        }
+    }

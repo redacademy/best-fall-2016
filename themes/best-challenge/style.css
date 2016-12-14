@@ -605,7 +605,7 @@ a {
   .logo-date .event-date {
     color: white; }
     .logo-date .event-date h2 {
-      font-size: 1.5rem; }
+      font-size: 1.2rem; }
     @media (min-width: 600px) {
       .logo-date .event-date h2 {
         font-size: 2rem;
@@ -1132,7 +1132,10 @@ this is the css unique to front-page
 
 .home .fp-sponsors-img {
   position: relative;
-  bottom: 67px; }
+  bottom: 35px; }
+  @media (min-width: 600px) {
+    .home .fp-sponsors-img {
+      bottom: 67px; } }
 
 .home .modologo img {
   height: 100%;
@@ -1477,11 +1480,13 @@ this is for the rest of the site
     font-weight: 300; }
     .impact-box h3 span {
       font-weight: bold; }
-  .impact-box .total h4, .impact-box .work-avg h4 {
+  .impact-box .total h4,
+  .impact-box .work-avg h4 {
     margin: 0;
     font-size: 30px;
     font-weight: bold; }
-  .impact-box .total p, .impact-box .work-avg p {
+  .impact-box .total p,
+  .impact-box .work-avg p {
     margin: 0;
     font-size: 18px;
     font-weight: 300; }
@@ -1503,7 +1508,8 @@ this is for the rest of the site
     .impact-box .dark-button input[type=button]:focus {
       outline: none; }
 
-.bc-results-info, .canada-results-info {
+.bc-results-info,
+.canada-results-info {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
@@ -1560,6 +1566,7 @@ this is for the rest of the site
           flex-direction: row; } }
 
 .best-post-thumb {
+  padding-top: 40px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
   text-align: center;
@@ -1614,6 +1621,12 @@ this is for the rest of the site
     text-transform: uppercase;
     color: white; }
 
+.excerpt {
+  padding-top: 60px; }
+  @media (min-width: 600px) {
+    .excerpt {
+      padding-top: 0; } }
+
 .best-post-title {
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -1665,6 +1678,53 @@ this is for the rest of the site
 
 .wdi_photo_wrap li {
   border: 5px solid black; }
+
+.challenge h3 {
+  text-align: center; }
+
+.challenge {
+  height: 30vh;
+  color: #303b46; }
+  .challenge h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0; }
+  .challenge .challenge-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    text-align: center; }
+    @media (min-width: 600px) {
+      .challenge .challenge-info {
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center; } }
+    .challenge .challenge-info h4 {
+      font-size: 2rem;
+      margin-right: 5vw; }
+  .challenge input[type=button] {
+    cursor: pointer;
+    padding: .25rem 2rem;
+    color: #dee2e6;
+    background-color: #303b46;
+    line-height: 1.7;
+    width: 200px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: normal;
+    text-shadow: none;
+    box-shadow: none;
+    border: 1px solid #303b46;
+    font-size: 1.5rem;
+    display: inline-block; }
+    .challenge input[type=button]:hover {
+      color: #a6ce39; }
+    .challenge input[type=button]:focus {
+      outline: none; }
 
 .page-heading, .page-heading-participants {
   background-image: url(../../assets/images/backgrounds/prizes-header-mobile.png);
@@ -3396,7 +3456,7 @@ NEWLETTER SIGN-UP AREA
   text-align: center; }
   @media (min-width: 600px) {
     .ir-numbers {
-      height: 50vh; } }
+      height: 60vh; } }
 
 .ir-numbers-title {
   margin-top: -8vh; }
@@ -3899,3 +3959,6 @@ INPUT field
     font-size: 18px;
     font-family: 'montserrat';
     font-weight: normal; }
+
+.copyright {
+  font-weight: 300; }

@@ -104,7 +104,7 @@ get_header(); ?>
                     <div class="canada-results-info">            
                         <div class="total">
                             <h4><?php echo CFS()->get( 'canada_co2_total' ); ?></h4>
-                            <p>British Columbia Total</p>
+                            <p>Canada Total</p>
                         </div>      
                         <div class="work-avg">
                             <h4><?php echo CFS()->get( 'canada_average' ); ?></h4>
@@ -156,9 +156,21 @@ get_header(); ?>
     <div class="instagram-grid container">
         <h2 class="uppercase">#commuterchallenge</h2>
         <?php echo wdi_feed(array('id'=>'1')); ?>
+
+      
+        
     </div>
 
- 
+<div class="challenge container desktop">
+  <h3>Whoever said challenging each other and competing for prizes was boring, wasn’t taking the Commuter Challenge</h3>
+    <div class="challenge-info"> 
+        <div><h4> Get your team involved for 2017</h4></div>
+                          <div><a href="<?php echo esc_url( site_url( '/get-involved/' ) ); ?>">
+                                    <input type="button"  value="Learn More">
+                         </a></div>
+     </div>
+</div>
+
    <!-- This is the beginning of a template part that toggles a button on and off -->
     <div class="green-banner">
         <div class="green-banner-flex">
