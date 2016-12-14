@@ -76,7 +76,7 @@ get_header(); ?>
 
                 </div>
                 <div class="ir-register-indv right">
-                    <p><span><?php echo CFS()->get( 'participants_bc' ); ?></span> registered individuals participated in the commuter Challenge BC.</p>
+                    <p><span><?php echo CFS()->get( 'participants_bc' ); ?></span> registered individuals participated in the Commuter Challenge BC.</p>
                 </div>
             </div>
 
