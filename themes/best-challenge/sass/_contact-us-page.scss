@@ -40,6 +40,7 @@ this is the CONTACT PERSON INFO
 }
 
 .contact-person-image{
+    padding-top: 15%;
     @include desktop {
         padding-top:30px;
         padding-right:35px;
@@ -56,13 +57,17 @@ this is the CONTACT PERSON INFO
 }
 
 .contact-person-data h2{
+    margin-bottom: 3%;
     text-transform:uppercase;
-    margin-top:0;
-    margin-bottom:0;
-   font-size:36px;
+    font-size:25px;
     font-family:'montserrat';
     font-weight: bold;
     color: #303b46;
+    @include desktop {
+        font-size:36px;
+        margin-top:0;
+        margin-bottom:0;
+    }
 }
 
 .contact-person-data  p{
@@ -70,8 +75,11 @@ this is the CONTACT PERSON INFO
 	font-size: 20px;
 	font-weight: 300;
     color: #303b46;
-    margin-bottom:0;
-    margin-top:0;
+    margin-bottom: 5%;
+    @include desktop {
+        margin-bottom:0;
+        margin-top:0;
+    }
 }
 
 /*=======================
@@ -88,11 +96,14 @@ SEND A MESSAGE CONTACT FORM 7
     text-align:center;
     text-transform:uppercase;
     font-family: 'montserrat';
-	font-size: 36px;
+	font-size: 30px;
 	font-weight: bold;
     color:white;
     margin-top:0;
     margin-bottom:0;
+    @include desktop {
+        font-size: 36px;
+    }
 }
 
 
@@ -104,9 +115,8 @@ input[type="tel"],{
 	height: 50px;
 	border-radius: 10px;
     width:100%;
-        @include desktop {
-    width:100%;
-    
+    @include desktop {
+        width:100%;
     }
     }
 
@@ -136,6 +146,9 @@ textarea {
     font-family:'montserrat';
     font-weight:100;
     color:#5a6f83;
+    &[placeholder]{
+        padding-left: 20px;
+    }
         @include desktop {
     width:110%;
     
@@ -146,7 +159,8 @@ textarea {
 input[placeholder] {
    font-family:'montserrat';
    font-weight:100;
-   color:#5a6f83
+   color:$dark-text;
+   padding-left: 20px;
 }
 
 .wpcf7-form {

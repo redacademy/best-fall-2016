@@ -1532,23 +1532,7 @@ this is for the rest of the site
       max-width: 100%;
       min-height: 499px; } }
 
-.best-journal-container {
-  width: 90%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  padding: 1rem; }
-  @media (min-width: 600px) {
-    .best-journal-container {
-      /*max-width: 1140px;*/
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-      padding-top: 5%; } }
-
-.best-journal-content {
+.best-journal-container .best-journal-content {
   -ms-flex-align: center;
       align-items: center;
   display: -ms-flexbox;
@@ -1556,7 +1540,7 @@ this is for the rest of the site
   -ms-flex-direction: column;
       flex-direction: column; }
   @media (min-width: 600px) {
-    .best-journal-content {
+    .best-journal-container .best-journal-content {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: justify;
@@ -1565,7 +1549,7 @@ this is for the rest of the site
       -ms-flex-direction: row;
           flex-direction: row; } }
 
-.best-post-thumb {
+.best-journal-container .best-post-thumb {
   padding-top: 40px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
@@ -1573,53 +1557,103 @@ this is for the rest of the site
   width: 472px;
   height: 316px; }
   @media (min-width: 600px) {
-    .best-post-thumb {
+    .best-journal-container .best-post-thumb {
       /*padding-top: 50px;*/ } }
-  .best-post-thumb img {
+  .best-journal-container .best-post-thumb img {
     width: 90%;
-    height: auto;
-    outline: 2px solid white;
-    outline-offset: -20px; }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding: 1rem; }
     @media (min-width: 600px) {
-      .best-post-thumb img {
-        width: 472px;
-        height: 316px; } }
-  .best-post-thumb h3 {
-    font-size: 28px;
-    text-transform: uppercase; }
+      .best-journal-container .best-post-thumb img {
+        /*max-width: 1140px;*/
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        padding-top: 5%; } }
+  .best-journal-container .best-post-thumb .best-journal-content {
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
     @media (min-width: 600px) {
-      .best-post-thumb h3 {
-        font-size: 30px; } }
+      .best-journal-container .best-post-thumb .best-journal-content {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        padding-top: 1.5rem;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
+  .best-journal-container .best-post-thumb .best-post-thumb {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+    text-align: center;
+    width: 472px;
+    height: 316px; }
+    @media (min-width: 600px) {
+      .best-journal-container .best-post-thumb .best-post-thumb {
+        /*padding-top: 50px;*/ } }
+    .best-journal-container .best-post-thumb .best-post-thumb img {
+      width: 90%;
+      height: auto;
+      outline: 2px solid white;
+      outline-offset: -20px; }
+      @media (min-width: 600px) {
+        .best-journal-container .best-post-thumb .best-post-thumb img {
+          width: 472px;
+          height: 316px; } }
+    .best-journal-container .best-post-thumb .best-post-thumb h3 {
+      font-size: 28px;
+      text-transform: uppercase; }
+      @media (min-width: 600px) {
+        .best-journal-container .best-post-thumb .best-post-thumb h3 {
+          font-size: 30px; } }
+  .best-journal-container .best-post-thumb .best-post-info {
+    width: 90%;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+    padding-top: 15%;
+    margin-top: 0; }
+    @media (min-width: 600px) {
+      .best-journal-container .best-post-thumb .best-post-info {
+        -ms-flex-direction: column;
+            flex-direction: column;
+        height: 316px;
+        padding-top: 0; } }
+    .best-journal-container .best-post-thumb .best-post-info p {
+      color: #303b46;
+      font-weight: 300;
+      text-align: left;
+      font-size: 25px; }
+      @media (min-width: 600px) {
+        .best-journal-container .best-post-thumb .best-post-info p {
+          color: white;
+          font-size: 18px;
+          margin-top: 0; } }
+    .best-journal-container .best-post-thumb .best-post-info .read-more {
+      visibility: hidden; }
+    .best-journal-container .best-post-thumb .best-post-info h3 {
+      font-size: 32px;
+      text-transform: uppercase;
+      color: white; }
 
-.best-post-info {
-  width: 90%;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
-  padding-top: 15%; }
-  @media (min-width: 600px) {
-    .best-post-info {
-      -ms-flex-direction: column;
-          flex-direction: column;
-      height: 316px;
-      padding-top: 0; } }
-  .best-post-info p {
-    color: #303b46;
-    font-weight: 300;
-    text-align: left;
-    font-size: 25px; }
-    @media (min-width: 600px) {
-      .best-post-info p {
-        color: white;
-        font-size: 18px;
-        margin-top: 0; } }
-  .best-post-info .read-more {
-    visibility: hidden; }
-  .best-post-info h3 {
-    font-size: 32px;
-    text-transform: uppercase;
-    color: white; }
+.best-journal-container .read-more {
+  visibility: hidden; }
+
+.best-journal-container .best-post-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 0 1rem;
+  text-align: center;
+  color: white; }
 
 .excerpt {
   padding-top: 60px; }
@@ -2895,10 +2929,12 @@ NEWLETTER SIGN-UP AREA
       .page-template-contact_us .contact-person-section {
         -ms-flex-direction: row;
             flex-direction: row; } }
-  @media (min-width: 600px) {
-    .page-template-contact_us .contact-person-image {
-      padding-top: 30px;
-      padding-right: 35px; } }
+  .page-template-contact_us .contact-person-image {
+    padding-top: 15%; }
+    @media (min-width: 600px) {
+      .page-template-contact_us .contact-person-image {
+        padding-top: 30px;
+        padding-right: 35px; } }
   .page-template-contact_us .contact-person-data {
     line-height: 1.3;
     text-align: center; }
@@ -2906,20 +2942,27 @@ NEWLETTER SIGN-UP AREA
       .page-template-contact_us .contact-person-data {
         text-align: left; } }
   .page-template-contact_us .contact-person-data h2 {
+    margin-bottom: 3%;
     text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 36px;
+    font-size: 25px;
     font-family: 'montserrat';
     font-weight: bold;
     color: #303b46; }
+    @media (min-width: 600px) {
+      .page-template-contact_us .contact-person-data h2 {
+        font-size: 36px;
+        margin-top: 0;
+        margin-bottom: 0; } }
   .page-template-contact_us .contact-person-data p {
     font-family: 'montserrat';
     font-size: 20px;
     font-weight: 300;
     color: #303b46;
-    margin-bottom: 0;
-    margin-top: 0; }
+    margin-bottom: 5%; }
+    @media (min-width: 600px) {
+      .page-template-contact_us .contact-person-data p {
+        margin-bottom: 0;
+        margin-top: 0; } }
   .page-template-contact_us .contact-form-area {
     background-color: #5a6f83;
     padding-top: 20px; }
@@ -2927,11 +2970,14 @@ NEWLETTER SIGN-UP AREA
     text-align: center;
     text-transform: uppercase;
     font-family: 'montserrat';
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bold;
     color: white;
     margin-top: 0;
     margin-bottom: 0; }
+    @media (min-width: 600px) {
+      .page-template-contact_us .contact-form-area h2 {
+        font-size: 36px; } }
   .page-template-contact_us input[type="text"],
   .page-template-contact_us input[type="email"],
   .page-template-contact_us input[type="tel"] {
@@ -2968,13 +3014,16 @@ NEWLETTER SIGN-UP AREA
     font-family: 'montserrat';
     font-weight: 100;
     color: #5a6f83; }
+    .page-template-contact_us textarea[placeholder] {
+      padding-left: 20px; }
     @media (min-width: 600px) {
       .page-template-contact_us textarea {
         width: 110%; } }
   .page-template-contact_us input[placeholder] {
     font-family: 'montserrat';
     font-weight: 100;
-    color: #5a6f83; }
+    color: #303b46;
+    padding-left: 20px; }
   .page-template-contact_us .wpcf7-form {
     display: -ms-flexbox;
     display: flex;
@@ -3936,7 +3985,7 @@ INPUT field
       width: 100%; } }
 
 #wpcf7-f196-o1 input[type=submit] {
-  background-color: #383B4C;
+  background-color: #303b46;
   color: white;
   cursor: pointer;
   text-shadow: none;
