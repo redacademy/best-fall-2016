@@ -1690,7 +1690,8 @@ this is for the rest of the site
   .challenge h3 {
     font-size: 1.5rem;
     font-weight: 700;
-    max-width: 80vw; }
+    max-width: 80vw;
+    margin: 0 auto; }
   .challenge .challenge-info {
     display: -ms-flexbox;
     display: flex;
