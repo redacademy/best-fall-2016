@@ -63,17 +63,19 @@
   });
 
   //change bc map on click on Participants page 
+  $('#bc-map').show();
   $('#van-map').hide();
   $('#vancouver').on('mouseover', function (event) {
     event.preventDefault();
     $('#bc-map').hide();
     $('#van-map').show();  
   });
-
-  $('#bc').on('mouseover', function () {
+  $('#vancouver').on('mouseleave', function (event) {
+    event.preventDefault();
     $('#van-map').hide();
-    $('#bc-map').show();
+    $('#bc-map').show();  
   });
+  
 
 
   //change to Canada results on click
