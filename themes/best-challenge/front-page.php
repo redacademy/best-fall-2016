@@ -144,6 +144,7 @@ get_header(); ?>
                 <a class ="read-green" href="<?php the_permalink();?>">Read Kelsey's Full Story</a>
             </div>
         </div>
+     
     </div><!-- best-journal-content -->
         
 
