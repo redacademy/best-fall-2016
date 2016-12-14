@@ -17,10 +17,10 @@ get_header(); ?>
             <form method="POST" action="">
                 <div class="green-buttons">
                         <div class="button1">
-                                <input type="submit" name="submit" value="Individual" id="go-green-button" >
+                               <a href="<?php echo esc_url( site_url( '/get-involved/' ) ); ?>" rel="program">Individual</a>
                         </div>
                         <div class="button2">
-                                <input type="submit" name="submit" value="Workplace" id="go-green-button" >
+                              <a href="<?php echo esc_url( site_url( '/get-involved/' ) ); ?>" rel="program">Workplace</a>
                         </div>
                 </div>
             </form>
@@ -39,10 +39,10 @@ get_header(); ?>
                 <form method="POST" action="">
                     <div class="green-buttons">
                             <div class="button1">
-                                    <input type="submit" name="submit" value="Individual" id="go-green-button" >
+                                     <a href="<?php echo esc_url( site_url( '/get-involved/' ) ); ?>" rel="program">Individual</a>
                             </div>
                             <div class="button2">
-                                    <input type="submit" name="submit" value="Workplace" id="go-green-button" >
+                                    <a href="<?php echo esc_url( site_url( '/get-involved/' ) ); ?>" rel="program">Workplace</a>
                             </div>
                     </div>
                 </form>

@@ -1274,29 +1274,54 @@ this is for the rest of the site
     @keyframes caret {
       50% {
         border-color: transparent; } }
-      .travel-by #go-green-button {
-        border: 3px solid #000;
-        background-color: transparent;
-        cursor: pointer;
-        padding: 5px 0;
-        border-radius: 25px;
-        font-family: "montserrat", sans-serif;
-        font-size: 18px;
-        box-shadow: none;
-        text-shadow: none;
-        width: 170px;
-        height: 50px;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #fff;
-        border-color: #fff; } }
-    @media (min-width: 600px) and (min-width: 600px) {
-      .travel-by #go-green-button {
-        width: 180px; } }
-  @media (min-width: 600px) {
       .travel-by .green-buttons {
         padding: 0;
         /*margin: 0 auto;*/ }
+      .travel-by .button1 a {
+        border: 1px solid #fff;
+        background-color: transparent;
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 25px;
+        font-family: 'montserrat', sans-serif;
+        font-size: 1.2rem;
+        box-shadow: none;
+        line-height: 1.7;
+        border-width: 3px;
+        text-shadow: none;
+        width: 100%;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+        height: 50px;
+        padding: .5rem 2.3rem; }
+      .travel-by .button1 a:hover {
+        background: #303b46;
+        color: #a6ce39; }
+      .travel-by .button2 a {
+        border: 1px solid #fff;
+        background-color: transparent;
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 25px;
+        font-family: 'montserrat', sans-serif;
+        font-size: 1.2rem;
+        box-shadow: none;
+        line-height: 1.7;
+        border-width: 3px;
+        text-shadow: none;
+        width: 100%;
+        text-decoration: none;
+        padding-bottom: 5px;
+        padding-right: 5%;
+        text-transform: uppercase;
+        height: 50px;
+        padding: .5rem 2.3rem; }
+      .travel-by .button2 a:hover {
+        background: #303b46;
+        color: #a6ce39; }
       .travel-by h3 {
         font-size: 3.5rem;
         margin: 0; }
@@ -1327,27 +1352,6 @@ this is for the rest of the site
         justify-content: space-between; }
     .travel-by-mobile .green-buttons .button1 {
       padding-right: 1%; }
-  .travel-by-mobile #go-green-button {
-    border: 3px solid #000;
-    background-color: transparent;
-    cursor: pointer;
-    padding: 5px 0;
-    border-radius: 25px;
-    font-family: "montserrat", sans-serif;
-    font-size: 18px;
-    box-shadow: none;
-    text-shadow: none;
-    width: 170px;
-    height: 50px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #303b46;
-    border-color: #303b46;
-    text-transform: initial;
-    font-size: 20px; }
-    @media (min-width: 600px) {
-      .travel-by-mobile #go-green-button {
-        width: 180px; } }
   .travel-by-mobile form {
     -ms-flex-pack: center;
         justify-content: center; }
