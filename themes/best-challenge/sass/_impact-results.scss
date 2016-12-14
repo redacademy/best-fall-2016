@@ -37,20 +37,19 @@
         // }
         p {
             font-weight: 700;
-            font-size: 1rem;
+            font-size: .8rem;
             max-width: 24vw;
-            @media (min-width: 600px) {
+            @media (min-width: 560px) {
                 font-size: 1.2rem;
-                line-height: 1.2;
                 font-weight: 300;
             }
             @media (min-width: 1200px) {
-                line-height: 1.5;
+                line-height: 1.2;
                 font-size: 1.5rem;
             }
             span {
                 display: block;
-                font-size: 2rem;
+                font-size: 1.4rem;
                 font-weight: 700;
                 @include desktop {
                     font-size: 2.5rem;
@@ -86,8 +85,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-bottom: 10vh;
         @include desktop {
-            padding-bottom: 5vh;
+           
         }
         div {
             height: 25vh;
@@ -264,7 +264,7 @@
         position: absolute;
         z-index: 0;
         top: 0;
-        bottom: 75px;
+        bottom: 50px;
         left: 50%;
         border-left: 7px solid #fff;
         @include desktop {
@@ -274,7 +274,7 @@
 }
 
 .ir-numbers {
-    height: 30vh;
+    height: 40vh;
     text-align: center;
     @include desktop {
         height: 60vh;
@@ -306,10 +306,10 @@
     align-items: flex-end;
     margin: 0 auto;
     line-height: 2;
-    max-width: 80%;
+    max-width: 100%;
     color: #5a6f83;
     @include desktop {
-        max-width: 100%;
+        max-width: 90%;
     }
     div {
         display: flex;

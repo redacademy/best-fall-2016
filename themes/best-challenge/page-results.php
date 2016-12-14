@@ -127,7 +127,7 @@ get_header(); ?>
 
 
                     <div class="ir-numbers-bc">
-                        <span> British Columbia </span>
+                        <span> BC </span>
                         <span><?php echo CFS()->get( 'workplaces_involved_bc' ); ?></span>
                         <span><?php echo CFS()->get( 'participants_bc' ); ?></span>
                         <span><?php echo CFS()->get( 'distance_traveled_bc' ); ?></span>
