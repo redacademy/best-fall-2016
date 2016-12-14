@@ -11,7 +11,7 @@ get_header(); ?>
    <div class="redirect-page-area"> 
 			<div class="page-banner">
         <div class="challenge-logo">
-		 <img src="<?php echo get_template_directory_uri() ?>/assets/images/commuterchallengebc-copy.png"></img>
+		 <img src="<?php echo get_template_directory_uri() ?>/assets/images/commuterchallengebc-white.png"></img>
 		 </div>
 			<h1>hooray!!!</h1>
 			<h2>See you later!</h2>
