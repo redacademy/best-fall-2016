@@ -64,22 +64,13 @@
 
   //change bc map on click on Participants page 
   $('#van-map').hide();
-  $('#bc-map').hide();
-  $('#vancouver').on('click', function (event) {
-    event.preventDefault();
-    $('#default-map').hide();
-    $('#van-map').show();
-  });
-
-  $('#vancouver').on('blur',function (event) {
+  $('#vancouver').on('mouseover', function (event) {
     event.preventDefault();
     $('#bc-map').hide();
-    $('#van-map').hide();
-    $('#default-map').show();
+    $('#van-map').show();  
   });
 
   $('#bc').on('mouseover', function () {
-    $('#default-map').hide();
     $('#van-map').hide();
     $('#bc-map').show();
   });
