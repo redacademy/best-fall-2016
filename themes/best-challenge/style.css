@@ -1135,7 +1135,10 @@ this is the css unique to front-page
 
 .home .fp-sponsors-img {
   position: relative;
-  bottom: 67px; }
+  bottom: 35px; }
+  @media (min-width: 600px) {
+    .home .fp-sponsors-img {
+      bottom: 67px; } }
 
 .home .modologo img {
   height: 100%;

@@ -55,7 +55,10 @@ this is the css unique to front-page
         }
     .fp-sponsors-img{        
         position: relative;
+        bottom: 35px;
+        @include desktop {
         bottom: 67px;
+        }
     }
     .modologo img{
         height:100%; 
