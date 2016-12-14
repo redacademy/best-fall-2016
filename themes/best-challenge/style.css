@@ -3912,3 +3912,6 @@ INPUT field
     font-size: 18px;
     font-family: 'montserrat';
     font-weight: normal; }
+
+.copyright {
+  font-weight: 300; }
