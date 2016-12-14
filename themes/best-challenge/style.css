@@ -1532,23 +1532,7 @@ this is for the rest of the site
       max-width: 100%;
       min-height: 499px; } }
 
-.best-journal-container {
-  width: 90%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  padding: 1rem; }
-  @media (min-width: 600px) {
-    .best-journal-container {
-      /*max-width: 1140px;*/
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-      padding-top: 5%; } }
-
-.best-journal-content {
+.best-journal-container .best-journal-content {
   -ms-flex-align: center;
       align-items: center;
   display: -ms-flexbox;
@@ -1556,7 +1540,7 @@ this is for the rest of the site
   -ms-flex-direction: column;
       flex-direction: column; }
   @media (min-width: 600px) {
-    .best-journal-content {
+    .best-journal-container .best-journal-content {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: justify;
@@ -1565,7 +1549,7 @@ this is for the rest of the site
       -ms-flex-direction: row;
           flex-direction: row; } }
 
-.best-post-thumb {
+.best-journal-container .best-post-thumb {
   padding-top: 40px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
@@ -1573,53 +1557,103 @@ this is for the rest of the site
   width: 472px;
   height: 316px; }
   @media (min-width: 600px) {
-    .best-post-thumb {
+    .best-journal-container .best-post-thumb {
       /*padding-top: 50px;*/ } }
-  .best-post-thumb img {
+  .best-journal-container .best-post-thumb img {
     width: 90%;
-    height: auto;
-    outline: 2px solid white;
-    outline-offset: -20px; }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding: 1rem; }
     @media (min-width: 600px) {
-      .best-post-thumb img {
-        width: 472px;
-        height: 316px; } }
-  .best-post-thumb h3 {
-    font-size: 28px;
-    text-transform: uppercase; }
+      .best-journal-container .best-post-thumb img {
+        /*max-width: 1140px;*/
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        padding-top: 5%; } }
+  .best-journal-container .best-post-thumb .best-journal-content {
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
     @media (min-width: 600px) {
-      .best-post-thumb h3 {
-        font-size: 30px; } }
+      .best-journal-container .best-post-thumb .best-journal-content {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        padding-top: 1.5rem;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
+  .best-journal-container .best-post-thumb .best-post-thumb {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+    text-align: center;
+    width: 472px;
+    height: 316px; }
+    @media (min-width: 600px) {
+      .best-journal-container .best-post-thumb .best-post-thumb {
+        /*padding-top: 50px;*/ } }
+    .best-journal-container .best-post-thumb .best-post-thumb img {
+      width: 90%;
+      height: auto;
+      outline: 2px solid white;
+      outline-offset: -20px; }
+      @media (min-width: 600px) {
+        .best-journal-container .best-post-thumb .best-post-thumb img {
+          width: 472px;
+          height: 316px; } }
+    .best-journal-container .best-post-thumb .best-post-thumb h3 {
+      font-size: 28px;
+      text-transform: uppercase; }
+      @media (min-width: 600px) {
+        .best-journal-container .best-post-thumb .best-post-thumb h3 {
+          font-size: 30px; } }
+  .best-journal-container .best-post-thumb .best-post-info {
+    width: 90%;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+    padding-top: 15%;
+    margin-top: 0; }
+    @media (min-width: 600px) {
+      .best-journal-container .best-post-thumb .best-post-info {
+        -ms-flex-direction: column;
+            flex-direction: column;
+        height: 316px;
+        padding-top: 0; } }
+    .best-journal-container .best-post-thumb .best-post-info p {
+      color: #303b46;
+      font-weight: 300;
+      text-align: left;
+      font-size: 25px; }
+      @media (min-width: 600px) {
+        .best-journal-container .best-post-thumb .best-post-info p {
+          color: white;
+          font-size: 18px;
+          margin-top: 0; } }
+    .best-journal-container .best-post-thumb .best-post-info .read-more {
+      visibility: hidden; }
+    .best-journal-container .best-post-thumb .best-post-info h3 {
+      font-size: 32px;
+      text-transform: uppercase;
+      color: white; }
 
-.best-post-info {
-  width: 90%;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
-  padding-top: 15%; }
-  @media (min-width: 600px) {
-    .best-post-info {
-      -ms-flex-direction: column;
-          flex-direction: column;
-      height: 316px;
-      padding-top: 0; } }
-  .best-post-info p {
-    color: #303b46;
-    font-weight: 300;
-    text-align: left;
-    font-size: 25px; }
-    @media (min-width: 600px) {
-      .best-post-info p {
-        color: white;
-        font-size: 18px;
-        margin-top: 0; } }
-  .best-post-info .read-more {
-    visibility: hidden; }
-  .best-post-info h3 {
-    font-size: 32px;
-    text-transform: uppercase;
-    color: white; }
+.best-journal-container .read-more {
+  visibility: hidden; }
+
+.best-journal-container .best-post-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 0 1rem;
+  text-align: center;
+  color: white; }
 
 .excerpt {
   padding-top: 60px; }
@@ -2593,6 +2627,11 @@ this section is a testimonial
     max-width: 50%;
     -ms-flex-align: center;
         align-items: center; }
+    .page-template-get_involved .single-benefit-block i {
+      font-size: 30px;
+      color: black; }
+    .page-template-get_involved .single-benefit-block h3 {
+      font-family: 'montserrat'; }
     @media (min-width: 600px) {
       .page-template-get_involved .single-benefit-block {
         -ms-flex: 0 1 33%;
@@ -2600,11 +2639,6 @@ this section is a testimonial
         max-width: 33%;
         -ms-flex-align: center;
             align-items: center; } }
-  .page-template-get_involved .single-benefit-block i {
-    font-size: 30px;
-    color: black; }
-  .page-template-get_involved .single-benefit-block h3 {
-    font-family: 'montserrat'; }
   .page-template-get_involved .custom-field-suite {
     display: -ms-flexbox;
     display: flex;
@@ -2658,6 +2692,12 @@ this section is a testimonial
     -ms-flex-align: center;
         align-items: center;
     height: 400px; }
+    .page-template-get_involved .single-participate-block i {
+      color: white;
+      font-size: 32px; }
+    .page-template-get_involved .single-participate-block h3 {
+      width: 80%;
+      font-family: 'montserrat'; }
     @media (min-width: 600px) {
       .page-template-get_involved .single-participate-block {
         -ms-flex-direction: column;
@@ -2668,22 +2708,16 @@ this section is a testimonial
     display: -ms-flexbox;
     display: flex;
     width: 100%; }
+    .page-template-get_involved .description-wrapper p {
+      margin-top: 0rem;
+      color: white;
+      text-align: center;
+      font-size: 18px;
+      font-family: 'montserrat';
+      font-weight: 300; }
     @media (min-width: 600px) {
       .page-template-get_involved .description-wrapper {
         width: 80%; } }
-  .page-template-get_involved .description-wrapper p {
-    margin-top: 0rem;
-    color: white;
-    text-align: center;
-    font-size: 18px;
-    font-family: 'montserrat';
-    font-weight: 300; }
-  .page-template-get_involved .single-participate-block i {
-    color: white;
-    font-size: 32px; }
-  .page-template-get_involved .single-participate-block h3 {
-    width: 80%;
-    font-family: 'montserrat'; }
   .page-template-get_involved .subscribeForm {
     display: -ms-flexbox;
     display: flex;
@@ -2706,12 +2740,12 @@ this section is a testimonial
   .page-template-get_involved .underline-under-button {
     width: 150px;
     padding-bottom: 100px; }
-  .page-template-get_involved .underline-under-button a {
-    font-style: italic;
-    text-decoration: underline;
-    font-size: 16px;
-    margin-top: 0;
-    color: white; }
+    .page-template-get_involved .underline-under-button a {
+      font-style: italic;
+      text-decoration: underline;
+      font-size: 16px;
+      margin-top: 0;
+      color: white; }
   .page-template-get_involved .underline-under-button a:hover {
     color: midnightblue; }
   .page-template-get_involved #sign-up-form {
@@ -2777,6 +2811,25 @@ this section is a testimonial
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column; }
+    .page-template-get_involved .need-resources h2 {
+      text-transform: uppercase;
+      font-family: 'montserrat';
+      color: #303b46; }
+    .page-template-get_involved .need-resources img {
+      border-radius: 200px 200px 200px 200px;
+      -moz-border-radius: 200px 200px 200px 200px;
+      -webkit-border-radius: 200px 200px 200px 200px;
+      border: 0px solid #000000;
+      height: 278px; }
+    .page-template-get_involved .need-resources p {
+      padding-left: 10%;
+      padding-right: 10%;
+      font-family: 'montserrat';
+      font-weight: 300;
+      color: #303b46; }
+    .page-template-get_involved .need-resources a {
+      text-decoration: none;
+      color: #303b46; }
     @media (min-width: 600px) {
       .page-template-get_involved .need-resources {
         padding-top: 40px;
@@ -2784,25 +2837,6 @@ this section is a testimonial
         display: flex;
         -ms-flex-direction: row;
             flex-direction: row; } }
-  .page-template-get_involved .need-resources h2 {
-    text-transform: uppercase;
-    font-family: 'montserrat';
-    color: #303b46; }
-  .page-template-get_involved .need-resources img {
-    border-radius: 200px 200px 200px 200px;
-    -moz-border-radius: 200px 200px 200px 200px;
-    -webkit-border-radius: 200px 200px 200px 200px;
-    border: 0px solid #000000;
-    height: 278px; }
-  .page-template-get_involved .need-resources p {
-    padding-left: 10%;
-    padding-right: 10%;
-    font-family: 'montserrat';
-    font-weight: 300;
-    color: #303b46; }
-  .page-template-get_involved .need-resources a {
-    text-decoration: none;
-    color: #303b46; }
   .page-template-get_involved .need-resources a:hover {
     text-decoration: none;
     color: white; }
@@ -2810,24 +2844,24 @@ this section is a testimonial
     width: 278px; }
   .page-template-get_involved .testimonial {
     padding-bottom: 30px;
-    background: lightgrey; }
-  .page-template-get_involved .testimonial p {
-    padding-left: 25%;
-    padding-right: 25%;
-    padding-top: 3%;
-    font-family: 'montserrat';
-    font-weight: 300;
-    font-size: 18px; }
+    background: #ccc; }
+    .page-template-get_involved .testimonial p {
+      padding-left: 25%;
+      padding-right: 25%;
+      padding-top: 3%;
+      font-family: 'montserrat';
+      font-weight: 300;
+      font-size: 18px; }
   .page-template-get_involved .testimonial-author {
     text-align: left; }
-  .page-template-get_involved .testimonial-author p {
-    padding-left: 25%;
-    padding-right: 0%;
-    padding-top: 0%;
-    margin-bottom: 0;
-    margin-top: 0;
-    font-family: 'montserrat';
-    font-weight: 300; }
+    .page-template-get_involved .testimonial-author p {
+      padding-left: 25%;
+      padding-right: 0%;
+      padding-top: 0%;
+      margin-bottom: 0;
+      margin-top: 0;
+      font-family: 'montserrat';
+      font-weight: 300; }
   .page-template-get_involved form {
     -ms-flex-align: center;
         align-items: center;
