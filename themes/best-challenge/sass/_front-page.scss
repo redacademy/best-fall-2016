@@ -497,7 +497,8 @@
         h3 {
             font-size: 1.5rem;
             font-weight: 700;
-            margin-bottom: 0;
+            max-width: 80vw;
+            margin: 0 auto;
         }
         .challenge-info {
             display: flex;

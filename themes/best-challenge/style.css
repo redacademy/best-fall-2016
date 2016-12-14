@@ -1690,7 +1690,8 @@ this is for the rest of the site
   .challenge h3 {
     font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 0; }
+    max-width: 80vw;
+    margin: 0 auto; }
   .challenge .challenge-info {
     display: -ms-flexbox;
     display: flex;
@@ -3219,20 +3220,19 @@ NEWLETTER SIGN-UP AREA
   position: relative; }
   .page-template-page-results .impact-results-area p {
     font-weight: 700;
-    font-size: 1rem;
+    font-size: .8rem;
     max-width: 24vw; }
-    @media (min-width: 600px) {
+    @media (min-width: 560px) {
       .page-template-page-results .impact-results-area p {
         font-size: 1.2rem;
-        line-height: 1.2;
         font-weight: 300; } }
     @media (min-width: 1200px) {
       .page-template-page-results .impact-results-area p {
-        line-height: 1.5;
+        line-height: 1.2;
         font-size: 1.5rem; } }
     .page-template-page-results .impact-results-area p span {
       display: block;
-      font-size: 2rem;
+      font-size: 1.4rem;
       font-weight: 700; }
       @media (min-width: 600px) {
         .page-template-page-results .impact-results-area p span {
@@ -3268,10 +3268,8 @@ NEWLETTER SIGN-UP AREA
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
-      align-items: center; }
-  @media (min-width: 600px) {
-    .page-template-page-results .ir-co2 {
-      padding-bottom: 5vh; } }
+      align-items: center;
+  padding-bottom: 10vh; }
   .page-template-page-results .ir-co2 div {
     height: 25vh;
     min-width: 20vw; }
@@ -3442,7 +3440,7 @@ NEWLETTER SIGN-UP AREA
   position: absolute;
   z-index: 0;
   top: 0;
-  bottom: 75px;
+  bottom: 50px;
   left: 50%;
   border-left: 7px solid #fff; }
   @media (min-width: 600px) {
@@ -3454,7 +3452,7 @@ NEWLETTER SIGN-UP AREA
       bottom: 0; } }
 
 .ir-numbers {
-  height: 30vh;
+  height: 40vh;
   text-align: center; }
   @media (min-width: 600px) {
     .ir-numbers {
@@ -3485,11 +3483,11 @@ NEWLETTER SIGN-UP AREA
       align-items: flex-end;
   margin: 0 auto;
   line-height: 2;
-  max-width: 80%;
+  max-width: 100%;
   color: #5a6f83; }
   @media (min-width: 600px) {
     .ir-numbers-info {
-      max-width: 100%; } }
+      max-width: 90%; } }
   .ir-numbers-info div {
     display: -ms-flexbox;
     display: flex;

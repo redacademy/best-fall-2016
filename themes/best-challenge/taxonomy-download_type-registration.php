@@ -26,7 +26,7 @@ The temaplate to display taxonomy type archive
 						$children_ids = get_term_children( $download_type->term_id, 'download_type');
 
 							//show taxonomy children and posts
-							foreach( $children_ids as $child_id ) {
+							foreach( $children_ids as $child_id ) { 
 								$child = get_term($child_id, $taxonomy); ?>
 									<h3><?php echo $child->name; ?> </h3> 
 									<div class='results'>
@@ -43,7 +43,7 @@ The temaplate to display taxonomy type archive
 											),  
 										);
 										$downloads = get_posts( $args );
-
+								
 								foreach( $downloads as $post ) : setup_postdata($post); ?>
 									<div class="download-post">
 										<div class="taxonomy-image">
@@ -59,9 +59,10 @@ The temaplate to display taxonomy type archive
 									</div>
 								<?php endforeach; wp_reset_postdata(); ?>
 								</div>
-							<?php
+							<?php	
 							}
 						?>
+						
 					</div>
 				</div> <!-- prize wrapper section ends -->
 		</div>
