@@ -76,7 +76,7 @@ get_header(); ?>
 				<?php
 				$taxonomy = 'download_type';
 				
-				$terms = get_terms($taxonomy, array('parent' => 0, 'order' => 'DESC'));   
+				$terms = get_terms($taxonomy, array('parent' => 0, 'order' => 'ASC'));   
 					foreach($terms as $download_type) { ?>
 						<div class="download-categories">
 							<div class="category-titles">

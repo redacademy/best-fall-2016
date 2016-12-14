@@ -3606,7 +3606,7 @@ a#sign-up {
   font-family: 'montserrat'; }
 
 .footer-section a:hover {
-  color: midnightblue; }
+  color: #303b46; }
 
 .footer-content {
   padding-top: 20px;
@@ -3639,7 +3639,7 @@ a#sign-up {
   line-height: 1.2; }
 
 .footer-section a:hover {
-  color: midnightblue; }
+  color: #303b46; }
 
 .about-best {
   display: -ms-flexbox;
@@ -3664,7 +3664,7 @@ a#sign-up {
   padding-bottom: 1rem; }
 
 .footer-social {
-  background: #383B4C;
+  background: #303b46;
   display: column;
   -ms-flex-pack: center;
       justify-content: center;
@@ -3714,7 +3714,7 @@ a#sign-up {
           justify-content: flex-start; } }
 
 .footer-social i:hover {
-  color: midnightblue; }
+  color: #a6ce39; }
 
 .para-heading p {
   font-family: 'montserrat';
