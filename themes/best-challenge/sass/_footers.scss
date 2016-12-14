@@ -95,7 +95,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    
     @include desktop {
         display:flex;
         justify-content: space-between;
@@ -116,8 +115,7 @@
     color:white;
     text-align:center;
     margin-bottom:10px;
-    
-     @include desktop {
+    @include desktop {
         font-weight: 100;
         padding-right:40px;
       }
@@ -364,7 +362,7 @@ INPUT field
 }
 
 #wpcf7-f196-o1 input[type=submit] { 
-    background-color: #383B4C;
+    background-color:#303b46;
     color: white;
     cursor: pointer;
     text-shadow:none;
