@@ -17,11 +17,6 @@
   $('.taxonomy-description').mouseleave(function () {
     $(this).css('display', 'none');
   });
-  //   $(window).on('click', function () {
-  //     console.log("smarahfiahfa");
-  //   $('.taxonomy-description').css('display', 'none');
-  // });
-
 
   // Prize categories drop down list 
 
@@ -70,13 +65,13 @@
   //change bc map on click on Participants page 
   $('#van-map').hide();
   $('#bc-map').hide();
-  $('#vancouver').on('mouseover', function (event) {
+  $('#vancouver').on('click', function (event) {
     event.preventDefault();
     $('#default-map').hide();
     $('#van-map').show();
   });
 
-  $('#vancouver').mouseleave(function (event) {
+  $('#vancouver').on('blur',function (event) {
     event.preventDefault();
     $('#bc-map').hide();
     $('#van-map').hide();
