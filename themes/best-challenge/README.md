@@ -12,14 +12,17 @@ FEATURES
 - Typewriter Animation - a nifty animation that auto populates text on the
 front page.
 
-- Custom Fields
+- Custom Fields - allows the client to update some of the key information on the website.
 
-- Custom Post Types
+- Custom Post Types - allows to add participating companies, resources and prizes and display them on separate pages.
+
+- File Downloader - allows to download resources on a click of a button
 
 
 LANGUAGES USED
 
 - Javascript 
+- PHP
 - JQuery 
 - HTML5 
 - CSS3/SASS
@@ -36,10 +39,11 @@ PLUGINS
 - Contact Form 7
 - Instagram Feed WD
 - WP Migrate DB Pro
+- Simple File Downloader 
 
 MOTIVATION
 
-This project was contracted by B.E.S.T to out group at RED Academy as B.E.S.T's previous site had become outdated and outmoded.  This project showcased our skills as programmers, particlarily PHP, Javascript, Wordpress, and JQuery.
+This project was contracted by B.E.S.T to our group at RED Academy as B.E.S.T's previous site had become outdated and outmoded.  This project showcased our skills as programmers, particlarily PHP, Javascript, Wordpress, and JQuery.
 is to strengthen out WordPress and PHP skills
 
 TESTS
